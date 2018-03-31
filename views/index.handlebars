@@ -1,0 +1,54 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+<title>Jared Suasin</title>
+
+<link href="/css/portfolio.css" rel="stylesheet">
+
+<link href="https://fonts.googleapis.com/css?family=Montserrat:400,600i|Poppins:600i|Raleway:600i" rel="stylesheet">
+
+</head>
+<body>
+
+<div class="pageContainer"
+	
+	<!-- Header -->
+	<div class="headerContainer">
+		
+		<!-- Name -->
+		<div class="nameContainer">
+			<a class="name">JARED SUASIN</a>
+		</div>
+
+		<div class="yellow"></div>
+		<img src="images/cover6.png" class="cover">
+	</div>
+
+	<!-- End Header // Start nav bar -->
+
+	<ul>
+	  <li><a href="#home">Work</a></li>
+	  <li><a href="#news">About</a></li>
+	  <li><a href="#contact">Contact</a></li>
+	</ul>
+
+	<!-- End nav bar // Start projects -->
+
+	{{#each projects}}
+
+	<div class="previewContainer">
+		<a href="/{{url}}">
+			<img src="{{image}}" class="previewImage">
+
+		</a>
+	</div>
+
+	{{/each}}
+</div>
+
+<script src="/js/portfolio.js"></script>
+
+
+</body>
+</html>
