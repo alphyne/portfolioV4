@@ -4,6 +4,21 @@
 			"name": "Blyss",
 			"image": "images/cover1.jpg",
 			"url": "blyss"
+		},
+		{
+			"name": "Portfolio",
+			"image": "images/cover1.jpg",
+			"url": "portfolio"
+		},
+		{
+			"name": "The Faction",
+			"image": "images/cover1.jpg",
+			"url": "the-faction"
+		},
+		{
+			"name": "Salty Bodies",
+			"image": "images/cover1.jpg",
+			"url": "salty-bodies"
 		}
 	]
 }

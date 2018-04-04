@@ -11,10 +11,10 @@
 </head>
 <body>
 
-<div class="pageContainer"
+<div class="pageContainer">
 	
 	<!-- Header -->
-	<div class="headerContainer">
+	<!--<div class="headerContainer">-->
 		
 		<!-- Name -->
 		<div class="nameContainer">
@@ -23,28 +23,32 @@
 
 		<div class="yellow"></div>
 		<img src="images/cover6.png" class="cover">
-	</div>
+	<!--</div>-->
 
 	<!-- End Header // Start nav bar -->
 
+	<!--<div class = "white"> </div>-->
+
 	<ul>
-	  <li><a href="#home">Work</a></li>
-	  <li><a href="#news">About</a></li>
-	  <li><a href="#contact">Contact</a></li>
+	  <li><a href="/resume"><span>Resume</span></a></li>
+	  <li><a href="/about"><span>About</span></a></li>
+	  <li><a href="/"><span>Work</span></a></li>
 	</ul>
 
 	<!-- End nav bar // Start projects -->
 
-	{{#each projects}}
+	<div class="projectContainer">
+		{{#each projects}}
 
-	<div class="previewContainer">
-		<a href="/{{url}}">
-			<img src="{{image}}" class="previewImage">
+		<div class="previewContainer">
+			<a href="/{{url}}">
+				<img src="{{image}}" class="previewImage">
 
-		</a>
+			</a>
+		</div>
+
+		{{/each}}
 	</div>
-
-	{{/each}}
 </div>
 
 <script src="/js/portfolio.js"></script>
