@@ -1,24 +1,206 @@
 {
 	"projects": [
 		{
-			"name": "Blyss",
-			"image": "images/cover1.jpg",
-			"url": "blyss"
+			"name": "CCH",
+			"title": "CCH",
+			"url": "cch",
+			"description": "",
+			"info": [
+				{
+					"title": "Role",
+					"content": "Project management, visual design, web development"
+				},
+				{
+					"title": "Design Tools",
+					"content": "Figma, Illustrator"
+				},
+				{
+					"title": "Development Tools",
+					"content": "HTML, CSS, JavaScript, Node.js (Express + Handlebars)"
+				},
+				{
+					"title": "Date",
+					"content": "April 2018 - Current"
+				}
+			],
+			"blocks": [
+				{
+					"title": "Objective",
+					"text": true,
+					"content": "Design and develop a web application to help aid staff members of the Center for Community Health (CCH) under the UCSD School of Medicene."
+				},
+				{
+					"title":"Mission Statement",
+					"text": true,
+					"caption": "The Live Well Community Market Program aims to improve and promote access to healthy foods throughout San Diego County by working with neighborhood markets to increase the availability of fresh and healthy products, redesign markets to promote healthy foods, and connect with community stakeholders to build a healthier food environment for all San Diego residents." 
+				},
+				{
+					"title":"Work In Progress",
+					"text": true,
+					"caption": "Brought together by the UC San Diego course, ENG100D - Design for Development, our team is diligently working on the development of this project. Stay tuned for more details!"
+				}
+			]
 		},
 		{
-			"name": "Portfolio",
-			"image": "images/cover1.jpg",
-			"url": "portfolio"
+			"name": "BLYSS",
+			"title": "Blyss",
+			"url": "blyss",
+			"description": "",
+			"info": [
+				{
+					"title": "Role",
+					"content": "Visual design, web development"
+				},
+				{
+					"title": "Tools",
+					"content": "HTML, CSS, JavaScript, Node.js (Express + Handlebars)"
+				},
+				{
+					"title": "Date",
+					"content": "January 2018 - March 2018"
+				}
+			],
+			"blocks": [
+				{
+					"title": "Objective",
+					"text": true,
+					"content": "Design and develop a mobile web application focused on the principles of interaction design."
+				},
+				{
+					"title": "The Quantified Self",
+					"text": true,
+					"content": "With the help of digital devices, we have an unprecedented ability to track our behaviors, habits, and thoughts. But turning data about ourselves and our communities into valuable insights is still remarkably difficult. My studio explored ways to support monitoring, reflection, and behavior change by collecting, consuming, and sharing personally relevant information. We considered how might we help people learn more about their everyday lives through self-tracking, and how might we help people draw insights from the mass of data they collect about themselves."
+				},
+				{
+					"title": "Who is Our Audience?",
+					"text": true,
+					"content": "This section is currently under construction, check back later for updates!"
+				},
+				{
+					"title":"Final Touches",
+					"link": true,
+					"linkurl": "https://blyss.herokuapp.com/",
+					"content": "Come check out the live prototype here!"
+
+				}
+			]
 		},
 		{
-			"name": "The Faction",
-			"image": "images/cover1.jpg",
-			"url": "the-faction"
+			"name": "PORTFOLIO",
+			"title": "Portfolio",
+			"url": "portfolio",
+			"description": "",
+			"info": [
+				{
+					"title": "Role",
+					"content": "Visual design, web development"
+				},
+				{
+					"title": "Design Tools",
+					"content": "Sketch, InDesign, Photoshop"
+				},
+				{
+					"title": "Development Tools",
+					"content": "HTML, CSS, Node.js (Express + Handlebars)"
+				},
+				{
+					"title": "Date",
+					"content": "March 2018 - Current"
+				}
+			],
+			"blocks": [
+				{
+					"title": "Objective",
+					"text": true,
+					"content": "Design and develop an online portfolio to showcase personal and professional work."
+				},
+				{
+					"title":"Dark Design",
+					"image": true,
+					"src": "/images/ref.png",
+					"class": "blockImageHoriz",
+					"caption": "I have always had an afinity towards dark-themed designs. While they are capable of elegance and sophistication, dark designs can also be edgy and striking. I took inspiration from magazine spreads that I thought are bold yet balanced."
+				},
+				{
+					"title": "Hearing Color",
+					"image": true,
+					"src": "/images/color.png",
+					"class": "blockImageHoriz",
+					"caption": "An album's artwork is an extension of the music itself. It enhances the listener's experience by complementing the mood the artist is conveying. These are some albums that I appreciate for both their music and their aesthetics, and that inspired me to play with color palettes surrounding dark design."
+				},
+				{
+					"title": "Trial & Error",
+					"image": true,
+					"src": "",
+					"class": "",
+					"caption": "Mock-ups coming soon."
+				},
+				{
+					"title": "Starting from Scratch",
+					"image": true,
+					"src": "",
+					"class": "",
+					"caption": "In order to hone my web development skills, I challenged myself to build my portfolio from the ground up. Utilizing my knowledge of HTML, CSS and Javascript, I aimed to complete a sleek platform to showcase my work. My education at University of California, San Diego has allowed me to keep expanding my development arsenal by introducing tools that I can incorporate into my portfolio, such as Node.js (Express + Handlebars)."
+				}
+			]
 		},
 		{
-			"name": "Salty Bodies",
-			"image": "images/cover1.jpg",
-			"url": "salty-bodies"
+			"name": "THE FACTION",
+			"title": "The Faction",
+			"url": "the-faction",
+			"covers": [
+				{
+					"class": "coverImageHoriz",
+					"src": "/images/theFaction1.jpg"
+				},
+				{
+					"class": "coverImageVert",
+					"src": "images/theFaction2.jpg"
+				}
+			],
+			"info": [
+				{
+					"title": "Role",
+					"content": "Photography, graphics, gditing"
+				},
+				{
+					"title": "Tools",
+					"content": "Photoshop, Lightroom, Indesign"
+				},
+				{
+					"title": "Date",
+					"content": "July 2017"
+				}
+			]
+		},
+		{
+			"name": "SALTY BODIES",
+			"title": "Salty Bodies",
+			"url": "salty-bodies",
+			"description": "",
+			"covers": [
+				{
+					"class": "coverImageHoriz",
+					"src": "/images/saltyBodies.jpg"
+				}
+			],
+			"info": [
+				{
+					"title": "Role",
+					"content": "Graphics, editing"
+				},
+				{
+					"title": "Tools",
+					"content": "Photoshop, Lightroom"
+				},
+				{
+					"title": "Date",
+					"content": "May 2017"
+				}
+			]
+		},
+		{
+			"name": "MORE TO COME"
 		}
 	]
 }

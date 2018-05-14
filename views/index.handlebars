@@ -1,58 +1,53 @@
-
 <!DOCTYPE html>
 <html>
 <head>
 <title>Jared Suasin</title>
-
 <link href="/css/portfolio.css" rel="stylesheet">
-
-<link href="https://fonts.googleapis.com/css?family=Montserrat:400,600i|Poppins:600i|Raleway:600i" rel="stylesheet">
-
+<link href="https://fonts.googleapis.com/css?family=Montserrat:400,600i|Roboto300,400|Londrina+Shadow" rel="stylesheet">
 </head>
 <body>
 
 <div class="pageContainer">
 	
 	<!-- Header -->
-	<!--<div class="headerContainer">-->
-		
-		<!-- Name -->
-		<div class="nameContainer">
-			<a class="name">JARED SUASIN</a>
+	<div class="nameContainer">
+		<a class="name">JARED SUASIN</a>
+	</div>
+
+	<!-- Cover Image -->
+	<div class="yellow"></div>
+	<img src="images/cover.png" class="cover">
+	
+	<!-- Navbar -->
+	<div class="background">
+		<ul id="navBar">
+			<li><a href="/resume"><span>Resume</span></a></li>
+			<li><a href="/about"><span>About</span></a></li>
+			<li><a href="/"><span>Work</span></a></li>
+		</ul>
+
+	<!-- Grid -->
+	<div class="grid">
+		<div class="gridItemContainer">
+			{{#each projects}}
+				
+				<!-- Grid items -->
+				<a class="gridLink" href="/{{url}}">
+					<div class="gridItem">
+							<h3 class="itemName">{{name}}</h3>
+					</div>
+				</a>
+				
+			{{/each}}	
+			</div>
 		</div>
+	</div>
 
-		<div class="yellow"></div>
-		<img src="images/cover6.png" class="cover">
-	<!--</div>-->
+	<!-- Footer -->
+	<div class="footer">
 
-	<!-- End Header // Start nav bar -->
-
-	<!--<div class = "white"> </div>-->
-
-	<ul>
-	  <li><a href="/resume"><span>Resume</span></a></li>
-	  <li><a href="/about"><span>About</span></a></li>
-	  <li><a href="/"><span>Work</span></a></li>
-	</ul>
-
-	<!-- End nav bar // Start projects -->
-
-	<div class="projectContainer">
-		{{#each projects}}
-
-		<div class="previewContainer">
-			<a href="/{{url}}">
-				<img src="{{image}}" class="previewImage">
-
-			</a>
-		</div>
-
-		{{/each}}
 	</div>
 </div>
-
 <script src="/js/portfolio.js"></script>
-
-
 </body>
 </html>

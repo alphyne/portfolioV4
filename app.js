@@ -9,9 +9,8 @@ var handlebars = require('express-handlebars')
 
 // Routes
 var index = require('./routes/index');
-//var home = require('./routes/home');
-// Example route
-// var user = require('./routes/user');
+var about = require('./routes/about');
+var project = require('./routes/project');
 
 var app = express();
 
@@ -30,15 +29,9 @@ app.use(express.session());
 app.use(app.router);
 app.use(express.static(path.join(__dirname, 'public')));
 
-// development only
-if ('development' == app.get('env')) {
-  app.use(express.errorHandler());
-}
-
 app.get('/', index.view);
-//app.get('/home', home.view);
-// Example route
-// app.get('/users', user.list);
+app.get('/about', about.view);
+app.get('/:name', project.view);
 
 http.createServer(app).listen(app.get('port'), function(){
   console.log('Express server listening on port ' + app.get('port'));
