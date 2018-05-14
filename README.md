@@ -1,4 +1,4 @@
 portfolio
 ====
 
-UI/UX portfolio
+jaredsuasin.com
