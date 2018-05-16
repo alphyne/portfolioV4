@@ -137,10 +137,8 @@
 				},
 				{
 					"title": "Starting from Scratch",
-					"image": true,
-					"src": "",
-					"class": "",
-					"caption": "In order to hone my web development skills, I challenged myself to build my portfolio from the ground up. Utilizing my knowledge of HTML, CSS and Javascript, I aimed to complete a sleek platform to showcase my work. My education at University of California, San Diego has allowed me to keep expanding my development arsenal by introducing tools that I can incorporate into my portfolio, such as Node.js (Express + Handlebars)."
+					"text": true,
+					"content": "In order to hone my web development skills, I challenged myself to build my portfolio from the ground up. Utilizing my knowledge of HTML, CSS and Javascript, I aimed to complete a sleek platform to showcase my work. My education at University of California, San Diego has allowed me to keep expanding my development arsenal by introducing tools that I can incorporate into my portfolio, such as Node.js (Express + Handlebars)."
 				}
 			]
 		},
