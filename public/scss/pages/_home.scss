@@ -1,0 +1,104 @@
+/* Fluid Grid by patrickkunka on codepen */
+.grid{
+	/*background-color: #161616;*/
+
+	width: 100%;
+}
+
+.gridItemContainer{
+  text-align: justify;
+  font-size: 0.1px;
+}
+
+.gridItem{
+    display: inline-block;
+  width: 50%;
+  height: 70vh;
+  margin-bottom: 2%;
+  border-style: solid;
+  text-align: center;
+  background: #a0a0a0;
+}
+
+.itemName{
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
+  color: black;
+  font-size: 30px;
+  position: relative;
+}
+
+.gridLink{
+  text-decoration: none;
+}
+
+.gridItemContainer:after{
+content: '';
+display: inline-block;
+width: 100%;
+}
+
+
+/* -- MEDIA QUERIES DEFINING RESPONSIVE LAYOUTS -- */
+
+/* 2 columns */
+@media (max-width: 3000px){
+.gridItem{
+      
+      width: 49.5%;
+      margin-bottom: 1%;
+  }
+
+  /* Change grid transformation size */
+  .grid > div > a > div:hover{
+      transition: .2s transform;
+  }
+
+  .grid > div > a > div:hover > h3{
+      transition: .2s transform;
+  }
+
+}
+
+/* 1 column */
+@media (max-width: 940px){
+.gridItem{
+  width: 100%;
+      margin-bottom: 2.5%;
+  }
+
+  /* Change grid transformation size */
+  .grid > div > a > div:hover{
+      transition: .2s transform;
+  }
+
+  .grid > div > a > div:hover > h3{
+      transition: .2s transform;
+  }
+}
+
+.previewImage {
+  width: 100%;
+  height: 100%;
+}
+
+/* CSS Image Gallery Zoom by Oliver Knoblich on code pen */
+
+.grid > div > div {
+transition: .1s transform;
+transform: translateZ(0); /* hack */
+}
+
+.grid > div:hover {
+z-index: 1;
+}
+
+.cf:before, .cf:after {
+content: "";
+line-height: 0;
+}
+
+.cf:after {
+clear: both;
+}
+

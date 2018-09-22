@@ -1,5 +1,6 @@
 {
 	"projects": [
+		
 		{
 			"name": "CCH",
 			"title": "CCH",
@@ -16,11 +17,11 @@
 				},
 				{
 					"title": "Development Tools",
-					"content": "HTML, CSS, JavaScript, Node.js (Express + Handlebars)"
+					"content": "HTML, CSS, JavaScript, Node.js (Express + Handlebars), SQLite"
 				},
 				{
 					"title": "Date",
-					"content": "April 2018 - Current"
+					"content": "April 2018 - June 2018"
 				}
 			],
 			"blocks": [
@@ -33,6 +34,42 @@
 					"title":"Mission Statement",
 					"text": true,
 					"caption": "The Live Well Community Market Program aims to improve and promote access to healthy foods throughout San Diego County by working with neighborhood markets to increase the availability of fresh and healthy products, redesign markets to promote healthy foods, and connect with community stakeholders to build a healthier food environment for all San Diego residents." 
+				},
+				{
+					"title":"Work In Progress",
+					"text": true,
+					"caption": "Brought together by the UC San Diego course, ENG100D - Design for Development, our team is diligently working on the development of this project. Stay tuned for more details!"
+				}
+			]
+		},
+		{
+			"name": "BUROW",
+			"title": "BUROW",
+			"url": "burow",
+			"description": "",
+			"info": [
+				{
+					"title": "Role",
+					"content": "Visual design, web development, branding"
+				},
+				{
+					"title": "Design Tools",
+					"content": "Sketch, Illustrator"
+				},
+				{
+					"title": "Development Tools",
+					"content": "HTML, CSS, JavaScript, Node.js, API Linking"
+				},
+				{
+					"title": "Date",
+					"content": "April 2018 - June 2018"
+				}
+			],
+			"blocks": [
+				{
+					"title": "Objective",
+					"text": true,
+					"content": "Develop a full-stack application focusing on interacting with real world data."
 				},
 				{
 					"title":"Work In Progress",
@@ -196,9 +233,6 @@
 					"content": "May 2017"
 				}
 			]
-		},
-		{
-			"name": "MORE TO COME"
 		}
 	]
 }

@@ -1,32 +1,52 @@
-// When the user scrolls the page, execute myFunction 
-window.onscroll = function() {myFunction()};
-
-// Get the top navbar
-var navbartop = document.getElementById("navbartop");
-
-// Get the offset position of the top navbar
-var stickytop = navbartop.offsetTop;
-
-// Get the bottom navbar
-var navbarbot = document.getElementById("navbarbot");
-
-// Get the offset position of the bottom navbar
-var stickybot = navbartop.offsetTop;
-
-var windowHeight = $(window).height();
-var botOffset = windowHeight - 70;
-
-// Add the sticky class to the navbar when you reach its scroll position. Remove "sticky" when you leave the scroll position
-function myFunction() {
-  if (window.pageYOffset > stickytop) {
-    navbartop.classList.add("stickytop")
-  } else {
-    navbartop.classList.remove("stickytop");
-  }
-
-  if (botOffset > stickybot) {
-    navbarbot.classList.add("stickybot")
-  } else {
-    navbarbot.classList.remove("stickybot");
-  }
-}
+(function() {
+  
+  var Menu = (function() {
+    var burger = document.querySelector('.burger');
+    var menu = document.querySelector('.menu');
+    var menuList = document.querySelector('.menu__list');
+    var brand = document.querySelector('.menu__brand');
+    var menuItems = document.querySelectorAll('.menu__item');
+    
+    var active = false;
+    
+    var toggleMenu = function() {
+      if (!active) {
+        menu.classList.add('menu--active');
+        menuList.classList.add('menu__list--active');
+        brand.classList.add('menu__brand--active');
+        burger.classList.add('burger--close');
+        for (var i = 0, ii = menuItems.length; i < ii; i++) {
+          menuItems[i].classList.add('menu__item--active');
+        }
+        
+        active = true;
+      } else {
+        menu.classList.remove('menu--active');
+        menuList.classList.remove('menu__list--active');
+        brand.classList.remove('menu__brand--active');
+        burger.classList.remove('burger--close');
+        for (var i = 0, ii = menuItems.length; i < ii; i++) {
+          menuItems[i].classList.remove('menu__item--active');
+        }
+        
+        active = false;
+      }
+    };
+    
+    var bindActions = function() {
+      burger.addEventListener('click', toggleMenu, false);
+    };
+    
+    var init = function() {
+      bindActions();
+    };
+    
+    return {
+      init: init
+    };
+    
+  }());
+  
+  Menu.init();
+  
+}());

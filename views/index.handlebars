@@ -3,28 +3,62 @@
 <head>
 <title>Jared Suasin</title>
 <link href="/css/portfolio.css" rel="stylesheet">
-<link href="https://fonts.googleapis.com/css?family=Montserrat:400,600i|Roboto300,400|Londrina+Shadow" rel="stylesheet">
+<link href="/css/main.css" rel="stylesheet" type="text/css">
+<link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,500,600" rel="stylesheet">
+<link rel="stylesheet" href="fonts/stylesheet.css" type="text/css" charset="utf-8" />
 </head>
 <body>
 
 <div class="pageContainer">
 	
+<header class="header">
+  <div class="burger">
+    <div class="burger__patty"></div>
+    <div class="burger__patty"></div>
+    <div class="burger__patty"></div>
+  </div>
+
+  <nav class="menu">
+    <div class="menu__brand">
+      <a href=""><div class="logo"></div></a>
+    </div>
+    <ul class="menu__list">
+      <li class="menu__item"><a href="" class="menu__link">Work</a></li>
+      <li class="menu__item"><a href="" class="menu__link">About</a></li>
+      <li class="menu__item">
+        <a href="https://twitter.com/ettrics" target="_blank" class="menu__link menu__link--social"><i class="fa fa-twitter"></i></a>
+      </li>
+      <li class="menu__item">
+        <a href="https://dribbble.com/ettrics" target="_blank" class="menu__link menu__link--social">
+          <i class="fa fa-dribbble"></i></a>
+      </li>
+    </ul>
+  </nav>
+</header>
+
+
+
+
 	<!-- Header -->
-	<div class="nameContainer">
-		<a class="name">JARED SUASIN</a>
+	<div class="headerContainer">
+		<div class="nameContainer">
+			<h1>JARED SUASIN.</h1>
+		</div>
+
+		<div class="tagContainer">
+			<a class="tag1">Full Stack Designer</a>
+			<a class="tag2">[ UX Engineering / UI Design / Visual Design ]</a>
+		</div>
+
+		<ul class="navBarContainer">
+			<li class="fullNavBar"><a class="notActive" href="/resume"><span>Resume</span></a></li>
+			<li class="fullNavBar"><a class="notActive" href="/about"><span>About</span></a></li>
+			<li class="fullNavBar"><a class="active" href="/"><span>Work</span></a></li>
+		</ul>
+
 	</div>
 
-	<!-- Cover Image -->
-	<div class="yellow"></div>
-	<img src="images/cover.png" class="cover">
 	
-	<!-- Navbar -->
-	<div class="background">
-		<ul id="navBar">
-			<li><a href="/resume"><span>Resume</span></a></li>
-			<li><a href="/about"><span>About</span></a></li>
-			<li><a href="/"><span>Work</span></a></li>
-		</ul>
 
 	<!-- Grid -->
 	<div class="grid">
@@ -34,7 +68,7 @@
 				<!-- Grid items -->
 				<a class="gridLink" href="/{{url}}">
 					<div class="gridItem">
-							<h3 class="itemName">{{name}}</h3>
+					
 					</div>
 				</a>
 				
