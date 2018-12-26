@@ -50,3 +50,5 @@
   Menu.init();
   
 }());
+
+$(document).ready(main);

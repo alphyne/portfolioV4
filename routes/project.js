@@ -6,7 +6,7 @@
 var data = require('../data.json');
 
 exports.view = function(req, res){
-	var param = req.params.name;
+	var param = req.params.title;
 
 	if (param == "resume") {
 		res.redirect(

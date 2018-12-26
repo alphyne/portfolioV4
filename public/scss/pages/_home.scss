@@ -81,24 +81,3 @@ width: 100%;
   width: 100%;
   height: 100%;
 }
-
-/* CSS Image Gallery Zoom by Oliver Knoblich on code pen */
-
-.grid > div > div {
-transition: .1s transform;
-transform: translateZ(0); /* hack */
-}
-
-.grid > div:hover {
-z-index: 1;
-}
-
-.cf:before, .cf:after {
-content: "";
-line-height: 0;
-}
-
-.cf:after {
-clear: both;
-}
-

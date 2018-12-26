@@ -1,20 +1,16 @@
 {{#with project}}
 <!DOCTYPE html>
-<html>
-<head>
-<title> {{title}} | Jared Suasin</title>
-<link href="/css/portfolio.css" rel="stylesheet">
-<link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,500,600" rel="stylesheet">
-<link rel="stylesheet" href="fonts/stylesheet.css" type="text/css" charset="utf-8" />
+<html lang="en">
+	<head>
+		<title>{{title}}</title>
+		<link href="css/main.css" rel="stylesheet" type="text/css">
+		<link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,500,600" rel="stylesheet">
+		<link rel="stylesheet" href="fonts/stylesheet.css" type="text/css" charset="utf-8" />
+	</head>
+	<body>
 
-</head>
-<body>
-
-<div class="pageContainer">
-	
-		
 	<!-- Header -->
-	<div class="headerContainer">
+	<div class="header-container">
 		<div class="nameContainer">
 			<h1>JARED SUASIN.</h1>
 		</div>
@@ -25,66 +21,103 @@
 		</div>
 
 		<ul class="navBarContainer">
-			<li><a class="notActive" href="/resume"><span>Resume</span></a></li>
-			<li><a class="notActive" href="/about"><span>About</span></a></li>
-			<li><a class="notactive" href="/"><span>Work</span></a></li>
+			<li class="fullNavBar"><a class="notActive" href="/resume"><span>Resume</span></a></li>
+			<li class="fullNavBar"><a class="notActive" href="/about"><span>About</span></a></li>
+			<li class="fullNavBar"><a class="notActive" href="/"><span>Work</span></a></li>
 		</ul>
-
 	</div>
 
-	
 	<!-- Project content -->
+		<div class="project-landing">
 
+		</div>
 
-	<!-- Cover photos -->
-	{{#each covers}}
-		<img class="{{class}}" src="{{src}}">
-	{{/each}}
+	<div class="page-container">
+		
 
-	<!-- Project description -->
-	<div class="descriptionContainer">
-		<p>{{description}}</p>
+		<!-- Project title -->
+		<div class="project-name">
+			<h1>{{name}}<span> / {{type}}</span></h1>
+		</div>
 
-		<!-- Project information -->
-		{{#each info}}
-			<div class="infoContainer">
+		<!-- Project description -->
+		<div class="project-description">
+			<p>{{description}}</p>
+		</div>
+
+		<!-- Project details -->
+		<div class="project-details">
+			{{#each info}}
+			<div class="project-detail-item">
 				<h4>{{title}}</h4>
-				<p>{{content}}</p>
+				<p>{{{content}}}</p>
+			</div>
+			{{/each}}
+		</div>
+
+		<!-- Project blocks -->
+		{{#each blocks}}
+			<div class="block">
+				<div class="block-container">
+						
+					<!-- Block header -->
+					<h2>{{header}}</h2>
+
+					<!-- Block sections -->
+					{{#each sections}}
+						<div class="section-container">
+
+							<!-- If wide content -->
+							{{#if column-one}}
+
+								<!-- Section subheader -->
+								{{#if subheader}}
+									<h3>{{title}}</h3>
+								{{/if}}
+
+								<!-- Image -->
+								{{#if image}}
+									<img class="{{class}}" src="{{src}}">
+								{{/if}}
+
+								<!-- Text -->
+								{{#if text}}
+									<p>{{content}}</p>
+								{{/if}}
+
+							{{/if}}
+
+							<!-- If columned content -->
+							{{#if column-two}}
+
+								<!-- Section subheader -->
+								{{#if subheader}}
+									<h3>{{title}}</h3>
+								{{/if}}
+
+								<!-- Image -->
+								{{#if image-and-text}}
+									<div class="image-text-column">
+										<img class="image-left" src="{{src}}">
+										<p>{{content}}</p>
+									</div>
+									
+								{{/if}}
+
+								<!-- Text -->
+								{{#if text}}
+									<p class="text-right">{{content}}</p>
+								{{/if}}
+							{{/if}}
+						</div>
+
+					{{/each}}
+
+				</div>
 			</div>
 		{{/each}}
+
 	</div>
-
-	<!-- Project blocks -->
-	{{#each blocks}}
-		<div class="block">
-			<div class="blockContainer">
-					
-				<div class="blockTitle">
-					<h3>{{title}}</h3>
-				</div>
-
-				<div class="blockContent">
-				<!-- If text -->
-				{{#if text}}
-						<p>{{content}}</p>
-				{{/if}}
-
-				<!-- If image -->
-				{{#if image}}
-						<img class="{{class}}" src="{{src}}">
-				{{/if}}
-				{{#if caption}}
-					{{{caption}}}
-				{{/if}}
-
-				<!-- If link -->
-				{{#if link}}
-						<p><a href={{linkurl}}>{{content}}</a></p>
-				{{/if}}
-				</div>
-			</div>
-		</div>
-	{{/each}}
 
 	<!-- footer -->
 	<div class="footer">

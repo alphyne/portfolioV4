@@ -3,7 +3,7 @@
 		
 		{
 			"name": "CCH",
-			"title": "CCH",
+			"title": "cch",
 			"url": "cch",
 			"description": "",
 			"info": [
@@ -44,7 +44,7 @@
 		},
 		{
 			"name": "BUROW",
-			"title": "BUROW",
+			"title": "burow",
 			"url": "burow",
 			"description": "",
 			"info": [
@@ -80,7 +80,7 @@
 		},
 		{
 			"name": "BLYSS",
-			"title": "Blyss",
+			"title": "blyss",
 			"url": "blyss",
 			"description": "",
 			"info": [
@@ -124,13 +124,14 @@
 		},
 		{
 			"name": "PORTFOLIO",
-			"title": "Portfolio",
+			"title": "portfolio",
 			"url": "portfolio",
-			"description": "",
+			"type": "UI Design & Dev",
+			"description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam ac eros eu felis hendrerit semper gravida a erat. Etiam eleifend fermentum dui, sit amet pellentesque nunc. Morbi velit erat, dignissim vitae libero nec, elementum iaculis ipsum. Quisque scelerisque lacus ac commodo lacinia. Fusce diam metus, venenatis vitae varius a, dapibus in orci. Vivamus interdum dapibus ipsum, sed condimentum nibh pharetra vel. Pellentesque sollicitudin elit in laoreet finibus. Praesent ac diam auctor, accumsan justo eu, dapibus diam.",
 			"info": [
 				{
-					"title": "Role",
-					"content": "Visual design, web development"
+					"title": "Roles",
+					"content": "Fully contributed to web design and development. "
 				},
 				{
 					"title": "Design Tools",
@@ -141,41 +142,63 @@
 					"content": "HTML, CSS, Node.js (Express + Handlebars)"
 				},
 				{
+					"title": "Skills",
+					"content": "Visual design, UI design, front-end and back-end development, branding"
+				},
+				{
 					"title": "Date",
 					"content": "March 2018 - Current"
 				}
 			],
 			"blocks": [
 				{
-					"title": "Objective",
-					"text": true,
-					"content": "Design and develop an online portfolio to showcase personal and professional work."
+					"header": "Objective",
+					"sections": [
+						{
+							"column-two": true,
+							"text": true,
+							"content": "To showcase my adaptive skillset by designing and developing my personal website portfolio."
+						}
+					]
 				},
 				{
-					"title":"Dark Design",
-					"image": true,
-					"src": "/images/ref.png",
-					"class": "blockImageHoriz",
-					"caption": "I have always had an afinity towards dark-themed designs. While they are capable of elegance and sophistication, dark designs can also be edgy and striking. I took inspiration from magazine spreads that I thought are bold yet balanced."
+					"header": "Design",
+					"sections": [
+						{
+							"column-one": true,
+							"subheader": true,
+							"title": "Dark Design",
+							"image": true,
+							"src": "/images/ref.png",
+							"text": true,
+							"content": "I have always had an afinity towards dark-themed designs. While they are capable of elegance and sophistication, dark designs can also be edgy and striking. I took inspiration from magazine spreads that I thought are bold yet balanced."
+						},
+						{
+							"column-two": true,
+							"subheader": true,
+							"title": "Hearing Color",
+							"image-and-text": true,
+							"src": "/images/color.png",
+							"content": "An album's artwork is an extension of the music itself. It enhances the listener's experience by complementing the mood the artist is conveying. These are some albums that I appreciate for both their music and their aesthetics, and that inspired me to play with color palettes surrounding dark design."
+						}
+					]
 				},
 				{
-					"title": "Hearing Color",
-					"image": true,
-					"src": "/images/color.png",
-					"class": "blockImageHoriz",
-					"caption": "An album's artwork is an extension of the music itself. It enhances the listener's experience by complementing the mood the artist is conveying. These are some albums that I appreciate for both their music and their aesthetics, and that inspired me to play with color palettes surrounding dark design."
-				},
-				{
-					"title": "Trial & Error",
-					"image": true,
-					"src": "",
-					"class": "",
-					"caption": "Mock-ups coming soon."
-				},
-				{
-					"title": "Starting from Scratch",
-					"text": true,
-					"content": "In order to hone my web development skills, I challenged myself to build my portfolio from the ground up. Utilizing my knowledge of HTML, CSS and Javascript, I aimed to complete a sleek platform to showcase my work. My education at University of California, San Diego has allowed me to keep expanding my development arsenal by introducing tools that I can incorporate into my portfolio, such as Node.js (Express + Handlebars)."
+					"header": "Development",
+					"sections": [
+						{
+							"column-one": true,
+							"subheader": true,
+							"title": "Trial and Error",
+							"text": true,
+							"content": "Mock-ups coming soon."
+						},
+						{
+							"column-one": true,
+							"text": true,
+							"content":"In order to hone my web development skills, I challenged myself to build my portfolio from the ground up. Utilizing my knowledge of HTML, CSS and Javascript, I aimed to complete a sleek platform to showcase my work. My education at University of California, San Diego has allowed me to keep expanding my development arsenal by introducing tools that I can incorporate into my portfolio, such as Node.js (Express + Handlebars)."
+						}
+					]
 				}
 			]
 		},

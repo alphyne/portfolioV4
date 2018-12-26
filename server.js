@@ -27,7 +27,7 @@ app.use(express.static(path.join(__dirname, 'public')));
 
 app.get('/', index.view);
 app.get('/about', about.view);
-app.get('/:name', project.view);
+app.get('/:title', project.view);
 
 http.createServer(app).listen(app.get('port'), function(){
   console.log('Express server listening on port ' + app.get('port'));

@@ -1,0 +1,152 @@
+.page-container {
+    margin-left: 9rem;
+    margin-right: 9rem;
+
+    h1 {
+        font-family: 'nexa_boldregular';
+        /*font-weight: 600;*/
+        font-size: 2rem;
+        color: black;
+    }
+
+    h2 {
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 500;
+        font-size: 1.5rem;
+        color: #313131;        
+    }
+
+    h3 {
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 300;
+        font-size: 1.5rem;
+        color: #707070;        
+    }
+
+    h4 {
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 500;
+        font-size: 1rem;
+        color: #707070;        
+    }
+
+    p {
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 400;
+        font-size: 1rem;
+        color: black;
+        line-height: 1.7;
+    }
+}
+
+@media(max-width: 840px){
+    .page-container {
+        margin-left: 3rem;
+        margin-right: 3rem;
+    }
+}
+
+.project-landing {
+    background-color: #a0a0a0;
+    width: 100%;
+    height: 35rem;
+}
+
+.project-name {
+
+    margin-top: 4rem;
+    margin-bottom: 2rem;
+
+    span {
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 300;
+        font-size: 1.5rem;
+        color: #707070;
+    }
+}
+
+.project-description {
+    margin-left: 40vw;
+}
+
+
+
+.project-info {
+
+    h3 {
+        margin-bottom: 0.6rem;
+    }
+
+        height: 100%;
+        margin-top: 5rem;
+
+}
+
+.project-details {
+    display: grid;
+    grid-template-columns: 35vw auto auto;
+    grid-column-gap: 5vw;
+    margin-top: 1rem;
+    margin-bottom: 4rem;
+  
+  .project-detail-item {
+    margin-top: 3rem;
+
+    p {
+        margin-top: 0.5rem;
+    }
+
+  }
+}
+
+@media(max-width: 600px){
+    .project-details {
+        display: block;
+    }
+}
+
+@media(max-width: 1024px){
+    .project-details{
+        grid-template-columns: auto auto;
+    }
+
+}
+
+.block-container {
+
+    h2, h3 {
+        margin-bottom: 1.8rem;
+    }
+
+    img {
+        width: 100%;
+    }
+}
+
+.image-left {
+    width: 35vw;
+}
+
+.text-right {
+    margin-left: 40vw;
+}
+
+.section-container * {
+    margin-bottom: 2rem;
+}
+
+.image-text-column{
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-column-gap: 5vw;
+}
+
+@media(max-width: 1024px){
+    .project-description {
+        margin-left: 0;
+    }
+
+    .text-right {
+        margin-left: 0;
+    }
+}

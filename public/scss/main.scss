@@ -6,3 +6,10 @@
 /* Header and footer styling */
 @import "layout/footer";
 @import "layout/header";
+
+/* Base styling */
+@import "base/fonts";
+@import "base/standards";
+
+/* Variables */
+@import "abstracts/variables";
