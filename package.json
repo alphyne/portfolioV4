@@ -1,8 +1,13 @@
 {
   "name": "portfolio",
   "version": "2.0.0",
-  "description": "Personal website portfolio",
+  "description": "Jared Suasin's personal website portfolio",
+  "author": "Jared Suasin <suasin.ja@gmail.com>",
   "main": "server.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/alphyne/portfolioV2"
+  },
   "dependencies": {
     "express": "^3.21.2",
     "express-handlebars": "^3.0.0",
@@ -21,7 +26,6 @@
     "start": "node app",
     "postinstall": "gulp default"
   },
-  "author": "Jared Suasin",
   "license": "ISC",
   "engines": {
     "node": "^8.12.0"
