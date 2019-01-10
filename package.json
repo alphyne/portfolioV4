@@ -24,6 +24,6 @@
   "author": "Jared Suasin",
   "license": "ISC",
   "engines": {
-    "node": "8.12.0"
+    "node": "^8.12.0"
   }
 }
