@@ -1,0 +1,173 @@
+.about-container{
+
+    margin-left: 12rem;
+    margin-right: 12rem;
+
+    h1 {
+        font-family: 'nexa_boldregular';
+        /*font-weight: 600;*/
+        font-size: 4.4rem;
+        color: black;
+        line-height: 4rem;
+
+        a {
+            text-decoration: none;
+            color: black;
+        }
+    }
+}
+
+.profile-grid{
+    margin: 2rem 0;
+    display: grid;
+    grid-template-columns: auto auto;
+}
+
+.profile-image-container {
+    width: 42rem;
+    background-image: url("../images/profile-cropped.jpg");
+    background-position-x: center;
+    background-position-y: bottom;
+    background-size: cover;
+    min-height: 40rem;
+}
+
+.bio-container {
+
+    margin-left: 4rem;
+    margin-top: 2rem;
+
+    h1 {
+        font-family: 'nexa_boldregular';
+        /*font-weight: 600;*/
+        font-size: 2.5rem;
+        color: black;
+        line-height: 2.3rem;
+    }
+
+    h2 {
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 500;
+        color: #707070;
+        font-size: 1.3rem;
+        text-decoration: none;
+        margin: 2rem 0;
+        line-height: 1.7rem;
+    }
+
+    p {
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 400;
+        font-size: 1.2rem;
+        color: black;
+        line-height: 1.8;
+        margin-bottom: 2rem;
+
+        a {
+            text-decoration: none;
+            color: #aaa;
+        }
+
+        a:hover {
+            opacity: 0.5;
+            transition-duration: 0.5s;
+        }
+    }
+
+}
+
+@media(max-width: 1600px){
+    .about-container{
+
+        margin: 0 9rem;
+
+        h1 {
+            font-size: 2rem;
+        }
+    }
+
+    .bio-container {
+
+        margin-left: 2rem;
+        p {
+            font-size: 1.1rem;
+        }
+    }
+
+    .profile-image-container {
+        width: 38rem;
+    }
+}
+
+@media(max-width: 1280px){
+
+    .about-container {
+        margin: 0 6rem;
+    }
+
+    .profile-image-container {
+        width: 30rem;
+        min-height: 28rem;
+    }
+
+    .bio-container {
+
+        p {
+            //font-size: 0.9rem;
+        }
+    }
+
+}
+
+@media(max-width: 1024px){
+
+    .header-container {
+        margin: 0 6rem;
+    }
+
+    .about-container {
+        margin: 0 0;
+    }
+
+    .profile-image-container {
+        width: 100%;
+        min-height: 38rem;
+        background-position-y: center;
+    }
+
+    .profile-grid {
+        display: block;
+    }
+
+    .bio-container {
+        margin: 3rem 6rem;
+        font-size: 0.9rem;
+    }
+}
+
+@media(max-width: 840px){
+    .profile-image-container {
+        min-height: 30rem;
+        
+    }
+
+    .about-container {       
+
+        h1 {
+            a {
+                border-bottom: 0;
+            }
+        }
+    }
+
+
+}
+
+@media(max-width: 600px) {
+
+    .bio-container {
+        margin: 3rem 1rem;
+
+  
+    }
+}

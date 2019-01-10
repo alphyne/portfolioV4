@@ -7,6 +7,7 @@ var handlebars = require('express-handlebars')
 var index = require('./routes/index');
 var about = require('./routes/about');
 var project = require('./routes/project');
+var landing = require('./routes/landing');
 
 var app = express();
 
@@ -25,7 +26,7 @@ app.use(express.session());
 app.use(app.router);*/
 app.use(express.static(path.join(__dirname, 'public')));
 
-app.get('/', index.view);
+app.get('/', landing.view);
 app.get('/about', about.view);
 app.get('/:title', project.view);
 

@@ -1,4 +1,9 @@
-(function() {
+/*$('#toggle').click(function() {
+  $(this).toggleClass('active');
+  $('#overlay').toggleClass('open');
+ });*/
+
+/*(function() {
   
   var Menu = (function() {
     var burger = document.querySelector('.burger');
@@ -51,4 +56,4 @@
   
 }());
 
-$(document).ready(main);
+$(document).ready(main);*/

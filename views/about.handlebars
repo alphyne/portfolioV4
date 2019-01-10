@@ -1,63 +1,105 @@
 <!DOCTYPE html>
-<html>
-<head>
-<title>About | Jared Suasin</title>
-<link href="/css/portfolio.css" rel="stylesheet">
-<link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,500,600" rel="stylesheet">
-<link rel="stylesheet" href="fonts/stylesheet.css" type="text/css" charset="utf-8" />
+<html lang="en">
+	<head>
+			<title>Jared Suasin / About</title>
+			<link href="css/main.css" rel="stylesheet" type="text/css">
+			<link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,500,600" rel="stylesheet">
+			<link rel="stylesheet" href="fonts/stylesheet.css" type="text/css" charset="utf-8" />
+	</head>
+	<body>
 
-</head>
-<body>
+	<div class="about-container">
 
-<div="pageContainer">
+		<!-- Header -->
+		<div class="header-container">
+			<div class="name-container">
+				<h1><a href="/">JARED SUASIN</a></h1>
+			</div>
 
-	<!-- Header -->
-	<div class="header-container">
-		<div class="nameContainer">
-			<h1>JARED SUASIN.</h1>
+			<ul class="navBarContainer">
+				<li class="fullNavBar"><a class="notActive" href="/resume"><span>Resume</span></a></li>
+				<li class="fullNavBar"><a class="active" href="/about"><span>About</span></a></li>
+				<!--<li class="fullNavBar"><a class="notActive" href="/"><span>Home</span></a></li>-->
+			</ul>
+
+			<!--<div class="ham-menu">
+				<div class="button_container" id="toggle"><span class="top"></span><span class="middle"></span><span class="bottom"></span></div>
+				<div class="overlay" id="overlay">
+					<nav class="overlay-menu">
+						<ul>
+							<li><a href="#">Home</a></li>
+							<li><a href="#">About</a></li>
+							<li><a href="#">Work</a></li>
+							<li><a href="#">Contact</a></li>
+						</ul>
+					</nav>
+				</div>
+			</div>-->
 		</div>
+    
 
-		<div class="tagContainer">
-			<a class="tag1">Full Stack Designer</a>
-			<a class="tag2">[ UX Engineering / UI Design / Visual Design ]</a>
-		</div>
 
-		<ul class="navBarContainer">
-			<li><a class="notActive" href="/resume"><span>Resume</span></a></li>
-			<li><a class="active" href="/about"><span>About</span></a></li>
-			<li><a class="notActive" href="/"><span>Work</span></a></li>
-		</ul>
 
-	</div>
-
-	<!-- Bio -->
 		
-	<div class="bio">
-		<h1>
-			UX Research | UI Design | Front-End Development
-		</h1>
 
-		<p id="bio1">
-			My name is <span class="accent">Jared Suasin</span>. I'm a third year student at University of California San Diego, pursuing a degree in Cognitive Science: Design and Interaction with a minor in Computer Science. 
-			I'm an enthusiastic designer who has a knack for <span class="accent">storytelling</span>.
-		</p>
-		<p id="bio2">
-			<span class="accent">Human-centered design</span> motivates me to challenge my creativity and always keep an open mind.
-			I believe in the idea of <span class="accent">balance</span> between everything, from functionality and aesthetics to school and family.
-		</p>
-		<p id="bio3">
-			When I am not working, I often find myself developing my <span class="accent">artistry</span> through music, theatre and dance.
-		</p>
+		<!-- Bio -->
+		<div class="profile-grid">
+			
+			<div class="profile-image-container"></div>
+			
+			<div class="bio-container">	
 
+				<h1>Often lost in thought.</h1>
+
+				<h2>UX Engineering / UI Design / Visual Design</h2>
+
+				<p>Hi there, I’m Jared! I’m a fourth year undergraduate at UC San Diego, currently studying for my degree in Cognitive Science (Human Computer Interaction) and a minor in Computer Science.</p>
+			
+				<p>Previously I was a User Experience Design Intern at <a href="https://www.dexcom.com/">Dexcom</a>.</p>
+
+				<p>When I’m not designing, you can find me running local <a href="https://www.operationsantasd.com/">service projects</a> around San Diego county or grooving out with my dance team.</p>
+			
+			</div>
+		</div>
+
+
+
+
+		<!-- Footer -->
+		<div class="footer-container">
+
+			<div class="copyright">
+				<h2>Copyright &copy 2019, Jared Suasin</h2>
+			</div>
+
+			<div class="icon-container">
+				<ul>
+					<li>
+						<a href="" title="Resume">
+							<img src="images/resume2.png">
+						</a>
+					</li>
+					<li>
+						<a href="/mailto:suasin.ja@gmail.com" title="Mail">
+							<img src="images/mail.png">
+						</a>
+					</li>
+					<li>
+						<a href="https://www.linkedin.com/in/jared-suasin-982a20133" title="LinkedIn">
+							<img src="images/linkedin.png">
+						</a>
+					</li>
+					<li>
+						<a href="https://github.com/alphyne" title="GitHub">
+							<img src="images/github.png">
+						</a>
+					</li>
+				</ul>
+			</div>
+		</div>
 	</div>
 
-	<img class="profileImage" src="images/profile.png"></img>
+	<script src="/js/portfolio.js"></script>
 
-	<!-- Footer -->
-	<div class="footer"></div>
-</div>
-
-<script src="/js/portfolio.js"></script>
-
-</body>
+	</body>
 </html>
