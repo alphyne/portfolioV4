@@ -45,6 +45,11 @@
 .landing-description {
     margin-left: 36vw;
     margin-top: 2rem;
+
+    a {
+        text-decoration: none;
+        color: #45af6e;
+    }
 }
 
 
@@ -63,7 +68,7 @@
     }
 }
 
-@media(max-width: 1280px){
+@media(max-width: 1200px){
 
 
     .landing-description {

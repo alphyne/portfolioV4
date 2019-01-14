@@ -111,7 +111,7 @@
     margin-bottom: 2rem; }
     .bio-container p a {
       text-decoration: none;
-      color: #aaa; }
+      color: #45af6e; }
     .bio-container p a:hover {
       opacity: 0.5;
       transition-duration: 0.5s; }
@@ -295,6 +295,9 @@
 .landing-description {
   margin-left: 36vw;
   margin-top: 2rem; }
+  .landing-description a {
+    text-decoration: none;
+    color: #45af6e; }
 
 @media (max-width: 1600px) {
   .landing-container {
@@ -305,7 +308,7 @@
   .landing-description {
     margin-left: 36vw; } }
 
-@media (max-width: 1280px) {
+@media (max-width: 1200px) {
   .landing-description {
     margin-left: 0; } }
 
