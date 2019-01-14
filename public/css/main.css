@@ -71,6 +71,9 @@
     .about-container h1 a {
       text-decoration: none;
       color: black; }
+    .about-container h1 a:hover {
+      color: #707070;
+      transition-duration: 0.5s; }
 
 .profile-grid {
   margin: 2rem 0;
@@ -276,6 +279,10 @@
       text-decoration: none;
       color: black;
       border-bottom: 2px solid #313131; }
+    .landing-container h1 a:hover {
+      color: #707070;
+      border-bottom-color: #707070;
+      transition-duration: 0.5s; }
   .landing-container h2 {
     font-family: 'Montserrat', sans-serif;
     font-weight: 400;
