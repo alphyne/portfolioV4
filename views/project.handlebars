@@ -2,128 +2,183 @@
 <!DOCTYPE html>
 <html lang="en">
 	<head>
-		<title>{{title}}</title>
+		<title>Jared Suasin / {{title}}</title>
 		<link href="css/main.css" rel="stylesheet" type="text/css">
 		<link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,500,600" rel="stylesheet">
 		<link rel="stylesheet" href="fonts/stylesheet.css" type="text/css" charset="utf-8" />
+	
+		<!-- Favicons -->
+        <link rel="apple-touch-icon" sizes="180x180" href="/favicons/apple-touch-icon.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="/favicons//favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="/favicons//favicon-16x16.png">
+        <link rel="manifest" href="/favicons//site.webmanifest">
+        <link rel="mask-icon" href="/favicons//safari-pinned-tab.svg" color="#45af6e">
+        <meta name="msapplication-TileColor" content="#da532c">
+        <meta name="theme-color" content="#ffffff">
+	
 	</head>
 	<body>
 
-	<!-- Header -->
-	<div class="header-container">
-		<div class="nameContainer">
-			<h1>JARED SUASIN.</h1>
-		</div>
+		<!-- Header -->
+		<div class="header-container">
+			<div id="full-name" class="name-container">
+				<h1><a href="/">JARED SUASIN</a></h1>
+			</div>
 
-		<div class="tagContainer">
-			<a class="tag1">Full Stack Designer</a>
-			<a class="tag2">[ UX Engineering / UI Design / Visual Design ]</a>
-		</div>
+			<div id="initials" class="name-container">
+				<h1><a href="/">JS</a></h1>
+			</div>
 
-		<ul class="navBarContainer">
-			<li class="fullNavBar"><a class="notActive" href="/resume"><span>Resume</span></a></li>
-			<li class="fullNavBar"><a class="notActive" href="/about"><span>About</span></a></li>
-			<li class="fullNavBar"><a class="notActive" href="/"><span>Work</span></a></li>
-		</ul>
-	</div>
+			<ul class="nav-container">
+				<li class="nav-item"><a class="notActive" href="/resume"><span>Resume</span></a></li>
+				<li class="nav-item"><a class="notActive" href="/about"><span>About</span></a></li>
+				<li class="nav-item"><a class="notActive" href="/"><span>Work</span></a></li>
+			</ul>
+
+			<!--<div class="ham-menu">
+				<div class="button_container" id="toggle"><span class="top"></span><span class="middle"></span><span class="bottom"></span></div>
+				<div class="overlay" id="overlay">
+					<nav class="overlay-menu">
+						<ul>
+							<li><a href="#">Home</a></li>
+							<li><a href="#">About</a></li>
+							<li><a href="#">Work</a></li>
+							<li><a href="#">Contact</a></li>
+						</ul>
+					</nav>
+				</div>
+			</div>-->
+		</div>
 
 	<!-- Project content -->
 		<div class="project-landing">
 
 		</div>
 
-	<div class="page-container">
-		
+		<div class="page-container">
 
-		<!-- Project title -->
-		<div class="project-name">
-			<h1>{{name}}<span> / {{type}}</span></h1>
-		</div>
+			<div class="project-container">
+				
 
-		<!-- Project description -->
-		<div class="project-description">
-			<p>{{description}}</p>
-		</div>
-
-		<!-- Project details -->
-		<div class="project-details">
-			{{#each info}}
-			<div class="project-detail-item">
-				<h4>{{title}}</h4>
-				<p>{{{content}}}</p>
-			</div>
-			{{/each}}
-		</div>
-
-		<!-- Project blocks -->
-		{{#each blocks}}
-			<div class="block">
-				<div class="block-container">
-						
-					<!-- Block header -->
-					<h2>{{header}}</h2>
-
-					<!-- Block sections -->
-					{{#each sections}}
-						<div class="section-container">
-
-							<!-- If wide content -->
-							{{#if column-one}}
-
-								<!-- Section subheader -->
-								{{#if subheader}}
-									<h3>{{title}}</h3>
-								{{/if}}
-
-								<!-- Image -->
-								{{#if image}}
-									<img class="{{class}}" src="{{src}}">
-								{{/if}}
-
-								<!-- Text -->
-								{{#if text}}
-									<p>{{content}}</p>
-								{{/if}}
-
-							{{/if}}
-
-							<!-- If columned content -->
-							{{#if column-two}}
-
-								<!-- Section subheader -->
-								{{#if subheader}}
-									<h3>{{title}}</h3>
-								{{/if}}
-
-								<!-- Image -->
-								{{#if image-and-text}}
-									<div class="image-text-column">
-										<img class="image-left" src="{{src}}">
-										<p>{{content}}</p>
-									</div>
-									
-								{{/if}}
-
-								<!-- Text -->
-								{{#if text}}
-									<p class="text-right">{{content}}</p>
-								{{/if}}
-							{{/if}}
-						</div>
-
-					{{/each}}
-
+				<!-- Project title -->
+				<div class="project-name">
+					<h1>{{name}}<span> / {{type}}</span></h1>
 				</div>
-			</div>
-		{{/each}}
 
-	</div>
+				<!-- Project description -->
+				<div class="project-description">
+					<p>{{description}}</p>
+				</div>
 
-	<!-- footer -->
-	<div class="footer">
+				<!-- Project details -->
+				<div class="project-details">
+					{{#each info}}
+					<div class="project-detail-item">
+						<h4>{{title}}</h4>
+						<p>{{{content}}}</p>
+					</div>
+					{{/each}}
+				</div>
 
+				<!-- Project blocks -->
+				{{#each blocks}}
+					<div class="block">
+						<div class="block-container">
+								
+							<!-- Block header -->
+							<h2>{{header}}</h2>
 
-	</div>
+							<!-- Block sections -->
+							{{#each sections}}
+								<div class="section-container">
+
+									<!-- If wide content -->
+									{{#if column-one}}
+
+										<!-- Section subheader -->
+										{{#if subheader}}
+											<h3>{{title}}</h3>
+										{{/if}}
+
+										<!-- Image -->
+										{{#if image}}
+											<img class="{{class}}" src="{{src}}">
+										{{/if}}
+
+										<!-- Text -->
+										{{#if text}}
+											<p>{{content}}</p>
+										{{/if}}
+
+									{{/if}}
+
+									<!-- If columned content -->
+									{{#if column-two}}
+
+										<!-- Section subheader -->
+										{{#if subheader}}
+											<h3>{{title}}</h3>
+										{{/if}}
+
+										<!-- Image -->
+										{{#if image-and-text}}
+											<div class="image-text-column">
+												<img class="image-left" src="{{src}}">
+												<p>{{content}}</p>
+											</div>
+											
+										{{/if}}
+
+										<!-- Text -->
+										{{#if text}}
+											<p class="text-right">{{content}}</p>
+										{{/if}}
+									{{/if}}
+								</div>
+
+							{{/each}}
+
+						</div>
+					</div>
+				{{/each}}
+
+			</div> <!-- project-container -->
+
+			<!-- Footer -->
+			<div class="footer-container">
+
+				<div id="copyright">
+					<h2>Copyright &copy 2019, Jared Suasin</h2>
+				</div>
+
+				<div class="icon-container">
+					<ul>
+						<li>
+							<a href="/resume" title="Resume">
+								<img src="images/resume2.png">
+							</a>
+						</li>
+						<li>
+							<a href="mailto:suasin.ja@gmail.com" title="Mail">
+								<img src="images/mail.png">
+							</a>
+						</li>
+						<li>
+							<a href="https://www.linkedin.com/in/jared-suasin-982a20133" title="LinkedIn">
+								<img src="images/linkedin.png">
+							</a>
+						</li>
+						<li>
+							<a href="https://github.com/alphyne" title="GitHub">
+								<img src="images/github.png">
+							</a>
+						</li>
+					</ul>
+				</div>
+			</div> <!-- footer-container -->
+
+		</div> <!-- page-container -->
+
 </div>
 
 <script src="/js/portfolio.js"></script>

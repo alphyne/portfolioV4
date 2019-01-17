@@ -18,18 +18,22 @@
 	</head>
 	<body>
 
-	<div class="about-container">
+
 
 		<!-- Header -->
 		<div class="header-container">
-			<div class="name-container">
+			<div id="full-name" class="name-container">
 				<h1><a href="/">JARED SUASIN</a></h1>
 			</div>
 
-			<ul class="navBarContainer">
-				<li class="fullNavBar"><a class="notActive" href="/resume"><span>Resume</span></a></li>
-				<li class="fullNavBar"><a class="active" href="/about"><span>About</span></a></li>
-				<!--<li class="fullNavBar"><a class="notActive" href="/"><span>Home</span></a></li>-->
+			<div id="initials" class="name-container">
+				<h1><a href="/">JS</a></h1>
+			</div>
+
+			<ul class="nav-container">
+				<li class="nav-item"><a class="notActive" href="/resume"><span>Resume</span></a></li>
+				<li class="nav-item"><a class="active" href="/about"><span>About</span></a></li>
+				<li class="nav-item"><a class="notActive" href="/"><span>Work</span></a></li>
 			</ul>
 
 			<!--<div class="ham-menu">
@@ -46,16 +50,15 @@
 				</div>
 			</div>-->
 		</div>
+
+	<div id="wide-profile-image" class="profile-image-container"></div>
     
-
-
-
-		
+	<div class="page-container">
 
 		<!-- Bio -->
 		<div class="profile-grid">
 			
-			<div class="profile-image-container"></div>
+			<div id="block-profile-image" class="profile-image-container"></div>
 			
 			<div class="bio-container">	
 
@@ -78,7 +81,7 @@
 		<!-- Footer -->
 		<div class="footer-container">
 
-			<div class="copyright">
+			<div id="copyright">
 				<h2>Copyright &copy 2019, Jared Suasin</h2>
 			</div>
 
@@ -106,8 +109,8 @@
 					</li>
 				</ul>
 			</div>
-		</div>
-	</div>
+		</div> <!-- footer-container -->
+	</div> <!-- page-container -->
 
 	<script src="/js/portfolio.js"></script>
 

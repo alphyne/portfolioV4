@@ -4,30 +4,30 @@
   /*background-color: #161616;*/
   width: 100%; }
 
-.gridItemContainer {
+.grid-item-container {
   text-align: justify;
   font-size: 0.1px; }
 
-.gridItem {
+.grid-item {
   display: inline-block;
-  width: 50%;
+  width: 49.5%;
   height: 70vh;
-  margin-bottom: 2%;
+  margin-bottom: 1%;
   border-style: solid;
   text-align: center;
   background: #a0a0a0; }
 
-.itemName {
+.item-name {
   font-family: 'Roboto', sans-serif;
   font-weight: 400;
   color: black;
   font-size: 30px;
   position: relative; }
 
-.gridLink {
+.grid-link {
   text-decoration: none; }
 
-.gridItemContainer:after {
+.grid-item-container:after {
   content: '';
   display: inline-block;
   width: 100%; }
@@ -35,9 +35,6 @@
 /* -- MEDIA QUERIES DEFINING RESPONSIVE LAYOUTS -- */
 /* 2 columns */
 @media (max-width: 3000px) {
-  .gridItem {
-    width: 49.5%;
-    margin-bottom: 1%; }
   /* Change grid transformation size */
   .grid > div > a > div:hover {
     transition: .2s transform; }
@@ -45,8 +42,8 @@
     transition: .2s transform; } }
 
 /* 1 column */
-@media (max-width: 940px) {
-  .gridItem {
+@media (max-width: 840px) {
+  .grid-item {
     width: 100%;
     margin-bottom: 2.5%; }
   /* Change grid transformation size */
@@ -59,26 +56,16 @@
   width: 100%;
   height: 100%; }
 
-.about-container {
-  margin-left: 12rem;
-  margin-right: 12rem; }
-  .about-container h1 {
-    font-family: 'nexa_boldregular';
-    /*font-weight: 600;*/
-    font-size: 4.4rem;
-    color: black;
-    line-height: 4rem; }
-    .about-container h1 a {
-      text-decoration: none;
-      color: black; }
-    .about-container h1 a:hover {
-      color: #707070;
-      transition-duration: 0.5s; }
-
 .profile-grid {
   margin: 2rem 0;
   display: grid;
-  grid-template-columns: auto auto; }
+  grid-template-columns: 1fr 1fr; }
+
+#wide-profile-image {
+  display: none; }
+
+#block-profile-image {
+  display: block; }
 
 .profile-image-container {
   width: 42rem;
@@ -89,26 +76,15 @@
   min-height: 40rem; }
 
 .bio-container {
-  margin-left: 4rem;
-  margin-top: 2rem; }
+  padding-left: 4rem;
+  padding-top: 2rem; }
   .bio-container h1 {
-    font-family: 'nexa_boldregular';
-    /*font-weight: 600;*/
-    font-size: 2.5rem;
-    color: black;
     line-height: 2.3rem; }
   .bio-container h2 {
-    font-family: 'Montserrat', sans-serif;
-    font-weight: 500;
     color: #707070;
-    font-size: 1.3rem;
-    text-decoration: none;
     margin: 2rem 0;
     line-height: 1.7rem; }
   .bio-container p {
-    font-family: 'Montserrat', sans-serif;
-    font-weight: 400;
-    font-size: 1.2rem;
     color: black;
     line-height: 1.8;
     margin-bottom: 2rem; }
@@ -120,23 +96,15 @@
       transition-duration: 0.5s; }
 
 @media (max-width: 1600px) {
-  .about-container {
-    margin: 0 9rem; }
-    .about-container h1 {
-      font-size: 2rem; }
   .bio-container {
-    margin-left: 2rem; }
-    .bio-container p {
-      font-size: 1.1rem; }
+    padding-left: 2rem; }
   .profile-image-container {
     width: 38rem; } }
 
 @media (max-width: 1280px) {
-  .about-container {
-    margin: 0 6rem; }
   .profile-image-container {
     width: 30rem;
-    min-height: 28rem; } }
+    min-height: 20rem; } }
 
 @media (max-width: 1024px) {
   .header-container {
@@ -147,10 +115,14 @@
     width: 100%;
     min-height: 38rem;
     background-position-y: center; }
+  #wide-profile-image {
+    display: block; }
+  #block-profile-image {
+    display: none; }
   .profile-grid {
     display: block; }
   .bio-container {
-    margin: 3rem 6rem;
+    padding: 2rem 6vw;
     font-size: 0.9rem; } }
 
 @media (max-width: 840px) {
@@ -160,45 +132,44 @@
     border-bottom: 0; } }
 
 @media (max-width: 600px) {
-  .profile-grid {
-    margin-top: 4rem; }
   .bio-container {
-    margin: 3rem 1rem; } }
+    padding: 0 2rem; } }
 
-.page-container {
-  margin-left: 9rem;
-  margin-right: 9rem; }
-  .page-container h1 {
-    font-family: 'nexa_boldregular';
-    /*font-weight: 600;*/
-    font-size: 2rem;
-    color: black; }
-  .page-container h2 {
-    font-family: 'Montserrat', sans-serif;
-    font-weight: 500;
-    font-size: 1.5rem;
-    color: #313131; }
-  .page-container h3 {
-    font-family: 'Montserrat', sans-serif;
-    font-weight: 300;
-    font-size: 1.5rem;
-    color: #707070; }
-  .page-container h4 {
-    font-family: 'Montserrat', sans-serif;
-    font-weight: 500;
-    font-size: 1rem;
-    color: #707070; }
-  .page-container p {
-    font-family: 'Montserrat', sans-serif;
-    font-weight: 400;
-    font-size: 1rem;
-    color: black;
-    line-height: 1.7; }
+.project-container {
+  /*h1 {
+        font-family: 'nexa_boldregular';
+        font-size: 2rem;
+        color: black;
+    }
 
-@media (max-width: 840px) {
-  .page-container {
-    margin-left: 3rem;
-    margin-right: 3rem; } }
+    h2 {
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 500;
+        font-size: 1.5rem;
+        color: #313131;        
+    }
+
+    h3 {
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 300;
+        font-size: 1.5rem;
+        color: #707070;        
+    }
+
+    h4 {
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 500;
+        font-size: 1rem;
+        color: #707070;        
+    }
+
+    p {
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 400;
+        font-size: 1rem;
+        color: black;
+        line-height: 1.7;
+    }*/ }
 
 .project-landing {
   background-color: #a0a0a0;
@@ -214,8 +185,8 @@
     font-size: 1.5rem;
     color: #707070; }
 
-.project-description {
-  margin-left: 40vw; }
+.project-description, .text-right {
+  margin-left: 30vw; }
 
 .project-info {
   height: 100%;
@@ -225,22 +196,21 @@
 
 .project-details {
   display: grid;
-  grid-template-columns: 35vw auto auto;
-  grid-column-gap: 5vw;
+  grid-template-columns: 50% auto auto;
+  grid-column-gap: 0.4vw;
   margin-top: 1rem;
   margin-bottom: 4rem; }
   .project-details .project-detail-item {
-    margin-top: 3rem; }
+    margin-top: 3rem;
+    padding-right: 1rem; }
     .project-details .project-detail-item p {
       margin-top: 0.5rem; }
-
-@media (max-width: 600px) {
-  .project-details {
-    display: block; } }
-
-@media (max-width: 1024px) {
-  .project-details {
-    grid-template-columns: auto auto; } }
+      .project-details .project-detail-item p a {
+        text-decoration: none;
+        color: #45af6e; }
+      .project-details .project-detail-item p a:hover {
+        opacity: 0.5;
+        transition-duration: 0.5s; }
 
 .block-container h2, .block-container h3 {
   margin-bottom: 1.8rem; }
@@ -251,9 +221,6 @@
 .image-left {
   width: 35vw; }
 
-.text-right {
-  margin-left: 40vw; }
-
 .section-container * {
   margin-bottom: 2rem; }
 
@@ -262,11 +229,28 @@
   grid-template-columns: auto auto;
   grid-column-gap: 5vw; }
 
+@media (max-width: 1600px) {
+  .project-description, .text-right {
+    margin-left: 36vw; } }
+
 @media (max-width: 1024px) {
+  .project-container {
+    padding: 2rem 6vw;
+    font-size: 0.9rem; }
   .project-description {
     margin-left: 0; }
+  .project-details {
+    grid-template-columns: auto auto; }
   .text-right {
     margin-left: 0; } }
+
+@media (max-width: 840px) {
+  .image-text-column {
+    display: block; } }
+
+@media (max-width: 600px) {
+  .project-details {
+    display: block; } }
 
 .landing-container {
   margin-left: 17rem;
@@ -353,16 +337,15 @@
 /* Header and footer styling */
 .footer-container {
   height: 6rem;
-  margin-top: 6rem; }
+  margin: 3rem 0 0 0; }
 
-.copyright {
+#copyright {
   display: inline-block; }
-  .copyright h2 {
+  #copyright h2 {
     font-family: 'Montserrat', sans-serif;
     font-weight: 500;
     color: #707070;
     font-size: 1rem;
-    text-decoration: none;
     margin: 0.5rem 0; }
 
 .icon-container {
@@ -378,42 +361,48 @@
 
 @media (max-width: 1024px) {
   .footer-container {
-    margin: 0 6rem;
-    margin-top: 8rem; } }
+    margin: 3rem 6vw 0 6vw; } }
 
 @media (max-width: 840px) {
   .footer-container {
     text-align: center;
-    margin-top: 3rem;
-    height: 10rem; }
+    margin: 2rem 6vw 0 6vw; }
   .copyright {
     display: block;
     padding: 2rem 0; }
   .icon-container {
-    float: none; }
+    float: none;
+    padding-top: 1rem; }
     .icon-container img {
       height: 1.7rem; } }
-
-#navBar {
-  margin-bottom: 2vw; }
 
 .header-container {
   padding: 0;
   margin: 0;
   border: 0;
-  margin: 0 0rem; }
+  margin: 0 20vw; }
   .header-container h1 {
     font-family: 'nexa_boldregular';
     /*font-weight: 600;*/
     font-size: 3.2rem;
-    color: black; }
+    color: black;
+    line-height: 4rem; }
+    .header-container h1 a {
+      text-decoration: none;
+      color: black; }
+    .header-container h1 a:hover {
+      color: #707070;
+      transition-duration: 0.5s; }
 
 .name-container {
   margin-top: 2.5rem;
   position: absolute; }
 
+#initials {
+  display: none; }
+
 /* Nav bar */
-.navBarContainer {
+.nav-container {
   list-style-type: none;
   margin: 0;
   padding: 0;
@@ -422,20 +411,20 @@
   top: 0;
   height: 10rem; }
 
-.fullNavBar {
+.nav-item {
   float: right; }
-  .fullNavBar a {
+  .nav-item a {
     display: block;
     font-family: 'Montserrat', sans-serif;
     font-weight: 500;
     font-size: 1.5rem;
     color: #707070;
     text-align: center;
-    padding-top: 3.1rem;
+    padding-top: 3.5rem;
     padding-left: 1.6vw;
     padding-right: 1.6vw;
     text-decoration: none; }
-  .fullNavBar .active {
+  .nav-item .active {
     text-decoration: line-through; }
 
 /* Strikethrough hover pen by tsimenis on Codepen */
@@ -470,31 +459,30 @@
   width: 100%;
   transition: 0s; }
 
-.header {
-  display: inline;
-  position: absolute;
-  z-index: 5;
-  width: 100%; }
-
 @media (max-width: 1600px) {
   .header-container {
-    margin: 0 0rem; } }
-
-@media (max-width: 1280px) {
-  .header-container {
-    margin: 0 0rem; } }
+    margin: 0 14vw;
+    /*h1 {
+          font-size: 2rem;
+      }*/ } }
 
 @media (max-width: 1024px) {
   .header-container {
-    margin: 0 6rem; }
-  .navBarContainer {
-    height: 7rem; }
-  .navBarContainer > li {
-    display: none; } }
+    margin: 0 6vw; }
+  #initials {
+    display: block; }
+  #full-name {
+    display: none; }
+  .nav-container {
+    height: 8rem; } }
 
-@media (max-width: 600px) {
+@media (max-width: 840px) {
   .header-container {
-    margin: 0 1rem; } }
+    /*h1 {
+          a {
+              border-bottom: 0;
+          }
+      }*/ } }
 
 .ham-menu {
   display: none; }
@@ -702,6 +690,51 @@ body {
     left: 0;
   }
 }*/
+.page-container {
+  margin: 0 20vw; }
+  .page-container h1 {
+    font-family: 'nexa_boldregular';
+    /*font-weight: 600;*/
+    font-size: 2rem;
+    color: black; }
+  .page-container h2 {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    font-size: 1.5rem;
+    color: #313131; }
+  .page-container h3 {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 300;
+    font-size: 1.5rem;
+    color: #707070; }
+  .page-container h4 {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    font-size: 1rem;
+    color: #707070; }
+  .page-container p {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    font-size: 1rem;
+    color: black;
+    line-height: 1.7; }
+
+@media (max-width: 1600px) {
+  .page-container {
+    margin: 0 14vw; } }
+
+@media (max-width: 1024px) {
+  .page-container {
+    margin: 0 0; } }
+
+@media (max-width: 840px) {
+  .page-container {
+    /*h1 {
+            a {
+                border-bottom: 0;
+            }
+        }*/ } }
+
 /* Base styling */
 @font-face {
   font-family: 'nexa_boldregular';

@@ -1,32 +1,17 @@
-.about-container{
 
-    margin-left: 12rem;
-    margin-right: 12rem;
-
-    h1 {
-        font-family: 'nexa_boldregular';
-        /*font-weight: 600;*/
-        font-size: 4.4rem;
-        color: black;
-        line-height: 4rem;
-
-        a {
-            text-decoration: none;
-            color: black;
-        }
-
-        a:hover {
-            color: #707070;
-            transition-duration: 0.5s;
-        }
-        
-    }
-}
 
 .profile-grid{
     margin: 2rem 0;
     display: grid;
-    grid-template-columns: auto auto;
+    grid-template-columns: 1fr 1fr;
+}
+
+#wide-profile-image {
+    display: none;
+}
+
+#block-profile-image {
+    display: block;
 }
 
 .profile-image-container {
@@ -40,31 +25,21 @@
 
 .bio-container {
 
-    margin-left: 4rem;
-    margin-top: 2rem;
+    padding-left: 4rem;
+    padding-top: 2rem;
 
     h1 {
-        font-family: 'nexa_boldregular';
-        /*font-weight: 600;*/
-        font-size: 2.5rem;
-        color: black;
         line-height: 2.3rem;
     }
 
     h2 {
-        font-family: 'Montserrat', sans-serif;
-        font-weight: 500;
         color: #707070;
-        font-size: 1.3rem;
-        text-decoration: none;
         margin: 2rem 0;
         line-height: 1.7rem;
     }
 
     p {
-        font-family: 'Montserrat', sans-serif;
-        font-weight: 400;
-        font-size: 1.2rem;
+
         color: black;
         line-height: 1.8;
         margin-bottom: 2rem;
@@ -83,20 +58,12 @@
 }
 
 @media(max-width: 1600px){
-    .about-container{
-
-        margin: 0 9rem;
-
-        h1 {
-            font-size: 2rem;
-        }
-    }
 
     .bio-container {
 
-        margin-left: 2rem;
+        padding-left: 2rem;
         p {
-            font-size: 1.1rem;
+            //font-size: 1.1rem;
         }
     }
 
@@ -107,13 +74,9 @@
 
 @media(max-width: 1280px){
 
-    .about-container {
-        margin: 0 6rem;
-    }
-
     .profile-image-container {
         width: 30rem;
-        min-height: 28rem;
+        min-height: 20rem;
     }
 
     .bio-container {
@@ -141,17 +104,26 @@
         background-position-y: center;
     }
 
+    #wide-profile-image {
+        display: block;
+    }
+
+    #block-profile-image {
+        display: none;
+    }
+
     .profile-grid {
         display: block;
     }
 
     .bio-container {
-        margin: 3rem 6rem;
+        padding: 2rem 6vw;
         font-size: 0.9rem;
     }
 }
 
 @media(max-width: 840px){
+    
     .profile-image-container {
         min-height: 30rem;
         
@@ -165,17 +137,16 @@
             }
         }
     }
-
-
+    
 }
 
 @media(max-width: 600px) {
 
     .profile-grid {
-        margin-top: 4rem;
+        //margin-top: 4rem;
     }
 
     .bio-container {
-        margin: 3rem 1rem;
+        padding: 0 2rem;
     }
 }

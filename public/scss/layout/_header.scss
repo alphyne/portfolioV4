@@ -1,20 +1,30 @@
-#navBar {
-	margin-bottom: 2vw;
-}
+.header-container{
 
-.header-container {
 	padding: 0;
 	margin: 0;
 	border: 0;
-	margin: 0 0rem;;
-  
-  h1{
-    font-family: 'nexa_boldregular';
-    /*font-weight: 600;*/
-    font-size: 3.2rem;
-    color: black;
+	margin: 0 20vw;
+
+  h1 {
+      font-family: 'nexa_boldregular';
+      /*font-weight: 600;*/
+      font-size: 3.2rem;
+      color: black;
+      line-height: 4rem;
+
+      a {
+          text-decoration: none;
+          color: black;
+      }
+
+      a:hover {
+          color: #707070;
+          transition-duration: 0.5s;
+      }
+      
   }
 }
+
 
 .name-container {
 	margin-top: 2.5rem;
@@ -22,9 +32,13 @@
     
 }
 
+#initials {
+  display: none;
+}
+
 
 /* Nav bar */
-.navBarContainer {
+.nav-container {
     list-style-type: none;
     margin: 0;
     padding: 0;
@@ -34,7 +48,7 @@
 	height: 10rem;
 }
 
-.fullNavBar {
+.nav-item {
     float: right;
 
     a {
@@ -45,7 +59,7 @@
     
         color: #707070;
         text-align: center;
-        padding-top: 3.1rem;
+        padding-top: 3.5rem;
         padding-left: 1.6vw;
         padding-right: 1.6vw;
         text-decoration: none;
@@ -99,44 +113,57 @@
     }
 }
 
-
-.header {
-    display: inline;
-  position: absolute;
-  z-index: 5;
-  width: 100%;
-}
-
 @media(max-width: 1600px){
-    .header-container {
-        margin: 0 0rem;
-    }
+  .header-container{
+
+      margin: 0 14vw;
+
+      /*h1 {
+          font-size: 2rem;
+      }*/
+  }
 }
 
 @media(max-width: 1280px){
-    .header-container {
-        margin: 0 0rem;
-    }
+
+  .header-container {
+      //margin: 0 6rem;
+  }
 }
 
 @media(max-width: 1024px){
-    .header-container {
-        margin: 0 6rem;
-    }
 
-    .navBarContainer {
-        height: 7rem;
-    }
+  .header-container {
+      margin: 0 6vw;
+  }
 
-    .navBarContainer > li {
-        display: none;
-    }
+  #initials {
+    display: block;
+  }
+
+  #full-name {
+    display: none;
+  }
+
+  .nav-container {
+    height: 8rem;
+  }
+
+  .nav-container > li {
+      //display: none;
+  }
 }
 
-@media(max-width: 600px){
-    .header-container {
-        margin: 0 1rem;
-    }
+@media(max-width: 840px){
+
+  .header-container {       
+
+      /*h1 {
+          a {
+              border-bottom: 0;
+          }
+      }*/
+  }
 }
 
 .ham-menu {
