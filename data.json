@@ -2,19 +2,29 @@
 	"projects": [
 		{
 			"name": "DEXCOM",
-			"title": "dexcom",
+			"title": "Dexcom",
 			"url": "dexcom",
-			"description": ""
+			"description": "",
+			"info": [
+				{
+					"title": "Title",
+					"content": "UX Design Intern (IT)"
+				},
+				{
+					"title": "Date",
+					"content": "July 2018 - September 2018"
+				}
+			]
 		},
 		{
 			"name": "BUROW",
-			"title": "burow",
+			"title": "Burow",
 			"url": "burow",
 			"description": "",
 			"info": [
 				{
 					"title": "Role",
-					"content": "Visual design, web development, branding"
+					"content": "Visual design, front-end development, branding"
 				},
 				{
 					"title": "Design Tools",
@@ -22,7 +32,11 @@
 				},
 				{
 					"title": "Development Tools",
-					"content": "HTML, CSS, JavaScript, Node.js, API Linking"
+					"content": "HTML, CSS, Javascript, Node.js, React, API Linking"
+				},
+				{
+					"title": "Team",
+					"content": "Aman Gupta, Emily Nguyen, Joel Sequeira"
 				},
 				{
 					"title": "Date",
@@ -44,7 +58,7 @@
 		},
 		{
 			"name": "BLYSS",
-			"title": "blyss",
+			"title": "Blyss",
 			"url": "blyss",
 			"description": "",
 			"info": [
@@ -55,6 +69,10 @@
 				{
 					"title": "Tools",
 					"content": "HTML, CSS, JavaScript, Node.js (Express + Handlebars)"
+				},
+				{
+					"title": "Team",
+					"content": "Bradley Arca, Judy Chun"
 				},
 				{
 					"title": "Date",
@@ -88,7 +106,7 @@
 		},
 		{
 			"name": "PORTFOLIO",
-			"title": "portfolio",
+			"title": "Portfolio",
 			"url": "portfolio",
 			"type": "UI Design & Dev",
 			"description": "Today’s professional atmosphere is more competitive than ever before. Being an undergraduate student who is applying to UI/UX design and engineering internships, I needed to have a website portfolio where I could display my projects and establish an online presence to potential employers. Building this portfolio would not only allow me to showcase my abilities as a designer and developer, but would also provide me an opportunity to apply the concepts and skills I have learned through my coursework and on my own time.",
@@ -130,24 +148,43 @@
 					]
 				},
 				{
-					"header": "Design",
+					"header": "Research",
+					"sections": [
+						{
+							"column-two": true,
+							"text": true,
+							"content": "As someone who grew up alongside the expansion of the internet, I have been exposed to countless examples of web design. There are multitudes of interfaces that I visit and interact with everyday, each with their own purpose, however I had to figure out what constitutes an engaging personal portfolio."
+						},
+						{
+							"column-one": true,
+							"text": true,
+							"content": "To begin exploring, I scrolled through portfolios created by experienced UI/UX designers and analyzed the design choices made for each one. Many URLs and mouse-clicks later, I began to get a feel for the unique brand identity each portfolio conveyed. A few in particular that stood out to me were <a href=\"http://www.rachel-schmitz.com\">rachel-schmitz.com</a> , <a href=\"http://www.dorothywong.design\">dorothywong.design</a> and <a href=\"http://jonathanhowell.com\">jonathanhowell.com</a>. This is because of their clean aesthetics and professional, yet fun personality."
+						},
+						{
+							"column-one": true,
+							"subheader": true,
+							"title": "Inspiration",
+							"image": true,
+							"text": true,
+							"src": "/images/portfolio/moodboard.gif",
+							"content": "Before designing my portfolio, I decided search for more inspiration and dive further into my headspace. I knew that my portfolio would be a space for me to share my projects, but it is also a reflection of my identity and design style. With this in mind I collaged a moodboard of magazine spreads that balanced content in a bold and clean fashion. One of my personal principles is living a life in balance, and I thought these examples expressed the duality nicely."
+						}
+					]
+				},
+				{
+					"header": "Final Design",
 					"sections": [
 						{
 							"column-one": true,
 							"subheader": true,
-							"title": "Dark Design",
-							"image": true,
-							"src": "/images/ref.png",
+							"title": "Mockups",
 							"text": true,
-							"content": "I have always had an afinity towards dark-themed designs. While they are capable of elegance and sophistication, dark designs can also be edgy and striking. I took inspiration from magazine spreads that I thought are bold yet balanced."
+							"content": "I truly think that a picture is worth a thousand words, and so I wanted my portfolio to focus on showing-not-telling my projects. To complement this idea, I designed my portfolio with an emphasis on graphics in order to illustrate visual storytelling. I decided to have my portfolio maintain a grayscale color theme with offset sections of text. This way images and colors capture the attention of the reader and guide them down each page."
 						},
 						{
-							"column-two": true,
-							"subheader": true,
-							"title": "Hearing Color",
-							"image-and-text": true,
-							"src": "/images/color.png",
-							"content": "An album's artwork is an extension of the music itself. It enhances the listener's experience by complementing the mood the artist is conveying. These are some albums that I appreciate for both their music and their aesthetics, and that inspired me to play with color palettes surrounding dark design."
+							"column-one": true,
+							"image": true,
+							"src": "/images/portfolio/mockups.gif"
 						}
 					]
 				},
@@ -156,15 +193,18 @@
 					"sections": [
 						{
 							"column-one": true,
-							"subheader": true,
-							"title": "Trial and Error",
 							"text": true,
-							"content": "Mock-ups coming soon."
-						},
+							"content": "As an aspiring developer, I thought it would be a great idea to push myself and build my portfolio from the ground up. Utilizing the knowledge of HTML, CSS, and Javascript from my coursework, I was able to develop my portfolio. In addition, I was also able to apply self-taught skills that I learned such as Sass, Gulp, and Node.js (Express + Handlebars). You can view my Github repo of this project <a href=\"https://github.com/alphyne/portfolioV2\">here</a>!"
+						}
+					]
+				},
+				{
+					"header": "Takeaways",
+					"sections": [
 						{
 							"column-one": true,
 							"text": true,
-							"content":"In order to hone my web development skills, I challenged myself to build my portfolio from the ground up. Utilizing my knowledge of HTML, CSS and Javascript, I aimed to complete a sleek platform to showcase my work. My education at University of California, San Diego has allowed me to keep expanding my development arsenal by introducing tools that I can incorporate into my portfolio, such as Node.js (Express + Handlebars)."
+							"content": "Challenging myself to build my portfolio from scratch allowed me to expand on my skills in visual design, UX design, and front-end development. Experiencing the design process firsthand on a project that represents my digital identity and capabilities as a designer and developer inspired me to delve deeper into understanding the potential impact designers have on the world."
 						}
 					]
 				}

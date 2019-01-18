@@ -36,6 +36,16 @@
         font-size: 1rem;
         color: black;
         line-height: 1.7;
+
+        a {
+            text-decoration: none;
+            color: #45af6e;
+        }
+
+        a:hover {
+            opacity: 0.5;
+            transition-duration: 0.5s;
+        }
     }
 
 }
