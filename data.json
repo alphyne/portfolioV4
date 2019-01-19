@@ -4,6 +4,7 @@
 			"name": "DEXCOM",
 			"title": "Dexcom",
 			"url": "dexcom",
+			"type": "UX Engineering + Speculative Design",
 			"description": "",
 			"info": [
 				{
@@ -20,39 +21,158 @@
 			"name": "BUROW",
 			"title": "Burow",
 			"url": "burow",
-			"description": "",
+			"type": "UX Design + Dev",
+			"description": "What makes a place feel like a home? Burow is a desktop web application that helps people find the perfect neighbourhood to suit their needs. Focusing on livability metrics including price, walkability, and school rating, Burow makes it easy to discover the ideal location to complement your lifestyle.",
 			"info": [
 				{
-					"title": "Role",
-					"content": "Visual design, front-end development, branding"
+					"title": "Roles",
+					"content": "Led design and development of results page. Co-led brand design. UX completed as a team."
 				},
 				{
-					"title": "Design Tools",
-					"content": "Sketch, Illustrator"
-				},
-				{
-					"title": "Development Tools",
-					"content": "HTML, CSS, Javascript, Node.js, React, API Linking"
+					"title": "Skills",
+					"content": "UX engineering, web design, brand design, prototyping"
 				},
 				{
 					"title": "Team",
 					"content": "Aman Gupta, Emily Nguyen, Joel Sequeira"
 				},
 				{
+					"title": "Design + Dev Tools",
+					"content": "Sketch, Illustrator, HTML, CSS, Javascript, Node.js, React, API Linking"
+				},
+				{
 					"title": "Date",
-					"content": "April 2018 - June 2018"
+					"content": "April 2018 - June 2018 (10 weeks)"
+				},
+				{
+					"title": "Resources",
+					"content": "<a href=\"https://github.com/joelseq/COGS121\">Github repo</a> / <a href=\"https://vimeo.com/312224432\">Demo video</a> / <a href=\"https://burow.xyz\">burow.xyz</a>"
 				}
 			],
 			"blocks": [
 				{
-					"title": "Objective",
-					"text": true,
-					"content": "Develop a full-stack application focusing on interacting with real world data."
+					"header": "Problem Space",
+					"sections": [
+						{
+							"column-two": true,
+							"text": true,
+							"content": "When searching for a new place to live, popular real estate apps such as Zillow, Trulia, and Redfin first ask users for their desired location. Once selected, users can narrow down their results using metrics including price and number of bedrooms/bathrooms. Listings that catch the user’s interest can then be further researched in order to find their school rating, walkability, and more."
+						},
+						{
+							"column-one": true,
+							"text": true,
+							"content": "This user flow is intuitive for people who already have in mind a specific location they want to relocate to, however what if it were the opposite and you are trying to find the right neighbourhood for you?"
+						}
+					]
 				},
 				{
-					"title":"Work In Progress",
-					"text": true,
-					"caption": "Brought together by the UC San Diego course, ENG100D - Design for Development, our team is diligently working on the development of this project. Stay tuned for more details!"
+					"header": "Solution",
+					"sections": [
+						{
+							"column-one": true,
+							"text": true,
+							"content": "To solve this problem, our team decided to reverse the user flow of standard real estate apps, allowing users to parse through neighbourhood data at a macro level. Our application sorts neighbourhoods within a city by the following criteria of price, walkability, and school rating. The variability of these metrics can be drastic, even in close proximity neighbourhoods. Because of this, this user flow benefits users who are unfamiliar with the city they are moving to."
+						}
+					]
+				},
+				{
+					"header": "Research",
+					"sections": [
+						{
+							"subheader": true,
+							"title": "Storyboarding",
+							"column-one": true,
+							"text": true,
+							"content": "In order to empathize with our target users, we drafted two storyboards with possible scenarios within the scope of our application."
+						},
+						{
+							"column-one": true,
+							"image": true,
+							"src": "images/burow/storyboards.gif"
+						},
+						{
+							"subheader": true,
+							"title": "Competitive Analysis",
+							"column-one": true,
+							"image": true,
+							"src": "images/burow/comp-analysis.gif",
+							"text": true,
+							"content": "Zillow, Trulia, and Redfin utilize picturesque real estate photography, clean visual lines and crisp typefaces to establish a professional, trustworthy interface. This gives them a sense of credibility and safety, however at the cost of appearing apathetic and stock."
+						}
+					]
+				},
+				{
+					"header": "Prototyping",
+					"sections": [
+						{
+							"column-two": true,
+							"text": true,
+							"content": "To help us explore different approaches to our solution we prototyped mobile and desktop variants of our application. Our solution needed to give users similar functionality to popular real estate apps, so we included familiar features such as price search criteria and an interactive map."
+						},
+						{
+							"column-one": true,
+							"text": true,
+							"content": "The major difference in our solution is the focus of livability criteria in the search algorithm. To reflect this, we included visualizations that bring attention to neighbourhoods that best fit the user’s selected criteria. This way areas that are a ‘best fit’ are easy to pinpoint amongst all of the search results available to the user."
+						},
+						{
+							"subheader": true,
+							"title": "Mobile Variant",
+							"column-one": true,
+							"image": true,
+							"src": "images/burow/prototype1.gif"
+						},
+						{
+							"subheader": true,
+							"title": "Web Variant",
+							"column-one": true,
+							"image": true,
+							"src": "images/burow/prototype2.gif"
+						}
+					]
+				},
+				{
+					"header": "Brand Design",
+					"sections": [
+						{
+							"column-two": true,
+							"text": true,
+							"content": "Because our application does not provide listings or connect users with online real estate agencies, our team decided to switch out the professional look for a cozy, welcoming atmosphere. To produce a homey feel, we followed a theme of burrowing animals and leaned towards warm earth tones and typefaces with gentle curves."
+						},
+						{
+							"column-one": true,
+							"subheader": true,
+							"title": "Moodboard",
+							"image": true,
+							"src": "images/burow/moodboard.png"
+						},
+						{
+							"column-one": true,
+							"subheader": true,
+							"title": "Style Guide",
+							"image": true,
+							"src": "images/burow/style-guide.gif"
+						}
+					]
+				},
+				{
+					"header": "Final Build + Demo",
+					"sections": [
+						{
+							"column-one": true,
+							"video": true,
+							"content": "<div style=\"padding:56.25% 0 0 0;position:relative;\"><iframe src=\"https://player.vimeo.com/video/312224432?byline=0&portrait=0\" style=\"position:absolute;top:0;left:0;width:100%;height:100%;\" frameborder=\"0\" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe></div><script src=\"https://player.vimeo.com/api/player.js\"></script>"
+						}
+					]
+				},
+				{
+					"header": "Takeaways",
+					"sections": [
+						{
+							"column-one": true,
+							"text": true,
+							"content": "Redesigning a conventional user flow tested allowed me to test my understanding of the design process. Shifting the perspective of our target user from a micro-view to a macro-view resulted in a tool that my team and I did not invision at first. Despite this, we are satisfied with the solution our application provides. Through this project I also had another opportunity to advance my design skills, through themed branding, and development skills, such as working with React.js."
+						}
+					]
 				}
 			]
 		},
@@ -108,12 +228,12 @@
 			"name": "PORTFOLIO",
 			"title": "Portfolio",
 			"url": "portfolio",
-			"type": "UI Design & Dev",
+			"type": "UI Design + Dev",
 			"description": "Today’s professional atmosphere is more competitive than ever before. Being an undergraduate student who is applying to UI/UX design and engineering internships, I needed to have a website portfolio where I could display my projects and establish an online presence to potential employers. Building this portfolio would not only allow me to showcase my abilities as a designer and developer, but would also provide me an opportunity to apply the concepts and skills I have learned through my coursework and on my own time.",
 			"info": [
 				{
 					"title": "Roles",
-					"content": "Sole web designer and developer. Fully contributed to design and implementation processes."
+					"content": "Sole web designer and developer. Fully contributed to design and branding process."
 				},
 				{
 					"title": "Design Tools",
@@ -125,7 +245,7 @@
 				},
 				{
 					"title": "Skills",
-					"content": "Visual design, branding, UI design, front-end development, back-end development"
+					"content": "Visual design, brand design, UI design, front-end development, back-end development"
 				},
 				{
 					"title": "Date",

@@ -1,8 +1,9 @@
 .project-container {
 
-    .image-container {
+    .media-container {
         padding: 0 4rem;
     }
+
 
 
     /*h1 {
@@ -132,6 +133,7 @@
     .project-container {
         padding: 2rem 6vw;
         font-size: 0.9rem;
+
     }
 
     .project-description {
@@ -148,15 +150,21 @@
 }
 
 @media(max-width: 840px){
+
     .image-text-column{
         display: block;
     }
 }
 
 @media(max-width: 600px){
+    
+    .project-container {
+        .media-container {
+            padding: 0 0;
+        }
+    }
+    
     .project-details {
         display: block;
     }
-
-
 }

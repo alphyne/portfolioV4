@@ -102,7 +102,7 @@
 
 										<!-- Image -->
 										{{#if image}}
-											<div class="image-container">
+											<div class="media-container">
 												<img class="{{class}}" src="{{src}}">
 											</div>
 										{{/if}}
@@ -110,6 +110,12 @@
 										<!-- Text -->
 										{{#if text}}
 											<p>{{{content}}}</p>
+										{{/if}}
+
+										{{#if video}}
+											<div class="media-container">
+												{{{content}}}
+											</div>
 										{{/if}}
 
 									{{/if}}
