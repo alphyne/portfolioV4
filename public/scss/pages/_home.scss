@@ -18,6 +18,16 @@
     border-style: solid;
     text-align: center;
     background: #a0a0a0;
+    background-position-x: center;
+    background-position-y: bottom;
+    background-size: cover;
+
+    img {
+        height: 100%;
+        background-position-x: center;
+        background-position-y: bottom;
+        background-size: cover;
+    }
 }
 
 .item-name{

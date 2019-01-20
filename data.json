@@ -4,16 +4,64 @@
 			"name": "DEXCOM",
 			"title": "Dexcom",
 			"url": "dexcom",
+			"src-cover": "../images/project-covers/dexcom-cover.gif",
+			"position-y": "center",
 			"type": "UX Engineering + Speculative Design",
-			"description": "",
+			"description": "During my internship at Dexcom I worked as a User Experience Design Intern under the IT Services team. The goal for my job was to improve user experience through internal and external projects. This included building upon user personas, designing a customer-companion mobile app, and re-imagining the customer digital experience for Dexcom.",
 			"info": [
 				{
 					"title": "Title",
-					"content": "UX Design Intern (IT)"
+					"content": "UX Design Intern (IT) / Contributed to UX engineering for several company projects. Co-led UI/UX design for mobile application intern project."
+				},
+				{
+					"title": "Team",
+					"content": "Justin Bascos, Spencer Dee"
 				},
 				{
 					"title": "Date",
 					"content": "Jul 2018 - Sep 2018"
+				}
+			],
+			"blocks": [
+				{
+					"header": "Introduction",
+					"sections": [
+						{
+							"column-two": true,
+							"text": true,
+							"content": "Coming soon!"
+						}
+					]
+				},
+				{
+					"header": "Alexa for Business",
+					"sections": [
+						{
+							"column-two": true,
+							"text": true,
+							"content": "Coming soon!"
+						}
+					]
+				},
+				{
+					"header": "myDexcom App",
+					"sections": [
+						{
+							"column-two": true,
+							"text": true,
+							"content": "Coming soon!"
+						}
+					]
+				},
+				{
+					"header": "Takeaways",
+					"sections": [
+						{
+							"column-two": true,
+							"text": true,
+							"content": "If you want to learn more about what I worked on, I'd be happy to share! <a href=\"mailto:suasin.ja@gmail.com\">Let me know if you want to talk!</a>"
+						}
+					]
 				}
 			]
 		},
@@ -61,7 +109,7 @@
 						{
 							"column-one": true,
 							"text": true,
-							"content": "This user flow is intuitive for people who already have in mind a specific location they want to relocate to, however what if it were the opposite and you are trying to find the right neighbourhood for you?"
+							"content": "This user flow is intuitive for people who already have in mind a specific location they want to relocate to, however <span class=\"bold\">what if it were the opposite</span> and you are trying to find the right neighbourhood for you?"
 						}
 					]
 				},
@@ -69,9 +117,14 @@
 					"header": "Solution",
 					"sections": [
 						{
+							"column-two": true,
+							"text": true,
+							"content": "To solve this problem, our team decided to reverse the user flow of standard real estate apps, allowing users to parse through neighbourhood data at a macro level. Our application sorts neighbourhoods within a city by the following criteria of price, walkability, and school rating."
+						},
+						{
 							"column-one": true,
 							"text": true,
-							"content": "To solve this problem, our team decided to reverse the user flow of standard real estate apps, allowing users to parse through neighbourhood data at a macro level. Our application sorts neighbourhoods within a city by the following criteria of price, walkability, and school rating. The variability of these metrics can be drastic, even in close proximity neighbourhoods. Because of this, this user flow benefits users who are unfamiliar with the city they are moving to."
+							"content": "The variability of these metrics can be drastic, even in close proximity neighbourhoods. Because of this, this user flow benefits users who are unfamiliar with the city they are moving to."
 						},
 						{
 							"column-one": true,
@@ -183,9 +236,14 @@
 					"header": "Takeaways",
 					"sections": [
 						{
+							"column-two": true,
+							"text": true,
+							"content": "Redesigning a conventional user flow tested allowed me to test my understanding of the design process. <span class=\"bold\">Shifting the perspective of our target user from a micro-view to a macro-view resulted in an application that my team did not invision at first</span>."
+						},
+						{
 							"column-one": true,
 							"text": true,
-							"content": "Redesigning a conventional user flow tested allowed me to test my understanding of the design process. <span class=\"bold\">Shifting the perspective of our target user from a micro-view to a macro-view resulted in an application that my team did not invision at first</span>. Despite this, we are satisfied with the solution our application provides. Through this project I also had another opportunity to advance my design skills, through branding, and development skills, such as working with React.js."
+							"content": "Despite this, we are satisfied with the solution our application provides. Through this project I also had another opportunity to advance my design and development skills, including branding, dynamic CSS styling, and working with React.js."
 						}
 					]
 				}
@@ -266,7 +324,7 @@
 							"subheader": true,
 							"title": "Mockups",
 							"text": true,
-							"content": "I truly think that a picture is worth a thousand words, and so I wanted my portfolio to focus on showing-not-telling my projects. To complement this idea, I designed my portfolio with an emphasis on graphics in order to illustrate visual storytelling. I decided to have my portfolio maintain a grayscale color theme with offset sections of text. This way images and colors capture the attention of the reader and guide them down each page."
+							"content": "I truly think that a picture is worth a thousand words, and so I wanted my portfolio to focus on showing-not-telling my projects. To complement this idea, I designed my portfolio with an emphasis on graphics and negative space in order to illustrate visual storytelling. I decided to have my portfolio maintain a grayscale color theme with offset sections of text. This way images and colors capture the attention of the reader and guide them down each page."
 						},
 						{
 							"column-one": true,
@@ -279,9 +337,9 @@
 					"header": "Development",
 					"sections": [
 						{
-							"column-one": true,
+							"column-two": true,
 							"text": true,
-							"content": "As an aspiring developer, I thought it would be a great idea to push myself and build my portfolio from the ground up. Utilizing the knowledge of HTML, CSS, and Javascript from my coursework, I was able to develop my portfolio. In addition, I was also able to apply self-taught skills that I learned such as Sass, Gulp, and Node.js (Express + Handlebars). You can view my Github repo of this project <a href=\"https://github.com/alphyne/portfolioV2\">here</a>!"
+							"content": "As an aspiring developer, I thought it would be a great idea to push myself and build my portfolio from the ground up. Utilizing my knowledge of HTML, CSS, and Javascript gained from my coursework and curiousity to learn more on my own time, I was able to develop my portfolio. In addition, I was also able to apply self-taught skills that I learned such as Sass, Gulp, and Node.js (Express + Handlebars). You can view my Github repo of this project <a href=\"https://github.com/alphyne/portfolioV2\">here</a>!"
 						}
 					]
 				},
@@ -289,9 +347,14 @@
 					"header": "Takeaways",
 					"sections": [
 						{
+							"column-two": true,
+							"text": true,
+							"content": "Challenging myself to build my portfolio from scratch allowed me to expand on my skills in visual design, UX design, and front-end development."
+						},
+						{
 							"column-one": true,
 							"text": true,
-							"content": "Challenging myself to build my portfolio from scratch allowed me to expand on my skills in visual design, UX design, and front-end development. Experiencing the design process firsthand on a project that represents my <span class=\"bold\">digital identity</span> and capabilities as a designer and developer inspired me to delve deeper into <span class=\"bold\">understanding the potential impact designers have on the world</span>."
+							"content": "Experiencing the design process firsthand on a project that represents my <span class=\"bold\">digital identity</span> and capabilities as a designer and developer inspired me to delve deeper into <span class=\"bold\">understanding the potential impact designers have on the world</span>."
 						}
 					]
 				}
@@ -301,6 +364,8 @@
 			"name": "BLYSS",
 			"title": "Blyss",
 			"url": "blyss",
+			"src-cover": "../images/project-covers/blyss-cover.gif",
+			"position-y": "bottom",
 			"type": "Interaction Design + Dev",
 			"description": "People are constantly connected to the world around them. Personal thoughts flood social media, creating a space that revolves around sharing, leaving little breathing room for privacy. Blyss is a mobile web application where people can chronicle their thoughts, reflect on their emotions, and gain insight on their personal lifestyle patterns.",
 			"info": [
@@ -334,9 +399,14 @@
 					"header": "Design Brief",
 					"sections": [
 						{
+							"column-two": true,
+							"text": true,
+							"content": "With the help of digital devices, we have an unprecedented ability to track our behaviors, habits, and thoughts. But turning data about ourselves and our communities into valuable insights is still remarkably difficult."
+						},
+						{
 							"column-one": true,
 							"text": true,
-							"content": "With the help of digital devices, we have an unprecedented ability to track our behaviors, habits, and thoughts. But turning data about ourselves and our communities into valuable insights is still remarkably difficult. Our team’s objective was to explore ways to support monitoring, reflection, and behavior change by collecting, consuming, and sharing personally relevant information."
+							"content": "Our team’s objective was to <span class=\"bold\">explore ways to support monitoring, reflection, and behavior change</span> by collecting, consuming, and sharing personally relevant information."
 						}
 					]
 				},
@@ -495,9 +565,14 @@
 					"header": "Takeaways",
 					"sections": [
 						{
+							"column-two": true,
+							"text": true,
+							"content": "This project was my first in-depth experience with the UX engineering process. From needfinding with user interviews to iterating on prototypes, I was able to contribute to the all stages of the design process."
+						},
+						{
 							"column-one": true,
 							"text": true,
-							"content": "This project was my first in-depth experience with the UX engineering process. From needfinding with user interviews to iterating on prototypes, I was able to contribute to the all stages of the design process. I learned that <span class=\"bold\">designers should watch what users do, not say</span> and that user feedback is the most valuable tool to utilize when designing. This is because a <span class=\"bold\">designer’s role is to create experiences not for themselves, but for the audience they are attempting to reach</span>. In addition, I realized the importance soft skills, such as communication and trust, when working as a team."
+							"content": "I learned that <span class=\"bold\">designers should watch what users do, not say</span> and that user feedback is the most valuable tool to utilize when designing. This is because a <span class=\"bold\">designer’s role is to create experiences not for themselves, but for the audience they are attempting to reach</span>. In addition, I realized the importance soft skills, such as communication and trust, when working as a team."
 						}
 					]
 				}
