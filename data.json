@@ -13,7 +13,7 @@
 				},
 				{
 					"title": "Date",
-					"content": "July 2018 - September 2018"
+					"content": "Jul 2018 - Sep 2018"
 				}
 			]
 		},
@@ -42,7 +42,7 @@
 				},
 				{
 					"title": "Date",
-					"content": "April 2018 - June 2018 (10 weeks)"
+					"content": "Apr 2018 - Jun 2018 (10 weeks)"
 				},
 				{
 					"title": "Resources",
@@ -72,6 +72,16 @@
 							"column-one": true,
 							"text": true,
 							"content": "To solve this problem, our team decided to reverse the user flow of standard real estate apps, allowing users to parse through neighbourhood data at a macro level. Our application sorts neighbourhoods within a city by the following criteria of price, walkability, and school rating. The variability of these metrics can be drastic, even in close proximity neighbourhoods. Because of this, this user flow benefits users who are unfamiliar with the city they are moving to."
+						},
+						{
+							"column-one": true,
+							"text": true,
+							"content": "<span class=\"bold underline\">Existing Solution</span><br>Enter location → Receive listings → Use criteria to sort through listings"
+						},
+						{
+							"column-one": true,
+							"text": true,
+							"content": "<span class=\"bold underline\">Proposed Solution</span><br>Enter city → Choose criteria → Receive neighbourhood results"
 						}
 					]
 				},
@@ -140,6 +150,11 @@
 						},
 						{
 							"column-one": true,
+							"quote": true,
+							"content": "\"Burow - Dig around and find the neighbourhood that fits your needs!\""
+						},
+						{
+							"column-one": true,
 							"subheader": true,
 							"title": "Moodboard",
 							"image": true,
@@ -170,57 +185,9 @@
 						{
 							"column-one": true,
 							"text": true,
-							"content": "Redesigning a conventional user flow tested allowed me to test my understanding of the design process. Shifting the perspective of our target user from a micro-view to a macro-view resulted in a tool that my team and I did not invision at first. Despite this, we are satisfied with the solution our application provides. Through this project I also had another opportunity to advance my design skills, through themed branding, and development skills, such as working with React.js."
+							"content": "Redesigning a conventional user flow tested allowed me to test my understanding of the design process. <span class=\"bold\">Shifting the perspective of our target user from a micro-view to a macro-view resulted in an application that my team did not invision at first</span>. Despite this, we are satisfied with the solution our application provides. Through this project I also had another opportunity to advance my design skills, through branding, and development skills, such as working with React.js."
 						}
 					]
-				}
-			]
-		},
-		{
-			"name": "BLYSS",
-			"title": "Blyss",
-			"url": "blyss",
-			"description": "",
-			"info": [
-				{
-					"title": "Role",
-					"content": "Visual design, web development"
-				},
-				{
-					"title": "Tools",
-					"content": "HTML, CSS, JavaScript, Node.js (Express + Handlebars)"
-				},
-				{
-					"title": "Team",
-					"content": "Bradley Arca, Judy Chun"
-				},
-				{
-					"title": "Date",
-					"content": "January 2018 - March 2018"
-				}
-			],
-			"blocks": [
-				{
-					"title": "Objective",
-					"text": true,
-					"content": "Design and develop a mobile web application focused on the principles of interaction design."
-				},
-				{
-					"title": "The Quantified Self",
-					"text": true,
-					"content": "With the help of digital devices, we have an unprecedented ability to track our behaviors, habits, and thoughts. But turning data about ourselves and our communities into valuable insights is still remarkably difficult. My studio explored ways to support monitoring, reflection, and behavior change by collecting, consuming, and sharing personally relevant information. We considered how might we help people learn more about their everyday lives through self-tracking, and how might we help people draw insights from the mass of data they collect about themselves."
-				},
-				{
-					"title": "Who is Our Audience?",
-					"text": true,
-					"content": "This section is currently under construction, check back later for updates!"
-				},
-				{
-					"title":"Final Touches",
-					"link": true,
-					"linkurl": "https://blyss.herokuapp.com/",
-					"content": "Come check out the live prototype here!"
-
 				}
 			]
 		},
@@ -249,7 +216,7 @@
 				},
 				{
 					"title": "Date",
-					"content": "March 2018 - Current"
+					"content": "Mar 2018 - May 2018"
 				},
 				{
 					"title": "Resources",
@@ -324,7 +291,213 @@
 						{
 							"column-one": true,
 							"text": true,
-							"content": "Challenging myself to build my portfolio from scratch allowed me to expand on my skills in visual design, UX design, and front-end development. Experiencing the design process firsthand on a project that represents my digital identity and capabilities as a designer and developer inspired me to delve deeper into understanding the potential impact designers have on the world."
+							"content": "Challenging myself to build my portfolio from scratch allowed me to expand on my skills in visual design, UX design, and front-end development. Experiencing the design process firsthand on a project that represents my <span class=\"bold\">digital identity</span> and capabilities as a designer and developer inspired me to delve deeper into <span class=\"bold\">understanding the potential impact designers have on the world</span>."
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "BLYSS",
+			"title": "Blyss",
+			"url": "blyss",
+			"type": "Interaction Design + Dev",
+			"description": "People are constantly connected to the world around them. Personal thoughts flood social media, creating a space that revolves around sharing, leaving little breathing room for privacy. Blyss is a mobile web application where people can chronicle their thoughts, reflect on their emotions, and gain insight on their personal lifestyle patterns.",
+			"info": [
+				{
+					"title": "Roles",
+					"content": "Led brand design and development of prototype. UX research and testing completed as team."
+				},
+				{
+					"title": "Design + Dev Tools",
+					"content": "Sketch, HTML, CSS, Node.js (Express + Handlebars)"
+				},
+				{
+					"title": "Team",
+					"content": "Bradley Arca, Judy Chun"
+				},
+				{
+					"title": "Skills",
+					"content": "Needfinding, rapid prototyping, wireframing, A/B testing, visual design, front-end development"
+				},
+				{
+					"title": "Date",
+					"content": "Jan 2018 - Mar 2018 (10 weeks)"
+				},
+				{
+					"title": "Resources",
+					"content": "<a href=\"https://github.com/alphyne/Blyss\">Github repo</a>"
+				}
+			],
+			"blocks": [
+				{
+					"header": "Design Brief",
+					"sections": [
+						{
+							"column-one": true,
+							"text": true,
+							"content": "With the help of digital devices, we have an unprecedented ability to track our behaviors, habits, and thoughts. But turning data about ourselves and our communities into valuable insights is still remarkably difficult. Our team’s objective was to explore ways to support monitoring, reflection, and behavior change by collecting, consuming, and sharing personally relevant information."
+						}
+					]
+				},
+				{
+					"header": "Needfinding",
+					"sections": [
+						{
+							"column-two": true,
+							"text": true,
+							"content": "My team interviewed three participants about their daily routines and observed their behaviors throughout the course of the day. During observation we would periodically ask our participants to reflect on a situation or activity that occurred and asked relevant follow-up questions."
+						},
+						{
+							"column-one": true,
+							"text": true,
+							"content": "Based on the data we collected, my team discovered that our participants were so engrossed in their daily responsibilities that they often did not take time to relax nor incorporate self-care time into their schedules."
+						},
+						{
+							"column-one": true,
+							"quote": true,
+							"content": "\"I tend to jump from one thing to the next. Sometimes I feel like I don’t have time to sit down and enjoy myself.\""
+						},
+						{
+							"column-one": true,
+							"text": true,
+							"content": "After analyzing our user research, we refined our results and pain points into the following prompts:"
+						},
+						{
+							"column-one": true,
+							"bullet-list": true,
+							"content": "<li>• How might we help users gain insight about themselves emotionally and mentally?</ul><ul>• How can we catalog a user’s feelings in a given day?</ul><ul>• How might we remind users about the activities and content that make them happy?</ul>"
+						}
+					]
+				},
+				{
+					"header": "Solution",
+					"sections": [
+						{
+							"column-two": true,
+							"text": true,
+							"content": "In order to encourage positive thinking, our solution was an application that composes an anthology of moments and media for users to reflect on, ultimately boosting their mood. Users can make posts to a personal feed that include details of how they were feeling at a certain time and any accompanying media, such as a song, photo, or video."
+						},
+						{
+							"column-one": true,
+							"text": true,
+							"content": "Because the topic of our design brief is about inciting change from personal data, we decided to include an insights page where users can view breakdowns of their moods and receive suggestions on how to boost their well being. Suggestions can range from a funny video from the day before or reminders of positive moments that happened during the week."
+						}
+					]
+				},
+				{
+					"header": "Storyboarding",
+					"sections": [
+						{
+							"column-one": true,
+							"text": true,
+							"content": "To further understand our target users, my team drew storyboards with possible scenarios in which our app could be used."
+						},
+						{
+							"column-one": true,
+							"image": true,
+							"src": "images/blyss/storyboard.gif"
+						}
+					]
+				},
+				{
+					"header": "Personas",
+					"sections": [
+						{
+							"column-one": true,
+							"text": true,
+							"content": "Building off of our storyboards, we came up with personas that represent the various needs and problems our solution is aiming to resolve."
+						},
+						{
+							"column-one": true,
+							"video": true,
+							"content": "<div style=\"padding:56.25% 0 0 0;position:relative;\"><iframe src=\"https://player.vimeo.com/video/253919815?title=0&byline=0&portrait=0\" style=\"position:absolute;top:0;left:0;width:100%;height:100%;\" frameborder=\"0\" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe></div><script src=\"https://player.vimeo.com/api/player.js\"></script>"
+						}
+					]
+				},
+				{
+					"header": "Rapid Prototyping",
+					"sections": [
+						{
+							"column-one": true,
+							"text": true,
+							"content": "Our prototype focused on the user flow and interaction of creating and viewing posts. After testing we had our users score our application using usability heuristics."
+						},
+						{
+							"column-one": true,
+							"image": true,
+							"src": "images/blyss/paper-prototype.gif"
+						}
+					]
+				},
+				{
+					"header": "Wireframing",
+					"sections": [
+						{
+							"column-one": true,
+							"text": true,
+							"content": "Next, we created high-fidelity wireframes based on our paper prototype to visualize the flow of our application."
+						},
+						{
+							"column-one": true,
+							"image": true,
+							"src": "images/blyss/wireframes.gif"
+						}
+					]
+				},
+				{
+					"header": "Brand Design + Style Guide",
+					"sections": [
+						{
+							"column-two": true,
+							"image-and-text": true,
+							"src": "images/blyss/style-guide.gif",
+							"content": "Our styling approach is inspired by social media apps, such as Instagram and Twitter, so we incorporated similar design standards. Some elements we decided to use are a vertical scrolling chronological feed, a bottom-navigation bar, and an interface with generous white space and one accent color."
+						}
+					]
+				},
+				{
+					"header": "Development",
+					"sections": [
+						{
+							"column-two": true,
+							"text": true,
+							"content": "To develop our live prototype, we utilized resources including HTML, CSS, Javascript, and Node.js (Express + Handlebars). Our goal was to implement our core functions and ensure our app was responsive and fluid."
+						}
+					]
+				},
+				{
+					"header": "A/B Testing",
+					"sections": [
+						{
+							"column-two": true,
+							"image-and-text": true,
+							"src": "images/blyss/ab-test.gif",
+							"content": "Because our app’s objective is to provide insight and self-awareness to users, we conducted an A/B test on the curated content page. Version A of this page shows users posts only tagged as ‘Happy’, providing quick access to media that is associated with positivity, while Version B gives users the option to view all of their posts by category of emotion. After reviewing the results of our A/B Test and T-Test, we concluded that Version B of the curated content page is more beneficial to users, due to the fact that it provides a larger range of information and more user engagement."
+						}
+					]
+				},
+				{
+					"header": "Final Prototype",
+					"sections": [
+						{
+							"column-one": true,
+							"image-three": true,
+							"src-1": "images/blyss/prototype-1.gif",
+							"src-2": "images/blyss/prototype-2.gif",
+							"src-3": "images/blyss/prototype-3.gif",
+							"text": true,
+							"content": "You can find the live prototype of our final design <a href=\"https://blyss.herokuapp.com/home\">here</a>!"
+						}
+					]
+				},
+				{
+					"header": "Takeaways",
+					"sections": [
+						{
+							"column-one": true,
+							"text": true,
+							"content": "This project was my first in-depth experience with the UX engineering process. From needfinding with user interviews to iterating on prototypes, I was able to contribute to the all stages of the design process. I learned that <span class=\"bold\">designers should watch what users do, not say</span> and that user feedback is the most valuable tool to utilize when designing. This is because a <span class=\"bold\">designer’s role is to create experiences not for themselves, but for the audience they are attempting to reach</span>. In addition, I realized the importance soft skills, such as communication and trust, when working as a team."
 						}
 					]
 				}

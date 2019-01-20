@@ -135,43 +135,21 @@
   .bio-container {
     padding: 0 2rem; } }
 
-.project-container {
-  /*h1 {
-        font-family: 'nexa_boldregular';
-        font-size: 2rem;
-        color: black;
-    }
+.project-container .media-container {
+  padding: 0 4rem; }
 
-    h2 {
-        font-family: 'Montserrat', sans-serif;
-        font-weight: 500;
-        font-size: 1.5rem;
-        color: #313131;        
-    }
+.project-container .quote {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 400;
+  font-style: italic;
+  font-size: 1.6rem;
+  color: #000000; }
 
-    h3 {
-        font-family: 'Montserrat', sans-serif;
-        font-weight: 300;
-        font-size: 1.5rem;
-        color: #707070;        
-    }
+.project-container .bold {
+  font-weight: 500; }
 
-    h4 {
-        font-family: 'Montserrat', sans-serif;
-        font-weight: 500;
-        font-size: 1rem;
-        color: #707070;        
-    }
-
-    p {
-        font-family: 'Montserrat', sans-serif;
-        font-weight: 400;
-        font-size: 1rem;
-        color: black;
-        line-height: 1.7;
-    }*/ }
-  .project-container .media-container {
-    padding: 0 4rem; }
+.project-container .underline {
+  text-decoration: underline; }
 
 .project-landing {
   background-color: #a0a0a0;
@@ -215,6 +193,14 @@
   .block-container img {
     width: 100%; }
 
+.image-three-container {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  grid-column-gap: 2vw; }
+
+.image-three {
+  width: 33%; }
+
 .image-left {
   width: 35vw; }
 
@@ -224,7 +210,7 @@
 .image-text-column {
   display: grid;
   grid-template-columns: auto auto;
-  grid-column-gap: 5vw; }
+  grid-column-gap: 7vw; }
 
 @media (max-width: 1600px) {
   .project-description, .text-right {
@@ -726,6 +712,12 @@ body {
     .page-container p a:hover {
       opacity: 0.5;
       transition-duration: 0.5s; }
+  .page-container ul {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    font-size: 1rem;
+    color: black;
+    line-height: 1.4; }
 
 @media (max-width: 1600px) {
   .page-container {

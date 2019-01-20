@@ -4,7 +4,7 @@
 	<head>
 		<title>Jared Suasin / {{title}}</title>
 		<link href="css/main.css" rel="stylesheet" type="text/css">
-		<link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,500,600" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,400i,500,600" rel="stylesheet">
 		<link rel="stylesheet" href="fonts/stylesheet.css" type="text/css" charset="utf-8" />
 	
 		<!-- Favicons -->
@@ -103,7 +103,31 @@
 										<!-- Image -->
 										{{#if image}}
 											<div class="media-container">
-												<img class="{{class}}" src="{{src}}">
+												<img src="{{src}}">
+											</div>
+										{{/if}}
+
+										<!-- Three Images -->
+										{{#if image-three}}
+											<div class="media-container image-three-container">
+												<img src="{{src-1}}">
+												<img src="{{src-2}}">
+												<img src="{{src-3}}">
+											</div>
+										{{/if}}
+
+										<!-- Quote -->
+										{{#if quote}}
+											<div class="media-container">
+												<p class="quote">{{{content}}}</p>
+											</div>
+
+										{{/if}}
+
+										<!-- Bullet list -->
+										{{#if bullet-list}}
+											<div class="media-container">
+												<ul>{{{content}}}</ul>
 											</div>
 										{{/if}}
 
@@ -112,6 +136,7 @@
 											<p>{{{content}}}</p>
 										{{/if}}
 
+										<!-- Video -->
 										{{#if video}}
 											<div class="media-container">
 												{{{content}}}

@@ -4,42 +4,25 @@
         padding: 0 4rem;
     }
 
-
-
-    /*h1 {
-        font-family: 'nexa_boldregular';
-        font-size: 2rem;
-        color: black;
-    }
-
-    h2 {
-        font-family: 'Montserrat', sans-serif;
-        font-weight: 500;
-        font-size: 1.5rem;
-        color: #313131;        
-    }
-
-    h3 {
-        font-family: 'Montserrat', sans-serif;
-        font-weight: 300;
-        font-size: 1.5rem;
-        color: #707070;        
-    }
-
-    h4 {
-        font-family: 'Montserrat', sans-serif;
-        font-weight: 500;
-        font-size: 1rem;
-        color: #707070;        
-    }
-
-    p {
+    .quote {
+    
         font-family: 'Montserrat', sans-serif;
         font-weight: 400;
-        font-size: 1rem;
-        color: black;
-        line-height: 1.7;
-    }*/
+        font-style: italic;
+        font-size: 1.6rem;
+        color: #000000;       
+    }
+
+
+
+    .bold {
+        font-weight: 500;
+    }
+    .underline {
+        text-decoration: underline;
+    }
+
+
 }
 
 .project-landing {
@@ -94,8 +77,6 @@
   }
 }
 
-
-
 .block-container {
 
     margin-bottom: 4rem;
@@ -109,6 +90,16 @@
     }
 }
 
+.image-three-container {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-column-gap: 2vw;
+}
+
+.image-three {
+    width: 33%;
+}
+
 .image-left {
     width: 35vw;
 }
@@ -120,7 +111,7 @@
 .image-text-column{
     display: grid;
     grid-template-columns: auto auto;
-    grid-column-gap: 5vw;
+    grid-column-gap: 7vw;
 }
 
 @media(max-width: 1600px){
