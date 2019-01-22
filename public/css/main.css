@@ -453,7 +453,7 @@
   border: 0;
   overflow: hidden;
   top: 0;
-  height: 10rem; }
+  height: 8rem; }
 
 .nav-item {
   float: right; }
@@ -470,6 +470,15 @@
     text-decoration: none; }
   .nav-item .active {
     text-decoration: line-through; }
+
+.tagline-container {
+  margin-bottom: 2rem; }
+  .tagline-container h2 {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 300;
+    font-size: 2rem;
+    color: #707070;
+    line-height: 1.5; }
 
 /* Strikethrough hover pen by tsimenis on Codepen */
 .notActive span {

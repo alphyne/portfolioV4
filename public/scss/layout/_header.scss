@@ -45,7 +45,7 @@
     border: 0;
     overflow: hidden;
     top: 0;
-	  height: 10rem;
+	  height: 8rem;
 }
 
 .nav-item {
@@ -68,7 +68,19 @@
     .active {
         text-decoration: line-through;
     }
+}
 
+.tagline-container {
+
+  h2 {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 300;
+    font-size: 2rem;
+    color: #707070;  
+    line-height: 1.5;
+  }
+
+  margin-bottom: 2rem;
 }
 
 
