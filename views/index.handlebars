@@ -28,9 +28,9 @@
 			</div>
 
 			<ul class="nav-container">
-				<li class="nav-item"><a class="notActive" href="/resume"><span>Resume</span></a></li>
-				<li class="nav-item"><a class="notActive" href="/about"><span>About</span></a></li>
-				<li class="nav-item"><a class="active" href="/"><span>Work</span></a></li>
+				<li id="resume" class="nav-item"><a class="notActive" href="/resume"><span>Resume</span></a></li>
+				<li id="about" class="nav-item"><a class="notActive" href="/about"><span>About</span></a></li>
+				<li id="work" class="nav-item"><a class="active" href="/"><span>Work</span></a></li>
 			</ul>
 		</div>
 		
@@ -41,11 +41,33 @@
 				{{#each projects}}
 					
 					<!-- Grid items -->
-					<a class="grid-link" href="/{{url}}">
-						<div class="grid-item" style="background-image:url({{src-cover}});">
-							<!--<img src={{src-cover}}>-->
-						</div>
-					</a>
+					<div>
+						<a class="grid-link" href="/{{url}}">
+							<div class="grid-item no-hover" style="background-image:url({{src-cover}});background-position-y:{{position-y-home}}">
+								
+								<!--<div class="grid-item-background"></div>-->
+								
+
+								
+							</div>
+
+							<div class="grid-item hover" style="background-image:url({{src-cover-hover}});background-position-y:{{position-y-home}}">
+								
+								
+								<div class="grid-item-title">
+									<h2>{{name}}</h2>
+									<h3>{{type}}</h3>
+								</div>	
+
+								
+							</div>
+
+							<!--<span class="grid-item-title">
+									<span class="item-name">{{name}}</span>
+									<span class="item-type">{{type}}</span>
+								</span>-->
+						</a>
+					</div>
 					
 				{{/each}}	
 			</div>

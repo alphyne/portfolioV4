@@ -5,7 +5,9 @@
 			"title": "Dexcom",
 			"url": "dexcom",
 			"src-cover": "../images/project-covers/dexcom-cover.gif",
-			"position-y": "center",
+			"src-cover-hover": "../images/project-covers/dexcom-cover-hover.gif",
+			"position-y-project": "center",
+			"postion-y-home": "bottom",
 			"type": "UX Engineering + Speculative Design",
 			"description": "During my internship at Dexcom I worked as a User Experience Design Intern under the IT Services team. The goal for my job was to improve user experience through internal and external projects. This included building upon user personas, designing a customer-companion mobile app, and re-imagining the customer digital experience for Dexcom.",
 			"info": [
@@ -69,6 +71,10 @@
 			"name": "BUROW",
 			"title": "Burow",
 			"url": "burow",
+			"src-cover": "../images/project-covers/burow-cover.gif",
+			"src-cover-hover": "../images/project-covers/burow-cover-hover.gif",
+			"position-y-project": "top",
+			"postion-y-home": "top",
 			"type": "UX Design + Dev",
 			"description": "What makes a place feel like a home? Burow is a desktop web application that helps people find the perfect neighbourhood to suit their needs. Focusing on livability metrics including price, walkability, and school rating, Burow makes it easy to discover the ideal location to complement your lifestyle.",
 			"info": [
@@ -253,6 +259,10 @@
 			"name": "PORTFOLIO",
 			"title": "Portfolio",
 			"url": "portfolio",
+			"src-cover": "../images/project-covers/portfolio-cover.gif",
+			"src-cover-hover": "../images/project-covers/portfolio-cover-hover.gif",
+			"position-y-project": "bottom",
+			"postion-y-home": "bottom",
 			"type": "UI Design + Dev",
 			"description": "Today’s professional atmosphere is more competitive than ever before. Being an undergraduate student who is applying to UI/UX design and engineering internships, I needed to have a website portfolio where I could display my projects and establish an online presence to potential employers. Building this portfolio would not only allow me to showcase my abilities as a designer and developer, but would also provide me an opportunity to apply the concepts and skills I have learned through my coursework and on my own time.",
 			"info": [
@@ -365,7 +375,9 @@
 			"title": "Blyss",
 			"url": "blyss",
 			"src-cover": "../images/project-covers/blyss-cover.gif",
-			"position-y": "bottom",
+			"src-cover-hover": "../images/project-covers/blyss-cover-hover.gif",
+			"position-y-project": "bottom",
+			"postion-y-home": "bottom",
 			"type": "Interaction Design + Dev",
 			"description": "People are constantly connected to the world around them. Personal thoughts flood social media, creating a space that revolves around sharing, leaving little breathing room for privacy. Blyss is a mobile web application where people can chronicle their thoughts, reflect on their emotions, and gain insight on their personal lifestyle patterns.",
 			"info": [

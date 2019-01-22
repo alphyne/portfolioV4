@@ -45,7 +45,7 @@
     border: 0;
     overflow: hidden;
     top: 0;
-	height: 10rem;
+	  height: 10rem;
 }
 
 .nav-item {
@@ -156,13 +156,8 @@
 
 @media(max-width: 840px){
 
-  .header-container {       
-
-      /*h1 {
-          a {
-              border-bottom: 0;
-          }
-      }*/
+  #resume {
+    display: none;
   }
 }
 
