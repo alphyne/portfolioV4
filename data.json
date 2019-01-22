@@ -7,7 +7,7 @@
 			"src-cover": "../images/project-covers/dexcom-cover.gif",
 			"src-cover-hover": "../images/project-covers/dexcom-cover-hover.gif",
 			"position-y-project": "center",
-			"postion-y-home": "bottom",
+			"postion-y-home": "center",
 			"type": "UX Engineering + Speculative Design",
 			"description": "During my internship at Dexcom I worked as a User Experience Design Intern under the IT Services team. The goal for my job was to improve user experience through internal and external projects. This included building upon user personas, designing a customer-companion mobile app, and re-imagining the customer digital experience for Dexcom.",
 			"info": [
