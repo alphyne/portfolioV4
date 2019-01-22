@@ -239,7 +239,7 @@
 						{
 							"column-one": true,
 							"text": true,
-							"content": "We decided to design and implement our application for desktop use. This is to mirror the real estate applictions that we analyzed in our competitive analysis and so we could take advantage of having a large interactive map for users to reference when searching for neighbourhoods. The final build of our application was developed using HTML, CSS, Javascript, and React.js. Visit Burow <a href=\"burow.xyz\">here</a>!"
+							"content": "We decided to design and implement our application for desktop use. This is to mirror the real estate applictions that we analyzed in our competitive analysis and so we could take advantage of having a large interactive map for users to reference when searching for neighbourhoods. The final build of our application was developed using HTML, CSS, Javascript, and React.js. Visit Burow <a href=\"https://burow.xyz\">here</a>!"
 						}
 					]
 				},
