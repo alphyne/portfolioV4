@@ -235,6 +235,11 @@
 							"column-one": true,
 							"video": true,
 							"content": "<div style=\"padding:56.25% 0 0 0;position:relative;\"><iframe src=\"https://player.vimeo.com/video/312224432?byline=0&portrait=0\" style=\"position:absolute;top:0;left:0;width:100%;height:100%;\" frameborder=\"0\" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe></div><script src=\"https://player.vimeo.com/api/player.js\"></script>"
+						},
+						{
+							"column-one": true,
+							"text": true,
+							"content": "We decided to design and implement our application for desktop use. This is to mirror the real estate applictions that we analyzed in our competitive analysis and so we could take advantage of having a large interactive map for users to reference when searching for neighbourhoods. The final build of our application was developed using HTML, CSS, Javascript, and React.js. Visit Burow <a href=\"burow.xyz\">here</a>!"
 						}
 					]
 				},
