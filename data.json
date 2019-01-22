@@ -192,7 +192,7 @@
 						},
 						{
 							"subheader": true,
-							"title": "Web Variant",
+							"title": "Desktop Variant",
 							"column-one": true,
 							"image": true,
 							"src": "images/burow/prototype2.gif"
@@ -249,7 +249,7 @@
 						{
 							"column-two": true,
 							"text": true,
-							"content": "Redesigning a conventional user flow tested allowed me to test my understanding of the design process. <span class=\"bold\">Shifting the perspective of our target user from a micro-view to a macro-view resulted in an application that my team did not invision at first</span>."
+							"content": "Redesigning a conventional user flow allowed me to test my understanding of the design process. <span class=\"bold\">Shifting the perspective of our target user from a micro-view to a macro-view resulted in an application that my team did not invision at first</span>."
 						},
 						{
 							"column-one": true,
@@ -318,7 +318,7 @@
 						{
 							"column-one": true,
 							"text": true,
-							"content": "To begin exploring, I scrolled through portfolios created by experienced UI/UX designers and analyzed the design choices made for each one. Many URLs and mouse-clicks later, I began to get a feel for the unique brand identity each portfolio conveyed. A few in particular that stood out to me were <a href=\"http://www.rachel-schmitz.com\">rachel-schmitz.com</a> , <a href=\"http://www.dorothywong.design\">dorothywong.design</a> and <a href=\"http://jonathanhowell.com\">jonathanhowell.com</a>. This is because of their clean aesthetics and professional, yet fun personality."
+							"content": "To begin exploring, I scrolled through portfolios created by experienced UI/UX designers and analyzed the design choices made for each one. Many URLs and mouse-clicks later, I began to get a feel for the unique brand identity each portfolio conveyed. A few in particular that stood out to me were <a href=\"http://www.rachel-schmitz.com\">rachel-schmitz.com</a> , <a href=\"http://www.dorothywong.design\">dorothywong.design</a>, and <a href=\"http://jonathanhowell.com\">jonathanhowell.com</a>. This is because I enjoyed their clean aesthetics and professional, yet fun personality."
 						},
 						{
 							"column-one": true,
@@ -433,7 +433,7 @@
 						{
 							"column-two": true,
 							"text": true,
-							"content": "My team interviewed three participants about their daily routines and observed their behaviors throughout the course of the day. During observation we would periodically ask our participants to reflect on a situation or activity that occurred and asked relevant follow-up questions."
+							"content": "My team interviewed three participants about their daily routines and observed their behaviors throughout the course of the day. During observation we would periodically ask our participants to reflect on a situation or activity that occurred and ask relevant follow-up questions."
 						},
 						{
 							"column-one": true,
@@ -443,7 +443,7 @@
 						{
 							"column-one": true,
 							"quote": true,
-							"content": "\"I tend to jump from one thing to the next. Sometimes I feel like I don’t have time to sit down and enjoy myself.\""
+							"content": "\"I tend to jump from one thing to the next. Sometimes I feel like I don’t have time to sit down and enjoy myself.\" - Research Participant"
 						},
 						{
 							"column-one": true,
@@ -508,7 +508,7 @@
 						{
 							"column-one": true,
 							"text": true,
-							"content": "Our prototype focused on the user flow and interaction of creating and viewing posts. After testing we had our users score our application using usability heuristics."
+							"content": "Our paper prototype focused on the user flow and interaction of creating and viewing posts. After testing we had our users score our application using usability heuristics."
 						},
 						{
 							"column-one": true,
@@ -539,7 +539,7 @@
 							"column-two": true,
 							"image-and-text": true,
 							"src": "images/blyss/style-guide.gif",
-							"content": "Our styling approach is inspired by social media apps, such as Instagram and Twitter, so we incorporated similar design standards. Some elements we decided to use are a vertical scrolling chronological feed, a bottom-navigation bar, and an interface with generous white space and one accent color."
+							"content": "Our styling approach was inspired by social media apps, such as Instagram and Twitter, so we incorporated similar design standards. Some elements we emulated are a vertical scrolling chronological feed, a bottom-navigation bar, and an interface with generous white space and one accent color."
 						}
 					]
 				},
@@ -549,7 +549,7 @@
 						{
 							"column-two": true,
 							"text": true,
-							"content": "To develop our live prototype, we utilized resources including HTML, CSS, Javascript, and Node.js (Express + Handlebars). Our goal was to implement our core functions and ensure our app was responsive and fluid."
+							"content": "To develop our live prototype, we utilized tools including HTML, CSS, Javascript, and Node.js (Express + Handlebars). Our goal was to implement our core functions and ensure our app was responsive and fluid."
 						}
 					]
 				},
@@ -560,7 +560,7 @@
 							"column-two": true,
 							"image-and-text": true,
 							"src": "images/blyss/ab-test.gif",
-							"content": "Because our app’s objective is to provide insight and self-awareness to users, we conducted an A/B test on the curated content page. Version A of this page shows users posts only tagged as ‘Happy’, providing quick access to media that is associated with positivity, while Version B gives users the option to view all of their posts by category of emotion. After reviewing the results of our A/B Test and T-Test, we concluded that Version B of the curated content page is more beneficial to users, due to the fact that it provides a larger range of information and more user engagement."
+							"content": "Because our app’s objective is to provide insight and self-awareness to users, we conducted an A/B test on the curated content page. Version A of this page shows users posts only tagged as ‘Happy’, providing quick access to media that is associated with positivity, while Version B gives users the option to view all of their posts by category of emotion. The results of our Google Analytics A/B test showed that users spent more screen time on Version B compared to Version A. From this we concluded that Version B of the curated content page is more beneficial to users, due to the fact that it provides a larger range of information and more user engagement."
 						}
 					]
 				},
@@ -584,7 +584,7 @@
 						{
 							"column-two": true,
 							"text": true,
-							"content": "This project was my first in-depth experience with the UX engineering process. From needfinding with user interviews to iterating on prototypes, I was able to contribute to the all stages of the design process."
+							"content": "This project was my first in-depth experience with the UX engineering process. From needfinding with user interviews to iterating on prototypes, I was able to participate in all stages of the design process."
 						},
 						{
 							"column-one": true,
