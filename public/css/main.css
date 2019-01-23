@@ -530,11 +530,28 @@
 
 @media (max-width: 840px) {
   #resume {
+    display: none; }
+  .ham-menu {
     display: none; } }
 
-.ham-menu {
-  display: none; }
+/*@media only screen 
+and (min-width : 375px) 
+and (max-width : 812px)
+and (-webkit-device-pixel-ratio : 3) {
+  
+  .tagline-container {
 
+    h2 {
+      font-family: 'Montserrat', sans-serif;
+      font-weight: 500;
+      font-size: 3rem;
+      line-height: 1.5;
+    }
+  
+    margin-bottom: 2rem;
+  }
+  
+}*/
 /*$color-background: #F5F5F5;
 $color-main: #1abc9c;
 $color-active: #FFF;
@@ -739,7 +756,7 @@ body {
   }
 }*/
 body {
-  background-color: #f6f6f6; }
+  background-color: #fbfbfb; }
 
 .page-container {
   margin: 0 20vw; }
