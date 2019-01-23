@@ -42,7 +42,8 @@
   text-align: center;
   background: #a0a0a0;
   background-position-x: center;
-  background-size: cover; }
+  background-size: cover;
+  min-height: 13rem; }
 
 .hover {
   display: none; }
@@ -77,18 +78,22 @@
 
 @media (max-width: 1024px) {
   .grid-item-title {
-    padding-top: 25vh; }
+    padding-top: 18vh; }
   .grid-item {
     height: 50vh; } }
 
-@media (max-width: 980px) {
+@media (max-width: 840px) {
+  .grid-item-title {
+    padding-top: 17vh; } }
+
+@media (max-width: 600px) {
   .grid-item-container {
     display: grid;
     grid-template-columns: 100%;
     grid-column-gap: 1%;
     grid-row-gap: 0; }
   .grid-item-title {
-    padding-top: 24vh; }
+    padding-top: 16vh; }
     .grid-item-title h2 {
       font-size: 3.2rem;
       color: #313131;
@@ -100,7 +105,7 @@
 
 @media (max-height: 600px) {
   .grid-item-title {
-    padding-top: 24vh; }
+    padding-top: 8vh; }
     .grid-item-title h2 {
       font-size: 3.2rem;
       color: #313131;
