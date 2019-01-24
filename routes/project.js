@@ -10,7 +10,7 @@ exports.view = function(req, res){
 
 	if (param == "resume") {
 		res.redirect(
-			"https://drive.google.com/file/d/1b96ouBh96AaeJg8lb8uILX3kqCo-wd_b/view?usp=sharing"
+			"https://drive.google.com/file/d/1-3jEBLPq-kVfzUBscH2KDFjrbJCQzJ1r/view?usp=sharing"
 		);
 		return;
 	}
