@@ -57,7 +57,7 @@
         font-weight: 500;
         font-size: 1.5rem;
     
-        color: #707070;
+        color: #474747;
         text-align: center;
         padding-top: 3.5rem;
         padding-left: 1.6vw;
@@ -75,8 +75,8 @@
   h2 {
     font-family: 'Montserrat', sans-serif;
     font-weight: 500;
-    font-size: 1.5rem;
-    color: #707070;  
+    font-size: 2rem;
+    color: #474747;  
     line-height: 1.5;
   }
 
@@ -99,7 +99,7 @@
         height: 2px;
         top: 50%;
         margin-top: -0.5px;
-        background: #707070;
+        background: #474747;
     }
 
     span:before {
@@ -108,12 +108,12 @@
 
     span:after {
         right: 0;
-        background: #707070;
+        background: #474747;
         transition: width 0.8s cubic-bezier(0.22, 0.61, 0.36, 1);
     }
 
     span:hover:before {
-        background: #707070;
+        background: #474747;
         width: 107%;
         transition: width 0.5s cubic-bezier(0.22, 0.61, 0.36, 1);
     }

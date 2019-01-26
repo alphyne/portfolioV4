@@ -140,7 +140,6 @@
   .bio-container h1 {
     line-height: 2.3rem; }
   .bio-container h2 {
-    color: #707070;
     margin: 2rem 0;
     line-height: 1.7rem; }
   .bio-container p {
@@ -224,7 +223,7 @@
     font-family: 'Montserrat', sans-serif;
     font-weight: 300;
     font-size: 1.5rem;
-    color: #707070; }
+    color: #474747; }
 
 .project-description, .text-right {
   margin-left: 30vw; }
@@ -392,7 +391,7 @@
   #copyright h2 {
     font-family: 'Montserrat', sans-serif;
     font-weight: 500;
-    color: #707070;
+    color: #474747;
     font-size: 1rem;
     margin: 0.5rem 0; }
 
@@ -401,7 +400,7 @@
   .icon-container img {
     height: 2rem; }
   .icon-container ul li a:hover > img {
-    opacity: 0.5;
+    opacity: 0.7;
     transition-duration: 0.5s; }
   .icon-container li {
     display: inline-block;
@@ -466,7 +465,7 @@
     font-family: 'Montserrat', sans-serif;
     font-weight: 500;
     font-size: 1.5rem;
-    color: #707070;
+    color: #474747;
     text-align: center;
     padding-top: 3.5rem;
     padding-left: 1.6vw;
@@ -480,8 +479,8 @@
   .tagline-container h2 {
     font-family: 'Montserrat', sans-serif;
     font-weight: 500;
-    font-size: 1.5rem;
-    color: #707070;
+    font-size: 2rem;
+    color: #474747;
     line-height: 1.5; }
 
 /* Strikethrough hover pen by tsimenis on Codepen */
@@ -496,18 +495,18 @@
   height: 2px;
   top: 50%;
   margin-top: -0.5px;
-  background: #707070; }
+  background: #474747; }
 
 .notActive span:before {
   left: -3px; }
 
 .notActive span:after {
   right: 0;
-  background: #707070;
+  background: #474747;
   transition: width 0.8s cubic-bezier(0.22, 0.61, 0.36, 1); }
 
 .notActive span:hover:before {
-  background: #707070;
+  background: #474747;
   width: 107%;
   transition: width 0.5s cubic-bezier(0.22, 0.61, 0.36, 1); }
 
@@ -774,17 +773,17 @@ body {
     font-family: 'Montserrat', sans-serif;
     font-weight: 500;
     font-size: 1.5rem;
-    color: #313131; }
+    color: #474747; }
   .page-container h3 {
     font-family: 'Montserrat', sans-serif;
     font-weight: 300;
     font-size: 1.5rem;
-    color: #707070; }
+    color: #474747; }
   .page-container h4 {
     font-family: 'Montserrat', sans-serif;
     font-weight: 500;
     font-size: 1rem;
-    color: #707070; }
+    color: #474747; }
   .page-container p {
     font-family: 'Montserrat', sans-serif;
     font-weight: 400;
