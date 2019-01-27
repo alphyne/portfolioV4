@@ -34,6 +34,15 @@ body {
         color: #474747;        
     }
 
+    .caption {
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 400;
+        font-style: italic;
+        font-size: 0.9rem;
+        color: black;
+        line-height: 1.7;
+    }
+
     p {
         font-family: 'Montserrat', sans-serif;
         font-weight: 400;
@@ -50,7 +59,10 @@ body {
             opacity: 0.5;
             transition-duration: 0.5s;
         }
+
     }
+
+
 
     ul {
         font-family: 'Montserrat', sans-serif;

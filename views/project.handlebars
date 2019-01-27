@@ -109,7 +109,13 @@
 										{{#if image}}
 											<div class="media-container">
 												<img src="{{src}}">
+
+												{{#if caption}}
+													<p class="caption">{{caption-content}}</p>
+												{{/if}}
 											</div>
+
+
 										{{/if}}
 
 										<!-- Three Images -->
@@ -118,6 +124,10 @@
 												<img src="{{src-1}}">
 												<img src="{{src-2}}">
 												<img src="{{src-3}}">
+
+												{{#if caption}}
+													<p class="caption">{{caption-content}}</p>
+												{{/if}}
 											</div>
 										{{/if}}
 

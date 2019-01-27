@@ -784,6 +784,13 @@ body {
     font-weight: 500;
     font-size: 1rem;
     color: #474747; }
+  .page-container .caption {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    font-style: italic;
+    font-size: 0.9rem;
+    color: black;
+    line-height: 1.7; }
   .page-container p {
     font-family: 'Montserrat', sans-serif;
     font-weight: 400;

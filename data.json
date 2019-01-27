@@ -26,32 +26,65 @@
 			],
 			"blocks": [
 				{
-					"header": "Introduction",
+					"header": "Problem",
 					"sections": [
 						{
 							"column-two": true,
 							"text": true,
-							"content": "Coming soon!"
+							"content": "Dexcom is a rapidly expanding company and is one of the lead manufacturers in continuous glucose monitoring (CGM) technology. However, their current infrastructure will become unsustainable as the range of their customer market increases."
+						},
+						{
+							"column-one": true,
+							"text": true,
+							"content": "In order to support their customers throughout the sales process, starting from initial inquiries about products all the way to insurance processing and shipments, Dexcom needs to extend their methods of communicating and interacting with customers into a highly accessible, digital experience."
 						}
 					]
 				},
 				{
-					"header": "Alexa for Business",
+					"header": "Customer Personas",
 					"sections": [
 						{
 							"column-two": true,
 							"text": true,
-							"content": "Coming soon!"
+							"content": "To better understand Dexcom’s customer base, my team analyzed and built upon customer personas created by the Dexcom marketing team. After reviewing customer interview videos and user segment documentation, we concluded the following observations and pain points."
+						},
+						{
+							"column-one": true,
+							"subheader": true,
+							"title": "Insights",
+							"bullet-list": true,
+							"content": "<li>• Communicating through phone call to obtain product information and re-order products can be inconvenient when customers live their own busy lives</li><li>• Customers wish they had easy access of their status throughout the insurance verification process</li><li>• The majority of Dexcom’s potential customer market are tech savvy people who are motivated and proactive in conquering their diabetes</li>"
 						}
 					]
 				},
 				{
-					"header": "myDexcom App",
+					"header": "Solutions",
 					"sections": [
 						{
 							"column-two": true,
+							"subheader": true,
+							"title": "Alexa for Business",
 							"text": true,
-							"content": "Coming soon!"
+							"content": "Working closely with product managers, designers, and IT engineers, my team and I developed two prototype Alexa for Business skills. This speculative design project’s goal was to explore the potential of new digital experiences for Dexcom to expand to."
+						},
+						{
+							"column-two": true,
+							"subheader": true,
+							"title": "myDexcom App",
+							"text": true,
+							"content": "The myDexcom mobile app increases customer communication, transparency, and retention. By providing a portal where they can obtain general product information, see the status of their insurance verification, and re-order sensors, customers are able to have a sense of security and convenience throughout the Dexcom customer UX process."
+						},
+						{
+							"column-one": true,
+							"text": true,
+							"content": "Throughout the design process the other interns and I held ideation sessions where we would outline user flows and necessary app features on whiteboards. Our final deliverable was an interactive prototype of the myDexcom companion app generated using Adobe XD."
+						},
+						{
+							"column-one": true,
+							"image": true,
+							"src": "images/dexcom/myDexcom-appflow.jpg",
+							"caption": true,
+							"caption-content": "myDexcom User Flow Whiteboard Session. Completed as team."
 						}
 					]
 				},
@@ -61,7 +94,12 @@
 						{
 							"column-two": true,
 							"text": true,
-							"content": "If you want to learn more about what I worked on, I'd be happy to share! <a href=\"mailto:suasin.ja@gmail.com\">Let me know if you want to talk!</a>"
+							"content": "My experience at Dexcom was challenging but rewarding, as I had never worked in a fast-paced business environment before. Contributing to the improvement of real solutions and products allowed me to exercise my design abilities and creativity in a way that cannot be replicated through college curriculum."
+						},
+						{
+							"column-one": true,
+							"text": true,
+							"content": "As a young mind in a mature company setting, I thought I was able to bring fresh perspective and energy to the projects I was a part of. I am excited to see how I will continue to grow at my next workplace experience! If you want to learn more about what I worked on, I'd be happy to share! <a href=\"mailto:suasin.ja@gmail.com\">Let me know if you want to talk!</a>"
 						}
 					]
 				}
@@ -157,7 +195,9 @@
 						{
 							"column-one": true,
 							"image": true,
-							"src": "images/burow/storyboards.gif"
+							"src": "images/burow/storyboards.gif",
+							"caption": true,
+							"caption-content": "Second storyboard by Joel."
 						},
 						{
 							"subheader": true,
@@ -195,7 +235,9 @@
 							"title": "Desktop Variant",
 							"column-one": true,
 							"image": true,
-							"src": "images/burow/prototype2.gif"
+							"src": "images/burow/prototype2.gif",
+							"caption": true,
+							"caption-content": "Designed together as team. Prototypes by Emily and Aman."
 						}
 					]
 				},
@@ -573,6 +615,8 @@
 							"src-1": "images/blyss/prototype-1.gif",
 							"src-2": "images/blyss/prototype-2.gif",
 							"src-3": "images/blyss/prototype-3.gif",
+							"caption": true,
+							"caption-content": "Prototype gifs made by Bradley.",
 							"text": true,
 							"content": "You can find the live prototype of our final design <a href=\"https://blyss.herokuapp.com/home\">here</a>!"
 						}
