@@ -799,7 +799,8 @@ body {
     line-height: 1.7; }
     .page-container p a {
       text-decoration: none;
-      color: #45af6e; }
+      /*color: #019875;*/
+      color: #795ABB; }
     .page-container p a:hover {
       opacity: 0.5;
       transition-duration: 0.5s; }
