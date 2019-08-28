@@ -1,6 +1,6 @@
 .footer-container {
     height: 6rem;
-    margin: 3rem 0 0 0;
+    margin: 6rem 0 0 0;
 
 }
 
@@ -10,7 +10,6 @@
     h2 {
         font-family: 'Montserrat', sans-serif;
         font-weight: 500;
-        color: #474747;
         font-size: 1rem;
         margin: 0.5rem 0;
     }
@@ -25,14 +24,22 @@
 
     ul {
         li {
+
+            a {
+                text-decoration: none;
+                border-bottom: none;
+
+                img {
+                    transition: all 0.6s ease-in-out;
+                }
+            }
+
             a:hover > img {
-                opacity: 0.7;
-                transition-duration: 0.5s;
+                transition: all 0.6s ease-in-out;
+                transform: translateY(-1rem);
             }
         }
     }
-
-
 
     li {
         display: inline-block;

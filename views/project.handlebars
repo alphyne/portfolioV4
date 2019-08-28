@@ -6,15 +6,15 @@
 		<!-- Meta tags -->
 		<meta charset="utf-8">
     	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-		<meta name="description" content="Jared Suasin / {{title}}" />
+		<meta name="description" content="Jared Suasin - {{title}}" />
 		<meta name="keywords" content="Jared Suasin, visual design, interaction design, ui design, ux design, product design, front-end development, ux engineering">
 		<meta property="og:title" content="{{title}}">
 		<meta property="og:type" content="website">
 		<meta property="og:image" content="http://jaredsuasin.com/images/portfolio-cover.png">
 		<meta property="og:url" content="http://jaredsuasin.com/">
-		<meta property="og:description" content="Jared Suasin / {{title}}">	
+		<meta property="og:description" content="Jared Suasin - {{title}}">	
 		
-		<title>Jared Suasin / {{title}}</title>
+		<title>Jared Suasin &mdash; {{title}}</title>
 		<link href="css/main.css" rel="stylesheet" type="text/css">
 		<link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,400i,500,600" rel="stylesheet">
 		<link rel="stylesheet" href="fonts/stylesheet.css" type="text/css" charset="utf-8" />
@@ -29,44 +29,42 @@
         <meta name="theme-color" content="#ffffff">
 	
 	</head>
-	<body>
+	<body style="background-color:{{background-color}}">
 
-		<!-- Header -->
 		<div class="header-container">
-			<div id="full-name" class="name-container">
-				<h1><a href="/">JARED SUASIN</a></h1>
-			</div>
+			
+			<!-- Header -->
+			<div id="navbar">
+				<!--<div id="full-name" class="name-container">
+					<h1 class='notActive'><a href="/">J</a></h1>
+					
+				</div>-->
 
-			<div id="initials" class="name-container">
-				<h1><a href="/">JS</a></h1>
-			</div>
+				<!--<div class="logo-container">
+					<a href="/"><img src="images/logo4-02.png"></a>
+				</div>-->
 
-			<ul class="nav-container">
-				<li id="resume" class="nav-item"><a class="notActive" href="/resume"><span>Resume</span></a></li>
-				<li id="about" class="nav-item"><a class="notActive" href="/about"><span>About</span></a></li>
-				<li id="work" class="nav-item"><a class="notActive" href="/"><span>Work</span></a></li>
-			</ul>
-
-			<!--<div class="ham-menu">
-				<div class="button_container" id="toggle"><span class="top"></span><span class="middle"></span><span class="bottom"></span></div>
-				<div class="overlay" id="overlay">
-					<nav class="overlay-menu">
-						<ul>
-							<li><a href="#">Home</a></li>
-							<li><a href="#">About</a></li>
-							<li><a href="#">Work</a></li>
-							<li><a href="#">Contact</a></li>
-						</ul>
-					</nav>
+				<div class="name-container">
+					<a class="notActive" href="/"><h1><span>JARED SUASIN</span></h1></a>
 				</div>
-			</div>-->
+
+				<div id="initials" class="name-container">
+					<!--<h1><a href="/">JS</a></h1>-->
+					<img src="images/logo-4-02.png">
+				</div>
+
+				<ul class="nav-container">
+					<li id="resume" class="nav-item"><a class="notActive" href="/resume"><span>Resume</span></a></li>
+					<li id="about" class="nav-item"><a class="notActive" href="/about"><span>About</span></a></li>
+					<li id="work" class="nav-item"><a class="notActive" href="/#navbar"><span>Work</span></a></li>
+				</ul>
+			</div>
 		</div>
 
-	<!-- Project content -->
-		<div class="project-landing" style="background-image:url({{src-cover}}); background-position-y:{{position-y-project}}">
+			<!-- Project content -->
+			<div class="project-landing" style="background-image:url({{src-cover}}); background-position-y:{{position-y-project}}">
 
-		</div>
-
+			</div>
 		<div class="page-container">
 
 			<div class="project-container">
@@ -74,33 +72,46 @@
 
 				<!-- Project title -->
 				<div class="project-name">
-					<h1>{{name}}<span> / {{type}}</span></h1>
+					<h1>{{title}}</h1>
+					<h4>{{type}}</h3>
 				</div>
 
 				<!-- Project description -->
 				<div class="project-description">
-					<p>{{description}}</p>
+					<p>{{{description}}}</p>
 				</div>
 
 				<!-- Project details -->
-				<div class="project-details">
-					{{#each info}}
-					<div class="project-detail-item">
-						<h4>{{title}}</h4>
-						<p>{{{content}}}</p>
+				<div class="project-details-container">
+					
+					<div class="project-details-left">
+						{{#each info-block-1}}
+						<div class="project-detail-item">
+							<h5>{{title}}</h5>
+							<h6>{{{content}}}</h6>
+						</div>
+						{{/each}}
 					</div>
-					{{/each}}
+
+					<div class="project-details-right">
+						{{#each info-block-2}}
+						<div class="project-detail-item">
+							<h5>{{title}}</h5>
+							<h6>{{{content}}}</h6>
+						</div>
+						{{/each}}
+					</div>
 				</div>
 
-				<!-- Project blocks -->
+				<!-- Content blocks -->
 				{{#each blocks}}
 					<div class="block">
 						<div class="block-container">
 								
-							<!-- Block header -->
+							<!-- Content block header -->
 							<h2>{{header}}</h2>
 
-							<!-- Block sections -->
+							<!-- Content block sections -->
 							{{#each sections}}
 								<div class="section-container">
 
@@ -115,40 +126,64 @@
 										<!-- Image -->
 										{{#if image}}
 											<div class="media-container">
-												<img src="{{src}}">
+												<div class="boxed-content">
+													<img src="{{src}}">
+
+													{{#if image-2}}
+														<img src="{{src-2}}">
+													
+														{{#if image-3}}
+															<img src="{{src-3}}">
+														{{/if}}
+													{{/if}}
+												
 
 												{{#if caption}}
-													<p class="caption">{{caption-content}}</p>
+													<div class="image-caption">
+														<p class="caption">{{caption-content}}</p>
+													</div>
 												{{/if}}
+												</div>
 											</div>
-
-
 										{{/if}}
 
 										<!-- Three Images -->
 										{{#if image-three}}
-											<div class="media-container image-three-container">
-												<img src="{{src-1}}">
-												<img src="{{src-2}}">
-												<img src="{{src-3}}">
+											<div class="media-container boxed-content">
+												<div class="image-three-container">
+													<img src="{{src-1}}">
+													<img src="{{src-2}}">
+													<img src="{{src-3}}">
+												</div>
 
 												{{#if caption}}
-													<p class="caption">{{caption-content}}</p>
+													<div class="image-caption">
+														<p>{{caption-content}}</p>
+													</div>
+														
 												{{/if}}
 											</div>
 										{{/if}}
 
 										<!-- Quote -->
 										{{#if quote}}
-											<div class="media-container">
-												<p class="quote">{{{content}}}</p>
+											<div class="media-container boxed-content quote">
+												<p>{{{content}}}</p>
 											</div>
 
 										{{/if}}
 
+										<!-- Boxed content -->
+										{{#if boxed-content}}
+											<div class="media-container boxed-content list">
+												<p>{{{content-1}}}</p>
+												<p>{{{content-2}}}</p>
+											</div>
+										{{/if}}
+
 										<!-- Bullet list -->
 										{{#if bullet-list}}
-											<div class="media-container">
+											<div class="media-container boxed-content list">
 												<ul>{{{content}}}</ul>
 											</div>
 										{{/if}}
@@ -160,7 +195,7 @@
 
 										<!-- Video -->
 										{{#if video}}
-											<div class="media-container">
+											<div class="media-container boxed-content">
 												{{{content}}}
 											</div>
 										{{/if}}
@@ -175,13 +210,21 @@
 											<h3>{{title}}</h3>
 										{{/if}}
 
-										<!-- Image -->
-										{{#if image-and-text}}
-											<div class="image-text-column">
-												<img class="image-left" src="{{src}}">
-												<p>{{{content}}}</p>
+										{{#if image}}
+
+											<div class="image-row-container">
+												<div class="image-caption-container">
+													<div class="image-caption">
+														{{#if caption}}
+															<p>{{caption-content}}</p>
+														{{/if}}
+													</div>
+												</div>
+												
+												<div class="image-container">
+													<img src="{{src}}">
+												</div>
 											</div>
-											
 										{{/if}}
 
 										<!-- Text -->
@@ -199,33 +242,51 @@
 
 			</div> <!-- project-container -->
 
+			<!-- Prev/Next Project Nav -->
+			<div class="project-nav-container">
+
+				<h3>
+					{{#if previous}}
+						&#10229;
+						{{{previous-project}}}
+					{{/if}}
+
+					{{#if previous-and-next}}
+						<span class="separator">
+							&#8729;
+						</span>
+					{{/if}}
+
+					{{#if next}}
+						{{{next-project}}}
+						&#10230;
+					{{/if}}
+				</h3>
+						
+			</div>
+
 			<!-- Footer -->
 			<div class="footer-container">
 
 				<div id="copyright">
-					<h2>Copyright &copy 2019, Jared Suasin</h2>
+					<h2>&copy Jared Suasin 2019</h2>
 				</div>
 
 				<div class="icon-container">
 					<ul>
 						<li>
-							<a href="/resume" title="Resume">
-								<img src="images/icons/resume.png">
-							</a>
-						</li>
-						<li>
 							<a href="mailto:suasin.ja@gmail.com" title="Mail">
-								<img src="images/icons/mail.png">
+								<img src="images/icons/email-white-2.svg">
 							</a>
 						</li>
 						<li>
 							<a href="https://www.linkedin.com/in/jared-suasin-982a20133" title="LinkedIn">
-								<img src="images/icons/linkedin.png">
+								<img src="images/icons/linkedin-logo-white-01.svg">
 							</a>
 						</li>
 						<li>
 							<a href="https://github.com/alphyne" title="GitHub">
-								<img src="images/icons/github.png">
+								<img src="images/icons/github-logo-white-01.svg">
 							</a>
 						</li>
 					</ul>

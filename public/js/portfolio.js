@@ -1,59 +1,38 @@
-/*$('#toggle').click(function() {
-  $(this).toggleClass('active');
-  $('#overlay').toggleClass('open');
- });*/
+$(document).ready(function (){
+  $("#work").click(function (){
+      $('html, body').animate({
+          scrollTop: $("#navbar").offset().top,
+          behavior: 'smooth'
+      }, 800);
+  });
+});
 
-/*(function() {
-  
-  var Menu = (function() {
-    var burger = document.querySelector('.burger');
-    var menu = document.querySelector('.menu');
-    var menuList = document.querySelector('.menu__list');
-    var brand = document.querySelector('.menu__brand');
-    var menuItems = document.querySelectorAll('.menu__item');
-    
-    var active = false;
-    
-    var toggleMenu = function() {
-      if (!active) {
-        menu.classList.add('menu--active');
-        menuList.classList.add('menu__list--active');
-        brand.classList.add('menu__brand--active');
-        burger.classList.add('burger--close');
-        for (var i = 0, ii = menuItems.length; i < ii; i++) {
-          menuItems[i].classList.add('menu__item--active');
-        }
-        
-        active = true;
-      } else {
-        menu.classList.remove('menu--active');
-        menuList.classList.remove('menu__list--active');
-        brand.classList.remove('menu__brand--active');
-        burger.classList.remove('burger--close');
-        for (var i = 0, ii = menuItems.length; i < ii; i++) {
-          menuItems[i].classList.remove('menu__item--active');
-        }
-        
-        active = false;
+var animateHTML = function() {
+  var elems;
+  var windowHeight;
+  function init() {
+    elems = document.querySelectorAll('.hidden');
+    windowHeight = window.innerHeight;
+    addEventHandlers();
+    checkPosition();
+  }
+  function addEventHandlers() {
+    window.addEventListener('scroll', checkPosition);
+    window.addEventListener('resize', init);
+  }
+  function checkPosition() {
+    for (var i = 0; i < elems.length; i++) {
+      var positionFromTop = elems[i].getBoundingClientRect().top;
+      if (positionFromTop - windowHeight <= 0) {
+        elems[i].className = elems[i].className.replace(
+          'hidden',
+          'fade-in'
+        );
       }
-    };
-    
-    var bindActions = function() {
-      burger.addEventListener('click', toggleMenu, false);
-    };
-    
-    var init = function() {
-      bindActions();
-    };
-    
-    return {
-      init: init
-    };
-    
-  }());
-  
-  Menu.init();
-  
-}());
-
-$(document).ready(main);*/
+    }
+  }
+  return {
+    init: init
+  };
+};
+animateHTML().init();

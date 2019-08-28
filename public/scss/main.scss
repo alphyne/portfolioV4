@@ -1,13 +1,15 @@
+/* Header and footer styling */
+@import "layout/page";
+@import "layout/footer";
+@import "layout/header";
+
+
+
 /* Page specific styling */
 @import "pages/home";
 @import "pages/about";
 @import "pages/project";
 @import "pages/landing";
-
-/* Header and footer styling */
-@import "layout/footer";
-@import "layout/header";
-@import "layout/page";
 
 /* Base styling */
 @import "base/fonts";
