@@ -1,0 +1,288 @@
+
+/* empty white space around icon */
+/* system icons are a 16px glyph on a 20px artboard */
+$iconGlyphRatio: (16/20);
+$iconNudgeRatio: ((20 - 16) / 2) / 20;
+
+$xxsmallIconArtboardSize: 12.8px;
+$xsmallIconArtboardSize: 16px;
+$smallIconArtboardSize: 20px;
+$mediumIconArtboardSize: 30px;
+$largeIconArtboardSize: 40px;
+$xlargeIconArtboardSize: 60px;
+$xxlargeIconArtboardSize: 80px;
+$xxxlargeIconArtboardSize: 120px;
+
+$xxsmallIconDimensions: (
+    elementHeight: $xxsmallIconArtboardSize,
+    elementWidth: $xxsmallIconArtboardSize,
+    fontSize: $xxsmallIconArtboardSize,
+    glyphHeight: $xxsmallIconArtboardSize * $iconGlyphRatio,
+    glyphWidth: $xxsmallIconArtboardSize * $iconGlyphRatio,
+    nudge: $xxsmallIconArtboardSize * $iconNudgeRatio,
+    sideMargin: $baseMeasureSmall,
+    loaderBorderWidth: 2px
+);
+
+$xsmallIconDimensions: (
+    elementHeight: $xsmallIconArtboardSize,
+    elementWidth: $xsmallIconArtboardSize,
+    fontSize: $xsmallIconArtboardSize,
+    glyphHeight: $xsmallIconArtboardSize * $iconGlyphRatio,
+    glyphWidth: $xsmallIconArtboardSize * $iconGlyphRatio,
+    nudge: $xsmallIconArtboardSize * $iconNudgeRatio,
+    sideMargin: $baseMeasureSmall,
+    loaderBorderWidth: 2px
+);
+
+$smallIconDimensions: (
+    elementHeight: $smallIconArtboardSize,
+    elementWidth: $smallIconArtboardSize,
+    fontSize: $smallIconArtboardSize,
+    glyphHeight: $smallIconArtboardSize * $iconGlyphRatio,
+    glyphWidth: $smallIconArtboardSize * $iconGlyphRatio,
+    nudge: $smallIconArtboardSize * $iconNudgeRatio,
+    sideMargin: $baseMeasureSmall,
+    loaderBorderWidth: 2px
+);
+
+$mediumIconDimensions: (
+    elementHeight: $mediumIconArtboardSize,
+    elementWidth: $mediumIconArtboardSize,
+    fontSize: $mediumIconArtboardSize,
+    glyphHeight: $mediumIconArtboardSize * $iconGlyphRatio,
+    glyphWidth: $mediumIconArtboardSize * $iconGlyphRatio,
+    nudge: $mediumIconArtboardSize * $iconNudgeRatio,
+    sideMargin: $baseMeasureMedium,
+    loaderBorderWidth: 3px
+);
+
+$largeIconDimensions: (
+    elementHeight: $largeIconArtboardSize,
+    elementWidth: $largeIconArtboardSize,
+    fontSize: $largeIconArtboardSize,
+    glyphHeight: $largeIconArtboardSize * $iconGlyphRatio,
+    glyphWidth: $largeIconArtboardSize * $iconGlyphRatio,
+    nudge: $largeIconArtboardSize * $iconNudgeRatio,
+    sideMargin: $baseMeasureMedium,
+    loaderBorderWidth: 3px
+);
+
+$xlargeIconDimensions: (
+    elementHeight: $xlargeIconArtboardSize,
+    elementWidth: $xlargeIconArtboardSize,
+    fontSize: $xlargeIconArtboardSize,
+    glyphHeight: $xlargeIconArtboardSize * $iconGlyphRatio,
+    glyphWidth: $xlargeIconArtboardSize * $iconGlyphRatio,
+    nudge: $xlargeIconArtboardSize * $iconNudgeRatio,
+    sideMargin: $baseMeasureMedium,
+    loaderBorderWidth: 4px
+);
+
+$xxlargeIconDimensions: (
+    elementHeight: $xxlargeIconArtboardSize,
+    elementWidth: $xxlargeIconArtboardSize,
+    fontSize: $xxlargeIconArtboardSize,
+    glyphHeight: $xxlargeIconArtboardSize * $iconGlyphRatio,
+    glyphWidth: $xxlargeIconArtboardSize * $iconGlyphRatio,
+    nudge: $xxlargeIconArtboardSize * $iconNudgeRatio,
+    sideMargin: $baseMeasureLarge,
+    loaderBorderWidth: 5px
+);
+
+$xxxlargeIconDimensions: (
+    elementHeight: $xxxlargeIconArtboardSize,
+    elementWidth: $xxxlargeIconArtboardSize,
+    fontSize: $xxxlargeIconArtboardSize,
+    glyphHeight: $xxxlargeIconArtboardSize * $iconGlyphRatio,
+    glyphWidth: $xxxlargeIconArtboardSize * $iconGlyphRatio,
+    nudge: $xxxlargeIconArtboardSize * $iconNudgeRatio,
+    sideMargin: $baseMeasureLarge,
+    loaderBorderWidth: 6px
+);
+
+/* semantic highres icons */
+
+/*$paSemanticHighresIconCodes: (
+    favorite: map-get($paHighresIconCodes, heart),
+    email: map-get($paHighresIconCodes, envelope),
+    viewedEmail: map-get($paHighresIconCodes, envelope),
+    myAgent: map-get($paHighresIconCodes, peopleHomeConnected),
+    phonePerformancePoor: map-get($paHighresIconCodes, callNoAnswer),
+    phonePerformanceOkay: map-get($paHighresIconCodes, call),
+    phonePerformanceGood: map-get($paHighresIconCodes, callSuccess)
+);
+
+.pa-highresIcon-favorite {
+    @extend .pa-highresIcon-heart;
+}
+
+.pa-highresIcon-viewedEmail {
+    @extend .pa-highresIcon-envelope;
+}
+
+.pa-highresIcon-email {
+    @extend .pa-highresIcon-envelope;
+}
+
+.pa-highresIcon-myAgent {
+    @extend .pa-highresIcon-peopleHomeConnected;
+}
+
+.pa-highresIcon-phonePerformancePoor {
+    @extend .pa-highresIcon-callNoAnswer;
+}
+
+.pa-highresIcon-phonePerformanceOkay {
+    @extend .pa-highresIcon-call;
+}
+
+.pa-highresIcon-phonePerformanceGood {
+    @extend .pa-highresIcon-callSuccess;
+}*/
+
+/* semantic system icons */
+
+/*$paSemanticSystemIconCodes: (
+    view: map-get($paSystemIconCodes, eye),
+    viewedEmail: map-get($paSystemIconCodes, envelope),
+    favorite: map-get($paSystemIconCodes, heart),
+    unfavorite: map-get($paSystemIconCodes, heartEmpty),
+    date: map-get($paSystemIconCodes, calendar),
+    forward: map-get($paSystemIconCodes, arrowRight),
+    attachment: map-get($paSystemIconCodes, paperclip),
+    close: map-get($paSystemIconCodes, xMark),
+    search: map-get($paSystemIconCodes, magnifyingGlass),
+    dropdown: map-get($paSystemIconCodes, smallCaretDown),
+    dropdownOpen: map-get($paSystemIconCodes, smallCaretUp),
+    menu: map-get($paSystemIconCodes, tripleBar),
+    email: map-get($paSystemIconCodes, envelope),
+    sms: map-get($paSystemIconCodes, speechBubble),
+    help: map-get($paSystemIconCodes, circleQuestion),
+    settings: map-get($paSystemIconCodes, gear),
+    statusAttention: map-get($paSystemIconCodes, circleExclamation),
+    statusError: map-get($paSystemIconCodes, circleX),
+    statusInfo: map-get($paSystemIconCodes, circleInfo),
+    statusSuccess: map-get($paSystemIconCodes, circleCheckmark),
+    admin: map-get($paSystemIconCodes, personGear),
+    sortAsc: map-get($paSystemIconCodes, smallArrowUp),
+    sortDesc: map-get($paSystemIconCodes, smallArrowDown),
+    wizardStepDefault: map-get($paSystemIconCodes, listBulletCircle),
+    wizardStepCompleted: map-get($paSystemIconCodes, listBulletCheckmark),
+    wizardStepCurrent: map-get($paSystemIconCodes, listBulletDisc),
+    wizardStepViewed: map-get($paSystemIconCodes, listBulletDisc),
+    increase: map-get($paSystemIconCodes, smallArrowUp),
+    decrease: map-get($paSystemIconCodes, smallArrowDown)
+);
+
+.pa-systemIcon-view {
+    @extend .pa-systemIcon-eye;
+}
+
+.pa-systemIcon-viewedEmail {
+    @extend .pa-systemIcon-envelope;
+}
+
+.pa-systemIcon-favorite {
+    @extend .pa-systemIcon-heart;
+}
+
+.pa-systemIcon-unfavorite {
+    @extend .pa-systemIcon-heartEmpty;
+}
+
+.pa-systemIcon-date {
+    @extend .pa-systemIcon-calendar;
+}
+
+.pa-systemIcon-forward {
+    @extend .pa-systemIcon-arrowRight;
+}
+
+.pa-systemIcon-attachment {
+    @extend .pa-systemIcon-paperclip;
+}
+
+.pa-systemIcon-close {
+    @extend .pa-systemIcon-xMark;
+}
+
+.pa-systemIcon-search {
+    @extend .pa-systemIcon-magnifyingGlass;
+}
+
+.pa-systemIcon-dropdown {
+    @extend .pa-systemIcon-smallCaretDown;
+}
+
+.pa-systemIcon-menu {
+    @extend .pa-systemIcon-tripleBar;
+}
+
+.pa-systemIcon-email {
+    @extend .pa-systemIcon-envelope;
+}
+
+.pa-systemIcon-sms {
+    @extend .pa-systemIcon-speechBubble;
+}
+
+.pa-systemIcon-help {
+    @extend .pa-systemIcon-circleQuestion;
+}
+
+.pa-systemIcon-settings {
+    @extend .pa-systemIcon-gear;
+}
+
+.pa-systemIcon-statusAttention {
+    @extend .pa-systemIcon-circleExclamation;
+}
+
+.pa-systemIcon-statusError {
+    @extend .pa-systemIcon-circleX;
+}
+
+.pa-systemIcon-statusInfo {
+    @extend .pa-systemIcon-circleInfo;
+}
+
+.pa-systemIcon-statusSuccess {
+    @extend .pa-systemIcon-circleCheckmark;
+}
+
+.pa-systemIcon-admin {
+    @extend .pa-systemIcon-personGear;
+}
+
+.pa-systemIcon-sortAsc {
+    @extend .pa-systemIcon-smallArrowUp;
+}
+
+.pa-systemIcon-sortDesc {
+    @extend .pa-systemIcon-smallArrowDown;
+}
+
+.pa-systemIcon-wizardStepDefault {
+    @extend .pa-systemIcon-listBulletCircle;
+}
+
+.pa-systemIcon-wizardStepCompleted {
+    @extend .pa-systemIcon-listBulletCheckmark;
+}
+
+.pa-systemIcon-wizardStepCurrent {
+    @extend .pa-systemIcon-listBulletDisc;
+}
+
+.pa-systemIcon-wizardStepViewed {
+    @extend .pa-systemIcon-listBulletDisc;
+}
+
+.pa-systemIcon-increase {
+    @extend .pa-systemIcon-smallArrowUp;
+}
+
+.pa-systemIcon-decrease {
+    @extend .pa-systemIcon-smallArrowDown;
+}*/

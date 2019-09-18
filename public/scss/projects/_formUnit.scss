@@ -1,0 +1,545 @@
+/*doc
+---
+title: Form Unit
+name: 0form_layout
+category: Form Layout
+author: Tony Q
+---
+
+Form units are the basic building blocks of forms.
+An individual form unit consists of a form field, its label, and the helper or error text (if any).
+A set of related checkboxes or radio buttons are grouped together into a single form unit;
+a good rule of thumb is that each form unit should map to a single variable.
+
+```html_example
+<div class="pa-formUnit">
+    <label class="pa-fieldLabel" for="0form_unit_text">Form Unit Label</label>
+    <input type="text" id="0form_unit_text" />
+    <span class="pa-fieldHelper">Form Unit Helper Text</span>
+</div>
+```
+CSS class                        |  Usage
+-------------------------------- | ------------------------------------------------------------------------------------------------------
+`.pa-formUnit`                   | Basic building block of forms... one form unit usually represents a single form field.
+`.pa-fieldLabel`                 | A label for a single form field.
+`.pa-fieldHelper`                | Individual tab element; several of these go together inside a tab bar.
+`.pa-formUnit.pa-hasError`       | Class to apply to the form unit if its form field has an error.
+`.pa-fieldError`                 | Error text specific to this field.
+*/
+
+/*doc
+---
+title: Field Sizes
+name: 2field_sizes
+category: Form Layout
+author: Tony Q
+---
+
+Each individual form unit can be one of several distinct widths.
+There is a default width, but for certain kinds of content, a different width may be appropriate.
+
+```html_example
+<h3>Contact Info</h3>
+<div class="pa-formRow">
+    <div class="pa-formUnit pa-formUnitL">
+        <label class="pa-fieldLabel" for="2field_sizes_text1">First Name (L)</label>
+        <input type="text" id="2field_sizes_text1" />
+    </div>
+    <div class="pa-formUnit pa-formUnitL">
+        <label class="pa-fieldLabel" for="2field_sizes_text2">Last Name (L)</label>
+        <input type="text" id="2field_sizes_text2" />
+    </div>
+</div>
+<div class="pa-formRow">
+    <div class="pa-formUnit pa-formUnitXXL">
+        <label class="pa-fieldLabel" for="2field_sizes_text3">Street (XXL)</label>
+        <input type="text" id="2field_sizes_text3" />
+    </div>
+</div>
+<div class="pa-formRow">
+    <div class="pa-formUnit pa-formUnitL">
+        <label class="pa-fieldLabel" for="2field_sizes_text4">City (L)</label>
+        <input type="text" id="2field_sizes_text5" />
+    </div>
+    <div class="pa-formUnit pa-formUnitM">
+        <label class="pa-fieldLabel" for="2field_sizes_text5">State (M)</label>
+        <div class="pa-selectWrapper">
+            <select id="2field_sizes_text5">
+                <option value="California" selected>CA</option>
+                <option value="New York">NY</option>
+                <option value="Washington">WA</option>
+            </select>
+        </div>
+    </div>
+    <div class="pa-formUnit pa-formUnitM">
+        <label class="pa-fieldLabel" for="2field_sizes_text6">Zip (M)</label>
+        <input type="text" id="2field_sizes_text6" />
+    </div>
+</div>
+<h3>Form Unit Sizes</h3>
+<div class="pa-formRow">
+    <div class="pa-formUnit pa-formUnitXXL">
+        <label class="pa-fieldLabel" for="2field_sizes_textXXL">XXL Form Unit</label>
+        <input type="text" id="2field_sizes_textXXL" />
+    </div>
+</div>
+<div class="pa-formRow">
+    <div class="pa-formUnit pa-formUnitXL">
+        <label class="pa-fieldLabel" for="2field_sizes_textXL">XL Form Unit</label>
+        <input type="text" id="2field_sizes_textXL" />
+    </div>
+    <div class="pa-formUnit pa-formUnitM">
+        <label class="pa-fieldLabel" for="2field_sizes_textM_XLrow">M Form Unit</label>
+        <input type="text" id="2field_sizes_textM_XLrow" />
+    </div>
+</div>
+<div class="pa-formRow">
+    <div class="pa-formUnit pa-formUnitL">
+        <label class="pa-fieldLabel" for="2field_sizes_textL1">L Form Unit</label>
+        <input type="text" id="2field_sizes_textL1" />
+    </div>
+    <div class="pa-formUnit pa-formUnitL">
+        <label class="pa-fieldLabel" for="2field_sizes_textL2">L Form Unit</label>
+        <input type="text" id="2field_sizes_textL2" />
+    </div>
+</div>
+<div class="pa-formRow">
+    <div class="pa-formUnit pa-formUnitM">
+        <label class="pa-fieldLabel" for="2field_sizes_textM1">M Form Unit</label>
+        <input type="text" id="2field_sizes_textM1" />
+    </div>
+    <div class="pa-formUnit pa-formUnitM">
+        <label class="pa-fieldLabel" for="2field_sizes_textM2">M Form Unit</label>
+        <input type="text" id="2field_sizes_textM2" />
+    </div>
+    <div class="pa-formUnit pa-formUnitM">
+        <label class="pa-fieldLabel" for="2field_sizes_textM3">M Form Unit</label>
+        <input type="text" id="2field_sizes_textM3" />
+    </div>
+    <div class="pa-formUnit pa-formUnitM">
+        <label class="pa-fieldLabel" for="2field_sizes_textM4">M Form Unit</label>
+        <input type="text" id="2field_sizes_textM4" />
+    </div>
+</div>
+<div class="pa-formRow">
+    <div class="pa-formUnit pa-formUnitSM">
+        <label class="pa-fieldLabel" for="2field_sizes_textSM1">SM</label>
+        <input type="text" id="2field_sizes_textSM1" />
+    </div>
+    <div class="pa-formUnit pa-formUnitSM">
+        <label class="pa-fieldLabel" for="2field_sizes_textSM2">SM</label>
+        <input type="text" id="2field_sizes_textSM2" />
+    </div>
+    <div class="pa-formUnit pa-formUnitSM">
+        <label class="pa-fieldLabel" for="2field_sizes_textSM3">SM</label>
+        <input type="text" id="2field_sizes_textSM3" />
+    </div>
+    <div class="pa-formUnit pa-formUnitSM">
+        <label class="pa-fieldLabel" for="2field_sizes_textSM4">SM</label>
+        <input type="text" id="2field_sizes_textSM4" />
+    </div>
+    <div class="pa-formUnit pa-formUnitSM">
+        <label class="pa-fieldLabel" for="2field_sizes_textSM5">SM</label>
+        <input type="text" id="2field_sizes_textSM5" />
+    </div>
+    <div class="pa-formUnit pa-formUnitSM">
+        <label class="pa-fieldLabel" for="2field_sizes_textSM6">SM</label>
+        <input type="text" id="2field_sizes_textSM6" />
+    </div>
+</div>
+<div class="pa-formRow">
+    <div class="pa-formUnit pa-formUnitS">
+        <label class="pa-fieldLabel" for="2field_sizes_textS1">S</label>
+        <input type="text" id="2field_sizes_textS1" />
+    </div>
+    <div class="pa-formUnit pa-formUnitS">
+        <label class="pa-fieldLabel" for="2field_sizes_textS2">S</label>
+        <input type="text" id="2field_sizes_textS2" />
+    </div>
+    <div class="pa-formUnit pa-formUnitS">
+        <label class="pa-fieldLabel" for="2field_sizes_textS3">S</label>
+        <input type="text" id="2field_sizes_textS3" />
+    </div>
+    <div class="pa-formUnit pa-formUnitS">
+        <label class="pa-fieldLabel" for="2field_sizes_textS4">S</label>
+        <input type="text" id="2field_sizes_textS4" />
+    </div>
+    <div class="pa-formUnit pa-formUnitS">
+        <label class="pa-fieldLabel" for="2field_sizes_textS5">S</label>
+        <input type="text" id="2field_sizes_textS5" />
+    </div>
+    <div class="pa-formUnit pa-formUnitS">
+        <label class="pa-fieldLabel" for="2field_sizes_textS6">S</label>
+        <input type="text" id="2field_sizes_textS6" />
+    </div>
+    <div class="pa-formUnit pa-formUnitS">
+        <label class="pa-fieldLabel" for="2field_sizes_textS7">S</label>
+        <input type="text" id="2field_sizes_textS7" />
+    </div>
+    <div class="pa-formUnit pa-formUnitS">
+        <label class="pa-fieldLabel" for="2field_sizes_textS8">S</label>
+        <input type="text" id="2field_sizes_textS8" />
+    </div>
+</div>
+```
+CSS class                        |  Usage
+-------------------------------- | ------------------------------------------------------------------------------------------------------
+`.pa-formUnitS`                  | Small-width form unit.
+`.pa-formUnitM`                  | Medium width.
+`.pa-formUnitL`                  | Large width (Default). Form units with no explicit size class are this width.
+`.pa-formUnitXL`                 | Extra large width.
+*/
+
+/*doc
+---
+title: Required Fields
+name: 8required_fields
+category: Form Layout
+author: Tony Q
+---
+
+Generally, forms should be as short as possible and all fields should be required.
+When that is not possible, we want to indicate which fields are optional (when most are required).
+In the unusual case where most fields are optional, we can indicate which fields are required.
+If every field in your form has one of these indicators, there's a mistake.
+
+```html_example
+<div class="pa-formUnit pa-formUnitL pa-requiredFormUnit">
+    <label class="pa-fieldLabel" for="8required_fields_text1">Required Field</label>
+    <input type="text" id="8required_fields_text1" />
+</div>
+<div class="pa-formUnit pa-formUnitL pa-optionalFormUnit">
+    <label class="pa-fieldLabel" for="8required_fields_text2">Optional Field</label>
+    <input type="text" id="8required_fields_text2" />
+</div>
+```
+CSS class                        |  Usage
+-------------------------------- | ------------------------------------------------------------------------------------------------------
+`.pa-requiredFormUnit`           | Required form field. Use this class in a form where most fields are optional.
+`.pa-optionalFormUnit`           | Optional form field. Use this class in a form where most fields are required.
+*/
+
+/*doc
+---
+title: Error States
+name: 9error_states
+category: Form Fields
+author: Tony Q
+---
+
+Use the <code>pa-hasError</code> class to put a form unit into its error state.
+Note that the field error text is only visible if the <code>pa-hasError</code> class has been applied.
+
+```html_example
+<div class="pa-formUnit pa-hasError">
+    <label class="pa-fieldLabel" for="9error_states_text">Username</label>
+    <input type="text" id="9error_states_text" value="me" />
+    <span class="pa-fieldError">Usernames must be between 8 and 25 characters.</span>
+</div>
+<div class="pa-formUnit pa-formUnitXL pa-hasError">
+    <label class="pa-fieldLabel" for="9error_states_textarea">Message</label>
+    <textarea id="9error_states_textarea"></textarea>
+    <span class="pa-fieldError">The message cannot be empty.</span>
+</div>
+<div class="pa-formUnit pa-hasError">
+    <label class="pa-fieldLabel" for="9error_states_select">Choose One</label>
+    <div class="pa-selectWrapper">
+        <select id="9error_states_select">
+            <option value="">...</option>
+            <option value="option1">Option 1</option>
+            <option value="option2">Option 2</option>
+            <option value="option3">Option 3</option>
+            <option value="option4">Option 4</option>
+        </select>
+    </div>
+    <span class="pa-fieldError">An option must be chosen.</span>
+</div>
+```
+CSS class                        |  Usage
+-------------------------------- | --------------------------------------------------------------------------------
+`.pa-formUnit.pa-hasError`       | Class to apply to the form unit if its form field has an error.
+`.pa-fieldError`                 | Error text specific to this field.
+*/
+
+// Form Units
+
+@mixin generateFormUnitMargins($cellSize, $classString) {
+    #{$classString} .pa-formUnit:not(:first-child) {
+        margin-top: map-get($cellSize, formFieldTopMargin);
+    }
+
+    #{$classString} h3 + .pa-formUnit,
+    #{$classString} h4 + .pa-formUnit {
+        margin-top: map-get($cellSize, vertMarginRelated);
+    }
+
+    #{$classString} .pa-formUnit + h3,
+    #{$classString} .pa-formUnit + h4 {
+        margin-top: map-get($cellSize, vertMarginUnrelated);
+    }
+
+    @media screen and (min-width: $layoutTabletMinWidth) {
+        #{$classString} .pa-formUnit:not(:last-child) {
+            margin-bottom: map-get($cellSize, formFieldMargin);
+        }
+    }
+}
+
+
+@mixin paFormUnit() {
+    .pa-formUnit {
+        display: block;
+        color: black;
+        font-family: 'proxima_novaregular';
+    }
+
+    .pa-formUnit .pa-fieldLabel {
+        @include textLabel2;
+        color: $colorFieldLabel;
+        display: block;
+        font-family: 'proxima_novaregular';
+    }
+
+    .pa-formUnit.pa-optionalFormUnit .pa-fieldLabel:after,
+    .pa-formUnit.pa-requiredFormUnit .pa-fieldLabel:after {
+        @include textDisclaimer;
+        color: $colorFieldLabel;
+        display: inline-block;
+        margin-left: $textCharacterWidth;
+        vertical-align: baseline;
+        white-space: nowrap;
+    }
+
+    .pa-formUnit.pa-optionalFormUnit .pa-fieldLabel:after {
+        content: '(optional)';
+    }
+
+    .pa-formUnit.pa-requiredFormUnit .pa-fieldLabel:after {
+        content: '(required)';
+    }
+
+    .pa-formUnit .pa-fieldHelper,
+    .pa-formUnit .pa-fieldError {
+        @include textDisclaimer;
+        display: block;
+    }
+
+    .pa-formUnit .pa-fieldHelper {
+        color: $colorFieldHelperText;
+    }
+
+    .pa-formUnit .pa-fieldError {
+        color: $colorFieldHelperTextError;
+    }
+
+    .pa-formUnit:not(.pa-hasError) .pa-fieldError {
+        display: none;
+    }
+
+    /* medium form scale (default) */
+
+    .pa-mediumForm .pa-formUnit .pa-fieldLabel,
+    .pa-formUnit .pa-fieldLabel {
+        margin-bottom: map-get($mediumCell, vertMarginRelated);
+    }
+
+    .pa-mediumForm .pa-formUnit .pa-fieldHelper,
+    .pa-mediumForm .pa-formUnit .pa-fieldError,
+    .pa-formUnit .pa-fieldHelper,
+    .pa-formUnit .pa-fieldError {
+        @include textDisclaimer;
+        margin-top: map-get($mediumCell, vertMarginRelated);
+    }
+
+    .pa-mediumForm .pa-formUnit,
+    .pa-mediumForm .pa-formUnit.pa-formUnitL,
+    .pa-formUnit,
+    .pa-formUnit.pa-formUnitL {
+        flex: 0 1 map-get($mediumFormWidths, large);
+        max-width: map-get($mediumFormWidths, large);
+    }
+
+    .pa-mediumForm .pa-formUnit.pa-formUnitS,
+    .pa-formUnit.pa-formUnitS {
+        flex: 0 0 map-get($mediumFormWidths, small);
+        max-width: map-get($mediumFormWidths, small);
+    }
+
+    .pa-mediumForm .pa-formUnit.pa-formUnitSM,
+    .pa-formUnit.pa-formUnitSM {
+        flex: 0 1 map-get($mediumFormWidths, smallmedium);
+        max-width: map-get($mediumFormWidths, smallmedium);
+    }
+
+    .pa-mediumForm .pa-formUnit.pa-formUnitM,
+    .pa-formUnit.pa-formUnitM {
+        flex: 0 1 map-get($mediumFormWidths, medium);
+        max-width: map-get($mediumFormWidths, medium);
+    }
+
+    .pa-mediumForm .pa-formUnit.pa-formUnitXL,
+    .pa-formUnit.pa-formUnitXL {
+        flex: 0 1 map-get($mediumFormWidths, xlarge);
+        max-width: map-get($mediumFormWidths, xlarge);
+    }
+
+    .pa-mediumForm .pa-formUnit.pa-formUnitXXL,
+    .pa-formUnit.pa-formUnitXXL {
+        flex: 0 1 map-get($mediumFormWidths, xxlarge);
+        max-width: map-get($mediumFormWidths, xxlarge);
+    }
+
+    /* small form scale */
+
+    .pa-smallForm .pa-formUnit .pa-fieldLabel {
+        margin-bottom: map-get($smallCell, vertMarginRelated);
+    }
+
+    .pa-smallForm .pa-formUnit .pa-fieldHelper,
+    .pa-smallForm .pa-formUnit .pa-fieldError {
+        @include textDisclaimer;
+        margin-top: map-get($smallCell, vertMarginRelated);
+    }
+
+    .pa-smallForm .pa-formUnit,
+    .pa-smallForm .pa-formUnit.pa-formUnitL {
+        flex: 0 1 map-get($smallFormWidths, large);
+        max-width: map-get($smallFormWidths, large);
+    }
+
+    .pa-smallForm .pa-formUnit.pa-formUnitS {
+        flex: 0 0 map-get($smallFormWidths, small);
+        max-width: map-get($smallFormWidths, small);
+    }
+
+    .pa-smallForm .pa-formUnit.pa-formUnitSM {
+        flex: 0 1 map-get($smallFormWidths, smallmedium);
+        max-width: map-get($smallFormWidths, smallmedium);
+    }
+
+    .pa-smallForm .pa-formUnit.pa-formUnitM {
+        flex: 0 1 map-get($smallFormWidths, medium);
+        max-width: map-get($smallFormWidths, medium);
+    }
+
+    .pa-smallForm .pa-formUnit.pa-formUnitXL {
+        flex: 0 1 map-get($smallFormWidths, xlarge);
+        max-width: map-get($smallFormWidths, xlarge);
+    }
+
+    .pa-smallForm .pa-formUnit.pa-formUnitXXL {
+        flex: 0 1 map-get($smallFormWidths, xxlarge);
+        max-width: map-get($smallFormWidths, xxlarge);
+    }
+
+    /* large form scale */
+
+    .pa-largeForm .pa-formUnit .pa-fieldLabel {
+        margin-bottom: map-get($largeCell, vertMarginRelated);
+    }
+
+    .pa-largeForm .pa-formUnit .pa-fieldHelper,
+    .pa-largeForm .pa-formUnit .pa-fieldError {
+        @include textDisclaimer;
+        margin-top: map-get($largeCell, vertMarginRelated);
+    }
+
+    .pa-largeForm .pa-formUnit,
+    .pa-largeForm .pa-formUnit.pa-formUnitL {
+        flex: 0 1 map-get($largeFormWidths, large);
+        max-width: map-get($largeFormWidths, large);
+    }
+
+    .pa-largeForm .pa-formUnit.pa-formUnitS {
+        flex: 0 0 map-get($largeFormWidths, small);
+        max-width: map-get($largeFormWidths, small);
+    }
+
+    .pa-largeForm .pa-formUnit.pa-formUnitSM {
+        flex: 0 1 map-get($largeFormWidths, smallmedium);
+        max-width: map-get($largeFormWidths, smallmedium);
+    }
+
+    .pa-largeForm .pa-formUnit.pa-formUnitM {
+        flex: 0 1 map-get($largeFormWidths, medium);
+        max-width: map-get($largeFormWidths, medium);
+    }
+
+    .pa-largeForm .pa-formUnit.pa-formUnitXL {
+        flex: 0 1 map-get($largeFormWidths, xlarge);
+        max-width: map-get($largeFormWidths, xlarge);
+    }
+
+    .pa-largeForm .pa-formUnit.pa-formUnitXXL {
+        flex: 0 1 map-get($largeFormWidths, xxlarge);
+        max-width: map-get($largeFormWidths, xxlarge);
+    }
+
+    /* shrink wrap to the size of a button */
+
+    .pa-mediumForm .pa-formUnit.pa-formUnitFlexible,
+    .pa-formUnit.pa-formUnitFlexible {
+        flex: 0 0 auto;
+        max-width: map-get($mediumFormWidths, xxlarge);
+    }
+
+    .pa-smallForm .pa-formUnit.pa-formUnitFlexible {
+        flex: 0 0 auto;
+        max-width: map-get($smallFormWidths, xxlarge);
+    }
+
+    .pa-largeForm .pa-formUnit.pa-formUnitFlexible {
+        flex: 0 0 auto;
+        max-width: map-get($largeFormWidths, xxlarge);
+    }
+
+    @include generateFormUnitMargins($mediumCell, "");
+    @include generateFormUnitMargins($mediumCell, ".pa-mediumForm");
+    @include generateFormUnitMargins($smallCell, ".pa-smallForm");
+    @include generateFormUnitMargins($largeCell, ".pa-largeForm");
+
+    @media screen and (min-width: $layoutTabletMinWidth) {
+
+        /* used as a fallback for tables that sort by clicking a column header */
+        .pa-formUnit.pa-mobileSort {
+            display: none;
+        }
+
+    }
+
+    @media screen and (max-width: #{$layoutTabletMinWidth - 1}) {
+
+        .pa-smallForm .pa-formUnit,
+        .pa-smallForm .pa-formUnit.pa-formUnitS,
+        .pa-smallForm .pa-formUnit.pa-formUnitSM,
+        .pa-smallForm .pa-formUnit.pa-formUnitM,
+        .pa-smallForm .pa-formUnit.pa-formUnitL,
+        .pa-smallForm .pa-formUnit.pa-formUnitXL,
+        .pa-smallForm .pa-formUnit.pa-formUnitXXL,
+        .pa-mediumForm .pa-formUnit,
+        .pa-mediumForm .pa-formUnit.pa-formUnitS,
+        .pa-mediumForm .pa-formUnit.pa-formUnitSM,
+        .pa-mediumForm .pa-formUnit.pa-formUnitM,
+        .pa-mediumForm .pa-formUnit.pa-formUnitL,
+        .pa-mediumForm .pa-formUnit.pa-formUnitXL,
+        .pa-mediumForm .pa-formUnit.pa-formUnitXXL,
+        .pa-largeForm .pa-formUnit,
+        .pa-largeForm .pa-formUnit.pa-formUnitS,
+        .pa-largeForm .pa-formUnit.pa-formUnitSM,
+        .pa-largeForm .pa-formUnit.pa-formUnitM,
+        .pa-largeForm .pa-formUnit.pa-formUnitL,
+        .pa-largeForm .pa-formUnit.pa-formUnitXL,
+        .pa-largeForm .pa-formUnit.pa-formUnitXXL,
+        .pa-formUnit,
+        .pa-formUnit.pa-formUnitS,
+        .pa-formUnit.pa-formUnitSM,
+        .pa-formUnit.pa-formUnitM,
+        .pa-formUnit.pa-formUnitL,
+        .pa-formUnit.pa-formUnitXXL,
+        .pa-formUnit.pa-formUnitXL {
+            max-width: 100%;
+            width: 100%;
+        }
+    }
+
+}

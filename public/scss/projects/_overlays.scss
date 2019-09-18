@@ -1,0 +1,85 @@
+
+$overlayBackgroundColor: $colorCottonWhite;
+$overlayBorderWidth: 1px;
+$overlayBorderColor: $colorPebbleGrey;
+$overlayBorder: $overlayBorderWidth solid $overlayBorderColor;
+
+$overlayPadding: $baseMeasureSmall;
+
+$overlayShadowForHeight: 0 0 4px 0 transparentize($colorTrueBlack, 0.7);
+$overlayShroudColor: transparentize($colorCharcoalBlack, 0.5);
+
+/* dropdowns */
+
+$dropdownItem: (
+    tipSize: 10px
+);
+
+$dropdownMaxWidth: 330px;
+$colorDropdownText: $textDefaultColor;
+$colorDropdownTextHover: $textDefaultColor;
+$colorDropdownBackgroundHover: $colorSmokeGreyDark;
+
+/* tooltips */
+
+$tooltipSpecs: (
+    simpleBackgroundColor: $colorCharcoalBlack,
+    simpleBorderColor: $colorCharcoalBlack,
+    simpleBorderRadius: 2px,
+    simpleBorderWidth: 1px,
+    simpleMaxWidth: 150px,
+    simplePadding: $baseMeasureSmall,
+    simpleMargin: $baseMeasureSmall,
+    simpleTextColor: $colorCottonWhite,
+    simpleTipSize: 8px
+);
+
+/* toast notification width */
+
+$toastNotificationWidth: 400px;
+
+/* modals */
+
+$modalWidthSmall: 400px;
+$modalWidthMedium: 560px;
+$modalWidthLarge: 720px;
+
+$modalVerticalSpacing: 12vh; // (120 / 1020) * 100vh - Using original mocks as reference point: 120px top margin on a 1020px high artboard
+$modalMaxHeight: 76vh; // 100vh - (2 * $modalVerticalSpacing);
+
+$modalHorizontalPadding: $baseMeasureMedium;
+$modalVerticalPadding: $baseMeasureMedium;
+$modalBodyBottomPadding: $baseMeasureLarge;
+$modalSmallBodyBottomPadding: $baseMeasureMedium;
+
+$modalBackgroundColor: $layoutPanelBackgroundColor;
+$modalBorder: $overlayBorder;
+$modalBorderRadius: map-get($mediumCell, borderRadius);
+$modalShadow: $overlayShadowForHeight;
+
+$modalHeaderBorder: $layoutBorderSecondary;
+$modalFooterBorder: $layoutBorderSecondary;
+
+$modalImageMaxHeight: 220px;
+$modalImageTopMargin: $baseMeasureMedium;
+$modalImageBottomMargin: $baseMeasureLarge;
+
+/* wizards */
+
+$wizardWidth: 220px;
+$wizardMinHeight: 51vh; // (520 / 1020) * 100vh - Using original mocks as reference point: 520px high on a 1020px high artboard
+$wizardBackgroundColor: $colorSmokeGreyDark;
+
+$wizardConnectorWidth: $layoutBorderWidth;
+$wizardConnectorStyle: solid;
+$wizardConnectorColor: $layoutBorderColor;
+$wizardConnectorBorder: $wizardConnectorWidth $wizardConnectorStyle $wizardConnectorColor;
+
+/*$wizardDefaultStepIconCode: map-get($paSemanticSystemIconCodes, wizardStepDefault);
+$wizardDefaultStepIconColor: map-get($colorIconDefault, base);
+$wizardCurrentStepIconCode: map-get($paSemanticSystemIconCodes, wizardStepCurrent);
+$wizardCurrentStepIconColor: map-get($colorActive, base);
+$wizardCompletedStepIconCode: map-get($paSemanticSystemIconCodes, wizardStepCompleted);
+$wizardCompletedStepIconColor: map-get($colorSuccess, base);
+$wizardViewedStepIconCode: map-get($paSemanticSystemIconCodes, wizardStepViewed);
+$wizardViewedStepIconColor: map-get($colorIconLight, base);*/

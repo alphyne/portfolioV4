@@ -1,0 +1,207 @@
+/*doc
+---
+title: Pagination
+name: paginationNew
+category: Custom Elements
+author: Tony Q
+---
+
+Pagination is used in conjunction with our other filtering patterns.
+
+```html_example
+<div class="pa-pagination">
+    <button class="pa-singlePage pa-prevPage" disabled></button>
+    <button class="pa-singlePage pa-current">1</button>
+    <button class="pa-singlePage">2</button>
+    <button class="pa-singlePage">3</button>
+    <button class="pa-singlePage">4</button>
+    <button class="pa-singlePage">5</button>
+    <button class="pa-singlePage pa-nextPage"></button>
+</div>
+<span class="pa-resultsCount">Showing 1-10 of 50 results</span>
+
+<div class="pa-pagination">
+    <a href="#" class="pa-singlePage pa-prevPage pa-disabled"></a>
+    <a href="#" class="pa-singlePage pa-current">1</a>
+    <a href="#" class="pa-singlePage">2</a>
+    <a href="#" class="pa-singlePage">3</a>
+    <a href="#" class="pa-singlePage">4</a>
+    <a href="#" class="pa-singlePage">5</a>
+    <a href="#" class="pa-singlePage pa-nextPage"></a>
+</div>
+<span class="pa-resultsCount">Showing 1-10 of 50 results</span>
+
+
+<div class="pa-pagination">
+    <button class="pa-singlePage pa-prevPage"></button>
+    <button class="pa-singlePage">1</button>
+    <span class="pa-pageSeparator"></span>
+    <button class="pa-singlePage">4</button>
+    <button class="pa-singlePage pa-current">5</button>
+    <button class="pa-singlePage">6</button>
+    <span class="pa-pageSeparator"></span>
+    <button class="pa-singlePage">10</button>
+    <button class="pa-singlePage pa-nextPage"></button>
+</div>
+<span class="pa-resultsCount">Showing 41-50 of 100 results</span>
+```
+
+CSS class                        |  Usage
+-------------------------------- | -----------------------------------------------------------------------------------------------
+`.pa-paginationWrapper`          | Wrapper for the pagination buttons and results count elements. Not needed for Simple Pagination.
+`.pa-pagination`                 | Wrapper element for a set of pagination buttons.
+`.pa-singlePage`                 | Element, usually a button, that indicates a single page within pagination.
+`.pa-singlePage.pa-current`      | The <code>pa-current</code> class is used to indicate the current page.
+`.pa-singlePage.pa-nextPage`     | Use this class on the singlePage button that goes forward one page.
+`.pa-singlePage.pa-prevPage`     | Use this class on the singlePage button that goes back one page.
+`.pa-singlePage[disabled]`       | Use the disabled attribute on nextPage or prevPage if we're already on the first or last page.
+`.pa-singlePage.pa-disabled`     | Disabled class for use with links.
+`.pa-pageSeparator`              | Wrapper element for a set of pagination buttons.
+`.pa-resultsCount`               | Text that indicates the total number of results and
+*/
+
+// Pagination for filterable data
+
+@mixin paPagination {
+
+    .pa-paginationWrapper:not(:last-child) {
+        margin-bottom: $baseMeasureLarge;
+    }
+
+    .pa-pagination {
+        align-items: center;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        justify-content: center;
+    }
+
+    .pa-paginationWrapper:not(:first-child),
+    .pa-pagination:not(:first-child) {
+        margin-top: $baseMeasureLarge;
+    }
+
+    .pa-pagination > .pa-pageSeparator,
+    .pa-pagination > .pa-singlePage {
+        @include textSubheading;
+        //background-color: $colorPaginationItemBackground;
+        //border-color: $colorPaginationItemBackground;
+        //border-radius: $paginationItemBorderRadius;
+        border-style: solid;
+        border-width: map-get($smallCell, borderWidth);
+        height: map-get($smallCell, height);
+        line-height: map-get($smallCell, lineHeight);
+        padding-bottom: map-get($smallCell, vertPadding);
+        padding-top: map-get($smallCell, vertPadding);
+        text-align: center;
+    }
+
+    .pa-pagination > .pa-singlePage {
+        min-width: map-get($smallCell, height);
+        padding-left: $baseMeasureXS;
+        padding-right: $baseMeasureXS;
+    }
+
+    .pa-pagination > .pa-resultsCount:not(:last-child),
+    .pa-pagination > .pa-pageSeparator:not(:last-child),
+    .pa-pagination > .pa-singlePage:not(:last-child) {
+        //margin-right: $paginationItemMargin;
+    }
+
+    .pa-contentBlock .pa-pagination > a.pa-singlePage.pa-disabled,
+    .pa-pagination > a.pa-singlePage.pa-disabled,
+    .pa-pagination > .pa-singlePage.pa-disabled,
+    .pa-pagination > .pa-singlePage:disabled,
+    .pa-pagination > .pa-pageSeparator {
+        //background-color: $colorPaginationItemBackgroundDisabled;
+        //border-color: $colorPaginationItemBackgroundDisabled;
+        //color: $colorPaginationItemTextDisabled;
+        pointer-events: none;
+    }
+
+    .pa-pagination > .pa-pageSeparator {
+        padding-left: 0;
+        padding-right: 0;
+    }
+
+    .pa-pagination > .pa-pageSeparator:before {
+        content: '...';
+    }
+
+    .pa-contentBlock .pa-pagination > a.pa-singlePage,
+    .pa-pagination > a.pa-singlePage,
+    .pa-pagination > .pa-singlePage {
+        //color: $colorPaginationItemText;
+    }
+
+    .pa-pagination > .pa-singlePage:focus {
+        outline: none;
+    }
+
+    .pa-contentBlock .pa-pagination > a.pa-singlePage:focus,
+    .pa-contentBlock .pa-pagination > a.pa-singlePage:hover,
+    .pa-contentBlock .pa-pagination > a.pa-singlePage:active,
+    .pa-pagination > a.pa-singlePage:focus,
+    .pa-pagination > a.pa-singlePage:hover,
+    .pa-pagination > a.pa-singlePage:active,
+    .pa-pagination > .pa-singlePage:focus,
+    .pa-pagination > .pa-singlePage:hover,
+    .pa-pagination > .pa-singlePage:active {
+        //background-color: $colorPaginationItemBackgroundHover;
+        //border-color: $colorPaginationItemBackgroundHover;
+        //color: $colorPaginationItemTextHover;
+        text-decoration: none;
+    }
+
+    .pa-contentBlock .pa-pagination > a.pa-singlePage.pa-current:focus,
+    .pa-contentBlock .pa-pagination > a.pa-singlePage.pa-current,
+    .pa-pagination > a.pa-singlePage.pa-current:focus,
+    .pa-pagination > a.pa-singlePage.pa-current,
+    .pa-pagination > .pa-singlePage.pa-current:focus,
+    .pa-pagination > .pa-singlePage.pa-current {
+        //background-color: $colorPaginationItemBackgroundCurrent;
+       // color: $colorPaginationItemTextCurrent;
+        pointer-events: none;
+    }
+
+    .pa-pagination > .pa-singlePage.pa-prevPage,
+    .pa-pagination > .pa-singlePage.pa-nextPage {
+        position: relative;
+    }
+
+    .pa-pagination > .pa-singlePage.pa-prevPage:before,
+    .pa-pagination > .pa-singlePage.pa-nextPage:before {
+        @include largeCellIcon;
+        position: absolute;
+        left: ((map-get($smallCell, height) - map-get($largeCell, iconWidth)) / 2) - map-get($smallCell, borderWidth);
+        top: ((map-get($smallCell, height) - map-get($largeCell, iconHeight)) / 2) - map-get($smallCell, borderWidth);
+    }
+
+    .pa-pagination > .pa-singlePage.pa-prevPage:before {
+        //content: $iconLeftOpenCode;
+    }
+
+    .pa-pagination > .pa-singlePage.pa-nextPage:before {
+        //content: $iconRightOpenCode;
+    }
+
+    .pa-resultsCount {
+        @include textLabel1;
+        color: $textDefaultColor;
+        display: block;
+        text-align: center;
+    }
+
+    .pa-paginationWrapper:not(:last-child),
+    .pa-resultsCount:not(:last-child) {
+        margin-bottom: $baseMeasureLarge;
+    }
+
+    .pa-pagination > .pa-resultsCount:not(:last-child) {
+        margin-bottom: 0;
+    }
+
+    .pa-pagination + .pa-resultsCount {
+        margin-top: $baseMeasureSmall;
+    }
+}

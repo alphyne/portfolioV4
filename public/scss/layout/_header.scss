@@ -1,5 +1,9 @@
 .header-container{
 
+  .navbar-container {
+    display: block;
+  }
+
   margin: 0 17rem 1rem 17rem;
 
   a {
@@ -26,7 +30,7 @@
 
 .name-container {
 	margin-top: 2.5rem;
-    position: absolute;
+  position: absolute;
     
 }
 
@@ -127,16 +131,22 @@
   }
 }
 
-@media(max-width: 1200px){
+@media(max-width: 1280px){
 
+  .header-container{
+
+    margin: 0 6rem 1rem 6rem;
+  }
+
+  .nav-item {
+    a {
+      font-size: 1.1rem;
+    }
+  }
 
 }
 
 @media(max-width: 1024px){
-
-  .header-container {
-      /*margin: 0 6vw;*/
-  }
 
   #initials {
     display: block;
@@ -156,13 +166,15 @@
 }
 
 @media(max-width: 840px){
-
-  #resume {
-    display: none;
+  .header-container {
+    margin: 0 3rem 1rem 3rem;
   }
 
-  .ham-menu {
-    display: none;
-}
+  .nav-item {
+    a {
+      font-size: 1rem;
+    }
+  }
+
 }
 

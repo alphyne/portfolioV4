@@ -1,0 +1,8 @@
+
+
+/* datepicker */
+$datepickerGridCellSize: map-get($mediumCell, height) + map-get($mediumCell, formFieldSidePadding);
+$datepickerGridCellBorderDefault: 1px solid $overlayBackgroundColor;
+$datepickerWidgetWidth: map-get($smallCell, sideMarginRelated) + ($datepickerGridCellSize * 7) + 2;
+$datepickerNavigationMonthWidth: ($datepickerGridCellSize * 5) - 24;
+$datepickerNavigationYearWidth: $datepickerGridCellSize * 2;

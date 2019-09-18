@@ -1,0 +1,148 @@
+
+/* new messaging colors */
+
+$colorPremierNavy: #001751;
+$colorPremierBlue: $colorPremierNavy;
+$colorPremierGreen: #05AE69;
+$colorZillowBlue: #0074E4;
+$colorZillowBlueDark: #1A5098;
+
+$colorCoastalBlue: #0E71AF;
+$colorCoastalBluePale: #FAFDFF;
+$colorCoastalBlueLighter: #DDEBF2;
+$colorCoastalBlueLight: #AAD3E9;
+$colorCoastalBlueDark: #0B6399;
+$colorCoastalBlueDarkest: #075985;
+
+$colorMeadowGreen: #7AB342;
+$colorMeadowGreenPale: #F9FDFA;
+$colorMeadowGreenLighter: #E3EDD9;
+$colorMeadowGreenLight: #B6D695;
+$colorMeadowGreenDark: #5F9F20;
+$colorMeadowGreenDarkest: #3E750B;
+
+$colorBrickRed: #CD162C;
+$colorBrickRedPale: #FFFAFB;
+$colorBrickRedLighter: #F1E2E5;
+$colorBrickRedLight: #EEBFC4;
+$colorBrickRedDark: #B40015;
+$colorBrickRedDarkest: #9C1020;
+
+$colorSunsetOrange: #F8A04C;
+$colorSunsetOrangePale: #FFFCF8;
+$colorSunsetOrangeLighter: #F7EAD7;
+$colorSunsetOrangeLight: #F9D49D;
+$colorSunsetOrangeDark: #ED8725;
+$colorSunsetOrangeDarkest: #CF6500;
+
+$colorCharcoalBlack: #333333;
+$colorGraphiteGrey: #747474;
+$colorPebbleGrey: #CCCCCC;
+$colorSmokeGrey: #FAFAFA;
+$colorSmokeGreyDark: #F3F3F3;
+$colorSmokeGreyDarkest: #E6E6E6;
+$colorCottonWhite: #FFFFFF;
+
+/* extended color palette */
+
+$colorExt01: #7BD6CF;
+$colorExt01Dark: #18857C;
+$colorExt01Light: #DDEFEE;
+
+$colorExt02: #F1D370;
+$colorExt02Dark: #AC9707;
+$colorExt02Light: #F7ECC9;
+
+$colorExt03: #ACB3D2;
+$colorExt03Dark: #4A578E;
+$colorExt03Light: #E0E3F2;
+
+$colorExt04: #8FD08B;
+$colorExt04Dark: #327D2E;
+$colorExt04Light: #D9F1D7;
+
+$colorExt05: #E0A474;
+$colorExt05Dark: #B6621E;
+$colorExt05Light: #F6E5D6;
+
+$colorExt06: #87C5DB;
+$colorExt06Dark: #197596;
+$colorExt06Light: #D3E9EF;
+
+$colorExt07: #C0D073;
+$colorExt07Dark: #748509;
+$colorExt07Light: #E5EEC5;
+
+$colorExt08: #E08E85;
+$colorExt08Dark: #9F3A2E;
+$colorExt08Light: #F0DEDB;
+
+$colorExt09: #84AAE2;
+$colorExt09Dark: #3360A2;
+$colorExt09Light: #D8E2F1;
+
+$colorExt10: #D7A7CA;
+$colorExt10Dark: #A23183;
+$colorExt10Light: #EEE0EA;
+
+/* partner brands */
+
+$colorFamilyZillow: (
+    base: $colorZillowBlue,
+    solid: $colorZillowBlue,
+    solidText: $colorCottonWhite,
+    solidBorder: $colorZillowBlue,
+    thin: $colorZillowBlue
+);
+
+$colorFamilyTrulia: (
+    base: #20c063,
+    solid: #20c063,
+    solidText: $colorCottonWhite,
+    solidBorder: #20c063,
+    thin: #20c063
+);
+
+$colorFamilyDotloop: (
+    base: #3BA2E5,
+    solid: #3BA2E5,
+    solidText: $colorCottonWhite,
+    solidBorder: #3BA2E5,
+    thin: #3BA2E5
+);
+
+/* legacy PAXL colors */
+
+$colorBlue100: #C6E0F9;
+$colorBlue200: #55A4FF;
+$colorBlue300: #0074E4;
+$colorBlue400: #1A5098;
+$colorBlue500: #19345D;
+
+$colorGreen100: #9DFCB2;
+$colorGreen200: #03ED86;
+$colorGreen300: #05AE69;
+$colorGreen400: #0F8D68;
+$colorGreen500: #03705B;
+
+$colorYellow100: #F7D144;
+
+$colorOrange100: #F39551;
+$colorOrange200: #F16A09;
+
+$colorRed100: #F74444;
+$colorRed200: #CD3333;
+
+$colorWhite100: #FFFFFF;
+$colorWhite200: #FAFAFA;
+$colorGrey100: #F0F0F0;
+$colorGrey150: #E2E2E2;
+$colorGrey200: #DADADA;
+$colorGrey250: #CCCCCC;
+$colorGrey300: #B8B8B8;
+$colorGrey400: #999999;
+$colorGrey500: #727272;
+$colorGrey600: #474747;
+$colorGrey700: #333333;
+
+$colorTrueBlack: #000000;

@@ -1,0 +1,59 @@
+/* layout page setup */
+
+$layoutPageMaxWidth: 1495px;
+$layoutPageBottomSpacing: 100px;
+$layoutPageBackgroundColor: $colorSmokeGrey;
+
+$layoutTabletMinWidth: 768px;
+$layoutTabletMaxWidth: 1100px;
+
+
+/* layout fundamentals */
+
+$layoutTextMaxWidth: 620px;
+$layoutMinorTextMaxWidth: 400px;
+$layoutMediaBlockTextMaxWidth: 330px;
+
+$layoutSpacingSmall: $baseMeasureSmall;
+$layoutSpacingMedium: $baseMeasureMedium;
+$layoutSpacingLarge: $baseMeasureLarge;
+$layoutSpacingXL: $baseMeasureXL;
+$layoutSpacingXXL: $baseMeasureXXL;
+
+$layoutBorderWidth: 1px;
+$layoutBorderColor: $colorPebbleGrey;
+$layoutBorderColorSecondary: $colorSmokeGreyDarkest;
+$layoutBorder: $layoutBorderWidth solid $layoutBorderColor;
+$layoutBorderSecondary: $layoutBorderWidth solid $layoutBorderColorSecondary;
+
+$layoutPanelBackgroundColor: $colorCottonWhite;
+$layoutPanelBorderRadius: 0;
+$layoutEmphasizedRegionBackgroundColor: $colorSmokeGrey;
+$layoutCalloutBackgroundColor: $layoutEmphasizedRegionBackgroundColor;
+$layoutToolbarBackgroundColor: $colorSmokeGreyDark;
+$layoutToolbarAlternateBackgroundColor: $colorSmokeGreyDarkest;
+
+$layoutShadowForHeight: 0 0 4px 0 transparentize($colorTrueBlack, 0.8);
+
+$layoutDesktopVerticalMargin: $layoutSpacingLarge;
+$layoutDesktopHorizontalMargin: $layoutSpacingLarge;
+$layoutDesktopVerticalPadding: $layoutSpacingLarge;
+$layoutDesktopHorizontalPadding: $layoutSpacingLarge;
+$layoutDesktopMinorVerticalPadding: $layoutSpacingMedium;
+$layoutDesktopMinorHorizontalPadding: $layoutSpacingMedium;
+
+$layoutTabletVerticalMargin: $layoutSpacingLarge;
+$layoutTabletHorizontalMargin: $layoutSpacingMedium;
+$layoutTabletVerticalPadding: $layoutSpacingLarge;
+$layoutTabletHorizontalPadding: $layoutSpacingLarge;
+$layoutTabletMinorVerticalPadding: $layoutSpacingMedium;
+$layoutTabletMinorHorizontalPadding: $layoutSpacingMedium;
+
+$layoutPhoneVerticalMargin: $layoutSpacingLarge;
+$layoutPhoneHorizontalMargin: $layoutSpacingSmall;
+$layoutPhoneVerticalPadding: $layoutSpacingMedium;
+$layoutPhoneHorizontalPadding: $layoutSpacingMedium;
+$layoutPhoneMinorVerticalPadding: $layoutSpacingMedium;
+$layoutPhoneMinorHorizontalPadding: $layoutSpacingMedium;
+
+$layoutOverflowNudge: 6px; /* overflow-y truncates the focus glow, this is a hacky fix for that */

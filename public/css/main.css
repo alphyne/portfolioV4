@@ -1,7 +1,8 @@
 /* Header and footer styling */
 body {
   background-color: #111;
-  color: white; }
+  color: white;
+  min-height: 400px; }
 
 .page-container {
   margin: 0 17rem;
@@ -15,8 +16,9 @@ body {
     font-size: 2rem;
     line-height: 3rem; }
   .page-container h3 {
-    font-weight: 400;
-    font-size: 1.6rem; }
+    font-weight: 200;
+    font-size: 1.8rem;
+    line-height: 2rem; }
   .page-container h4 {
     font-weight: 300;
     font-size: 1.4rem;
@@ -51,17 +53,62 @@ body {
   .page-container {
     margin: 0 9rem; } }
 
+@media (max-width: 1280px) {
+  .page-container {
+    margin: 0 6rem; }
+    .page-container h1 {
+      font-size: 2.9rem; }
+    .page-container h2 {
+      font-size: 1.9rem;
+      line-height: 3rem; }
+    .page-container h3 {
+      font-size: 1.7rem; }
+    .page-container h4 {
+      font-size: 1.3rem;
+      line-height: 1.8; }
+    .page-container h5 {
+      font-size: 1rem;
+      line-height: 1.5; }
+    .page-container h6 {
+      font-size: 1rem;
+      line-height: 1.8; }
+    .page-container p {
+      font-weight: 400;
+      font-size: 1.2rem;
+      line-height: 1.8; }
+    .page-container ul {
+      font-size: 1rem;
+      line-height: 1.4; } }
+
 @media (max-width: 840px) {
   .page-container {
-    /*h1 {
-            a {
-                border-bottom: 0;
-            }
-        }*/ } }
+    margin: 0 3rem; }
+    .page-container h1 {
+      font-size: 2.8rem; }
+    .page-container h2 {
+      font-size: 1.8rem;
+      line-height: 3rem; }
+    .page-container h3 {
+      font-size: 1.6rem; }
+    .page-container h4 {
+      font-size: 1.2rem;
+      line-height: 1.8; }
+    .page-container h5 {
+      font-size: 0.9rem;
+      line-height: 1.5; }
+    .page-container h6 {
+      font-size: 0.9rem;
+      line-height: 1.8; }
+    .page-container p {
+      font-weight: 400;
+      font-size: 1.1rem;
+      line-height: 1.8; }
+    .page-container ul {
+      font-size: 0.9rem;
+      line-height: 1.4; } }
 
 .footer-container {
-  height: 6rem;
-  margin: 6rem 0 0 0; }
+  height: 6rem; }
 
 #copyright {
   display: inline-block; }
@@ -87,14 +134,10 @@ body {
     display: inline-block;
     padding-left: 0.7rem; }
 
-@media (max-width: 1024px) {
-  .footer-container {
-    margin: 3rem 6vw 0 6vw; } }
-
 @media (max-width: 840px) {
   .footer-container {
     text-align: center;
-    margin: 2rem 6vw 0 6vw; }
+    margin: 2rem 6vw 4rem 6vw; }
   .copyright {
     display: block;
     padding: 2rem 0; }
@@ -106,6 +149,8 @@ body {
 
 .header-container {
   margin: 0 17rem 1rem 17rem; }
+  .header-container .navbar-container {
+    display: block; }
   .header-container a {
     text-decoration: none; }
   .header-container h1 {
@@ -186,9 +231,13 @@ body {
   .header-container {
     margin: 0 9rem 1rem 9rem; } }
 
-@media (max-width: 1024px) {
+@media (max-width: 1280px) {
   .header-container {
-    /*margin: 0 6vw;*/ }
+    margin: 0 6rem 1rem 6rem; }
+  .nav-item a {
+    font-size: 1.1rem; } }
+
+@media (max-width: 1024px) {
   #initials {
     display: block; }
   #full-name {
@@ -197,10 +246,10 @@ body {
     height: 8rem; } }
 
 @media (max-width: 840px) {
-  #resume {
-    display: none; }
-  .ham-menu {
-    display: none; } }
+  .header-container {
+    margin: 0 3rem 1rem 3rem; }
+  .nav-item a {
+    font-size: 1rem; } }
 
 /* Page specific styling */
 .project-block-container {
@@ -212,40 +261,49 @@ body {
   grid-column-gap: 2rem;
   margin-bottom: 5rem;
   transition: all 0.4s ease-in-out; }
-  .project-row-container .project-row-info-container {
+  .project-row-container .project-row-info-container-desktop {
     position: relative;
     opacity: 0.15;
     transition: opacity 0.4s linear; }
-    .project-row-container .project-row-info-container .project-row-info {
-      border-right: 1px solid white; }
-      .project-row-container .project-row-info-container .project-row-info h2 {
+    .project-row-container .project-row-info-container-desktop .project-row-info {
+      border-right: 1px solid white;
+      text-align: right;
+      padding-right: 2rem;
+      position: absolute;
+      bottom: 2rem;
+      right: 0; }
+      .project-row-container .project-row-info-container-desktop .project-row-info h2 {
         padding-bottom: 2rem; }
-        .project-row-container .project-row-info-container .project-row-info h2 a {
+        .project-row-container .project-row-info-container-desktop .project-row-info h2 a {
           text-decoration: none;
           border-bottom: none; }
-      .project-row-container .project-row-info-container .project-row-info .project-type {
+      .project-row-container .project-row-info-container-desktop .project-row-info .project-type {
         padding-bottom: 1rem; }
+  .project-row-container .project-row-info-container-mobile {
+    position: block;
+    display: none; }
+    .project-row-container .project-row-info-container-mobile .project-row-info {
+      position: static;
+      margin: 0 2rem;
+      padding-left: 0;
+      padding-top: 2rem; }
+      .project-row-container .project-row-info-container-mobile .project-row-info h2 {
+        padding-bottom: 1rem;
+        margin-bottom: 1rem;
+        border-bottom: 1px solid white; }
+        .project-row-container .project-row-info-container-mobile .project-row-info h2 a {
+          text-decoration: none;
+          border-bottom: none; }
 
 .project-row-container:hover {
   transition: all 0.6s ease-in-out;
   transform: translateX(1.5rem); }
-  .project-row-container:hover .project-row-info-container {
-    opacity: 1;
-    transition-duration: 0.5s; }
-
-.project-row-info {
-  border-right: 1px solid white;
-  text-align: right;
-  padding-right: 2rem;
-  position: absolute;
-  bottom: 2rem;
-  right: 0; }
-  .project-row-info h2 {
-    padding-bottom: 32px; }
+  .project-row-container:hover .project-row-info-container-desktop {
+    opacity: 1; }
 
 .project-row-image-container .project-row-image {
-  height: 54vh;
-  min-height: 13rem;
+  height: 50vh;
+  min-height: 25rem;
   background-size: cover;
   -webkit-background-size: cover;
   -moz-background-size: cover;
@@ -262,9 +320,32 @@ body {
   transition-duration: 0.5s;
   transition-delay: 0.7s; }
 
-@media (max-width: 1024px) {
+@media (max-width: 840px) {
+  .project-row-container {
+    display: block;
+    padding: 0 2rem; }
+    .project-row-container .project-row-info-container-mobile {
+      display: block; }
+    .project-row-container .project-row-info-container-desktop {
+      display: none; }
+  .project-row-image-container {
+    width: 100%; }
+  .project-row-info-container-desktop {
+    position: static; }
   .project-row-image-container .project-row-image {
-    height: 44vh; } }
+    max-height: 20rem;
+    min-height: 10rem; }
+  .project-row-container:hover {
+    transform: none; }
+  .project-row-image-container {
+    transition: all 0.4s ease-in-out; }
+  .project-row-image-container:hover {
+    transform: scale(1.05, 1.05);
+    transition: all 0.6s ease-in-out; } }
+
+@media (max-width: 600px) {
+  .project-row-container {
+    padding: 0; } }
 
 .about-container .hero-container {
   padding: 0 2rem; }
@@ -324,48 +405,20 @@ body {
       .profile-details-container .profile-details-right .profile-detail-item h4 {
         padding-bottom: 0.5rem; }
 
-@media (max-width: 1600px) {
-  .bio-container {
-    padding-left: 2rem; }
-  .profile-image-container {
-    width: 38rem; } }
-
-@media (max-width: 1280px) {
-  .profile-image-container {
-    width: 30rem;
-    min-height: 20rem; } }
-
 @media (max-width: 1024px) {
-  .header-container {
-    margin: 0 6rem; }
-  .about-container {
-    margin: 0 0; }
-  .profile-image-container {
-    width: 100%;
-    min-height: 38rem;
-    background-position-y: center; }
-  #wide-profile-image {
+  .profile-details-container {
     display: block; }
-  #block-profile-image {
-    display: none; }
-  .profile-grid {
-    display: block; }
-  .bio-container {
-    padding: 2rem 6vw;
-    font-size: 0.9rem; } }
+    .profile-details-container .profile-details-left {
+      margin-bottom: 2rem; }
+    .profile-details-container .profile-details-right .profile-detail-item-container {
+      padding: 2rem 2rem 0 2rem; } }
 
 @media (max-width: 840px) {
-  .profile-image-container {
-    min-height: 30rem; }
-  .about-container h1 a {
-    border-bottom: 0; } }
+  .about-container .hero-container {
+    padding: 0; } }
 
-@media (max-width: 600px) {
-  .bio-container {
-    padding: 0 2rem; } }
-
-.project-container h2 {
-  width: 30vw; }
+.project-container h2, .project-container h3 {
+  width: 35vw; }
 
 .project-container .media-container {
   padding: 0 2rem;
@@ -396,8 +449,16 @@ body {
     font-style: italic;
     font-size: 1.6rem; }
 
+.project-container .embedded-page {
+  width: 100%;
+  height: 100%;
+  min-height: 30rem; }
+
 .project-container .bold {
   font-weight: 500; }
+
+.project-container .italic {
+  font-style: italic; }
 
 .project-container .underline {
   text-decoration: underline; }
@@ -499,39 +560,51 @@ body {
     padding: 2rem 2rem 0 2rem; }
 
 .project-nav-container {
-  margin: 8rem 0 0 0; }
+  margin: 4rem 0 0 0; }
   .project-nav-container .separator {
     padding: 0 1rem; }
-  .project-nav-container h3 {
+  .project-nav-container h4 {
     text-align: center; }
 
 @media (max-width: 1024px) {
   .project-details-container {
-    display: block; }
+    display: block;
+    margin-bottom: 4rem; }
+    .project-details-container .project-details-left {
+      padding: 2rem 2rem 0 2rem;
+      margin-bottom: 2rem; }
+    .project-details-container .project-details-right {
+      padding: 2rem 2rem 0 2rem; }
   .project-description, .text-right {
-    margin-left: 20vw; }
-  .project-container {
-    padding: 2rem 6vw;
-    font-size: 0.9rem; }
-  .project-details {
-    grid-template-columns: auto auto; }
+    margin-left: 0rem; }
+  .project-container h2, .project-container h3 {
+    width: 100%; }
+  .project-container h3 {
+    margin-top: 4rem; }
+  .project-container .boxed-content {
+    padding: 2rem 2rem 0 2rem;
+    margin: 0 1rem 1rem 1rem; }
   .text-right {
     margin-left: 0; } }
 
 @media (max-width: 840px) {
-  .image-text-column {
-    display: block; } }
+  .project-container .media-container {
+    padding: 0; } }
 
 @media (max-width: 600px) {
-  .project-container .media-container {
-    padding: 0 0; }
+  .project-container {
+    padding: 0; }
   .project-landing {
     height: 25rem; }
-  .project-details {
-    display: block; } }
+  .project-details-container .project-details-left .project-detail-item {
+    padding-right: 0; }
+  .project-details-container .project-details-right {
+    display: block; }
+    .project-details-container .project-details-right .project-detail-item {
+      padding-right: 0; } }
 
 .landing-container {
-  height: 100%; }
+  height: 100vh; }
   .landing-container .landing-name {
     font-family: 'nexa_boldregular';
     font-size: 4.4rem;
@@ -591,36 +664,37 @@ body {
     text-decoration: line-through; }
 
 @media (max-width: 1600px) {
-  .landing-container {
-    /*margin-right: 9rem;
-        margin-left: 9rem;*/ }
-    .landing-container .landing-name {
-      font-size: 3.6rem; }
-    .landing-container h2, .landing-container p {
-      font-size: 1.4rem; }
+  .landing-container .landing-name {
+    font-size: 3.6rem; }
+  .landing-container h2, .landing-container p {
+    font-size: 1.4rem; }
   .landing-description {
     margin-left: 40vw; }
   .link-container .link-label, .link-container a {
     font-size: 1.1rem; } }
 
-@media (max-width: 1200px) {
+@media (max-width: 1280px) {
+  .landing-container .landing-name a {
+    font-size: 3.2rem;
+    border-bottom: 0; }
+  .landing-container h2, .landing-container p {
+    font-size: 1.2rem; }
+  .link-container .link-label, .link-container a {
+    font-size: 1rem; } }
+
+@media (max-width: 1024px) {
   .landing-description {
-    margin-left: 0rem; } }
+    margin-left: 0; } }
 
 @media (max-width: 840px) {
-  .landing-container {
-    /*margin-left: 1.5rem;
-        margin-right: 1.5rem;*/ }
-    .landing-container .landing-name a {
-      font-size: 3rem;
-      border-bottom: 0; }
-    .landing-container h2, .landing-container p {
-      font-size: 1rem; }
+  .landing-container .landing-name a {
+    font-size: 3rem;
+    border-bottom: 0; }
+  .landing-container h2, .landing-container p {
+    font-size: 1rem; }
   .greeting-container {
     margin-top: 9rem;
     margin-bottom: 1rem; }
-  .landing-description {
-    margin-top: 2rem; }
   .link-container .link-label, .link-container a {
     font-size: 0.9rem; } }
 
@@ -628,7 +702,30 @@ body {
   .greeting-container {
     margin-top: 6rem; } }
 
+@media (max-height: 500px) {
+  .landing-container {
+    height: 100%;
+    margin-bottom: 4rem; } }
+
 /* Base styling */
+@font-face {
+  font-family: 'proxima_novabold';
+  src: url("proxima_nova_bold-webfont.woff2") format("woff2"), url("proxima_nova_bold-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'proxima_novasemibold';
+  src: url("proxima_nova_semibold-webfont.woff2") format("woff2"), url("proxima_nova_semibold-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'proxima_novaregular';
+  src: url("proxima_nova-webfont.woff2") format("woff2"), url("proxima_nova-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal; }
+
 @font-face {
   font-family: 'nexa_boldregular';
   src: url("nexa_bold-webfont.woff2") format("woff2"), url("nexa_bold-webfont.woff") format("woff");
@@ -638,18 +735,6 @@ body {
 @font-face {
   font-family: 'nexa_lightregular';
   src: url("nexa_light-webfont.woff2") format("woff2"), url("nexa_light-webfont.woff") format("woff");
-  font-weight: normal;
-  font-style: normal; }
-
-@font-face {
-  font-family: 'hiragino_kaku_gothic_prow3';
-  src: url("fonts/copyfonts.com_hirakakupro-w3-opentype-webfont.woff2") format("woff2"), url("fonts/copyfonts.com_hirakakupro-w3-opentype-webfont.woff") format("woff");
-  font-weight: normal;
-  font-style: normal; }
-
-@font-face {
-  font-family: 'hiragino_kaku_gothic_prow6';
-  src: url("fonts/copyfonts.com_hirakakupro-w6-opentype-webfont.woff2") format("woff2"), url("fonts/copyfonts.com_hirakakupro-w6-opentype-webfont.woff") format("woff");
   font-weight: normal;
   font-style: normal; }
 
@@ -703,3 +788,2002 @@ table {
   border-spacing: 0; }
 
 /* Variables */
+/* Project files */
+/* empty white space around icon */
+/* system icons are a 16px glyph on a 20px artboard */
+/* semantic highres icons */
+/*$paSemanticHighresIconCodes: (
+    favorite: map-get($paHighresIconCodes, heart),
+    email: map-get($paHighresIconCodes, envelope),
+    viewedEmail: map-get($paHighresIconCodes, envelope),
+    myAgent: map-get($paHighresIconCodes, peopleHomeConnected),
+    phonePerformancePoor: map-get($paHighresIconCodes, callNoAnswer),
+    phonePerformanceOkay: map-get($paHighresIconCodes, call),
+    phonePerformanceGood: map-get($paHighresIconCodes, callSuccess)
+);
+
+.pa-highresIcon-favorite {
+    @extend .pa-highresIcon-heart;
+}
+
+.pa-highresIcon-viewedEmail {
+    @extend .pa-highresIcon-envelope;
+}
+
+.pa-highresIcon-email {
+    @extend .pa-highresIcon-envelope;
+}
+
+.pa-highresIcon-myAgent {
+    @extend .pa-highresIcon-peopleHomeConnected;
+}
+
+.pa-highresIcon-phonePerformancePoor {
+    @extend .pa-highresIcon-callNoAnswer;
+}
+
+.pa-highresIcon-phonePerformanceOkay {
+    @extend .pa-highresIcon-call;
+}
+
+.pa-highresIcon-phonePerformanceGood {
+    @extend .pa-highresIcon-callSuccess;
+}*/
+/* semantic system icons */
+/*$paSemanticSystemIconCodes: (
+    view: map-get($paSystemIconCodes, eye),
+    viewedEmail: map-get($paSystemIconCodes, envelope),
+    favorite: map-get($paSystemIconCodes, heart),
+    unfavorite: map-get($paSystemIconCodes, heartEmpty),
+    date: map-get($paSystemIconCodes, calendar),
+    forward: map-get($paSystemIconCodes, arrowRight),
+    attachment: map-get($paSystemIconCodes, paperclip),
+    close: map-get($paSystemIconCodes, xMark),
+    search: map-get($paSystemIconCodes, magnifyingGlass),
+    dropdown: map-get($paSystemIconCodes, smallCaretDown),
+    dropdownOpen: map-get($paSystemIconCodes, smallCaretUp),
+    menu: map-get($paSystemIconCodes, tripleBar),
+    email: map-get($paSystemIconCodes, envelope),
+    sms: map-get($paSystemIconCodes, speechBubble),
+    help: map-get($paSystemIconCodes, circleQuestion),
+    settings: map-get($paSystemIconCodes, gear),
+    statusAttention: map-get($paSystemIconCodes, circleExclamation),
+    statusError: map-get($paSystemIconCodes, circleX),
+    statusInfo: map-get($paSystemIconCodes, circleInfo),
+    statusSuccess: map-get($paSystemIconCodes, circleCheckmark),
+    admin: map-get($paSystemIconCodes, personGear),
+    sortAsc: map-get($paSystemIconCodes, smallArrowUp),
+    sortDesc: map-get($paSystemIconCodes, smallArrowDown),
+    wizardStepDefault: map-get($paSystemIconCodes, listBulletCircle),
+    wizardStepCompleted: map-get($paSystemIconCodes, listBulletCheckmark),
+    wizardStepCurrent: map-get($paSystemIconCodes, listBulletDisc),
+    wizardStepViewed: map-get($paSystemIconCodes, listBulletDisc),
+    increase: map-get($paSystemIconCodes, smallArrowUp),
+    decrease: map-get($paSystemIconCodes, smallArrowDown)
+);
+
+.pa-systemIcon-view {
+    @extend .pa-systemIcon-eye;
+}
+
+.pa-systemIcon-viewedEmail {
+    @extend .pa-systemIcon-envelope;
+}
+
+.pa-systemIcon-favorite {
+    @extend .pa-systemIcon-heart;
+}
+
+.pa-systemIcon-unfavorite {
+    @extend .pa-systemIcon-heartEmpty;
+}
+
+.pa-systemIcon-date {
+    @extend .pa-systemIcon-calendar;
+}
+
+.pa-systemIcon-forward {
+    @extend .pa-systemIcon-arrowRight;
+}
+
+.pa-systemIcon-attachment {
+    @extend .pa-systemIcon-paperclip;
+}
+
+.pa-systemIcon-close {
+    @extend .pa-systemIcon-xMark;
+}
+
+.pa-systemIcon-search {
+    @extend .pa-systemIcon-magnifyingGlass;
+}
+
+.pa-systemIcon-dropdown {
+    @extend .pa-systemIcon-smallCaretDown;
+}
+
+.pa-systemIcon-menu {
+    @extend .pa-systemIcon-tripleBar;
+}
+
+.pa-systemIcon-email {
+    @extend .pa-systemIcon-envelope;
+}
+
+.pa-systemIcon-sms {
+    @extend .pa-systemIcon-speechBubble;
+}
+
+.pa-systemIcon-help {
+    @extend .pa-systemIcon-circleQuestion;
+}
+
+.pa-systemIcon-settings {
+    @extend .pa-systemIcon-gear;
+}
+
+.pa-systemIcon-statusAttention {
+    @extend .pa-systemIcon-circleExclamation;
+}
+
+.pa-systemIcon-statusError {
+    @extend .pa-systemIcon-circleX;
+}
+
+.pa-systemIcon-statusInfo {
+    @extend .pa-systemIcon-circleInfo;
+}
+
+.pa-systemIcon-statusSuccess {
+    @extend .pa-systemIcon-circleCheckmark;
+}
+
+.pa-systemIcon-admin {
+    @extend .pa-systemIcon-personGear;
+}
+
+.pa-systemIcon-sortAsc {
+    @extend .pa-systemIcon-smallArrowUp;
+}
+
+.pa-systemIcon-sortDesc {
+    @extend .pa-systemIcon-smallArrowDown;
+}
+
+.pa-systemIcon-wizardStepDefault {
+    @extend .pa-systemIcon-listBulletCircle;
+}
+
+.pa-systemIcon-wizardStepCompleted {
+    @extend .pa-systemIcon-listBulletCheckmark;
+}
+
+.pa-systemIcon-wizardStepCurrent {
+    @extend .pa-systemIcon-listBulletDisc;
+}
+
+.pa-systemIcon-wizardStepViewed {
+    @extend .pa-systemIcon-listBulletDisc;
+}
+
+.pa-systemIcon-increase {
+    @extend .pa-systemIcon-smallArrowUp;
+}
+
+.pa-systemIcon-decrease {
+    @extend .pa-systemIcon-smallArrowDown;
+}*/
+/* new messaging colors */
+/* extended color palette */
+/* partner brands */
+/* legacy PAXL colors */
+/* Remember: a cell's vertical padding is: (cellHeight - lineHeight - (2 * borderHeight)) / 2   */
+/* Semantic color families:
+
+base: the main color of the color family
+pale: very pale background, sometimes used as notification background, table cell background
+solid: used for large blocks or regions of color, like buttons
+thin: used for thin elements, like text or single-pixel lines
+
+*/
+/* Action: actionable elements, like links or primary buttons */
+/* orange text colors included for completeness, but we shouldn't use orange text */
+/* Attention: strongly draws attention, like warnings or primary calls to action? */
+/* Danger: very strong warning, like an irreversible delete action */
+/* Success: completion of a task or flow */
+/* Error: Error with a user's input, like in a form field */
+/* Info: Static information or help */
+/* New: something is new. New lead, new incoming email, etc */
+/* Active: something is activated (checkbox, focus state, etc)
+   or currently showing (nav, tab) */
+/* Default color for icons and icons in disks */
+/* Extended color families: avatars and reporting */
+/* Secondary messaging: viewed */
+/* Secondary messaging: viewed email */
+/* Secondary messaging: favorited */
+/* Secondary messaging: unfavorited */
+/* Secondary messaging: increased */
+/* Secondary messaging: decreased */
+/* Divergent palette: worst */
+/* Divergent palette: poor */
+/* Divergent palette: okay */
+/* Divergent palette: good */
+/* Divergent palette: best */
+/*doc
+---
+title: Type Styles
+name: typestyles
+category: Design System
+author: Tony Q
+test: false
+---
+<div class="line">
+    <div class="col cols16">
+        <table>
+            <tr class="guide-typeSample">
+                <td class="guide-swatchLabel">Display 1</td>
+                <td class="guide-swatch guide-swatchtextDisplay1">sample</td>
+            </tr>
+            <tr class="guide-typeSample">
+                <td class="guide-swatchLabel">Display 2</td>
+                <td class="guide-swatch guide-swatchtextDisplay2">sample</td>
+            </tr>
+            <tr class="guide-typeSample">
+                <td class="guide-swatchLabel">Title</td>
+                <td class="guide-swatch guide-swatchtextTitle">sample</td>
+            </tr>
+            <tr class="guide-typeSample">
+                <td class="guide-swatchLabel">Headline 1</td>
+                <td class="guide-swatch guide-swatchtextHeadline1">sample</td>
+            </tr>
+            <tr class="guide-typeSample">
+                <td class="guide-swatchLabel">Headline 2</td>
+                <td class="guide-swatch guide-swatchtextHeadline2">sample</td>
+            </tr>
+            <tr class="guide-typeSample">
+                <td class="guide-swatchLabel">Subheading</td>
+                <td class="guide-swatch guide-swatchtextSubheading">sample</td>
+            </tr>
+            <tr class="guide-typeSample">
+                <td class="guide-swatchLabel">Body 1</td>
+                <td class="guide-swatch guide-swatchtextBody1">sample</td>
+            </tr>
+            <tr class="guide-typeSample">
+                <td class="guide-swatchLabel">Body 2</td>
+                <td class="guide-swatch guide-swatchtextBody2">sample</td>
+            </tr>
+            <tr class="guide-typeSample">
+                <td class="guide-swatchLabel">Label 1</td>
+                <td class="guide-swatch guide-swatchtextLabel1">sample</td>
+            </tr>
+            <tr class="guide-typeSample">
+                <td class="guide-swatchLabel">Label 2</td>
+                <td class="guide-swatch guide-swatchtextLabel2">sample</td>
+            </tr>
+            <tr class="guide-typeSample">
+                <td class="guide-swatchLabel">Disclaimer</td>
+                <td class="guide-swatch guide-swatchtextDisclaimer">sample</td>
+            </tr>
+        </table>
+    </div>
+    <div class="col lastCol guide-inspector" pa-inspector="typeStyles">
+        <h4 pa-inspect-title>Display 1</h4>
+        <table>
+            <tr>
+                <td class="guide-inspectLabel">Font Family:</td>
+                <td class="guide-inspectValue" pa-inspect-attr="fontFamily">Proxima Nova</td>
+            </tr>
+            <tr>
+                <td class="guide-inspectLabel">Font Size:</td>
+                <td class="guide-inspectValue" pa-inspect-attr="fontSize">44px</td>
+            </tr>
+            <tr>
+                <td class="guide-inspectLabel">Font Weight:</td>
+                <td class="guide-inspectValue" pa-inspect-attr="fontWeight">light</td>
+            </tr>
+            <tr>
+                <td class="guide-inspectLabel">Text Transform:</td>
+                <td class="guide-inspectValue" pa-inspect-attr="textTransform">none</td>
+            </tr>
+            <tr>
+                <td class="guide-inspectLabel">Letter Spacing:</td>
+                <td class="guide-inspectValue" pa-inspect-attr="letterSpacing">normal</td>
+            </tr>
+            <tr>
+                <td class="guide-inspectLabel">Line Height:</td>
+                <td class="guide-inspectValue" pa-inspect-attr="lineHeight">56px</td>
+            </tr>
+        </table>
+    </div>
+</div>
+*/
+/* useful when attempting layout with inline-block elements */
+/* layout page setup */
+/* layout fundamentals */
+/* overflow-y truncates the focus glow, this is a hacky fix for that */
+/* dropdowns */
+/* tooltips */
+/* toast notification width */
+/* modals */
+/* wizards */
+/*$wizardDefaultStepIconCode: map-get($paSemanticSystemIconCodes, wizardStepDefault);
+$wizardDefaultStepIconColor: map-get($colorIconDefault, base);
+$wizardCurrentStepIconCode: map-get($paSemanticSystemIconCodes, wizardStepCurrent);
+$wizardCurrentStepIconColor: map-get($colorActive, base);
+$wizardCompletedStepIconCode: map-get($paSemanticSystemIconCodes, wizardStepCompleted);
+$wizardCompletedStepIconColor: map-get($colorSuccess, base);
+$wizardViewedStepIconCode: map-get($paSemanticSystemIconCodes, wizardStepViewed);
+$wizardViewedStepIconColor: map-get($colorIconLight, base);*/
+/*doc
+---
+title: Field Icons
+name: fieldicons
+category: Form Fields
+author: Tony Q
+---
+
+We can put icons in form fields.
+
+```html_example
+<div class="pa-formUnit">
+    <label class="pa-fieldLabel" for="fieldicons1">Field with icon</label>
+    <div class="pa-fieldWrapper">
+        <span class="pa-fieldIcon iconSearch"></span>
+        <input
+            type="text"
+            id="fieldicons1">
+        </input>
+    </div>
+</div>
+<div class="pa-formRow">
+    <div class="pa-formUnit">
+        <label class="pa-fieldLabel" for="fieldicons2">Icon Field in Row</label>
+        <div class="pa-fieldWrapper">
+            <span class="pa-fieldIcon iconAttention"></span>
+            <input
+                type="text"
+                id="fieldicons2">
+            </input>
+        </div>
+    </div>
+    <div class="pa-formUnit">
+        <label class="pa-fieldLabel" for="fieldicons3">Icon Field in Row</label>
+        <div class="pa-fieldWrapper">
+            <span class="pa-fieldIcon iconBell"></span>
+            <input
+                type="text"
+                placeholder="Placeholder Text"
+                id="fieldicons3">
+            </input>
+        </div>
+    </div>
+    <div class="pa-formUnit">
+        <label class="pa-fieldLabel" for="fieldicons4">Icon Field in Row</label>
+        <div class="pa-fieldWrapper">
+            <span class="pa-fieldIcon iconHeart"></span>
+            <div class="pa-selectWrapper">
+                <select id="fieldicons4">
+                    <option value='1' selected>Option 1</option>
+                    <option value='2'>Option 2</option>
+                    <option value='3'>Option 3</option>
+                </select>
+        </div>
+    </div>
+</div>
+```
+CSS class                             |  Usage
+------------------------------------- | ------------------------------------------------------------------------------------------
+`.pa-formUnit .pa-fieldWrapper`       | Field wrappers allow for advanced form field options, like icons and addons.
+`.pa-fieldSystemIcon`                 | A single system icon that will appear inside the form field.
+`.pa-fieldIcon`                       | Deprecated. A single legacy icon that will appear inside the form field.
+*/
+/*doc
+---
+title: Field Addons
+name: fieldaddons
+category: Form Layout
+author: Tony Q
+---
+
+We can use addons to connect content to form fields.
+
+```html_example
+<div class="pa-formUnit">
+    <label class="pa-fieldLabel" for="addons1">Simple Addon</label>
+    <div class="pa-fieldWrapper">
+        <span class="pa-addon">$</span>
+        <input
+            type="text"
+            id="addons1">
+        </input>
+    </div>
+</div>
+<div class="pa-formUnit">
+    <label class="pa-fieldLabel" for="addons2">Addon Button</label>
+    <div class="pa-fieldWrapper">
+        <input
+            type="text"
+            placeholder="Search"
+            id="addons2">
+        </input>
+        <button class="pa-addon pa-button pa-iconOnly iconSearch"></button>
+    </div>
+</div>
+<div class="pa-formUnit">
+    <label class="pa-fieldLabel" for="addons1">Select field as addon</label>
+    <div class="pa-fieldWrapper">
+        <span class="pa-fieldIcon iconUser"></span>
+        <input
+            type="text"
+            placeholder="Username"
+            id="addons3">
+        </input>
+        <div class="pa-selectWrapper pa-addon">
+            <select id="addons3-1">
+                <option value="zillowgroup" selected>@zillowgroup.com</option>
+                <option value="zillow">@zillow.com</option>
+                <option value="trulia">@trulia.com</option>
+                <option value="dotloop">@dotloop.com</option>
+                <option value="hotpads">@hotpads.com</option>
+            </select>
+        </div>
+    </div>
+</div>
+```
+CSS class                             |  Usage
+------------------------------------- | ------------------------------------------------------------------------------------------
+`.pa-formUnit .pa-fieldWrapper`       | Field wrappers allow for advanced form field options, like icons and addons.
+`.pa-addon`                           | Add this class to a span, button, or select wrapper that attaches to a text field.
+*/
+/* form fields */
+/* buttons */
+/* switches and range inputs */
+/* this is not the greatest way of determining this number... */
+/*doc
+---
+title: Form Unit
+name: 0form_layout
+category: Form Layout
+author: Tony Q
+---
+
+Form units are the basic building blocks of forms.
+An individual form unit consists of a form field, its label, and the helper or error text (if any).
+A set of related checkboxes or radio buttons are grouped together into a single form unit;
+a good rule of thumb is that each form unit should map to a single variable.
+
+```html_example
+<div class="pa-formUnit">
+    <label class="pa-fieldLabel" for="0form_unit_text">Form Unit Label</label>
+    <input type="text" id="0form_unit_text" />
+    <span class="pa-fieldHelper">Form Unit Helper Text</span>
+</div>
+```
+CSS class                        |  Usage
+-------------------------------- | ------------------------------------------------------------------------------------------------------
+`.pa-formUnit`                   | Basic building block of forms... one form unit usually represents a single form field.
+`.pa-fieldLabel`                 | A label for a single form field.
+`.pa-fieldHelper`                | Individual tab element; several of these go together inside a tab bar.
+`.pa-formUnit.pa-hasError`       | Class to apply to the form unit if its form field has an error.
+`.pa-fieldError`                 | Error text specific to this field.
+*/
+/*doc
+---
+title: Field Sizes
+name: 2field_sizes
+category: Form Layout
+author: Tony Q
+---
+
+Each individual form unit can be one of several distinct widths.
+There is a default width, but for certain kinds of content, a different width may be appropriate.
+
+```html_example
+<h3>Contact Info</h3>
+<div class="pa-formRow">
+    <div class="pa-formUnit pa-formUnitL">
+        <label class="pa-fieldLabel" for="2field_sizes_text1">First Name (L)</label>
+        <input type="text" id="2field_sizes_text1" />
+    </div>
+    <div class="pa-formUnit pa-formUnitL">
+        <label class="pa-fieldLabel" for="2field_sizes_text2">Last Name (L)</label>
+        <input type="text" id="2field_sizes_text2" />
+    </div>
+</div>
+<div class="pa-formRow">
+    <div class="pa-formUnit pa-formUnitXXL">
+        <label class="pa-fieldLabel" for="2field_sizes_text3">Street (XXL)</label>
+        <input type="text" id="2field_sizes_text3" />
+    </div>
+</div>
+<div class="pa-formRow">
+    <div class="pa-formUnit pa-formUnitL">
+        <label class="pa-fieldLabel" for="2field_sizes_text4">City (L)</label>
+        <input type="text" id="2field_sizes_text5" />
+    </div>
+    <div class="pa-formUnit pa-formUnitM">
+        <label class="pa-fieldLabel" for="2field_sizes_text5">State (M)</label>
+        <div class="pa-selectWrapper">
+            <select id="2field_sizes_text5">
+                <option value="California" selected>CA</option>
+                <option value="New York">NY</option>
+                <option value="Washington">WA</option>
+            </select>
+        </div>
+    </div>
+    <div class="pa-formUnit pa-formUnitM">
+        <label class="pa-fieldLabel" for="2field_sizes_text6">Zip (M)</label>
+        <input type="text" id="2field_sizes_text6" />
+    </div>
+</div>
+<h3>Form Unit Sizes</h3>
+<div class="pa-formRow">
+    <div class="pa-formUnit pa-formUnitXXL">
+        <label class="pa-fieldLabel" for="2field_sizes_textXXL">XXL Form Unit</label>
+        <input type="text" id="2field_sizes_textXXL" />
+    </div>
+</div>
+<div class="pa-formRow">
+    <div class="pa-formUnit pa-formUnitXL">
+        <label class="pa-fieldLabel" for="2field_sizes_textXL">XL Form Unit</label>
+        <input type="text" id="2field_sizes_textXL" />
+    </div>
+    <div class="pa-formUnit pa-formUnitM">
+        <label class="pa-fieldLabel" for="2field_sizes_textM_XLrow">M Form Unit</label>
+        <input type="text" id="2field_sizes_textM_XLrow" />
+    </div>
+</div>
+<div class="pa-formRow">
+    <div class="pa-formUnit pa-formUnitL">
+        <label class="pa-fieldLabel" for="2field_sizes_textL1">L Form Unit</label>
+        <input type="text" id="2field_sizes_textL1" />
+    </div>
+    <div class="pa-formUnit pa-formUnitL">
+        <label class="pa-fieldLabel" for="2field_sizes_textL2">L Form Unit</label>
+        <input type="text" id="2field_sizes_textL2" />
+    </div>
+</div>
+<div class="pa-formRow">
+    <div class="pa-formUnit pa-formUnitM">
+        <label class="pa-fieldLabel" for="2field_sizes_textM1">M Form Unit</label>
+        <input type="text" id="2field_sizes_textM1" />
+    </div>
+    <div class="pa-formUnit pa-formUnitM">
+        <label class="pa-fieldLabel" for="2field_sizes_textM2">M Form Unit</label>
+        <input type="text" id="2field_sizes_textM2" />
+    </div>
+    <div class="pa-formUnit pa-formUnitM">
+        <label class="pa-fieldLabel" for="2field_sizes_textM3">M Form Unit</label>
+        <input type="text" id="2field_sizes_textM3" />
+    </div>
+    <div class="pa-formUnit pa-formUnitM">
+        <label class="pa-fieldLabel" for="2field_sizes_textM4">M Form Unit</label>
+        <input type="text" id="2field_sizes_textM4" />
+    </div>
+</div>
+<div class="pa-formRow">
+    <div class="pa-formUnit pa-formUnitSM">
+        <label class="pa-fieldLabel" for="2field_sizes_textSM1">SM</label>
+        <input type="text" id="2field_sizes_textSM1" />
+    </div>
+    <div class="pa-formUnit pa-formUnitSM">
+        <label class="pa-fieldLabel" for="2field_sizes_textSM2">SM</label>
+        <input type="text" id="2field_sizes_textSM2" />
+    </div>
+    <div class="pa-formUnit pa-formUnitSM">
+        <label class="pa-fieldLabel" for="2field_sizes_textSM3">SM</label>
+        <input type="text" id="2field_sizes_textSM3" />
+    </div>
+    <div class="pa-formUnit pa-formUnitSM">
+        <label class="pa-fieldLabel" for="2field_sizes_textSM4">SM</label>
+        <input type="text" id="2field_sizes_textSM4" />
+    </div>
+    <div class="pa-formUnit pa-formUnitSM">
+        <label class="pa-fieldLabel" for="2field_sizes_textSM5">SM</label>
+        <input type="text" id="2field_sizes_textSM5" />
+    </div>
+    <div class="pa-formUnit pa-formUnitSM">
+        <label class="pa-fieldLabel" for="2field_sizes_textSM6">SM</label>
+        <input type="text" id="2field_sizes_textSM6" />
+    </div>
+</div>
+<div class="pa-formRow">
+    <div class="pa-formUnit pa-formUnitS">
+        <label class="pa-fieldLabel" for="2field_sizes_textS1">S</label>
+        <input type="text" id="2field_sizes_textS1" />
+    </div>
+    <div class="pa-formUnit pa-formUnitS">
+        <label class="pa-fieldLabel" for="2field_sizes_textS2">S</label>
+        <input type="text" id="2field_sizes_textS2" />
+    </div>
+    <div class="pa-formUnit pa-formUnitS">
+        <label class="pa-fieldLabel" for="2field_sizes_textS3">S</label>
+        <input type="text" id="2field_sizes_textS3" />
+    </div>
+    <div class="pa-formUnit pa-formUnitS">
+        <label class="pa-fieldLabel" for="2field_sizes_textS4">S</label>
+        <input type="text" id="2field_sizes_textS4" />
+    </div>
+    <div class="pa-formUnit pa-formUnitS">
+        <label class="pa-fieldLabel" for="2field_sizes_textS5">S</label>
+        <input type="text" id="2field_sizes_textS5" />
+    </div>
+    <div class="pa-formUnit pa-formUnitS">
+        <label class="pa-fieldLabel" for="2field_sizes_textS6">S</label>
+        <input type="text" id="2field_sizes_textS6" />
+    </div>
+    <div class="pa-formUnit pa-formUnitS">
+        <label class="pa-fieldLabel" for="2field_sizes_textS7">S</label>
+        <input type="text" id="2field_sizes_textS7" />
+    </div>
+    <div class="pa-formUnit pa-formUnitS">
+        <label class="pa-fieldLabel" for="2field_sizes_textS8">S</label>
+        <input type="text" id="2field_sizes_textS8" />
+    </div>
+</div>
+```
+CSS class                        |  Usage
+-------------------------------- | ------------------------------------------------------------------------------------------------------
+`.pa-formUnitS`                  | Small-width form unit.
+`.pa-formUnitM`                  | Medium width.
+`.pa-formUnitL`                  | Large width (Default). Form units with no explicit size class are this width.
+`.pa-formUnitXL`                 | Extra large width.
+*/
+/*doc
+---
+title: Required Fields
+name: 8required_fields
+category: Form Layout
+author: Tony Q
+---
+
+Generally, forms should be as short as possible and all fields should be required.
+When that is not possible, we want to indicate which fields are optional (when most are required).
+In the unusual case where most fields are optional, we can indicate which fields are required.
+If every field in your form has one of these indicators, there's a mistake.
+
+```html_example
+<div class="pa-formUnit pa-formUnitL pa-requiredFormUnit">
+    <label class="pa-fieldLabel" for="8required_fields_text1">Required Field</label>
+    <input type="text" id="8required_fields_text1" />
+</div>
+<div class="pa-formUnit pa-formUnitL pa-optionalFormUnit">
+    <label class="pa-fieldLabel" for="8required_fields_text2">Optional Field</label>
+    <input type="text" id="8required_fields_text2" />
+</div>
+```
+CSS class                        |  Usage
+-------------------------------- | ------------------------------------------------------------------------------------------------------
+`.pa-requiredFormUnit`           | Required form field. Use this class in a form where most fields are optional.
+`.pa-optionalFormUnit`           | Optional form field. Use this class in a form where most fields are required.
+*/
+/*doc
+---
+title: Error States
+name: 9error_states
+category: Form Fields
+author: Tony Q
+---
+
+Use the <code>pa-hasError</code> class to put a form unit into its error state.
+Note that the field error text is only visible if the <code>pa-hasError</code> class has been applied.
+
+```html_example
+<div class="pa-formUnit pa-hasError">
+    <label class="pa-fieldLabel" for="9error_states_text">Username</label>
+    <input type="text" id="9error_states_text" value="me" />
+    <span class="pa-fieldError">Usernames must be between 8 and 25 characters.</span>
+</div>
+<div class="pa-formUnit pa-formUnitXL pa-hasError">
+    <label class="pa-fieldLabel" for="9error_states_textarea">Message</label>
+    <textarea id="9error_states_textarea"></textarea>
+    <span class="pa-fieldError">The message cannot be empty.</span>
+</div>
+<div class="pa-formUnit pa-hasError">
+    <label class="pa-fieldLabel" for="9error_states_select">Choose One</label>
+    <div class="pa-selectWrapper">
+        <select id="9error_states_select">
+            <option value="">...</option>
+            <option value="option1">Option 1</option>
+            <option value="option2">Option 2</option>
+            <option value="option3">Option 3</option>
+            <option value="option4">Option 4</option>
+        </select>
+    </div>
+    <span class="pa-fieldError">An option must be chosen.</span>
+</div>
+```
+CSS class                        |  Usage
+-------------------------------- | --------------------------------------------------------------------------------
+`.pa-formUnit.pa-hasError`       | Class to apply to the form unit if its form field has an error.
+`.pa-fieldError`                 | Error text specific to this field.
+*/
+/* datepicker */
+/*doc
+---
+title: Pagination
+name: paginationNew
+category: Custom Elements
+author: Tony Q
+---
+
+Pagination is used in conjunction with our other filtering patterns.
+
+```html_example
+<div class="pa-pagination">
+    <button class="pa-singlePage pa-prevPage" disabled></button>
+    <button class="pa-singlePage pa-current">1</button>
+    <button class="pa-singlePage">2</button>
+    <button class="pa-singlePage">3</button>
+    <button class="pa-singlePage">4</button>
+    <button class="pa-singlePage">5</button>
+    <button class="pa-singlePage pa-nextPage"></button>
+</div>
+<span class="pa-resultsCount">Showing 1-10 of 50 results</span>
+
+<div class="pa-pagination">
+    <a href="#" class="pa-singlePage pa-prevPage pa-disabled"></a>
+    <a href="#" class="pa-singlePage pa-current">1</a>
+    <a href="#" class="pa-singlePage">2</a>
+    <a href="#" class="pa-singlePage">3</a>
+    <a href="#" class="pa-singlePage">4</a>
+    <a href="#" class="pa-singlePage">5</a>
+    <a href="#" class="pa-singlePage pa-nextPage"></a>
+</div>
+<span class="pa-resultsCount">Showing 1-10 of 50 results</span>
+
+
+<div class="pa-pagination">
+    <button class="pa-singlePage pa-prevPage"></button>
+    <button class="pa-singlePage">1</button>
+    <span class="pa-pageSeparator"></span>
+    <button class="pa-singlePage">4</button>
+    <button class="pa-singlePage pa-current">5</button>
+    <button class="pa-singlePage">6</button>
+    <span class="pa-pageSeparator"></span>
+    <button class="pa-singlePage">10</button>
+    <button class="pa-singlePage pa-nextPage"></button>
+</div>
+<span class="pa-resultsCount">Showing 41-50 of 100 results</span>
+```
+
+CSS class                        |  Usage
+-------------------------------- | -----------------------------------------------------------------------------------------------
+`.pa-paginationWrapper`          | Wrapper for the pagination buttons and results count elements. Not needed for Simple Pagination.
+`.pa-pagination`                 | Wrapper element for a set of pagination buttons.
+`.pa-singlePage`                 | Element, usually a button, that indicates a single page within pagination.
+`.pa-singlePage.pa-current`      | The <code>pa-current</code> class is used to indicate the current page.
+`.pa-singlePage.pa-nextPage`     | Use this class on the singlePage button that goes forward one page.
+`.pa-singlePage.pa-prevPage`     | Use this class on the singlePage button that goes back one page.
+`.pa-singlePage[disabled]`       | Use the disabled attribute on nextPage or prevPage if we're already on the first or last page.
+`.pa-singlePage.pa-disabled`     | Disabled class for use with links.
+`.pa-pageSeparator`              | Wrapper element for a set of pagination buttons.
+`.pa-resultsCount`               | Text that indicates the total number of results and
+*/
+/*doc
+---
+title: Select Field
+name: 2select
+category: Form Fields
+author: Tony Q
+---
+
+Select fields allow a user to choose one of several options.
+
+When implementing a select field, be sure to wrap the select element in a <code>.pa-selectWrapper</code> element.
+This is needed so that the trigger arrow appears correctly.
+
+```html_example
+<div class="pa-formUnit">
+    <label class="pa-fieldLabel" for="2select_field">Choose One</label>
+    <div class="pa-selectWrapper">
+        <select id="2select_field">
+            <option value="option1">Option 1</option>
+            <option value="option2">Option 2</option>
+            <option value="option3">Option 3</option>
+            <option value="option4">Option 4</option>
+        </select>
+    </div>
+    <span class="pa-fieldHelper">Optional select field helper text.</span>
+</div>
+```
+CSS class                             |  Usage
+------------------------------------- | ------------------------------------------------------------------------------------------
+`.pa-formUnit select`                 | Basic select field.
+`.pa-formUnit select > option`        | Individual option. Select fields usually have multiple options.
+*/
+.pa-mediumForm .pa-formUnit select,
+.pa-formUnit select {
+  font-family: "Proxima Nova";
+  font-size: 16px;
+  font-weight: normal;
+  letter-spacing: normal;
+  line-height: 22px;
+  text-transform: none; }
+
+.pa-smallForm .pa-formUnit select {
+  font-family: "Proxima Nova";
+  font-size: 14px;
+  font-weight: normal;
+  letter-spacing: normal;
+  line-height: 20px;
+  text-transform: none; }
+
+.pa-largeForm .pa-formUnit select {
+  font-family: "Proxima Nova";
+  font-size: 18px;
+  font-weight: 600;
+  letter-spacing: normal;
+  line-height: 22px;
+  text-transform: none; }
+
+
+.pa-formUnit select {
+  border-radius: 3px;
+  border-width: 1px;
+  height: 32px;
+  line-height: 22px;
+  padding-bottom: 4px;
+  padding-left: 8px;
+  padding-right: 26px;
+  padding-top: 4px; }
+
+.pa-formUnit .pa-selectWrapper:after {
+  right: 3px;
+  top: 6px; }
+
+.pa-mediumForm .pa-formUnit select {
+  border-radius: 3px;
+  border-width: 1px;
+  height: 32px;
+  line-height: 22px;
+  padding-bottom: 4px;
+  padding-left: 8px;
+  padding-right: 26px;
+  padding-top: 4px; }
+
+.pa-mediumForm .pa-formUnit .pa-selectWrapper:after {
+  right: 3px;
+  top: 6px; }
+
+.pa-smallForm .pa-formUnit select {
+  border-radius: 3px;
+  border-width: 1px;
+  height: 24px;
+  line-height: 20px;
+  padding-bottom: 1px;
+  padding-left: 6px;
+  padding-right: 22px;
+  padding-top: 1px; }
+
+.pa-smallForm .pa-formUnit .pa-selectWrapper:after {
+  right: 2px;
+  top: 4px; }
+
+.pa-largeForm .pa-formUnit select {
+  border-radius: 3px;
+  border-width: 1px;
+  height: 48px;
+  line-height: 22px;
+  padding-bottom: 12px;
+  padding-left: 12px;
+  padding-right: 38px;
+  padding-top: 12px; }
+
+.pa-largeForm .pa-formUnit .pa-selectWrapper:after {
+  right: 2px;
+  top: 9px; }
+
+
+.pa-formUnit select {
+  background-color: #FFFFFF;
+  border-color: #CCCCCC;
+  border-style: solid;
+  color: #333333;
+  cursor: pointer;
+  display: block;
+  width: 100%; }
+
+/* fix focus treatment */
+.pa-formUnit select:focus {
+  border-color: #0E71AF;
+  outline: 0; }
+
+.pa-formUnit.pa-hasError select,
+.pa-formUnit.pa-hasError select:focus {
+  border-color: #CD162C;
+  color: #333333; }
+
+.pa-formUnit.pa-disabled.pa-hasError select,
+.pa-formUnit.pa-disabled select,
+.pa-formUnit.pa-hasError select:disabled,
+.pa-formUnit select:disabled {
+  background-color: #F3F3F3;
+  border-color: #CCCCCC;
+  color: #CCCCCC;
+  cursor: default;
+  pointer-events: none;
+  user-select: none; }
+
+.pa-formUnit .pa-selectWrapper:after {
+  color: #333333;
+  pointer-events: none;
+  position: absolute; }
+
+.pa-formUnit.pa-hasError .pa-selectWrapper:after {
+  color: #333333; }
+
+.pa-formUnit.pa-disabled .pa-selectWrapper:after {
+  color: #CCCCCC; }
+
+.pa-formUnit .pa-selectWrapper {
+  font-family: 'proxima_novaregular';
+  display: block;
+  position: relative;
+  width: 100%; }
+
+/* remove the native trigger arrow */
+.pa-formUnit select {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  color: black;
+  font-family: 'proxima_novaregular'; }
+
+.pa-formUnit select::-ms-expand {
+  display: none; }
+
+/* end native arrow section */
+/* firefox hack for focus state... this is awful */
+.pa-formUnit select:-moz-focusring {
+  color: transparent;
+  text-shadow: 0 0 0 #333333; }
+
+/* ie/edge css for focus state */
+.pa-formUnit select:focus::-ms-value {
+  background-color: #FFFFFF;
+  color: #333333; }
+
+/* end focus section */
+.pa-formUnit select option {
+  font-family: "Proxima Nova";
+  font-size: 16px;
+  font-weight: normal;
+  letter-spacing: normal;
+  line-height: 22px;
+  text-transform: none;
+  line-height: 22px;
+  padding-bottom: 4px;
+  padding-left: 8px;
+  padding-right: 8px;
+  padding-top: 4px; }
+
+.pa-mediumForm .pa-formUnit select option {
+  font-family: "Proxima Nova";
+  font-size: 16px;
+  font-weight: normal;
+  letter-spacing: normal;
+  line-height: 22px;
+  text-transform: none;
+  line-height: 22px;
+  padding-bottom: 4px;
+  padding-left: 8px;
+  padding-right: 8px;
+  padding-top: 4px; }
+
+.pa-smallForm .pa-formUnit select option {
+  font-family: "Proxima Nova";
+  font-size: 16px;
+  font-weight: normal;
+  letter-spacing: normal;
+  line-height: 22px;
+  text-transform: none;
+  line-height: 20px;
+  padding-bottom: 1px;
+  padding-left: 6px;
+  padding-right: 6px;
+  padding-top: 1px; }
+
+.pa-largeForm .pa-formUnit select option {
+  font-family: "Proxima Nova";
+  font-size: 16px;
+  font-weight: normal;
+  letter-spacing: normal;
+  line-height: 22px;
+  text-transform: none;
+  line-height: 22px;
+  padding-bottom: 12px;
+  padding-left: 12px;
+  padding-right: 12px;
+  padding-top: 12px; }
+
+/* clean up a bit for firefox and IE */
+.pa-formUnit select option:focus,
+.pa-formUnit select:focus option,
+.pa-formUnit select option {
+  background-color: #FFFFFF; }
+
+.pa-formUnit {
+  display: block;
+  color: black;
+  font-family: 'proxima_novaregular'; }
+
+.pa-formUnit .pa-fieldLabel {
+  font-family: "Proxima Nova";
+  font-size: 14px;
+  font-weight: 600;
+  letter-spacing: normal;
+  line-height: 20px;
+  text-transform: none;
+  color: #747474;
+  display: block;
+  font-family: 'proxima_novaregular'; }
+
+.pa-formUnit.pa-optionalFormUnit .pa-fieldLabel:after,
+.pa-formUnit.pa-requiredFormUnit .pa-fieldLabel:after {
+  font-family: "Proxima Nova";
+  font-size: 12px;
+  font-weight: normal;
+  letter-spacing: 0.4px;
+  line-height: 16px;
+  text-transform: none;
+  color: #747474;
+  display: inline-block;
+  margin-left: 4px;
+  vertical-align: baseline;
+  white-space: nowrap; }
+
+.pa-formUnit.pa-optionalFormUnit .pa-fieldLabel:after {
+  content: '(optional)'; }
+
+.pa-formUnit.pa-requiredFormUnit .pa-fieldLabel:after {
+  content: '(required)'; }
+
+.pa-formUnit .pa-fieldHelper,
+.pa-formUnit .pa-fieldError {
+  font-family: "Proxima Nova";
+  font-size: 12px;
+  font-weight: normal;
+  letter-spacing: 0.4px;
+  line-height: 16px;
+  text-transform: none;
+  display: block; }
+
+.pa-formUnit .pa-fieldHelper {
+  color: #747474; }
+
+.pa-formUnit .pa-fieldError {
+  color: #B40015; }
+
+.pa-formUnit:not(.pa-hasError) .pa-fieldError {
+  display: none; }
+
+/* medium form scale (default) */
+.pa-mediumForm .pa-formUnit .pa-fieldLabel,
+.pa-formUnit .pa-fieldLabel {
+  margin-bottom: 4px; }
+
+.pa-mediumForm .pa-formUnit .pa-fieldHelper,
+.pa-mediumForm .pa-formUnit .pa-fieldError,
+.pa-formUnit .pa-fieldHelper,
+.pa-formUnit .pa-fieldError {
+  font-family: "Proxima Nova";
+  font-size: 12px;
+  font-weight: normal;
+  letter-spacing: 0.4px;
+  line-height: 16px;
+  text-transform: none;
+  margin-top: 4px; }
+
+.pa-mediumForm .pa-formUnit,
+.pa-mediumForm .pa-formUnit.pa-formUnitL,
+.pa-formUnit,
+.pa-formUnit.pa-formUnitL {
+  flex: 0 1 306px;
+  max-width: 306px; }
+
+.pa-mediumForm .pa-formUnit.pa-formUnitS,
+.pa-formUnit.pa-formUnitS {
+  flex: 0 0 70.5px;
+  max-width: 70.5px; }
+
+.pa-mediumForm .pa-formUnit.pa-formUnitSM,
+.pa-formUnit.pa-formUnitSM {
+  flex: 0 1 96.66667px;
+  max-width: 96.66667px; }
+
+.pa-mediumForm .pa-formUnit.pa-formUnitM,
+.pa-formUnit.pa-formUnitM {
+  flex: 0 1 149px;
+  max-width: 149px; }
+
+.pa-mediumForm .pa-formUnit.pa-formUnitXL,
+.pa-formUnit.pa-formUnitXL {
+  flex: 0 1 463px;
+  max-width: 463px; }
+
+.pa-mediumForm .pa-formUnit.pa-formUnitXXL,
+.pa-formUnit.pa-formUnitXXL {
+  flex: 0 1 620px;
+  max-width: 620px; }
+
+/* small form scale */
+.pa-smallForm .pa-formUnit .pa-fieldLabel {
+  margin-bottom: 4px; }
+
+.pa-smallForm .pa-formUnit .pa-fieldHelper,
+.pa-smallForm .pa-formUnit .pa-fieldError {
+  font-family: "Proxima Nova";
+  font-size: 12px;
+  font-weight: normal;
+  letter-spacing: 0.4px;
+  line-height: 16px;
+  text-transform: none;
+  margin-top: 4px; }
+
+.pa-smallForm .pa-formUnit,
+.pa-smallForm .pa-formUnit.pa-formUnitL {
+  flex: 0 1 306px;
+  max-width: 306px; }
+
+.pa-smallForm .pa-formUnit.pa-formUnitS {
+  flex: 0 0 70.5px;
+  max-width: 70.5px; }
+
+.pa-smallForm .pa-formUnit.pa-formUnitSM {
+  flex: 0 1 96.66667px;
+  max-width: 96.66667px; }
+
+.pa-smallForm .pa-formUnit.pa-formUnitM {
+  flex: 0 1 149px;
+  max-width: 149px; }
+
+.pa-smallForm .pa-formUnit.pa-formUnitXL {
+  flex: 0 1 463px;
+  max-width: 463px; }
+
+.pa-smallForm .pa-formUnit.pa-formUnitXXL {
+  flex: 0 1 620px;
+  max-width: 620px; }
+
+/* large form scale */
+.pa-largeForm .pa-formUnit .pa-fieldLabel {
+  margin-bottom: 4px; }
+
+.pa-largeForm .pa-formUnit .pa-fieldHelper,
+.pa-largeForm .pa-formUnit .pa-fieldError {
+  font-family: "Proxima Nova";
+  font-size: 12px;
+  font-weight: normal;
+  letter-spacing: 0.4px;
+  line-height: 16px;
+  text-transform: none;
+  margin-top: 4px; }
+
+.pa-largeForm .pa-formUnit,
+.pa-largeForm .pa-formUnit.pa-formUnitL {
+  flex: 0 1 302px;
+  max-width: 302px; }
+
+.pa-largeForm .pa-formUnit.pa-formUnitS {
+  flex: 0 0 63.5px;
+  max-width: 63.5px; }
+
+.pa-largeForm .pa-formUnit.pa-formUnitSM {
+  flex: 0 1 90px;
+  max-width: 90px; }
+
+.pa-largeForm .pa-formUnit.pa-formUnitM {
+  flex: 0 1 143px;
+  max-width: 143px; }
+
+.pa-largeForm .pa-formUnit.pa-formUnitXL {
+  flex: 0 1 461px;
+  max-width: 461px; }
+
+.pa-largeForm .pa-formUnit.pa-formUnitXXL {
+  flex: 0 1 620px;
+  max-width: 620px; }
+
+/* shrink wrap to the size of a button */
+.pa-mediumForm .pa-formUnit.pa-formUnitFlexible,
+.pa-formUnit.pa-formUnitFlexible {
+  flex: 0 0 auto;
+  max-width: 620px; }
+
+.pa-smallForm .pa-formUnit.pa-formUnitFlexible {
+  flex: 0 0 auto;
+  max-width: 620px; }
+
+.pa-largeForm .pa-formUnit.pa-formUnitFlexible {
+  flex: 0 0 auto;
+  max-width: 620px; }
+
+.pa-formUnit:not(:first-child) {
+  margin-top: 16px; }
+
+h3 + .pa-formUnit,
+h4 + .pa-formUnit {
+  margin-top: 4px; }
+
+.pa-formUnit + h3,
+.pa-formUnit + h4 {
+  margin-top: 48px; }
+
+@media screen and (min-width: 768px) {
+  .pa-formUnit:not(:last-child) {
+    margin-bottom: 32px; } }
+
+.pa-mediumForm .pa-formUnit:not(:first-child) {
+  margin-top: 16px; }
+
+.pa-mediumForm h3 + .pa-formUnit,
+.pa-mediumForm h4 + .pa-formUnit {
+  margin-top: 4px; }
+
+.pa-mediumForm .pa-formUnit + h3,
+.pa-mediumForm .pa-formUnit + h4 {
+  margin-top: 48px; }
+
+@media screen and (min-width: 768px) {
+  .pa-mediumForm .pa-formUnit:not(:last-child) {
+    margin-bottom: 32px; } }
+
+.pa-smallForm .pa-formUnit:not(:first-child) {
+  margin-top: 16px; }
+
+.pa-smallForm h3 + .pa-formUnit,
+.pa-smallForm h4 + .pa-formUnit {
+  margin-top: 4px; }
+
+.pa-smallForm .pa-formUnit + h3,
+.pa-smallForm .pa-formUnit + h4 {
+  margin-top: 32px; }
+
+@media screen and (min-width: 768px) {
+  .pa-smallForm .pa-formUnit:not(:last-child) {
+    margin-bottom: 16px; } }
+
+.pa-largeForm .pa-formUnit:not(:first-child) {
+  margin-top: 16px; }
+
+.pa-largeForm h3 + .pa-formUnit,
+.pa-largeForm h4 + .pa-formUnit {
+  margin-top: 4px; }
+
+.pa-largeForm .pa-formUnit + h3,
+.pa-largeForm .pa-formUnit + h4 {
+  margin-top: 48px; }
+
+@media screen and (min-width: 768px) {
+  .pa-largeForm .pa-formUnit:not(:last-child) {
+    margin-bottom: 32px; } }
+
+@media screen and (min-width: 768px) {
+  /* used as a fallback for tables that sort by clicking a column header */
+  .pa-formUnit.pa-mobileSort {
+    display: none; } }
+
+@media screen and (max-width: 767px) {
+  .pa-smallForm .pa-formUnit,
+  .pa-smallForm .pa-formUnit.pa-formUnitS,
+  .pa-smallForm .pa-formUnit.pa-formUnitSM,
+  .pa-smallForm .pa-formUnit.pa-formUnitM,
+  .pa-smallForm .pa-formUnit.pa-formUnitL,
+  .pa-smallForm .pa-formUnit.pa-formUnitXL,
+  .pa-smallForm .pa-formUnit.pa-formUnitXXL,
+  .pa-mediumForm .pa-formUnit,
+  .pa-mediumForm .pa-formUnit.pa-formUnitS,
+  .pa-mediumForm .pa-formUnit.pa-formUnitSM,
+  .pa-mediumForm .pa-formUnit.pa-formUnitM,
+  .pa-mediumForm .pa-formUnit.pa-formUnitL,
+  .pa-mediumForm .pa-formUnit.pa-formUnitXL,
+  .pa-mediumForm .pa-formUnit.pa-formUnitXXL,
+  .pa-largeForm .pa-formUnit,
+  .pa-largeForm .pa-formUnit.pa-formUnitS,
+  .pa-largeForm .pa-formUnit.pa-formUnitSM,
+  .pa-largeForm .pa-formUnit.pa-formUnitM,
+  .pa-largeForm .pa-formUnit.pa-formUnitL,
+  .pa-largeForm .pa-formUnit.pa-formUnitXL,
+  .pa-largeForm .pa-formUnit.pa-formUnitXXL,
+  .pa-formUnit,
+  .pa-formUnit.pa-formUnitS,
+  .pa-formUnit.pa-formUnitSM,
+  .pa-formUnit.pa-formUnitM,
+  .pa-formUnit.pa-formUnitL,
+  .pa-formUnit.pa-formUnitXXL,
+  .pa-formUnit.pa-formUnitXL {
+    max-width: 100%;
+    width: 100%; } }
+
+.pa-formUnit .pa-fieldWrapper {
+  color: black;
+  font-family: 'proxima_novaregular';
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  position: relative;
+  width: 100%; }
+
+.pa-fieldWrapper input[type="text"],
+.pa-fieldWrapper input[type="password"],
+.pa-fieldWrapper .pa-selectWrapper,
+.pa-fieldWrapper .pa-button {
+  flex: 0 1 100%; }
+
+/* addresses firefox flexbox width bug on input fields */
+.pa-fieldWrapper input[type="text"],
+.pa-fieldWrapper input[type="password"] {
+  min-width: 1px; }
+
+.pa-formUnit.pa-hasError .pa-fieldWrapper input[type="text"],
+.pa-formUnit.pa-hasError .pa-fieldWrapper input[type="password"],
+.pa-formUnit.pa-hasError .pa-fieldWrapper pa-selectWrapper,
+.pa-fieldWrapper input[type="text"]:focus,
+.pa-fieldWrapper input[type="password"]:focus,
+.pa-fieldWrapper .pa-button:focus {
+  position: relative; }
+
+.pa-fieldWrapper .pa-fieldIcon,
+.pa-fieldWrapper .pa-fieldSystemIcon {
+  pointer-events: none;
+  position: absolute; }
+
+.pa-fieldWrapper .pa-fieldIcon:before,
+.pa-fieldWrapper .pa-fieldSystemIcon:before {
+  color: #747474; }
+
+.pa-formUnit.pa-disabled .pa-fieldWrapper .pa-fieldIcon:before,
+.pa-formUnit.pa-disabled .pa-fieldWrapper .pa-fieldSystemIcon:before {
+  color: #CCCCCC; }
+
+.pa-formUnit .pa-fieldWrapper .pa-selectWrapper:not(:first-child) select,
+.pa-formUnit .pa-fieldWrapper *:not(:first-child) {
+  border-bottom-left-radius: 0;
+  border-top-left-radius: 0; }
+
+.pa-formUnit .pa-fieldWrapper .pa-selectWrapper:not(:last-child) select,
+.pa-formUnit .pa-fieldWrapper .pa-clearableField:not(:nth-last-child(2)),
+.pa-formUnit .pa-fieldWrapper *:not(:last-child):not(.pa-clearableField) {
+  border-bottom-right-radius: 0;
+  border-top-right-radius: 0; }
+
+/* medium form scale (default) */
+.pa-mediumForm .pa-fieldWrapper .pa-fieldIcon:before,
+.pa-fieldWrapper .pa-fieldIcon:before {
+  display: inline-block;
+  font-family: 'Truliacons';
+  font-size: 16px;
+  font-weight: normal;
+  height: 16px;
+  line-height: 16px;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  width: 16px; }
+
+.pa-mediumForm .pa-fieldWrapper .pa-fieldSystemIcon:before,
+.pa-fieldWrapper .pa-fieldSystemIcon:before {
+  display: inline-block;
+  font-family: 'PAsystemicons';
+  font-size: 20px;
+  font-weight: normal;
+  height: 20px;
+  line-height: 20px;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  width: 20px; }
+
+/* small form scale */
+.pa-smallForm .pa-fieldWrapper .pa-fieldIcon:before {
+  display: inline-block;
+  font-family: 'Truliacons';
+  font-size: 12px;
+  font-weight: normal;
+  height: 12px;
+  line-height: 12px;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  width: 12px; }
+
+.pa-smallForm .pa-fieldWrapper .pa-fieldSystemIcon:before {
+  display: inline-block;
+  font-family: 'PAsystemicons';
+  font-size: 16px;
+  font-weight: normal;
+  height: 16px;
+  line-height: 16px;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  width: 16px; }
+
+/* large form scale */
+.pa-largeForm .pa-fieldWrapper .pa-fieldIcon:before {
+  display: inline-block;
+  font-family: 'Truliacons';
+  font-size: 24px;
+  font-weight: normal;
+  height: 24px;
+  line-height: 24px;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  width: 24px; }
+
+.pa-largeForm .pa-fieldWrapper .pa-fieldSystemIcon:before {
+  display: inline-block;
+  font-family: 'PAsystemicons';
+  font-size: 30px;
+  font-weight: normal;
+  height: 30px;
+  line-height: 30px;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  width: 30px; }
+
+.pa-fieldWrapper .pa-fieldIcon {
+  height: 16px;
+  left: 9px;
+  line-height: 16px;
+  top: 8px;
+  width: 16px; }
+
+.pa-fieldWrapper .pa-fieldSystemIcon {
+  height: 20px;
+  left: 7px;
+  line-height: 20px;
+  top: 6px;
+  width: 20px; }
+
+.pa-formUnit .pa-fieldWrapper .pa-fieldIcon + input[type="password"],
+.pa-formUnit .pa-fieldWrapper .pa-fieldSystemIcon + input[type="password"],
+.pa-formUnit .pa-fieldWrapper .pa-fieldIcon + .pa-selectWrapper select,
+.pa-formUnit .pa-fieldWrapper .pa-fieldSystemIcon + .pa-selectWrapper select,
+.pa-formUnit .pa-fieldWrapper .pa-fieldIcon + input[type="text"],
+.pa-formUnit .pa-fieldWrapper .pa-fieldSystemIcon + input[type="text"] {
+  border-bottom-left-radius: 3px;
+  border-top-left-radius: 3px;
+  padding-left: 32px; }
+
+.pa-fieldWrapper *:not(:last-child) {
+  margin-right: -1px; }
+
+.pa-mediumForm .pa-fieldWrapper .pa-fieldIcon {
+  height: 16px;
+  left: 9px;
+  line-height: 16px;
+  top: 8px;
+  width: 16px; }
+
+.pa-mediumForm .pa-fieldWrapper .pa-fieldSystemIcon {
+  height: 20px;
+  left: 7px;
+  line-height: 20px;
+  top: 6px;
+  width: 20px; }
+
+.pa-mediumForm .pa-formUnit .pa-fieldWrapper .pa-fieldIcon + input[type="password"],
+.pa-mediumForm .pa-formUnit .pa-fieldWrapper .pa-fieldSystemIcon + input[type="password"],
+.pa-mediumForm .pa-formUnit .pa-fieldWrapper .pa-fieldIcon + .pa-selectWrapper select,
+.pa-mediumForm .pa-formUnit .pa-fieldWrapper .pa-fieldSystemIcon + .pa-selectWrapper select,
+.pa-mediumForm .pa-formUnit .pa-fieldWrapper .pa-fieldIcon + input[type="text"],
+.pa-mediumForm .pa-formUnit .pa-fieldWrapper .pa-fieldSystemIcon + input[type="text"] {
+  border-bottom-left-radius: 3px;
+  border-top-left-radius: 3px;
+  padding-left: 32px; }
+
+.pa-mediumForm .pa-fieldWrapper *:not(:last-child) {
+  margin-right: -1px; }
+
+.pa-smallForm .pa-fieldWrapper .pa-fieldIcon {
+  height: 12px;
+  left: 7px;
+  line-height: 12px;
+  top: 6px;
+  width: 12px; }
+
+.pa-smallForm .pa-fieldWrapper .pa-fieldSystemIcon {
+  height: 16px;
+  left: 5.4px;
+  line-height: 16px;
+  top: 4px;
+  width: 16px; }
+
+.pa-smallForm .pa-formUnit .pa-fieldWrapper .pa-fieldIcon + input[type="password"],
+.pa-smallForm .pa-formUnit .pa-fieldWrapper .pa-fieldSystemIcon + input[type="password"],
+.pa-smallForm .pa-formUnit .pa-fieldWrapper .pa-fieldIcon + .pa-selectWrapper select,
+.pa-smallForm .pa-formUnit .pa-fieldWrapper .pa-fieldSystemIcon + .pa-selectWrapper select,
+.pa-smallForm .pa-formUnit .pa-fieldWrapper .pa-fieldIcon + input[type="text"],
+.pa-smallForm .pa-formUnit .pa-fieldWrapper .pa-fieldSystemIcon + input[type="text"] {
+  border-bottom-left-radius: 3px;
+  border-top-left-radius: 3px;
+  padding-left: 26px; }
+
+.pa-smallForm .pa-fieldWrapper *:not(:last-child) {
+  margin-right: -1px; }
+
+.pa-largeForm .pa-fieldWrapper .pa-fieldIcon {
+  height: 24px;
+  left: 13px;
+  line-height: 24px;
+  top: 12px;
+  width: 24px; }
+
+.pa-largeForm .pa-fieldWrapper .pa-fieldSystemIcon {
+  height: 30px;
+  left: 10px;
+  line-height: 30px;
+  top: 9px;
+  width: 30px; }
+
+.pa-largeForm .pa-formUnit .pa-fieldWrapper .pa-fieldIcon + input[type="password"],
+.pa-largeForm .pa-formUnit .pa-fieldWrapper .pa-fieldSystemIcon + input[type="password"],
+.pa-largeForm .pa-formUnit .pa-fieldWrapper .pa-fieldIcon + .pa-selectWrapper select,
+.pa-largeForm .pa-formUnit .pa-fieldWrapper .pa-fieldSystemIcon + .pa-selectWrapper select,
+.pa-largeForm .pa-formUnit .pa-fieldWrapper .pa-fieldIcon + input[type="text"],
+.pa-largeForm .pa-formUnit .pa-fieldWrapper .pa-fieldSystemIcon + input[type="text"] {
+  border-bottom-left-radius: 3px;
+  border-top-left-radius: 3px;
+  padding-left: 52px; }
+
+.pa-largeForm .pa-fieldWrapper *:not(:last-child) {
+  margin-right: -1px; }
+
+.pa-dropdown {
+  position: relative; }
+
+/* a bit of hackery for dropdown containers in button rows.
+       avoids issue of adding an extra pixel below dropdown trigger,
+       caused by treating button as an inline-block */
+.pa-dropdown > .pa-formUnit,
+.pa-dropdown > .pa-button {
+  vertical-align: top; }
+
+/* TODO: revisit min-width. 120px is arbitrary, but 100% didn't work with badge dropdowns. */
+/* so... this will be problematic for badges? */
+.pa-dropdownContent {
+  background-color: #FFFFFF;
+  border: 1px solid #CCCCCC;
+  box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.3);
+  display: none;
+  left: 0;
+  min-width: 100%;
+  opacity: 0;
+  pointer-events: none;
+  position: absolute;
+  text-align: left;
+  top: 100%; }
+
+.pa-dropdownRight > .pa-dropdownContent {
+  left: auto;
+  right: 0; }
+
+.pa-dropdown:hover:not(.pa-dropdownClickOnly) .pa-dropdownContent,
+.pa-dropdown.pa-active .pa-dropdownContent,
+.pa-dropdownContent.pa-active {
+  display: block;
+  opacity: 1;
+  pointer-events: auto; }
+
+/* delaying show: make sure element exists in DOM
+        so we can measure its dimensions to position it */
+.pa-dropdown.pa-delayingShow .pa-dropdownContent,
+.pa-dropdownContent.pa-delayingShow {
+  display: block;
+  opacity: 0;
+  pointer-events: none; }
+
+/* animating show: animating into view; counts as active */
+/* .pa-dropdown.pa-active.pa-animatingShow .pa-dropdownContent,
+    .pa-dropdownContent.pa-active.pa-animatingShow {
+        animation-duration: $animInDuration;
+        animation-iteration-count: 1;
+        animation-name: dropdownAnimatingShow;
+        animation-timing-function: $animInCurve;
+        opacity: 1;
+    }*/
+/* animating hide: animating out of view.
+        still counts as active, in case the user wants to quickly undo the hide */
+/* .pa-dropdown.pa-active.pa-animatingHide .pa-dropdownContent,
+    .pa-dropdownContent.pa-active.pa-animatingHide {
+        animation-duration: $animOutDuration;
+        animation-iteration-count: 1;
+        animation-name: dropdownAnimatingHide;
+        animation-timing-function: $animOutCurve;
+        opacity: 0;
+    }*/
+/* using display: table instead of flex for now; IE10 support plus dimension issues */
+.pa-dropdownColumnSet {
+  display: table; }
+
+.pa-dropdownColumnSet .pa-dropdownColumn {
+  display: table-cell; }
+
+.pa-dropdownColumnSet .pa-dropdownColumn:not(:last-child) {
+  padding-right: 10px; }
+
+.pa-dropdownContent .pa-dropdownGroup:not(:last-child) {
+  margin-bottom: 32px; }
+
+/* TODO: open question about mixing medium and small cells like this.
+       we need to think this through in depth */
+.pa-dropdownContent .pa-dropdownItem,
+.pa-dropdownContent .pa-groupHeader {
+  border-color: transparent;
+  border-style: solid;
+  border-width: 1px;
+  display: block;
+  margin-left: 0;
+  margin-right: 0;
+  margin-top: 0;
+  padding: 1px 16px;
+  white-space: nowrap; }
+
+/* .pa-dropdownContent .pa-dropdownItem {
+        @include paTruncatedString;
+        max-width: 100%;
+    }*/
+.pa-dropdownContent .pa-dropdownItem:first-child,
+.pa-dropdownContent .pa-groupHeader:first-child {
+  margin-top: 16px; }
+
+.pa-dropdownContent .pa-radio:first-child + .pa-radioLabel,
+.pa-dropdownContent .pa-checkbox:first-child + .pa-checkboxLabel {
+  margin-top: 8px; }
+
+.pa-dropdownContent .pa-dropdownItem:not(:last-child),
+.pa-dropdownContent .pa-groupHeader:not(:last-child) {
+  margin-bottom: 4px; }
+
+.pa-dropdownContent .pa-dropdownItem:last-child,
+.pa-dropdownContent .pa-groupHeader:last-child {
+  margin-bottom: 16px; }
+
+.pa-dropdownContent .pa-radio + .pa-radioLabel:last-child,
+.pa-dropdownContent .pa-checkbox + .pa-checkboxLabel:last-child {
+  margin-bottom: 8px; }
+
+.pa-dropdownContent .pa-groupHeader {
+  font-family: "Proxima Nova";
+  font-size: 14px;
+  font-weight: bold;
+  letter-spacing: 0.5px;
+  line-height: 18px;
+  text-transform: uppercase;
+  color: #333333;
+  line-height: 20px; }
+
+.pa-contentBlock .pa-dropdownContent a.pa-dropdownItem,
+.pa-dropdownContent a.pa-dropdownItem:not(.pa-button),
+.pa-dropdownContent .pa-dropdownItem {
+  font-family: "Proxima Nova";
+  font-size: 16px;
+  font-weight: normal;
+  letter-spacing: normal;
+  line-height: 22px;
+  text-transform: none;
+  color: #333333;
+  line-height: 20px; }
+
+.pa-dropdownContent .pa-dropdownContentSection {
+  padding-bottom: 0;
+  padding-top: 0; }
+
+.pa-dropdownContent .pa-dropdownContentSection + .pa-dropdownContentSection {
+  border-top: 1px solid #CCCCCC; }
+
+/* desperate attempt to thwart text wrapping issues */
+/* we should consider refactoring dropdowns */
+/*  .pa-dropdownContentSection > .pa-radioLabel,
+    .pa-dropdownContent > .pa-radioLabel,
+    .pa-dropdownContentSection > .pa-checkboxLabel,
+    .pa-dropdownContent > .pa-checkboxLabel {
+        @include paTruncatedString;
+        margin-left: map-get($mediumCell, sidePadding);
+        margin-right: map-get($mediumCell, sidePadding);
+    }*/
+/* TODO: remove support for deprecated header */
+.pa-navHeader .pa-dropdownContent .pa-dropdownItem {
+  color: #747474; }
+
+.pa-contentBlock .pa-navHeader .pa-dropdownContent a.pa-dropdownItem {
+  color: #333333; }
+
+.pa-dropdownContent a.pa-dropdownItem.pa-current:not(.pa-button) .pa-contentBlock .pa-dropdownContent a.pa-dropdownItem.pa-current,
+.pa-dropdownContent .pa-dropdownItem.pa-current {
+  font-family: "Proxima Nova";
+  font-size: 16px;
+  font-weight: 600;
+  letter-spacing: normal;
+  line-height: 22px;
+  text-transform: none;
+  color: #333333;
+  line-height: 20px; }
+
+.pa-dropdownContent a.pa-dropdownItem:not(.pa-button):focus,
+.pa-dropdownContent a.pa-dropdownItem:not(.pa-button):hover,
+.pa-contentBlock .pa-dropdownContent a.pa-dropdownItem:focus,
+.pa-contentBlock .pa-dropdownContent a.pa-dropdownItem:hover,
+.pa-dropdownContent a.pa-dropdownItem:focus,
+.pa-dropdownContent a.pa-dropdownItem:hover {
+  background-color: #F3F3F3;
+  color: #333333;
+  text-decoration: none; }
+
+.pa-dropdown .pa-dropdownContent .pa-dropdownItem.pa-complexDropdownItem {
+  line-height: 22px;
+  padding-bottom: 4px;
+  padding-top: 4px; }
+
+.pa-dropdownContent .pa-dropdownItem.pa-complexDropdownItem:not(:last-child) {
+  margin-bottom: 4px; }
+
+.pa-dropdownContent .pa-hasIcons .pa-dropdownItem,
+.pa-dropdownContent .pa-hasIcons .pa-groupHeader,
+.pa-dropdownContent .pa-icon.pa-dropdownItem,
+.pa-dropdownContent .pa-icon.pa-groupHeader {
+  padding-left: 28px;
+  position: relative; }
+
+.pa-dropdownContent.pa-hasIcons .pa-dropdownColumn:last-child .pa-dropdownItem,
+.pa-dropdownContent.pa-hasIcons .pa-dropdownColumn:last-child .pa-groupHeader {
+  padding-right: 28px; }
+
+.pa-dropdownContent .pa-groupHeader.pa-trulia {
+  color: #05AE69; }
+
+.pa-dropdownContent .pa-groupHeader.pa-zillow {
+  color: #0074E4; }
+
+.pa-dropdownContent .pa-groupHeader.pa-trulia:before,
+.pa-dropdownContent .pa-groupHeader.pa-zillow:before {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 12px auto;
+  content: '';
+  display: block;
+  height: 12px;
+  left: 8px;
+  position: absolute;
+  top: calc(50% - 6px);
+  width: 12px; }
+
+@media screen and (min-width: 768px) {
+  .pa-formUnit.pa-formUnitS .pa-dropdownContent,
+  .pa-formUnit.pa-formUnitSM .pa-dropdownContent,
+  .pa-formUnit.pa-formUnitM .pa-dropdownContent,
+  .pa-dropdownContent {
+    max-width: 306px; }
+  .pa-formUnit.pa-formUnitL .pa-dropdownContent,
+  .pa-formUnit .pa-dropdownContent {
+    max-width: 463px; }
+  .pa-formUnit.pa-formUnitXL .pa-dropdownContent,
+  .pa-formUnit.pa-formUnitXXL .pa-dropdownContent {
+    max-width: 620px; } }
+
+@media screen and (max-width: 767px) {
+  .pa-dropdownContent {
+    max-width: 100%; } }
+
+.pa-paginationWrapper:not(:last-child) {
+  margin-bottom: 32px; }
+
+.pa-pagination, .pa-datepickerWidgetBase .pa-navigationHeader .pa-navigationMonth {
+  align-items: center;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: center; }
+
+.pa-paginationWrapper:not(:first-child),
+.pa-pagination:not(:first-child),
+.pa-datepickerWidgetBase .pa-navigationHeader .pa-navigationMonth:not(:first-child) {
+  margin-top: 32px; }
+
+.pa-pagination > .pa-pageSeparator, .pa-datepickerWidgetBase .pa-navigationHeader .pa-navigationMonth > .pa-pageSeparator,
+.pa-pagination > .pa-singlePage,
+.pa-datepickerWidgetBase .pa-navigationHeader .pa-navigationMonth > .pa-singlePage {
+  font-family: "Proxima Nova";
+  font-size: 14px;
+  font-weight: bold;
+  letter-spacing: 0.5px;
+  line-height: 18px;
+  text-transform: uppercase;
+  border-style: solid;
+  border-width: 1px;
+  height: 24px;
+  line-height: 20px;
+  padding-bottom: 1px;
+  padding-top: 1px;
+  text-align: center; }
+
+
+.pa-pagination > .pa-singlePage,
+.pa-datepickerWidgetBase .pa-navigationHeader .pa-navigationMonth > .pa-singlePage {
+  min-width: 24px;
+  padding-left: 4px;
+  padding-right: 4px; }
+
+.pa-contentBlock .pa-pagination > a.pa-singlePage.pa-disabled, .pa-contentBlock .pa-datepickerWidgetBase .pa-navigationHeader .pa-navigationMonth > a.pa-singlePage.pa-disabled, .pa-datepickerWidgetBase .pa-navigationHeader .pa-contentBlock .pa-navigationMonth > a.pa-singlePage.pa-disabled,
+.pa-pagination > a.pa-singlePage.pa-disabled,
+.pa-datepickerWidgetBase .pa-navigationHeader .pa-navigationMonth > a.pa-singlePage.pa-disabled,
+.pa-pagination > .pa-singlePage.pa-disabled,
+.pa-datepickerWidgetBase .pa-navigationHeader .pa-navigationMonth > .pa-singlePage.pa-disabled,
+.pa-pagination > .pa-singlePage:disabled,
+.pa-datepickerWidgetBase .pa-navigationHeader .pa-navigationMonth > .pa-singlePage:disabled, .pa-pagination > .pa-pageSeparator, .pa-datepickerWidgetBase .pa-navigationHeader .pa-navigationMonth > .pa-pageSeparator {
+  pointer-events: none; }
+
+.pa-pagination > .pa-pageSeparator, .pa-datepickerWidgetBase .pa-navigationHeader .pa-navigationMonth > .pa-pageSeparator {
+  padding-left: 0;
+  padding-right: 0; }
+
+.pa-pagination > .pa-pageSeparator:before, .pa-datepickerWidgetBase .pa-navigationHeader .pa-navigationMonth > .pa-pageSeparator:before {
+  content: '...'; }
+
+.pa-pagination > .pa-singlePage:focus, .pa-datepickerWidgetBase .pa-navigationHeader .pa-navigationMonth > .pa-singlePage:focus {
+  outline: none; }
+
+.pa-contentBlock .pa-pagination > a.pa-singlePage:focus, .pa-contentBlock .pa-datepickerWidgetBase .pa-navigationHeader .pa-navigationMonth > a.pa-singlePage:focus, .pa-datepickerWidgetBase .pa-navigationHeader .pa-contentBlock .pa-navigationMonth > a.pa-singlePage:focus,
+.pa-contentBlock .pa-pagination > a.pa-singlePage:hover,
+.pa-contentBlock .pa-datepickerWidgetBase .pa-navigationHeader .pa-navigationMonth > a.pa-singlePage:hover,
+.pa-datepickerWidgetBase .pa-navigationHeader .pa-contentBlock .pa-navigationMonth > a.pa-singlePage:hover,
+.pa-contentBlock .pa-pagination > a.pa-singlePage:active,
+.pa-contentBlock .pa-datepickerWidgetBase .pa-navigationHeader .pa-navigationMonth > a.pa-singlePage:active,
+.pa-datepickerWidgetBase .pa-navigationHeader .pa-contentBlock .pa-navigationMonth > a.pa-singlePage:active,
+.pa-pagination > a.pa-singlePage:focus,
+.pa-datepickerWidgetBase .pa-navigationHeader .pa-navigationMonth > a.pa-singlePage:focus,
+.pa-pagination > a.pa-singlePage:hover,
+.pa-datepickerWidgetBase .pa-navigationHeader .pa-navigationMonth > a.pa-singlePage:hover,
+.pa-pagination > a.pa-singlePage:active,
+.pa-datepickerWidgetBase .pa-navigationHeader .pa-navigationMonth > a.pa-singlePage:active, .pa-pagination > .pa-singlePage:focus, .pa-datepickerWidgetBase .pa-navigationHeader .pa-navigationMonth > .pa-singlePage:focus,
+.pa-pagination > .pa-singlePage:hover,
+.pa-datepickerWidgetBase .pa-navigationHeader .pa-navigationMonth > .pa-singlePage:hover,
+.pa-pagination > .pa-singlePage:active,
+.pa-datepickerWidgetBase .pa-navigationHeader .pa-navigationMonth > .pa-singlePage:active {
+  text-decoration: none; }
+
+.pa-contentBlock .pa-pagination > a.pa-singlePage.pa-current:focus, .pa-contentBlock .pa-datepickerWidgetBase .pa-navigationHeader .pa-navigationMonth > a.pa-singlePage.pa-current:focus, .pa-datepickerWidgetBase .pa-navigationHeader .pa-contentBlock .pa-navigationMonth > a.pa-singlePage.pa-current:focus,
+.pa-contentBlock .pa-pagination > a.pa-singlePage.pa-current,
+.pa-contentBlock .pa-datepickerWidgetBase .pa-navigationHeader .pa-navigationMonth > a.pa-singlePage.pa-current,
+.pa-datepickerWidgetBase .pa-navigationHeader .pa-contentBlock .pa-navigationMonth > a.pa-singlePage.pa-current,
+.pa-pagination > a.pa-singlePage.pa-current:focus,
+.pa-datepickerWidgetBase .pa-navigationHeader .pa-navigationMonth > a.pa-singlePage.pa-current:focus,
+.pa-pagination > a.pa-singlePage.pa-current,
+.pa-datepickerWidgetBase .pa-navigationHeader .pa-navigationMonth > a.pa-singlePage.pa-current,
+.pa-pagination > .pa-singlePage.pa-current:focus,
+.pa-datepickerWidgetBase .pa-navigationHeader .pa-navigationMonth > .pa-singlePage.pa-current:focus,
+.pa-pagination > .pa-singlePage.pa-current,
+.pa-datepickerWidgetBase .pa-navigationHeader .pa-navigationMonth > .pa-singlePage.pa-current {
+  pointer-events: none; }
+
+.pa-pagination > .pa-singlePage.pa-prevPage, .pa-datepickerWidgetBase .pa-navigationHeader .pa-navigationMonth > .pa-singlePage.pa-prevPage,
+.pa-pagination > .pa-singlePage.pa-nextPage,
+.pa-datepickerWidgetBase .pa-navigationHeader .pa-navigationMonth > .pa-singlePage.pa-nextPage {
+  position: relative; }
+
+.pa-pagination > .pa-singlePage.pa-prevPage:before, .pa-datepickerWidgetBase .pa-navigationHeader .pa-navigationMonth > .pa-singlePage.pa-prevPage:before,
+.pa-pagination > .pa-singlePage.pa-nextPage:before,
+.pa-datepickerWidgetBase .pa-navigationHeader .pa-navigationMonth > .pa-singlePage.pa-nextPage:before {
+  display: inline-block;
+  font-family: 'Truliacons';
+  font-size: 24px;
+  font-weight: normal;
+  height: 24px;
+  line-height: 24px;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  width: 24px;
+  position: absolute;
+  left: -1px;
+  top: -1px; }
+
+.pa-resultsCount {
+  font-family: "Proxima Nova";
+  font-size: 14px;
+  font-weight: normal;
+  letter-spacing: normal;
+  line-height: 20px;
+  text-transform: none;
+  color: #333333;
+  display: block;
+  text-align: center; }
+
+.pa-paginationWrapper:not(:last-child),
+.pa-resultsCount:not(:last-child) {
+  margin-bottom: 32px; }
+
+.pa-pagination > .pa-resultsCount:not(:last-child), .pa-datepickerWidgetBase .pa-navigationHeader .pa-navigationMonth > .pa-resultsCount:not(:last-child) {
+  margin-bottom: 0; }
+
+.pa-pagination + .pa-resultsCount, .pa-datepickerWidgetBase .pa-navigationHeader .pa-navigationMonth + .pa-resultsCount {
+  margin-top: 8px; }
+
+/* Datepicker base styling */
+.pa-datepicker {
+  color: black;
+  font-family: 'proxima_novaregular';
+  font-size: 14px;
+  /* Override .pa-dropdownContent default so only
+         * calendar widget appears */ }
+  .pa-datepicker .pa-yearSelect {
+    font-weight: 600; }
+  .pa-datepicker .pa-dropdownContent {
+    max-width: 290px;
+    min-width: 0;
+    border-radius: 3px; }
+
+/* Datepicker widget base styling */
+.pa-datepickerWidgetBase {
+  width: 290px;
+  padding: 4px; }
+
+/* Datepicker calendar view styling */
+.pa-datepickerWidgetBase .pa-datepickerGrid {
+  display: table;
+  text-align: center;
+  /* Styling for calendar number cells */
+  /* Styling for calendar cell border */
+  /* Special stylings to handle disabled dates, today,
+         * and selected states */ }
+  .pa-datepickerWidgetBase .pa-datepickerGrid th {
+    width: 40px;
+    height: 32px;
+    font-family: 'proxima_novasemibold';
+    color: #747474; }
+  .pa-datepickerWidgetBase .pa-datepickerGrid td {
+    max-width: 40px;
+    max-height: 40px;
+    padding: 4px; }
+  .pa-datepickerWidgetBase .pa-datepickerGrid .pa-gridCell {
+    display: block;
+    position: relative;
+    width: 24px;
+    height: 24px;
+    line-height: 24px;
+    margin: 2px auto 0 auto; }
+  .pa-datepickerWidgetBase .pa-datepickerGrid .pa-gridCellBorder {
+    border: 1px solid #fff;
+    max-width: 32px;
+    max-height: 32px;
+    border-radius: 3px; }
+  .pa-datepickerWidgetBase .pa-datepickerGrid .pa-gridCellBorderFocus {
+    border-color: #0E71AF; }
+  .pa-datepickerWidgetBase .pa-datepickerGrid .pa-gridCellBorder:focus {
+    border-color: #0E71AF; }
+  .pa-datepickerWidgetBase .pa-datepickerGrid .pa-gridCellBorder:hover {
+    border-color: #0E71AF; }
+  .pa-datepickerWidgetBase .pa-datepickerGrid .pa-disabled {
+    color: #CCCCCC; }
+  .pa-datepickerWidgetBase .pa-datepickerGrid .pa-todayFont {
+    font-weight: 600;
+    color: #0E71AF; }
+  .pa-datepickerWidgetBase .pa-datepickerGrid .pa-todayBorder {
+    border-bottom: 1px solid #0E71AF; }
+  .pa-datepickerWidgetBase .pa-datepickerGrid .pa-todayFontSelected {
+    color: #FFFFFF; }
+  .pa-datepickerWidgetBase .pa-datepickerGrid .pa-gridCellSelected {
+    border-color: #0E71AF;
+    background-color: #0E71AF;
+    color: #FFFFFF; }
+
+/* Datepicker navigation header styling */
+.pa-datepickerWidgetBase .pa-navigationHeader {
+  display: flex;
+  height: 32px;
+  font-size: 16px;
+  font-weight: 600;
+  margin-bottom: 8px; }
+  .pa-datepickerWidgetBase .pa-navigationHeader .pa-navigationMonth {
+    width: 176px;
+    margin-right: 24px;
+    justify-content: space-between; }
+    .pa-datepickerWidgetBase .pa-navigationHeader .pa-navigationMonth .pa-singlePage:not(:last-child) {
+      margin-right: 0; }
+  .pa-datepickerWidgetBase .pa-navigationHeader .pa-navigationYear {
+    margin-top: 0;
+    max-width: 80px; }

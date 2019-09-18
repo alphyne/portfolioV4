@@ -1,6 +1,6 @@
 .landing-container{
 
-    height: 100%;
+    height: 100vh;
 
     .landing-name {
         font-family: 'nexa_boldregular';
@@ -96,8 +96,6 @@
 
 @media(max-width: 1600px){
     .landing-container{
-        /*margin-right: 9rem;
-        margin-left: 9rem;*/
 
         .landing-name {
             font-size: 3.6rem;
@@ -119,19 +117,37 @@
     }
 }
 
-@media(max-width: 1200px){
+@media(max-width: 1280px){
+    .landing-container {
 
+        .landing-name {
+            a {
+                font-size: 3.2rem;
+                border-bottom: 0;
+            }
+        }
 
-    .landing-description {
-        margin-left: 0rem;
+        h2, p {
+            font-size: 1.2rem;
+        }
     }
 
+
+    .link-container {
+        .link-label, a {
+            font-size: 1rem;
+        }
+    }
+}
+
+@media(max-width: 1024px) {
+    .landing-description {
+        margin-left: 0;
+    }
 }
 
 @media(max-width: 840px){
     .landing-container {
-        /*margin-left: 1.5rem;
-        margin-right: 1.5rem;*/
 
         .landing-name {
             a {
@@ -149,10 +165,6 @@
         margin-bottom: 1rem;
     }
 
-    .landing-description {
-        margin-top: 2rem;
-    }
-
     .link-container {
         .link-label, a {
             font-size: 0.9rem;
@@ -163,6 +175,13 @@
 @media(max-width: 600px){
     .greeting-container {
         margin-top: 6rem;
+    }
+}
+
+@media(max-height: 500px) {
+    .landing-container {
+        height: 100%;
+        margin-bottom: 4rem;
     }
 }
 
