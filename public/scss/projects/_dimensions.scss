@@ -1,0 +1,313 @@
+
+/* Remember: a cell's vertical padding is: (cellHeight - lineHeight - (2 * borderHeight)) / 2   */
+
+$smallCell: (
+    borderRadius: 3px,
+    borderWidth: 1px,
+    buttonMinWidth: 72px,
+    height: 24px,
+    iconFontSize: 12px,
+    iconHeight: 12px,
+    iconWidth: 12px,
+    iconSideMargin: map-get($xsmallIconDimensions, sideMargin),
+    systemIconFontSize: map-get($xsmallIconDimensions, fontSize),
+    systemIconHeight: map-get($xsmallIconDimensions, elementHeight),
+    systemIconWidth: map-get($xsmallIconDimensions, elementWidth),
+    systemIconNudge: map-get($xsmallIconDimensions, nudge),
+    triggerIconFontSize: map-get($xsmallIconDimensions, fontSize),
+    triggerIconHeight: 6px,
+    triggerIconWidth: 8px,
+    lineHeight: 20px,
+    sidePadding: $baseMeasureSmall,
+    vertPadding: 1px,
+    sideMarginRelated: $baseMeasureSmall,
+    sideMarginUnrelated: $baseMeasureLarge,
+    vertMarginRelated: $baseMeasureXS,
+    vertMarginUnrelated: $baseMeasureLarge,
+    formFieldTopMargin: $baseMeasureMedium, /* temporary compromise */
+    formFieldMargin: $baseMeasureMedium,
+    formFieldSidePadding: 6px,
+    loaderSize: map-get($smallIconDimensions, glyphHeight),
+    loaderBorderWidth: map-get($smallIconDimensions, loaderBorderWidth)
+);
+
+$mediumCell: (
+    borderRadius: 3px,
+    borderWidth: 1px,
+    buttonMinWidth: 80px,
+    height: 32px,
+    iconFontSize: 16px,
+    iconHeight: 16px,
+    iconWidth: 16px,
+    iconSideMargin: map-get($smallIconDimensions, sideMargin),
+    systemIconFontSize: map-get($smallIconDimensions, fontSize),
+    systemIconHeight: map-get($smallIconDimensions, elementHeight),
+    systemIconWidth: map-get($smallIconDimensions, elementWidth),
+    systemIconNudge: map-get($smallIconDimensions, nudge),
+    triggerIconFontSize: map-get($smallIconDimensions, fontSize),
+    triggerIconHeight: 8px,
+    triggerIconWidth: 10px,
+    lineHeight: 22px,
+    sidePadding: $baseMeasureMedium,
+    vertPadding: 4px,
+    sideMarginRelated: $baseMeasureSmall,
+    sideMarginUnrelated: $baseMeasureLarge,
+    vertMarginRelated: $baseMeasureXS,
+    vertMarginUnrelated: $baseMeasureXL,
+    formFieldTopMargin: $baseMeasureMedium, /* temporary compromise */
+    formFieldMargin: $baseMeasureLarge,
+    formFieldSidePadding: 8px,
+    loaderSize: map-get($mediumIconDimensions, glyphHeight),
+    loaderBorderWidth: map-get($mediumIconDimensions, loaderBorderWidth)
+);
+
+$largeCell: (
+    borderRadius: 3px,
+    borderWidth: 1px,
+    buttonMinWidth: 112px,
+    height: 48px,
+    iconFontSize: 24px,
+    iconHeight: 24px,
+    iconWidth: 24px,
+    iconSideMargin: map-get($mediumIconDimensions, sideMargin),
+    systemIconFontSize: map-get($mediumIconDimensions, fontSize),
+    systemIconHeight: map-get($mediumIconDimensions, elementHeight),
+    systemIconWidth: map-get($mediumIconDimensions, elementWidth),
+    systemIconNudge: map-get($mediumIconDimensions, nudge),
+    triggerIconFontSize: map-get($smallIconDimensions, fontSize),
+    triggerIconHeight: 6px,
+    triggerIconWidth: 10px,
+    lineHeight: 22px,
+    sidePadding: $baseMeasureMedium,
+    vertPadding: 12px,
+    sideMarginRelated: $baseMeasureMedium,
+    sideMarginUnrelated: $baseMeasureXL,
+    vertMarginRelated: $baseMeasureXS,
+    vertMarginUnrelated: $baseMeasureXL,
+    formFieldTopMargin: $baseMeasureMedium, /* temporary compromise */
+    formFieldMargin: $baseMeasureLarge,
+    formFieldSidePadding: 12px,
+    loaderSize: map-get($largeIconDimensions, glyphHeight),
+    loaderBorderWidth: map-get($largeIconDimensions, loaderBorderWidth)
+);
+
+$avatarDefault: (
+    backgroundColor: $colorGrey100,
+    borderColor: $colorGrey300
+);
+
+$mediumAvatar: (
+    borderWidth: 2px,
+    height: 40px,
+    width: 40px
+);
+
+$smallDisk: (
+    badgeIconSize: map-get($xxsmallIconDimensions, elementHeight),
+    badgeSize: 16px,
+    borderRadius: 16px,
+    borderWidth: 1px,
+    height: 32px,
+    sideMarginRelated: $baseMeasureSmall,
+    sideMarginUnrelated: $baseMeasureSmall,
+    systemIconFontSize: map-get($smallIconDimensions, fontSize),
+    systemIconHeight: map-get($smallIconDimensions, elementHeight),
+    systemIconWidth: map-get($smallIconDimensions, elementWidth),
+    textNudge: 6px,
+    vertMarginRelated: $baseMeasureSmall,
+    vertMarginUnrelated: $baseMeasureSmall,
+    width: 32px
+);
+
+$mediumDisk: (
+    badgeIconSize: map-get($xxsmallIconDimensions, elementHeight),
+    badgeSize: 16px,
+    borderRadius: 24px,
+    borderWidth: 1px,
+    height: 48px,
+    sideMarginRelated: $baseMeasureMedium,
+    sideMarginUnrelated: $baseMeasureXXL,
+    systemIconFontSize: map-get($mediumIconDimensions, fontSize),
+    systemIconHeight: map-get($mediumIconDimensions, elementHeight),
+    systemIconWidth: map-get($mediumIconDimensions, elementWidth),
+    textNudge: 6px,
+    vertMarginRelated: $baseMeasureSmall,
+    vertMarginUnrelated: $baseMeasureMedium,
+    width: 48px
+);
+
+$largeDisk: (
+    badgeIconSize: map-get($xsmallIconDimensions, elementHeight),
+    badgeSize: 24px,
+    borderRadius: 32px,
+    borderWidth: 1px,
+    height: 64px,
+    sideMarginRelated: $baseMeasureMedium,
+    sideMarginUnrelated: $baseMeasureXXL,
+    systemIconFontSize: map-get($largeIconDimensions, fontSize),
+    systemIconHeight: map-get($largeIconDimensions, elementHeight),
+    systemIconWidth: map-get($largeIconDimensions, elementWidth),
+    textNudge: 6px,
+    vertMarginRelated: $baseMeasureSmall,
+    vertMarginUnrelated: $baseMeasureLarge,
+    width: 64px
+);
+
+$xlargeDisk: (
+    badgeIconSize: map-get($smallIconDimensions, elementHeight),
+    badgeSize: 32px,
+    borderRadius: 48px,
+    borderWidth: 1px,
+    height: 96px,
+    sideMarginRelated: $baseMeasureMedium,
+    sideMarginUnrelated: $baseMeasureXXL,
+    systemIconFontSize: map-get($xlargeIconDimensions, fontSize),
+    systemIconHeight: map-get($xlargeIconDimensions, elementHeight),
+    systemIconWidth: map-get($xlargeIconDimensions, elementWidth),
+    textNudge: 6px,
+    vertMarginRelated: $baseMeasureSmall,
+    vertMarginUnrelated: $baseMeasureLarge,
+    width: 96px
+);
+
+@mixin smallCellIcon() {
+    display: inline-block;
+    font-family: 'Truliacons';
+    font-size: map-get($smallCell, iconFontSize);
+    font-weight: normal;
+    height: map-get($smallCell, iconHeight);
+    line-height: map-get($smallCell, iconHeight);
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    width: map-get($smallCell, iconWidth);
+}
+
+@mixin smallCellSystemIcon() {
+    display: inline-block;
+    font-family: 'PAsystemicons';
+    font-size: map-get($smallCell, systemIconFontSize);
+    font-weight: normal;
+    height: map-get($smallCell, systemIconHeight);
+    line-height: map-get($smallCell, systemIconHeight);
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    width: map-get($smallCell, systemIconWidth);
+}
+
+@mixin smallCellTriggerIcon() {
+    content: map-get($paSemanticSystemIconCodes, dropdown);
+    display: inline-block;
+    font-family: 'PAsystemicons';
+    font-size: map-get($smallCell, triggerIconFontSize);
+    font-weight: normal;
+    height: map-get($smallCell, systemIconHeight);
+    line-height: map-get($smallCell, systemIconHeight);
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    width: map-get($smallCell, systemIconWidth);
+}
+
+@mixin mediumCellIcon() {
+    display: inline-block;
+    font-family: 'Truliacons';
+    font-size: map-get($mediumCell, iconFontSize);
+    font-weight: normal;
+    height: map-get($mediumCell, iconHeight);
+    line-height: map-get($mediumCell, iconHeight);
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    width: map-get($mediumCell, iconWidth);
+}
+
+@mixin mediumCellSystemIcon() {
+    display: inline-block;
+    font-family: 'PAsystemicons';
+    font-size: map-get($mediumCell, systemIconFontSize);
+    font-weight: normal;
+    height: map-get($mediumCell, systemIconHeight);
+    line-height: map-get($mediumCell, systemIconHeight);
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    width: map-get($mediumCell, systemIconWidth);
+}
+
+@mixin mediumCellTriggerIcon() {
+    content: map-get($paSemanticSystemIconCodes, dropdown);
+    display: inline-block;
+    font-family: 'PAsystemicons';
+    font-size: map-get($mediumCell, triggerIconFontSize);
+    font-weight: normal;
+    height: map-get($mediumCell, systemIconHeight);
+    line-height: map-get($mediumCell, systemIconHeight);
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    width: map-get($mediumCell, systemIconWidth);
+}
+
+@mixin largeCellIcon() {
+    display: inline-block;
+    font-family: 'Truliacons';
+    font-size: map-get($largeCell, iconFontSize);
+    font-weight: normal;
+    height: map-get($largeCell, iconHeight);
+    line-height: map-get($largeCell, iconHeight);
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    width: map-get($largeCell, iconWidth);
+}
+
+@mixin largeCellSystemIcon() {
+    display: inline-block;
+    font-family: 'PAsystemicons';
+    font-size: map-get($largeCell, systemIconFontSize);
+    font-weight: normal;
+    height: map-get($largeCell, systemIconHeight);
+    line-height: map-get($largeCell, systemIconHeight);
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    width: map-get($largeCell, systemIconWidth);
+}
+
+@mixin largeCellTriggerIcon() {
+    content: map-get($paSemanticSystemIconCodes, dropdown);
+    display: inline-block;
+    font-family: 'PAsystemicons';
+    font-size: map-get($largeCell, triggerIconFontSize);
+    font-weight: normal;
+    height: map-get($largeCell, systemIconHeight);
+    line-height: map-get($largeCell, systemIconHeight);
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    width: map-get($largeCell, systemIconWidth);
+}
+
+$triggerIconForHeader: (
+    iconSideMargin: 10px,
+    triggerIconFontSize: 12px,
+    triggerIconHeight: 8px,
+    triggerIconWidth: 8px
+);
+
+@mixin headerTriggerIcon() {
+    content: $iconMediaPlayCode;
+    display: inline-block;
+    font-family: 'Truliacons';
+    font-size: map-get($triggerIconForHeader, triggerIconFontSize);
+    font-weight: normal;
+    height: map-get($triggerIconForHeader, triggerIconWidth);
+    line-height: map-get($triggerIconForHeader, triggerIconWidth);
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    transform: rotate(90deg);
+    width: map-get($triggerIconForHeader, triggerIconHeight);
+}

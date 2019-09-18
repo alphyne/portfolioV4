@@ -72,7 +72,7 @@
 		
 
 			<!-- Header -->
-			<div id="navbar" class="hidden">
+			<div id="navbar" class="hidden navbar-container">
 				<!--<div id="full-name" class="name-container">
 					<h1 class='notActive'><a href="/">J</a></h1>
 					
@@ -82,8 +82,12 @@
 					<a href="/"><img src="images/logo4-02.png"></a>
 				</div>-->
 
-				<div class="name-container">
+				<div id="full-name" class="name-container">
 					<a class="notActive" href="/"><h1><span>JARED SUASIN</span></h1></a>
+				</div>
+
+				<div id="initials" class="name-container">
+					<a class="notActive" href="/"><h1><span>JS</span></h1></a>
 				</div>
 
 				<ul class="nav-container">
@@ -98,19 +102,27 @@
 			<div class="project-block-container">
 				{{#each projects}}
 					<div class="project-row-container">
-						<div class="project-row-info-container">
+
+						<div class="project-row-info-container-desktop">
 							<div class="project-row-info">
 								<h2><a href="/{{url}}">{{title}}</a></h2>
-								<h6 class="project-type">{{type}}</h5>
-								<h6>{{{tags}}}</h5>
+								<h6 class="project-type">{{type}}</h6>
+								<h6>{{{tags}}}</h6>
 							</div>
 						</div>
-						
 						<div class="project-row-image-container">
 							<a href="/{{url}}">
 								<div class="project-row-image" style="background-image:url({{src-cover}});background-position-y:{{position-y-home}};background-position-x:{{position-x-home}};"></div>
 							</a>
 						</div>
+						<div class="project-row-info-container-mobile">
+							<div class="project-row-info">
+								<h2><a href="/{{url}}">{{title}}</a></h2>
+								<h6 class="project-type">{{type}}</h6>
+								<h6>{{{tags}}}</h6>
+							</div>
+						</div>
+
 					</div>
 				{{/each}}
 			</div>

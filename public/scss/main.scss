@@ -17,3 +17,28 @@
 
 /* Variables */
 @import "abstracts/variables";
+
+/* Project files */
+@import "projects/base_measurements";
+@import "projects/icons";
+@import "projects/brand_colors";
+@import "projects/dimensions";
+@import "projects/semantic_colors";
+@import "projects/typography";
+@import "projects/layout";
+@import "projects/overlays";
+@import "projects/datepicker";
+@import "projects/dropdown";
+@import "projects/fieldWrapper";
+@import "projects/forms";
+@import "projects/formUnit";
+@import "projects/individual_components";
+@import "projects/pagination";
+@import "projects/select";
+
+@include paSelect;
+@include paFormUnit;
+@include paFieldWrapper;
+@include paDropdown;
+@include paPagination;
+@include paDatepicker;

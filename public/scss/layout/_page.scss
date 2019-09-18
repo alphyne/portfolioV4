@@ -1,6 +1,7 @@
 body {
     background-color: #111;
     color: white;
+    min-height: 400px;
 }
 
 .page-container{
@@ -22,8 +23,9 @@ body {
     }
 
     h3 {
-        font-weight: 400;
-        font-size: 1.6rem;
+        font-weight: 200;
+        font-size: 1.8rem;
+        line-height: 2rem;
     }
 
     h4 {
@@ -80,6 +82,7 @@ body {
     }
 
 }
+
 @media(max-width: 1600px){
     
     .page-container{
@@ -90,25 +93,117 @@ body {
 @media(max-width: 1280px){
 
     .page-container{
-        //margin: 0 14vw;
+
+        margin: 0 6rem;
+    
+        h1 {
+            font-size: 2.9rem;
+    
+        }
+    
+        h2 {
+            font-size: 1.9rem;
+            line-height: 3rem;
+        }
+    
+        h3 {
+            font-size: 1.7rem;
+        }
+    
+        h4 {
+            font-size: 1.3rem;
+    
+            line-height: 1.8;
+           
+        }
+    
+        h5 {
+            font-size: 1rem;
+    
+            line-height: 1.5;
+         
+        }
+    
+        h6 {
+            font-size: 1rem;
+    
+            line-height: 1.8;
+    
+        }
+    
+        p {
+            font-weight: 400;
+            font-size: 1.2rem;
+    
+            line-height: 1.8;
+        }
+    
+        ul {
+
+            font-size: 1rem;
+            line-height: 1.4;
+        }
     }
 }
 
 @media(max-width: 1024px){
 
-    .page-container {
-        //margin: 0 0;
-    }
+
 }
 
 @media(max-width: 840px){
 
     .page-container {       
 
-        /*h1 {
-            a {
-                border-bottom: 0;
-            }
-        }*/
+        margin: 0 3rem;
+
+        h1 {
+            font-size: 2.8rem;
+    
+        }
+    
+        h2 {
+            font-size: 1.8rem;
+            line-height: 3rem;
+        }
+    
+        h3 {
+            font-size: 1.6rem;
+        }
+    
+        h4 {
+            font-size: 1.2rem;
+    
+            line-height: 1.8;
+           
+        }
+    
+        h5 {
+            font-size: 0.9rem;
+    
+            line-height: 1.5;
+         
+        }
+    
+        h6 {
+            font-size: 0.9rem;
+    
+            line-height: 1.8;
+    
+        }
+    
+        p {
+            font-weight: 400;
+            font-size: 1.1rem;
+    
+            line-height: 1.8;
+        }
+    
+        ul {
+
+            font-size: 0.9rem;
+            line-height: 1.4;
+        }
     }
 }
+

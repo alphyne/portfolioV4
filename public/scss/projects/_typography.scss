@@ -1,0 +1,322 @@
+/*doc
+---
+title: Type Styles
+name: typestyles
+category: Design System
+author: Tony Q
+test: false
+---
+<div class="line">
+    <div class="col cols16">
+        <table>
+            <tr class="guide-typeSample">
+                <td class="guide-swatchLabel">Display 1</td>
+                <td class="guide-swatch guide-swatchtextDisplay1">sample</td>
+            </tr>
+            <tr class="guide-typeSample">
+                <td class="guide-swatchLabel">Display 2</td>
+                <td class="guide-swatch guide-swatchtextDisplay2">sample</td>
+            </tr>
+            <tr class="guide-typeSample">
+                <td class="guide-swatchLabel">Title</td>
+                <td class="guide-swatch guide-swatchtextTitle">sample</td>
+            </tr>
+            <tr class="guide-typeSample">
+                <td class="guide-swatchLabel">Headline 1</td>
+                <td class="guide-swatch guide-swatchtextHeadline1">sample</td>
+            </tr>
+            <tr class="guide-typeSample">
+                <td class="guide-swatchLabel">Headline 2</td>
+                <td class="guide-swatch guide-swatchtextHeadline2">sample</td>
+            </tr>
+            <tr class="guide-typeSample">
+                <td class="guide-swatchLabel">Subheading</td>
+                <td class="guide-swatch guide-swatchtextSubheading">sample</td>
+            </tr>
+            <tr class="guide-typeSample">
+                <td class="guide-swatchLabel">Body 1</td>
+                <td class="guide-swatch guide-swatchtextBody1">sample</td>
+            </tr>
+            <tr class="guide-typeSample">
+                <td class="guide-swatchLabel">Body 2</td>
+                <td class="guide-swatch guide-swatchtextBody2">sample</td>
+            </tr>
+            <tr class="guide-typeSample">
+                <td class="guide-swatchLabel">Label 1</td>
+                <td class="guide-swatch guide-swatchtextLabel1">sample</td>
+            </tr>
+            <tr class="guide-typeSample">
+                <td class="guide-swatchLabel">Label 2</td>
+                <td class="guide-swatch guide-swatchtextLabel2">sample</td>
+            </tr>
+            <tr class="guide-typeSample">
+                <td class="guide-swatchLabel">Disclaimer</td>
+                <td class="guide-swatch guide-swatchtextDisclaimer">sample</td>
+            </tr>
+        </table>
+    </div>
+    <div class="col lastCol guide-inspector" pa-inspector="typeStyles">
+        <h4 pa-inspect-title>Display 1</h4>
+        <table>
+            <tr>
+                <td class="guide-inspectLabel">Font Family:</td>
+                <td class="guide-inspectValue" pa-inspect-attr="fontFamily">Proxima Nova</td>
+            </tr>
+            <tr>
+                <td class="guide-inspectLabel">Font Size:</td>
+                <td class="guide-inspectValue" pa-inspect-attr="fontSize">44px</td>
+            </tr>
+            <tr>
+                <td class="guide-inspectLabel">Font Weight:</td>
+                <td class="guide-inspectValue" pa-inspect-attr="fontWeight">light</td>
+            </tr>
+            <tr>
+                <td class="guide-inspectLabel">Text Transform:</td>
+                <td class="guide-inspectValue" pa-inspect-attr="textTransform">none</td>
+            </tr>
+            <tr>
+                <td class="guide-inspectLabel">Letter Spacing:</td>
+                <td class="guide-inspectValue" pa-inspect-attr="letterSpacing">normal</td>
+            </tr>
+            <tr>
+                <td class="guide-inspectLabel">Line Height:</td>
+                <td class="guide-inspectValue" pa-inspect-attr="lineHeight">56px</td>
+            </tr>
+        </table>
+    </div>
+</div>
+*/
+
+$textCharacterWidth: 4px; /* useful when attempting layout with inline-block elements */
+$textBulletSize: 4px;
+$textParagraphSpacing: $baseMeasureMedium;
+$textDefaultColor: $colorCharcoalBlack;
+$textDeemphasizedColor: $colorGraphiteGrey;
+$textDisabledColor: $colorPebbleGrey;
+$textListItemSpacing: $baseMeasureSmall;
+$textBoldWeight: 600;
+
+$textHeadlineFont: "Proxima Nova";
+$textBodyFont: "Proxima Nova";
+
+$colorLink: map-get($colorAction, thin);
+$colorLinkHover: map-get($colorAction, thinHover);
+$colorLinkActive: map-get($colorAction, thinActive);
+$colorLinkDisabled: map-get($colorAction, light);
+
+$textDisplay1Values: (
+    fontFamily: $textHeadlineFont,
+    fontSize: 42px,
+    fontWeight: normal,
+    letterSpacing: normal,
+    lineHeight: 44px,
+    textTransform: none
+);
+
+$textDisplay2Values: (
+    fontFamily: $textHeadlineFont,
+    fontSize: 36px,
+    fontWeight: normal,
+    letterSpacing: normal,
+    lineHeight: 38px,
+    textTransform: none
+);
+
+$textTitleValues: (
+    fontFamily: $textHeadlineFont,
+    fontSize: 26px,
+    fontWeight: 600,
+    letterSpacing: normal,
+    lineHeight: 32px,
+    textTransform: none,
+    defaultMarginBottom: $baseMeasureMedium,
+    defaultMarginTop: $baseMeasureMedium
+);
+
+$textHeadline1Values: (
+    fontFamily: $textHeadlineFont,
+    fontSize: 22px,
+    fontWeight: normal,
+    letterSpacing: normal,
+    lineHeight: 26px,
+    textTransform: none,
+    defaultMarginBottom: $baseMeasureMedium,
+    defaultMarginTop: $baseMeasureMedium,
+    explanationMargin: 2px
+);
+
+$textHeadline2Values: (
+    fontFamily: $textHeadlineFont,
+    fontSize: 18px,
+    fontWeight: 600,
+    letterSpacing: normal,
+    lineHeight: 22px,
+    textTransform: none,
+    defaultMarginBottom: $baseMeasureSmall,
+    defaultMarginTop: $baseMeasureMedium,
+    explanationMargin: 2px
+);
+
+$textHeadline3Values: (
+    fontFamily: $textHeadlineFont,
+    fontSize: 18px,
+    fontWeight: 600,
+    letterSpacing: normal,
+    lineHeight: 22px,
+    textTransform: none,
+    defaultMarginBottom: $baseMeasureSmall,
+    defaultMarginTop: $baseMeasureMedium,
+    explanationMargin: 2px
+);
+
+$textSubheadingValues: (
+    fontFamily: $textHeadlineFont,
+    fontSize: 14px,
+    fontWeight: bold,
+    letterSpacing: 0.5px,
+    lineHeight: 18px,
+    textTransform: uppercase,
+    defaultMarginBottom: $baseMeasureSmall,
+    defaultMarginTop: $baseMeasureMedium,
+    explanationMargin: 0
+);
+
+$textBody1Values: (
+    fontFamily: $textBodyFont,
+    fontSize: 16px,
+    fontWeight: normal,
+    letterSpacing: normal,
+    lineHeight: 22px,
+    textTransform: none,
+    defaultMarginBottom: $baseMeasureXS,
+    defaultMarginTop: $baseMeasureSmall,
+    explanationMargin: 0
+);
+
+$textBody2Values: (
+    fontFamily: $textBodyFont,
+    fontSize: 16px,
+    fontWeight: 600,
+    letterSpacing: normal,
+    lineHeight: 22px,
+    textTransform: none,
+    defaultMarginBottom: $baseMeasureSmall,
+    defaultMarginTop: $baseMeasureMedium,
+    explanationMargin: 0
+);
+
+$textLabel1Values: (
+    fontFamily: $textBodyFont,
+    fontSize: 14px,
+    fontWeight: normal,
+    letterSpacing: normal,
+    lineHeight: 20px,
+    textTransform: none,
+    defaultMarginBottom: $baseMeasureMedium,
+    defaultMarginTop: $baseMeasureXS
+);
+
+$textLabel2Values: (
+    fontFamily: $textBodyFont,
+    fontSize: 14px,
+    fontWeight: 600,
+    letterSpacing: normal,
+    lineHeight: 20px,
+    textTransform: none,
+    defaultMarginBottom: $baseMeasureMedium,
+    defaultMarginTop: $baseMeasureXS
+);
+
+$textDisclaimerValues: (
+    fontFamily: $textBodyFont,
+    fontSize: 12px,
+    fontWeight: normal,
+    letterSpacing: 0.4px,
+    lineHeight: 16px,
+    textTransform: none,
+    defaultMarginBottom: $baseMeasureMedium,
+    defaultMarginTop: $baseMeasureSmall
+);
+
+$textLegacyNavHeader1Values: (
+    fontFamily: $textHeadlineFont,
+    fontSize: 16px,
+    fontWeight: normal,
+    letterSpacing: normal,
+    lineHeight: 24px,
+    textTransform: uppercase
+);
+
+$textLegacyNavHeader2Values: (
+    fontFamily: $textHeadlineFont,
+    fontSize: 16px,
+    fontWeight: 600,
+    letterSpacing: normal,
+    lineHeight: 24px,
+    textTransform: uppercase
+);
+
+@mixin generateTypeStyle($typeStyleValues) {
+    font-family: map-get($typeStyleValues, fontFamily);
+    font-size: map-get($typeStyleValues, fontSize);
+    font-weight: map-get($typeStyleValues, fontWeight);
+    letter-spacing: map-get($typeStyleValues, letterSpacing);
+    line-height: map-get($typeStyleValues, lineHeight);
+    text-transform: map-get($typeStyleValues, textTransform);
+}
+
+@mixin textDisplay1 {
+    @include generateTypeStyle($textDisplay1Values);
+}
+
+@mixin textDisplay2 {
+    @include generateTypeStyle($textDisplay2Values);
+}
+
+@mixin textTitle {
+    @include generateTypeStyle($textTitleValues);
+}
+
+@mixin textHeadline1 {
+    @include generateTypeStyle($textHeadline1Values);
+}
+
+@mixin textHeadline2 {
+    @include generateTypeStyle($textHeadline2Values);
+}
+
+@mixin textHeadline3 {
+    @include generateTypeStyle($textHeadline3Values);
+}
+
+@mixin textSubheading {
+    @include generateTypeStyle($textSubheadingValues);
+}
+
+@mixin textBody1 {
+    @include generateTypeStyle($textBody1Values);
+}
+
+@mixin textBody2 {
+    @include generateTypeStyle($textBody2Values);
+}
+
+@mixin textLabel1 {
+    @include generateTypeStyle($textLabel1Values);
+}
+
+@mixin textLabel2 {
+    @include generateTypeStyle($textLabel2Values);
+}
+
+@mixin textDisclaimer {
+    @include generateTypeStyle($textDisclaimerValues);
+}
+
+@mixin textLegacyNavHeader1 {
+    @include generateTypeStyle($textLegacyNavHeader1Values);
+}
+
+@mixin textLegacyNavHeader2 {
+    @include generateTypeStyle($textLegacyNavHeader2Values);
+}

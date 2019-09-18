@@ -4,7 +4,7 @@
             "name": "ZILLOW GROUP",
             "title": "Zillow Group",
             "url": "zillow-group",
-            "src-cover": "../images/project-covers/zillow-group-cover-2-01.png",
+            "src-cover": "../images/project-covers/zillow-new-4.png",
             "position-y-project": "center",
             "position-y-home": "center",
             "position-x-home": "center",
@@ -15,7 +15,7 @@
             "background-color": "#001751",
             "type": "Internship",
             "tags": "UX Engineering &mdash; Design Systems",
-            "description": "<a href='https://www.zillowgroup.com'>Zillow Group</a> is the internet’s leading real estate marketplace. In addition to helping people browse house listings easily, Zillow Group provides real estate agents the opportunity to connect with potential homebuyers through their online real estate network, <a href='https://premieragent.zillow.com/'>Zillow Premier Agent</a>. This past summer I joined the Premier Agent UX team as a UX Engineer intern and contributed to several external-facing projects.",
+            "description": "<a href='https://www.zillowgroup.com'>Zillow Group</a> is the internet’s leading real estate marketplace. In addition to helping people browse house listings easily, Zillow Group provides real estate agents the opportunity to connect with potential homebuyers through their online real estate network and customer relationship management (CRM) platform, <a href='https://premieragent.zillow.com/'>Zillow Premier Agent</a>. This past summer I joined the Premier Agent UX team as a UX Engineer Intern and was given the challenge to contribute a new component to Premier Agent’s design system, as well as design a new product page.",
             "info-block-1": [
                 {
                     "title": "Title",
@@ -33,7 +33,7 @@
                 },
                 {
                     "title": "Dev Tools",
-                    "content": "HTML, CSS (Sass), JavaScript, React.js, GitLab"
+                    "content": "HTML, CSS (Sass), JavaScript (jQuery), GitLab"
                 },
  
                 {
@@ -47,27 +47,228 @@
 			],
 			"blocks": [
 				{
-					"header": "Premier Agent Experience Language",
+					"header": "Datepicker Component",
 					"sections": [
 						{
 							"column-two": true,
+							"subheader": true,
+							"title": "Premier Agent Experience Language",
 							"text": true,
-							"content": "Zillow Premier Agent’s design system, Premier Agent Premier Agent Experience Language (PAXL), was founded to support the platform’s ongoing evolution. PAXL provides designers and engineers the foundation they need to build new product features quickly, while also delivering a consistent UX and brand experience to Premier Agent’s users."
+							"content": "Zillow Premier Agent’s design system, Premier Agent Experience Language (PAXL), was founded to support the platform’s ongoing evolution. PAXL provides designers and engineers the foundation they need to deliver new product features quickly, while also delivering a consistent UX and brand experience to Premier Agent’s users."
 						},
 						{
 							"column-two": true,
 							"text": true,
-							"content": "This summer I had the opportunity to design and engineer a new component for PAXL’s UI library. More details on my design and development process coming soon!"
+							"content": "I had the opportunity to design and engineer a new datepicker component for PAXL’s reusable UI library."
+						},
+						{
+							"column-two": true,
+							"subheader": true,
+							"title": "Datepicker Audit",
+							"text": true,
+							"content": "I first conducted an audit of datepickers on Premier Agent in order to understand how they were currently being used. By examining the state of datepickers on Premier Agent, I was able to identify the component’s use cases, call out inconsistencies, and take note of any variations that need to be included."
+						},
+						{
+							"column-two": true,
+							"text": true,
+							"content": "<span class='italic'>Note: While the audit includes datepickers on mobile, my project was scoped to designing a datepicker for desktop. This is due to the standard conventions of selecting a date on iOS and Android.</span>"
+						},
+						{
+							"column-two": true,
+							"image": true,
+							"src": "images/zillow-group/datepicker-audit.png",
+							"caption": true,
+							"caption-content": "<a href=\"https://drive.google.com/file/d/1qZVWPIoKDjGwHl54j4qd7uNww7BoWyxM/view?usp=sharing\">View full size datepicker audit</a>."
+						},
+						{
+							"column-two": true,
+							"subheader": true,
+							"title": "Competitive Research",
+							"text": true,
+							"content": "Next, I researched how other design systems were utilizing datepickers through a competitive analysis. In this analysis I compared and contrasted the various datepickers’ UI, logic, and interaction flows, as this allowed me to establish a baseline of how a datepicker should appear and function."
+						},
+						{
+							"column-two": true,
+							"image": true,
+							"src": "images/zillow-group/datepicker-research.png",
+							"caption": true,
+							"caption-content": "<a href=\"https://drive.google.com/file/d/1DNUlBZrrFPVXWIIXuc3wl1-XduZ7-_Cs/view?usp=sharing\">View full size datepicker competitive research</a>."
+						},
+						{
+							"column-two": true,
+							"subheader": true,
+							"title": "Design Requirements",
+							"text": true,
+							"content": "Using the combined data from the audit and competitive research, I then defined design requirements for the datepicker component in the context of Premier Agent. These design requirements outlined the datepicker component’s UI, interactions, states, and use cases from a minimum viable product (MVP) and version two (V2) perspective."
+						},
+						{
+							"column-one": true,
+							"subheader": true,
+							"title": "MVP Requirements",
+							"bullet-list": true,
+							"content": "<li>• Datepickers extend functionality of date input field</li><li>• Calendar widget appears when user clicks on date field</li><li>• User can select a day on calendar widget to input desired date</li><li>• User can still edit the text string after selecting a date</li><li>• User can type in date manually</li><li>• User can select single date in past/future</li><li>• User can go to previous/next month</li><li>• User can jump to previous/next year</li>"
+						},
+						{
+							"column-two": true,
+							"subheader": true,
+							"text": true,
+							"title": "Design Exploration",
+							"content": "After setting the design requirements I created low and high fidelity mock-ups in order to explore possible designs. I presented my explorations through multiple ad hoc and structured reviews in order to receive feedback on the datepicker’s design. Each design review led to new iterations, which included changes such as navigation UI, color, and visual hierarchy."
+						},
+						{
+							"column-one": true,
+							"subheader": true,
+							"title": "Exploration Sample",
+							"image": true,
+							"src": "images/zillow-group/datepicker-exploration.png"
+						},
+						{
+							"column-two": true,
+							"subheader": true,
+							"text": true,
+							"title": "Prototyping",
+							"content": "To further test the datepicker’s design, I developed an in-context front-end prototype. Building the datepicker into a page on the Premier Agent app allowed me to conduct user testing on the component’s micro-interactions and ensure that it followed PAXL’s visual guidelines. Try the datepicker prototype out below!"
+						},
+						{
+							"column-one": true,
+							"embed": true,
+							"src": "https://datepicker-prototype.herokuapp.com/"
+						},
+						{
+							"column-two": true,
+							"subheader": true,
+							"text": true,
+							"title": "Future Iterations",
+							"content": "As Premier Agent evolves, new use cases for the datepicker component may emerge. Anticipating these possible contexts, I prepared documentation for future versions of the datepicker component. These resources include a development document, and redlines for a V2 datepicker and range datepicker."
+						},
+						{
+							"column-one": true,
+							"image": true,
+							"src": "images/zillow-group/datepicker-v2flow.png",
+							"caption": true,
+							"caption-content": "<a href=\"https://drive.google.com/drive/folders/1kkfFUolI3DEarQqxOJ2HNv_rnxaFmuy-?usp=sharing\">View V2 datepicker resources</a>."
+						},
+						{
+							"column-two": true,
+							"subheader": true,
+							"text": true,
+							"title": "Impact",
+							"content": "With the addition of the datepicker component, the amount of time needed to populate a date field has <span class='bold'>improved by 600%</span> (decreasing from 6 seconds to 1 second)."
+						},
+						{
+							"column-two": true,
+							"text": true,
+							"content": "Datepickers minimize human error by providing users the option to select a date using a calendar widget. This visual aid decreases the cognitive load required to input a date, thus streamlining this process and greatly improving Premier Agent’s UX."
 						}
 					]
 				},
 				{
-					"header": "Newsfeed",
+					"header": "Agent Newsfeed",
 					"sections": [
 						{
 							"column-two": true,
 							"text": true,
-							"content": "I also was given the challenge to design a desktop newsfeed experience for Premier Agent. More details on this project coming soon!"
+							"content": "I was also the design lead on a project exploring an early desktop newsfeed experience for Premier Agent. The newsfeed’s objective was to be a touchpoint where agents can read real estate articles, keep up with product updates, and learn tips on sales and maintaining customer relationships so they can be successful with Zillow Premier Agent."
+						},
+						{
+							"column-two": true,
+							"subheader": true,
+							"text": true,
+							"title": "Competitive Research",
+							"content": "To gain a better perspective on different layouts, I conducted research on various newsfeeds and product blogs. For the scope of this project, I concentrated on card layout and content hierarchy."
+						},
+						{
+							"column-two": true,
+							"image": true,
+							"src": "images/zillow-group/newsfeed-research.png",
+							"caption": true,
+							"caption-content": "<a href=\"https://drive.google.com/drive/folders/1kkfFUolI3DEarQqxOJ2HNv_rnxaFmuy-?usp=sharing\">View V2 datepicker resources</a>."
+						},
+						{
+							"column-two": true,
+							"subheader": true,
+							"text": true,
+							"title": "Design Exploration",
+							"content": "I began exploring newsfeed designs by building off my research and incorporating patterns that already existed in the PAXL design system. Reusing PAXL components in the newsfeed minimizes the feature’s development time, however I made sure that the design system did not constrain my exploration."
+						},
+						{
+							"column-one": true,
+							"image": true,
+							"src": "images/zillow-group/newsfeed-sketches.png",
+							"caption": true,
+							"caption-content": "Newsfeed sketches exploring content hierarchy."
+						},
+						{
+							"column-one": true,
+							"image": true,
+							"src": "images/zillow-group/newsfeed-lofi.png",
+							"caption": true,
+							"caption-content": "Low fidelity exploration of article preview cards."
+						},
+						{
+							"column-two": true,
+							"subheader": true,
+							"title": "High Fidelity Mock-Ups",
+							"text": true,
+							"content": "When discussing the newsfeed’s business goals with product managers we concluded that the newsfeed’s purpose will shift as Premier Agent develops. Since its content strategy will become more clear in the future, the newsfeed’s structure should be straightforward for the feature’s first implementation. As a result, I chose to focus my explorations on the fundamental components of a newsfeed and strayed away from complex grid layouts."
+						},
+						{
+							"column-one": true,
+							"image": true,
+							"src": "images/zillow-group/newsfeed-hifi-previews.png",
+							"caption": true,
+							"caption-content": "Exploration of article previews with side nav bar layout."
+						},
+						{
+							"column-one": true,
+							"image": true,
+							"src": "images/zillow-group/newsfeed-hifi-states.png",
+							"caption": true,
+							"caption-content": "Exploration of 'New content' and 'Read before' card states with simple layout."
+						},
+						{
+							"column-one": true,
+							"image": true,
+							"src": "images/zillow-group/newsfeed-hifi-detailed-view.png",
+							"caption": true,
+							"caption-content": "Exploration of detailed article view with simple layout."
+						},
+						{
+							"column-two": true,
+							"subheader": true,
+							"text": true,
+							"title": "Impact",
+							"content": "The newsfeed feature will give agents a space to learn more about the Premier Agent program and empower them with the information they need in order to succeed. Introducing the newsfeed within the desktop experience increases article visibility, ultimately improving user engagement on the Premier Agent CRM."
+						}
+					]
+				},
+				{
+					"header": "Takeaways",
+					"sections": [
+						{
+							"column-two": true,
+							"text": true,
+							"content": "Contributing to needed projects on a consumer-facing product was positively motivating and challenging. Being able to work with diverse teams in UX, product, engineering, and more was beyond immersive and I enjoyed every moment of learning."
+						},
+						{
+							"column-two": true,
+							"text": true,
+							"content": "I am excited for the datepicker to be live on the Premier Agent desktop app soon and am grateful to have been entrusted with leading the early exploration and design of the desktop newsfeed feature. "
+						},
+						{
+							"column-two": true,
+							"text": true,
+							"content": "Thank you to Kristen, Phil, Anmy, and Nikki for mentoring me and giving me the opportunity to strengthen my skills as a UX designer and engineer!"
+						},
+						{
+							"column-two": true,
+							"text": true,
+							"content": "#ZGIsATeamSport"
+						},
+						{
+							"column-one": true,
+							"image": true,
+							"src": "images/zillow-group/intern-team.jpg"
 						}
 					]
 				}

@@ -1,0 +1,295 @@
+// Dropdowns
+
+@mixin paDropdown() {
+
+    .pa-dropdown {
+        position: relative;
+    }
+
+    /* a bit of hackery for dropdown containers in button rows.
+       avoids issue of adding an extra pixel below dropdown trigger,
+       caused by treating button as an inline-block */
+    .pa-dropdown > .pa-formUnit,
+    .pa-dropdown > .pa-button {
+        vertical-align: top;
+    }
+
+    /* TODO: revisit min-width. 120px is arbitrary, but 100% didn't work with badge dropdowns. */
+    /* so... this will be problematic for badges? */
+    .pa-dropdownContent {
+        background-color: $overlayBackgroundColor;
+        border: $overlayBorder;
+        box-shadow: $overlayShadowForHeight;
+        display: none;
+        left: 0;
+        min-width: 100%;
+        opacity: 0;
+        pointer-events: none;
+        position: absolute;
+        text-align: left;
+        top: 100%;
+        //z-index: map-get($paZIndex, dropdown);
+    }
+
+    .pa-dropdownRight > .pa-dropdownContent {
+        left: auto;
+        right: 0;
+    }
+
+    .pa-dropdown:hover:not(.pa-dropdownClickOnly) .pa-dropdownContent,
+    .pa-dropdown.pa-active .pa-dropdownContent,
+    .pa-dropdownContent.pa-active {
+        display: block;
+        opacity: 1;
+        pointer-events: auto;
+    }
+
+    /* delaying show: make sure element exists in DOM
+        so we can measure its dimensions to position it */
+
+    .pa-dropdown.pa-delayingShow .pa-dropdownContent,
+    .pa-dropdownContent.pa-delayingShow {
+        display: block;
+        opacity: 0;
+        pointer-events: none;
+    }
+
+    /* animating show: animating into view; counts as active */
+
+   /* .pa-dropdown.pa-active.pa-animatingShow .pa-dropdownContent,
+    .pa-dropdownContent.pa-active.pa-animatingShow {
+        animation-duration: $animInDuration;
+        animation-iteration-count: 1;
+        animation-name: dropdownAnimatingShow;
+        animation-timing-function: $animInCurve;
+        opacity: 1;
+    }*/
+
+    /* animating hide: animating out of view.
+        still counts as active, in case the user wants to quickly undo the hide */
+
+  /* .pa-dropdown.pa-active.pa-animatingHide .pa-dropdownContent,
+    .pa-dropdownContent.pa-active.pa-animatingHide {
+        animation-duration: $animOutDuration;
+        animation-iteration-count: 1;
+        animation-name: dropdownAnimatingHide;
+        animation-timing-function: $animOutCurve;
+        opacity: 0;
+    }*/
+
+    /* using display: table instead of flex for now; IE10 support plus dimension issues */
+    .pa-dropdownColumnSet {
+        display: table;
+    }
+
+    .pa-dropdownColumnSet .pa-dropdownColumn {
+        display: table-cell;
+    }
+
+    .pa-dropdownColumnSet .pa-dropdownColumn:not(:last-child) {
+        padding-right: 10px;
+    }
+
+    .pa-dropdownContent .pa-dropdownGroup:not(:last-child) {
+        margin-bottom: map-get($smallCell, vertMarginUnrelated);
+    }
+
+    /* TODO: open question about mixing medium and small cells like this.
+       we need to think this through in depth */
+    .pa-dropdownContent .pa-dropdownItem,
+    .pa-dropdownContent .pa-groupHeader {
+        border-color: transparent;
+        border-style: solid;
+        border-width: map-get($smallCell, borderWidth);
+        display: block;
+        margin-left: 0;
+        margin-right: 0;
+        margin-top: 0;
+        padding: map-get($smallCell, vertPadding) map-get($mediumCell, sidePadding);
+        white-space: nowrap;
+    }
+
+   /* .pa-dropdownContent .pa-dropdownItem {
+        @include paTruncatedString;
+        max-width: 100%;
+    }*/
+
+    .pa-dropdownContent .pa-dropdownItem:first-child,
+    .pa-dropdownContent .pa-groupHeader:first-child {
+        margin-top: $baseMeasureMedium;
+    }
+
+    .pa-dropdownContent .pa-radio:first-child + .pa-radioLabel,
+    .pa-dropdownContent .pa-checkbox:first-child + .pa-checkboxLabel {
+        margin-top: $baseMeasureSmall;
+    }
+
+    .pa-dropdownContent .pa-dropdownItem:not(:last-child),
+    .pa-dropdownContent .pa-groupHeader:not(:last-child) {
+        margin-bottom: map-get($smallCell, vertMarginRelated);
+    }
+
+    .pa-dropdownContent .pa-dropdownItem:last-child,
+    .pa-dropdownContent .pa-groupHeader:last-child {
+        margin-bottom: $baseMeasureMedium;
+    }
+
+    .pa-dropdownContent .pa-radio + .pa-radioLabel:last-child,
+    .pa-dropdownContent .pa-checkbox + .pa-checkboxLabel:last-child {
+        margin-bottom: $baseMeasureSmall;
+    }
+
+    .pa-dropdownContent .pa-groupHeader {
+        @include textSubheading;
+        color: $textDefaultColor;
+        line-height: map-get($smallCell, lineHeight);
+    }
+
+    .pa-contentBlock .pa-dropdownContent a.pa-dropdownItem,
+    .pa-dropdownContent a.pa-dropdownItem:not(.pa-button),
+    .pa-dropdownContent .pa-dropdownItem {
+        @include textBody1;
+        color: $textDefaultColor;
+        line-height: map-get($smallCell, lineHeight);
+    }
+
+    .pa-dropdownContent .pa-dropdownContentSection {
+        padding-bottom: 0;
+        padding-top: 0;
+    }
+
+    .pa-dropdownContent .pa-dropdownContentSection + .pa-dropdownContentSection {
+        border-top: $overlayBorder;
+    }
+
+    /* desperate attempt to thwart text wrapping issues */
+    /* we should consider refactoring dropdowns */
+  /*  .pa-dropdownContentSection > .pa-radioLabel,
+    .pa-dropdownContent > .pa-radioLabel,
+    .pa-dropdownContentSection > .pa-checkboxLabel,
+    .pa-dropdownContent > .pa-checkboxLabel {
+        @include paTruncatedString;
+        margin-left: map-get($mediumCell, sidePadding);
+        margin-right: map-get($mediumCell, sidePadding);
+    }*/
+
+    /* TODO: remove support for deprecated header */
+    .pa-navHeader .pa-dropdownContent .pa-dropdownItem {
+        color: $textDeemphasizedColor;
+    }
+
+    .pa-contentBlock .pa-navHeader .pa-dropdownContent a.pa-dropdownItem {
+        color: $colorDropdownText;
+    }
+
+    .pa-dropdownContent a.pa-dropdownItem.pa-current:not(.pa-button)
+    .pa-contentBlock .pa-dropdownContent a.pa-dropdownItem.pa-current,
+    .pa-dropdownContent .pa-dropdownItem.pa-current {
+        @include textBody2;
+        color: $colorDropdownText;
+        line-height: map-get($smallCell, lineHeight);
+    }
+
+    .pa-dropdownContent a.pa-dropdownItem:not(.pa-button):focus,
+    .pa-dropdownContent a.pa-dropdownItem:not(.pa-button):hover,
+    .pa-contentBlock .pa-dropdownContent a.pa-dropdownItem:focus,
+    .pa-contentBlock .pa-dropdownContent a.pa-dropdownItem:hover,
+    .pa-dropdownContent a.pa-dropdownItem:focus,
+    .pa-dropdownContent a.pa-dropdownItem:hover {
+        background-color: $colorDropdownBackgroundHover;
+        color: $colorDropdownTextHover;
+        text-decoration: none;
+    }
+
+    // Complex Dropdown Items (similar to .pa-complexGroupItem)
+    .pa-dropdown .pa-dropdownContent .pa-dropdownItem.pa-complexDropdownItem {
+        line-height: map-get($mediumCell, lineHeight);
+        padding-bottom: map-get($mediumCell, vertPadding);
+        padding-top: map-get($mediumCell, vertPadding);
+    }
+    .pa-dropdownContent .pa-dropdownItem.pa-complexDropdownItem:not(:last-child) {
+        margin-bottom: map-get($mediumCell, vertMarginRelated);
+    }
+
+    .pa-dropdownContent .pa-hasIcons .pa-dropdownItem,
+    .pa-dropdownContent .pa-hasIcons .pa-groupHeader,
+    .pa-dropdownContent .pa-icon.pa-dropdownItem,
+    .pa-dropdownContent .pa-icon.pa-groupHeader {
+        padding-left: map-get($smallCell, sidePadding) + map-get($smallCell, iconWidth) + map-get($smallCell, iconSideMargin);
+        position: relative;
+    }
+
+    .pa-dropdownContent.pa-hasIcons .pa-dropdownColumn:last-child .pa-dropdownItem,
+    .pa-dropdownContent.pa-hasIcons .pa-dropdownColumn:last-child .pa-groupHeader {
+        padding-right:  map-get($smallCell, sidePadding) + map-get($smallCell, iconWidth) + map-get($smallCell, iconSideMargin);
+    }
+
+    .pa-dropdownContent .pa-groupHeader.pa-trulia {
+        color: $colorGreen300;
+    }
+    .pa-dropdownContent .pa-groupHeader.pa-zillow {
+        color: $colorBlue300;
+    }
+
+    .pa-dropdownContent .pa-groupHeader.pa-trulia:before,
+    .pa-dropdownContent .pa-groupHeader.pa-zillow:before {
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size:  map-get($smallCell, iconWidth) auto;
+        content: '';
+        display: block;
+        height: map-get($smallCell, iconHeight);
+        left: map-get($smallCell, sidePadding);
+        position: absolute;
+        top: calc(50% - #{map-get($smallCell, iconHeight) / 2});
+        width: map-get($smallCell, iconWidth);
+    }
+    .pa-dropdownContent .pa-groupHeader.pa-trulia:before {
+        //background-image: url($staticImageFilePath + 't-icon.svg');
+    }
+    .pa-dropdownContent .pa-groupHeader.pa-zillow:before {
+        //background-image: url($staticImageFilePath + 'z-icon.svg');
+    }
+
+    @media screen and (min-width: $layoutTabletMinWidth) {
+
+        .pa-formUnit.pa-formUnitS .pa-dropdownContent,
+        .pa-formUnit.pa-formUnitSM .pa-dropdownContent,
+        .pa-formUnit.pa-formUnitM .pa-dropdownContent,
+        .pa-dropdownContent {
+            max-width: map-get($mediumFormWidths, large);
+        }
+
+        .pa-formUnit.pa-formUnitL .pa-dropdownContent,
+        .pa-formUnit .pa-dropdownContent {
+            max-width: map-get($mediumFormWidths, xlarge);
+        }
+
+        .pa-formUnit.pa-formUnitXL .pa-dropdownContent,
+        .pa-formUnit.pa-formUnitXXL .pa-dropdownContent {
+            max-width: map-get($mediumFormWidths, xxlarge);
+        }
+
+    }
+
+    @media screen and (max-width: #{$layoutTabletMinWidth - 1}) {
+
+        .pa-dropdownContent {
+            max-width: 100%;
+        }
+
+    }
+}
+
+@mixin paDropdownLoader() {
+
+    .pa-dropdownContent.pa-loading {
+        /* Give loader some room if panel is empty (height of dropdown with 3 entries = 114px) */
+        min-height:
+            ( map-get($smallCell, height) * 3)
+            + ( map-get($smallCell, vertMarginRelated) * 2 ) /* .pa-dropdownItem:not(:last-child) margin */
+            + ($baseMeasureMedium * 2) /* first and last child margins */
+            + ($overlayBorderWidth * 2) /* .pa-dropdownContent borders */
+        ;
+    }
+}

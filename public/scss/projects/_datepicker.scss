@@ -1,0 +1,130 @@
+
+@mixin paDatepicker() {
+
+    /* Datepicker base styling */
+    .pa-datepicker {
+        color: black;
+        font-family: 'proxima_novaregular';
+        font-size: 14px;
+        
+        .pa-yearSelect {
+            font-weight: map-get($textBody2Values, fontWeight);
+        }
+
+        /* Override .pa-dropdownContent default so only
+         * calendar widget appears */
+        .pa-dropdownContent {
+            max-width: $datepickerWidgetWidth;
+            min-width: 0;
+            border-radius: map-get($mediumCell, borderRadius)
+        }
+    }
+
+    /* Datepicker widget base styling */
+    .pa-datepickerWidgetBase {
+        width: 290px;
+        padding: 4px;
+    }
+
+
+    /* Datepicker calendar view styling */
+    .pa-datepickerWidgetBase .pa-datepickerGrid {
+        display: table;
+        text-align: center;
+
+        th {
+            width: 40px;
+            height: 32px;
+            font-family: 'proxima_novasemibold';
+            color: $colorFieldLabel;
+        }
+    
+        td {
+            max-width: 40px;
+            max-height: 40px;
+            padding: 4px;
+
+        }
+
+        /* Styling for calendar number cells */
+        .pa-gridCell {
+            display: block;
+            position: relative;
+            width: 24px;
+            height: 24px;
+            line-height: 24px;
+            margin: 2px auto 0 auto;
+        }
+    
+        /* Styling for calendar cell border */
+        .pa-gridCellBorder {
+            border: 1px solid #fff;
+            max-width: 32px;
+            max-height: 32px;
+            border-radius: 3px;
+        }
+
+        .pa-gridCellBorderFocus {
+            border-color: $colorFieldBorderFocus;
+        }
+    
+        .pa-gridCellBorder:focus {
+            border-color: $colorFieldBorderFocus;
+        }
+
+        .pa-gridCellBorder:hover {
+            border-color: $colorFieldBorderFocus;
+        }
+    
+        /* Special stylings to handle disabled dates, today,
+         * and selected states */
+        .pa-disabled {
+            color: $colorFieldTextDisabled;
+        }
+
+        .pa-todayFont {
+            font-weight: map-get($textBody2Values, fontWeight);
+            color: $colorFieldBorderFocus;
+        }
+    
+        .pa-todayBorder {
+            border-bottom: 1px solid $colorFieldBorderFocus;
+        }
+
+        .pa-todayFontSelected {
+            color: $colorFieldBackground;
+        }
+
+        .pa-gridCellSelected {
+            border-color: $colorFieldBorderFocus;
+            background-color: $colorFieldBorderFocus;
+            color: $colorFieldBackground;
+        }
+    }
+
+    /* Datepicker navigation header styling */
+    .pa-datepickerWidgetBase .pa-navigationHeader {
+        display: flex;
+        height: map-get($mediumCell, height);
+        font-size: map-get($textBody2Values, fontSize);
+        font-weight: map-get($textBody2Values, fontWeight);
+        margin-bottom: $baseMeasureSmall;
+
+        .pa-navigationMonth {
+            @extend .pa-pagination;
+            width: $datepickerNavigationMonthWidth;
+            margin-right: map-get($smallCell, height);
+            justify-content: space-between;
+
+            .pa-singlePage:not(:last-child) {
+                margin-right: 0;
+            }
+        }
+
+        .pa-navigationYear {
+            margin-top: 0;
+            max-width: $datepickerNavigationYearWidth;
+        }
+    }
+
+}

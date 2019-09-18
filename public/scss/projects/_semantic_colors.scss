@@ -1,0 +1,323 @@
+/* Semantic color families:
+
+base: the main color of the color family
+pale: very pale background, sometimes used as notification background, table cell background
+solid: used for large blocks or regions of color, like buttons
+thin: used for thin elements, like text or single-pixel lines
+
+*/
+
+$colorPrimaryBrand: (
+    base: $colorPremierNavy,
+    solid: $colorPremierNavy,
+    solidText: $colorCottonWhite,
+    thin: $colorPremierNavy
+);
+
+/* Action: actionable elements, like links or primary buttons */
+$colorAction: (
+    base: $colorCoastalBlue,
+    pale: $colorCoastalBluePale,
+    paleHover: $colorCoastalBluePale,
+    paleActive: $colorCoastalBluePale,
+    light: $colorCoastalBlueLight,
+    solid: $colorCoastalBlue,
+    solidText: $colorCottonWhite,
+    solidBorder: $colorCoastalBlue,
+    solidShadow: transparentize($colorTrueBlack, 0.75),
+    solidHover: $colorCoastalBlueDark,
+    solidhoverText: $colorCottonWhite,
+    solidHoverBorder: $colorCoastalBlueDark,
+    solidActive: $colorCoastalBlueDarkest,
+    solidActiveText: $colorCottonWhite,
+    solidActiveBorder: $colorCoastalBlueDarkest,
+    solidDisabled: $colorCoastalBlueLight,
+    solidDisabledText: $colorCottonWhite,
+    solidDisabledBorder: $colorCoastalBlueLight,
+    diskBorder: $colorCoastalBlueLighter,
+    diskIcon: $colorCoastalBlueDarkest,
+    diskSolid: $colorCoastalBlueLighter,
+    thin: $colorCoastalBlueDark,
+    thinHover: $colorCoastalBlueDarkest,
+    thinActive: $colorCoastalBlueDarkest
+);
+
+/* orange text colors included for completeness, but we shouldn't use orange text */
+/* Attention: strongly draws attention, like warnings or primary calls to action? */
+$colorAttention: (
+    base: $colorSunsetOrange,
+    pale: $colorSunsetOrangePale,
+    light: $colorSunsetOrangeLight,
+    paleHover: $colorSunsetOrangePale,
+    paleActive: $colorSunsetOrangePale,
+    solid: $colorSunsetOrange,
+    solidText: $colorCottonWhite,
+    solidBorder: $colorSunsetOrange,
+    solidShadow: transparentize($colorTrueBlack, 0.75),
+    solidHover: $colorSunsetOrangeDark,
+    solidHoverText: $colorCottonWhite,
+    solidHoverBorder: $colorSunsetOrangeDark,
+    solidActive: $colorSunsetOrangeDarkest,
+    solidActiveText: $colorCottonWhite,
+    solidActiveBorder: $colorSunsetOrangeDarkest,
+    solidDisabled: $colorSunsetOrangeLight,
+    solidDisabledText: $colorCottonWhite,
+    solidDisabledBorder: $colorSunsetOrangeLight,
+    diskBorder: $colorSunsetOrangeLighter,
+    diskIcon: $colorSunsetOrangeDarkest,
+    diskSolid: $colorSunsetOrangeLighter,
+    thin: $colorSunsetOrangeDark,
+    thinHover: $colorSunsetOrangeDarkest,
+    thinActive: $colorSunsetOrangeDarkest
+);
+
+/* Danger: very strong warning, like an irreversible delete action */
+$colorDanger: (
+    base: $colorBrickRed,
+    pale: $colorBrickRedPale,
+    paleHover: $colorBrickRedPale,
+    paleActive: $colorBrickRedPale,
+    light: $colorBrickRedLight,
+    solid: $colorBrickRed,
+    solidText: $colorCottonWhite,
+    solidBorder: $colorBrickRed,
+    solidShadow: transparentize($colorTrueBlack, 0.75),
+    solidHover: $colorBrickRedDark,
+    solidHoverText: $colorCottonWhite,
+    solidHoverBorder: $colorBrickRedDark,
+    solidActive: $colorBrickRedDarkest,
+    solidActiveText: $colorCottonWhite,
+    solidActiveBorder: $colorBrickRedDarkest,
+    solidDisabled: $colorBrickRedLight,
+    solidDisabledText: $colorCottonWhite,
+    solidDisabledBorder: $colorBrickRedLight,
+    diskBorder: $colorBrickRedLighter,
+    diskIcon: $colorBrickRedDarkest,
+    diskSolid: $colorBrickRedLighter,
+    thin: $colorBrickRedDark,
+    thinHover: $colorBrickRedDarkest,
+    thinActive: $colorBrickRedDarkest
+);
+
+/* Success: completion of a task or flow */
+$colorSuccess: (
+    base: $colorMeadowGreen,
+    pale: $colorMeadowGreenPale,
+    paleHover: $colorMeadowGreenPale,
+    paleActive: $colorMeadowGreenPale,
+    light: $colorMeadowGreenLight,
+    solid: $colorMeadowGreen,
+    solidText: $colorCottonWhite,
+    solidBorder: $colorMeadowGreen,
+    solidShadow: transparentize($colorTrueBlack, 0.75),
+    solidHover: $colorMeadowGreenDark,
+    solidHoverText: $colorCottonWhite,
+    solidHoverBorder: $colorMeadowGreenDark,
+    solidActive: $colorMeadowGreenDarkest,
+    solidActiveText: $colorCottonWhite,
+    solidActiveBorder: $colorMeadowGreenDarkest,
+    solidDisabled: $colorMeadowGreenLight,
+    solidDisabledText: $colorCottonWhite,
+    solidDisabledBorder: $colorMeadowGreenLight,
+    diskBorder: $colorMeadowGreenLighter,
+    diskIcon: $colorMeadowGreenDarkest,
+    diskSolid: $colorMeadowGreenLighter,
+    thin: $colorMeadowGreenDark,
+    thinHover: $colorMeadowGreenDarkest,
+    thinActive: $colorMeadowGreenDarkest
+);
+
+/* Error: Error with a user's input, like in a form field */
+$colorError: $colorDanger;
+
+/* Info: Static information or help */
+$colorInfo: $colorAction;
+
+/* New: something is new. New lead, new incoming email, etc */
+$colorNew: $colorSuccess;
+
+/* Active: something is activated (checkbox, focus state, etc)
+   or currently showing (nav, tab) */
+$colorActive: $colorAction;
+
+/* Default color for icons and icons in disks */
+$colorIconDefault: (
+    base: $colorGraphiteGrey,
+    solid: $colorSmokeGreyDarkest,
+    solidText: $colorGraphiteGrey,
+    solidBorder: $colorSmokeGreyDarkest,
+    diskBorder: $colorSmokeGreyDarkest,
+    diskIcon: $colorGraphiteGrey,
+    diskSolid: $colorSmokeGreyDarkest,
+    thin: $colorGraphiteGrey
+);
+
+$colorLargeIconDefault: (
+    base: $colorGraphiteGrey,
+    solid: $colorSmokeGreyDarkest,
+    solidText: $colorGraphiteGrey,
+    solidBorder: $colorSmokeGreyDarkest,
+    thin: $colorGraphiteGrey
+);
+
+$colorIconLight: (
+    base: $colorPebbleGrey,
+    solid: $colorSmokeGreyDarkest,
+    solidText: $colorGraphiteGrey,
+    solidBorder: $colorSmokeGreyDarkest,
+    thin: $colorPebbleGrey
+);
+
+/* Extended color families: avatars and reporting */
+$colorFamilyExtended01: (
+    base: $colorExt01,
+    solid: $colorExt01Light,
+    solidText: $colorExt01Dark,
+    solidBorder: $colorExt01Light,
+    diskBorder: $colorExt01Light,
+    diskIcon: $colorExt01Dark,
+    diskSolid: $colorExt01Light,
+    thin: $colorExt01Dark
+);
+
+$colorFamilyExtended02: (
+    base: $colorExt02,
+    solid: $colorExt02Light,
+    solidText: $colorExt02Dark,
+    solidBorder: $colorExt02Light,
+    diskBorder: $colorExt02Light,
+    diskIcon: $colorExt02Dark,
+    diskSolid: $colorExt02Light,
+    thin: $colorExt02Dark
+);
+
+$colorFamilyExtended03: (
+    base: $colorExt03,
+    solid: $colorExt03Light,
+    solidText: $colorExt03Dark,
+    solidBorder: $colorExt03Light,
+    diskBorder: $colorExt03Light,
+    diskIcon: $colorExt03Dark,
+    diskSolid: $colorExt03Light,
+    thin: $colorExt03Dark
+);
+
+$colorFamilyExtended04: (
+    base: $colorExt04,
+    solid: $colorExt04Light,
+    solidText: $colorExt04Dark,
+    solidBorder: $colorExt04Light,
+    diskBorder: $colorExt04Light,
+    diskIcon: $colorExt04Dark,
+    diskSolid: $colorExt04Light,
+    thin: $colorExt04Dark
+);
+
+$colorFamilyExtended05: (
+    base: $colorExt05,
+    solid: $colorExt05Light,
+    solidText: $colorExt05Dark,
+    solidBorder: $colorExt05Light,
+    diskBorder: $colorExt05Light,
+    diskIcon: $colorExt05Dark,
+    diskSolid: $colorExt05Light,
+    thin: $colorExt05Dark
+);
+
+$colorFamilyExtended06: (
+    base: $colorExt06,
+    solid: $colorExt06Light,
+    solidText: $colorExt06Dark,
+    solidBorder: $colorExt06Light,
+    diskBorder: $colorExt06Light,
+    diskIcon: $colorExt06Dark,
+    diskSolid: $colorExt06Light,
+    thin: $colorExt06Dark
+);
+
+$colorFamilyExtended07: (
+    base: $colorExt07,
+    solid: $colorExt07Light,
+    solidText: $colorExt07Dark,
+    solidBorder: $colorExt07Light,
+    diskBorder: $colorExt07Light,
+    diskIcon: $colorExt07Dark,
+    diskSolid: $colorExt07Light,
+    thin: $colorExt07Dark
+);
+
+$colorFamilyExtended08: (
+    base: $colorExt08,
+    solid: $colorExt08Light,
+    solidText: $colorExt08Dark,
+    solidBorder: $colorExt08Light,
+    diskBorder: $colorExt08Light,
+    diskIcon: $colorExt08Dark,
+    diskSolid: $colorExt08Light,
+    thin: $colorExt08Dark
+);
+
+$colorFamilyExtended09: (
+    base: $colorExt09,
+    solid: $colorExt09Light,
+    solidText: $colorExt09Dark,
+    solidBorder: $colorExt09Light,
+    diskBorder: $colorExt09Light,
+    diskIcon: $colorExt09Dark,
+    diskSolid: $colorExt09Light,
+    thin: $colorExt09Dark
+);
+
+$colorFamilyExtended10: (
+    base: $colorExt10,
+    solid: $colorExt10Light,
+    solidText: $colorExt10Dark,
+    solidBorder: $colorExt10Light,
+    diskBorder: $colorExt10Light,
+    diskIcon: $colorExt10Dark,
+    diskSolid: $colorExt10Light,
+    thin: $colorExt10Dark
+);
+
+/* Secondary messaging: viewed */
+$colorView: $colorFamilyExtended09;
+
+/* Secondary messaging: viewed email */
+$colorViewedEmail: $colorFamilyExtended01;
+
+/* Secondary messaging: favorited */
+$colorFavorite: $colorFamilyExtended08;
+
+/* Secondary messaging: unfavorited */
+$colorUnfavorite: $colorIconDefault;
+
+/* Secondary messaging: increased */
+$colorIncrease: $colorSuccess;
+
+/* Secondary messaging: decreased */
+$colorDecrease: $colorDanger;
+
+/* Divergent palette: worst */
+$colorPerformanceWorst: (
+    base: $colorBrickRedDark,
+    diskBorder: $colorBrickRedLighter,
+    diskIcon: $colorBrickRedDarkest,
+    diskSolid: $colorBrickRedLighter,
+);
+
+/* Divergent palette: poor */
+$colorPerformancePoor: $colorDanger;
+
+/* Divergent palette: okay */
+$colorPerformanceOkay: $colorIconDefault;
+
+/* Divergent palette: good */
+$colorPerformanceGood: $colorSuccess;
+
+/* Divergent palette: best */
+$colorPerformanceBest: (
+    base: $colorMeadowGreenDark,
+    diskBorder: $colorMeadowGreenLighter,
+    diskIcon: $colorMeadowGreenDarkest,
+    diskSolid: $colorMeadowGreenLighter,
+);

@@ -1,0 +1,209 @@
+/*doc
+---
+title: Select Field
+name: 2select
+category: Form Fields
+author: Tony Q
+---
+
+Select fields allow a user to choose one of several options.
+
+When implementing a select field, be sure to wrap the select element in a <code>.pa-selectWrapper</code> element.
+This is needed so that the trigger arrow appears correctly.
+
+```html_example
+<div class="pa-formUnit">
+    <label class="pa-fieldLabel" for="2select_field">Choose One</label>
+    <div class="pa-selectWrapper">
+        <select id="2select_field">
+            <option value="option1">Option 1</option>
+            <option value="option2">Option 2</option>
+            <option value="option3">Option 3</option>
+            <option value="option4">Option 4</option>
+        </select>
+    </div>
+    <span class="pa-fieldHelper">Optional select field helper text.</span>
+</div>
+```
+CSS class                             |  Usage
+------------------------------------- | ------------------------------------------------------------------------------------------
+`.pa-formUnit select`                 | Basic select field.
+`.pa-formUnit select > option`        | Individual option. Select fields usually have multiple options.
+*/
+
+// Select Field
+
+@mixin paGenerateSelectTriggerDimensions($cellSize, $classString) {
+    #{$classString} .pa-formUnit %selectTrigger {
+        border-radius: map-get($cellSize, borderRadius);
+        border-width: map-get($cellSize, borderWidth);
+        height: map-get($cellSize, height);
+        line-height: map-get($cellSize, lineHeight);
+        padding-bottom: map-get($cellSize, vertPadding);
+        padding-left: map-get($cellSize, formFieldSidePadding);
+        padding-right: map-get($cellSize, formFieldSidePadding) + map-get($cellSize, triggerIconWidth) + map-get($cellSize, iconSideMargin);
+        padding-top: map-get($cellSize, vertPadding);
+    }
+
+    #{$classString} .pa-formUnit %selectTriggerIcon {
+        right: map-get($cellSize, formFieldSidePadding) - ((map-get($cellSize, systemIconWidth) - map-get($cellSize, triggerIconWidth)) / 2);
+        top: (map-get($cellSize, height) - map-get($cellSize, systemIconHeight)) / 2;
+    }
+
+}
+
+@mixin paGenerateSelectPlaceholders() {
+
+    .pa-mediumForm .pa-formUnit %selectTrigger,
+    .pa-formUnit %selectTrigger {
+        @include textBody1;
+    }
+
+    .pa-smallForm .pa-formUnit %selectTrigger {
+        @include textLabel1;
+    }
+
+    .pa-largeForm .pa-formUnit %selectTrigger {
+        @include textHeadline2;
+    }
+
+    @include paGenerateSelectTriggerDimensions($mediumCell, "");
+    @include paGenerateSelectTriggerDimensions($mediumCell, ".pa-mediumForm");
+    @include paGenerateSelectTriggerDimensions($smallCell, ".pa-smallForm");
+    @include paGenerateSelectTriggerDimensions($largeCell, ".pa-largeForm");
+
+    .pa-formUnit %selectTrigger {
+        background-color: $colorFieldBackground;
+        border-color: $colorFieldBorder;
+        border-style: solid;
+        color: $colorFieldText;
+        cursor: pointer;
+        display: block;
+        width: 100%;
+    }
+
+    /* fix focus treatment */
+    .pa-formUnit %selectTrigger:focus {
+        border-color: $colorFieldBorderFocus;
+        outline: 0;
+    }
+
+    .pa-formUnit.pa-hasError %selectTrigger,
+    .pa-formUnit.pa-hasError %selectTrigger:focus {
+        border-color: $colorFieldBorderError;
+        color: $colorFieldTextError;
+    }
+
+    .pa-formUnit.pa-disabled.pa-hasError %selectTrigger,
+    .pa-formUnit.pa-disabled %selectTrigger,
+    .pa-formUnit.pa-hasError %selectTrigger:disabled,
+    .pa-formUnit %selectTrigger:disabled {
+        background-color: $colorFieldBackgroundDisabled;
+        border-color: $colorFieldBorderDisabled;
+        color: $colorFieldTextDisabled;
+        cursor: default;
+        pointer-events: none;
+        user-select: none;
+    }
+
+    .pa-formUnit %selectTriggerIcon {
+        color: $colorFieldText;
+        pointer-events: none;
+        position: absolute;
+        //z-index: map-get($paZIndex, fieldIcon);
+    }
+
+    .pa-mediumForm .pa-formUnit %selectTriggerIcon,
+    .pa-formUnit %selectTriggerIcon {
+       // @include mediumCellTriggerIcon;
+    }
+
+    .pa-smallForm .pa-formUnit %selectTriggerIcon {
+      //  @include smallCellTriggerIcon;
+    }
+
+    .pa-largeForm .pa-formUnit %selectTriggerIcon {
+       // @include largeCellTriggerIcon;
+    }
+
+    .pa-formUnit.pa-hasError %selectTriggerIcon {
+        color: $colorFieldTextError;
+    }
+
+    .pa-formUnit.pa-disabled %selectTriggerIcon {
+        color: $colorFieldTextDisabled;
+    }
+
+}
+
+@mixin paGenerateSelectOptionDimensions($cellSize, $classString) {
+    #{$classString} .pa-formUnit select option {
+        @include textBody1;
+        line-height: map-get($cellSize, lineHeight);
+        padding-bottom: map-get($cellSize, vertPadding);
+        padding-left: map-get($cellSize, formFieldSidePadding);
+        padding-right: map-get($cellSize, formFieldSidePadding);
+        padding-top: map-get($cellSize, vertPadding);
+    }
+}
+
+@mixin paSelect() {
+
+    @include paGenerateSelectPlaceholders();
+
+    .pa-formUnit .pa-selectWrapper {
+        font-family: 'proxima_novaregular';
+        display: block;
+        position: relative;
+        width: 100%;
+        //z-index: map-get($paZIndex, selectField);
+    }
+
+    .pa-formUnit .pa-selectWrapper:after {
+        @extend %selectTriggerIcon;
+    }
+
+    .pa-formUnit select {
+        @extend %selectTrigger;
+    }
+
+    /* remove the native trigger arrow */
+    .pa-formUnit select {
+        -webkit-appearance: none;
+        -moz-appearance: none;
+        appearance: none;
+        color: black;
+        font-family: 'proxima_novaregular';
+    }
+
+    .pa-formUnit select::-ms-expand {
+        display: none;
+    }
+    /* end native arrow section */
+
+    /* firefox hack for focus state... this is awful */
+    .pa-formUnit select:-moz-focusring {
+        color: transparent;
+        text-shadow: 0 0 0 $colorFieldText;
+    }
+
+    /* ie/edge css for focus state */
+    .pa-formUnit select:focus::-ms-value {
+        background-color: $colorFieldBackground;
+        color: $colorFieldText;
+    }
+    /* end focus section */
+
+
+    @include paGenerateSelectOptionDimensions($mediumCell, "");
+    @include paGenerateSelectOptionDimensions($mediumCell, ".pa-mediumForm");
+    @include paGenerateSelectOptionDimensions($smallCell, ".pa-smallForm");
+    @include paGenerateSelectOptionDimensions($largeCell, ".pa-largeForm");
+
+    /* clean up a bit for firefox and IE */
+    .pa-formUnit select option:focus,
+    .pa-formUnit select:focus option,
+    .pa-formUnit select option {
+        background-color: $colorFieldBackground;
+    }
+}

@@ -1,0 +1,406 @@
+/*doc
+---
+title: Field Icons
+name: fieldicons
+category: Form Fields
+author: Tony Q
+---
+
+We can put icons in form fields.
+
+```html_example
+<div class="pa-formUnit">
+    <label class="pa-fieldLabel" for="fieldicons1">Field with icon</label>
+    <div class="pa-fieldWrapper">
+        <span class="pa-fieldIcon iconSearch"></span>
+        <input
+            type="text"
+            id="fieldicons1">
+        </input>
+    </div>
+</div>
+<div class="pa-formRow">
+    <div class="pa-formUnit">
+        <label class="pa-fieldLabel" for="fieldicons2">Icon Field in Row</label>
+        <div class="pa-fieldWrapper">
+            <span class="pa-fieldIcon iconAttention"></span>
+            <input
+                type="text"
+                id="fieldicons2">
+            </input>
+        </div>
+    </div>
+    <div class="pa-formUnit">
+        <label class="pa-fieldLabel" for="fieldicons3">Icon Field in Row</label>
+        <div class="pa-fieldWrapper">
+            <span class="pa-fieldIcon iconBell"></span>
+            <input
+                type="text"
+                placeholder="Placeholder Text"
+                id="fieldicons3">
+            </input>
+        </div>
+    </div>
+    <div class="pa-formUnit">
+        <label class="pa-fieldLabel" for="fieldicons4">Icon Field in Row</label>
+        <div class="pa-fieldWrapper">
+            <span class="pa-fieldIcon iconHeart"></span>
+            <div class="pa-selectWrapper">
+                <select id="fieldicons4">
+                    <option value='1' selected>Option 1</option>
+                    <option value='2'>Option 2</option>
+                    <option value='3'>Option 3</option>
+                </select>
+        </div>
+    </div>
+</div>
+```
+CSS class                             |  Usage
+------------------------------------- | ------------------------------------------------------------------------------------------
+`.pa-formUnit .pa-fieldWrapper`       | Field wrappers allow for advanced form field options, like icons and addons.
+`.pa-fieldSystemIcon`                 | A single system icon that will appear inside the form field.
+`.pa-fieldIcon`                       | Deprecated. A single legacy icon that will appear inside the form field.
+*/
+
+/*doc
+---
+title: Field Addons
+name: fieldaddons
+category: Form Layout
+author: Tony Q
+---
+
+We can use addons to connect content to form fields.
+
+```html_example
+<div class="pa-formUnit">
+    <label class="pa-fieldLabel" for="addons1">Simple Addon</label>
+    <div class="pa-fieldWrapper">
+        <span class="pa-addon">$</span>
+        <input
+            type="text"
+            id="addons1">
+        </input>
+    </div>
+</div>
+<div class="pa-formUnit">
+    <label class="pa-fieldLabel" for="addons2">Addon Button</label>
+    <div class="pa-fieldWrapper">
+        <input
+            type="text"
+            placeholder="Search"
+            id="addons2">
+        </input>
+        <button class="pa-addon pa-button pa-iconOnly iconSearch"></button>
+    </div>
+</div>
+<div class="pa-formUnit">
+    <label class="pa-fieldLabel" for="addons1">Select field as addon</label>
+    <div class="pa-fieldWrapper">
+        <span class="pa-fieldIcon iconUser"></span>
+        <input
+            type="text"
+            placeholder="Username"
+            id="addons3">
+        </input>
+        <div class="pa-selectWrapper pa-addon">
+            <select id="addons3-1">
+                <option value="zillowgroup" selected>@zillowgroup.com</option>
+                <option value="zillow">@zillow.com</option>
+                <option value="trulia">@trulia.com</option>
+                <option value="dotloop">@dotloop.com</option>
+                <option value="hotpads">@hotpads.com</option>
+            </select>
+        </div>
+    </div>
+</div>
+```
+CSS class                             |  Usage
+------------------------------------- | ------------------------------------------------------------------------------------------
+`.pa-formUnit .pa-fieldWrapper`       | Field wrappers allow for advanced form field options, like icons and addons.
+`.pa-addon`                           | Add this class to a span, button, or select wrapper that attaches to a text field.
+*/
+
+// Form Field Wrappers
+
+@mixin paGenerateFieldIconDimensions($cellSize, $classString) {
+
+    #{$classString} .pa-fieldWrapper .pa-fieldIcon {
+        height: map-get($cellSize, iconHeight);
+        left: map-get($cellSize, formFieldSidePadding) + map-get($cellSize, borderWidth);
+        line-height: map-get($cellSize, iconHeight);
+        top: ((map-get($cellSize, height) - map-get($cellSize, iconHeight)) / 2);
+        width: map-get($cellSize, iconWidth);
+    }
+
+    #{$classString} .pa-fieldWrapper .pa-fieldSystemIcon {
+        height: map-get($cellSize, systemIconHeight);
+        left: map-get($cellSize, formFieldSidePadding) + map-get($cellSize, borderWidth) - map-get($cellSize, systemIconNudge);
+        line-height: map-get($cellSize, systemIconHeight);
+        top: ((map-get($cellSize, height) - map-get($cellSize, systemIconHeight)) / 2);
+        width: map-get($cellSize, systemIconWidth);
+    }
+
+    #{$classString} .pa-formUnit .pa-fieldWrapper .pa-fieldIcon + input[type="password"],
+    #{$classString} .pa-formUnit .pa-fieldWrapper .pa-fieldSystemIcon + input[type="password"],
+    #{$classString} .pa-formUnit .pa-fieldWrapper .pa-fieldIcon + .pa-selectWrapper select,
+    #{$classString} .pa-formUnit .pa-fieldWrapper .pa-fieldSystemIcon + .pa-selectWrapper select,
+    #{$classString} .pa-formUnit .pa-fieldWrapper .pa-fieldIcon + input[type="text"],
+    #{$classString} .pa-formUnit .pa-fieldWrapper .pa-fieldSystemIcon + input[type="text"] {
+        border-bottom-left-radius: map-get($cellSize, borderRadius);
+        border-top-left-radius: map-get($cellSize, borderRadius);
+        padding-left: map-get($cellSize, formFieldSidePadding) + map-get($cellSize, iconWidth) + map-get($cellSize, iconSideMargin);
+    }
+
+    #{$classString} .pa-fieldWrapper *:not(:last-child) {
+        margin-right: map-get($cellSize, borderWidth) * -1;
+    }
+
+}
+
+@mixin paFieldWrapper() {
+
+    .pa-formUnit .pa-fieldWrapper {
+
+        color: black;
+        font-family: 'proxima_novaregular';
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        position: relative;
+        width: 100%;
+    }
+
+    .pa-fieldWrapper input[type="text"],
+    .pa-fieldWrapper input[type="password"],
+    .pa-fieldWrapper .pa-selectWrapper,
+    .pa-fieldWrapper .pa-button {
+        flex: 0 1 100%;
+    }
+
+    /* addresses firefox flexbox width bug on input fields */
+    .pa-fieldWrapper input[type="text"],
+    .pa-fieldWrapper input[type="password"] {
+        min-width: 1px;
+    }
+
+    .pa-formUnit.pa-hasError .pa-fieldWrapper input[type="text"],
+    .pa-formUnit.pa-hasError .pa-fieldWrapper input[type="password"],
+    .pa-formUnit.pa-hasError .pa-fieldWrapper pa-selectWrapper,
+    .pa-fieldWrapper input[type="text"]:focus,
+    .pa-fieldWrapper input[type="password"]:focus,
+    .pa-fieldWrapper .pa-button:focus {
+        position: relative;
+        //z-index: map-get($paZIndex, focus);
+    }
+
+    .pa-fieldWrapper .pa-fieldIcon,
+    .pa-fieldWrapper .pa-fieldSystemIcon {
+        pointer-events: none;
+        position: absolute;
+       // z-index: map-get($paZIndex, fieldIcon);
+    }
+
+    .pa-fieldWrapper .pa-fieldIcon:before,
+    .pa-fieldWrapper .pa-fieldSystemIcon:before {
+        color: map-get($colorIconDefault, thin);
+    }
+
+    .pa-formUnit.pa-disabled .pa-fieldWrapper .pa-fieldIcon:before,
+    .pa-formUnit.pa-disabled .pa-fieldWrapper .pa-fieldSystemIcon:before {
+        color: $colorFieldTextDisabled;
+    }
+
+    .pa-formUnit .pa-fieldWrapper .pa-selectWrapper:not(:first-child) select,
+    .pa-formUnit .pa-fieldWrapper *:not(:first-child) {
+        border-bottom-left-radius: 0;
+        border-top-left-radius: 0;
+    }
+
+    .pa-formUnit .pa-fieldWrapper .pa-selectWrapper:not(:last-child) select,
+    .pa-formUnit .pa-fieldWrapper .pa-clearableField:not(:nth-last-child(2)),
+    .pa-formUnit .pa-fieldWrapper *:not(:last-child):not(.pa-clearableField) {
+        border-bottom-right-radius: 0;
+        border-top-right-radius: 0;
+    }
+
+    /* medium form scale (default) */
+
+    .pa-mediumForm .pa-fieldWrapper .pa-fieldIcon:before,
+    .pa-fieldWrapper .pa-fieldIcon:before {
+        @include mediumCellIcon;
+    }
+
+    .pa-mediumForm .pa-fieldWrapper .pa-fieldSystemIcon:before,
+    .pa-fieldWrapper .pa-fieldSystemIcon:before {
+        @include mediumCellSystemIcon;
+    }
+
+    /* small form scale */
+
+    .pa-smallForm .pa-fieldWrapper .pa-fieldIcon:before {
+        @include smallCellIcon;
+    }
+
+    .pa-smallForm .pa-fieldWrapper .pa-fieldSystemIcon:before {
+        @include smallCellSystemIcon;
+    }
+
+    /* large form scale */
+
+    .pa-largeForm .pa-fieldWrapper .pa-fieldIcon:before {
+        @include largeCellIcon;
+    }
+
+    .pa-largeForm .pa-fieldWrapper .pa-fieldSystemIcon:before {
+        @include largeCellSystemIcon;
+    }
+
+    @include paGenerateFieldIconDimensions($mediumCell, '');
+    @include paGenerateFieldIconDimensions($mediumCell, '.pa-mediumForm');
+    @include paGenerateFieldIconDimensions($smallCell, '.pa-smallForm');
+    @include paGenerateFieldIconDimensions($largeCell, '.pa-largeForm');
+}
+
+@mixin paGenerateFieldAddonDimensions($cellSize, $classString) {
+
+    #{$classString} .pa-addon:not(.pa-selectWrapper):not(.pa-button) {
+        border-width: map-get($cellSize, borderWidth);
+        height: map-get($cellSize, height);
+        line-height: map-get($cellSize, lineHeight);
+        min-width: map-get($cellSize, height);
+        padding: map-get($cellSize, vertPadding) map-get($cellSize, formFieldSidePadding);
+    }
+
+    #{$classString} .pa-addon:not(.pa-selectWrapper):not(.pa-button):first-child {
+        border-bottom-left-radius: map-get($cellSize, borderRadius);
+        border-top-left-radius: map-get($cellSize, borderRadius);
+    }
+
+    #{$classString} .pa-addon:not(.pa-selectWrapper):not(.pa-button):last-child {
+        border-bottom-right-radius: map-get($cellSize, borderRadius);
+        border-top-right-radius: map-get($cellSize, borderRadius);
+    }
+
+    #{$classString} .pa-addon.pa-button {
+        min-width: map-get($cellSize, height);
+    }
+}
+
+@mixin paFieldAddon() {
+
+    .pa-fieldWrapper .pa-addon {
+        display: block;
+        flex: 0 0 auto;
+        margin-bottom: 0;
+    }
+
+    .pa-fieldWrapper .pa-addon.pa-selectWrapper {
+        width: auto;
+    }
+
+    .pa-addon:not(.pa-selectWrapper):not(.pa-button) {
+        background-color: $colorFieldBackground;
+        border-color: $colorFieldBorder;
+        border-style: solid;
+        color: $colorFieldText;
+        text-align: center;
+    }
+
+    .pa-formUnit.pa-disabled .pa-addon:not(.pa-selectWrapper):not(.pa-button) {
+        background-color: $colorFieldBackgroundDisabled;
+        border-color: $colorFieldBorderDisabled;
+        color: $colorFieldTextDisabled;
+    }
+
+    .pa-addon.pa-button {
+        box-shadow: none;
+        width: auto;
+    }
+
+    .pa-addon.pa-button:not(:last-child) {
+        margin-bottom: 0;
+    }
+
+    .pa-addon.pa-button:focus {
+        box-shadow: $focusShadow;
+    }
+
+    .pa-addon:not(.pa-selectWrapper):not(.pa-button) {
+        background-color: $colorFieldBackground;
+        white-space: nowrap;
+    }
+
+    /* medium form scale (default) */
+
+    .pa-mediumForm .pa-addon:not(.pa-selectWrapper):not(.pa-button),
+    .pa-addon:not(.pa-selectWrapper):not(.pa-button) {
+        @include textBody1;
+    }
+
+    /* small form scale */
+
+    .pa-smallForm .pa-addon:not(.pa-selectWrapper):not(.pa-button) {
+        @include textLabel1;
+    }
+
+    /* large form scale */
+
+    .pa-largeForm .pa-addon:not(.pa-selectWrapper):not(.pa-button) {
+        @include textHeadline2;
+    }
+
+    @include paGenerateFieldAddonDimensions($mediumCell, '');
+    @include paGenerateFieldAddonDimensions($mediumCell, '.pa-mediumForm');
+    @include paGenerateFieldAddonDimensions($smallCell, '.pa-smallForm');
+    @include paGenerateFieldAddonDimensions($largeCell, '.pa-largeForm');
+
+}
+
+// "Clear field" buttons (ex: used by Autosuggest)
+
+@mixin paGenerateClearFieldSize($cellSize, $classString) {
+
+    #{$classString} .pa-fieldWrapper { // Need this specificity to override .pa-fieldWrapper .pa-button
+
+        .pa-clearButton {
+            margin-left: -(map-get($cellSize, height)); // Width of button.
+            width: map-get($cellSize, height); // Override mobile styles (width: 100%)
+        }
+
+        input.pa-clearableField {  // Added 'input' to increase specificity
+            border-bottom-right-radius: map-get($cellSize, borderRadius);
+            border-top-right-radius: map-get($cellSize, borderRadius);
+            padding-right: map-get($cellSize, height); // Width of clear button. Prevents clear button from overlapping input text
+        }
+
+    }
+}
+
+@mixin paClearField() {
+
+    .pa-fieldWrapper .pa-clearButton {
+        @extend .pa-systemIconOnly;
+        @extend .pa-systemIcon-close;
+        background-color: transparent;
+        border-color: transparent;
+        box-shadow: none;
+        flex: 0 0 auto;
+        visibility: hidden; // Start off hidden. Display using .pa-clearButton-visible once text has been entered.
+        z-index: map-get($paZIndex, fieldIcon); // Keeps button visible when text field has focus
+
+        &:focus {
+            box-shadow: $buttonFocusShadow;
+        }
+
+        &.pa-clearButton-visible {
+            visibility: visible;
+        }
+    }
+
+    @include paGenerateClearFieldSize($mediumCell, "");
+    @include paGenerateClearFieldSize($mediumCell, ".pa-mediumForm");
+    @include paGenerateClearFieldSize($smallCell, ".pa-smallForm");
+    @include paGenerateClearFieldSize($largeCell, ".pa-largeForm");
+
+}

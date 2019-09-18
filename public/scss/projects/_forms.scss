@@ -1,0 +1,110 @@
+
+/* form fields */
+
+$colorFieldBackground: $colorCottonWhite;
+$colorFieldBorder: $colorPebbleGrey;
+$colorFieldLabel: $colorGraphiteGrey;
+$colorFieldText: $textDefaultColor;
+$colorFieldHelperText: $colorGraphiteGrey;
+$colorFieldPlaceholderText: $colorGraphiteGrey;
+$colorFieldCheckbox: map-get($colorActive, base);
+$colorFieldCheckboxFilledBackground: $colorFieldBackground;
+$colorFieldCheckboxFilledBorder: $colorFieldBorder;
+$colorFieldBorderError: map-get($colorError, base);
+$colorFieldLabelError: $colorFieldLabel;
+$colorFieldTextError: $colorFieldText;
+$colorFieldHelperTextError: map-get($colorError, thin);
+$colorFieldCheckboxError: map-get($colorError, base);
+$colorFieldCheckboxFilledBackgroundError: $colorFieldBackground;
+$colorFieldCheckboxFilledBorderError: $colorFieldBorderError;
+$colorFieldBorderFocus: map-get($colorActive, base);
+$colorFieldBackgroundDisabled: $colorSmokeGreyDark;
+$colorFieldBorderDisabled: $colorPebbleGrey;
+$colorFieldTextDisabled: $colorPebbleGrey;
+$colorFieldPlaceholderDisabled: $colorPebbleGrey;
+$colorFieldCheckboxLabelDisabled: $colorGraphiteGrey;
+
+$focusShadow: 0 0 2px 2px transparentize(map-get($colorActive, light), 0);
+
+$mediumFormBaseWidth: $layoutTextMaxWidth;
+$smallFormBaseWidth: $layoutTextMaxWidth;
+$largeFormBaseWidth: $layoutTextMaxWidth;
+
+$mediumFormWidths: (
+    xxlarge: $mediumFormBaseWidth,
+    xlarge: (($mediumFormBaseWidth - (map-get($mediumCell, sideMarginRelated) * 3)) * (0.75)) + (map-get($mediumCell, sideMarginRelated) * 2),
+    large: ($mediumFormBaseWidth - (map-get($mediumCell, sideMarginRelated))) / 2,
+    medium: ($mediumFormBaseWidth - (map-get($mediumCell, sideMarginRelated) * 3)) / 4,
+    smallmedium: ($mediumFormBaseWidth - (map-get($mediumCell, sideMarginRelated) * 5)) / 6,
+    small: ($mediumFormBaseWidth - (map-get($mediumCell, sideMarginRelated) * 7)) / 8
+);
+
+$smallFormWidths: (
+    xxlarge: $smallFormBaseWidth,
+    xlarge: (($smallFormBaseWidth - (map-get($smallCell, sideMarginRelated) * 3)) * (0.75)) + (map-get($smallCell, sideMarginRelated) * 2),
+    large: ($smallFormBaseWidth - (map-get($smallCell, sideMarginRelated))) / 2,
+    medium: ($smallFormBaseWidth - (map-get($smallCell, sideMarginRelated) * 3)) / 4,
+    smallmedium: ($smallFormBaseWidth - (map-get($smallCell, sideMarginRelated) * 5)) / 6,
+    small: ($smallFormBaseWidth - (map-get($smallCell, sideMarginRelated) * 7)) / 8
+);
+
+$largeFormWidths: (
+    xxlarge: $largeFormBaseWidth,
+    xlarge: (($largeFormBaseWidth - (map-get($largeCell, sideMarginRelated) * 3)) * (0.75)) + (map-get($largeCell, sideMarginRelated) * 2),
+    large: ($largeFormBaseWidth - (map-get($largeCell, sideMarginRelated))) / 2,
+    medium: ($largeFormBaseWidth - (map-get($largeCell, sideMarginRelated) * 3)) / 4,
+    smallmedium: ($largeFormBaseWidth - (map-get($largeCell, sideMarginRelated) * 5)) / 6,
+    small: ($largeFormBaseWidth - (map-get($largeCell, sideMarginRelated) * 7)) / 8
+);
+
+/* buttons */
+
+$colorButtonDefault: (
+    base: $colorSmokeGrey,
+    solid: $colorSmokeGrey,
+    solidText: $colorCharcoalBlack,
+    solidBorder: $colorPebbleGrey,
+    solidShadow: transparentize($colorTrueBlack, 0.9),
+    solidHover: $colorSmokeGreyDark,
+    solidHoverText: $colorCharcoalBlack,
+    solidHoverBorder: $colorPebbleGrey,
+    solidActive: $colorSmokeGreyDarkest,
+    solidActiveText: $colorCharcoalBlack,
+    solidActiveBorder: $colorPebbleGrey,
+    solidDisabled: $colorSmokeGrey,
+    solidDisabledText: $colorPebbleGrey,
+    solidDisabledBorder: $colorPebbleGrey
+);
+
+$buttonShadowMeasurements: 0 1px 2px 0;
+$buttonFocusShadow: $focusShadow;
+
+/* switches and range inputs */
+
+$rangeTrackHeight: 4px;
+$rangeTrackBorderRadius: ($rangeTrackHeight / 2);
+
+$switchInternalSpace: 2px;
+
+/* this is not the greatest way of determining this number... */
+$mediumSwitchWidth: (map-get($mediumCell, height) * 2) - (map-get($mediumCell, iconWidth) / 2);
+$smallSwitchWidth: (map-get($smallCell, height) * 2) - (map-get($smallCell, iconWidth) / 2);
+$largeSwitchWidth: (map-get($largeCell, height) * 2) - (map-get($largeCell, iconWidth) / 2);
+
+$switchTextWidth: 24px;
+
+$colorSwitchBackground: $colorSmokeGreyDark;
+$colorSwitchBorder: $colorFieldBorder;
+$colorSwitchControlBackground: $colorCottonWhite;
+$colorSwitchControlBorder: $colorFieldBorder;
+
+$colorSwitchActiveBackground: map-get($colorActive, solid);
+$colorSwitchActiveBorder: map-get($colorActive, thin);
+$colorSwitchActiveControlBackground: $colorCottonWhite;
+$colorSwitchActiveControlBorder: map-get($colorActive, thin);
+
+$colorSwitchDisabledBackground: $colorSmokeGreyDark;
+$colorSwitchDisabledBorder: $colorSmokeGreyDark;
+$colorSwitchDisabledControlBackground: $colorCottonWhite;
+$colorSwitchDisabledControlBorder: $colorCottonWhite;
+$colorSwitchDisabledLabel: $colorSmokeGreyDarkest;
