@@ -107,6 +107,33 @@ body {
       font-size: 0.9rem;
       line-height: 1.4; } }
 
+@media (max-width: 600px) {
+  .page-container {
+    margin: 0 1rem; }
+    .page-container h1 {
+      font-size: 2.8rem; }
+    .page-container h2 {
+      font-size: 1.8rem;
+      line-height: 3rem; }
+    .page-container h3 {
+      font-size: 1.6rem; }
+    .page-container h4 {
+      font-size: 1.2rem;
+      line-height: 1.8; }
+    .page-container h5 {
+      font-size: 0.9rem;
+      line-height: 1.5; }
+    .page-container h6 {
+      font-size: 0.9rem;
+      line-height: 1.8; }
+    .page-container p {
+      font-weight: 400;
+      font-size: 1.1rem;
+      line-height: 1.8; }
+    .page-container ul {
+      font-size: 0.9rem;
+      line-height: 1.4; } }
+
 .footer-container {
   height: 6rem; }
 
@@ -250,6 +277,10 @@ body {
     margin: 0 3rem 1rem 3rem; }
   .nav-item a {
     font-size: 1rem; } }
+
+@media (max-width: 600px) {
+  .header-container {
+    margin: 0 1rem 1rem 1rem; } }
 
 /* Page specific styling */
 .project-block-container {
@@ -409,7 +440,8 @@ body {
   .profile-details-container {
     display: block; }
     .profile-details-container .profile-details-left {
-      margin-bottom: 2rem; }
+      margin-bottom: 2rem;
+      min-height: 25rem; }
     .profile-details-container .profile-details-right .profile-detail-item-container {
       padding: 2rem 2rem 0 2rem; } }
 
