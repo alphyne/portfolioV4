@@ -209,13 +209,12 @@ body {
     display: block;
     font-family: 'Montserrat', sans-serif;
     font-weight: 300;
-    /*font-size: 1.6rem;*/
     line-height: 1.7;
     color: white;
     text-align: center;
     padding-top: 3rem;
-    padding-left: 1.6vw;
-    padding-right: 1vw;
+    padding-left: 1.25rem;
+    padding-right: 1rem;
     text-decoration: none;
     font-size: 1.2rem;
     text-decoration: none; }
@@ -280,7 +279,10 @@ body {
 
 @media (max-width: 600px) {
   .header-container {
-    margin: 0 1rem 1rem 1rem; } }
+    margin: 0 1rem 1rem 1rem; }
+  .nav-item a {
+    padding-left: 0.5rem;
+    padding-right: 0.5rem; } }
 
 /* Page specific styling */
 .project-block-container {
@@ -436,18 +438,42 @@ body {
       .profile-details-container .profile-details-right .profile-detail-item h4 {
         padding-bottom: 0.5rem; }
 
-@media (max-width: 1024px) {
+@media (max-width: 1020px) {
+  .about-container .hero-container {
+    padding: 0; }
   .profile-details-container {
-    display: block; }
+    display: block;
+    margin: 4rem 0 4vw 0; }
     .profile-details-container .profile-details-left {
       margin-bottom: 2rem;
-      min-height: 25rem; }
-    .profile-details-container .profile-details-right .profile-detail-item-container {
-      padding: 2rem 2rem 0 2rem; } }
+      min-height: 35rem; }
+    .profile-details-container .profile-details-right {
+      padding: 0; }
+      .profile-details-container .profile-details-right .profile-detail-item-container {
+        margin: 2rem;
+        padding: 2rem 2rem 0 2rem; } }
 
 @media (max-width: 840px) {
   .about-container .hero-container {
-    padding: 0; } }
+    padding: 0; }
+  .profile-details-container .profile-details-left {
+    min-height: 35rem; } }
+
+@media (max-width: 600px) {
+  .boxed-content-about {
+    padding: 1rem;
+    margin: 0 1rem 1rem 1rem; }
+  .profile-details-container .profile-details-right .profile-detail-item-container {
+    padding: 1rem 1rem 0 1rem;
+    margin: 1rem; }
+  .profile-details-container .profile-details-right .profile-detail-item {
+    padding-bottom: 1.5rem; } }
+
+@media (max-width: 400px) {
+  .boxed-content-about h2 {
+    font-size: 1.4rem; }
+  .profile-details-container .profile-details-right .profile-detail-item-container {
+    display: block; } }
 
 .project-container h2, .project-container h3 {
   width: 35vw; }
@@ -455,15 +481,6 @@ body {
 .project-container .media-container {
   padding: 0 2rem;
   margin-bottom: 3rem; }
-  .project-container .media-container .image-caption {
-    border-right: 1px solid white;
-    text-align: right;
-    padding-right: 2rem; }
-    .project-container .media-container .image-caption p {
-      font-size: 1rem;
-      font-weight: 400;
-      font-style: italic;
-      margin-bottom: 0; }
 
 .project-container .boxed-content {
   border: 1px solid white;
@@ -495,6 +512,16 @@ body {
 .project-container .underline {
   text-decoration: underline; }
 
+.image-caption {
+  border-right: 1px solid white;
+  text-align: right;
+  padding-right: 2rem; }
+  .image-caption p {
+    font-size: 1rem;
+    font-weight: 400;
+    font-style: italic;
+    margin-bottom: 0; }
+
 .project-landing {
   background-color: #a0a0a0;
   width: 100%;
@@ -504,11 +531,6 @@ body {
 
 .project-name {
   margin-top: 4rem; }
-  .project-name span {
-    font-family: 'Montserrat', sans-serif;
-    font-weight: 300;
-    font-size: 1.5rem;
-    color: #474747; }
 
 .project-description, .text-right {
   margin-left: 30vw; }
@@ -598,6 +620,9 @@ body {
   .project-nav-container h4 {
     text-align: center; }
 
+.mobile {
+  display: none; }
+
 @media (max-width: 1024px) {
   .project-details-container {
     display: block;
@@ -616,8 +641,17 @@ body {
   .project-container .boxed-content {
     padding: 2rem 2rem 0 2rem;
     margin: 0 1rem 1rem 1rem; }
+  .section-container .image-row-container {
+    display: block; }
+    .section-container .image-row-container .image-container {
+      padding: 2rem 2rem 0 2rem;
+      margin: 0 1rem 1rem 1rem; }
   .text-right {
-    margin-left: 0; } }
+    margin-left: 0; }
+  .mobile {
+    display: block; }
+  .desktop {
+    display: none; } }
 
 @media (max-width: 840px) {
   .project-container .media-container {
@@ -626,14 +660,31 @@ body {
 @media (max-width: 600px) {
   .project-container {
     padding: 0; }
+    .project-container .boxed-content {
+      padding: 1rem 1rem 0 1rem;
+      margin: 0 1rem 1rem 1rem; }
   .project-landing {
     height: 20rem; }
-  .project-details-container .project-details-left .project-detail-item {
-    padding-right: 0; }
+  .image-caption {
+    margin-bottom: 1rem; }
+    .image-caption p {
+      font-size: 0.9rem; }
+  .project-details-container .project-details-left {
+    padding: 1rem 1rem 0 1rem; }
+    .project-details-container .project-details-left .project-detail-item {
+      padding-right: 0; }
   .project-details-container .project-details-right {
-    display: block; }
+    display: block;
+    padding: 1rem 1rem 0 1rem; }
     .project-details-container .project-details-right .project-detail-item {
-      padding-right: 0; } }
+      padding-right: 0; }
+  .section-container * {
+    margin-bottom: 1rem; }
+  .section-container .image-row-container {
+    display: block; }
+    .section-container .image-row-container .image-container {
+      padding: 1rem 1rem 0 1rem;
+      margin: 0 1rem 1rem 1rem; } }
 
 .landing-container {
   height: 100vh; }

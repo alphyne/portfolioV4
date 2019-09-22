@@ -227,9 +227,8 @@
 										{{/if}}
 
 										{{#if image}}
-
 											<div class="image-row-container">
-												<div class="image-caption-container">
+												<div class="image-caption-container desktop">
 													<div class="image-caption">
 														{{#if caption}}
 															<p>{{{caption-content}}}</p>
@@ -239,7 +238,13 @@
 												
 												<div class="image-container">
 													<img src="{{src}}">
+													<div class="image-caption mobile">
+													{{#if caption}}
+														<p>{{{caption-content}}}</p>
+													{{/if}}
+													</div>
 												</div>
+
 											</div>
 										{{/if}}
 

@@ -51,14 +51,12 @@
         display: block;
         font-family: 'Montserrat', sans-serif;
         font-weight: 300;
-        /*font-size: 1.6rem;*/
         line-height: 1.7;
-        //letter-spacing: 2px;
         color: white;
         text-align: center;
         padding-top: 3rem;
-        padding-left: 1.6vw;
-        padding-right: 1vw;
+        padding-left: 1.25rem;
+        padding-right: 1rem;
         text-decoration: none;
 
 
@@ -181,6 +179,13 @@
 @media(max-width: 600px){
   .header-container {
     margin: 0 1rem 1rem 1rem;
+  }
+
+  .nav-item {
+    a {
+      padding-left: 0.5rem;
+      padding-right: 0.5rem;
+    }
   }
 }
 

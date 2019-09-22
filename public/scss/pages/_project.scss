@@ -9,19 +9,6 @@
         padding: 0 2rem;
         margin-bottom: 3rem;
 
-        .image-caption {
-            border-right: 1px solid white;
-            text-align: right;
-            padding-right: 2rem;
-
-            p {
-                font-size: 1rem;
-                font-weight: 400;
-                font-style: italic;
-                margin-bottom: 0;
-            }
-        }
-
     }
 
     .boxed-content {
@@ -64,8 +51,19 @@
     .underline {
         text-decoration: underline;
     }
+}
 
+.image-caption {
+    border-right: 1px solid white;
+    text-align: right;
+    padding-right: 2rem;
 
+    p {
+        font-size: 1rem;
+        font-weight: 400;
+        font-style: italic;
+        margin-bottom: 0;
+    }
 }
 
 .project-landing {
@@ -80,13 +78,6 @@
 .project-name {
 
     margin-top: 4rem;
-
-    span {
-        font-family: 'Montserrat', sans-serif;
-        font-weight: 300;
-        font-size: 1.5rem;
-        color: #474747;
-    }
 }
 
 .project-description, .text-right {
@@ -243,6 +234,10 @@
     }
 }
 
+.mobile {
+    display: none;
+}
+
 @media(max-width: 1600px){
     .project-description, .text-right {
         //margin-left: 20vw;
@@ -265,7 +260,6 @@
 
         .project-details-right {
             padding: 2rem 2rem 0 2rem;
- 
         }
     }
 
@@ -293,8 +287,27 @@
         }
     }
 
+    .section-container {
+        .image-row-container {
+            display: block;
+
+            .image-container {
+                padding: 2rem 2rem 0 2rem;
+                margin: 0 1rem 1rem 1rem;
+            }
+        }
+    }
+
     .text-right {
         margin-left: 0;
+    }
+
+    .mobile {
+        display: block;
+    }
+
+    .desktop {
+        display: none;
     }
 }
 
@@ -315,15 +328,29 @@
 
         padding: 0;
 
+        .boxed-content {
+            padding: 1rem 1rem 0 1rem;
+            margin: 0 1rem 1rem 1rem;
+        }
     }
 
     .project-landing {
         height: 20rem;
     }
+
+    .image-caption {
+        margin-bottom: 1rem;
+
+        p {
+            font-size: 0.9rem;
+        }
+    }
     
     .project-details-container {
 
         .project-details-left {
+
+            padding: 1rem 1rem 0 1rem;
             
             .project-detail-item {
                 padding-right: 0;
@@ -332,15 +359,28 @@
 
         .project-details-right {
             display: block;
+            padding: 1rem 1rem 0 1rem;
 
 
             .project-detail-item {
                 padding-right: 0;
             }
         }
-
+    }
+    .section-container * {
+        margin-bottom: 1rem;
     }
 
+    .section-container {
 
+        .image-row-container {
+            display: block;
+
+            .image-container {
+                padding: 1rem 1rem 0 1rem;
+                margin: 0 1rem 1rem 1rem;
+            }
+        }
+    }
 
 }
