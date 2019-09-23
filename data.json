@@ -132,7 +132,9 @@
 						{
 							"column-one": true,
 							"embed": true,
-							"src": "https://datepicker-prototype.herokuapp.com/"
+							"src": "https://datepicker-prototype.herokuapp.com/",
+							"caption": true,
+							"caption-content": "Select the date field labeled 'Due date' to see the datepicker in action!"
 						},
 						{
 							"column-two": true,

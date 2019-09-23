@@ -183,10 +183,16 @@
 									
 										{{/if}}
 
+										<!-- Embedded web page -->
 										{{#if embed}}
 											<div class="media-container">
 												<div class="boxed-content">
 													<iframe class="embedded-page" src={{{src}}}></iframe>
+													{{#if caption}}
+													<div class="image-caption">
+														<p class="caption">{{{caption-content}}}</p>
+													</div>
+													{{/if}}
 												</div>
 											</div>
 										{{/if}}
