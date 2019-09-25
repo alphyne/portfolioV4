@@ -176,9 +176,14 @@
     .greeting-container {
         margin-top: 6rem;
     }
+
+    .landing-greeting {
+        margin-top: 9rem;
+    }
 }
 
 @media(max-height: 500px) {
+
     .landing-container {
         height: 100%;
         margin-bottom: 4rem;
