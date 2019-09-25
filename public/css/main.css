@@ -783,9 +783,11 @@ body {
 
 @media (max-width: 600px) {
   .greeting-container {
-    margin-top: 6rem; }
+    margin-top: 6rem; } }
+
+@media (max-width: 400px) {
   .landing-greeting {
-    margin-top: 9rem; } }
+    margin-top: 6rem; } }
 
 @media (max-height: 500px) {
   .landing-container {
