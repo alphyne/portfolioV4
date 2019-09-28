@@ -51,15 +51,20 @@
 					"sections": [
 						{
 							"column-two": true,
-							"subheader": true,
-							"title": "Premier Agent Experience Language",
 							"text": true,
 							"content": "Zillow Premier Agent’s design system, Premier Agent Experience Language (PAXL), was founded to support the platform’s ongoing evolution. PAXL provides designers and engineers the foundation they need to deliver new product features quickly, while also delivering a consistent UX and brand experience to Premier Agent’s users."
 						},
 						{
 							"column-two": true,
 							"text": true,
-							"content": "I had the opportunity to design and engineer a new datepicker component for PAXL’s reusable UI library."
+							"content": "I had the opportunity to design and engineer a new datepicker component for PAXL’s reusable UI library. Click the interactive prototype below to try it out!"
+						},
+						{
+							"column-one": true,
+							"embed": true,
+							"src": "https://datepicker-prototype.herokuapp.com/",
+							"caption": true,
+							"caption-content": "Click the date field labeled 'Due date' to see the datepicker in action!"
 						},
 						{
 							"column-two": true,
@@ -120,21 +125,21 @@
 							"subheader": true,
 							"title": "Exploration Sample",
 							"image": true,
-							"src": "images/zillow-group/datepicker-exploration.png"
+							"src": "images/zillow-group/datepicker-exploration.jpg"
 						},
 						{
 							"column-two": true,
 							"subheader": true,
 							"text": true,
 							"title": "Prototyping",
-							"content": "To further test the datepicker’s design, I developed an in-context front-end prototype. Building the datepicker into a page on the Premier Agent app allowed me to conduct user testing on the component’s micro-interactions and ensure that it followed PAXL’s visual guidelines. Try the datepicker prototype out below!"
+							"content": "To further test the datepicker’s design, I developed an in-context front-end prototype. Building the datepicker into a page on the Premier Agent app allowed me to conduct user testing on the component’s micro-interactions, ensure that it followed PAXL’s visual guidelines, and incorporate patterns from PAXL's existing CSS library."
 						},
 						{
 							"column-one": true,
-							"embed": true,
-							"src": "https://datepicker-prototype.herokuapp.com/",
+							"image": true,
+							"src": "images/zillow-group/datepicker-incontext.png",
 							"caption": true,
-							"caption-content": "Select the date field labeled 'Due date' to see the datepicker in action!"
+							"caption-content": "Datepicker component in 'Tasks' page on the Premier Agent app."
 						},
 						{
 							"column-two": true,
@@ -161,6 +166,11 @@
 							"column-two": true,
 							"text": true,
 							"content": "Datepickers minimize human error by providing users the option to select a date using a calendar widget. This visual aid decreases the cognitive load required to input a date, thus streamlining this process and greatly improving Premier Agent’s UX."
+						},
+						{
+							"column-two": true,
+							"text": true,
+							"content": "From an internal perspective, my addition of the datepicker component to PAXL also speeds up UI implementation for engineers and establishes consistency for designers."
 						}
 					]
 				},
@@ -171,6 +181,13 @@
 							"column-two": true,
 							"text": true,
 							"content": "I was also the design lead on a project exploring an early desktop newsfeed experience for Premier Agent. The newsfeed’s objective was to be a touchpoint where agents can read real estate articles, keep up with product updates, and learn tips on sales and maintaining customer relationships so they can be successful with Zillow Premier Agent."
+						},
+						{
+							"column-one": true,
+							"image": true,
+							"src": "images/zillow-group/newsfeed-hifi-previews.png",
+							"caption": true,
+							"caption-content": "Final proposal for desktop newsfeed design exploration."
 						},
 						{
 							"column-two": true,
@@ -213,13 +230,6 @@
 							"title": "High Fidelity Mock-Ups",
 							"text": true,
 							"content": "When discussing the newsfeed’s business goals with product managers we concluded that the newsfeed’s purpose will shift as Premier Agent develops. Since its content strategy will become more clear in the future, the newsfeed’s structure should be straightforward for the feature’s first implementation. As a result, I chose to focus my explorations on the fundamental components of a newsfeed and strayed away from complex grid layouts."
-						},
-						{
-							"column-one": true,
-							"image": true,
-							"src": "images/zillow-group/newsfeed-hifi-previews.png",
-							"caption": true,
-							"caption-content": "Exploration of article previews with side nav bar layout."
 						},
 						{
 							"column-one": true,
@@ -305,8 +315,12 @@
 			],
 			"info-block-2": [
 				{
-					"title": "Design + Dev Tools",
-					"content": "Sketch, React, HTML, CSS, Javascript"
+					"title": "Design Tools",
+					"content": "Sketch, InVision"
+				},
+				{
+					"title": "Dev Tools",
+					"content": "HTML, CSS, Javascript, React.js"
 				},
 				{
 					"title": "Team",
@@ -315,13 +329,19 @@
 				{
 					"title": "Date",
 					"content": "Apr - Jun 2018 (10 weeks)"
-				},
-				{
-					"title": "Resources",
-					"content": "<a href=\"https://vimeo.com/312224432\">Demo video</a></a>"
 				}
 			],
 			"blocks": [
+				{
+					"header": "Demo Video",
+					"sections": [
+						{
+							"column-one": true,
+							"video": true,
+							"content": "<div style=\"padding:56.25% 0 0 0;position:relative;\"><iframe src=\"https://player.vimeo.com/video/312224432?byline=0&portrait=0\" style=\"position:absolute;top:0;left:0;width:100%;height:100%;\" frameborder=\"0\" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe></div><script src=\"https://player.vimeo.com/api/player.js\"></script>"
+						}
+					]
+				},
 				{
 					"header": "Problem",
 					"sections": [
@@ -375,7 +395,7 @@
 							"image": true,
 							"src": "images/burow/storyboards.gif",
 							"caption": true,
-							"caption-content": "Second storyboard by Joel."
+							"caption-content": "First storyboard by me. Second storyboard by Joel."
 						},
 						{
 							"subheader": true,
@@ -441,9 +461,14 @@
 							"src": "images/burow/moodboard.png"
 						},
 						{
-							"column-one": true,
+							"column-two": true,
 							"subheader": true,
 							"title": "Style Guide",
+							"text": true,
+							"content": "As the primary visual designer, I created color and typography standards for my team. The objective of this style guide was to encompass Burow's brand, a warm and approachable housing application, while also easing development by setting visual guidelines for us to reference."
+						},
+						{
+							"column-one": true,
 							"image": true,
 							"image-2": true,
 							"image-3": true,
@@ -461,16 +486,6 @@
 							"src-2": "images/burow/illustration.png",
 							"caption": true,
 							"caption-content": "Illustrations made by Emily. Concept created together."
-						}
-					]
-				},
-				{
-					"header": "Final Build + Demo",
-					"sections": [
-						{
-							"column-one": true,
-							"video": true,
-							"content": "<div style=\"padding:56.25% 0 0 0;position:relative;\"><iframe src=\"https://player.vimeo.com/video/312224432?byline=0&portrait=0\" style=\"position:absolute;top:0;left:0;width:100%;height:100%;\" frameborder=\"0\" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe></div><script src=\"https://player.vimeo.com/api/player.js\"></script>"
 						}
 					]
 				},

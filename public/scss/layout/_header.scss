@@ -67,7 +67,8 @@
     }
 
     .active {
-        text-decoration: line-through;
+        //border-bottom: 1px white solid;
+        color: #888;
     }
 }
 
