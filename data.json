@@ -12,7 +12,7 @@
             "next": true,
             "next-project": "<a href=\"/burow\">Burow</a>",
             "previous-and-next": false,
-            "background-color": "#001751",
+            "background-color": "#011a5b",
             "type": "Internship",
             "tags": "UX Engineering &mdash; Design Systems",
             "description": "<a href='https://www.zillowgroup.com'>Zillow Group</a> is the internet’s leading real estate marketplace. In addition to helping people browse house listings easily, Zillow Group provides real estate agents the opportunity to connect with potential homebuyers through their online real estate network and customer relationship management (CRM) platform, <a href='https://premieragent.zillow.com/'>Zillow Premier Agent</a>. This past summer I joined the Premier Agent UX team as a UX Engineer Intern and was given the challenge to contribute a new component to Premier Agent’s design system, as well as design a new product page.",
@@ -48,16 +48,18 @@
 			"blocks": [
 				{
 					"header": "Datepicker Component",
+					"alt": true,
+					"background-color": "#001f70",
 					"sections": [
 						{
 							"column-two": true,
 							"text": true,
-							"content": "Zillow Premier Agent’s design system, Premier Agent Experience Language (PAXL), was founded to support the platform’s ongoing evolution. PAXL provides designers and engineers the foundation they need to deliver new product features quickly, while also delivering a consistent UX and brand experience to Premier Agent’s users."
+							"content": "Zillow Premier Agent’s design system, Premier Agent Experience Language (PAXL), was founded to support the platform’s ongoing evolution. PAXL provides designers and engineers the foundation they need to deliver new product features quickly, while also delivering a consistent UX and brand experience to Premier Agent’s users. I had the opportunity to design and engineer a new datepicker component for PAXL’s reusable UI library."
 						},
 						{
 							"column-two": true,
 							"text": true,
-							"content": "I had the opportunity to design and engineer a new datepicker component for PAXL’s reusable UI library. Click the interactive prototype below to try it out!"
+							"content": "Click the interactive prototype below to try it out!"
 						},
 						{
 							"column-one": true,
@@ -65,11 +67,14 @@
 							"src": "https://datepicker-prototype.herokuapp.com/",
 							"caption": true,
 							"caption-content": "Click the date field labeled 'Due date' to see the datepicker in action!"
-						},
+						}
+					]
+				},
+				{
+					"header": "Datepicker Audit",
+					"sections": [
 						{
 							"column-two": true,
-							"subheader": true,
-							"title": "Datepicker Audit",
 							"text": true,
 							"content": "I first conducted an audit of datepickers on Premier Agent in order to understand how they were currently being used. By examining the state of datepickers on Premier Agent, I was able to identify the component’s use cases, call out inconsistencies, and take note of any variations that need to be included."
 						},
@@ -84,11 +89,16 @@
 							"src": "images/zillow-group/datepicker-audit.png",
 							"caption": true,
 							"caption-content": "<a href=\"https://drive.google.com/file/d/1qZVWPIoKDjGwHl54j4qd7uNww7BoWyxM/view?usp=sharing\">View full size datepicker audit</a>."
-						},
+						}
+					]
+				},
+				{
+					"header": "Competitive Research",
+					"alt": true,
+					"background-color": "#001f70",
+					"sections": [
 						{
 							"column-two": true,
-							"subheader": true,
-							"title": "Competitive Research",
 							"text": true,
 							"content": "Next, I researched how other design systems were utilizing datepickers through a competitive analysis. In this analysis I compared and contrasted the various datepickers’ UI, logic, and interaction flows, as this allowed me to establish a baseline of how a datepicker should appear and function."
 						},
@@ -98,11 +108,15 @@
 							"src": "images/zillow-group/datepicker-research.png",
 							"caption": true,
 							"caption-content": "<a href=\"https://drive.google.com/file/d/1DNUlBZrrFPVXWIIXuc3wl1-XduZ7-_Cs/view?usp=sharing\">View full size datepicker competitive research</a>."
-						},
+						}
+					]
+				},
+				{
+					"header": "Design Requirements",
+					"sections": [
 						{
 							"column-two": true,
-							"subheader": true,
-							"title": "Design Requirements",
+
 							"text": true,
 							"content": "Using the combined data from the audit and competitive research, I then defined design requirements for the datepicker component in the context of Premier Agent. These design requirements outlined the datepicker component’s UI, interactions, states, and use cases from a minimum viable product (MVP) and version two (V2) perspective."
 						},
@@ -112,12 +126,17 @@
 							"title": "MVP Requirements",
 							"bullet-list": true,
 							"content": "<li>• Datepickers extend functionality of date input field</li><li>• Calendar widget appears when user clicks on date field</li><li>• User can select a day on calendar widget to input desired date</li><li>• User can still edit the text string after selecting a date</li><li>• User can type in date manually</li><li>• User can select single date in past/future</li><li>• User can go to previous/next month</li><li>• User can jump to previous/next year</li>"
-						},
+						}
+					]
+				},
+				{
+					"header": "Design Exploration",
+					"alt": true,
+					"background-color": "#001f70",
+					"sections": [
 						{
 							"column-two": true,
-							"subheader": true,
 							"text": true,
-							"title": "Design Exploration",
 							"content": "After setting the design requirements I created low and high fidelity mock-ups in order to explore possible designs. I presented my explorations through multiple ad hoc and structured reviews in order to receive feedback on the datepicker’s design. Each design review led to new iterations, which included changes such as navigation UI, color, and visual hierarchy."
 						},
 						{
@@ -126,12 +145,15 @@
 							"title": "Exploration Sample",
 							"image": true,
 							"src": "images/zillow-group/datepicker-exploration.jpg"
-						},
+						}
+					]
+				},
+				{
+					"header": "Prototyping",
+					"sections": [
 						{
 							"column-two": true,
-							"subheader": true,
 							"text": true,
-							"title": "Prototyping",
 							"content": "To further test the datepicker’s design, I developed an in-context front-end prototype. Building the datepicker into a page on the Premier Agent app allowed me to conduct user testing on the component’s micro-interactions, ensure that it followed PAXL’s visual guidelines, and incorporate patterns from PAXL's existing CSS library."
 						},
 						{
@@ -140,12 +162,17 @@
 							"src": "images/zillow-group/datepicker-incontext.png",
 							"caption": true,
 							"caption-content": "Datepicker component in 'Tasks' page on the Premier Agent app."
-						},
+						}
+					]
+				},
+				{
+					"header": "Future Iterations",
+					"alt": true,
+					"background-color": "#001f70",
+					"sections": [
 						{
 							"column-two": true,
-							"subheader": true,
 							"text": true,
-							"title": "Future Iterations",
 							"content": "As Premier Agent evolves, new use cases for the datepicker component may emerge. Anticipating these possible contexts, I prepared documentation for future versions of the datepicker component. These resources include a development document, and redlines for a V2 datepicker and range datepicker."
 						},
 						{
@@ -154,12 +181,15 @@
 							"src": "images/zillow-group/datepicker-v2flow.png",
 							"caption": true,
 							"caption-content": "<a href=\"https://drive.google.com/drive/folders/1kkfFUolI3DEarQqxOJ2HNv_rnxaFmuy-?usp=sharing\">View V2 datepicker resources</a>."
-						},
+						}
+					]
+				},
+				{
+					"header": "Impact",
+					"sections": [
 						{
 							"column-two": true,
-							"subheader": true,
 							"text": true,
-							"title": "Impact",
 							"content": "With the addition of the datepicker component, the amount of time needed to populate a date field has <span class='bold'>improved by 600%</span> (decreasing from 6 seconds to 1 second)."
 						},
 						{
@@ -176,6 +206,8 @@
 				},
 				{
 					"header": "Agent Newsfeed",
+					"alt": true,
+					"background-color": "#333333",
 					"sections": [
 						{
 							"column-two": true,
@@ -188,12 +220,17 @@
 							"src": "images/zillow-group/newsfeed-hifi-previews.png",
 							"caption": true,
 							"caption-content": "Final proposal for desktop newsfeed design exploration."
-						},
+						}
+					]
+				},
+				{
+					"header": "Competitive Research",
+					"alt": true,
+					"background-color": "#424242",
+					"sections": [
 						{
 							"column-two": true,
-							"subheader": true,
 							"text": true,
-							"title": "Competitive Research",
 							"content": "To gain a better perspective on different layouts, I conducted research on various newsfeeds and product blogs. For the scope of this project, I concentrated on card layout and content hierarchy."
 						},
 						{
@@ -202,12 +239,17 @@
 							"src": "images/zillow-group/newsfeed-research.png",
 							"caption": true,
 							"caption-content": "<a href=\"https://drive.google.com/open?id=18K1W4Eg0RS0QfMl6NeqvKRrcpLM1l0TN\">View newsfeed research via Mural</a>."
-						},
+						}
+					]
+				},
+				{
+					"header": "Design Exploration",
+					"alt": true,
+					"background-color": "#333333",
+					"sections": [
 						{
 							"column-two": true,
-							"subheader": true,
 							"text": true,
-							"title": "Design Exploration",
 							"content": "I began exploring newsfeed designs by building off my research and incorporating patterns that already existed in the PAXL design system. Reusing PAXL components in the newsfeed minimizes the feature’s development time, however I made sure that the design system did not constrain my exploration."
 						},
 						{
@@ -223,33 +265,52 @@
 							"src": "images/zillow-group/newsfeed-lofi.png",
 							"caption": true,
 							"caption-content": "Low fidelity exploration of article preview cards."
-						},
+						}
+					]
+				},
+				{
+					"header": "High Fidelity Mock-Ups",
+					"alt": true,
+					"background-color": "#424242",
+					"sections": [
 						{
 							"column-two": true,
-							"subheader": true,
-							"title": "High Fidelity Mock-Ups",
 							"text": true,
 							"content": "When discussing the newsfeed’s business goals with product managers we concluded that the newsfeed’s purpose will shift as Premier Agent develops. Since its content strategy will become more clear in the future, the newsfeed’s structure should be straightforward for the feature’s first implementation. As a result, I chose to focus my explorations on the fundamental components of a newsfeed and strayed away from complex grid layouts."
+						},
+						{
+							"column-one": true,
+							"subheader": true,
+							"title": "Newsfeed Landing Exploration",
+							"image": true,
+							"src": "images/zillow-group/newsfeed-hifi-landing-exploration.png",
+							"caption": true,
+							"caption-content": "Single content block layout with side nav-bar."
 						},
 						{
 							"column-one": true,
 							"image": true,
 							"src": "images/zillow-group/newsfeed-hifi-states.png",
 							"caption": true,
-							"caption-content": "Exploration of 'New content' and 'Read before' card states with simple layout."
+							"caption-content": "'New content' and 'Read before' card states with simple layout."
 						},
 						{
 							"column-one": true,
 							"image": true,
 							"src": "images/zillow-group/newsfeed-hifi-detailed-view.png",
 							"caption": true,
-							"caption-content": "Exploration of detailed article view with simple layout."
-						},
+							"caption-content": "Single article view with simple layout."
+						}
+					]
+				},
+				{
+					"header": "Impact",
+					"alt": true,
+					"background-color": "#333333",
+					"sections": [
 						{
 							"column-two": true,
-							"subheader": true,
 							"text": true,
-							"title": "Impact",
 							"content": "The newsfeed feature will give agents a space to learn more about the Premier Agent program and empower them with the information they need in order to succeed. Introducing the newsfeed within the desktop experience increases article visibility, ultimately improving user engagement on the Premier Agent CRM."
 						}
 					]
@@ -334,11 +395,13 @@
 			"blocks": [
 				{
 					"header": "Demo Video",
+					"alt": true,
+					"background-color": "#465c50",
 					"sections": [
 						{
 							"column-one": true,
 							"video": true,
-							"content": "<div style=\"padding:56.25% 0 0 0;position:relative;\"><iframe src=\"https://player.vimeo.com/video/312224432?byline=0&portrait=0\" style=\"position:absolute;top:0;left:0;width:100%;height:100%;\" frameborder=\"0\" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe></div><script src=\"https://player.vimeo.com/api/player.js\"></script>"
+							"content": "<div class='video-container' style=\"padding:56.25% 0 0 0;position:relative;\"><iframe src=\"https://player.vimeo.com/video/312224432?byline=0&portrait=0\" style=\"position:absolute;top:0;left:0;width:100%;height:100%;\" frameborder=\"0\" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe></div><script src=\"https://player.vimeo.com/api/player.js\"></script>"
 						}
 					]
 				},
@@ -359,6 +422,8 @@
 				},
 				{
 					"header": "Solution",
+					"alt": true,
+					"background-color": "#465c50",
 					"sections": [
 						{
 							"column-two": true,
@@ -413,6 +478,8 @@
 				},
 				{
 					"header": "Prototyping",
+					"alt": true,
+					"background-color": "#465c50",
 					"sections": [
 						{
 							"column-two": true,
@@ -491,6 +558,8 @@
 				},
 				{
 					"header": "Takeaways",
+					"alt": true,
+					"background-color": "#465c50",
 					"sections": [
 						{
 							"column-two": true,
@@ -555,6 +624,8 @@
 			"blocks": [
 				{
 					"header": "Problem",
+					"alt": true,
+					"background-color": "#5e6657",
 					"sections": [
 						{
 							"column-two": true,
@@ -587,6 +658,8 @@
 				},
 				{
 					"header": "User Journey",
+					"alt": true,
+					"background-color": "#5e6657",
 					"sections": [
 						{
 							"column-two": true,
@@ -621,6 +694,8 @@
 				},
 				{
 					"header": "Takeaways",
+					"alt": true,
+					"background-color": "#5e6657",
 					"sections": [
 						{
 							"column-two": true,
@@ -686,6 +761,8 @@
 			"blocks": [
 				{
 					"header": "Design Brief",
+					"alt": true,
+					"background-color": "#580f12",
 					"sections": [
 						{
 							"column-two": true,
@@ -731,6 +808,8 @@
 				},
 				{
 					"header": "Solution",
+					"alt": true,
+					"background-color": "#580f12",
 					"sections": [
 						{
 							"column-two": true,
@@ -761,6 +840,8 @@
 				},
 				{
 					"header": "Personas",
+					"alt": true,
+					"background-color": "#580f12",
 					"sections": [
 						{
 							"column-two": true,
@@ -791,6 +872,8 @@
 				},
 				{
 					"header": "Wireframing",
+					"alt": true,
+					"background-color": "#580f12",
 					"sections": [
 						{
 							"column-two": true,
@@ -821,6 +904,8 @@
 				},
 				{
 					"header": "Development",
+					"alt": true,
+					"background-color": "#580f12",
 					"sections": [
 						{
 							"column-two": true,
@@ -846,6 +931,8 @@
 				},
 				{
 					"header": "Final Prototype",
+					"alt": true,
+					"background-color": "#580f12",
 					"sections": [
 						{
 							"column-one": true,
@@ -864,7 +951,7 @@
 						{
 							"column-two": true,
 							"text": true,
-							"content": "This project was my first in-depth experience with the UX engineering process. From needfinding with user interviews to iterating on prototypes, I was able to participate in all stages of the design process."
+							"content": "This project was my first in-depth experience with the UX design process. From needfinding with user interviews to iterating on prototypes, I was able to participate in all stages of the design process."
 						},
 						{
 							"column-two": true,

@@ -1,25 +1,120 @@
+.page-container-project {
+    margin: 0;
+}
+
+.project-landing {
+    background-color: #a0a0a0;
+    width: 100%;
+    height: 35rem;
+    background-position-x: center;
+    background-size: cover;
+}
+
+.project-name {
+    margin-top: 4rem;
+}
+
+.project-description, .text-right {
+    margin-left: 30vw;
+}
+
+.project-description {
+    margin-bottom: 4rem;
+}
+
+.project-details-container {
+    display: grid;
+    grid-template-columns: 26vw auto;
+    grid-column-gap: 2vw;
+
+    margin: 2vw 2vw 4vw 2vw;
+
+    .project-details-left {
+        border: 1px solid white;
+        padding: 2vw 0 0 2vw;
+        display: grid;
+        grid-template-columns: auto;
+      
+        .project-detail-item {
+            padding-right: 2rem;
+            padding-bottom: 2rem;
+    
+            h4 {
+                padding-bottom: 0.5rem;
+            }
+        }
+    }
+
+    .project-details-right {
+        border: 1px solid white;
+        padding: 2vw 2vw 0 2vw;
+        display: grid;
+        grid-template-columns: auto auto;
+      
+        .project-detail-item {
+            //margin-top: 3rem;
+            padding-right: 2rem;
+            padding-bottom: 2rem;
+    
+            h4 {
+                padding-bottom: 0.5rem;
+            }
+    
+      }
+    }
+}
+
+
+.block {
+
+    margin-bottom: 4rem;
+
+    h2, h3 {
+        padding-top: 2rem;
+        margin-bottom: 2rem;
+    }
+
+    img {
+        width: 100%;
+    }
+}
+
+.block-container {
+    margin: 0;
+    padding: 2rem 0;
+}
+
+.block > *, .project-intro-container > *, .project-margins {
+    padding: 0 17rem;
+}
+
+.block > *:not(:last-child) {
+    padding-bottom: 2rem;
+}
+
 .project-container {
 
     h2, h3 {
         width: 35vw;
     }
 
-
     .media-container {
         padding: 0 2rem;
         margin-bottom: 3rem;
-
     }
 
     .boxed-content {
         border: 1px solid white;
-        padding: 2rem 2rem 0 2rem;
+        padding: 2rem;
         margin: 0 2rem 2rem 2rem;
-        //text-align: center;
     }
 
-    .list {
-        text-align: left;
+    .boxed-content > *:not(:last-child) {
+        padding-bottom: 2rem;
+    }
+
+    .list > ul > *:not(:last-child) {
+        padding-bottom: 2rem;
     }
 
     .quote {
@@ -54,118 +149,16 @@
 }
 
 .image-caption {
-    border-right: 1px solid white;
+
     text-align: right;
-    padding-right: 2rem;
 
     p {
         font-size: 1rem;
         font-weight: 400;
         font-style: italic;
-        margin-bottom: 0;
-    }
-}
-
-.project-landing {
-    background-color: #a0a0a0;
-    width: 100%;
-    height: 35rem;
-    background-position-x: center;
-    //background-position-y: bottom;
-    background-size: cover;
-}
-
-.project-name {
-
-    margin-top: 4rem;
-}
-
-.project-description, .text-right {
-    
-    margin-left: 30vw;
-
-    h4 {
-        font-weight: 400;
-    }
-}
-
-.project-description {
-    margin-bottom: 4rem;
-}
-
-.project-info {
-
-    height: 100%;
-    margin-top: 5rem;
-
-    h4 {
-        margin-bottom: 0.6rem;
-    }
-}
-.project-details-container {
-
-    display: grid;
-    grid-template-columns: 26vw auto;
-    grid-column-gap: 2vw;
-
-    margin: 2vw 2vw 4vw 2vw;
-
-    .project-details-left {
-        border: 1px solid white;
-        padding: 2vw 0 0 2vw;
-    
-        display: grid;
-        grid-template-columns: auto;
-
-        //border-radius: 0.25rem;
-        
-      
-      .project-detail-item {
-        //margin-top: 3rem;
-        padding-right: 2rem;
-        padding-bottom: 2rem;
-    
-        h4 {
-            padding-bottom: 0.5rem;
-        }
-    
-      }
-    }
-
-    .project-details-right {
-        border: 1px solid white;
-        padding: 2vw 2vw 0 2vw;
-    
-        display: grid;
-        grid-template-columns: auto auto;
-        //margin: 2vw 2vw 4vw 2vw;
-
-        //border-radius: 0.25rem;
-      
-      .project-detail-item {
-        //margin-top: 3rem;
-        padding-right: 2rem;
-        padding-bottom: 2rem;
-    
-        h4 {
-            padding-bottom: 0.5rem;
-        }
-    
-      }
-    }
-}
-
-
-.block-container {
-
-    margin-bottom: 4rem;
-
-    h2, h3 {
-        margin-bottom: 2rem;
-    }
-
-    img {
-        width: 100%;
+        border-right: 1px solid white;
+        padding-bottom: 0;
+        padding-right: 1rem;
     }
 }
 
@@ -175,48 +168,46 @@
     grid-column-gap: 1.5%;
 }
 
-.section-container * {
-    margin-bottom: 2rem;
-}
-
-.section-container {
-
-    .media-container {
-        margin-bottom: 3rem;
-    }
+.section {
     
     .image-row-container{
 
         display: grid;
         grid-template-columns: 28vw auto;
         grid-column-gap: 2rem;
+        margin-bottom: 3rem;
     
         .image-caption-container {
             color: white;
             position: relative;
-        
+            margin-bottom: 2rem;
+            
     
            .image-caption {
-                border-right: 1px solid white;
+                
                 text-align: right;
-                padding-right: 2rem;
+                padding-bottom: 0;
                 position: absolute;
-                bottom: 0;
+                bottom: 1rem;
                 right: 0;
     
                 p {
+                    border-right: 1px solid white;
                     font-size: 1rem;
                     font-weight: 400;
                     font-style: italic;
                     margin-bottom: 0;
+                    padding-bottom: 0;
                 }
             }
         }
 
         .image-container {
-                border: 1px solid white;
-                padding: 2rem 2rem 0 2rem;
-                //margin: 0 2rem 2rem 2rem;
+            margin: 0;
+
+            .image-right {
+                padding: 0;
+            }
         }
     }
 }
@@ -238,11 +229,21 @@
     display: none;
 }
 
-@media(max-width: 1600px){
-    .project-description, .text-right {
-        //margin-left: 20vw;
-    }
 
+
+@media(max-width: 1600px){
+    .block > *, .project-intro-container > *, .project-margins{
+        padding: 0 9rem;
+    }
+    .page-container-project {
+        margin: 0;
+    }
+}
+
+@media(max-width: 1280px){
+    .block > *, .project-intro-container > *, .project-margins{
+        padding: 0 6rem;
+    }
 }
 
 @media(max-width: 1024px){
@@ -271,29 +272,26 @@
     .project-container {
 
         h2, h3 {
-            width: 100%;
+            width: 70vw;
         }
-
-        h3 {
-            margin-top: 4rem;
-        }
-
-
 
         .boxed-content {
-            //padding: 1.5rem 1.5rem 0 1.5rem;
-            padding: 2rem 2rem 0 2rem;
+            padding: 2rem;
             margin: 0 1rem 1rem 1rem;
         }
     }
 
-    .section-container {
+    .section {
         .image-row-container {
             display: block;
 
             .image-container {
-                padding: 2rem 2rem 0 2rem;
+                padding: 2rem;
                 margin: 0 1rem 1rem 1rem;
+
+                .image-right {
+                    padding-bottom: 2rem;
+                }
             }
         }
     }
@@ -313,6 +311,10 @@
 
 @media(max-width: 840px){
 
+    .block > *, .project-intro-container > *, .project-margins{      
+        padding: 0 3rem;
+    }
+
 
     .project-container {
         .media-container {
@@ -321,8 +323,6 @@
     }
 
     .image-caption {
-        margin-bottom: 1rem;
-
         p {
             font-size: 0.9rem;
         }
@@ -331,13 +331,20 @@
 }
 
 @media(max-width: 600px){
+
+    .block > *, .project-intro-container > *, .project-margins{       
+        padding: 0 1rem;
+    }
     
     .project-container {
-
         padding: 0;
 
+        .boxed-content > *:not(:last-child) {
+            padding-bottom: 1rem;
+        }
+
         .boxed-content {
-            padding: 1rem 1rem 0 1rem;
+            padding: 1rem;
             margin: 0 1rem 1rem 1rem;
         }
     }
@@ -367,20 +374,20 @@
             }
         }
     }
-    .section-container * {
-        margin-bottom: 1rem;
-    }
 
-    .section-container {
+    .section {
 
         .image-row-container {
             display: block;
 
             .image-container {
-                padding: 1rem 1rem 0 1rem;
+                padding: 1rem;
                 margin: 0 1rem 1rem 1rem;
+
+                .image-right {
+                    padding-bottom: 1rem;
+                }
             }
         }
     }
-
 }
