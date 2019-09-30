@@ -429,7 +429,7 @@ body {
 @media (max-width: 400px) {
   .boxed-content-about h2 {
     font-size: 1.4rem; }
-  .profile-details-container .profile-detail-item-container {
+  .profile-details-container .profile-detail-item-container-right {
     display: block; } }
 
 .page-container-project {
