@@ -1,3 +1,21 @@
+$(function() {
+  var away = "Where did you go? 😢 — Jared Suasin";
+  //var away = "Come look over here"
+  var original;
+
+  $(window).focus(function() {
+    if (original) {
+      document.title = original;
+    }
+  }).blur(function() {
+    var title = $('title').text();
+    if (title != away) {
+      original = title;
+    }
+    document.title = away;
+  });
+});
+
 $(document).ready(function (){
   $("#work").click(function (){
       $('html, body').animate({
