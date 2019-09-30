@@ -4,7 +4,7 @@
             "name": "ZILLOW GROUP",
             "title": "Zillow Group",
             "url": "zillow-group",
-            "src-cover": "../images/project-covers/zillow-new-4.png",
+            "src-cover": "../images/project-covers/zillow-cover.png",
             "position-y-project": "center",
             "position-y-home": "center",
             "position-x-home": "center",
@@ -86,7 +86,7 @@
 						{
 							"column-two": true,
 							"image": true,
-							"src": "images/zillow-group/datepicker-audit.png",
+							"src": "images/zillow-group/datepicker-audit.jpg",
 							"caption": true,
 							"caption-content": "<a href=\"https://drive.google.com/file/d/1qZVWPIoKDjGwHl54j4qd7uNww7BoWyxM/view?usp=sharing\">View full size datepicker audit</a>."
 						}
@@ -105,7 +105,7 @@
 						{
 							"column-two": true,
 							"image": true,
-							"src": "images/zillow-group/datepicker-research.png",
+							"src": "images/zillow-group/datepicker-research.jpg",
 							"caption": true,
 							"caption-content": "<a href=\"https://drive.google.com/file/d/1DNUlBZrrFPVXWIIXuc3wl1-XduZ7-_Cs/view?usp=sharing\">View full size datepicker competitive research</a>."
 						}
@@ -236,7 +236,7 @@
 						{
 							"column-two": true,
 							"image": true,
-							"src": "images/zillow-group/newsfeed-research.png",
+							"src": "images/zillow-group/newsfeed-research.jpg",
 							"caption": true,
 							"caption-content": "<a href=\"https://drive.google.com/open?id=18K1W4Eg0RS0QfMl6NeqvKRrcpLM1l0TN\">View newsfeed research via Mural</a>."
 						}
@@ -255,7 +255,7 @@
 						{
 							"column-one": true,
 							"image": true,
-							"src": "images/zillow-group/newsfeed-sketches.png",
+							"src": "images/zillow-group/newsfeed-sketches.jpg",
 							"caption": true,
 							"caption-content": "Newsfeed sketches exploring content hierarchy."
 						},
@@ -541,7 +541,7 @@
 							"image-3": true,
 							"src": "images/burow/style-guide.gif",
 							"src-2": "images/burow/aqua.png",
-							"src-3": "images/burow/karla-font-01.png"
+							"src-3": "images/burow/karla-font.png"
 						},
 						{
 							"column-one": true,
@@ -579,8 +579,7 @@
 			"name": "DEXCOM",
 			"title": "Dexcom",
 			"url": "dexcom",
-			"src-cover": "../images/project-covers/dexcom-cover-new-c-02.png",
-			"src-cover-hover": "../images/project-covers/dexcom-cover-hover.jpg",
+			"src-cover": "../images/project-covers/dexcom-cover.png",
 			"position-y-project": "center",
 			"position-y-home": "center",
 			"position-x-home": "center",
@@ -715,8 +714,7 @@
 			"name": "BLYSS",
 			"title": "Blyss",
 			"url": "blyss",
-			"src-cover": "../images/project-covers/blyss-cover-new-7.png",
-			"src-cover-hover": "../images/project-covers/blyss-cover-hover.jpg",
+			"src-cover": "../images/project-covers/blyss-cover.png",
 			"position-y-project": "center",
 			"position-y-home": "center",
 			"position-x-home": "center",
@@ -898,7 +896,7 @@
 						{
 							"column-one": true,
 							"image": true,
-							"src": "images/blyss/style-guide-02.png"
+							"src": "images/blyss/style-guide.png"
 						}
 					]
 				},
@@ -925,7 +923,7 @@
 						{
 							"column-one": true,
 							"image": true,
-							"src": "images/blyss/ab-testing-01.png"
+							"src": "images/blyss/ab-testing.png"
 						}
 					]
 				},

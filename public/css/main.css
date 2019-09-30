@@ -333,11 +333,6 @@ body {
   margin: 0 2rem 2rem 2rem;
   text-align: center; }
 
-.profile-info {
-  height: 100%; }
-  .profile-info h4 {
-    margin-bottom: 0.6rem; }
-
 .profile-details-container {
   display: grid;
   grid-template-columns: 26vw auto;
@@ -345,7 +340,7 @@ body {
   grid-row-gap: 2rem;
   margin: 4rem 2vw 4vw 2vw; }
   .profile-details-container .profile-details-image {
-    background-image: url("../images/edit2-optimized.jpg");
+    background-image: url("../images/profile-optimized.jpg");
     width: 100%;
     background-position-x: center;
     background-position-y: center;
