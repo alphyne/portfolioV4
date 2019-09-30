@@ -15,7 +15,7 @@
             "background-color": "#011a5b",
             "type": "Internship",
             "tags": "UX Engineering &mdash; Design Systems",
-            "description": "<a href='https://www.zillowgroup.com'>Zillow Group</a> is the internet’s leading real estate marketplace. In addition to helping people browse house listings easily, Zillow Group provides real estate agents the opportunity to connect with potential homebuyers through their online real estate network and customer relationship management (CRM) platform, <a href='https://premieragent.zillow.com/'>Zillow Premier Agent</a>. This past summer I joined the Premier Agent UX team as a UX Engineer Intern and was given the challenge to contribute a new component to Premier Agent’s design system, as well as design a new product page.",
+            "description": "<a target=\"_blank\" href='https://www.zillowgroup.com'>Zillow Group</a> is the internet’s leading real estate marketplace. In addition to helping people browse house listings easily, Zillow Group provides real estate agents the opportunity to connect with potential homebuyers through their online real estate network and customer relationship management (CRM) platform, <a target=\"_blank\" href='https://premieragent.zillow.com/'>Zillow Premier Agent</a>. This past summer I joined the Premier Agent UX team as a UX Engineer Intern and was given the challenge to contribute a new component to Premier Agent’s design system, as well as design a new product page.",
             "info-block-1": [
                 {
                     "title": "Title",
@@ -42,7 +42,7 @@
                 },
                 {
                     "title": "Awards",
-                    "content": "<a href=\"https://www.linkedin.com/posts/jared-suasin-982a20133_zillowgroup-zgisateamsport-activity-6571506092671676416--D_-\">Two time company-wide hack-a-thon winner</a>"
+                    "content": "<a target=\"_blank\" href=\"https://www.linkedin.com/posts/jared-suasin-982a20133_zillowgroup-zgisateamsport-activity-6571506092671676416--D_-\">Two time company-wide hack-a-thon winner</a>"
                 }
 			],
 			"blocks": [
@@ -88,7 +88,7 @@
 							"image": true,
 							"src": "images/zillow-group/datepicker-audit.jpg",
 							"caption": true,
-							"caption-content": "<a href=\"https://drive.google.com/file/d/1qZVWPIoKDjGwHl54j4qd7uNww7BoWyxM/view?usp=sharing\">View full size datepicker audit</a>."
+							"caption-content": "<a target=\"_blank\" href=\"https://drive.google.com/file/d/1qZVWPIoKDjGwHl54j4qd7uNww7BoWyxM/view?usp=sharing\">View full size datepicker audit</a>."
 						}
 					]
 				},
@@ -107,7 +107,7 @@
 							"image": true,
 							"src": "images/zillow-group/datepicker-research.jpg",
 							"caption": true,
-							"caption-content": "<a href=\"https://drive.google.com/file/d/1DNUlBZrrFPVXWIIXuc3wl1-XduZ7-_Cs/view?usp=sharing\">View full size datepicker competitive research</a>."
+							"caption-content": "<a target=\"_blank\" href=\"https://drive.google.com/file/d/1DNUlBZrrFPVXWIIXuc3wl1-XduZ7-_Cs/view?usp=sharing\">View full size datepicker competitive research</a>."
 						}
 					]
 				},
@@ -180,7 +180,7 @@
 							"image": true,
 							"src": "images/zillow-group/datepicker-v2flow.png",
 							"caption": true,
-							"caption-content": "<a href=\"https://drive.google.com/drive/folders/1kkfFUolI3DEarQqxOJ2HNv_rnxaFmuy-?usp=sharing\">View V2 datepicker resources</a>."
+							"caption-content": "<a target=\"_blank\" href=\"https://drive.google.com/drive/folders/1kkfFUolI3DEarQqxOJ2HNv_rnxaFmuy-?usp=sharing\">View V2 datepicker resources</a>."
 						}
 					]
 				},
@@ -238,7 +238,7 @@
 							"image": true,
 							"src": "images/zillow-group/newsfeed-research.jpg",
 							"caption": true,
-							"caption-content": "<a href=\"https://drive.google.com/open?id=18K1W4Eg0RS0QfMl6NeqvKRrcpLM1l0TN\">View newsfeed research via Mural</a>."
+							"caption-content": "<a target=\"_blank\" href=\"https://drive.google.com/open?id=18K1W4Eg0RS0QfMl6NeqvKRrcpLM1l0TN\">View newsfeed research via Mural</a>."
 						}
 					]
 				},
@@ -385,7 +385,7 @@
 				},
 				{
 					"title": "Team",
-					"content": "<a href=\"http://amangupta.xyz/\">Aman Gupta</a>, <a href=\"http://emilynguyen.co/\">Emily Nguyen</a>, <a href=\"https://www.linkedin.com/in/joelseq/\">Joel Sequeira</a>"
+					"content": "<a target=\"_blank\" href=\"http://amangupta.xyz/\">Aman Gupta</a>, <a target=\"_blank\" href=\"http://emilynguyen.co/\">Emily Nguyen</a>, <a target=\"_blank\" href=\"https://www.linkedin.com/in/joelseq/\">Joel Sequeira</a>"
 				},
 				{
 					"title": "Date",
@@ -591,7 +591,7 @@
 			"background-color": "#50564a",
 			"type": "Internship",
 			"tags": "UX Design &mdash; Product Design",
-			"description": "During my internship at <a href='https://www.dexcom.com'>Dexcom</a> I worked as a UX Designer Intern under the IT Services team. The goal for my job was to improve user experience through internal and external projects. This included building upon user personas, mapping the user journey in order to obtain a Dexcom device, and designing a customer-companion mobile app.",
+			"description": "During my internship at <a target=\"_blank\" href='https://www.dexcom.com'>Dexcom</a> I worked as a UX Designer Intern under the IT Services team. The goal for my job was to improve user experience through internal and external projects. This included building upon user personas, mapping the user journey in order to obtain a Dexcom device, and designing a customer-companion mobile app.",
 			"info-block-1": [
 				{
 					"title": "Title",
@@ -613,7 +613,7 @@
 				},
 				{
 					"title": "Team",
-					"content": "Justin Bascos, <a href=\"https://www.linkedin.com/in/spencer-dee-6b0345170/\">Spencer Dee</a>"
+					"content": "Justin Bascos, <a target=\"_blank\" href=\"https://www.linkedin.com/in/spencer-dee-6b0345170/\">Spencer Dee</a>"
 				},
 				{
 					"title": "Date",
@@ -744,7 +744,7 @@
 				},
 				{
 					"title": "Team",
-					"content": "<a href=\"https://bradarca.com/\">Bradley Arca</a>, Judy Chun"
+					"content": "<a target=\"_blank\" href=\"https://bradarca.com/\">Bradley Arca</a>, Judy Chun"
 				},
 
 				{
@@ -753,7 +753,7 @@
 				},
 				{
 					"title": "Resources",
-					"content": "<a href=\"https://github.com/alphyne/Blyss\">Github repo</a>"
+					"content": "<a target=\"_blank\" href=\"https://github.com/alphyne/Blyss\">Github repo</a>"
 				}
 			],
 			"blocks": [
