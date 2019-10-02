@@ -46,6 +46,9 @@
 
 .nav-item {
     float: right;
+    padding-top: 3rem;
+    padding-left: 1.25rem;
+    padding-right: 1rem;
 
     a {
         display: block;
@@ -54,28 +57,31 @@
         line-height: 1.7;
         color: white;
         text-align: center;
-        padding-top: 3rem;
-        padding-left: 1.25rem;
-        padding-right: 1rem;
+
         text-decoration: none;
 
 
-        //letter-spacing: 2px;
         font-size: 1.2rem;
         text-decoration: none;
 
+        color: white;
+        text-decoration: none;
+        //border-bottom: 0.0625rem solid white;
+        //padding-bottom: 0.25rem;
     }
 
     .active {
         //border-bottom: 1px white solid;
-        color: #888;
+        //border-bottom-color: #888;
+        //border-bottom-width: 0.25rem;
+        border-bottom: 0.125rem solid white;
     }
 }
 
 
 
 /* Strikethrough hover pen by tsimenis on Codepen */
-.notActive {
+.strike {
     span {
         position: relative;
         //display: block;
@@ -121,13 +127,6 @@
 
     margin: 0 9rem 1rem 9rem;
   }
-
-  .notActive {
-
-    span:before, span:after {
-        //height: 1px;
-    }
-  }
 }
 
 @media(max-width: 1280px){
@@ -158,10 +157,6 @@
   .nav-container {
     height: 8rem;
   }
-
-  .nav-container > li {
-      //display: none;
-  }
 }
 
 @media(max-width: 840px){
@@ -183,10 +178,8 @@
   }
 
   .nav-item {
-    a {
-      padding-left: 0.5rem;
-      padding-right: 0.5rem;
-    }
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
   }
 }
 
