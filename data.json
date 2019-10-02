@@ -211,7 +211,7 @@
 						{
 							"column-two": true,
 							"text": true,
-							"content": "Contributing to a needed UI component on a consumer-facing product was positively motivating and challenging. I look forward to applying my deeper understanding of the architecture and strengths of design systems as I continue my design career."
+							"content": "Contributing a needed UI component to a consumer-facing product was positively motivating and challenging. I look forward to applying my deeper understanding of the architecture and strengths of design systems as I continue my design career."
 						},
 						{
 							"column-two": true,
@@ -256,7 +256,7 @@
                 },
                 {
                     "title": "Skills",
-                    "content": "Product strategy, UX + feature design, research + exploration"
+                    "content": "Product design + strategy, UX + feature design, research + exploration"
                 }
             ],
             "info-block-2": [
@@ -279,14 +279,14 @@
 			],
 			"blocks": [
 				{
-					"header": "Agent Newsfeed",
+					"header": "Business Objective",
 					"alt": true,
 					"background-color": "#424242",
 					"sections": [
 						{
 							"column-two": true,
 							"text": true,
-							"content": "The objective of the Agent Newsfeed is to be a touchpoint where agents can effectively empower their real estate skills and quickly keep up with product updates so they can be successful with the Zillow Premier Agent program."
+							"content": "The Agent Newsfeed is a touchpoint where agents can effectively empower their real estate skills and quickly keep up with product updates so they can be successful with the Zillow Premier Agent program."
 						},
 						{
 							"column-one": true,
@@ -421,9 +421,9 @@
 			"position-y-home": "right",
 			"position-x-home": "center",
 			"previous": true,
-			"previous-project": "<a href=\"/zillow-group\">Zillow Group</a>",
+			"previous-project": "<a href=\"/pa-newsfeed\">Agent Newsfeed</a>",
 			"next": true,
-			"next-project": "<a href=\"/dexcom\">Dexcom</a>",
+			"next-project": "<a href=\"/blyss\">Blyss</a>",
 			"previous-and-next": true,
 			"background-color": "#3E4E46",
 			"type": "Cozy housing web app",
@@ -649,9 +649,8 @@
 			"position-y-home": "center",
 			"position-x-home": "center",
 			"previous": true,
-			"previous-project": "<a href=\"/dexcom\">Dexcom</a>",
+			"previous-project": "<a href=\"/burow\">Burow</a>",
 			"next": false,
-			"next-project": "<a href=\"/zillow-group\">Zillow Group</a>",
 			"previous-and-next": false,
 			"background-color": "#6c1114",
 			"type": "Mood-tracking mobile web app",
