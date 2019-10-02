@@ -1,21 +1,21 @@
 {
 	"projects": [
 		{
-            "name": "ZILLOW GROUP",
-            "title": "Zillow Group",
-            "url": "zillow-group",
+            "name": "Zillow Group - Datepicker UI Component",
+            "title": "Datepicker UI Component",
+            "url": "pa-datepicker",
             "src-cover": "../images/project-covers/zillow-cover.png",
             "position-y-project": "center",
             "position-y-home": "center",
             "position-x-home": "center",
             "previous": false,
             "next": true,
-            "next-project": "<a href=\"/burow\">Burow</a>",
+            "next-project": "<a href=\"/pa-newsfeed\">Agent Newsfeed</a>",
             "previous-and-next": false,
             "background-color": "#011a5b",
-            "type": "Internship",
+            "type": "Zillow Group",
             "tags": "UX Engineering &mdash; Design Systems",
-            "description": "<a target=\"_blank\" href='https://www.zillowgroup.com'>Zillow Group</a> is the internet’s leading real estate marketplace. In addition to helping people browse house listings easily, Zillow Group provides real estate agents the opportunity to connect with potential homebuyers through their online real estate network and customer relationship management (CRM) platform, <a target=\"_blank\" href='https://premieragent.zillow.com/'>Zillow Premier Agent</a>. This past summer I joined the Premier Agent UX team as a UX Engineer Intern and was given the challenge to contribute a new component to Premier Agent’s design system, as well as design a new product page.",
+            "description": "<a target=\"_blank\" href='https://premieragent.zillow.com/'>Zillow Premier Agent</a>’s design system, Premier Agent Experience Language (PAXL), was founded to support the product’s ongoing evolution. PAXL provides designers and engineers the foundation they need to deliver new product features quickly, while also delivering a consistent UX and brand experience to Premier Agent’s users. This past summer I joined the Premier Agent UX team as a UX Engineer intern and was given the challenge to contribute a new datepicker component for Premier Agent’s design system.",
             "info-block-1": [
                 {
                     "title": "Title",
@@ -23,7 +23,7 @@
                 },
                 {
                     "title": "Skills",
-                    "content": "UI component + feature design, research + exploration, front-end dev, prototyping"
+                    "content": "Design systems, interaction design, research + exploration, front-end dev, prototyping"
                 }
             ],
             "info-block-2": [
@@ -35,26 +35,25 @@
                     "title": "Dev Tools",
                     "content": "HTML, CSS (Sass), JavaScript (jQuery), GitLab"
                 },
- 
                 {
                     "title": "Date",
                     "content": "Jun - Sep 2019"
-                },
-                {
-                    "title": "Awards",
-                    "content": "<a target=\"_blank\" href=\"https://www.linkedin.com/posts/jared-suasin-982a20133_zillowgroup-zgisateamsport-activity-6571506092671676416--D_-\">Two time company-wide hack-a-thon winner</a>"
+				},
+				{
+                    "title": "Resources",
+                    "content": "<a id=\"prototype\">Prototype</a>"
                 }
 			],
 			"blocks": [
 				{
-					"header": "Datepicker Component",
+					"header": "Prototype + Documentation",
 					"alt": true,
 					"background-color": "#001f70",
 					"sections": [
 						{
 							"column-two": true,
 							"text": true,
-							"content": "Zillow Premier Agent’s design system, Premier Agent Experience Language (PAXL), was founded to support the platform’s ongoing evolution. PAXL provides designers and engineers the foundation they need to deliver new product features quickly, while also delivering a consistent UX and brand experience to Premier Agent’s users. I had the opportunity to design and engineer a new datepicker component for PAXL’s reusable UI library."
+							"content": "\"The datepicker component allows users to select a date and capture it in a text input field. Focusing on the text field triggers the display of a calendar widget inside of a dropdown panel. The calendar acts as a visual aid to help users select a date.\""
 						},
 						{
 							"column-two": true,
@@ -206,21 +205,18 @@
 				},
 				{
 					"header": "Takeaways",
+					"alt": true,
+					"background-color": "#001f70",
 					"sections": [
 						{
 							"column-two": true,
 							"text": true,
-							"content": "Contributing to needed projects on a consumer-facing product was positively motivating and challenging. Being able to work with diverse teams in UX, product, engineering, and more was beyond immersive and I enjoyed every moment of learning."
+							"content": "Contributing to a needed UI component on a consumer-facing product was positively motivating and challenging. I look forward to applying my deeper understanding of the architecture and strengths of design systems as I continue my design career."
 						},
 						{
 							"column-two": true,
 							"text": true,
-							"content": "I am excited for the datepicker to be live on the Premier Agent desktop app soon and am grateful to have been entrusted with leading the early exploration and design of the desktop newsfeed feature. "
-						},
-						{
-							"column-two": true,
-							"text": true,
-							"content": "Thank you to Kristen, Phil, Anmy, and Nikki for mentoring me and giving me the opportunity to strengthen my skills as a UX designer and engineer!"
+							"content": "I am excited for the datepicker to be live on the Premier Agent desktop app soon. Thank you to Kristen, Phil, and Anmy for mentoring me and giving me the opportunity to strengthen my skills as a UX designer and front-end developer!"
 						},
 						{
 							"column-two": true,
@@ -237,21 +233,22 @@
 			]
 		},
 		{
-            "name": "ZILLOW GROUP",
-            "title": "Zillow Group",
-            "url": "zillow-group",
-            "src-cover": "../images/project-covers/zillow-cover.png",
+            "name": "Agent Newsfeed",
+            "title": "Agent Newsfeed",
+            "url": "pa-newsfeed",
+            "src-cover": "../images/project-covers/newsfeed-cover.png",
             "position-y-project": "center",
             "position-y-home": "center",
             "position-x-home": "center",
-            "previous": false,
-            "next": true,
+            "previous": true,
+			"next": true,
+			"previous-project": "<a href=\"/pa-datepicker\">Datepicker UI Component</a>",
             "next-project": "<a href=\"/burow\">Burow</a>",
-            "previous-and-next": false,
-            "background-color": "#011a5b",
-            "type": "Internship",
-            "tags": "UX Engineering &mdash; Design Systems",
-            "description": "<a target=\"_blank\" href='https://www.zillowgroup.com'>Zillow Group</a> is the internet’s leading real estate marketplace. In addition to helping people browse house listings easily, Zillow Group provides real estate agents the opportunity to connect with potential homebuyers through their online real estate network and customer relationship management (CRM) platform, <a target=\"_blank\" href='https://premieragent.zillow.com/'>Zillow Premier Agent</a>. This past summer I joined the Premier Agent UX team as a UX Engineer Intern and was given the challenge to contribute a new component to Premier Agent’s design system, as well as design a new product page.",
+            "previous-and-next": true,
+            "background-color": "#333333",
+            "type": "Zillow Group",
+            "tags": "Product Design &mdash; UX Design",
+            "description": "<a target=\"_blank\" href='https://www.zillowgroup.com'>Zillow Group</a> is the internet’s leading real estate marketplace. In addition to helping people browse house listings easily, Zillow Group provides real estate agents the opportunity to connect with potential homebuyers through their online real estate network and customer relationship management (CRM) platform, <a target=\"_blank\" href='https://premieragent.zillow.com/'>Zillow Premier Agent</a>. During my internship, I had the opportunity to lead the design on a project exploring an early desktop newsfeed experience for the Premier Agent platform.",
             "info-block-1": [
                 {
                     "title": "Title",
@@ -259,38 +256,37 @@
                 },
                 {
                     "title": "Skills",
-                    "content": "UI component + feature design, research + exploration, front-end dev, prototyping"
+                    "content": "Product strategy, UX + feature design, research + exploration"
                 }
             ],
             "info-block-2": [
+				{
+                    "title": "Role",
+                    "content": "Design Lead"
+				},
+				{
+					"title": "Team",
+					"content": "Product, Content Strategy, Engineering, Research"
+				},
                 {
                     "title": "Design Tools",
-                    "content": "Sketch, InVision, Zeplin, Illustrator"
+                    "content": "Sketch, Zeplin, Illustrator, Mural"
                 },
-                {
-                    "title": "Dev Tools",
-                    "content": "HTML, CSS (Sass), JavaScript (jQuery), GitLab"
-                },
- 
                 {
                     "title": "Date",
-                    "content": "Jun - Sep 2019"
-                },
-                {
-                    "title": "Awards",
-                    "content": "<a target=\"_blank\" href=\"https://www.linkedin.com/posts/jared-suasin-982a20133_zillowgroup-zgisateamsport-activity-6571506092671676416--D_-\">Two time company-wide hack-a-thon winner</a>"
+                    "content": "Aug - Sep 2019"
                 }
 			],
 			"blocks": [
 				{
 					"header": "Agent Newsfeed",
 					"alt": true,
-					"background-color": "#333333",
+					"background-color": "#424242",
 					"sections": [
 						{
 							"column-two": true,
 							"text": true,
-							"content": "I was also the design lead on a project exploring an early desktop newsfeed experience for Premier Agent. The newsfeed’s objective was to be a touchpoint where agents can read real estate articles, keep up with product updates, and learn tips on sales and maintaining customer relationships so they can be successful with Zillow Premier Agent."
+							"content": "The objective of the Agent Newsfeed is to be a touchpoint where agents can effectively empower their real estate skills and quickly keep up with product updates so they can be successful with the Zillow Premier Agent program."
 						},
 						{
 							"column-one": true,
@@ -303,8 +299,6 @@
 				},
 				{
 					"header": "Competitive Research",
-					"alt": true,
-					"background-color": "#424242",
 					"sections": [
 						{
 							"column-two": true,
@@ -323,7 +317,7 @@
 				{
 					"header": "Design Exploration",
 					"alt": true,
-					"background-color": "#333333",
+					"background-color": "#424242",
 					"sections": [
 						{
 							"column-two": true,
@@ -348,8 +342,6 @@
 				},
 				{
 					"header": "High Fidelity Mock-Ups",
-					"alt": true,
-					"background-color": "#424242",
 					"sections": [
 						{
 							"column-two": true,
@@ -384,7 +376,7 @@
 				{
 					"header": "Impact",
 					"alt": true,
-					"background-color": "#333333",
+					"background-color": "#424242",
 					"sections": [
 						{
 							"column-two": true,
@@ -399,17 +391,12 @@
 						{
 							"column-two": true,
 							"text": true,
-							"content": "Contributing to needed projects on a consumer-facing product was positively motivating and challenging. Being able to work with diverse teams in UX, product, engineering, and more was beyond immersive and I enjoyed every moment of learning."
+							"content": "I am grateful to have been entrusted with pioneering the exploration of the desktop Agent Newsfeed feature. Designing the newsfeed while keeping research and business objectives in mind was a new and fun challenge. Being able to collaborate with diverse teams in UX, product, engineering, and more was beyond immersive and I enjoyed every moment of learning."
 						},
 						{
 							"column-two": true,
 							"text": true,
-							"content": "I am excited for the datepicker to be live on the Premier Agent desktop app soon and am grateful to have been entrusted with leading the early exploration and design of the desktop newsfeed feature. "
-						},
-						{
-							"column-two": true,
-							"text": true,
-							"content": "Thank you to Kristen, Phil, Anmy, and Nikki for mentoring me and giving me the opportunity to strengthen my skills as a UX designer and engineer!"
+							"content": "Thank you to my intern team for giving me the opportunity to explore my interests in product design. Your support and mentorship made my experience at Zillow Group amazing!"
 						},
 						{
 							"column-two": true,

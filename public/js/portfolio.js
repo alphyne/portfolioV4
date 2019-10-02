@@ -23,6 +23,13 @@ $(document).ready(function (){
           behavior: 'smooth'
       }, 800);
   });
+
+  $("#prototype").click(function (){
+    $('html, body').animate({
+        scrollTop: $("#embed").offset().top,
+        behavior: 'smooth'
+    }, 800);
+});
 });
 
 var animateHTML = function() {
