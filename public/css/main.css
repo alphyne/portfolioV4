@@ -10,6 +10,7 @@ body {
   .page-container h1 {
     font-weight: 500;
     font-size: 2.8rem;
+    line-height: 4rem;
     margin-bottom: 1rem; }
   .page-container h2 {
     font-weight: 500;

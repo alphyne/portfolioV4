@@ -184,12 +184,11 @@
 													<p>{{{content-2}}}</p>
 												</div>
 											</div>
-									
 										{{/if}}
 
 										<!-- Embedded web page -->
 										{{#if embed}}
-											<div class="media-container">
+											<div id="embed" class="media-container">
 												<div class="boxed-content">
 													<iframe class="embedded-page" src={{{src}}}></iframe>
 													{{#if caption}}
