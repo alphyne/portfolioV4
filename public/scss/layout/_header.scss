@@ -71,9 +71,6 @@
     }
 
     .active {
-        //border-bottom: 1px white solid;
-        //border-bottom-color: #888;
-        //border-bottom-width: 0.25rem;
         border-bottom: 0.125rem solid white;
     }
 }
@@ -81,10 +78,9 @@
 
 
 /* Strikethrough hover pen by tsimenis on Codepen */
-.strike {
+.strike, .strike-name {
     span {
         position: relative;
-        //display: block;
         cursor: pointer;
     }
 
@@ -92,19 +88,17 @@
         content: '';
         position: absolute;
         width: 0%;
-        //height: 2px;
         height: 1px;
-        top: 50%;
         margin-top: -0.5px;
         background: white;
     }
 
     span:before {
-        left: -1px;
+        left: 0px;
     }
 
     span:after {
-        right: 3px;
+        right: 0px;
         background: white;
         transition: width 0.8s cubic-bezier(0.22, 0.61, 0.36, 1);
     }
@@ -120,6 +114,18 @@
         width: 100%;
         transition: 0s;
     }
+}
+
+.strike-name {
+  span:before, span:after {
+      top: 100%;
+  }
+}
+
+.strike {
+  span:before, span:after {
+    top: 120%;
+  }
 }
 
 @media(max-width: 1600px){
@@ -167,6 +173,12 @@
   .nav-item {
     a {
       font-size: 1rem;
+    }
+  }
+
+  .strike {
+    span:before, span:after {
+      top: 125%;
     }
   }
 

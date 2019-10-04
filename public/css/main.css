@@ -166,36 +166,41 @@ body {
     border-bottom: 0.125rem solid white; }
 
 /* Strikethrough hover pen by tsimenis on Codepen */
-.strike span {
+.strike span, .strike-name span {
   position: relative;
   cursor: pointer; }
 
-.strike span:before, .strike span:after {
+.strike span:before, .strike span:after, .strike-name span:before, .strike-name span:after {
   content: '';
   position: absolute;
   width: 0%;
   height: 1px;
-  top: 50%;
   margin-top: -0.5px;
   background: white; }
 
-.strike span:before {
-  left: -1px; }
+.strike span:before, .strike-name span:before {
+  left: 0px; }
 
-.strike span:after {
-  right: 3px;
+.strike span:after, .strike-name span:after {
+  right: 0px;
   background: white;
   transition: width 0.8s cubic-bezier(0.22, 0.61, 0.36, 1); }
 
-.strike span:hover:before {
+.strike span:hover:before, .strike-name span:hover:before {
   background: white;
   width: 100%;
   transition: width 0.5s cubic-bezier(0.22, 0.61, 0.36, 1); }
 
-.strike span:hover:after {
+.strike span:hover:after, .strike-name span:hover:after {
   background: transparent;
   width: 100%;
   transition: 0s; }
+
+.strike-name span:before, .strike-name span:after {
+  top: 100%; }
+
+.strike span:before, .strike span:after {
+  top: 120%; }
 
 @media (max-width: 1600px) {
   .header-container {
@@ -219,7 +224,9 @@ body {
   .header-container {
     margin: 0 3rem 1rem 3rem; }
   .nav-item a {
-    font-size: 1rem; } }
+    font-size: 1rem; }
+  .strike span:before, .strike span:after {
+    top: 125%; } }
 
 @media (max-width: 600px) {
   .header-container {
@@ -373,14 +380,15 @@ body {
       grid-column-gap: 0.75rem; }
       .profile-details-container .profile-detail-item .profile-detail-item-content h6 {
         padding-top: 0.25rem; }
-    .profile-details-container .profile-detail-item .system-icon {
-      height: 2rem;
-      width: 2rem; }
     .profile-details-container .profile-detail-item span {
       line-height: 32px;
       vertical-align: middle; }
     .profile-details-container .profile-detail-item h4 {
       padding-bottom: 0.5rem; }
+
+.system-icon {
+  height: 2rem;
+  width: 2rem; }
 
 @media (max-width: 1020px) {
   .about-container .hero-container {
@@ -703,24 +711,30 @@ body {
   .landing-description a:hover {
     border-bottom: none; }
 
-.link-container {
+.pull-container {
   margin: 6rem 0;
-  line-height: 2rem; }
-  .link-container .link-label {
-    font-family: 'nexa_boldregular';
-    font-size: 1.3rem; }
-  .link-container a {
-    font-family: 'Montserrat', sans-serif;
-    font-weight: 400;
-    color: white;
-    font-size: 1.25rem;
-    text-decoration: none;
-    border-bottom: 0.0625rem solid white;
-    padding-bottom: 0.15rem; }
-  .link-container a:hover {
-    border-bottom: none; }
-  .link-container .under-construction {
-    text-decoration: line-through; }
+  display: grid;
+  grid-template-columns: 1.6rem auto;
+  grid-column-gap: 0.75rem; }
+  .pull-container .pull-icon-container {
+    padding-top: 0.4rem; }
+  .pull-container .pull-icon {
+    height: 1.6rem;
+    width: 1.6rem; }
+  .pull-container .pull-text {
+    line-height: 2rem; }
+    .pull-container .pull-text p {
+      font-family: 'Montserrat', sans-serif;
+      font-weight: 400;
+      font-size: 1.2rem;
+      line-height: 2rem; }
+    .pull-container .pull-text a {
+      text-decoration: none;
+      color: white;
+      border-bottom: 0.0625rem solid white;
+      padding-bottom: 0.25rem; }
+    .pull-container .pull-text a:hover {
+      border-bottom: none; }
 
 @media (max-width: 1600px) {
   .landing-container .landing-name {
@@ -729,8 +743,13 @@ body {
     font-size: 1.2rem; }
   .landing-description {
     margin-left: 40vw; }
-  .link-container .link-label, .link-container a {
-    font-size: 1.1rem; } }
+  .pull-container {
+    grid-template-columns: 1.5rem auto; }
+    .pull-container .pull-icon {
+      height: 1.5rem;
+      width: 1.5rem; }
+    .pull-container .pull-text p {
+      font-size: 1.1rem; } }
 
 @media (max-width: 1280px) {
   .landing-container .landing-name a {
@@ -738,8 +757,13 @@ body {
     border-bottom: 0; }
   .landing-container h2, .landing-container p {
     font-size: 1.2rem; }
-  .link-container .link-label, .link-container a {
-    font-size: 1rem; } }
+  .pull-container {
+    grid-template-columns: 1.4rem auto; }
+    .pull-container .pull-icon {
+      height: 1.4rem;
+      width: 1.4rem; }
+    .pull-container .pull-text p {
+      font-size: 1rem; } }
 
 @media (max-width: 1024px) {
   .landing-description {
@@ -754,8 +778,15 @@ body {
   .greeting-container {
     margin-top: 9rem;
     margin-bottom: 1rem; }
-  .link-container .link-label, .link-container a {
-    font-size: 0.9rem; } }
+  .pull-container {
+    grid-template-columns: 1.3rem auto; }
+    .pull-container .pull-icon-container {
+      padding-top: 0.5rem; }
+    .pull-container .pull-icon {
+      height: 1.3rem;
+      width: 1.3rem; }
+    .pull-container .pull-text p {
+      font-size: 0.9rem; } }
 
 @media (max-width: 600px) {
   .greeting-container {

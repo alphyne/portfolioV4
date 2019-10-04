@@ -72,11 +72,6 @@
             }
         }
 
-        .system-icon {
-            height: 2rem;
-            width: 2rem;
-        }
-        
         span {
             line-height: 32px;
             vertical-align: middle;
@@ -86,7 +81,11 @@
             padding-bottom: 0.5rem;
         }
     }
-    
+}
+
+.system-icon {
+    height: 2rem;
+    width: 2rem;
 }
 
 @media(max-width: 1600px){
@@ -155,8 +154,6 @@
             min-height: 35rem;
         }
     }
-    
-
 }
 
 @media(max-width: 600px) {
