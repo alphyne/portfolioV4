@@ -41,7 +41,7 @@
 				},
 				{
                     "title": "Resources",
-                    "content": "<a id=\"prototype\">Prototype</a>"
+                    "content": "<a id=\"prototype\">HTML Prototype</a>"
                 }
 			],
 			"blocks": [
@@ -58,7 +58,7 @@
 						{
 							"column-two": true,
 							"text": true,
-							"content": "Click the interactive prototype below to try it out!"
+							"content": "Click the interactive HTML prototype below to try it out!"
 						},
 						{
 							"column-one": true,
