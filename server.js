@@ -4,7 +4,7 @@ var path = require('path');
 var handlebars = require('express-handlebars')
 
 // Routes
-var index = require('./routes/index');
+var index = require('./routes/landing');
 var about = require('./routes/about');
 var project = require('./routes/project');
 var landing = require('./routes/landing');
