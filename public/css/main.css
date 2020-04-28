@@ -364,13 +364,11 @@ body {
   .profile-details-container .profile-detail-item-container-right {
     border: 1px solid white;
     padding: 2vw 2vw 0 2vw;
-    margin-right: 2vw;
     display: grid;
     grid-template-columns: auto auto; }
   .profile-details-container .profile-detail-item-container-left {
     border: 1px solid white;
-    padding: 2vw 2vw 0 2vw;
-    margin-left: 2vw; }
+    padding: 2vw 2vw 0 2vw; }
   .profile-details-container .profile-detail-item {
     padding-right: 1rem;
     padding-bottom: 2rem; }
@@ -670,20 +668,22 @@ body {
       .section .image-row-container .image-container .image-right {
         padding-bottom: 1rem; } }
 
-.landing-container .landing-name {
-  font-family: 'nexa_boldregular';
-  font-size: 4.2rem;
-  line-height: 4rem;
-  /*a:hover {
+.landing-container {
+  height: 100vh; }
+  .landing-container .landing-name {
+    font-family: 'nexa_boldregular';
+    font-size: 4.2rem;
+    line-height: 4rem;
+    /*a:hover {
             color: #876abb;
             border-bottom-color: white;
             transition-duration: 0.5s;
 
         }*/ }
-  .landing-container .landing-name a {
-    color: white;
-    text-decoration: none;
-    /*border-bottom: 2px solid #313131;*/ }
+    .landing-container .landing-name a {
+      color: white;
+      text-decoration: none;
+      /*border-bottom: 2px solid #313131;*/ }
 
 .landing-greeting {
   margin-top: 22vh;
