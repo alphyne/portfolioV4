@@ -1,12 +1,13 @@
 /* Header and footer styling */
 body {
-  background-color: #111;
+  background-color: #222122;
   color: white;
   min-height: 400px; }
 
 .page-container {
-  margin: 0 17rem;
-  font-family: 'Montserrat', sans-serif; }
+  margin: 0 22%;
+  font-family: 'Monserrat', sans-serif;
+  max-width: 60rem; }
   .page-container h1 {
     font-weight: 500;
     font-size: 2.8rem;
@@ -52,61 +53,65 @@ body {
 
 @media (max-width: 1600px) {
   .page-container {
-    margin: 0 9rem; } }
+    margin: 0 10%; } }
 
-@media (max-width: 1280px) {
-  .page-container {
-    margin: 0 6rem; } }
+@media (max-width: 1024px) {
+  .page-container h1 {
+    font-size: 2.4rem; }
+  .page-container h2 {
+    font-size: 1.8rem; }
+  .page-container h3 {
+    font-size: 1.4rem; }
+  .page-container h4 {
+    font-size: 1.2rem; }
+  .page-container p {
+    font-size: 1rem; } }
 
 @media (max-width: 840px) {
-  .page-container {
-    margin: 0 3rem; }
-    .page-container h1 {
-      font-size: 2.4rem; }
-    .page-container h2 {
-      font-size: 1.8rem; }
-    .page-container h3 {
-      font-size: 1.4rem; }
-    .page-container h4 {
-      font-size: 1.2rem; }
-    .page-container p {
-      font-size: 1rem; } }
+  .page-container h1 {
+    font-size: 2.4rem; }
+  .page-container h2 {
+    font-size: 1.8rem; }
+  .page-container h3 {
+    font-size: 1.4rem; }
+  .page-container h4 {
+    font-size: 1.2rem; }
+  .page-container p {
+    font-size: 1rem; } }
 
 @media (max-width: 600px) {
   .page-container {
     margin: 0 1rem; } }
 
-.footer-container {
-  height: 6rem; }
-
 #copyright {
   display: inline-block; }
   #copyright h2 {
-    font-family: 'Montserrat', sans-serif;
-    font-weight: 500;
-    font-size: 1rem;
-    margin: 0.5rem 0; }
+    font-family: 'Lora', serif;
+    font-size: 1rem; }
+    #copyright h2 span {
+      font-style: italic; }
 
 .icon-container {
   float: right; }
   .icon-container img {
     height: 2rem; }
+  .icon-container .icon-footer {
+    fill: #CCCCCC;
+    height: 1.5rem; }
   .icon-container ul li a {
     text-decoration: none;
     border-bottom: none; }
-    .icon-container ul li a img {
-      transition: all 0.6s ease-in-out; }
-  .icon-container ul li a:hover > img {
-    transition: all 0.6s ease-in-out;
-    transform: translateY(-1rem); }
+    .icon-container ul li a svg {
+      transition: all 0.2s ease-in-out; }
+  .icon-container ul li a:hover > svg {
+    transition: all 0.3s ease-in-out;
+    transform: translateY(-0.1rem);
+    fill: #83F1A4; }
   .icon-container li {
     display: inline-block;
     padding-left: 0.7rem; }
 
 @media (max-width: 840px) {
-  .footer-container {
-    text-align: center;
-    margin: 2rem 6vw 4rem 6vw; }
   .copyright {
     display: block;
     padding: 2rem 0; }
@@ -116,17 +121,16 @@ body {
     .icon-container img {
       height: 1.7rem; } }
 
-.header-container {
-  margin: 0 17rem 1rem 17rem; }
-  .header-container .navbar-container {
-    display: block; }
-  .header-container a {
-    text-decoration: none; }
-  .header-container h1 {
-    font-family: 'nexa_boldregular';
-    /*font-weight: 600;*/
-    font-size: 3rem;
-    color: white; }
+.header-container .navbar-container {
+  display: block; }
+
+.header-container a {
+  text-decoration: none; }
+
+.header-container h1 {
+  font-family: 'nexa_boldregular';
+  font-size: 3rem;
+  color: white; }
 
 .logo-container {
   margin-top: 2.5rem;
@@ -141,96 +145,42 @@ body {
 #initials {
   display: none; }
 
-/* Nav bar */
-.nav-container {
-  height: 8rem; }
-
-.nav-item {
-  float: right;
-  padding-top: 3rem;
-  padding-left: 1.25rem;
-  padding-right: 1rem; }
-  .nav-item a {
-    display: block;
-    font-family: 'Montserrat', sans-serif;
-    font-weight: 300;
-    line-height: 1.7;
-    color: white;
-    text-align: center;
-    text-decoration: none;
-    font-size: 1.2rem;
-    text-decoration: none;
-    color: white;
-    text-decoration: none; }
-  .nav-item .active {
-    border-bottom: 0.125rem solid white; }
-
-/* Strikethrough hover pen by tsimenis on Codepen */
-.strike span, .strike-name span {
-  position: relative;
-  cursor: pointer; }
-
-.strike span:before, .strike span:after, .strike-name span:before, .strike-name span:after {
-  content: '';
-  position: absolute;
-  width: 0%;
-  height: 1px;
-  margin-top: -0.5px;
-  background: white; }
-
-.strike span:before, .strike-name span:before {
-  left: 0px; }
-
-.strike span:after, .strike-name span:after {
-  right: 0px;
-  background: white;
-  transition: width 0.8s cubic-bezier(0.22, 0.61, 0.36, 1); }
-
-.strike span:hover:before, .strike-name span:hover:before {
-  background: white;
-  width: 100%;
-  transition: width 0.5s cubic-bezier(0.22, 0.61, 0.36, 1); }
-
-.strike span:hover:after, .strike-name span:hover:after {
-  background: transparent;
-  width: 100%;
-  transition: 0s; }
-
-.strike-name span:before, .strike-name span:after {
-  top: 100%; }
-
-.strike span:before, .strike span:after {
-  top: 120%; }
-
-@media (max-width: 1600px) {
-  .header-container {
-    margin: 0 9rem 1rem 9rem; } }
-
-@media (max-width: 1280px) {
-  .header-container {
-    margin: 0 6rem 1rem 6rem; }
-  .nav-item a {
-    font-size: 1.1rem; } }
+.landing-nav-container2 {
+  top: 10%;
+  position: fixed;
+  right: 22%; }
+  .landing-nav-container2 a {
+    float: left;
+    border: 1px solid white;
+    padding-bottom: 0; }
+    .landing-nav-container2 a .landing-nav-item2 {
+      display: block;
+      font-family: 'Montserrat', sans-serif;
+      font-weight: 500;
+      line-height: 1.7;
+      text-align: center;
+      text-decoration: none;
+      font-size: 1rem;
+      color: white;
+      margin: 0.5rem 1rem; }
+  .landing-nav-container2 a:hover {
+    border: 1px solid white;
+    background-color: white; }
+    .landing-nav-container2 a:hover div {
+      color: #212223;
+      font-weight: 600; }
 
 @media (max-width: 1024px) {
-  #initials {
-    display: block; }
-  #full-name {
-    display: none; }
-  .nav-container {
-    height: 8rem; } }
+  .landing-nav-container2 a .landing-nav-item2 {
+    font-size: 0.75rem; } }
 
 @media (max-width: 840px) {
-  .header-container {
-    margin: 0 3rem 1rem 3rem; }
   .nav-item a {
     font-size: 1rem; }
   .strike span:before, .strike span:after {
     top: 125%; } }
 
 @media (max-width: 600px) {
-  .header-container {
-    margin: 0 1rem 1rem 1rem; }
   .nav-item {
     padding-left: 0.5rem;
     padding-right: 0.5rem; } }
@@ -669,37 +619,50 @@ body {
         padding-bottom: 1rem; } }
 
 .landing-container {
-  height: 100vh; }
+  position: absolute;
+  top: 35%; }
   .landing-container .landing-name {
     font-family: 'nexa_boldregular';
-    font-size: 4.2rem;
-    line-height: 4rem;
-    /*a:hover {
-            color: #876abb;
-            border-bottom-color: white;
-            transition-duration: 0.5s;
+    font-size: 2.75rem;
+    line-height: 3.25rem;
+    color: #222122; }
 
-        }*/ }
-    .landing-container .landing-name a {
-      color: white;
+/* Nav bar */
+.landing-nav-container {
+  top: 5%; }
+  .landing-nav-container .landing-nav-item {
+    float: right;
+    border: 1px solid white; }
+    .landing-nav-container .landing-nav-item a {
+      display: block;
+      font-family: 'Montserrat', sans-serif;
+      font-weight: 400;
+      line-height: 1.7;
+      text-align: center;
       text-decoration: none;
-      /*border-bottom: 2px solid #313131;*/ }
+      font-size: 1rem;
+      color: white;
+      margin: 0.5rem 1rem;
+      border-bottom: none;
+      padding-bottom: 0; }
 
-.landing-greeting {
-  margin-top: 22vh;
-  margin-bottom: 1rem; }
-  .landing-greeting h2 {
-    font-family: 'Montserrat', sans-serif;
-    font-weight: 400;
-    font-size: 1.4rem; }
+.box-white {
+  background-color: white;
+  max-width: 405px;
+  padding-left: 0.5rem; }
+
+#c {
+  width: 100%;
+  height: 100vh;
+  display: block; }
 
 .landing-description {
-  margin-left: 38vw;
-  margin-top: 2rem; }
+  margin-top: 2rem;
+  max-width: 940px;
+  width: 70vw; }
   .landing-description p {
-    font-family: 'Montserrat', sans-serif;
-    font-weight: 400;
-    font-size: 1.4rem;
+    font-family: 'Lora', serif;
+    font-size: 2rem;
     line-height: 1.7; }
   .landing-description a {
     text-decoration: none;
@@ -709,95 +672,50 @@ body {
   .landing-description a:hover {
     border-bottom: none; }
 
-.landing-footer {
-  margin-top: 10rem; }
+.landing-footer-copyright {
+  position: fixed;
+  left: 22%;
+  bottom: 9%;
+  font-family: 'Lora', serif;
+  font-size: 0.75rem; }
 
-.pull-container {
-  margin: 6rem 0;
-  display: grid;
-  grid-template-columns: 1.6rem auto;
-  grid-column-gap: 0.75rem; }
-  .pull-container .pull-icon-container {
-    padding-top: 0.4rem; }
-  .pull-container .pull-icon {
-    height: 1.6rem;
-    width: 1.6rem; }
-  .pull-container .pull-text {
-    line-height: 2rem; }
-    .pull-container .pull-text p {
-      font-family: 'Montserrat', sans-serif;
-      font-weight: 400;
-      font-size: 1.2rem;
-      line-height: 2rem; }
-    .pull-container .pull-text a {
-      text-decoration: none;
-      color: white;
-      border-bottom: 0.0625rem solid white;
-      padding-bottom: 0.25rem; }
-    .pull-container .pull-text a:hover {
-      border-bottom: none; }
+.landing-footer-icons {
+  position: fixed;
+  right: 22%;
+  bottom: 10%; }
 
 @media (max-width: 1600px) {
-  .landing-container .landing-name {
-    font-size: 3.6rem; }
-  .landing-container h2, .landing-container p {
-    font-size: 1.2rem; }
-  .landing-description {
-    margin-left: 40vw; }
-  .pull-container {
-    grid-template-columns: 1.5rem auto; }
-    .pull-container .pull-icon {
-      height: 1.5rem;
-      width: 1.5rem; }
-    .pull-container .pull-text p {
-      font-size: 1.1rem; } }
-
-@media (max-width: 1280px) {
-  .landing-container .landing-name a {
-    font-size: 3.2rem;
-    border-bottom: 0; }
-  .landing-container h2, .landing-container p {
-    font-size: 1.2rem; }
-  .pull-container {
-    grid-template-columns: 1.4rem auto; }
-    .pull-container .pull-icon {
-      height: 1.4rem;
-      width: 1.4rem; }
-    .pull-container .pull-text p {
-      font-size: 1rem; } }
+  .landing-nav-container2 {
+    right: 10%; }
+  .landing-footer-icons {
+    right: 10%; }
+  .landing-footer-copyright {
+    left: 10%; } }
 
 @media (max-width: 1024px) {
+  .landing-description p {
+    font-size: 1.5rem; }
+  .landing-container .landing-name {
+    font-size: 2.25rem; }
+  .box-white {
+    min-width: 320px;
+    width: 25vw; }
   .landing-description {
-    margin-left: 0; } }
+    width: 65vw; } }
 
 @media (max-width: 840px) {
-  .landing-container .landing-name a {
-    font-size: 3rem;
-    border-bottom: 0; }
-  .landing-container h2, .landing-container p {
-    font-size: 1rem; }
-  .landing-footer {
-    margin-top: 5rem; }
-  .greeting-container {
-    margin-top: 9rem;
-    margin-bottom: 1rem; }
-  .pull-container {
-    grid-template-columns: 1.3rem auto; }
-    .pull-container .pull-icon-container {
-      padding-top: 0.5rem; }
-    .pull-container .pull-icon {
-      height: 1.3rem;
-      width: 1.3rem; }
-    .pull-container .pull-text p {
-      font-size: 0.9rem; } }
+  .landing-description {
+    width: 75vw; } }
 
 @media (max-width: 600px) {
-  .greeting-container {
-    margin-top: 6rem; } }
-
-@media (max-width: 400px) {
-  .landing-greeting {
-    margin-top: 6rem; } }
+  .landing-nav-container2 {
+    right: 1rem; }
+  .landing-footer-icons {
+    right: 1rem; }
+  .landing-footer-copyright {
+    left: 1rem; }
+  .landing-description {
+    width: 90vw; } }
 
 @media (max-height: 500px) {
   .landing-container {

@@ -4,17 +4,13 @@
     display: block;
   }
 
-  margin: 0 17rem 1rem 17rem;
-
   a {
     text-decoration: none;
   }
 
   h1 {
       font-family: 'nexa_boldregular';
-      /*font-weight: 600;*/
       font-size: 3rem;
-      //line-height: 4rem;
       color: white;
   }
 }
@@ -39,99 +35,47 @@
 }
 
 
-/* Nav bar */
-.nav-container {
-  height: 8rem;  
-}
+// New
 
-.nav-item {
-    float: right;
-    padding-top: 3rem;
-    padding-left: 1.25rem;
-    padding-right: 1rem;
+.landing-nav-container2 {
+  top:10%;
+  position: fixed;
+  right: 22%;
 
-    a {
-        display: block;
-        font-family: 'Montserrat', sans-serif;
-        font-weight: 300;
-        line-height: 1.7;
-        color: white;
-        text-align: center;
+  a {
+      float: left;
+      border: 1px solid white;
+      padding-bottom: 0;
 
-        text-decoration: none;
+      .landing-nav-item2 {
+          display: block;
+          font-family: 'Montserrat', sans-serif;
+          font-weight: 500;
+          line-height: 1.7;
+          text-align: center;
+          text-decoration: none;
+          font-size: 1rem;
+          color: white;
+          margin: 0.5rem 1rem;
 
+      }
 
-        font-size: 1.2rem;
-        text-decoration: none;
-
-        color: white;
-        text-decoration: none;
-        //border-bottom: 0.0625rem solid white;
-        //padding-bottom: 0.25rem;
-    }
-
-    .active {
-        border-bottom: 0.125rem solid white;
-    }
-}
-
-
-
-/* Strikethrough hover pen by tsimenis on Codepen */
-.strike, .strike-name {
-    span {
-        position: relative;
-        cursor: pointer;
-    }
-
-    span:before, span:after {
-        content: '';
-        position: absolute;
-        width: 0%;
-        height: 1px;
-        margin-top: -0.5px;
-        background: white;
-    }
-
-    span:before {
-        left: 0px;
-    }
-
-    span:after {
-        right: 0px;
-        background: white;
-        transition: width 0.8s cubic-bezier(0.22, 0.61, 0.36, 1);
-    }
-
-    span:hover:before {
-        background: white;
-        width: 100%;
-        transition: width 0.5s cubic-bezier(0.22, 0.61, 0.36, 1);
-    }
-
-    span:hover:after {
-        background: transparent;
-        width: 100%;
-        transition: 0s;
-    }
-}
-
-.strike-name {
-  span:before, span:after {
-      top: 100%;
   }
-}
-
-.strike {
-  span:before, span:after {
-    top: 120%;
+  a:hover {
+      border: 1px solid white;
+      background-color: white;
+      
+      div {
+          color: #212223;
+          font-weight: 600;
+      }
   }
 }
 
 @media(max-width: 1600px){
   .header-container{
 
-    margin: 0 9rem 1rem 9rem;
+    //margin: 0 9rem 1rem 9rem;
   }
 }
 
@@ -139,35 +83,29 @@
 
   .header-container{
 
-    margin: 0 6rem 1rem 6rem;
+    //margin: 0 6rem 1rem 6rem;
   }
 
-  .nav-item {
+
+
+
+}
+
+@media(max-width: 1024px){
+  .landing-nav-container2 {
     a {
-      font-size: 1.1rem;
+      .landing-nav-item2 {
+        //font-size: 0.875rem;
+        font-size: 0.75rem;
+      }
     }
   }
 
 }
 
-@media(max-width: 1024px){
-
-  #initials {
-    display: block;
-  }
-
-  #full-name {
-    display: none;
-  }
-
-  .nav-container {
-    height: 8rem;
-  }
-}
-
 @media(max-width: 840px){
   .header-container {
-    margin: 0 3rem 1rem 3rem;
+    //margin: 0 3rem 1rem 3rem;
   }
 
   .nav-item {
@@ -186,7 +124,7 @@
 
 @media(max-width: 600px){
   .header-container {
-    margin: 0 1rem 1rem 1rem;
+    //margin: 0 1rem 1rem 1rem;
   }
 
   .nav-item {

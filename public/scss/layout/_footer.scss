@@ -1,6 +1,5 @@
 .footer-container {
-    height: 6rem;
-    //margin: 6rem 0 0 0;
+    //height: 6rem;
 
 }
 
@@ -8,18 +7,31 @@
     display: inline-block;
 
     h2 {
-        font-family: 'Montserrat', sans-serif;
-        font-weight: 500;
+        font-family: 'Lora', serif;
         font-size: 1rem;
-        margin: 0.5rem 0;
+
+        span {
+            font-style: italic;
+        }
+        
     }
 }
+
+#iconEmail {
+    //padding-top: 0.5rem;
+}
+
 .icon-container {
 
     float: right;
 
     img {
         height: 2rem;
+    }
+
+    .icon-footer {
+        fill: #CCCCCC;
+        height: 1.5rem;
     }
 
     ul {
@@ -29,14 +41,15 @@
                 text-decoration: none;
                 border-bottom: none;
 
-                img {
-                    transition: all 0.6s ease-in-out;
+                svg {
+                    transition: all 0.2s ease-in-out;
                 }
             }
 
-            a:hover > img {
-                transition: all 0.6s ease-in-out;
-                transform: translateY(-1rem);
+            a:hover > svg {
+                transition: all 0.3s ease-in-out;
+                transform: translateY(-0.1rem);
+                fill: #83F1A4;
             }
         }
     }
@@ -52,17 +65,12 @@
 }
 
 @media(max-width: 1024px) {
-    .footer-container {
-        //margin: 3rem 6vw 0 6vw;
-    }
+
 }
 
 @media(max-width: 840px){
 
-    .footer-container {
-        text-align: center;
-        margin: 2rem 6vw 4rem 6vw;
-    }
+
     
 
     .copyright{

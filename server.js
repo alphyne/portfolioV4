@@ -26,7 +26,7 @@ app.use(express.session());
 app.use(app.router);*/
 app.use(express.static(path.join(__dirname, 'public')));
 
-app.get('/', index.view);
+app.get('/', landing.view);
 app.get('/about', about.view);
 app.get('/:title', project.view);
 
