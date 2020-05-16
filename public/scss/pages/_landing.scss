@@ -168,16 +168,31 @@
         position: absolute;
     }
 
-    .landing-footer-icons{
-        display: block;
-        position: absolute;
-        bottom: none;
+    .landing-container {
+        top: 30%;
     }
 
     .landing-footer-copyright{
-        display: block;
+        //display: block;
+        position: absolute;
+        top: 80%;
+        //right: auto;
+        //left: auto;
+        left: calc((100% - 215px)/2);
+        bottom: none;
+        //text-align: center;
+        //width: 100%;
+    }
+
+    .landing-footer-icons{
+        //display: block;
         position: absolute;
         bottom: none;
+        right: none;
+        left: calc((100% - 170px)/2);
+        top: 86%;
+        //text-align: center;
+        //width: 100%;
     }
 
     .landing-description {

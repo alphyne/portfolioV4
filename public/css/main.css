@@ -694,14 +694,19 @@ body {
   .landing-nav-container2 {
     right: 1rem;
     position: absolute; }
-  .landing-footer-icons {
-    display: block;
-    position: absolute;
-    bottom: none; }
+  .landing-container {
+    top: 30%; }
   .landing-footer-copyright {
-    display: block;
     position: absolute;
+    top: 80%;
+    left: calc((100% - 215px)/2);
     bottom: none; }
+  .landing-footer-icons {
+    position: absolute;
+    bottom: none;
+    right: none;
+    left: calc((100% - 170px)/2);
+    top: 86%; }
   .landing-description {
     width: 90vw; } }
 
