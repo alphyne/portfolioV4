@@ -124,26 +124,21 @@
 }
 
 @media(max-width: 600px){
-  .header-container {
-    //margin: 0 1rem 1rem 1rem;
+
+
+
+
+  @media(max-height: 500px) {
+
+    .landing-nav-container2 {
+      position: absolute;
+    }
+
+    #nav-work {
+      display: none;
+    }
   }
-
-  .landing-nav-container2 {
-    position: absolute;
-  }
-
-  .nav-item {
-    padding-left: 0.5rem;
-    padding-right: 0.5rem;
-  }
-
-
+  
 }
 
-@media(max-height: 500px) {
-
-  #nav-work {
-    display: none;
-  }
-}
 
