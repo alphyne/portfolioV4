@@ -700,7 +700,7 @@ body {
     top: 25vh; }
   .landing-footer-copyright {
     position: absolute;
-    top: 80vh;
+    top: 83vh;
     left: calc((100% - 215px)/2);
     bottom: none; }
   .landing-footer-icons {
