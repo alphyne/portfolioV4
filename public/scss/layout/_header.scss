@@ -125,14 +125,14 @@
 
 @media(max-width: 600px){
 
+  .landing-nav-container2 {
+    position: absolute;
+  }
+
 
 }
 
   @media(max-height: 500px) {
-
-    .landing-nav-container2 {
-      position: absolute;
-    }
 
     #nav-work {
       display: none;
