@@ -695,10 +695,10 @@ body {
     right: 1rem;
     position: absolute; }
   .landing-container {
-    top: 30%; }
+    top: 30vh; }
   .landing-footer-copyright {
     position: absolute;
-    top: 80%;
+    top: 80vh;
     left: calc((100% - 215px)/2);
     bottom: none; }
   .landing-footer-icons {
@@ -706,7 +706,7 @@ body {
     bottom: none;
     right: none;
     left: calc((100% - 170px)/2);
-    top: 86%; }
+    top: 86vh; }
   .landing-description {
     width: 90vw; } }
 

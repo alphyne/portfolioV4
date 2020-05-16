@@ -169,13 +169,13 @@
     }
 
     .landing-container {
-        top: 30%;
+        top: 30vh;
     }
 
     .landing-footer-copyright{
         //display: block;
         position: absolute;
-        top: 80%;
+        top: 80vh;
         //right: auto;
         //left: auto;
         left: calc((100% - 215px)/2);
@@ -190,7 +190,7 @@
         bottom: none;
         right: none;
         left: calc((100% - 170px)/2);
-        top: 86%;
+        top: 86vh;
         //text-align: center;
         //width: 100%;
     }
