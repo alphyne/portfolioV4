@@ -182,7 +182,7 @@ body {
 
 @media (max-width: 600px) {
   .landing-nav-container2 {
-    position: relative;
+    position: absolute;
     right: 1rem; } }
 
 @media (max-height: 500px) {
@@ -699,12 +699,12 @@ body {
   .landing-container {
     top: 25%; }
   .landing-footer-copyright {
-    position: relative;
+    position: absolute;
     top: 83%;
     left: calc((100% - 215px)/2);
     bottom: none; }
   .landing-footer-icons {
-    position: relative;
+    position: absolute;
     bottom: none;
     right: none;
     left: calc((100% - 170px)/2);
