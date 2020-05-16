@@ -1,5 +1,5 @@
 $(function() {
-  var away = "Where did you go? 😢 — Jared Suasin";
+  var away = "👀 Are you there? — Jared Suasin";
   //var away = "Come look over here"
   var original;
 
@@ -17,6 +17,20 @@ $(function() {
 });
 
 $(document).ready(function (){
+
+  
+  $('#nav-work').hover(function(){
+      var navLabel = $('#nav-work-content').html();
+      navLabel = 'UNDER CONSTRUCTION';
+      $('#nav-work-content').html(navLabel);
+  });
+
+  $('#nav-work').mouseleave(function(){
+    var navLabel = $('#nav-work-content').html();
+    navLabel = 'WORK';
+    $('#nav-work-content').html(navLabel);
+  });
+
   $("#work").click(function (){
       $('html, body').animate({
           scrollTop: $("#navbar").offset().top,
