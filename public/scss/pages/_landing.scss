@@ -163,12 +163,9 @@
 }
 
 @media(max-width: 600px){
-    .landing-nav-container2 {
-        position: absolute;
-        right: 1rem;
-    }
 
     .landing-description {
+        left: 1rem;
         width: 90vw;
     }
 
@@ -177,7 +174,7 @@
     }
 
     .landing-footer-copyright{
-        position: absolute;
+        position: relative;
         top: 83%;
         left: calc((100% - 215px)/2);
         bottom: none;
@@ -185,7 +182,7 @@
     }
 
     .landing-footer-icons{
-        position: absolute;
+        position: relative;
         bottom: none;
         right: none;
         left: calc((100% - 170px)/2);
