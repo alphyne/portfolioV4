@@ -700,7 +700,7 @@ body {
     top: 25vh; }
   .landing-footer-copyright {
     position: absolute;
-    top: 89vh;
+    top: 80vh;
     left: calc((100% - 215px)/2);
     bottom: none; }
   .landing-footer-icons {
@@ -708,7 +708,7 @@ body {
     bottom: none;
     right: none;
     left: calc((100% - 170px)/2);
-    top: 92vh; } }
+    top: 89vh; } }
 
 /* Base styling */
 @font-face {
