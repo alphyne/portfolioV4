@@ -136,5 +136,14 @@
     padding-left: 0.5rem;
     padding-right: 0.5rem;
   }
+
+
+}
+
+@media(max-height: 500px) {
+
+  #work {
+    display: none;
+  }
 }
 
