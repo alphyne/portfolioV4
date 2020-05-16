@@ -181,6 +181,8 @@ body {
     top: 125%; } }
 
 @media (max-width: 600px) {
+  .landing-nav-container2 {
+    position: absolute; }
   .nav-item {
     padding-left: 0.5rem;
     padding-right: 0.5rem; } }
@@ -627,25 +629,6 @@ body {
     line-height: 3.25rem;
     color: #222122; }
 
-/* Nav bar */
-.landing-nav-container {
-  top: 5%; }
-  .landing-nav-container .landing-nav-item {
-    float: right;
-    border: 1px solid white; }
-    .landing-nav-container .landing-nav-item a {
-      display: block;
-      font-family: 'Montserrat', sans-serif;
-      font-weight: 400;
-      line-height: 1.7;
-      text-align: center;
-      text-decoration: none;
-      font-size: 1rem;
-      color: white;
-      margin: 0.5rem 1rem;
-      border-bottom: none;
-      padding-bottom: 0; }
-
 .box-white {
   background-color: white;
   max-width: 405px;
@@ -709,18 +692,18 @@ body {
 
 @media (max-width: 600px) {
   .landing-nav-container2 {
-    right: 1rem; }
+    right: 1rem;
+    position: absolute; }
   .landing-footer-icons {
-    right: 1rem; }
+    display: block;
+    position: absolute;
+    bottom: none; }
   .landing-footer-copyright {
-    left: 1rem; }
+    display: block;
+    position: absolute;
+    bottom: none; }
   .landing-description {
     width: 90vw; } }
-
-@media (max-height: 500px) {
-  .landing-container {
-    height: 100%;
-    margin-bottom: 4rem; } }
 
 /* Base styling */
 @font-face {

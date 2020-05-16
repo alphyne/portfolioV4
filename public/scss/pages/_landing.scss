@@ -15,37 +15,6 @@
 
 }
 
-/* Nav bar */
-.landing-nav-container {
-    //height: 2.5rem;  
-    top:5%;
-
-  
-    .landing-nav-item {
-        float: right;
-
-        border: 1px solid white;
-
-        a {
-            display: block;
-            font-family: 'Montserrat', sans-serif;
-            font-weight: 400;
-            line-height: 1.7;
-            text-align: center;
-            text-decoration: none;
-            font-size: 1rem;
-            color: white;
-
-            margin: 0.5rem 1rem;
-            border-bottom: none;
-            padding-bottom: 0;
-        }
-
-        .active {
-
-        }
-    }
-}
 
 
 
@@ -196,14 +165,19 @@
 @media(max-width: 600px){
     .landing-nav-container2 {
         right: 1rem;
+        position: absolute;
     }
 
     .landing-footer-icons{
-        right: 1rem;
+        display: block;
+        position: absolute;
+        bottom: none;
     }
 
     .landing-footer-copyright{
-        left: 1rem;
+        display: block;
+        position: absolute;
+        bottom: none;
     }
 
     .landing-description {
@@ -219,8 +193,8 @@
 @media(max-height: 500px) {
 
     .landing-container {
-        height: 100%;
-        margin-bottom: 4rem;
+    //    height: 100%;
+      //  margin-bottom: 4rem;
     }
 }
 
