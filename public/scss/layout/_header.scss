@@ -62,8 +62,8 @@
 
   }
   a:hover {
-      border: 1px solid white;
-      background-color: white;
+      //border: 1px solid white;
+      //background-color: white;
       
       div {
           color: #212223;
@@ -71,6 +71,34 @@
       }
   }
 }
+
+.hover-sweep {
+  //-webkit-transform: translateZ(0);
+  transform: translateZ(0);
+  //-webkit-transition: white 1000ms;
+  transition: white 1000ms;
+
+  &:before {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: white;
+   // -webkit-transform: scaleY(0);
+    transform: scaleY(0);
+  //  -webkit-transform-origin: 0 100%;
+    transform-origin: 0 100%;
+    transition: 200ms ease-out;
+  }
+
+  &:hover:before {
+    transform: scaleY(1);
+  }
+}
+
 
 
 @media(max-width: 1600px){

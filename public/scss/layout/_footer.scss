@@ -21,6 +21,15 @@
     //padding-top: 0.5rem;
 }
 
+@-webkit-keyframes glitch {
+    0% { transform: translateX(-0.05rem); }
+    40% { transform: translateX(0.1rem) skew(20deg, 20deg);fill: #83F1A4;}
+    50% { fill: black;}
+    65% {fill: #83F1A4;}
+    75% { transform: skew(-40deg, -40deg);}
+    100% { transform: translateX(-0.05rem);}
+}
+
 .icon-container {
 
     float: right;
@@ -42,14 +51,21 @@
                 border-bottom: none;
 
                 svg {
-                    transition: all 0.2s ease-in-out;
+                    //transition: all 0.1s ease-in-out;
                 }
             }
 
             a:hover > svg {
-                transition: all 0.3s ease-in-out;
-                transform: translateY(-0.1rem);
+                animation-name: glitch;
+                animation-duration: 0.1s;
+                
+                //transition: all 0.3s ease-in-out;
+                //transform: translateX(-0.1rem) translateX(0.3rem);
                 fill: #83F1A4;
+            }
+
+            a:hover > svg:before{
+                //transition-timing-function: cubic-bezier(0.52, 164, 0.37, 0.66);
             }
         }
     }

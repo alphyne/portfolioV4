@@ -91,6 +91,21 @@ body {
     #copyright h2 span {
       font-style: italic; }
 
+@-webkit-keyframes glitch {
+  0% {
+    transform: translateX(-0.05rem); }
+  40% {
+    transform: translateX(0.1rem) skew(20deg, 20deg);
+    fill: #83F1A4; }
+  50% {
+    fill: black; }
+  65% {
+    fill: #83F1A4; }
+  75% {
+    transform: skew(-40deg, -40deg); }
+  100% {
+    transform: translateX(-0.05rem); } }
+
 .icon-container {
   float: right; }
   .icon-container img {
@@ -101,11 +116,9 @@ body {
   .icon-container ul li a {
     text-decoration: none;
     border-bottom: none; }
-    .icon-container ul li a svg {
-      transition: all 0.2s ease-in-out; }
   .icon-container ul li a:hover > svg {
-    transition: all 0.3s ease-in-out;
-    transform: translateY(-0.1rem);
+    animation-name: glitch;
+    animation-duration: 0.1s;
     fill: #83F1A4; }
   .icon-container li {
     display: inline-block;
@@ -163,12 +176,27 @@ body {
       font-size: 1rem;
       color: white;
       margin: 0.5rem 1rem; }
-  .landing-nav-container2 a:hover {
-    border: 1px solid white;
-    background-color: white; }
-    .landing-nav-container2 a:hover div {
-      color: #212223;
-      font-weight: 600; }
+  .landing-nav-container2 a:hover div {
+    color: #212223;
+    font-weight: 600; }
+
+.hover-sweep {
+  transform: translateZ(0);
+  transition: white 1000ms; }
+  .hover-sweep:before {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: white;
+    transform: scaleY(0);
+    transform-origin: 0 100%;
+    transition: 200ms ease-out; }
+  .hover-sweep:hover:before {
+    transform: scaleY(1); }
 
 @media (max-width: 1024px) {
   .landing-nav-container2 a .landing-nav-item2 {
