@@ -29,6 +29,7 @@
 		<meta name="theme-color" content="#ffffff">
 
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.5.1/jquery.min.js"></script>
+
 	</head>
 	<body>
 		
@@ -61,13 +62,21 @@
 					</div>
 				</div>
 
+			<!--<div class="project-group">
+				<div class="project">
+					asdf
+				</div>
+				<div id="project-item" width="200" height="200" class="">
+					asdf
+				</div>
 			</div>
+			</div>-->
 
 			<!-- Footer -->
 			<div class="landing-footer-copyright">
 
 				<div id="copyright">
-					<h2>Built by: <span>Jared Suasin &copy 2020</span></h2>
+					<h2>Built by: <span>Jared Suasin &copy 2021</span></h2>
 				</div>
 			</div>
 
@@ -81,7 +90,7 @@
 							</a>
 						</li>
 						<li>
-							<a href="https://www.linkedin.com/in/jared-suasin-982a20133" target="_blank" title="LinkedIn">
+							<a href="https://www.linkedin.com/in/jaredsuasin/" target="_blank" title="LinkedIn">
 								<svg class="icon-footer" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 430.12 430.12"><path id="LinkedIn" class="cls-1" d="M430.12,261.54v159H337.93V272.19c0-37.27-13.33-62.7-46.7-62.7-25.48,0-40.64,17.14-47.3,33.72-2.44,5.93-3.06,14.18-3.06,22.48V420.56H148.65s1.24-251.29,0-277.32h92.21v39.31c-.19.29-.43.61-.61.89h.61v-.89c12.25-18.87,34.13-45.83,83.1-45.83C384.63,136.72,430.12,176.36,430.12,261.54ZM52.18,9.56C20.64,9.56,0,30.25,0,57.46,0,84.08,20,105.4,51,105.4h.62c32.15,0,52.15-21.31,52.15-47.94C103.13,30.25,83.73,9.56,52.18,9.56Zm-46.7,411H97.66V143.24H5.48Z"/></svg>
 							</a>
 						</li>
@@ -103,5 +112,29 @@
 		<script src="/js/three.js"></script>
 		<script src="/js/sphere.js"></script>
 		<script src="/js/portfolio.js"></script>
+		<script>
+			var canvasProject = document.getElementById('project-item');
+			var ctxProject = canvasProject.getContext('2d');
+			// Create an image element
+			//var img = document.createElement('IMG');
+			// When the image is loaded, draw it
+			//img.onload = function () {
+			// Create a shape
+			var notchSize = 20;
+			ctxProject.strokeStyle='rgb(255,255,255)';
+			ctxProject.lineWidth = 2;
+			ctxProject.beginPath();
+			ctxProject.moveTo(0, 0);
+			ctxProject.lineTo(0, ctxProject.canvasProject.height);
+			ctxProject.lineTo(ctxProject.canvasProject.width - notchSize, ctxProject.canvasProject.height);
+			ctxProject.lineTo(ctxProject.canvasProject.width, ctxProject.canvasProject.height - notchSize);
+			ctxProject.lineTo(ctxProject.canvasProject.width, 0);
+			ctxProject.lineTo(0, 0);
+			ctxProject.closePath();
+			// Clip to the current path
+			ctxProject.clip();
+			//ctx.drawImage(img, 0, 0);
+			ctxProject.stroke();		
+		</script>
 	</body>
 </html>

@@ -161,7 +161,8 @@ body {
 .landing-nav-container2 {
   top: 10%;
   position: fixed;
-  right: 22%; }
+  right: 22%;
+  backdrop-filter: blur(0.25rem); }
   .landing-nav-container2 a {
     float: left;
     border: 1px solid white;
@@ -672,7 +673,8 @@ body {
 .landing-description {
   margin-top: 2rem;
   max-width: 940px;
-  width: 70vw; }
+  width: 70vw;
+  backdrop-filter: blur(0.25rem); }
   .landing-description p {
     font-family: 'Lora', serif;
     font-size: 2rem;
@@ -696,6 +698,17 @@ body {
   position: fixed;
   right: 22%;
   bottom: 10%; }
+
+.project-group {
+  display: grid;
+  grid-template-columns: 26vw auto;
+  grid-column-gap: 2vw; }
+
+.project {
+  padding: 8rem;
+  border: 1px solid white;
+  backdrop-filter: blur(0.25rem);
+  clip-path: polygon(0% 20px, 20px 0%, calc(100% - 20px) 0%, 100% 20px, 100% calc(100% - 20px), calc(100% - 20px) 100%, 20px 100%, 0 calc(100% - 20px)); }
 
 @media (max-width: 1600px) {
   .landing-nav-container2 {

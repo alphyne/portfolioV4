@@ -4,7 +4,7 @@
     top: 35%;
     //height: 100vh;
 
-
+    //backdrop-filter: blur(0.25rem);
 
     .landing-name {
         font-family: 'nexa_boldregular';
@@ -41,6 +41,7 @@
     margin-top: 2rem;
     max-width: 940px;
     width: 70vw;
+    backdrop-filter: blur(0.25rem);
 
     p {
         font-family: 'Lora', serif;
@@ -79,6 +80,32 @@
     //right: 15.625rem;
     right: 22%;
     bottom: 10%;
+}
+
+
+// Project preview
+.project-group {
+    display: grid;
+    grid-template-columns: 26vw auto;
+    grid-column-gap: 2vw;
+}
+
+.project {
+    padding: 8rem;
+    border: 1px solid white;
+    backdrop-filter: blur(0.25rem);
+
+    clip-path: 
+    polygon(
+      0% 20px,                 /* top left */
+      20px 0%,                 /* top left */
+      calc(100% - 20px) 0%,    /* top right */
+      100% 20px,               /* top right */
+      100% calc(100% - 20px),  /* bottom right */
+      calc(100% - 20px) 100%,  /* bottom right */
+      20px 100%,               /* bottom left */
+      0 calc(100% - 20px)      /* bottom left */
+    );
 }
 
 
