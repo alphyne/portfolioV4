@@ -1,21 +1,11 @@
-.landing-container{
-
-    position: absolute;
-    top: 35%;
-    //height: 100vh;
-
-    //backdrop-filter: blur(0.25rem);
-
-    .landing-name {
-        font-family: 'nexa_boldregular';
-        font-size: 2.75rem;
-        line-height: 3.25rem;
-        color: #222122;
-    }
-
+.landing_content{
+    padding: 8rem 0;
 }
 
-
+.landing_name {
+    font-family: 'nexa_boldregular';
+    color: #222122;
+}
 
 
 .box-white {
@@ -43,12 +33,6 @@
     width: 70vw;
     backdrop-filter: blur(0.25rem);
 
-    p {
-        font-family: 'Lora', serif;
-        font-size: 2rem;
-        line-height: 1.7;
-    }
-
     a {
         text-decoration: none;
         color: white;
@@ -59,27 +43,6 @@
     a:hover {
         border-bottom: none;
     }
-
-    
-}
-
-.landing-footer-copyright {
-    position: fixed;
-    //left: 15.625rem;
-    left: 22%;
-    bottom: 9%;
-
-    font-family: 'Lora', serif;
-    font-size: 0.75rem;
-
-}
-
-.landing-footer-icons {
-    //margin-top: 10%;
-    position: fixed;
-    //right: 15.625rem;
-    right: 22%;
-    bottom: 10%;
 }
 
 
@@ -109,64 +72,12 @@
 }
 
 
-@media(max-width: 1600px){
-    .landing-nav-container2{
-        //right: 13rem;
-        right: 10%;
-    }
+@media(max-width: 1600px){}
 
-    .landing-footer-icons{
-        //right: 13rem;
-        right: 10%;
-    }
-
-    .landing-footer-copyright{
-        //left: 13rem;
-        left: 10%;
-    }
-}
-
-@media(max-width: 1280px){
-    .landing-nav-container2 {
-        //right: 11rem;
-    }
-
-    .landing-footer-icons{
-        //right: 11rem;
-    }
-
-    .landing-footer-copyright{
-        //left: 11rem;
-    }
-
-
-
-}
+@media(max-width: 1280px){}
 
 @media(max-width: 1024px) {
-    .landing-nav-container2 {
-        //right: 6rem;
-    }
 
-    .landing-footer-icons{
-        //right: 6rem;
-    }
-
-    .landing-footer-copyright{
-        //left: 6rem;
-    }
-
-    .landing-description {
-        p {
-            font-size: 1.5rem;
-        }
-    }
-
-    .landing-container {
-        .landing-name {
-            font-size: 2.25rem;
-        }
-    }
 
     .box-white {
         min-width: 320px;
@@ -196,27 +107,6 @@
         width: 90vw;
     }
 
-    .landing-container {
-        top: 25vh;
-    }
-
-    .landing-footer-copyright{
-        position: absolute;
-        top: 83vh;
-        left: calc((100% - 215px)/2);
-        bottom: none;
-
-    }
-
-    .landing-footer-icons{
-        position: absolute;
-        bottom: none;
-        right: none;
-        left: calc((100% - 170px)/2);
-        top: 89vh;
-    }
-
-
 
 }
 
@@ -227,10 +117,6 @@
 
 @media(max-height: 500px) {
 
-    .landing-container {
-    //    height: 100%;
-      //  margin-bottom: 4rem;
-    }
 }
 
 @media(max-height: 500px) {

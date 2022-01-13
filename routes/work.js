@@ -1,11 +1,10 @@
 
 /*
- * GET about page.
+ * GET work page.
  */
 
 var data = require('../data.json');
 
 exports.view = function(req, res){
-  	//console.log(data);
-	res.render('about',data);
+	res.render('work',data);
 };

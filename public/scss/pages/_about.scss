@@ -1,92 +1,30 @@
-.about-container {
-    .hero-container {
-        padding: 0 2rem;
-    }
 
-    h2 {
-        line-height: 1.8;
-    }
+
+
+
+.profile_image {
+    flex: 2;
+    background-image: url("../images/pfp2021.jpg");
+    background-position-x: center;
+    background-position-y: center;
+    background-size: cover;
+
+    width: 100%;
+    min-height: 42rem;
+    border-radius: 3px;
 }
 
-.boxed-content-about {
-    border: 1px solid white;
-    padding: 2rem 2rem 2rem 2rem;
-    margin: 0 2rem 2rem 2rem;
-    text-align: center;
-}
+.profile_intro {
+    flex: 2;
+    padding: 1rem 2rem 2rem 2rem;
 
-.profile-details-container {
-
-    display: grid;
-    grid-template-columns: 26vw auto;
-    grid-column-gap: 2vw;
-    grid-row-gap: 2rem;
-    margin: 4rem 2vw 4vw 2vw;
-
-    .profile-details-image {
-        background-image: url("../images/profile-optimized.jpg");
-        width: 100%;
-        background-position-x: center;
-        background-position-y: center;
-        background-size: cover;
-        min-height: 20rem;
-        border-radius: 1rem;
-    }
-
-    .profile-details-bio-container {
-
+    .intro_block {
         padding: 1rem 0 1rem 0;
-
-        .profile-bio > *:not(:last-child) {
-            margin-bottom: 2rem;
-        }
-    }
-
-    .profile-detail-item-container-right {
-        border: 1px solid white;
-        padding: 2vw 2vw 0 2vw;
-        //margin-right: 2vw;
-    
-        display: grid;
-        grid-template-columns: auto auto;
-    }
-
-    .profile-detail-item-container-left {
-        border: 1px solid white;
-        padding: 2vw 2vw 0 2vw;
-        //margin-left: 2vw;
-
-    }
-      
-    .profile-detail-item {
-    padding-right: 1rem;
-    padding-bottom: 2rem;
-
-        .profile-detail-item-content {
-            display: grid;
-            grid-template-columns: 2rem auto;
-            grid-column-gap: 0.75rem;
-        
-            h6 {
-                padding-top: 0.25rem;
-            }
-        }
-
-        span {
-            line-height: 32px;
-            vertical-align: middle;
-        }
-    
-        h4 {
-            padding-bottom: 0.5rem;
-        }
     }
 }
 
-.system-icon {
-    height: 2rem;
-    width: 2rem;
-}
+
+
 
 @media(max-width: 1600px){
 }
@@ -96,103 +34,15 @@
 
 @media(max-width: 1020px){
 
-    .about-container {
-        .hero-container {
-            padding: 0;
-        }
-    }
-
-    .profile-details-container {
-
-        display: block;
-        margin: 4rem 0 4vw 0;
-
-        .profile-details-image {
-            margin-bottom: 2rem;
-            min-height: 30rem;
-        }
-    
-        .profile-details-bio-container {
-
-            padding: 0;
-
-            .profile-bio > * {
-                margin-bottom: 2rem;
-            }
-
-            .profile-detail-item-container-right {
-                margin: 2rem;
-                padding: 2rem 2rem 0 2rem;
-            }
-        }
-
-        .profile-detail-item-container-left {
-            display: grid;
-            grid-template-columns: auto auto;
-            margin: 0 2rem 2rem 2rem;
-        }
-
-        .profile-detail-item-container-right {
-            margin: 0 2rem 2rem 2rem;
-        }
-
-
-    }
 }
 
 @media(max-width: 840px){
     
-    .about-container {
-        .hero-container {
-            padding: 0;
-        }
-    }
-
-    .profile-details-container {
-
-        .profile-details-image {
-            min-height: 35rem;
-        }
-    }
 }
 
 @media(max-width: 600px) {
-
-    .boxed-content-about {
-        padding: 1rem;
-        margin: 0 1rem 1rem 1rem;
-    }
-
-    .profile-details-container {
-
-        .profile-detail-item-container-left {
-            padding: 1rem 1rem 0 1rem;
-            margin: 1rem;
-        }
-
-
-        .profile-detail-item-container-right {
-            padding: 1rem 1rem 0 1rem;
-            margin: 1rem;
-        }
-
-        .profile-detail-item {
-            padding-bottom: 1.5rem;
-        }
-    }
 }
 
 @media(max-width: 400px) {
 
-    .boxed-content-about {
-        h2 {
-            font-size: 1.4rem;
-        }
-    }
-
-    .profile-details-container {
-            .profile-detail-item-container-right {
-                display: block;
-            }
-    }
 }

@@ -1,24 +1,24 @@
-.footer-container {
-    //height: 6rem;
+.footer {
 
-}
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    align-items: center;
 
-#copyright {
+    height: 8rem;
+
+    #copyright {
     display: inline-block;
-
-    h2 {
-        font-family: 'Lora', serif;
-        font-size: 1rem;
-
-        span {
-            font-style: italic;
-        }
-        
     }
+
+    span {
+        font-style: italic;
+    }
+
 }
 
-#iconEmail {
-    //padding-top: 0.5rem;
+.landing_footer {
+    padding-top: 8rem;
 }
 
 @-webkit-keyframes glitch {
@@ -30,7 +30,7 @@
     100% { transform: translateX(-0.05rem);}
 }
 
-.icon-container {
+.contact_icons {
 
     float: right;
 
@@ -38,34 +38,22 @@
         height: 2rem;
     }
 
-    .icon-footer {
+    .icon {
         fill: #CCCCCC;
         height: 1.5rem;
     }
 
     ul {
         li {
-
             a {
                 text-decoration: none;
                 border-bottom: none;
-
-                svg {
-                    //transition: all 0.1s ease-in-out;
-                }
             }
 
             a:hover > svg {
                 animation-name: glitch;
                 animation-duration: 0.1s;
-                
-                //transition: all 0.3s ease-in-out;
-                //transform: translateX(-0.1rem) translateX(0.3rem);
                 fill: #83F1A4;
-            }
-
-            a:hover > svg:before{
-                //transition-timing-function: cubic-bezier(0.52, 164, 0.37, 0.66);
             }
         }
     }
@@ -86,15 +74,14 @@
 
 @media(max-width: 840px){
 
-
-    
-
-    .copyright{
-        display: block;
-        padding: 2rem 0;
+    .footer {
+        flex-direction: column-reverse;
+        height: 6rem;
+        padding-bottom: 4rem;
     }
 
-    .icon-container {
+
+    /*.contact-icons {
         
         float: none;
         padding-top: 1rem;
@@ -102,6 +89,6 @@
         img {
             height: 1.7rem;
         }
-    }
+    }*/
 }
 
