@@ -10,9 +10,8 @@ body {
 .page > :nth-child(n+2) {
   margin-bottom: 7.75rem; }
 
-/* Transparent sections */
-.section_transparent {
-  backdrop-filter: blur(0.5rem);
+/* Sections */
+.section {
   display: flex;
   flex-flow: row wrap;
   align-items: flex-start;
@@ -30,6 +29,10 @@ body {
 /* Blocks - Used within sections */
 .block > * {
   padding-bottom: 1.5rem; }
+
+/* Make transparent */
+.transparent {
+  backdrop-filter: blur(0.5rem); }
 
 /*
  * Components ===
@@ -138,7 +141,7 @@ body {
     margin: 0 10%; } }
 
 @media (max-width: 1024px) {
-  .section_transparent {
+  .section {
     flex-flow: column nowrap; }
   .page h1 {
     font-size: 2.4rem; }
@@ -318,6 +321,58 @@ body {
     display: none; } }
 
 /* Page specific styling */
+.project_group {
+  display: flex;
+  flex-flow: row wrap;
+  align-items: stretch;
+  align-content: space-around;
+  gap: 32px; }
+
+.project_card {
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: flex-start;
+  align-content: space-around;
+  flex: 1 0 45%;
+  gap: 16px;
+  background: #292929;
+  border-radius: 3px;
+  position: relative;
+  transition: all 0.2s ease-in-out 0s; }
+  .project_card .project_card_image {
+    flex: 2;
+    width: 100%;
+    min-height: 20rem;
+    background-position-x: center;
+    background-position-y: center;
+    border-radius: 3px; }
+  .project_card .project_card_content {
+    flex: 2;
+    padding: 0 1rem 1rem 1rem; }
+  .project_card .project_card_content > * {
+    padding-bottom: 0.5rem; }
+  .project_card .project_card_CTA {
+    position: absolute;
+    left: 1rem;
+    bottom: 1rem; }
+
+.project_card > * {
+  padding-bottom: 1rem; }
+
+.project_card:hover {
+  box-shadow: 1px 1px #83F1A4, 2px 2px #83F1A4, 3px 3px #83F1A4, 4px 4px #83F1A4, 5px 5px #83F1A4, 6px 6px #83F1A4, 7px 7px #83F1A4, 8px 8px #83F1A4, 9px 9px #83F1A4, 10px 10px #83F1A4, 12px 12px #83F1A4, 13px 13px #83F1A4, 14px 14px #83F1A4, 15px 15px #83F1A4, 16px 16px #83F1A4;
+  transform: translate(-16px, -16px);
+  transition: all 0.2s ease-in-out 0s; }
+
+@media (max-width: 1020px) {
+  .project_group {
+    flex-flow: column nowrap; } }
+
+@media (max-width: 600px) {
+  .project_card:hover {
+    box-shadow: 1px 1px #83F1A4, 2px 2px #83F1A4, 3px 3px #83F1A4, 4px 4px #83F1A4, 5px 5px #83F1A4, 6px 6px #83F1A4, 7px 7px #83F1A4, 8px 8px #83F1A4;
+    transform: translate(-8px, -8px); } }
+
 .profile_image {
   flex: 2;
   background-image: url("../images/pfp2021.jpg");

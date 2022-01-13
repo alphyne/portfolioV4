@@ -1,10 +1,9 @@
 {
 	"projects": [
 		{
-            "name": "Zillow Group - Datepicker UI Component",
-            "title": "Datepicker UI Component",
-            "url": "pa-datepicker",
-            "src-cover": "../images/project-covers/zillow-cover.png",
+            "name": "Homebuyer Profile",
+            "url": "homebuyer-profile",
+            "project_card_image": "../images/project-covers/blyss-cover.png",
             "position-y-project": "center",
             "position-y-home": "center",
             "position-x-home": "center",
@@ -12,223 +11,88 @@
             "next": true,
             "next-project": "<a href=\"/pa-newsfeed\">Agent Newsfeed</a>",
             "previous-and-next": false,
-            "background-color": "#011a5b",
-            "type": "Zillow Group",
-            "tags": "UX Engineering &mdash; Design Systems",
-            "description": "<a target=\"_blank\" href='https://premieragent.zillow.com/'>Zillow Premier Agent</a>’s design system, Premier Agent Experience Language (PAXL), was founded to support the product’s ongoing evolution. PAXL provides designers and engineers the foundation they need to deliver new product features quickly, while also delivering a consistent UX and brand experience to Premier Agent’s users. This past summer I joined the Premier Agent UX team as a UX Engineer intern and was given the challenge to contribute a new datepicker component for Premier Agent’s design system.",
-            "info-block-1": [
-                {
-                    "title": "Title",
-                    "content": "UX Engineer &mdash; Intern"
-                },
-                {
-                    "title": "Skills",
-                    "content": "Design systems, interaction design, research + exploration, front-end dev, prototyping"
-                }
-            ],
-            "info-block-2": [
-                {
-                    "title": "Design Tools",
-                    "content": "Sketch, InVision, Zeplin, Illustrator"
-                },
-                {
-                    "title": "Dev Tools",
-                    "content": "HTML, CSS (Sass), JavaScript (jQuery), GitLab"
-                },
-                {
-                    "title": "Date",
-                    "content": "Jun - Sep 2019"
+			"card_description": "Increased message engagement 24% by making it easier for real estate agents to view client communication history ",
+			"tags": [
+				{
+					"tag_name": "IOS"
 				},
 				{
-                    "title": "Resources",
-                    "content": "<a id=\"prototype\">HTML Prototype</a>"
-                }
-			],
-			"blocks": [
-				{
-					"header": "Prototype + Documentation",
-					"alt": true,
-					"background-color": "#001f70",
-					"sections": [
-						{
-							"column-two": true,
-							"text": true,
-							"content": "\"The datepicker component allows users to select a date and capture it in a text input field. Focusing on the text field triggers the display of a calendar widget inside of a dropdown panel. The calendar acts as a visual aid to help users select a date.\""
-						},
-						{
-							"column-two": true,
-							"text": true,
-							"content": "Click the interactive HTML prototype below to try it out!"
-						},
-						{
-							"column-one": true,
-							"embed": true,
-							"src": "https://datepicker-prototype.herokuapp.com/",
-							"caption": true,
-							"caption-content": "Click the date field labeled 'Due date' to see the datepicker in action!"
-						}
-					]
+					"tag_name": "ANDROID"
 				},
 				{
-					"header": "Datepicker Audit",
-					"sections": [
-						{
-							"column-two": true,
-							"text": true,
-							"content": "I first conducted an audit of datepickers on Premier Agent in order to understand how they were currently being used. By examining the state of datepickers on Premier Agent, I was able to identify the component’s use cases, call out inconsistencies, and take note of any variations that need to be included."
-						},
-						{
-							"column-two": true,
-							"text": true,
-							"content": "<span class='italic'>Note: While the audit includes datepickers on mobile, my project was scoped to designing a datepicker for desktop. This is due to the standard conventions of selecting a date on iOS and Android.</span>"
-						},
-						{
-							"column-two": true,
-							"image": true,
-							"src": "images/zillow-group/datepicker-audit.jpg",
-							"caption": true,
-							"caption-content": "<a target=\"_blank\" href=\"https://drive.google.com/file/d/1qZVWPIoKDjGwHl54j4qd7uNww7BoWyxM/view?usp=sharing\">View full size datepicker audit</a>."
-						}
-					]
+					"tag_name": "UX/UI"
+				}
+			]
+		},
+		{
+            "name": "Lead Routing",
+            "url": "lead-routing",
+            "project_card_image": "../images/project-covers/newsfeed-cover.png",
+            "position-y-project": "center",
+            "position-y-home": "center",
+            "position-x-home": "center",
+            "previous": false,
+            "next": true,
+            "next-project": "<a href=\"/pa-newsfeed\">Agent Newsfeed</a>",
+            "previous-and-next": false,
+			"card_description": "End-to-end product design for a suite of experiences that allowed real estate teams more granular control of their client distribution",
+			"tags": [
+				{
+					"tag_name": "WEB"
 				},
 				{
-					"header": "Competitive Research",
-					"alt": true,
-					"background-color": "#001f70",
-					"sections": [
-						{
-							"column-two": true,
-							"text": true,
-							"content": "Next, I researched how other design systems were utilizing datepickers through a competitive analysis. In this analysis I compared and contrasted the various datepickers’ UI, logic, and interaction flows, as this allowed me to establish a baseline of how a datepicker should appear and function."
-						},
-						{
-							"column-two": true,
-							"image": true,
-							"src": "images/zillow-group/datepicker-research.jpg",
-							"caption": true,
-							"caption-content": "<a target=\"_blank\" href=\"https://drive.google.com/file/d/1DNUlBZrrFPVXWIIXuc3wl1-XduZ7-_Cs/view?usp=sharing\">View full size datepicker competitive research</a>."
-						}
-					]
+					"tag_name": "UX/UI"
 				},
 				{
-					"header": "Design Requirements",
-					"sections": [
-						{
-							"column-two": true,
-
-							"text": true,
-							"content": "Using the combined data from the audit and competitive research, I then defined design requirements for the datepicker component in the context of Premier Agent. These design requirements outlined the datepicker component’s UI, interactions, states, and use cases from a minimum viable product (MVP) and version two (V2) perspective."
-						},
-						{
-							"column-one": true,
-							"subheader": true,
-							"title": "MVP Requirements",
-							"bullet-list": true,
-							"content": "<li>• Datepickers extend functionality of date input field</li><li>• Calendar widget appears when user clicks on date field</li><li>• User can select a day on calendar widget to input desired date</li><li>• User can still edit the text string after selecting a date</li><li>• User can type in date manually</li><li>• User can select single date in past/future</li><li>• User can go to previous/next month</li><li>• User can jump to previous/next year</li>"
-						}
-					]
+					"tag_name": "RESEARCH"
+				}
+			]
+		},
+		{
+            "name": "Constellation Migration",
+            "url": "constellation-migration",
+            "project_card_image": "../images/project-covers/newsfeed-cover.png",
+            "position-y-project": "center",
+            "position-y-home": "center",
+            "position-x-home": "center",
+            "previous": false,
+            "next": true,
+            "next-project": "<a href=\"/pa-newsfeed\">Agent Newsfeed</a>",
+            "previous-and-next": false,
+			"card_description": "Scoped and communicated a strategy to transition 35 web pages across 9 Engineering teams to a new design system",
+			"tags": [
+				{
+					"tag_name": "DESIGN SYSTEMS"
 				},
 				{
-					"header": "Design Exploration",
-					"alt": true,
-					"background-color": "#001f70",
-					"sections": [
-						{
-							"column-two": true,
-							"text": true,
-							"content": "After setting the design requirements I created low and high fidelity mock-ups in order to explore possible designs. I presented my explorations through multiple ad hoc and structured reviews in order to receive feedback on the datepicker’s design. Each design review led to new iterations, which included changes such as navigation UI, color, and visual hierarchy."
-						},
-						{
-							"column-one": true,
-							"subheader": true,
-							"title": "Exploration Sample",
-							"image": true,
-							"src": "images/zillow-group/datepicker-exploration.jpg"
-						}
-					]
+					"tag_name": "STRATEGY"
 				},
 				{
-					"header": "Prototyping",
-					"sections": [
-						{
-							"column-two": true,
-							"text": true,
-							"content": "To further test the datepicker’s design, I developed an in-context front-end prototype. Building the datepicker into a page on the Premier Agent app allowed me to conduct user testing on the component’s micro-interactions, ensure that it followed PAXL’s visual guidelines, and incorporate patterns from PAXL's existing CSS library."
-						},
-						{
-							"column-one": true,
-							"image": true,
-							"src": "images/zillow-group/datepicker-incontext.png",
-							"caption": true,
-							"caption-content": "Datepicker component in 'Tasks' page on the Premier Agent app."
-						}
-					]
+					"tag_name": "INFLUENCING"
+				}
+			]
+		},
+		{
+            "name": "ConnectNGive",
+            "url": "connectngive",
+            "project_card_image": "../images/project-covers/newsfeed-cover.png",
+            "position-y-project": "center",
+            "position-y-home": "center",
+            "position-x-home": "center",
+            "previous": false,
+            "next": true,
+            "next-project": "<a href=\"/pa-newsfeed\">Agent Newsfeed</a>",
+            "previous-and-next": false,
+			"card_description": "Scaled the UX team from 2 to 6 designers & actively coached, designed a delivery tracking system, and established web design system",
+			"tags": [
+				{
+					"tag_name": "UX MANAGEMENT"
 				},
 				{
-					"header": "Future Iterations",
-					"alt": true,
-					"background-color": "#001f70",
-					"sections": [
-						{
-							"column-two": true,
-							"text": true,
-							"content": "As Premier Agent evolves, new use cases for the datepicker component may emerge. Anticipating these possible contexts, I prepared documentation for future versions of the datepicker component. These resources include a development document, and redlines for a V2 datepicker and range datepicker."
-						},
-						{
-							"column-one": true,
-							"image": true,
-							"src": "images/zillow-group/datepicker-v2flow.png",
-							"caption": true,
-							"caption-content": "<a target=\"_blank\" href=\"https://drive.google.com/drive/folders/1kkfFUolI3DEarQqxOJ2HNv_rnxaFmuy-?usp=sharing\">View V2 datepicker resources</a>."
-						}
-					]
+					"tag_name": "UX/UI"
 				},
 				{
-					"header": "Impact",
-					"sections": [
-						{
-							"column-two": true,
-							"text": true,
-							"content": "With the addition of the datepicker component, the amount of time needed to populate a date field has <span class='bold'>improved by 600%</span> (decreasing from 6 seconds to 1 second)."
-						},
-						{
-							"column-two": true,
-							"text": true,
-							"content": "Datepickers minimize human error by providing users the option to select a date using a calendar widget. This visual aid decreases the cognitive load required to input a date, thus streamlining this process and greatly improving Premier Agent’s UX."
-						},
-						{
-							"column-two": true,
-							"text": true,
-							"content": "From an internal perspective, my addition of the datepicker component to PAXL also speeds up UI implementation for engineers and establishes consistency for designers."
-						}
-					]
-				},
-				{
-					"header": "Takeaways",
-					"alt": true,
-					"background-color": "#001f70",
-					"sections": [
-						{
-							"column-two": true,
-							"text": true,
-							"content": "Contributing a needed UI component to a consumer-facing product was positively motivating and challenging. I look forward to applying my deeper understanding of the architecture and strengths of design systems as I continue my design career."
-						},
-						{
-							"column-two": true,
-							"text": true,
-							"content": "I am excited for the datepicker to be live on the Premier Agent desktop app soon. Thank you to Kristen, Phil, and Anmy for mentoring me and giving me the opportunity to strengthen my skills as a UX designer and front-end developer!"
-						},
-						{
-							"column-two": true,
-							"text": true,
-							"content": "#ZGIsATeamSport"
-						},
-						{
-							"column-one": true,
-							"image": true,
-							"src": "images/zillow-group/intern-team.jpg"
-						}
-					]
+					"tag_name": "PRODUCT"
 				}
 			]
 		}

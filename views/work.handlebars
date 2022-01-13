@@ -7,13 +7,13 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 		<meta name="description" content="Product designer crafting meaningful user experiences for complex problems. Currently, designing tools that empower real estate agents at Zillow Groupin San Francisco."/>
 		<meta name="keywords" content="Jared Suasin, visual design, interaction design, ui design, ux design, product design, front-end development, ux engineering">
-		<meta property="og:title" content="Jared Suasin | About"/>
+		<meta property="og:title" content="Jared Suasin | Work"/>
 		<meta property="og:type" content="website"/>
 		<meta property="og:image" content="https://www.jaredsuasin.com/images/portfolio-cover.png"/>
 		<meta property="og:url" content="https://www.jaredsuasin.com/"/>
-		<meta property="og:description" content="Jared Suasin - About"/>
+		<meta property="og:description" content="Jared Suasin | Work"/>
 			
-		<title>Jared Suasin | About</title>
+		<title>Jared Suasin | Work</title>
 		<link href="css/main.css" rel="stylesheet" type="text/css">
 
 		<!-- CSS -->
@@ -46,7 +46,6 @@
 					<!--<p>product designer</p>-->
 				</div>
 
-
 				<!-- Navbar -->
 				<div class="nav_group">
 					<a class="nav_active" href="/work">
@@ -61,6 +60,31 @@
 				</div>
 			</div> <!-- End header -->
     
+
+			<!-- Projects -->
+			<div class="project_group">
+				{{#each projects}}
+					<div class="project_card">
+						<div class="project_card_image" style="background-image: url({{project_card_image}});"></div>
+						<div class="project_card_content">
+							<div class="tag_group">
+								{{#each tags}}
+								<div class="tag tag_default caption2">{{tag_name}}</div>
+								{{/each}}
+							</div>
+							<h3>{{name}}</h3>
+							<p>{{card_description}}</p>
+							<!--<h6 class="project_card_CTA">VIEW CASE STUDY</h6>-->
+						</div>
+						
+					</div>
+				{{/each}}
+			</div>
+
+
+
+
+
 
 			<!-- Footer -->
 			<div class='footer'>

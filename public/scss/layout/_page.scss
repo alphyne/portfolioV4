@@ -12,10 +12,8 @@ body {
      margin-bottom: 7.75rem;
  }
 
-/* Transparent sections */
-.section_transparent {
-    backdrop-filter: blur(0.5rem);
-
+/* Sections */
+.section {
     display: flex;
     flex-flow: row wrap;
     align-items: flex-start;
@@ -23,6 +21,7 @@ body {
     gap: 16px;
 
     border-radius: 3px;
+    //border: 1px solid white;
 }
 
 .section_column {
@@ -37,6 +36,11 @@ body {
 /* Blocks - Used within sections */
 .block > * {
     padding-bottom: 1.5rem;
+}
+
+/* Make transparent */
+.transparent {
+    backdrop-filter: blur(0.5rem);
 }
 
 /*
@@ -225,7 +229,7 @@ body {
 }
 
 @media(max-width: 1024px){
-    .section_transparent {
+    .section {
         flex-flow: column nowrap;
     }
 
