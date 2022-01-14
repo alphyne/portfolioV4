@@ -14,13 +14,29 @@
 			"card_description": "Increased message engagement 24% by making it easier for real estate agents to view client communication history ",
 			"tags": [
 				{
-					"tag_name": "IOS"
-				},
-				{
-					"tag_name": "ANDROID"
+					"tag_name": "NATIVE MOBILE"
 				},
 				{
 					"tag_name": "UX/UI"
+				}
+			],
+			"description": "Real estate agents often reference the Zillow Premier Agent mobile app to get a quick overview of where each client is in the home-buying process, however agents have regularly cited locating relevant client information as a key area of frustration. <br> <br>I led product design and strategy for a mobile refresh of the Homebuyer Profile page to address this for Premier Agent, Zillow’s B2B lead generation and customer relationship management (CRM) product for real estate teams.",
+			"metadata": [
+				{
+					"data_name": "ROLE",
+					"data_content": "UX/UI design & product strategy. Parterned with Research for Interviews and Usability Testing."
+				},
+				{
+					"data_name": "TEAM",
+					"data_content": "1 Lead UX Designer (me)<br>1 UX Designer, supporting<br>2 UX Researchers<br>1 Content Strategist<br>1Product Manager<br>2 Engineering Managers"
+				},
+				{
+					"data_name": "PLATFORMS",
+					"data_content": "iOS, Android"
+				},
+				{
+					"data_name": "TIMEFRAME",
+					"data_content": "Nov - Dec 2020"
 				}
 			]
 		},
@@ -86,13 +102,13 @@
 			"card_description": "Scaled the UX team from 2 to 6 designers & actively coached, designed a delivery tracking system, and established web design system",
 			"tags": [
 				{
-					"tag_name": "UX MANAGEMENT"
-				},
-				{
-					"tag_name": "UX/UI"
+					"tag_name": "DESIGN MANAGEMENT"
 				},
 				{
 					"tag_name": "PRODUCT"
+				},
+				{
+					"tag_name": "UX/UI"
 				}
 			]
 		}

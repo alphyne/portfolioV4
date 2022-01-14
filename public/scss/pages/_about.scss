@@ -7,15 +7,16 @@
 
     width: 100%;
     min-height: 42rem;
-    border-radius: 3px;
+    padding-right: 2rem;
+    border-radius: 3px 0 0 3px;
 }
 
 .profile_intro {
     flex: 2;
-    padding: 1rem 2rem 2rem 2rem;
+    padding: 2rem 2rem 2rem 0;
 
-    .intro_block {
-        padding: 1rem 0 1rem 0;
+    .intro_header {
+        padding: 0 0 1rem 0;
     }
 }
 
@@ -25,14 +26,24 @@
 @media(max-width: 1600px){
 }
 
-@media(max-width: 1280px){
+@media(max-width: 1200px){
 }
 
-@media(max-width: 1020px){
+@media(max-width: 1024px){
+    .profile_image {
+        border-radius: 3px 3px 0 0;
+        padding-right: 0;
+
+    }
+
+    .profile_intro {
+        padding: 0 2rem 2rem 2rem;
+    }
+    
 
 }
 
-@media(max-width: 840px){
+@media(max-width: 768px){
     
 }
 

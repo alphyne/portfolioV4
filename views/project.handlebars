@@ -6,15 +6,15 @@
 		<!-- Meta tags -->
 		<meta charset="utf-8">
     	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-		<meta name="description" content="Jared Suasin - {{title}}" />
+		<meta name="description" content="Jared Suasin | {{name}}" />
 		<meta name="keywords" content="Jared Suasin, visual design, interaction design, ui design, ux design, product design, front-end development, ux engineering">
-		<meta property="og:title" content="Jared Suasin - {{title}}">
+		<meta property="og:title" content="Jared Suasin | {{name}}">
 		<meta property="og:type" content="website"/>
 		<meta property="og:image" content="https://www.jaredsuasin.com/images/portfolio-cover.png"/>
 		<meta property="og:url" content="https://www.jaredsuasin.com/"/>
-		<meta property="og:description" content="Jared Suasin - {{title}}">	
+		<meta property="og:description" content="Jared Suasin - {{name}}">	
 		
-		<title>Jared Suasin &mdash; {{title}}</title>
+		<title>Jared Suasin &mdash; {{name}}</title>
 		<link href="css/main.css" rel="stylesheet" type="text/css">
 		<link href="https://fonts.googleapis.com/css?family=Montserrat:100,200,300,400,400i,500,600" rel="stylesheet">
 		<link rel="stylesheet" href="fonts/stylesheet.css" type="text/css" charset="utf-8" />
@@ -31,314 +31,390 @@
 		<script src="./js/jquery-1.8.2.min.js"></script>
 	
 	</head>
-	<body style="background-color:{{background-color}}">
+	<body>
+		<!--<div class="hero"></div>-->
+		<canvas id="c"></canvas>
+		<div class="page project">
 
-		<div class="header-container">
-			
 			<!-- Header -->
-			<div id="navbar" class="navbar-container">
+			<div class="header">
 
-				<div id="full-name" class="name-container">
-					<a class="strike-name" href="/"><h1><span>JARED SUASIN</span></h1></a>
+				<!-- Name -->
+				<div class="nav_title">
+					<div class="nav_name">
+						<a href="/"><h2>JARED SUASIN</h2></a>
+					</div>
+					<!--<p>product designer</p>-->
 				</div>
 
-				<div id="initials" class="name-container">
-					<a class="strike-name" href="/"><h1><span>JS</span></h1></a>
+				<!-- Navbar -->
+				<div class="nav_group transparent">
+					<a class="hover_sweep" href="/work">
+						<div class="nav_item">WORK</div>
+					</a>
+					<a class="hover_sweep" href="/about">
+						<div class="nav_item">ABOUT</div>
+					</a>
+					<a class="hover_sweep" target="_blank" href="/resume">
+						<div class="nav_item">RESUME</div>
+					</a>
 				</div>
+			</div> <!-- End header -->
 
-				<ul class="nav-container">
-					<li id="resume" class="nav-item"><a class="strike" target="_blank" href="/resume"><span>Resume</span></a></li>
-					<li id="about" class="nav-item"><a class="strike" href="/about"><span>About</span></a></li>
-					<li id="work" class="nav-item"><a class="strike" href="/#navbar"><span>Work</span></a></li>
-				</ul>
+
+
+			<div class="section section_vertical transparent">
+				<div class="hero_card"></div>
+				<div class="project_intro">
+
+					<!-- Project name & description -->
+					<div class="project_intro_header">
+						<h1>{{name}}</h1>
+						<div class="tag_group">
+							{{#each tags}}
+								<div class="tag tag_default caption2">{{tag_name}}</div>
+							{{/each}}
+						</div>
+					</div>
+					<hr class="divider_thin">
+				
+
+					<div class="block_large">
+						<h3>{{{description}}}</h3>
+					</div>
+
+					<div class="block_medium block_horizontal distribute4">
+						{{#each metadata}}
+							<div class="labeled_data">
+								<h6 class="caption2">{{data_name}}</h6>
+								<div class="labeled_data_content">
+									<p>{{{data_content}}}</p>
+								</div>
+							</div>
+						{{/each}}
+					</div>
+
+				</div>
 			</div>
-		</div>
 
-			<!-- Project content -->
+
+			<!-- Project content
 			<div class="project-landing" style="background-image:url({{src-cover}}); background-position-y:{{position-y-project}}">
 
 			</div>
-		<div class="page-container page-container-project">
+				<div class="page-container page-container-project">
 
-			<div class="project-container">
-				
-				<div class="project-intro-container">
-					<!-- Project title -->
-				
-					<div class="project-name">
-						<h1>{{title}}</h1>
-						<h4>{{type}}</h4>
-					</div>
-
-					<!-- Project description -->
-					<div class="project-description">
-						<p>{{{description}}}</p>
-					</div>
-
-					<!-- Project details -->
-					<div class="project-details-container">
+					<div class="project-container">
 						
-						<div class="project-details-left">
-							{{#each info-block-1}}
-							<div class="project-detail-item">
-								<h5>{{title}}</h5>
-								<h6>{{{content}}}</h6>
+						<div class="project-intro-container">
+							 Project title
+						
+							<div class="project-name">
+								<h1>{{title}}</h1>
+								<h4>{{type}}</h4>
 							</div>
-							{{/each}}
-						</div>
 
-						<div class="project-details-right">
-							{{#each info-block-2}}
-							<div class="project-detail-item">
-								<h5>{{title}}</h5>
-								<h6>{{{content}}}</h6>
+							Project descriptio
+							<div class="project-description">
+								<p>{{{description}}}</p>
 							</div>
-							{{/each}}
-						</div>
-				
-					</div>
-				</div>
 
-				<!-- Content blocks -->
-				{{#each blocks}}
-					<div class="block-container"{{#if alt}}style='background-color:{{{background-color}}}'{{/if}}>
-						<div class="block">
+							Project details
+							<div class="project-details-container">
 								
-							<!-- Content block header -->
-							<h2>{{header}}</h2>
+								<div class="project-details-left">
+									{{#each info-block-1}}
+									<div class="project-detail-item">
+										<h5>{{title}}</h5>
+										<h6>{{{content}}}</h6>
+									</div>
+									{{/each}}
+								</div>
 
-							<!-- Content block sections -->
-							{{#each sections}}
-								<div class="section-container"{{#if alt}}style='background-color:{{{background-color}}}'{{/if}}>
-								<div class="section">
+								<div class="project-details-right">
+									{{#each info-block-2}}
+									<div class="project-detail-item">
+										<h5>{{title}}</h5>
+										<h6>{{{content}}}</h6>
+									</div>
+									{{/each}}
+								</div>
+						
+							</div>
+						</div>
 
-									<!-- If wide content -->
-									{{#if column-one}}
+						Content blocks
+						{{#each blocks}}
+							<div class="block-container"{{#if alt}}style='background-color:{{{background-color}}}'{{/if}}>
+								<div class="block">
+										
+									Content block header
+									<h2>{{header}}</h2>
 
-										<!-- Section subheader -->
-										{{#if subheader}}
-											<h3>{{title}}</h3>
-										{{/if}}
+									Content block sections
+									{{#each sections}}
+										<div class="section-container"{{#if alt}}style='background-color:{{{background-color}}}'{{/if}}>
+										<div class="section">
 
-										<!-- Image -->
-										{{#if image}}
-											<div class="media-container">
-												<div class="boxed-content">
-													<img src="{{src}}">
+											If wide content
+											{{#if column-one}}
 
-													{{#if image-2}}
-														<img src="{{src-2}}">
-													
-														{{#if image-3}}
-															<img src="{{src-3}}">
+												<Section subheader
+												{{#if subheader}}
+													<h3>{{title}}</h3>
+												{{/if}}
+
+												 Image
+												{{#if image}}
+													<div class="media-container">
+														<div class="boxed-content">
+															<img src="{{src}}">
+
+															{{#if image-2}}
+																<img src="{{src-2}}">
+															
+																{{#if image-3}}
+																	<img src="{{src-3}}">
+																{{/if}}
+															{{/if}}
+														
+
+														{{#if caption}}
+															<div class="image-caption">
+																<p class="caption">{{{caption-content}}}</p>
+															</div>
 														{{/if}}
-													{{/if}}
-												
-
-												{{#if caption}}
-													<div class="image-caption">
-														<p class="caption">{{{caption-content}}}</p>
+														</div>
 													</div>
 												{{/if}}
-												</div>
-											</div>
-										{{/if}}
 
-										<!-- Three Images -->
-										{{#if image-three}}
-											<div class="media-container">
+												Three Images
+												{{#if image-three}}
+													<div class="media-container">
 
-												<div class="boxed-content">
-													<div class="image-three-container">
-														<img src="{{src-1}}">
-														<img src="{{src-2}}">
-														<img src="{{src-3}}">
-													</div>
+														<div class="boxed-content">
+															<div class="image-three-container">
+																<img src="{{src-1}}">
+																<img src="{{src-2}}">
+																<img src="{{src-3}}">
+															</div>
 
-													{{#if caption}}
-														<div class="image-caption">
-															<p>{{{caption-content}}}</p>
+															{{#if caption}}
+																<div class="image-caption">
+																	<p>{{{caption-content}}}</p>
+																</div>
+																	
+															{{/if}}
 														</div>
-															
-													{{/if}}
-												</div>
-											</div>
-										{{/if}}
-
-										<!-- Quote -->
-										{{#if quote}}
-											<div class="media-container">
-
-												<div class="boxed-content quote">
-													<p>{{{content}}}</p>
-												</div>
-											</div>
-
-										{{/if}}
-
-										<!-- Boxed content -->
-										{{#if boxed-content}}
-											<div class="media-container">
-												<div class="boxed-content list">
-													<p>{{{content-1}}}</p>
-													<p>{{{content-2}}}</p>
-												</div>
-											</div>
-										{{/if}}
-
-										<!-- Embedded web page -->
-										{{#if embed}}
-											<div id="embed" class="media-container">
-												<div class="boxed-content">
-													<iframe class="embedded-page" src={{{src}}}></iframe>
-													{{#if caption}}
-													<div class="image-caption">
-														<p class="caption">{{{caption-content}}}</p>
 													</div>
-													{{/if}}
-												</div>
-											</div>
-										{{/if}}
+												{{/if}}
 
-										<!-- Bullet list -->
-										{{#if bullet-list}}
-											<div class="media-container">
-												<div class="boxed-content list">
-													<ul>{{{content}}}</ul>
-												</div>
-											</div>
-					
-										{{/if}}
+												Quote
+												{{#if quote}}
+													<div class="media-container">
 
-										<!-- Text -->
-										{{#if text}}
-											<p>{{{content}}}</p>
-										{{/if}}
+														<div class="boxed-content quote">
+															<p>{{{content}}}</p>
+														</div>
+													</div>
 
-										<!-- Video -->
-										{{#if video}}
-											<div class="media-container">
-												<div class="boxed-content">
-													{{{content}}}
-												</div>
-											</div>
+												{{/if}}
+
+												Boxed content
+												{{#if boxed-content}}
+													<div class="media-container">
+														<div class="boxed-content list">
+															<p>{{{content-1}}}</p>
+															<p>{{{content-2}}}</p>
+														</div>
+													</div>
+												{{/if}}
+
+												Embedded web page
+												{{#if embed}}
+													<div id="embed" class="media-container">
+														<div class="boxed-content">
+															<iframe class="embedded-page" src={{{src}}}></iframe>
+															{{#if caption}}
+															<div class="image-caption">
+																<p class="caption">{{{caption-content}}}</p>
+															</div>
+															{{/if}}
+														</div>
+													</div>
+												{{/if}}
+
+												Bullet list
+												{{#if bullet-list}}
+													<div class="media-container">
+														<div class="boxed-content list">
+															<ul>{{{content}}}</ul>
+														</div>
+													</div>
 							
-										{{/if}}
+												{{/if}}
 
-									{{/if}}
+												Text
+												{{#if text}}
+													<p>{{{content}}}</p>
+												{{/if}}
 
-									<!-- If columned content -->
-									{{#if column-two}}
-
-										<!-- Section subheader -->
-										{{#if subheader}}
-											<h3>{{title}}</h3>
-										{{/if}}
-
-										{{#if image}}
-											<div class="image-row-container">
-												<div class="image-caption-container desktop">
-													<div class="image-caption">
-														{{#if caption}}
-															<p>{{{caption-content}}}</p>
-														{{/if}}
+												Video
+												{{#if video}}
+													<div class="media-container">
+														<div class="boxed-content">
+															{{{content}}}
+														</div>
 													</div>
-												</div>
-												
-												<div class="boxed-content image-container">
-													<img class="image-right" src="{{src}}">
-													<div class="image-caption mobile">
-													{{#if caption}}
-														<p>{{{caption-content}}}</p>
-													{{/if}}
+									
+												{{/if}}
+
+											{{/if}}
+
+											If columned content
+											{{#if column-two}}
+
+												Section subheader
+												{{#if subheader}}
+													<h3>{{title}}</h3>
+												{{/if}}
+
+												{{#if image}}
+													<div class="image-row-container">
+														<div class="image-caption-container desktop">
+															<div class="image-caption">
+																{{#if caption}}
+																	<p>{{{caption-content}}}</p>
+																{{/if}}
+															</div>
+														</div>
+														
+														<div class="boxed-content image-container">
+															<img class="image-right" src="{{src}}">
+															<div class="image-caption mobile">
+															{{#if caption}}
+																<p>{{{caption-content}}}</p>
+															{{/if}}
+															</div>
+														</div>
+
 													</div>
-												</div>
+												{{/if}}
 
-											</div>
-										{{/if}}
-
-										<!-- Text -->
-										{{#if text}}
-											<p class="text-right">{{{content}}}</p>
-										{{/if}}
-									{{/if}}
+												 Text
+												{{#if text}}
+													<p class="text-right">{{{content}}}</p>
+												{{/if}}
+											{{/if}}
+										</div>
+									</div>
+									{{/each}}
+								
 								</div>
 							</div>
-							{{/each}}
-						
-						</div>
+						{{/each}}
+
+					</div> 
+					
+
+
+
+
+					Prev/Next Project Nav
+					<div class="project-nav-container">
+
+						<h4>
+							{{#if previous}}
+								&#10229;
+								{{{previous-project}}}
+							{{/if}}
+
+							{{#if previous-and-next}}
+								<span class="separator">
+									&#8729;
+								</span>
+							{{/if}}
+
+							{{#if next}}
+								{{{next-project}}}
+								&#10230;
+							{{/if}}
+						</h4>
+								
 					</div>
-				{{/each}}
 
-			</div> <!-- project-container -->
-
-
-
-
-			<!-- Prev/Next Project Nav -->
-			<div class="project-nav-container">
-
-				<h4>
-					{{#if previous}}
-						&#10229;
-						{{{previous-project}}}
-					{{/if}}
-
-					{{#if previous-and-next}}
-						<span class="separator">
-							&#8729;
-						</span>
-					{{/if}}
-
-					{{#if next}}
-						{{{next-project}}}
-						&#10230;
-					{{/if}}
-				</h4>
-						
 			</div>
+			End old projects-->
+
+
 
 			<!-- Footer -->
-			<div class="project-margins">
-				<div class="footer-container">
+			<div class='footer'>
 
-					<div id="copyright">
-						<h2>Built with ♥ by Jared Suasin &copy 2020</h2>
-					</div>
+				<!-- Copyright -->
+				<div id="copyright">
+					<p>Built by: <span>Jared Suasin &copy 2022</span></p>
+				</div>
 
-					<div class="icon-container">
-						<ul>
-							<li>
-								<a href="mailto:suasin.ja@gmail.com" title="Mail">
-									<img src="images/icons/email-white.svg">
-								</a>
-							</li>
-							<li>
-								<a href="https://www.linkedin.com/in/jared-suasin-982a20133" target="_blank" title="LinkedIn">
-									<img src="images/icons/linkedin-logo-white.svg">
-								</a>
-							</li>
-							<li>
-								<a href="https://twitter.com/JaredSuasin" target="_blank" title="Twitter">
-									<img src="images/icons/twitter-logo-white.svg">
-								</a>
-							</li>
-							<li>
-								<a href="https://github.com/alphyne" target="_blank" title="GitHub">
-									<img src="images/icons/github-logo-white.svg">
-								</a>
-							</li>
-						</ul>
-					</div>
-				</div> <!-- footer-container -->
-			</div>
-
+				<!-- Contact icons -->
+				<div class="contact_icons">
+					<ul>
+						<li>
+							<a href="mailto:suasin.ja@gmail.com" title="Mail">
+								<svg id="iconEmail" class="icon"  xmlns="http://www.w3.org/2000/svg" viewBox="0 -3 24 24"><path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/><path d="M0 0h24v24H0z" fill="none"/></svg>
+							</a>
+						</li>
+						<li>
+							<a href="https://www.linkedin.com/in/jaredsuasin/" target="_blank" title="LinkedIn">
+								<svg class="icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 430.12 430.12"><path id="LinkedIn" class="cls-1" d="M430.12,261.54v159H337.93V272.19c0-37.27-13.33-62.7-46.7-62.7-25.48,0-40.64,17.14-47.3,33.72-2.44,5.93-3.06,14.18-3.06,22.48V420.56H148.65s1.24-251.29,0-277.32h92.21v39.31c-.19.29-.43.61-.61.89h.61v-.89c12.25-18.87,34.13-45.83,83.1-45.83C384.63,136.72,430.12,176.36,430.12,261.54ZM52.18,9.56C20.64,9.56,0,30.25,0,57.46,0,84.08,20,105.4,51,105.4h.62c32.15,0,52.15-21.31,52.15-47.94C103.13,30.25,83.73,9.56,52.18,9.56Zm-46.7,411H97.66V143.24H5.48Z"/></svg>
+							</a>
+						</li>
+						<!--<li>
+							<a href="https://twitter.com/JaredSuasin" target="_blank" title="Twitter">
+								<svg class="icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 410.15 410.15"><path class="cls-1" d="M403.63,92.18a162.51,162.51,0,0,1-28.28,9.54,88.22,88.22,0,0,0,23.28-37.07h0a4.63,4.63,0,0,0-6.77-5.39h0a163.09,163.09,0,0,1-43.23,17.87,11.15,11.15,0,0,1-2.7.33,11.41,11.41,0,0,1-7.57-2.89,88.44,88.44,0,0,0-58.51-22.08,94.59,94.59,0,0,0-28,4.33,85.65,85.65,0,0,0-57.73,61.72A94.23,94.23,0,0,0,192,151.1a3.15,3.15,0,0,1-.8,2.48,3.27,3.27,0,0,1-2.43,1.11l-.32,0C125.69,148.84,69.09,118.6,29.09,69.53h0a4.63,4.63,0,0,0-7.58.59h0A88.54,88.54,0,0,0,35.9,177.61a78.93,78.93,0,0,1-20.17-7.81h0a4.63,4.63,0,0,0-6.87,4h0a88.53,88.53,0,0,0,51.65,81.57l-1.89,0A79.82,79.82,0,0,1,43.72,254h0a4.62,4.62,0,0,0-5.27,6h0a88.64,88.64,0,0,0,70,60.28,163.16,163.16,0,0,1-91.39,27.75H6.83A6.79,6.79,0,0,0,.21,353a7,7,0,0,0,3.36,7.74,242.7,242.7,0,0,0,122,32.88c37.49,0,72.55-7.44,104.22-22.11A230.07,230.07,0,0,0,306,314.41a250.43,250.43,0,0,0,46.69-78.2,247.06,247.06,0,0,0,15.87-85.59v-1.34a15,15,0,0,1,5.63-11.71A174.51,174.51,0,0,0,409.35,99h0a4.62,4.62,0,0,0-5.72-6.79Z"/></svg>
+							</a>
+						</li>-->
+						<li>
+							<a href="https://github.com/alphyne" target="_blank" title="GitHub">
+								<svg class="icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 438.55 438.55">><path class="cls-1" d="M409.13,114.57a218.36,218.36,0,0,0-79.8-79.8Q278.95,5.37,219.27,5.36T109.21,34.77a218.36,218.36,0,0,0-79.8,79.8Q0,165,0,224.63,0,296.3,41.83,353.54t108.06,79.22q7.71,1.44,11.42-2A11.2,11.2,0,0,0,165,422.2q0-.85-.14-15.41t-.15-25.41l-6.56,1.14a84.57,84.57,0,0,1-15.85,1,121.07,121.07,0,0,1-19.84-2A44.33,44.33,0,0,1,103.35,373,36.17,36.17,0,0,1,90.79,355.4l-2.86-6.57a71.54,71.54,0,0,0-9-14.56q-6.14-8-12.42-10.84l-2-1.43a20.93,20.93,0,0,1-3.71-3.43,15.77,15.77,0,0,1-2.57-4q-.85-2,1.43-3.29C61.2,310.42,64,310,68,310l5.71.85q5.72,1.14,14.13,6.85a46.07,46.07,0,0,1,13.85,14.84q6.57,11.71,15.84,17.85t18.7,6.13a81.05,81.05,0,0,0,16.28-1.42,56.82,56.82,0,0,0,12.84-4.28q2.58-19.14,14-29.41A195.71,195.71,0,0,1,150,316.28a116.87,116.87,0,0,1-26.84-11.14,77,77,0,0,1-23-19.13q-9.13-11.42-15-30T79.37,213.2q0-34.55,22.56-58.81-10.58-26,2-58.24,8.28-2.58,24.56,3.85t23.84,11q7.56,4.58,12.13,7.71a206.22,206.22,0,0,1,109.64,0l10.85-6.85A154,154,0,0,1,311.2,99.29q15.14-5.72,23.14-3.14,12.84,32.26,2.28,58.24,22.54,24.27,22.56,58.82,0,24.27-5.86,43t-15.12,30a79.89,79.89,0,0,1-23.13,19,116.73,116.73,0,0,1-26.84,11.13A194.75,194.75,0,0,1,259,321.42q14.85,12.84,14.85,40.54V422.2a11.37,11.37,0,0,0,3.57,8.56q3.57,3.42,11.27,2,66.26-22,108.07-79.22t41.83-128.91Q438.54,165,409.13,114.57Z"/></svg>
+							</a>
+						</li>
+					</ul>
+				</div>
+			</div><!-- End footer container -->
+		
 		</div> <!-- page-container -->
 
-</div>
+		<script src="/js/portfolio.js"></script>
 
-<script src="/js/portfolio.js"></script>
-
-</body>
+		<!-- Three.js -->
+		<script src="/js/three.js"></script>
+		<script src="/js/sphere.js"></script>
+		
+		<script>
+			var canvasProject = document.getElementById('project-item');
+			var ctxProject = canvasProject.getContext('2d');
+			// Create an image element
+			//var img = document.createElement('IMG');
+			// When the image is loaded, draw it
+			//img.onload = function () {
+			// Create a shape
+			var notchSize = 20;
+			ctxProject.strokeStyle='rgb(255,255,255)';
+			ctxProject.lineWidth = 2;
+			ctxProject.beginPath();
+			ctxProject.moveTo(0, 0);
+			ctxProject.lineTo(0, ctxProject.canvasProject.height);
+			ctxProject.lineTo(ctxProject.canvasProject.width - notchSize, ctxProject.canvasProject.height);
+			ctxProject.lineTo(ctxProject.canvasProject.width, ctxProject.canvasProject.height - notchSize);
+			ctxProject.lineTo(ctxProject.canvasProject.width, 0);
+			ctxProject.lineTo(0, 0);
+			ctxProject.closePath();
+			// Clip to the current path
+			ctxProject.clip();
+			//ctx.drawImage(img, 0, 0);
+			ctxProject.stroke();		
+		</script>
+	</body>
 </html>
 {{/with}}

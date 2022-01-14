@@ -47,7 +47,7 @@
 				</div>
 
 				<!-- Navbar -->
-				<div class="nav_group">
+				<div class="nav_group transparent">
 					<a class="nav_active" href="/work">
 						<div class="nav_item">WORK</div>
 					</a>
@@ -64,26 +64,25 @@
 			<!-- Projects -->
 			<div class="project_group">
 				{{#each projects}}
-					<div class="project_card">
-						<div class="project_card_image" style="background-image: url({{project_card_image}});"></div>
-						<div class="project_card_content">
-							<div class="tag_group">
-								{{#each tags}}
-								<div class="tag tag_default caption2">{{tag_name}}</div>
-								{{/each}}
+					<div class="project_card transparent">
+						<a href="{{url}}">
+							<div class="project_card_image" style="background-image: url({{project_card_image}});"></div>
+							<div class="project_card_content">
+								<div class="tag_group">
+									{{#each tags}}
+										<div class="tag tag_default caption2">{{tag_name}}</div>
+									{{/each}}
+								</div>
+								<h3>{{name}}</h3>
+								<p>{{card_description}}</p>
+								<!--<h6 class="project_card_CTA">VIEW CASE STUDY</h6>-->
 							</div>
-							<h3>{{name}}</h3>
-							<p>{{card_description}}</p>
-							<!--<h6 class="project_card_CTA">VIEW CASE STUDY</h6>-->
-						</div>
+						</a>
 						
 					</div>
+
 				{{/each}}
 			</div>
-
-
-
-
 
 
 			<!-- Footer -->
