@@ -283,20 +283,24 @@ body {
         align-items: stretch;
         align-content: space-between;*/
     }
+}
 
+@media(max-width: 768px){
     .page {
 
         // Display 1
         h1 {
-            font-size: 44px;
-            line-height: 68px;
+            /*font-size: 44px;
+            line-height: 68px;*/ 
+            font-size: 32px;
+            line-height: 60px;
             //margin-bottom: 1rem;
         }
 
         // Display 2
         h2 {
-            font-size: 32px;
-            line-height: 60px;
+            font-size: 26px;
+            line-height: 48px;
         }
 
         // Title
@@ -305,10 +309,6 @@ body {
             line-height: 38px;
         }
     }
-}
-
-@media(max-width: 768px){
-
 }
 
 @media(max-width: 600px){

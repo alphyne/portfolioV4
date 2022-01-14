@@ -1,5 +1,11 @@
 .landing_content{
     padding-top: 7.75rem;
+
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: stretch;
+    align-content: space-around;
+    gap: 2rem;
 }
 
 .landing_name {
@@ -23,7 +29,7 @@
 }
 
 .landing_description {
-    margin-top: 2rem;
+    //margin-top: 2rem;
     padding: 0 1rem 1rem 1rem;
     max-width: 940px;
     width: 70vw;
@@ -38,14 +44,8 @@
 
 @media(max-width: 1024px) {
 
-
-    .highlight_white {
-        min-width: 360px;
-        width: 25vw;
-    }
-
-    .landing-description {
-        width: 65vw;
+    .landing_description {
+        width: auto;
     }
 
 
@@ -54,15 +54,20 @@
 
 @media(max-width: 768px){
 
-    .landing_description {
-        width: 85vw;
+    .landing_content {
+        gap: 1rem;
     }
 
+    .highlight_white {
+        max-width: 280px;
+        //width: 25vw;
+    }
 }
 
 @media(max-width: 600px){
 
     .landing_content{
+
         padding-top: 2rem;
     }
 
