@@ -62,7 +62,7 @@
 			</div> <!-- End header -->
 
 
-
+			<!-- Project header -->
 			<div class="section section_vertical transparent">
 				<div class="hero_card"></div>
 				<div class="project_intro">
@@ -79,11 +79,11 @@
 					<hr class="divider_thin">
 				
 
-					<div class="block_large">
+					<div class="block_large description">
 						<h3>{{{description}}}</h3>
 					</div>
 
-					<div class="block_medium block_horizontal distribute4">
+					<div class="block_medium blocks_horizontal distribute4">
 						{{#each metadata}}
 							<div class="labeled_data">
 								<h6 class="caption2">{{data_name}}</h6>
@@ -98,255 +98,208 @@
 			</div>
 
 
-			<!-- Project content
-			<div class="project-landing" style="background-image:url({{src-cover}}); background-position-y:{{position-y-project}}">
 
-			</div>
-				<div class="page-container page-container-project">
+			{{#each sections}}
 
-					<div class="project-container">
-						
-						<div class="project-intro-container">
-							 Project title
-						
-							<div class="project-name">
+				<!-- WIDE SECTION -->
+				{{#if section_wide}}
+					<!-- Section title -->
+					{{#if section_header}}
+						<div class="section section_horizontal section_header">
+							<div class="section_title">
 								<h1>{{title}}</h1>
-								<h4>{{type}}</h4>
 							</div>
-
-							Project descriptio
-							<div class="project-description">
-								<p>{{{description}}}</p>
-							</div>
-
-							Project details
-							<div class="project-details-container">
-								
-								<div class="project-details-left">
-									{{#each info-block-1}}
-									<div class="project-detail-item">
-										<h5>{{title}}</h5>
-										<h6>{{{content}}}</h6>
-									</div>
-									{{/each}}
-								</div>
-
-								<div class="project-details-right">
-									{{#each info-block-2}}
-									<div class="project-detail-item">
-										<h5>{{title}}</h5>
-										<h6>{{{content}}}</h6>
-									</div>
-									{{/each}}
-								</div>
-						
-							</div>
+							<h3 class="section_description description">{{content}}</h3>
 						</div>
+					{{/if}}
 
-						Content blocks
-						{{#each blocks}}
-							<div class="block-container"{{#if alt}}style='background-color:{{{background-color}}}'{{/if}}>
-								<div class="block">
-										
-									Content block header
-									<h2>{{header}}</h2>
+					<!-- Section with body text -->
+					{{#if section_content}}
 
-									Content block sections
-									{{#each sections}}
-										<div class="section-container"{{#if alt}}style='background-color:{{{background-color}}}'{{/if}}>
-										<div class="section">
+						<div class="section section_horizontal section_header">
+							<div class="section_title">
+								<h1>{{title}}</h1>
+							</div>
+							<p class="section_description description">{{content}}</p>
+						</div>
+					{{/if}}
 
-											If wide content
-											{{#if column-one}}
+					<!-- Image section -->
+					{{#if image}}
+						<div class="section transparent image" style="background-image:url({{image_url}});"></div>
+					{{/if}}
 
-												<Section subheader
-												{{#if subheader}}
+
+					<!-- Blocks -->
+					{{#if if_blocks}}
+
+						<!-- Flow by row -->
+						{{#if flow_row}}
+							<div class="blocks_horizontal {{mobile_before_after}}">
+								{{#each blocks}}
+									<div class="block_column {{card}} {{flex_span}} {{span_width}} {{position}}">
+								
+										<!-- Image -->
+										{{#if image}}
+											<!--<div class="block transparent image" style="background-image:url({{image_url}});"></div>-->
+											{{#if caption_top}}
+												<div class="caption {{caption_position}}">
+													<h6>{{label}}</h6>
+													<p>{{content}}</p>
+												</div>
+											{{/if}}
+											<img class="image_fit {{gif}}" src="{{image_url}}">
+
+											{{#if caption_bottom}}
+												<div class="caption {{caption_position}}">
+													<h6>{{label}}</h6>
+													<p>{{content}}</p>
+												</div>
+											{{/if}}
+										{{/if}}									
+
+										<!-- Text -->
+										{{#if text}}
+											<h3>{{title}}</h3>
+											<p class="description">{{{content}}}</p>
+										{{/if}}
+
+										<!-- Data block with description -->
+										{{#if if_data_block_caption}}
+												<div class="data_block">
+													<h3 class="data_block_value">{{data}}</h3>
+													<p class="caption1">{{label}}</p>
+													<p class="data_block_description">{{description}}</p>
+												</div>
+												
+										{{/if}}
+
+										<!-- Mobile image caption -->
+										{{#if caption}}
+											<div class="mobile_caption labeled_data_large">
+												<h5>{{label}}</h5>
+												<p>{{{content}}}</p>
+											</div>											
+										{{/if}}
+
+										<!-- Data block group -->
+										{{#if if_data_block}}
+											<h3>{{title}}</h3>
+											<div class="data_block_group block_horizontal data_block_distribute2">
+												{{#each data_blocks}}
+													<div class="data_block">
+														<h2 class="data_block_value">{{data}}</h2>
+														<p class="caption1">{{label}}</p>
+													</div>
+												{{/each}}
+											</div>
+										{{/if}}
+
+										<!-- Centered section -->
+										{{#if if_centered_section}}
+											<div class="span_row_center">
+												<div class="span2"></div>
+												<div class="span4">
 													<h3>{{title}}</h3>
-												{{/if}}
+													<p class="description">{{{content}}}</p>
+												</div>
+												<div class="span2"></div>
+										
+											</div>
+										{{/if}}	
 
-												 Image
-												{{#if image}}
-													<div class="media-container">
-														<div class="boxed-content">
-															<img src="{{src}}">
+										<!-- Right aligned section -->
+										{{#if if_right_section}}
+											<div class="span_row_right">
+												<div class="span3 span_half"></div>
+												<div class="transparent block_card span_half">
+													<h3>{{title}}</h3>
+													<p class="description">{{{content}}}</p>
+												</div>
+											</div>
+										{{/if}}		
 
-															{{#if image-2}}
-																<img src="{{src-2}}">
-															
-																{{#if image-3}}
-																	<img src="{{src-3}}">
-																{{/if}}
-															{{/if}}
+										<!-- Stacked blocks -->
+										{{#if flow_column}}
+											<div class="block_column blocks_vertical">
+												{{#each blocks}}
+													<div class="block_column {{card}}">
 														
-
-														{{#if caption}}
-															<div class="image-caption">
-																<p class="caption">{{{caption-content}}}</p>
+													<!-- Image -->
+													{{#if image}}
+														<!--<div class="block transparent image" style="background-image:url({{image_url}});"></div>-->
+														{{#if caption_top}}
+															<div class="caption {{caption_position}}">
+																<h6>{{label}}</h6>
+																<p>{{content}}</p>
 															</div>
 														{{/if}}
-														</div>
-													</div>
-												{{/if}}
+														<img class="image_fit" src="{{image_url}}">
 
-												Three Images
-												{{#if image-three}}
-													<div class="media-container">
-
-														<div class="boxed-content">
-															<div class="image-three-container">
-																<img src="{{src-1}}">
-																<img src="{{src-2}}">
-																<img src="{{src-3}}">
+														{{#if caption_bottom}}
+															<div class="caption {{caption_position}}">
+																<h6>{{label}}</h6>
+																<p>{{content}}</p>
 															</div>
+														{{/if}}
+													{{/if}}								
 
-															{{#if caption}}
-																<div class="image-caption">
-																	<p>{{{caption-content}}}</p>
-																</div>
-																	
-															{{/if}}
-														</div>
-													</div>
-												{{/if}}
+														<!-- Text -->
+														{{#if text}}
+															<h3>{{title}}</h3>
+															<p class="description">{{{content}}}</p>
+														{{/if}}
 
-												Quote
-												{{#if quote}}
-													<div class="media-container">
-
-														<div class="boxed-content quote">
-															<p>{{{content}}}</p>
-														</div>
-													</div>
-
-												{{/if}}
-
-												Boxed content
-												{{#if boxed-content}}
-													<div class="media-container">
-														<div class="boxed-content list">
-															<p>{{{content-1}}}</p>
-															<p>{{{content-2}}}</p>
-														</div>
-													</div>
-												{{/if}}
-
-												Embedded web page
-												{{#if embed}}
-													<div id="embed" class="media-container">
-														<div class="boxed-content">
-															<iframe class="embedded-page" src={{{src}}}></iframe>
-															{{#if caption}}
-															<div class="image-caption">
-																<p class="caption">{{{caption-content}}}</p>
+														<!-- Data block group -->
+														{{#if if_data_block}}
+															<h3>{{title}}</h3>
+															<div class="data_block_group blocks_horizontal data_block_distribute2">
+																{{#each data_blocks}}
+																	<div class="data_block">
+																		<h2 class="data_block_value">{{data}}</h2>
+																		<p class="caption1">{{label}}</p>
+																	</div>
+																{{/each}}
 															</div>
-															{{/if}}
-														</div>
+														{{/if}}		
 													</div>
-												{{/if}}
-
-												Bullet list
-												{{#if bullet-list}}
-													<div class="media-container">
-														<div class="boxed-content list">
-															<ul>{{{content}}}</ul>
-														</div>
-													</div>
-							
-												{{/if}}
-
-												Text
-												{{#if text}}
-													<p>{{{content}}}</p>
-												{{/if}}
-
-												Video
-												{{#if video}}
-													<div class="media-container">
-														<div class="boxed-content">
-															{{{content}}}
-														</div>
-													</div>
-									
-												{{/if}}
-
-											{{/if}}
-
-											If columned content
-											{{#if column-two}}
-
-												Section subheader
-												{{#if subheader}}
-													<h3>{{title}}</h3>
-												{{/if}}
-
-												{{#if image}}
-													<div class="image-row-container">
-														<div class="image-caption-container desktop">
-															<div class="image-caption">
-																{{#if caption}}
-																	<p>{{{caption-content}}}</p>
-																{{/if}}
-															</div>
-														</div>
-														
-														<div class="boxed-content image-container">
-															<img class="image-right" src="{{src}}">
-															<div class="image-caption mobile">
-															{{#if caption}}
-																<p>{{{caption-content}}}</p>
-															{{/if}}
-															</div>
-														</div>
-
-													</div>
-												{{/if}}
-
-												 Text
-												{{#if text}}
-													<p class="text-right">{{{content}}}</p>
-												{{/if}}
-											{{/if}}
-										</div>
+												{{/each}}
+											</div>
+											
+										{{/if}}				
 									</div>
-									{{/each}}
-								
-								</div>
+								{{/each}}
 							</div>
-						{{/each}}
+						{{/if}}
+					{{/if}} <!-- End blocks -->
 
-					</div> 
-					
+					{{#if if_divider}}
+						<div class="divider_thin divider_section"></div>
+					{{/if}}
+				{{/if}} <!-- End section_wide -->
+			{{/each}}
 
-
-
-
-					Prev/Next Project Nav
-					<div class="project-nav-container">
-
-						<h4>
-							{{#if previous}}
-								&#10229;
-								{{{previous-project}}}
-							{{/if}}
-
-							{{#if previous-and-next}}
-								<span class="separator">
-									&#8729;
-								</span>
-							{{/if}}
-
-							{{#if next}}
-								{{{next-project}}}
-								&#10230;
-							{{/if}}
-						</h4>
-								
+			<!-- Projects -->
+			<div class="project_group">
+				{{#each projects}}
+					<div class="project_card transparent">
+						<a href="{{url}}">
+							<div class="project_card_image" style="background-image: url({{project_card_image}});"></div>
+							<div class="project_card_content">
+								<div class="tag_group">
+									{{#each tags}}
+										<div class="tag tag_default caption2">{{tag_name}}</div>
+									{{/each}}
+								</div>
+								<h3>{{name}}</h3>
+								<p>{{card_description}}</p>
+								<!--<h6 class="project_card_CTA">VIEW CASE STUDY</h6>-->
+							</div>
+						</a>
+						
 					</div>
-
+				{{/each}}
 			</div>
-			End old projects-->
-
-
 
 			<!-- Footer -->
 			<div class='footer'>

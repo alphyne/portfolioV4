@@ -98,6 +98,7 @@
     }
 }
 
+/* Break: Tablet */
 @media(max-width: 768px){
 
 }
@@ -114,5 +115,10 @@
         7px 7px #83F1A4;
         transform: translate(-7px, -7px);
     }
+
+}
+
+/* Break: Mobile */
+@media(max-width: 480px) {
 
 }

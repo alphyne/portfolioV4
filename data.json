@@ -20,15 +20,15 @@
 					"tag_name": "UX/UI"
 				}
 			],
-			"description": "Real estate agents often reference the Zillow Premier Agent mobile app to get a quick overview of where each client is in the home-buying process, however agents have regularly cited locating relevant client information as a key area of frustration. <br> <br>I led product design and strategy for a mobile refresh of the Homebuyer Profile page to address this for Premier Agent, Zillow’s B2B lead generation and customer relationship management (CRM) product for real estate teams.",
+			"description": "How might we help real estate agents more easily locate critical client information? <br> <br>I led a mobile refresh of the Homebuyer Profile to help agents better communicate with active clients and centralize their information throughout the homebuying journey.",
 			"metadata": [
 				{
 					"data_name": "ROLE",
-					"data_content": "UX/UI design & product strategy. Parterned with Research for Interviews and Usability Testing."
+					"data_content": "UX/UI design & product strategy. Partnered with Research for Interviews and Usability Testing."
 				},
 				{
 					"data_name": "TEAM",
-					"data_content": "1 Lead UX Designer (me)<br>1 UX Designer, supporting<br>2 UX Researchers<br>1 Content Strategist<br>1Product Manager<br>2 Engineering Managers"
+					"data_content": "1 Lead Designer (me)<br>1 Supporting Designer<br>2 UX Researchers<br>1 Content Strategist<br>1 Product Manager<br>2 Engineering Managers"
 				},
 				{
 					"data_name": "PLATFORMS",
@@ -38,6 +38,505 @@
 					"data_name": "TIMEFRAME",
 					"data_content": "Nov - Dec 2020"
 				}
+			],
+			"sections": [
+				{
+					"section_wide": true,
+					"section_header": true,
+					"title": "BACKGROUND",
+					"content": "Agents often reference the Premier Agent mobile app to receive new leads, work with homebuyers, and determine their daily priorities.",
+					"if_blocks": true, 
+					"flow_row": true, 
+					"blocks": [
+						{
+							"title": "The Product",
+							"text": true, 
+							"content": "Premier Agent is Zillow’s B2B client acquisition and business builder platform for real estate agents & teams.",
+							"card": "transparent block_card"
+						},
+						{
+							"title": "Business Impact",
+							"text": true, 
+							"content": "<span class=\"text_positive\">Increased message rate +14%</span> over 2021, translating to positive growth in monthly Premier Agent client volume and revenue",
+							"card": "transparent block_card"
+						}
+					],
+					"if_divider": true
+				},
+				{
+					"section_wide": true, 
+					"section_header": true, 
+					"title": "PROBLEM",
+					"content": "Agents need a quick overview of where each client is in the homebuying process so they can follow up more efficiently.",
+					"if_blocks": true, 
+					"mobile_before_after": "mobile_before_after",
+					"flow_row": true,
+					"blocks": [
+						{
+							"flex_span": "span3",
+							"image": true,
+							"caption_bottom": "true",
+							"caption_position": "caption_bottom_center",
+							"image_url": "../images/homebuyer_profile/CDP_Pipeline.png",
+							"label": "Contacts"
+						},
+						{
+							"flex_span": "span3",
+							"image": true,
+							"image_url": "../images/homebuyer_profile/CDP_ShowingTimeDeclined.png",
+							"caption_bottom": "true",
+							"caption_position": "caption_bottom_center",
+							"label": "Tour Request"
+						},
+						{
+							"flex_span": "span6",
+							"flow_column": true, 
+							"blocks": [
+								{
+									"title": "Difficulty keeping up",
+									"text": true,
+									"content": "Agents search in multiple places across the Premier Agent mobile app for siloed texts, emails, appointments, and more. There's opportunity for us to help agents identify priority contacts to follow up with, especially as their pipeline grows.",
+									"card": "transparent block_card"
+								},
+								{
+									"title": "In numbers",
+									"if_data_block": true, 
+									"data_blocks": [
+										{
+											"data": "8",
+											"label": "CHANNELS OF CLIENT INFO"
+										},
+										{
+											"data": "+9",
+											"label": "NEW CLIENTS PER MONTH"
+										}
+									],
+									"card": "transparent block_card"
+								}
+							]
+						}
+					],
+					"if_divider": true
+				},
+				{
+					"section_wide": true,
+					"section_header": true,
+					"title": "GOALS",
+					"content": "How are we measuring success for this project?",
+					"if_blocks": true, 
+					"flow_row": true, 
+					"blocks": [
+						{
+							"if_data_block_caption": true, 
+							"data": "+10% message view rate",
+							"label": "BUSINESS OUTCOME",
+							"description": "Increased message engagement signals agents are communicating with clients more, which drives more home tours and transactions.",
+							"card": "transparent block_card"
+						},
+						{
+							"if_data_block_caption": true, 
+							"data": "Scalability",
+							"label": "PRODUCT GOAL",
+							"description": "Easily integrate existing and future Zillow cross-product services. Avoid future design debt.",
+							"card": "transparent block_card"
+						},
+						{
+							"if_data_block_caption": true, 
+							"data": "Centralize client info",
+							"label": "UX GOAL",
+							"description": "Set expectations of where agents can find client information for throughout the homebuying journey.",
+							"card": "transparent block_card"
+						}
+					],
+					"if_divider": true
+				},
+				{
+					"section_wide": true,
+					"section_header": true, 
+					"title": "SOLUTION",
+					"content": "Aggregate all messages on the Homebuyer Profile and prioritize the most relevant background information",
+					"if_blocks": true, 
+					"flow_row": true,
+					"mobile_before_after": "mobile_before_after",
+					"blocks": [
+						{
+							"flex_span": "span_row_center",
+							"if_centered_section": true,
+							"title": "Client Snapshot",
+							"content": "The improved profile header quickly summarizes a client's profile so agents can get the context they need before engaging them."
+						},
+						{
+							"flex_span": "span3",
+							"caption": true,
+							"position": "caption_left",
+							"label": "Before",
+							"content": "Agents didn't find the profile header valuable and often scrolled to find more relevant info."
+						},
+						{
+							"flex_span": "span4",
+							"image": true,
+							"image_url": "../images/homebuyer_profile/CDP_Before.png"
+						},
+						{
+							"flex_span": "span4",
+							"image": true,
+							"image_url": "../images/homebuyer_profile/CDP_Landing.png"
+						},
+						{
+							"flex_span": "span3",
+							"caption": true,
+							"position": "caption_right",
+							"label": "After",
+							"content": "Now we surface key client attributes such as lead source, contact creation date, and notes."
+						}
+					]
+				},
+				{
+					"section_wide": true,
+					"if_blocks": true, 
+					"flow_row": true,
+					"mobile_before_after": "mobile_before_after",
+					"blocks": [
+						{
+							"flex_span": "span_row_center",
+							"if_centered_section": true,
+							"title": "Message History",
+							"content": "The new Messages section aggregates all communication channels for agents, making it easier to recall details from their last conversation, and follow up appropriately."
+						},
+						{
+							"flex_span": "span3",
+							"caption": true,
+							"position": "caption_left",
+							"label": "Before",
+							"content": "Most agents search for client messages in their Inbox because the 'View all messages' CTA is easily missed."
+						},
+						{
+							"flex_span": "span4",
+							"image": true,
+							"image_url": "../images/homebuyer_profile/CDP_Before.png"
+						},
+						{
+							"flex_span": "span4",
+							"image": true,
+							"image_url": "../images/homebuyer_profile/CDP_Messages.png"
+						},
+						{
+							"flex_span": "span3",
+							"caption": true,
+							"position": "caption_right",
+							"label": "After",
+							"content": "Agents can easily access recent texts, emails, and tour requests, in one place."
+						}
+					],
+					"if_divider": true
+				},
+				{
+					"section_wide": true,
+					"section_header": true, 
+					"title": "RESEARCH",
+					"content": "How do agents manage their clients using the Premier Agent mobile app today?",
+					"if_blocks": true, 
+					"flow_row": true,
+					"blocks": [
+						{
+							"flex_span": "span6",
+							"span_width": "span_half",
+							"flow_column": true, 
+							"blocks": [
+								{
+									"flex_span": "span3",
+									"text": true,
+									"title": "Interviews",
+									"content": "The new Messages section aggregates all communication channels for agents, making it easier to recall details from their last conversation, and follow up appropriately.",
+									"card": "transparent block_card"
+								}
+							]
+						},
+						{
+							"flex_span": "span6",
+							"span_width": "span_half",
+							"flow_column": true, 
+							"blocks": [
+								{
+									"flex_span": "span3",
+									"text": true,
+									"title": "Personas: Introducing Ada",
+									"content": "The new Messages section aggregates all communication channels for agents, making it easier to recall details from their last conversation, and follow up appropriately.",
+									"card": "transparent block_card"
+								}
+							]
+						},
+						{
+							"flex_span": "span4",
+							"span_width": "span_half",
+							"image": true,
+							"image_url": "../images/homebuyer_profile/Research_Alan.png",
+							"caption_top": "true",
+							"caption_position": "caption_top_left",
+							"label": "Traditional agent persona"
+						},
+						{
+							"flex_span": "span4",
+							"span_width": "span_half",
+							"image": true,
+							"image_url": "../images/homebuyer_profile/Research_Ada.png",
+							"caption_top": "true",
+							"caption_position": "caption_top_left",
+							"label": "New agent persona"
+						}
+
+					]
+				},		
+				{
+					"section_wide": true,
+					"if_blocks": true, 
+					"flow_row": true,
+					"blocks": [
+						{
+							"flex_span": "span_row_right",
+							"if_right_section": true,
+							"title": "Affinity diagram",
+							"content": "The new Messages section aggregates all communication channels for agents, making it easier to recall details from their last conversation, and follow up appropriately."
+						},
+						{
+							"flex_span": "span4",
+							"span_width": "span_half",
+							"image": true,
+							"image_url": "../images/homebuyer_profile/Research_AffinityDiagram.png"
+						}
+					],
+					"if_divider": true
+				},
+				{
+					"section_wide": true,
+					"section_header": true, 
+					"title": "CONCEPT",
+					"content": "What are the immediate opportunities that will have high impact on agents?",
+					"if_blocks": true, 
+					"flow_row": true,
+					"blocks": [
+						{
+							"flex_span": "span4",
+							
+							"flow_column": true, 
+							"blocks": [
+								{
+									"flex_span": "span3",
+									"text": true,
+									"title": "Brainstorming with Product & Research",
+									"content": "The goal of this brainstorm was to identify which solutions would impact agents most, their scope, and constraints to work around.",
+									"card": "transparent block_card"
+								}
+							]
+						},
+						{
+							"flex_span": "span8",
+						
+							"flow_column": true, 
+							"blocks": [
+								{
+									"flex_span": "span4",
+									"image": true,
+									"image_url": "../images/homebuyer_profile/Concept_Brainstorm.png",
+									"caption_top": "true",
+									"caption_position": "caption_top_left",
+									"label": "1: Sketch & discuss concepts"
+								},
+								{
+									"flex_span": "span4",
+									"image": true,
+									"image_url": "../images/homebuyer_profile/Concept_Group.png",
+									"caption_top": "true",
+									"caption_position": "caption_top_left",
+									"label": "2: Group by area of focus"
+								},
+								{
+									"flex_span": "span4",
+									"image": true,
+									"image_url": "../images/homebuyer_profile/Concept_Prioritize.png",
+									"caption_top": "true",
+									"caption_position": "caption_top_left",
+									"label": "3: Prioritize solutions"
+								}
+							]
+						}
+					],
+					"if_divider": true
+				},
+				{
+					"section_wide": true,
+					"section_content": true, 
+					"title": "DESIGN PRINCIPLES",
+					"content": "Defining design principles allowed us to articulate our top considerations for the redesigned Homebuyer Profile. They helped guide our decisions and explorations.",
+					"if_blocks": true, 
+					"flow_row": true,
+					"blocks": [
+						{
+							"flex_span": "span6",
+							"span_width": "span_half",
+							"text": true,
+							"title": "Optimize for task completion",
+							"content": "Keep experiences concise to enable agents to get their jobs done quickly and easily.",
+							"card": "transparent block_card"
+						},
+						{
+							"flex_span": "span6",
+							"span_width": "span_half",
+							"text": true,
+							"title": "Maintain consistency",
+							"content": "Create recognizable patterns, so agents can focus on executing the task without having to relearn the experience every time they switch context.",
+							"card": "transparent block_card"
+								
+							
+						},
+						{
+							"flex_span": "span6",
+							"span_width": "span_half",
+							"text": true,
+							"title": "Design for touch",
+							"content": "Prioritize gestures that are most natural, so no extra effort is required to discover or remember them.",
+							"card": "transparent block_card"
+								
+						},
+						{
+							"flex_span": "span6",
+							"span_width": "span_half",
+							"text": true,
+							"title": "Make navigation clear and intuitive",
+							"content": "Provide a clear path so that agents are quickly guided to the content they’re looking for.",
+							"card": "transparent block_card"
+								
+						}
+					],
+					"if_divider": true
+				},
+				{
+					"section_wide": true,
+					"section_content": true, 
+					"title": "EXPLORATIONS",
+					"content": "Before designing any screens, we wanted to nail the flow of how agents would read through a client profile. Exercises like competitive analysis and sitemaps allowed us to learn what worked and didn't work for our use cases, and led us to a framework that would help agents get quick context on their clients.",
+					"if_blocks": true, 
+					"flow_row": true,
+					"blocks": [
+						{
+							"flex_span": "span4",
+							"span_width": "span_half",
+							"image": true,
+							"image_url": "../images/homebuyer_profile/Explorations_Content_Wireframes.png",
+							"caption_top": "true",
+							"caption_position": "caption_top_left",
+							"label": "An information architecture framework for the Profile, which informed our wireframes"
+						}
+					],
+					"if_divider": true
+				},
+				{
+					"section_wide": true,
+					"section_content": true, 
+					"title": "USER TESTING",
+					"content": "We held task-based usability testing sessions in order to validate our proposed information architecture and test interactions. We recruited agents that matched Ada's profile to get feedback from people who matched her tech-forward, customer-focused approach.",
+					"if_blocks": true, 
+					"flow_row": true,
+					"blocks": [
+						{
+							"flex_span": "span4",
+							"span_width": "span_half",
+							"image": true,
+							"image_url": "../images/homebuyer_profile/UserTesting_Prototype.png",
+							"caption_top": "true",
+							"caption_position": "caption_top_left",
+							"label": "Lots of stuff happening in the Figma prototype"
+						}
+					]
+				},
+				{
+					"section_wide": true,
+					"if_blocks": true, 
+					"flow_row": true,
+					"blocks": [
+						{
+							"flex_span": "span_row_right",
+							"if_right_section": true,
+							"title": "Key Learning",
+							"content": "Agents work styles vary - As a result, one information hierarchy may not best serve all agents. However, ordering info in a way that address four fundamental questions may be most valuable to agents."
+						},
+						{
+							"flex_span": "span4",
+							"span_width": "span_half",
+							"image": true,
+							"image_url": "../images/homebuyer_profile/UserTesting_Findings.png",
+							"caption_top": "true",
+							"caption_position": "caption_top_left",
+							"label": "Agent mental model: Refreshing memory on a client"
+						}
+					],
+					"if_divider": true
+				},
+				{
+					"section_wide": true,
+					"section_content": true, 
+					"title": "REFINEMENT",
+					"content": "During testing we noticed for some agents, scrolling horizontally to view other tabs was not immediately intuitive. We needed to decrease the learning curve and revisit our design principles.",
+					"if_blocks": true, 
+					"flow_row": true,
+					"mobile_before_after": "mobile_before_after",
+					"blocks": [
+						{
+							"flex_span": "span_row_center",
+							"if_centered_section": true,
+							"title": "Page Anchoring Tabs",
+							"content": "We introduced a stacking interaction that moves to the next tab as agents scroll down the page. This allows agents to comfortably scroll in one direction as they search for the context they need."
+						},
+						{
+							"flex_span": "span3",
+							"caption": true,
+							"position": "caption_left",
+							"label": "Before",
+							"content": "It wasn't immediately understood that more tabs existed to the right of Appointments."
+						},
+						{
+							"flex_span": "span4",
+							"image": true,
+							"image_url": "../images/homebuyer_profile/Refinement_TapTabs.png"
+						},
+						{
+							"flex_span": "span4",
+							"image": true,
+							"image_url": "../images/homebuyer_profile/Refinement_ScrollTabs.gif",
+							"gif": "gif"
+						},
+						{
+							"flex_span": "span3",
+							"caption": true,
+							"position": "caption_right",
+							"label": "After",
+							"content": "Tabs move with the agent as they scroll in one direction, and show their current place."
+						}
+					],
+					"if_divider": true
+				},
+				{
+					"section_wide": true,
+					"section_header": true, 
+					"title": "RESULTS",
+					"content": "How do agents manage their clients using the Premier Agent mobile app today?",
+					"if_blocks": true, 
+					"flow_row": true,
+					"blocks": [
+					],
+					"if_divider": true
+				},
+				{
+					"section_wide": true,
+					"section_header": true, 
+					"title": "ALL PROJECTS",
+					"content": "How do agents manage their clients using the Premier Agent mobile app today?",
+					"if_blocks": true, 
+					"flow_row": true,
+					"blocks": [
+					]
+				}				
+
 			]
 		},
 		{
@@ -61,6 +560,79 @@
 				},
 				{
 					"tag_name": "RESEARCH"
+				}
+			],
+			"sections": [
+				{
+					"section_header": true,
+					"title": "BACKGROUND",
+					"content": "Agents often reference the Premier Agent mobile app to receive new leads, work with homebuyers, and determine their daily priorities.",
+					"blocks": [
+						{
+							"layout_horizontal": true,
+							"left_title": "The Product",
+							"left_text": true, 
+							"left_content": "Premier Agent is Zillow’s B2B client acquisition and business builder platform for real estate agents & teams.",
+							"right_title": "Area of Focus",
+							"right_text": true, 
+							"right_content": "Enable real estate agents to stay up to date with client management tools, and ultimately help them close on their dream house." 
+						}
+					]
+				},
+				{
+					"image": true,
+					"image_url": "../images/project-covers/blyss-cover.png"
+				},
+				{
+					"section_header": true, 
+					"title": "PROBLEM",
+					"content": "Agents need a quick overview of where each client is in the homebuying process so they can follow up more efficiently.",
+					"if_blocks": true, 
+					"flow_row": true,
+					"blocks": [
+						{
+							"image": true,
+							"image_url": "../images/project-covers/blyss-cover.png"
+						},
+						{
+							"title": "Current experience",
+							"text": true,
+							"content": "Agents search in multiple places across the Premier Agent mobile app for siloed texts, emails, appointments, and more. There's opportunity for us to help agents identify priority contacts to follow-up with, especially as their pipeline grows."
+						},
+						{
+							"title": "In numbers",
+							"data_block": true, 
+							"data_blocks": [
+								{
+									"data": "8",
+									"label": "CHANNELS OF CLIENT INFO"
+								},
+								{
+									"data": "+9",
+									"label": "NEW LEADS PER MONTH"
+								}
+							]
+						},
+						{
+							"title": "Goals",
+							"data_block": true,
+							"data_blocks": [
+								{
+									"data": "+10% message view rate",
+									"label": "BUSINESS OUTCOME"
+								},
+								{
+									"data": "Scalability",
+									"label": "PRODUCT GOAL"
+								},
+								{
+									"data": "Centralize client info",
+									"label": "UX GOAL"
+								}
+							]
+						}
+					]
+
 				}
 			]
 		},

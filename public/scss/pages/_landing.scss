@@ -52,6 +52,7 @@
 
 }
 
+/* Break: Tablet */
 @media(max-width: 768px){
 
     .landing_content {
@@ -59,7 +60,7 @@
     }
 
     .highlight_white {
-        max-width: 280px;
+        max-width: 300px;
         //width: 25vw;
     }
 }
@@ -74,8 +75,8 @@
 
 }
 
-@media(max-width: 400px){
-
+/* Break: Mobile */
+@media(max-width: 480px) {
 
 }
 

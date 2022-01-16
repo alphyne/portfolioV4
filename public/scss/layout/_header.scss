@@ -112,6 +112,7 @@
 
 @media(max-width: 1024px){}
 
+/* Break: Tablet */
 @media(max-width: 768px){
 
   .nav_item {
@@ -133,17 +134,12 @@
 
 @media(max-width: 600px){
 
-
-
-  @media(max-height: 900px) {
-
-    #nav-work {
-      display: none;
-    }
-  }
 }
 
+/* Break: Mobile */
+@media(max-width: 480px) {
 
+}
   
 
 
