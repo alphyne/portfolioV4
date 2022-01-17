@@ -205,6 +205,41 @@ body {
   background: #7A48D6;
   color: #F0E3FF; }
 
+/* Button: Return to top */
+.button_top {
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+  justify-content: center;
+  position: fixed;
+  bottom: 2rem;
+  right: 2rem;
+  z-index: 10;
+  width: 3rem;
+  height: 3rem;
+  border: 2px solid #83F1A4;
+  border-radius: 50%;
+  backdrop-filter: blur(0.75rem);
+  box-shadow: 2px 2px 10px rgba(82, 82, 82, 0.4); }
+  .button_top .button_top_icon {
+    fill: #83F1A4;
+    width: 1.5rem;
+    height: 1.5rem; }
+  .button_top h6 {
+    color: white;
+    text-align: center; }
+
+.button_top:hover {
+  background: #83F1A4; }
+  .button_top:hover .button_top_icon {
+    fill: #222122; }
+
+.show {
+  display: flex; }
+
+.hide {
+  display: none; }
+
 /* 
 * Text styles ===
 */
@@ -301,12 +336,13 @@ body {
     .mobile_before_after .span3, .mobile_before_after .span4 {
       flex: 2 0 45%; }
   .mobile_caption {
-    padding-top: 0 !important;
-    padding-left: 1.5rem; }
+    padding-top: 0 !important; }
+    .mobile_caption h5 {
+      text-align: center; }
   .caption_left {
     order: 3;
     float: left; }
-    .caption_left h5, .caption_left p {
+    .caption_left p {
       text-align: left; }
   .caption_right {
     order: 4; }
@@ -511,6 +547,12 @@ body {
     border-bottom: none;
     padding-bottom: 0; }
 
+.title_card {
+  flex: 1 0 45%;
+  padding-right: 2rem; }
+  .title_card h1 {
+    padding-bottom: 2rem; }
+
 .project_card > * {
   padding-bottom: 1rem; }
 
@@ -518,6 +560,16 @@ body {
   box-shadow: 1px 1px #83F1A4, 2px 2px #83F1A4, 3px 3px #83F1A4, 4px 4px #83F1A4, 5px 5px #83F1A4, 6px 6px #83F1A4, 7px 7px #83F1A4, 8px 8px #83F1A4, 9px 9px #83F1A4, 10px 10px #83F1A4, 12px 12px #83F1A4, 13px 13px #83F1A4, 14px 14px #83F1A4, 15px 15px #83F1A4;
   transform: translate(-15px, -15px);
   transition: all 0.2s ease-in-out 0s; }
+
+.project_group_nav .project_group {
+  flex-flow: column nowrap; }
+  .project_group_nav .project_group .project_card .project_card_horizontal {
+    display: flex; }
+    .project_group_nav .project_group .project_card .project_card_horizontal .project_card_image {
+      border-radius: 3px 0 0 3px;
+      flex: 2; }
+    .project_group_nav .project_group .project_card .project_card_horizontal .project_card_content {
+      flex: 2; }
 
 @media (max-width: 1024px) {
   .project_group {
@@ -562,7 +614,6 @@ body {
 .hero_card {
   height: 54vh;
   min-height: 30rem;
-  background-image: url("../images/project-covers/newsfeed-cover.png");
   background-position-x: center;
   background-position-y: center;
   background-size: cover;
@@ -574,6 +625,12 @@ body {
     padding-bottom: 1rem; }
   .project_intro .intro_block {
     padding: 1rem 0; }
+
+.project_hero_image {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #E0F2FF; }
 
 .section_header .section_title {
   flex: 2;

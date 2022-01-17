@@ -3,24 +3,22 @@
 		{
             "name": "Homebuyer Profile",
             "url": "homebuyer-profile",
-            "project_card_image": "../images/project-covers/blyss-cover.png",
-            "position-y-project": "center",
-            "position-y-home": "center",
-            "position-x-home": "center",
-            "previous": false,
-            "next": true,
-            "next-project": "<a href=\"/pa-newsfeed\">Agent Newsfeed</a>",
-            "previous-and-next": false,
-			"card_description": "Increased message engagement 24% by making it easier for real estate agents to view client communication history ",
+            "project_card_image": "../images/homebuyer_profile/Hero_Solution_Shadow.png",
+			"project_card_background": "#579dff",
+			"card_description": "Increased message engagement 14% by centralizing recent conversations agents have had with their clients",
+			"company": "Zillow Group",
 			"tags": [
 				{
-					"tag_name": "NATIVE MOBILE"
+					"tag_name": "iOS"
+				},
+				{
+					"tag_name": "Android"
 				},
 				{
 					"tag_name": "UX/UI"
 				}
 			],
-			"description": "How might we help real estate agents more easily locate critical client information? <br> <br>I led a mobile refresh of the Homebuyer Profile to help agents better communicate with active clients and centralize their information throughout the homebuying journey.",
+			"description": "How might we help real estate agents more easily locate critical client information? <br> <br>I led a mobile refresh of the Homebuyer Profile to help Zillow Premier Agents better communicate with active clients and centralize their information throughout the homebuying journey.",
 			"metadata": [
 				{
 					"data_name": "ROLE",
@@ -31,8 +29,8 @@
 					"data_content": "1 Lead Designer (me)<br>1 Supporting Designer<br>2 UX Researchers<br>1 Content Strategist<br>1 Product Manager<br>2 Engineering Managers"
 				},
 				{
-					"data_name": "PLATFORMS",
-					"data_content": "iOS, Android"
+					"data_name": "TOOLS",
+					"data_content": "Figma, ProtoPie"
 				},
 				{
 					"data_name": "TIMEFRAME",
@@ -57,7 +55,7 @@
 						{
 							"title": "Business Impact",
 							"text": true, 
-							"content": "<span class=\"text_positive\">Increased message rate +14%</span> over 2021, translating to positive growth in monthly Premier Agent client volume and revenue",
+							"content": "<span class=\"text_positive\">Increased message view rate +14%</span> over 2021, translating to positive growth in monthly Premier Agent client volume and revenue",
 							"card": "transparent block_card"
 						}
 					],
@@ -78,7 +76,7 @@
 							"caption_bottom": "true",
 							"caption_position": "caption_bottom_center",
 							"image_url": "../images/homebuyer_profile/CDP_Pipeline.png",
-							"label": "Contacts"
+							"label": "Contacts Pipeline"
 						},
 						{
 							"flex_span": "span3",
@@ -144,7 +142,7 @@
 							"if_data_block_caption": true, 
 							"data": "Centralize client info",
 							"label": "UX GOAL",
-							"description": "Set expectations of where agents can find client information for throughout the homebuying journey.",
+							"description": "Set expectations of where agents can find client information throughout the homebuying journey.",
 							"card": "transparent block_card"
 						}
 					],
@@ -163,7 +161,7 @@
 							"flex_span": "span_row_center",
 							"if_centered_section": true,
 							"title": "Client Snapshot",
-							"content": "The improved profile header quickly summarizes a client's profile so agents can get the context they need before engaging them."
+							"content": "The improved profile header quickly summarizes a client's profile so agents can get the background they need before engaging with them."
 						},
 						{
 							"flex_span": "span3",
@@ -201,7 +199,7 @@
 							"flex_span": "span_row_center",
 							"if_centered_section": true,
 							"title": "Message History",
-							"content": "The new Messages section aggregates all communication channels for agents, making it easier to recall details from their last conversation, and follow up appropriately."
+							"content": "The new Messages section centralizes all communication channels for agents, making it easier to recall details from their last conversation, and follow up appropriately."
 						},
 						{
 							"flex_span": "span3",
@@ -241,30 +239,21 @@
 						{
 							"flex_span": "span6",
 							"span_width": "span_half",
-							"flow_column": true, 
-							"blocks": [
-								{
-									"flex_span": "span3",
-									"text": true,
-									"title": "Interviews",
-									"content": "The new Messages section aggregates all communication channels for agents, making it easier to recall details from their last conversation, and follow up appropriately.",
-									"card": "transparent block_card"
-								}
-							]
+							"text": true,
+							"title": "Interviews",
+							"content": "While synthesizing interview findings, our team realized that the attitudes and feedback of participants differed from our traditional agent persona. We represented this new profile as Ada.",
+							"card": "transparent block_card"
+								
+							
 						},
 						{
 							"flex_span": "span6",
 							"span_width": "span_half",
-							"flow_column": true, 
-							"blocks": [
-								{
-									"flex_span": "span3",
-									"text": true,
-									"title": "Personas: Introducing Ada",
-									"content": "The new Messages section aggregates all communication channels for agents, making it easier to recall details from their last conversation, and follow up appropriately.",
-									"card": "transparent block_card"
-								}
-							]
+							"text": true,
+							"title": "Personas: Introducing Ada",
+							"content": "Ada captures a fresher lens on agent attitude and behavior in a modern team-oriented context. She will be insightful as Zillow continues to develop more specialized products and programs.",
+							"card": "transparent block_card"
+								
 						},
 						{
 							"flex_span": "span4",
@@ -286,7 +275,7 @@
 						}
 
 					]
-				},		
+				},	
 				{
 					"section_wide": true,
 					"if_blocks": true, 
@@ -296,7 +285,7 @@
 							"flex_span": "span_row_right",
 							"if_right_section": true,
 							"title": "Affinity diagram",
-							"content": "The new Messages section aggregates all communication channels for agents, making it easier to recall details from their last conversation, and follow up appropriately."
+							"content": "This artifact served as a visual representation of research and ideas that creates a foundational understanding of Ada's user journey for future projects."
 						},
 						{
 							"flex_span": "span4",
@@ -324,14 +313,13 @@
 									"flex_span": "span3",
 									"text": true,
 									"title": "Brainstorming with Product & Research",
-									"content": "The goal of this brainstorm was to identify which solutions would impact agents most, their scope, and constraints to work around.",
+									"content": "The goal of this brainstorm was to identify solutions that would impact agents most, their scope, and constraints to work around.",
 									"card": "transparent block_card"
 								}
 							]
 						},
 						{
 							"flex_span": "span8",
-						
 							"flow_column": true, 
 							"blocks": [
 								{
@@ -376,7 +364,7 @@
 							"span_width": "span_half",
 							"text": true,
 							"title": "Optimize for task completion",
-							"content": "Keep experiences concise to enable agents to get their jobs done quickly and easily.",
+							"content": "Keep experiences concise and enable agents to get their jobs done quickly and easily.",
 							"card": "transparent block_card"
 						},
 						{
@@ -414,7 +402,7 @@
 					"section_wide": true,
 					"section_content": true, 
 					"title": "EXPLORATIONS",
-					"content": "Before designing any screens, we wanted to nail the flow of how agents would read through a client profile. Exercises like competitive analysis and sitemaps allowed us to learn what worked and didn't work for our use cases, and led us to a framework that would help agents get quick context on their clients.",
+					"content": "Before designing any screens, we wanted to nail how agents would read through a client profile. Exercises like competitive analysis and sitemaps taught us what worked and didn't work for our use cases, and led us to a framework that would help agents get quick context on their clients.",
 					"if_blocks": true, 
 					"flow_row": true,
 					"blocks": [
@@ -425,7 +413,7 @@
 							"image_url": "../images/homebuyer_profile/Explorations_Content_Wireframes.png",
 							"caption_top": "true",
 							"caption_position": "caption_top_left",
-							"label": "An information architecture framework for the Profile, which informed our wireframes"
+							"label": "An information architecture framework for the Homebuyer Profile, which informed our wireframes"
 						}
 					],
 					"if_divider": true
@@ -434,7 +422,7 @@
 					"section_wide": true,
 					"section_content": true, 
 					"title": "USER TESTING",
-					"content": "We held task-based usability testing sessions in order to validate our proposed information architecture and test interactions. We recruited agents that matched Ada's profile to get feedback from people who matched her tech-forward, customer-focused approach.",
+					"content": "We held task-based usability testing in order to validate our proposed information architecture and test interactions. We recruited agents that matched Ada's persona to get feedback from people who matched her tech-forward, customer-focused approach.",
 					"if_blocks": true, 
 					"flow_row": true,
 					"blocks": [
@@ -458,7 +446,7 @@
 							"flex_span": "span_row_right",
 							"if_right_section": true,
 							"title": "Key Learning",
-							"content": "Agents work styles vary - As a result, one information hierarchy may not best serve all agents. However, ordering info in a way that address four fundamental questions may be most valuable to agents."
+							"content": "Agents work styles vary - As a result, one information hierarchy may not best serve all agents. However, ordering info in a way that addresses four fundamental questions may be most valuable to agents."
 						},
 						{
 							"flex_span": "span4",
@@ -476,7 +464,7 @@
 					"section_wide": true,
 					"section_content": true, 
 					"title": "REFINEMENT",
-					"content": "During testing we noticed for some agents, scrolling horizontally to view other tabs was not immediately intuitive. We needed to decrease the learning curve and revisit our design principles.",
+					"content": "During testing we noticed for some agents, scrolling horizontally to view other tabs was not immediately discoverable. We needed to decrease the learning curve and revisit our design principle, 'Design for touch'.",
 					"if_blocks": true, 
 					"flow_row": true,
 					"mobile_before_after": "mobile_before_after",
@@ -485,7 +473,7 @@
 							"flex_span": "span_row_center",
 							"if_centered_section": true,
 							"title": "Page Anchoring Tabs",
-							"content": "We introduced a stacking interaction that moves to the next tab as agents scroll down the page. This allows agents to comfortably scroll in one direction as they search for the context they need."
+							"content": "We introduced a stacking interaction that moves agents to the next tab as they scroll down the page. This allows agents to comfortably scroll in one direction as they search for the context they need."
 						},
 						{
 							"flex_span": "span3",
@@ -510,56 +498,108 @@
 							"caption": true,
 							"position": "caption_right",
 							"label": "After",
-							"content": "Tabs move with the agent as they scroll in one direction, and show their current place."
+							"content": "All tab sections can be accessed with one continuous scroll. Tabs also show their current place."
 						}
 					],
 					"if_divider": true
 				},
 				{
 					"section_wide": true,
-					"section_header": true, 
+					"section_content": true, 
 					"title": "RESULTS",
-					"content": "How do agents manage their clients using the Premier Agent mobile app today?",
-					"if_blocks": true, 
-					"flow_row": true,
-					"blocks": [
-					],
+					"content": "The new Homebuyer Profile provides agents the context they need in order to easily identify who a client is and how to follow-up with them. <br><br>This way agents spend less time scrolling in the Premier Agent app, and more time working with clients and completing their daily priorities.",
 					"if_divider": true
 				},
 				{
-					"section_wide": true,
-					"section_header": true, 
-					"title": "ALL PROJECTS",
-					"content": "How do agents manage their clients using the Premier Agent mobile app today?",
-					"if_blocks": true, 
-					"flow_row": true,
-					"blocks": [
+					"if_project_nav": true, 
+					
+					"projects": [
+						{
+							"if_section_header": true, 
+							"title": "NEXT",
+							"content": "Feel free to <a href=\"mailto:suasin.ja@gmail.com\">email me</a> if you want to learn more about my projects ツ"
+						},
+						{
+							"if_project_card": true, 
+							"name": "Homebuyer Profile",
+							"url": "homebuyer-profile",
+							"project_card_image": "../images/homebuyer_profile/Hero_Solution_Shadow.png",
+							"project_card_background": "#579dff",
+							"card_description": "Increased message engagement 14% by centralizing recent conversations agents have had with their clients",
+							"company": "Zillow Group",
+							"tags": [
+								{
+									"tag_name": "iOS"
+								},
+								{
+									"tag_name": "Android"
+								},
+								{
+									"tag_name": "UX/UI"
+								}
+							]
+						},
+						{
+							"if_project_card": true, 
+							"name": "Lead Routing",
+							"url": "lead-routing",
+							"project_card_image": "../images/homebuyer_profile/Hero_Solution_Shadow.png",
+							"project_card_background": "#2bc1e1",
+							"card_description": "End-to-end product design for a suite of experiences that enabled real estate teams more granular control of their client distribution",
+							"company": "Zillow Group",
+							"tags": [
+								{
+									"tag_name": "Web"
+								},
+								{
+									"tag_name": "UX/UI"
+								},
+								{
+									"tag_name": "UX Research"
+								}
+							]
+						},
+						{
+							"if_project_card": true, 
+							"name": "Constellation Migration",
+							"url": "constellation-migration",
+							"project_card_image": "../images/homebuyer_profile/Hero_Solution_Shadow.png",
+							"project_card_background": "#b375ff",
+							"card_description": "Scoped and communicated a strategy to transition 35 web pages across 9 Engineering teams to a new design system",
+							"company": "Zillow Group",
+							"tags": [
+								{
+									"tag_name": "Design Systems"
+								},
+								{
+									"tag_name": "Web"
+								},
+								{
+									"tag_name": "Strategy"
+								}
+							]							
+						}
 					]
-				}				
+				}			
 
 			]
 		},
 		{
             "name": "Lead Routing",
             "url": "lead-routing",
-            "project_card_image": "../images/project-covers/newsfeed-cover.png",
-            "position-y-project": "center",
-            "position-y-home": "center",
-            "position-x-home": "center",
-            "previous": false,
-            "next": true,
-            "next-project": "<a href=\"/pa-newsfeed\">Agent Newsfeed</a>",
-            "previous-and-next": false,
-			"card_description": "End-to-end product design for a suite of experiences that allowed real estate teams more granular control of their client distribution",
+            "project_card_image": "../images/homebuyer_profile/Hero_Solution_Shadow.png",
+			"project_card_background": "#579dff",
+			"card_description": "End-to-end product design for a suite of experiences that enabled real estate teams more granular control of their client distribution",
+			"company": "Zillow Group",
 			"tags": [
 				{
-					"tag_name": "WEB"
+					"tag_name": "Web"
 				},
 				{
 					"tag_name": "UX/UI"
 				},
 				{
-					"tag_name": "RESEARCH"
+					"tag_name": "UX Research"
 				}
 			],
 			"sections": [
@@ -639,45 +679,39 @@
 		{
             "name": "Constellation Migration",
             "url": "constellation-migration",
-            "project_card_image": "../images/project-covers/newsfeed-cover.png",
-            "position-y-project": "center",
-            "position-y-home": "center",
-            "position-x-home": "center",
-            "previous": false,
-            "next": true,
+            "project_card_image": "../images/homebuyer_profile/Hero_Solution_Shadow.png",
+			"project_card_background": "#b375ff",
             "next-project": "<a href=\"/pa-newsfeed\">Agent Newsfeed</a>",
             "previous-and-next": false,
 			"card_description": "Scoped and communicated a strategy to transition 35 web pages across 9 Engineering teams to a new design system",
+			"company": "Zillow Group",
 			"tags": [
 				{
-					"tag_name": "DESIGN SYSTEMS"
+					"tag_name": "Design Systems"
 				},
 				{
-					"tag_name": "STRATEGY"
+					"tag_name": "Web"
 				},
 				{
-					"tag_name": "INFLUENCING"
+					"tag_name": "Strategy"
 				}
 			]
 		},
 		{
             "name": "ConnectNGive",
             "url": "connectngive",
-            "project_card_image": "../images/project-covers/newsfeed-cover.png",
-            "position-y-project": "center",
-            "position-y-home": "center",
-            "position-x-home": "center",
-            "previous": false,
-            "next": true,
+            "project_card_image": "../images/homebuyer_profile/Hero_Solution_Shadow.png",
+			"project_card_background": "#ff7370",
             "next-project": "<a href=\"/pa-newsfeed\">Agent Newsfeed</a>",
             "previous-and-next": false,
 			"card_description": "Scaled the UX team from 2 to 6 designers & actively coached, designed a delivery tracking system, and established web design system",
+			"company": "ConnectNGive",
 			"tags": [
 				{
-					"tag_name": "DESIGN MANAGEMENT"
+					"tag_name": "Design Management"
 				},
 				{
-					"tag_name": "PRODUCT"
+					"tag_name": "Strategy"
 				},
 				{
 					"tag_name": "UX/UI"

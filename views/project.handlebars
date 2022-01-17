@@ -34,6 +34,13 @@
 	<body>
 		<!--<div class="hero"></div>-->
 		<canvas id="c"></canvas>
+		<a class="button_top transparent hide" href="" id="js_top">
+			<!--
+			<svg class="button_top_icon" xmlns="http://www.w3.org/2000/svg" enable-background="new 0 0 24 24" height="24px" viewBox="0 0 24 24" width="24px" fill="#000000"><g><rect fill="none" height="24" width="24"/><path d="M12,20c-4.41,0-8-3.59-8-8s3.59-8,8-8s8,3.59,8,8S16.41,20,12,20 M12,22c5.52,0,10-4.48,10-10c0-5.52-4.48-10-10-10 C6.48,2,2,6.48,2,12C2,17.52,6.48,22,12,22L12,22z M11,12l0,4h2l0-4h3l-4-4l-4,4H11z"/></g></svg>
+			-->
+			<svg class="button_top_icon" xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 0 24 24" width="24px" fill="#000000"><path d="M0 0h24v24H0V0z" fill="none"/><path d="M4 12l1.41 1.41L11 7.83V20h2V7.83l5.58 5.59L20 12l-8-8-8 8z"/></svg>
+			<!--<h6>Top</h6>-->
+		</a>
 		<div class="page project">
 
 			<!-- Header -->
@@ -64,7 +71,9 @@
 
 			<!-- Project header -->
 			<div class="section section_vertical transparent">
-				<div class="hero_card"></div>
+				<div class="project_hero_image" style="background: {{project_card_background}}">
+					<img class="image_fit" src="{{project_card_image}}">
+				</div>
 				<div class="project_intro">
 
 					<!-- Project name & description -->
@@ -109,7 +118,7 @@
 							<div class="section_title">
 								<h1>{{title}}</h1>
 							</div>
-							<h3 class="section_description description">{{content}}</h3>
+							<h3 class="section_description description">{{{content}}}</h3>
 						</div>
 					{{/if}}
 
@@ -120,7 +129,7 @@
 							<div class="section_title">
 								<h1>{{title}}</h1>
 							</div>
-							<p class="section_description description">{{content}}</p>
+							<p class="section_description description">{{{content}}}</p>
 						</div>
 					{{/if}}
 
@@ -266,40 +275,65 @@
 												{{/each}}
 											</div>
 											
-										{{/if}}				
+										{{/if}}		
+
+
+									
 									</div>
 								{{/each}}
 							</div>
-						{{/if}}
+						{{/if}}<!-- End flow row -->
 					{{/if}} <!-- End blocks -->
 
 					{{#if if_divider}}
 						<div class="divider_thin divider_section"></div>
 					{{/if}}
 				{{/if}} <!-- End section_wide -->
-			{{/each}}
 
-			<!-- Projects -->
-			<div class="project_group">
-				{{#each projects}}
-					<div class="project_card transparent">
-						<a href="{{url}}">
-							<div class="project_card_image" style="background-image: url({{project_card_image}});"></div>
-							<div class="project_card_content">
-								<div class="tag_group">
-									{{#each tags}}
-										<div class="tag tag_default caption2">{{tag_name}}</div>
-									{{/each}}
+				{{#if if_project_nav}}		
+				<!-- Projects -->
+				<!--<div class="project_group_nav">-->
+					<div class="project_group">
+						{{#each projects}}
+
+							{{#if if_section_header}}
+								<div class="title_card">
+									<div class="title_card_content">
+										<h1>{{title}}</h1>
+										<h3 class="description">{{{content}}}</h3>
+									</div>
+								
 								</div>
-								<h3>{{name}}</h3>
-								<p>{{card_description}}</p>
-								<!--<h6 class="project_card_CTA">VIEW CASE STUDY</h6>-->
-							</div>
-						</a>
-						
+							{{/if}}
+							{{#if if_project_card}}
+								<div class="project_card transparent">
+									<a href="{{url}}" class="project_card_horizontal">
+										<div class="project_hero_image" style="background: {{project_card_background}}">
+											<img class="image_fit" src="{{project_card_image}}">
+										</div>
+										<div class="project_card_content">
+											<div class="tag_group">
+												{{#each tags}}
+													<div class="tag tag_default caption2">{{tag_name}}</div>
+												{{/each}}
+											</div>
+											<h3>{{name}}</h3>
+											<p class="caption">{{card_description}}</p>
+											<p class="caption1 caption">{{company}}</p>
+											<!--<h6 class="project_card_CTA">VIEW CASE STUDY</h6>-->
+										</div>
+									</a>
+								</div>
+							{{/if}}
+						{{/each}}
 					</div>
-				{{/each}}
-			</div>
+				<!--</div>-->
+					
+
+				{{/if}}
+			{{/each}} <!-- End sections -->
+
+		
 
 			<!-- Footer -->
 			<div class='footer'>

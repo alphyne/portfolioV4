@@ -6,7 +6,6 @@
 .hero_card {
     height: 54vh;
     min-height: 30rem;
-    background-image: url("../images/project-covers/newsfeed-cover.png");
     background-position-x: center;
     background-position-y: center;
     background-size: cover;
@@ -23,6 +22,17 @@
 
     .intro_block {
         padding: 1rem 0;
+    }
+}
+
+.project_hero_image {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #E0F2FF;
+
+    image {
+        
     }
 }
 
