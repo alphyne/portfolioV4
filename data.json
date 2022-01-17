@@ -3,7 +3,7 @@
 		{
             "name": "Homebuyer Profile",
             "url": "homebuyer-profile",
-            "project_card_image": "../images/homebuyer_profile/Hero_Solution_Shadow.png",
+            "project_card_image": "../images/homebuyer_profile/Hero_Solution_HomebuyerProfile.png",
 			"project_card_background": "#579dff",
 			"card_description": "Increased message engagement 14% by centralizing recent conversations agents have had with their clients",
 			"company": "Zillow Group",
@@ -30,11 +30,11 @@
 				},
 				{
 					"data_name": "TOOLS",
-					"data_content": "Figma, ProtoPie"
+					"data_content": "Figma, ProtoPie, Whimsical, Mural"
 				},
 				{
 					"data_name": "TIMEFRAME",
-					"data_content": "Nov - Dec 2020"
+					"data_content": "Nov 2020 - Dec 2020"
 				}
 			],
 			"sections": [
@@ -161,7 +161,7 @@
 							"flex_span": "span_row_center",
 							"if_centered_section": true,
 							"title": "Client Snapshot",
-							"content": "The improved profile header quickly summarizes a client's profile so agents can get the background they need before engaging with them."
+							"content": "The improved profile header concisely gives agents the background and summary they need before engaging with clients."
 						},
 						{
 							"flex_span": "span3",
@@ -185,7 +185,7 @@
 							"caption": true,
 							"position": "caption_right",
 							"label": "After",
-							"content": "Now we surface key client attributes such as lead source, contact creation date, and notes."
+							"content": "Now we surface key  attributes such as lead source, contact creation date, and notes."
 						}
 					]
 				},
@@ -284,7 +284,7 @@
 						{
 							"flex_span": "span_row_right",
 							"if_right_section": true,
-							"title": "Affinity diagram",
+							"title": "Affinity diagram: How does Ada work?",
 							"content": "This artifact served as a visual representation of research and ideas that creates a foundational understanding of Ada's user journey for future projects."
 						},
 						{
@@ -445,8 +445,8 @@
 						{
 							"flex_span": "span_row_right",
 							"if_right_section": true,
-							"title": "Key Learning",
-							"content": "Agents work styles vary - As a result, one information hierarchy may not best serve all agents. However, ordering info in a way that addresses four fundamental questions may be most valuable to agents."
+							"title": "Key Learning: Agent work styles vary",
+							"content": "As a result, one information hierarchy may not best serve all agents. However, ordering info in a way that addresses four fundamental questions may be most valuable to agents."
 						},
 						{
 							"flex_span": "span4",
@@ -507,7 +507,7 @@
 					"section_wide": true,
 					"section_content": true, 
 					"title": "RESULTS",
-					"content": "The new Homebuyer Profile provides agents the context they need in order to easily identify who a client is and how to follow-up with them. <br><br>This way agents spend less time scrolling in the Premier Agent app, and more time working with clients and completing their daily priorities.",
+					"content": "The new Homebuyer Profile provides agents the context they need in order to easily identify who a client is and how to follow-up with them. <br><br>This way <span class=\"text_positive\">agents spend less time scrolling in the Premier Agent app, and more time working with clients and completing their daily priorities.</span>",
 					"if_divider": true
 				},
 				{
@@ -584,12 +584,21 @@
 
 			]
 		},
+
+
+
+
+
+
+
+
+
 		{
             "name": "Lead Routing",
             "url": "lead-routing",
-            "project_card_image": "../images/homebuyer_profile/Hero_Solution_Shadow.png",
+            "project_card_image": "../images/lead_routing/Hero_Solution_LeadRouting.png",
 			"project_card_background": "#579dff",
-			"card_description": "End-to-end product design for a suite of experiences that enabled real estate teams more granular control of their client distribution",
+			"card_description": "End-to-end product design for a suite of tools that enabled real estate teams more granular control of their client distribution",
 			"company": "Zillow Group",
 			"tags": [
 				{
@@ -602,78 +611,426 @@
 					"tag_name": "UX Research"
 				}
 			],
+			"description": "How might we help real estate team leads better manage their agents and ensure they're set up for success?<br><br>I owned a series of releases that gave real estate teams more granular control of their client distribution. This case study focuses on the discovery, research, and design of the ZIP code groups feature under the Lead Routing workstream.",
+			"metadata": [
+				{
+					"data_name": "ROLE",
+					"data_content": "End-to-end product design & product strategy. Led Research: Interviews and Concept Testing."
+				},
+				{
+					"data_name": "TEAM",
+					"data_content": "1 UX designer (me)<br>1 Content Strategist<br>1 Product Manager<br>1 Engineering Manager"
+				},
+				{
+					"data_name": "TOOLS",
+					"data_content": "Figma, Whimsical, Mural"
+				},
+				{
+					"data_name": "TIMEFRAME",
+					"data_content": "Feb 2021 - Dec 2021"
+				}
+			],
 			"sections": [
 				{
+					"section_wide": true,
 					"section_header": true,
 					"title": "BACKGROUND",
-					"content": "Agents often reference the Premier Agent mobile app to receive new leads, work with homebuyers, and determine their daily priorities.",
+					"content": "Within a brokerage, team leads manage agents and ensure they're working the optimal number of clients. This is known to agents as workload capacity.",
+					"if_blocks": true, 
+					"flow_row": true, 
 					"blocks": [
 						{
-							"layout_horizontal": true,
-							"left_title": "The Product",
-							"left_text": true, 
-							"left_content": "Premier Agent is Zillow’s B2B client acquisition and business builder platform for real estate agents & teams.",
-							"right_title": "Area of Focus",
-							"right_text": true, 
-							"right_content": "Enable real estate agents to stay up to date with client management tools, and ultimately help them close on their dream house." 
+							"title": "The Product",
+							"text": true, 
+							"content": "Premier Agent is Zillow’s B2B client acquisition and business builder platform for real estate agents & teams.",
+							"card": "transparent block_card"
+						},
+						{
+							"title": "Business Impact",
+							"text": true, 
+							"content": "<span class=\"text_positive\">+27% of teams have adopted this feature</span> since our launch in late November 2021. We're seeing steady growth rate in teams wanting to partner closely with Zillow Premier Agent.",
+							"card": "transparent block_card"
 						}
-					]
+					],
+					"if_divider": true
 				},
 				{
-					"image": true,
-					"image_url": "../images/project-covers/blyss-cover.png"
-				},
-				{
+					"section_wide": true, 
 					"section_header": true, 
 					"title": "PROBLEM",
-					"content": "Agents need a quick overview of where each client is in the homebuying process so they can follow up more efficiently.",
+					"content": "When an agent receives more clients than they can handle, overall performance and customer service suffers.",
+					"if_blocks": true, 
+					"flow_row": true,
+					"blocks": [
+
+						{
+							"flex_span": "span4",
+							"flow_column": true, 
+							"blocks": [
+								{
+									"flex_span": "span6",
+									"image": true,
+									"caption_top": "true",
+									"caption_position": "caption_top_left",
+									"image_url": "../images/lead_routing/Routing_Pause.png",
+									"label": "Contacts Pipeline"
+								}
+							]
+						},
+						{
+							"flex_span": "span3",
+							"flow_column": true, 
+							"blocks": [
+								{
+									"title": "One method to control client flow",
+									"text": true,
+									"content": "Currently, team leads can stop an agent from receiving new clients by turning on a Pause. Team leads need a way to scale client management, as pausing agents individually is unsustainable.",
+									"card": "transparent block_card"
+								},
+								{
+									"title": "Average team size",
+									"if_data_block": true, 
+									"data_blocks": [
+										{
+											"data": "1",
+											"label": "TEAM LEAD"
+										},
+										{
+											"data": "20-30",
+											"label": "AGENTS PER TEAM"
+										}
+									],
+									"card": "transparent block_card"
+								}
+							]
+						}
+						
+					],
+					"if_divider": true
+				},
+				{
+					"section_wide": true,
+					"section_header": true,
+					"title": "GOALS",
+					"content": "What do we want to achieve?",
+					"if_blocks": true, 
+					"flow_row": true, 
+					"blocks": [
+						{
+							"if_data_block_caption": true, 
+							"data": "Reduce manual overhead",
+							"label": "UX GOAL",
+							"description": "Many teams create external systems (Google Sheets, 3rd party tools) to manage workflows that Premier Agent lack.",
+							"card": "transparent block_card"
+						},
+						{
+							"if_data_block_caption": true, 
+							"data": "25% adoption rate",
+							"label": "BUSINESS OUTCOME",
+							"description": "Increasing the number of partners using our suite so Premier Agent builds revenue & market reach.",
+							"card": "transparent block_card"
+						}
+					],
+					"if_divider": true
+				},
+				{
+					"section_wide": true,
+					"section_header": true, 
+					"title": "SOLUTION",
+					"content": "Give team leads the tools to create custom ZIP code groups, in order to bulk-assign ZIP codes to agents.",
 					"if_blocks": true, 
 					"flow_row": true,
 					"blocks": [
 						{
+							"flex_span": "span_row_center",
+							"if_centered_section": true,
+							"title": "Create ZIP code groups",
+							"content": "Team leads can cluster multiple ZIP codes under a custom name. We've seen ZIP codes grouped by city, by schedule, or more abstractly like area expertise."
+						},
+						{
+							"flex_span": "span4",
+							"span_width": "span_half",
+							"if_video": true,
+							"video_src": "../images/lead_routing/ZIPGroups_CreateAGroup.mp4"
+						}
+					]
+				},
+				{
+					"section_wide": true,
+					"if_blocks": true, 
+					"flow_row": true,
+					"blocks": [
+						{
+							"flex_span": "span_row_center",
+							"if_centered_section": true,
+							"title": "Assign ZIP group to agents",
+							"content": "Team leads can add multiple ZIP codes to an agent using the custom names they created. They also get a more holistic view of ZIP coverage across their agents, creating more clarity around client distribution."
+						},
+						{
+							"flex_span": "span4",
+							"span_width": "span_half",
+							"if_video": true,
+							"video_src": "../images/lead_routing/ZIPGroups_AssignToAgent.mp4"
+						}
+					],
+					"if_divider": true
+				},
+				{
+					"section_wide": true,
+					"section_header": true, 
+					"title": "RESEARCH",
+					"content": "How do team leads optimize workload capacity for agents?",
+					"if_blocks": true, 
+					"flow_row": true,
+					"blocks": [
+						{
+							"flex_span": "span_row_right",
+							"if_right_section": true,
+							"title": "Journey Map Interviews",
+							"content": "In previous research we learned that teams wanted their agents to be able to temporarily stop receiving new clients for short periods of time, such as during a tour. We started with this idea and got documented user stories from Partner teams."
+						},
+						{
+							"flex_span": "span4",
+							"span_width": "span_half",
 							"image": true,
-							"image_url": "../images/project-covers/blyss-cover.png"
-						},
+							"image_url": "../images/lead_routing/SelfPause_JourneyMap.png"
+						}
+
+					],
+					"if_divider": true
+				},	
+				{
+					"section_wide": true,
+					"section_content": true, 
+					"title": "DESIGN PRINCIPLES",
+					"content": "From our interviews, we learned customization was a top priority, as many real estate teams operate uniquely from each other. Future-proofing the Lead Routing experience was critical since we couldn't anticipate every team structure that could use our product.",
+					"if_blocks": true, 
+					"flow_row": true,
+					"blocks": [
 						{
-							"title": "Current experience",
+							"flex_span": "span6",
 							"text": true,
-							"content": "Agents search in multiple places across the Premier Agent mobile app for siloed texts, emails, appointments, and more. There's opportunity for us to help agents identify priority contacts to follow-up with, especially as their pipeline grows."
+							"title": "Give control & flexibility",
+							"content": "Every real estate team operates in their own unique way. Enable customization and granular controls to accommodate the diverse needs of agents & their teams.",
+							"card": "transparent block_card"
 						},
 						{
-							"title": "In numbers",
-							"data_block": true, 
-							"data_blocks": [
+							"flex_span": "span6",
+							"text": true,
+							"title": "Scale for large teams",
+							"content": "Optimize workflows and automate when possible to support growing team sizes (20+) and reduce manual overhead for team leads.",
+							"card": "transparent block_card"
+						},
+						{
+							"flex_span": "span6",
+							"text": true,
+							"title": "Be transparent",
+							"content": "Prioritize showing as much relevant data possible. Teams deserve to know how they're performing in order to improve.",
+							"card": "transparent block_card"	
+						}
+					],
+					"if_divider": true
+				},
+				{
+					"section_wide": true,
+					"section_header": true, 
+					"title": "CONCEPT TESTING",
+					"content": "How might we impact team leads' ability to manage capacity & client distribution?",
+					"if_blocks": true, 
+					"flow_row": true,
+					"blocks": [
+						{
+							"flex_span": "span4",
+							
+							"flow_column": true, 
+							"blocks": [
 								{
-									"data": "8",
-									"label": "CHANNELS OF CLIENT INFO"
-								},
-								{
-									"data": "+9",
-									"label": "NEW LEADS PER MONTH"
+									"flex_span": "span3",
+									"text": true,
+									"title": "Framing the conversation",
+									"content": "The goal of these tests were to get early impressions of Scheduling, a tool to set up weekly shifts for when agents should receive new clients. <br><br>We showed low-fidelity concepts to Partners so we can focus their feedback on the high-level functionality. We asked why specific concepts worked for them in order to extract core needs.",
+									"card": "transparent block_card"
 								}
 							]
 						},
 						{
-							"title": "Goals",
-							"data_block": true,
-							"data_blocks": [
+							"flex_span": "span8",
+							"flow_column": true, 
+							"blocks": [
 								{
-									"data": "+10% message view rate",
-									"label": "BUSINESS OUTCOME"
+									"flex_span": "span4",
+									"image": true,
+									"image_url": "../images/lead_routing/ConceptTesting_Scheduling3.png",
+									"caption_top": "true",
+									"caption_position": "caption_top_left",
+									"label": "User story: As a team lead, I can check my team's ZIP distribution so that I can identify gaps in coverage."
 								},
 								{
-									"data": "Scalability",
-									"label": "PRODUCT GOAL"
-								},
-								{
-									"data": "Centralize client info",
-									"label": "UX GOAL"
+									"flex_span": "span4",
+									"image": true,
+									"image_url": "../images/lead_routing/ConceptTesting_Scheduling4.png",
+									"caption_top": "true",
+									"caption_position": "caption_top_left",
+									"label": "User story: As a team lead, I can drill into a singular ZIP code so that I can adjust my assigned agents."
 								}
 							]
 						}
-					]
+					],
+					"if_divider": true
+				},
+				{
+					"section_wide": true,
+					"section_header": true, 
+					"title": "ROADMAP PIVOT",
+					"content": "How should we adjust our priorities based on Reseach & Concept Testing?",
+					"if_blocks": true, 
+					"flow_row": true,
+					"blocks": [
+						{
+							"flex_span": "span_row_right",
+							"if_right_section": true,
+							"title": "Key Learning: ZIP code groups",
+							"content": "When speaking with Partner teams we discovered that they need to be able group ZIP codes before we build more complex features like Scheduling and Routing."
+						},
+						{
+							"flex_span": "span4",
+							"span_width": "span_half",
+							"image": true,
+							"image_url": "../images/lead_routing/Pivot_ZIPGroupConcepts.png"
+						}
+					],
+					"if_divider": true
+				},
 
-				}
+				
+				{
+					"section_wide": true,
+					"section_content": true, 
+					"title": "EXPLORATIONS",
+					"content": "The existing ZIP assignments modal needed to support several new requirements. Working closely with Design Systems, we were able to adapt components to achieve the desired experience.",
+					"if_blocks": true, 
+					"flow_row": true,
+					"blocks": [
+						{
+							"flex_span": "span4",
+							"span_width": "span_half",
+							"image": true,
+							"image_url": "../images/lead_routing/Explorations_Layout.png",
+							"caption_top": "true",
+							"caption_position": "caption_top_left",
+							"label": "User story: As a team lead, I can assign ZIP groups and individual ZIP codes to agents in 2 programs."
+						}
+					],
+					"if_divider": true
+				},
+				{
+					"section_wide": true,
+					"section_content": true, 
+					"title": "REFINEMENT",
+					"content": "Content Design was involved early in the project so they could learn with us and provide clear directions in the final designs.",
+					"if_blocks": true, 
+					"flow_row": true,
+					"blocks": [
+						{
+							"flex_span": "span4",
+							"span_width": "span_half",
+							"image": true,
+							"image_url": "../images/lead_routing/Refinement_IntentTextFramework.png",
+							"caption_top": "true",
+							"caption_position": "caption_top_left",
+							"label": "Content collaboration framework"
+						},
+						{
+							"flex_span": "span4",
+							"span_width": "span_half",
+							"image": true,
+							"image_url": "../images/lead_routing/Refinement_ContentOptions.png",
+							"caption_top": "true",
+							"caption_position": "caption_top_left",
+							"label": "Options hashed out with Content Designer"
+						}
+					],
+					"if_divider": true
+				},
+				{
+					"section_wide": true,
+					"section_content": true, 
+					"title": "RESULTS",
+					"content": "Early feedback on the ZIP code groups feature has been positive! One month after release, <span class=\"text_positive\">+27% of eligible teams had created at least one ZIP code group, beating our goal of +25% adoption rate</span>. <br><br>We expect more team leads to utilize the feature as they figure out the best way to organize their client distribution.",
+					"if_divider": true
+				},
+				{
+					"if_project_nav": true, 
+					
+					"projects": [
+						{
+							"if_section_header": true, 
+							"title": "NEXT",
+							"content": "Feel free to <a href=\"mailto:suasin.ja@gmail.com\">email me</a> if you want to learn more about my projects ツ"
+						},
+						{
+							"if_project_card": true, 
+							"name": "Homebuyer Profile",
+							"url": "homebuyer-profile",
+							"project_card_image": "../images/homebuyer_profile/Hero_Solution_Shadow.png",
+							"project_card_background": "#579dff",
+							"card_description": "Increased message engagement 14% by centralizing recent conversations agents have had with their clients",
+							"company": "Zillow Group",
+							"tags": [
+								{
+									"tag_name": "iOS"
+								},
+								{
+									"tag_name": "Android"
+								},
+								{
+									"tag_name": "UX/UI"
+								}
+							]
+						},
+						{
+							"if_project_card": true, 
+							"name": "Lead Routing",
+							"url": "lead-routing",
+							"project_card_image": "../images/homebuyer_profile/Hero_Solution_Shadow.png",
+							"project_card_background": "#2bc1e1",
+							"card_description": "End-to-end product design for a suite of experiences that enabled real estate teams more granular control of their client distribution",
+							"company": "Zillow Group",
+							"tags": [
+								{
+									"tag_name": "Web"
+								},
+								{
+									"tag_name": "UX/UI"
+								},
+								{
+									"tag_name": "UX Research"
+								}
+							]
+						},
+						{
+							"if_project_card": true, 
+							"name": "Constellation Migration",
+							"url": "constellation-migration",
+							"project_card_image": "../images/homebuyer_profile/Hero_Solution_Shadow.png",
+							"project_card_background": "#b375ff",
+							"card_description": "Scoped and communicated a strategy to transition 35 web pages across 9 Engineering teams to a new design system",
+							"company": "Zillow Group",
+							"tags": [
+								{
+									"tag_name": "Design Systems"
+								},
+								{
+									"tag_name": "Web"
+								},
+								{
+									"tag_name": "Strategy"
+								}
+							]							
+						}
+					]
+				}			
+
 			]
 		},
 		{
