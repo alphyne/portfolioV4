@@ -475,43 +475,45 @@
 				},
 				{
 					"section_wide": true,
-					"section_content": true, 
+					"section_header": true, 
 					"title": "REFINEMENT",
-					"content": "During testing we noticed for some Agents, scrolling horizontally to view other tabs was not immediately discoverable. We needed to decrease the learning curve and revisit our design principle, 'Design for touch'.",
+					"content": "During testing we noticed for some Agents, scrolling horizontally to view other tabs was not immediately discoverable."
+				},
+				{
+					"section_wide": true,
 					"if_blocks": true, 
 					"flow_row": true,
-					"mobile_before_after": "mobile_before_after",
 					"blocks": [
 						{
 							"flex_span": "span_row_center",
 							"if_centered_section": true,
-							"title": "Page Anchoring Tabs",
+							"title": "Before: Tabs 'Out of sight'",
+							"content": "It wasn't immediately understood that more tabs existed to the right of Appointments. We needed to decrease the learning curve and use more natural gestures, as stated in our design principle, Design for Touch."
+						},
+						{
+							"flex_span": "span4",
+							"span_width": "span_half",
+							"if_video": true,
+							"video_src": "../images/homebuyer_profile/Refinement_Before_Prototype.mp4"
+						}
+					]
+				},
+				{
+					"section_wide": true,
+					"if_blocks": true, 
+					"flow_row": true,
+					"blocks": [
+						{
+							"flex_span": "span_row_center",
+							"if_centered_section": true,
+							"title": "After: Page Anchoring Tabs",
 							"content": "We introduced a stacking interaction that moves Agents to the next tab as they scroll down the page. This allows Agents to comfortably scroll in one direction as they search for the context they need."
 						},
 						{
-							"flex_span": "span3",
-							"caption": true,
-							"position": "caption_left",
-							"label": "Before",
-							"content": "It wasn't immediately understood that more tabs existed to the right of Appointments."
-						},
-						{
 							"flex_span": "span4",
-							"image": true,
-							"image_url": "../images/homebuyer_profile/Refinement_TapTabs.png"
-						},
-						{
-							"flex_span": "span4",
-							"image": true,
-							"image_url": "../images/homebuyer_profile/Refinement_ScrollTabs.gif",
-							"gif": "gif"
-						},
-						{
-							"flex_span": "span3",
-							"caption": true,
-							"position": "caption_right",
-							"label": "After",
-							"content": "All tab sections can be accessed with one continuous scroll. Tabs also show their current place."
+							"span_width": "span_half",
+							"if_video": true,
+							"video_src": "../images/homebuyer_profile/Refinement_ScrollTabs.mp4"
 						}
 					],
 					"if_divider": true
@@ -520,7 +522,7 @@
 					"section_wide": true,
 					"section_content": true, 
 					"title": "RESULTS",
-					"content": "The new Homebuyer Profile provides Agents the context they need in order to easily identify who a client is and how to follow-up with them. <br><br>This way <span class=\"text_positive\">Agents spend less time scrolling in the Premier Agent app, and more time working with clients and completing their daily priorities.</span>",
+					"content": "The new Homebuyer Profile provides Agents the context they need in order to easily identify who a client is and how to follow-up with them. <br><br>This way <span class=\"text_positive\">Agents spend less time scrolling in the Premier Agent app, and more time working with clients and completing their daily priorities.</span><br><br>Thank you to my thoughtful design partner Anmy for your support on this project!",
 					"if_divider": true
 				},
 				{
@@ -530,35 +532,15 @@
 						{
 							"if_section_header": true, 
 							"title": "NEXT",
-							"content": "Feel free to <a href=\"mailto:suasin.ja@gmail.com\">email me</a> if you want to learn more about my projects ツ"
-						},
-						{
-							"if_project_card": true, 
-							"name": "Homebuyer Profile",
-							"url": "homebuyer-profile",
-							"project_card_image": "../images/homebuyer_profile/Hero_Solution_Shadow.png",
-							"project_card_background": "#579dff",
-							"card_description": "Increased message engagement 14% by centralizing recent conversations Agents have had with their clients",
-							"company": "Zillow Group",
-							"tags": [
-								{
-									"tag_name": "iOS"
-								},
-								{
-									"tag_name": "Android"
-								},
-								{
-									"tag_name": "UX/UI"
-								}
-							]
+							"content": "Feel free to <a href=\"mailto:suasin.ja@gmail.com\">email me</a> questions or to learn more about my projects (^_^)"
 						},
 						{
 							"if_project_card": true, 
 							"name": "Lead Routing",
 							"url": "lead-routing",
-							"project_card_image": "../images/homebuyer_profile/Hero_Solution_Shadow.png",
-							"project_card_background": "#2bc1e1",
-							"card_description": "End-to-end product design for a suite of experiences that enabled real estate teams more granular control of their client distribution",
+							"project_card_image": "../images/lead_routing/Hero_Solution_LeadRouting.png",
+							"project_card_background": "#70C8F6",
+							"card_description": "End-to-end product design for a suite of tools that enabled real estate teams more granular control of their client distribution",
 							"company": "Zillow Group",
 							"tags": [
 								{
@@ -576,9 +558,9 @@
 							"if_project_card": true, 
 							"name": "Constellation Migration",
 							"url": "constellation-migration",
-							"project_card_image": "../images/homebuyer_profile/Hero_Solution_Shadow.png",
-							"project_card_background": "#b375ff",
-							"card_description": "Scoped and communicated a strategy to transition 35 web pages across 9 Engineering teams to a new design system",
+							"project_card_image": "../images/constellation_migration/Hero_Inbox.png",
+							"project_card_background": "#F6F6FF",
+							"card_description": "Scoped and communicated a strategy to migrate 35 web pages across 9 Engineering teams to a new design system",
 							"company": "Zillow Group",
 							"tags": [
 								{
@@ -590,7 +572,27 @@
 								{
 									"tag_name": "Strategy"
 								}
-							]							
+							]
+						},
+						{
+							"if_project_card": true, 
+							"name": "ConnectNGive",
+							"url": "connectngive",
+							"project_card_image": "../images/connectngive/Hero_CnGLogo.png",
+							"project_card_background": "#FF8777",
+							"card_description": "Volunteer Design Lead for a nonprofit that tracked and delivered 60k+ units of PPE supply donations during the pandemic",
+							"company": "ConnectNGive",
+							"tags": [
+								{
+									"tag_name": "Social Impact"
+								},
+								{
+									"tag_name": "Design Management"
+								},
+								{
+									"tag_name": "UX/UI"
+								}
+							]				
 						}
 					]
 				}			
@@ -610,7 +612,7 @@
             "name": "Lead Routing",
             "url": "lead-routing",
             "project_card_image": "../images/lead_routing/Hero_Solution_LeadRouting.png",
-			"project_card_background": "#579dff",
+			"project_card_background": "#70C8F6",
 			"card_description": "End-to-end product design for a suite of tools that enabled real estate teams more granular control of their client distribution",
 			"company": "Zillow Group",
 			"tags": [
@@ -652,7 +654,7 @@
 						{
 							"if_hero_image": true, 
 							"image_src": "../images/lead_routing/Hero_Solution_LeadRouting.png",
-							"hero_background": "#579dff"
+							"hero_background": "#70C8F6"
 						}
 					],
 					"if_divider": true
@@ -988,7 +990,7 @@
 					"section_wide": true,
 					"section_content": true, 
 					"title": "RESULTS",
-					"content": "Early qualitative feedback on the ZIP code groups feature has been positive! One month after release, <span class=\"text_positive\">+27% of eligible teams had created at least one ZIP code group, beating our goal of +25% adoption rate.</span><br><br>We expect more Team Leads to utilize the feature as they figure out the best way to organize their client distribution.<br><br>As next steps, we are continuing work on Shift Scheduling and exploring designs based on feedback from Concept Testing.",
+					"content": "Early qualitative feedback on the ZIP code groups feature has been positive! One month after release, <span class=\"text_positive\">+27% of eligible teams had created at least one ZIP code group, beating our goal of +25% adoption rate.</span><br><br>We expect more Team Leads to utilize the feature as they figure out the best way to organize their client distribution.<br><br>As next steps, we are continuing work on Shift Scheduling and exploring designs based on feedback from Concept Testing.<br><br>Thank you Reece for entrusting the Lead Routing initiative to me, and for your mentorship.",
 					"if_divider": true
 				},
 				{
@@ -998,55 +1000,15 @@
 						{
 							"if_section_header": true, 
 							"title": "NEXT",
-							"content": "Feel free to <a href=\"mailto:suasin.ja@gmail.com\">email me</a> if you want to learn more about my projects ツ"
-						},
-						{
-							"if_project_card": true, 
-							"name": "Homebuyer Profile",
-							"url": "homebuyer-profile",
-							"project_card_image": "../images/homebuyer_profile/Hero_Solution_Shadow.png",
-							"project_card_background": "#579dff",
-							"card_description": "Increased message engagement 14% by centralizing recent conversations Agents have had with their clients",
-							"company": "Zillow Group",
-							"tags": [
-								{
-									"tag_name": "iOS"
-								},
-								{
-									"tag_name": "Android"
-								},
-								{
-									"tag_name": "UX/UI"
-								}
-							]
-						},
-						{
-							"if_project_card": true, 
-							"name": "Lead Routing",
-							"url": "lead-routing",
-							"project_card_image": "../images/homebuyer_profile/Hero_Solution_Shadow.png",
-							"project_card_background": "#2bc1e1",
-							"card_description": "End-to-end product design for a suite of experiences that enabled real estate teams more granular control of their client distribution",
-							"company": "Zillow Group",
-							"tags": [
-								{
-									"tag_name": "Web"
-								},
-								{
-									"tag_name": "UX/UI"
-								},
-								{
-									"tag_name": "UX Research"
-								}
-							]
+							"content": "Feel free to <a href=\"mailto:suasin.ja@gmail.com\">email me</a> questions or to learn more about my projects (^_^)"
 						},
 						{
 							"if_project_card": true, 
 							"name": "Constellation Migration",
 							"url": "constellation-migration",
-							"project_card_image": "../images/homebuyer_profile/Hero_Solution_Shadow.png",
-							"project_card_background": "#b375ff",
-							"card_description": "Scoped and communicated a strategy to transition 35 web pages across 9 Engineering teams to a new design system",
+							"project_card_image": "../images/constellation_migration/Hero_Inbox.png",
+							"project_card_background": "#F6F6FF",
+							"card_description": "Scoped and communicated a strategy to migrate 35 web pages across 9 Engineering teams to a new design system",
 							"company": "Zillow Group",
 							"tags": [
 								{
@@ -1058,7 +1020,47 @@
 								{
 									"tag_name": "Strategy"
 								}
-							]							
+							]
+						},
+						{
+							"if_project_card": true, 
+							"name": "ConnectNGive",
+							"url": "connectngive",
+							"project_card_image": "../images/connectngive/Hero_CnGLogo.png",
+							"project_card_background": "#FF8777",
+							"card_description": "Volunteer Design Lead for a nonprofit that tracked and delivered 60k+ units of PPE supply donations during the pandemic",
+							"company": "ConnectNGive",
+							"tags": [
+								{
+									"tag_name": "Social Impact"
+								},
+								{
+									"tag_name": "Design Management"
+								},
+								{
+									"tag_name": "UX/UI"
+								}
+							]
+						},
+						{
+							"if_project_card": true, 
+							"name": "Homebuyer Profile",
+							"url": "homebuyer-profile",
+							"project_card_image": "../images/homebuyer_profile/Hero_Solution_HomebuyerProfile.png",
+							"project_card_background": "#579dff",
+							"card_description": "Increased message engagement 14% by centralizing recent conversations real estate agents have had with their clients",
+							"company": "Zillow Group",
+							"tags": [
+								{
+									"tag_name": "iOS"
+								},
+								{
+									"tag_name": "Android"
+								},
+								{
+									"tag_name": "UX/UI"
+								}
+							]						
 						}
 					]
 				}			
@@ -1077,7 +1079,7 @@
             "name": "Constellation Migration",
             "url": "constellation-migration",
             "project_card_image": "../images/constellation_migration/Hero_Inbox.png",
-			"project_card_background": "#b375ff",
+			"project_card_background": "#F6F6FF",
 			"card_description": "Scoped and communicated a strategy to migrate 35 web pages across 9 Engineering teams to a new design system",
 			"company": "Zillow Group",
 			"tags": [
@@ -1119,7 +1121,7 @@
 						{
 							"if_hero_image": true, 
 							"image_src": "../images/constellation_migration/Hero_Inbox.png",
-							"hero_background": "#b375ff"
+							"hero_background": "#F6F6FF"
 						}
 					],
 					"if_divider": true
@@ -1399,7 +1401,7 @@
 					"section_wide": true,
 					"section_content": true, 
 					"title": "STATUS",
-					"content": "We're currently working closely with teams who are eager to migrate to Constellation.<br><br> <span class=\"text_positive\">Several new experiences are confirmed to be built in Constellation during 2022</span> and we're expecting more partnerships throughout the upcoming quarters.",
+					"content": "We're currently working closely with teams who are eager to migrate to Constellation.<br><br> <span class=\"text_positive\">Several new experiences are confirmed to be built in Constellation during 2022</span> and we're expecting more partnerships throughout the upcoming quarters.<br><br>Thank you to my awesome tiger team, Phil, Kalini, Heather, and Kristen for your support on this journey. Thank you Tony for driving this project, I'm glad we could partner closely and dig into details together. And thank you Michelle for thinking of me to lead this initiative for Premier Agent.",
 					"if_divider": true
 				},
 				{
@@ -1409,15 +1411,35 @@
 						{
 							"if_section_header": true, 
 							"title": "NEXT",
-							"content": "Feel free to <a href=\"mailto:suasin.ja@gmail.com\">email me</a> if you want to learn more about my projects (^_^)"
+							"content": "Feel free to <a href=\"mailto:suasin.ja@gmail.com\">email me</a> questions or to learn more about my projects (^_^)"
+						},
+						{
+							"if_project_card": true, 
+							"name": "ConnectNGive",
+							"url": "connectngive",
+							"project_card_image": "../images/connectngive/Hero_CnGLogo.png",
+							"project_card_background": "#FF8777",
+							"card_description": "Volunteer Design Lead for a nonprofit that tracked and delivered 60k+ units of PPE supply donations during the pandemic",
+							"company": "ConnectNGive",
+							"tags": [
+								{
+									"tag_name": "Social Impact"
+								},
+								{
+									"tag_name": "Design Management"
+								},
+								{
+									"tag_name": "UX/UI"
+								}
+							]
 						},
 						{
 							"if_project_card": true, 
 							"name": "Homebuyer Profile",
 							"url": "homebuyer-profile",
-							"project_card_image": "../images/homebuyer_profile/Hero_Solution_Shadow.png",
+							"project_card_image": "../images/homebuyer_profile/Hero_Solution_HomebuyerProfile.png",
 							"project_card_background": "#579dff",
-							"card_description": "Increased message engagement 14% by centralizing recent conversations Agents have had with their clients",
+							"card_description": "Increased message engagement 14% by centralizing recent conversations real estate agents have had with their clients",
 							"company": "Zillow Group",
 							"tags": [
 								{
@@ -1435,9 +1457,9 @@
 							"if_project_card": true, 
 							"name": "Lead Routing",
 							"url": "lead-routing",
-							"project_card_image": "../images/homebuyer_profile/Hero_Solution_Shadow.png",
-							"project_card_background": "#2bc1e1",
-							"card_description": "End-to-end product design for a suite of experiences that enabled real estate teams more granular control of their client distribution",
+							"project_card_image": "../images/lead_routing/Hero_Solution_LeadRouting.png",
+							"project_card_background": "#70C8F6",
+							"card_description": "End-to-end product design for a suite of tools that enabled real estate teams more granular control of their client distribution",
 							"company": "Zillow Group",
 							"tags": [
 								{
@@ -1449,27 +1471,7 @@
 								{
 									"tag_name": "UX Research"
 								}
-							]
-						},
-						{
-							"if_project_card": true, 
-							"name": "Constellation Migration",
-							"url": "constellation-migration",
-							"project_card_image": "../images/homebuyer_profile/Hero_Solution_Shadow.png",
-							"project_card_background": "#b375ff",
-							"card_description": "Scoped and communicated a strategy to transition 35 web pages across 9 Engineering teams to a new design system",
-							"company": "Zillow Group",
-							"tags": [
-								{
-									"tag_name": "Design Systems"
-								},
-								{
-									"tag_name": "Web"
-								},
-								{
-									"tag_name": "Strategy"
-								}
-							]							
+							]						
 						}
 					]
 				}			
@@ -1488,7 +1490,7 @@
             "name": "ConnectNGive",
             "url": "connectngive",
             "project_card_image": "../images/connectngive/Hero_CnGLogo.png",
-			"project_card_background": "#ff7370",
+			"project_card_background": "#FF8777",
 			"card_description": "Volunteer Design Lead for a nonprofit that tracked and delivered 60k+ units of PPE supply donations during the pandemic",
 			"company": "ConnectNGive",
 			"tags": [
@@ -1530,7 +1532,7 @@
 						{
 							"if_hero_image": true, 
 							"image_src": "../images/connectngive/Hero_CnGLogo.png",
-							"hero_background": "#ff7370",
+							"hero_background": "#FF8777",
 							"caption_bottom": "true",
 							"caption_position": "caption_bottom_left",
 							"label": "Brand refresh owned by Fiona Tran and Jordan Eng"
@@ -1607,7 +1609,7 @@
 					"section_wide": true,
 					"section_header": true,
 					"title": "FEATURES",
-					"content": "I led strategy for a relaunch of ConnectNGive's core features. My team divided the end-to-end experience into workstreams and collaborated often to align our experiences.", 
+					"content": "I led strategy for a relaunch of ConnectNGive's core features. As manager, I stayed close to my team's work in order to align our experiences.", 
 					"if_blocks": true, 
 					"flow_row": true,
 					"blocks": [
@@ -1636,7 +1638,7 @@
 						{
 							"flex_span": "span_row_center",
 							"if_centered_section": true,
-							"title": "Report supply shortages",
+							"title": "Request supplies & report shortages",
 							"content": "Donees complete a short form to request PPE supplies, including item type and quantity."
 						},
 						{
@@ -1680,7 +1682,7 @@
 						{
 							"flex_span": "span_row_center",
 							"if_centered_section": true,
-							"title": "Donate to a shortage",
+							"title": "Donate to a supply request",
 							"content": "When donors choose a shortage to fill, they input donation quantities and confirm how they will deliver the items."
 						},
 						{
@@ -1805,7 +1807,7 @@
 				{
 					"section_wide": true,
 					"section_content": true, 
-					"title": "RESULTS",
+					"title": "REFLECTION",
 					"content": "Unfortunately, our relaunch didn't reach the live website before ConnectNGive's wind down. Regardless, it was an exciting to work with this amazing team. I appreciated everyone's humbleness, support, and drive to make an impact.<br><br>Thank you Ben for rallying this effort. Thank you to my Product Design team, Alex, Jenny, Carole, and Ellis for your dedication and willingness to learn. Thank you Fiona and Jordan for being wonderful, collaborative Brand partners. And last but not least, thank you Christina for inviting me to lead with you.",
 					"if_divider": true
 				},
@@ -1816,15 +1818,15 @@
 						{
 							"if_section_header": true, 
 							"title": "NEXT",
-							"content": "Feel free to <a href=\"mailto:suasin.ja@gmail.com\">email me</a> if you want to learn more about my projects ツ"
+							"content": "Feel free to <a href=\"mailto:suasin.ja@gmail.com\">email me</a> questions or to learn more about my projects (^_^)"
 						},
 						{
 							"if_project_card": true, 
 							"name": "Homebuyer Profile",
 							"url": "homebuyer-profile",
-							"project_card_image": "../images/homebuyer_profile/Hero_Solution_Shadow.png",
+							"project_card_image": "../images/homebuyer_profile/Hero_Solution_HomebuyerProfile.png",
 							"project_card_background": "#579dff",
-							"card_description": "Increased message engagement 14% by centralizing recent conversations Agents have had with their clients",
+							"card_description": "Increased message engagement 14% by centralizing recent conversations real estate agents have had with their clients",
 							"company": "Zillow Group",
 							"tags": [
 								{
@@ -1842,9 +1844,9 @@
 							"if_project_card": true, 
 							"name": "Lead Routing",
 							"url": "lead-routing",
-							"project_card_image": "../images/homebuyer_profile/Hero_Solution_Shadow.png",
-							"project_card_background": "#2bc1e1",
-							"card_description": "End-to-end product design for a suite of experiences that enabled real estate teams more granular control of their client distribution",
+							"project_card_image": "../images/lead_routing/Hero_Solution_LeadRouting.png",
+							"project_card_background": "#70C8F6",
+							"card_description": "End-to-end product design for a suite of tools that enabled real estate teams more granular control of their client distribution",
 							"company": "Zillow Group",
 							"tags": [
 								{
@@ -1862,9 +1864,9 @@
 							"if_project_card": true, 
 							"name": "Constellation Migration",
 							"url": "constellation-migration",
-							"project_card_image": "../images/homebuyer_profile/Hero_Solution_Shadow.png",
-							"project_card_background": "#b375ff",
-							"card_description": "Scoped and communicated a strategy to transition 35 web pages across 9 Engineering teams to a new design system",
+							"project_card_image": "../images/constellation_migration/Hero_Inbox.png",
+							"project_card_background": "#F6F6FF",
+							"card_description": "Scoped and communicated a strategy to migrate 35 web pages across 9 Engineering teams to a new design system",
 							"company": "Zillow Group",
 							"tags": [
 								{
@@ -1876,7 +1878,7 @@
 								{
 									"tag_name": "Strategy"
 								}
-							]							
+							]						
 						}
 					]
 				}			

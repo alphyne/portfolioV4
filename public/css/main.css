@@ -568,11 +568,11 @@ body {
   .project_card a {
     text-decoration: none;
     border-bottom: none;
-    padding-bottom: 0; }
+    padding-bottom: 0;
+    height: 100%; }
 
 .title_card {
-  flex: 1 0 45%;
-  padding-right: 2rem; }
+  flex: 1 0 45%; }
   .title_card h1 {
     padding-bottom: 2rem; }
 
