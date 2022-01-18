@@ -169,6 +169,7 @@ body {
   padding-top: 1rem; }
 
 .data_block_group {
+  display: flex;
   gap: 1rem; }
 
 .data_block_distribute2 > * {
@@ -368,7 +369,9 @@ body {
     line-height: 48px; }
   .page h3 {
     font-size: 21px;
-    line-height: 38px; } }
+    line-height: 38px; }
+  .data_block_group {
+    display: flex; } }
 
 @media (max-width: 600px) {
   .page {

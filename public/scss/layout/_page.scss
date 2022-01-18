@@ -241,6 +241,7 @@ body {
 }
 
 .data_block_group {
+    display: flex;
     gap: 1rem;
 }
 
@@ -543,6 +544,8 @@ body {
     .span8 {
         flex: 2 0 90%;
     }
+
+
 }
 
 
@@ -570,6 +573,10 @@ body {
             font-size: 21px;
             line-height: 38px;
         }
+    }
+
+    .data_block_group {
+        display: flex;
     }
 }
 
