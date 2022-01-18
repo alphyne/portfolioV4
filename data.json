@@ -1098,7 +1098,7 @@
 					"section_wide": true, 
 					"section_header": true, 
 					"title": "THE OPPORTUNITY",
-					"content": "Migrating Premier Agent to Constellation would accelerate designer and development velocity as we build Partner experiences.<br><br>Constellation's upgraded web technologies, larger component library, and dedicated team support would enable Premier Agent to streamline it's Engineering and Design processes.",
+					"content": "Migrating Premier Agent to Constellation would accelerate designer and development velocity as we build Partner experiences.<br><br>Constellation's upgraded web technologies, larger component library, and dedicated team support would enable Premier Agent to streamline its Engineering and Design processes.",
 					"if_blocks": true, 
 					"flow_row": true,
 					"blocks": [
@@ -1205,7 +1205,7 @@
 					"section_wide": true,
 					"section_header": true, 
 					"title": "SOLUTION",
-					"content": "Migrate in phases: Consult with Product teams to build a plan that fits their roadmap & migration needs",
+					"content": "Migrate in phases: Consult with Product to build a plan that fits their roadmap & migration needs",
 					"if_blocks": true, 
 					"flow_row": true,
 					"blocks": [
@@ -1328,7 +1328,7 @@
 							"flex_span": "span_row_right",
 							"if_right_section": true,
 							"title": "4. Execute & keep momentum",
-							"content": "asdf"
+							"content": "To keep other teams and ourselves on track, we defined more detailed timelines and milestones to hit over 2022. Design Ops integrated our workstreams into Asana boards so teams are aware of unresolved tasks."
 						},
 						{
 							"flex_span": "span4",
@@ -1346,7 +1346,7 @@
 					"section_wide": true,
 					"section_content": true, 
 					"title": "STATUS",
-					"content": "At the start of 2022 we began working closely with teams who are eager to migrate to Constellation.<br><br> <span class=\"text_positive\">Several new experiences are confirmed to be built in Constellation during 2022</span> and we're expecting more partnerships throughout the upcoming quarters.",
+					"content": "We're currently working closely with teams who are eager to migrate to Constellation.<br><br> <span class=\"text_positive\">Several new experiences are confirmed to be built in Constellation during 2022</span> and we're expecting more partnerships throughout the upcoming quarters.",
 					"if_divider": true
 				},
 				{
