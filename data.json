@@ -5,7 +5,7 @@
             "url": "homebuyer-profile",
             "project_card_image": "../images/homebuyer_profile/Hero_Solution_HomebuyerProfile.png",
 			"project_card_background": "#579dff",
-			"card_description": "Increased message engagement 14% by centralizing recent conversations agents have had with their clients",
+			"card_description": "Increased message engagement 14% by centralizing recent conversations real estate agents have had with their clients",
 			"company": "Zillow Group",
 			"tags": [
 				{
@@ -93,7 +93,7 @@
 								{
 									"title": "Difficulty keeping up",
 									"text": true,
-									"content": "Agents search in multiple places across the Premier Agent mobile app for siloed texts, emails, appointments, and more. There's opportunity for us to help agents identify priority contacts to follow up with, especially as their pipeline grows.",
+									"content": "Agents search in multiple places across the Premier Agent mobile app for siloed texts, emails, appointments, and more. There's opportunity for us to help Agents identify priority contacts to follow up with, especially as their pipeline grows.",
 									"card": "transparent block_card"
 								},
 								{
@@ -128,7 +128,7 @@
 							"if_data_block_caption": true, 
 							"data": "+10% message view rate",
 							"label": "BUSINESS OUTCOME",
-							"description": "Increased message engagement signals agents are communicating with clients more, which drives more home tours and transactions.",
+							"description": "Increased message engagement signals Agents are communicating with clients more, which drives more home tours and transactions.",
 							"card": "transparent block_card"
 						},
 						{
@@ -142,7 +142,7 @@
 							"if_data_block_caption": true, 
 							"data": "Centralize client info",
 							"label": "UX GOAL",
-							"description": "Set expectations of where agents can find client information throughout the homebuying journey.",
+							"description": "Set expectations of where Agents can find client information throughout the homebuying journey.",
 							"card": "transparent block_card"
 						}
 					],
@@ -161,7 +161,7 @@
 							"flex_span": "span_row_center",
 							"if_centered_section": true,
 							"title": "Client Snapshot",
-							"content": "The improved profile header concisely gives agents the background and summary they need before engaging with clients."
+							"content": "The improved profile header concisely gives Agents the background and summary they need before engaging with clients."
 						},
 						{
 							"flex_span": "span3",
@@ -199,14 +199,14 @@
 							"flex_span": "span_row_center",
 							"if_centered_section": true,
 							"title": "Message History",
-							"content": "The new Messages section centralizes all communication channels for agents, making it easier to recall details from their last conversation, and follow up appropriately."
+							"content": "The new Messages section centralizes all communication channels for Agents, making it easier to recall details from their last conversation, and follow up appropriately."
 						},
 						{
 							"flex_span": "span3",
 							"caption": true,
 							"position": "caption_left",
 							"label": "Before",
-							"content": "Most agents search for client messages in their Inbox because the 'View all messages' CTA is easily missed."
+							"content": "Most Agents search for client messages in their Inbox because the 'View all messages' CTA is easily missed."
 						},
 						{
 							"flex_span": "span4",
@@ -232,7 +232,7 @@
 					"section_wide": true,
 					"section_header": true, 
 					"title": "RESEARCH",
-					"content": "How do agents manage their clients using the Premier Agent mobile app today?",
+					"content": "How do Agents manage their clients using the Premier Agent mobile app today?",
 					"if_blocks": true, 
 					"flow_row": true,
 					"blocks": [
@@ -241,7 +241,7 @@
 							"span_width": "span_half",
 							"text": true,
 							"title": "Interviews",
-							"content": "While synthesizing interview findings, our team realized that the attitudes and feedback of participants differed from our traditional agent persona. We represented this new profile as Ada.",
+							"content": "While synthesizing interview findings, our team realized that the attitudes and feedback of participants differed from our traditional Agent persona. We represented this new profile as Ada.",
 							"card": "transparent block_card"
 								
 							
@@ -251,7 +251,7 @@
 							"span_width": "span_half",
 							"text": true,
 							"title": "Personas: Introducing Ada",
-							"content": "Ada captures a fresher lens on agent attitude and behavior in a modern team-oriented context. She will be insightful as Zillow continues to develop more specialized products and programs.",
+							"content": "Ada captures a fresher lens on Agent attitude and behavior in a modern team-oriented context. She will be insightful as Zillow continues to develop more specialized products and programs.",
 							"card": "transparent block_card"
 								
 						},
@@ -262,7 +262,7 @@
 							"image_url": "../images/homebuyer_profile/Research_Alan.png",
 							"caption_top": "true",
 							"caption_position": "caption_top_left",
-							"label": "Traditional agent persona"
+							"label": "Traditional Agent persona"
 						},
 						{
 							"flex_span": "span4",
@@ -271,7 +271,7 @@
 							"image_url": "../images/homebuyer_profile/Research_Ada.png",
 							"caption_top": "true",
 							"caption_position": "caption_top_left",
-							"label": "New agent persona"
+							"label": "New Agent persona"
 						}
 
 					]
@@ -300,7 +300,7 @@
 					"section_wide": true,
 					"section_header": true, 
 					"title": "CONCEPT",
-					"content": "What are the immediate opportunities that will have high impact on agents?",
+					"content": "What are the immediate opportunities that will have high impact on Agents?",
 					"if_blocks": true, 
 					"flow_row": true,
 					"blocks": [
@@ -313,7 +313,7 @@
 									"flex_span": "span3",
 									"text": true,
 									"title": "Brainstorming with Product & Research",
-									"content": "The goal of this brainstorm was to identify solutions that would impact agents most, their scope, and constraints to work around.",
+									"content": "The goal of this brainstorm was to identify solutions that would impact Agents most, their scope, and constraints to work around.",
 									"card": "transparent block_card"
 								}
 							]
@@ -364,7 +364,7 @@
 							"span_width": "span_half",
 							"text": true,
 							"title": "Optimize for task completion",
-							"content": "Keep experiences concise and enable agents to get their jobs done quickly and easily.",
+							"content": "Keep experiences concise and enable Agents to get their jobs done quickly and easily.",
 							"card": "transparent block_card"
 						},
 						{
@@ -372,7 +372,7 @@
 							"span_width": "span_half",
 							"text": true,
 							"title": "Maintain consistency",
-							"content": "Create recognizable patterns, so agents can focus on executing the task without having to relearn the experience every time they switch context.",
+							"content": "Create recognizable patterns, so Agents can focus on executing the task without having to relearn the experience every time they switch context.",
 							"card": "transparent block_card"
 								
 							
@@ -391,7 +391,7 @@
 							"span_width": "span_half",
 							"text": true,
 							"title": "Make navigation clear and intuitive",
-							"content": "Provide a clear path so that agents are quickly guided to the content they’re looking for.",
+							"content": "Provide a clear path so that Agents are quickly guided to the content they’re looking for.",
 							"card": "transparent block_card"
 								
 						}
@@ -402,7 +402,7 @@
 					"section_wide": true,
 					"section_content": true, 
 					"title": "EXPLORATIONS",
-					"content": "Before designing any screens, we wanted to nail how agents would read through a client profile. Exercises like competitive analysis and sitemaps taught us what worked and didn't work for our use cases, and led us to a framework that would help agents get quick context on their clients.",
+					"content": "Before designing any screens, we wanted to nail how Agents would read through a client profile. Exercises like competitive analysis and sitemaps taught us what worked and didn't work for our use cases, and led us to a framework that would help Agents get quick context on their clients.",
 					"if_blocks": true, 
 					"flow_row": true,
 					"blocks": [
@@ -422,7 +422,7 @@
 					"section_wide": true,
 					"section_content": true, 
 					"title": "USER TESTING",
-					"content": "We held task-based usability testing in order to validate our proposed information architecture and test interactions. We recruited agents that matched Ada's persona to get feedback from people who matched her tech-forward, customer-focused approach.",
+					"content": "We held task-based usability testing in order to validate our proposed information architecture and test interactions. We recruited Agents that matched Ada's persona to get feedback from people who matched her tech-forward, customer-focused approach.",
 					"if_blocks": true, 
 					"flow_row": true,
 					"blocks": [
@@ -446,7 +446,7 @@
 							"flex_span": "span_row_right",
 							"if_right_section": true,
 							"title": "Key Learning: Agent work styles vary",
-							"content": "As a result, one information hierarchy may not best serve all agents. However, ordering info in a way that addresses four fundamental questions may be most valuable to agents."
+							"content": "As a result, one information hierarchy may not best serve all Agents. However, ordering info in a way that addresses four fundamental questions may be most valuable to Agents."
 						},
 						{
 							"flex_span": "span4",
@@ -464,7 +464,7 @@
 					"section_wide": true,
 					"section_content": true, 
 					"title": "REFINEMENT",
-					"content": "During testing we noticed for some agents, scrolling horizontally to view other tabs was not immediately discoverable. We needed to decrease the learning curve and revisit our design principle, 'Design for touch'.",
+					"content": "During testing we noticed for some Agents, scrolling horizontally to view other tabs was not immediately discoverable. We needed to decrease the learning curve and revisit our design principle, 'Design for touch'.",
 					"if_blocks": true, 
 					"flow_row": true,
 					"mobile_before_after": "mobile_before_after",
@@ -473,7 +473,7 @@
 							"flex_span": "span_row_center",
 							"if_centered_section": true,
 							"title": "Page Anchoring Tabs",
-							"content": "We introduced a stacking interaction that moves agents to the next tab as they scroll down the page. This allows agents to comfortably scroll in one direction as they search for the context they need."
+							"content": "We introduced a stacking interaction that moves Agents to the next tab as they scroll down the page. This allows Agents to comfortably scroll in one direction as they search for the context they need."
 						},
 						{
 							"flex_span": "span3",
@@ -507,7 +507,7 @@
 					"section_wide": true,
 					"section_content": true, 
 					"title": "RESULTS",
-					"content": "The new Homebuyer Profile provides agents the context they need in order to easily identify who a client is and how to follow-up with them. <br><br>This way <span class=\"text_positive\">agents spend less time scrolling in the Premier Agent app, and more time working with clients and completing their daily priorities.</span>",
+					"content": "The new Homebuyer Profile provides Agents the context they need in order to easily identify who a client is and how to follow-up with them. <br><br>This way <span class=\"text_positive\">Agents spend less time scrolling in the Premier Agent app, and more time working with clients and completing their daily priorities.</span>",
 					"if_divider": true
 				},
 				{
@@ -525,7 +525,7 @@
 							"url": "homebuyer-profile",
 							"project_card_image": "../images/homebuyer_profile/Hero_Solution_Shadow.png",
 							"project_card_background": "#579dff",
-							"card_description": "Increased message engagement 14% by centralizing recent conversations agents have had with their clients",
+							"card_description": "Increased message engagement 14% by centralizing recent conversations Agents have had with their clients",
 							"company": "Zillow Group",
 							"tags": [
 								{
@@ -611,7 +611,7 @@
 					"tag_name": "UX Research"
 				}
 			],
-			"description": "How might we help real estate team leads better manage their agents and ensure they're set up for success?<br><br>I owned a series of releases for Lead Routing that gave real estate teams more granular control of their client distribution. This case study focuses on discovery, research, and design for one of those releases, ZIP code groups.",
+			"description": "How might we help real estate Team Leads better manage their Agents and ensure they're set up for success?<br><br>I owned a series of releases for Lead Routing that gave real estate teams more granular control of their client distribution. This case study focuses on discovery, research, and design for one of those releases, ZIP code groups.",
 			"metadata": [
 				{
 					"data_name": "ROLE",
@@ -635,7 +635,7 @@
 					"section_wide": true,
 					"section_header": true,
 					"title": "BACKGROUND",
-					"content": "Within a brokerage, team leads manage agents and ensure they're working the optimal number of clients. This is known to agents as workload capacity.",
+					"content": "Within a brokerage, Team Leads manage Agents and ensure they're working the optimal number of clients. This is known to Agents as workload capacity.",
 					"if_blocks": true, 
 					"flow_row": true, 
 					"blocks": [
@@ -658,7 +658,7 @@
 					"section_wide": true, 
 					"section_header": true, 
 					"title": "PROBLEM",
-					"content": "When an agent receives more clients than they can handle, overall performance and customer service suffers.",
+					"content": "When an Agent receives more clients than they can handle, overall performance and customer service suffers.",
 					"if_blocks": true, 
 					"flow_row": true,
 					"blocks": [
@@ -684,7 +684,7 @@
 								{
 									"title": "One method to control client flow",
 									"text": true,
-									"content": "Currently, team leads can stop an agent from receiving new clients by turning on a 'Pause'. Team leads need a way to scale client management, as pausing agents individually is unsustainable.",
+									"content": "Currently, Team Leads can stop Agents from receiving new clients by 'Pausing' them. Team Leads need a way to scale client management, as pausing Agents individually is unsustainable.",
 									"card": "transparent block_card"
 								},
 								{
@@ -720,14 +720,14 @@
 							"if_data_block_caption": true, 
 							"data": "Reduce manual overhead",
 							"label": "UX GOAL",
-							"description": "Team leads are spending several hours daily individually managing ZIP code assignments for their agents. We should provide the necessary in-app tools for team leads to manage successfully at scale.",
+							"description": "Team Leads are spending several hours daily individually managing ZIP code assignments for their Agents. We should provide the necessary in-app tools for Team Leads to manage successfully at scale.",
 							"card": "transparent block_card"
 						},
 						{
 							"if_data_block_caption": true, 
 							"data": "25% adoption rate",
 							"label": "BUSINESS OUTCOME",
-							"description": "Increase the number of partners using our suite so Premier Agent builds market reach & revenue.",
+							"description": "Increase the number of Partners using our suite so Premier Agent builds market reach & revenue.",
 							"card": "transparent block_card"
 						}
 					],
@@ -737,7 +737,7 @@
 					"section_wide": true,
 					"section_header": true, 
 					"title": "SOLUTION",
-					"content": "Enable teams to create custom ZIP code groups and assign them to agents, which will allow us to build more robust Shift Scheduling features.",
+					"content": "Enable teams to create custom ZIP code groups and assign them to Agents, which will allow us to build more robust Shift Scheduling features.",
 					"if_blocks": true, 
 					"flow_row": true,
 					"blocks": [
@@ -745,7 +745,7 @@
 							"flex_span": "span_row_center",
 							"if_centered_section": true,
 							"title": "Create ZIP code groups",
-							"content": "Team leads can cluster multiple ZIP codes under a custom name. We've seen ZIP codes grouped by city, by schedule, or more abstractly like area expertise."
+							"content": "Team Leads can cluster multiple ZIP codes under a custom name. We've seen ZIP codes grouped by city, by schedule, or more abstractly like area expertise."
 						},
 						{
 							"flex_span": "span4",
@@ -763,8 +763,8 @@
 						{
 							"flex_span": "span_row_center",
 							"if_centered_section": true,
-							"title": "Assign ZIP group to agents",
-							"content": "Team leads can add multiple ZIP codes to an agent using the custom names they created. They also get a more holistic view of ZIP coverage across their agents, creating more clarity around client distribution."
+							"title": "Assign ZIP group to Agents",
+							"content": "Team Leads can add multiple ZIP codes to an Agent using the custom names they created. They also get a more holistic view of ZIP coverage across their Agents, creating more clarity around client distribution."
 						},
 						{
 							"flex_span": "span4",
@@ -779,7 +779,7 @@
 					"section_wide": true,
 					"section_header": true, 
 					"title": "RESEARCH",
-					"content": "How do team leads optimize workload capacity for agents?",
+					"content": "How do Team Leads optimize workload capacity for Agents?",
 					"if_blocks": true, 
 					"flow_row": true,
 					"blocks": [
@@ -787,7 +787,7 @@
 							"flex_span": "span_row_right",
 							"if_right_section": true,
 							"title": "Journey Map Interviews",
-							"content": "In previous research some agents mentioned that they wanted to temporarily stop receiving new clients for short periods of time, such as during a tour. To get a deeper understanding of what agents meant by this, we met with team leads for more insight and documented their user stories."
+							"content": "In previous research some Agents mentioned that they wanted to temporarily stop receiving new clients for short periods of time, such as during a tour. To get a deeper understanding of what Agents meant by this, we met with Team Leads for more insight and documented their user stories."
 						},
 						{
 							"flex_span": "span4",
@@ -811,14 +811,14 @@
 							"flex_span": "span6",
 							"text": true,
 							"title": "Give control & flexibility",
-							"content": "Every real estate team operates in their own unique way. Enable customization and granular controls to accommodate the diverse needs of agents & their teams.",
+							"content": "Every real estate team operates in their own unique way. Enable customization and granular controls to accommodate their diverse needs.",
 							"card": "transparent block_card"
 						},
 						{
 							"flex_span": "span6",
 							"text": true,
 							"title": "Scale for large teams",
-							"content": "Optimize workflows and automate when possible to support growing team sizes (20+) and reduce manual overhead for team leads.",
+							"content": "Optimize workflows and automate when possible to support growing team sizes (20+) and reduce manual overhead for Team Leads.",
 							"card": "transparent block_card"
 						},
 						{
@@ -835,7 +835,7 @@
 					"section_wide": true,
 					"section_header": true, 
 					"title": "CONCEPT TESTING",
-					"content": "How might we impact team leads' ability to manage capacity & client distribution?",
+					"content": "How might we impact Team Leads' ability to manage capacity & client distribution?",
 					"if_blocks": true, 
 					"flow_row": true,
 					"blocks": [
@@ -848,7 +848,7 @@
 									"flex_span": "span3",
 									"text": true,
 									"title": "Framing the conversation",
-									"content": "The goal of these tests were to get early impressions of Scheduling, a tool to set up weekly shifts for when agents should receive new clients. <br><br>We showed low-fidelity concepts to Partners so we can focus their feedback on the high-level functionality. We asked why specific concepts worked for them in order to extract core needs.",
+									"content": "The goal of these tests were to get early impressions of Scheduling, a tool to set up weekly shifts for when Agents should receive new clients. <br><br>We showed low-fidelity concepts to Partners so we can focus their feedback on the high-level functionality. We asked why specific concepts worked for them in order to extract core needs.",
 									"card": "transparent block_card"
 								}
 							]
@@ -863,7 +863,7 @@
 									"image_url": "../images/lead_routing/ConceptTesting_Scheduling3.png",
 									"caption_top": "true",
 									"caption_position": "caption_top_left",
-									"label": "User story: As a team lead, I can check my team's ZIP code distribution so that I can identify gaps in coverage."
+									"label": "User story: As a Team Lead, I can check my team's ZIP code distribution so that I can identify gaps in coverage."
 								},
 								{
 									"flex_span": "span4",
@@ -871,7 +871,7 @@
 									"image_url": "../images/lead_routing/ConceptTesting_Scheduling4.png",
 									"caption_top": "true",
 									"caption_position": "caption_top_left",
-									"label": "User story: As a team lead, I can drill into a singular ZIP code so that I can adjust my assigned agents."
+									"label": "User story: As a Team Lead, I can drill into a singular ZIP code so that I can adjust my assigned Agents."
 								}
 							]
 						}
@@ -918,7 +918,7 @@
 							"image_url": "../images/lead_routing/Explorations_Layout.png",
 							"caption_top": "true",
 							"caption_position": "caption_top_left",
-							"label": "User story: As a team lead, I can assign ZIP groups and individual ZIP codes to agents in 2 programs."
+							"label": "User story: As a Team Lead, I can assign ZIP code groups and individual ZIP codes to an Agent in 2 programs."
 						}
 					],
 					"if_divider": true
@@ -927,7 +927,7 @@
 					"section_wide": true,
 					"section_content": true, 
 					"title": "REFINEMENT",
-					"content": "Content Design was involved early on so they could learn with us and provide clear directions to team leads on how to set up ZIP code groups and resolve errors.",
+					"content": "Content Design was involved early on so they could learn with us and provide clear directions to Team Leads on how to set up ZIP code groups and resolve errors.",
 					"if_blocks": true, 
 					"flow_row": true,
 					"blocks": [
@@ -956,7 +956,7 @@
 					"section_wide": true,
 					"section_content": true, 
 					"title": "RESULTS",
-					"content": "Early qualitative feedback on the ZIP code groups feature has been positive! One month after release, <span class=\"text_positive\">+27% of eligible teams had created at least one ZIP code group, beating our goal of +25% adoption rate.</span><br><br>We expect more team leads to utilize the feature as they figure out the best way to organize their client distribution.<br><br>As next steps, we are continuing work on Shift Scheduling and exploring designs based on feedback from Concept Testing.",
+					"content": "Early qualitative feedback on the ZIP code groups feature has been positive! One month after release, <span class=\"text_positive\">+27% of eligible teams had created at least one ZIP code group, beating our goal of +25% adoption rate.</span><br><br>We expect more Team Leads to utilize the feature as they figure out the best way to organize their client distribution.<br><br>As next steps, we are continuing work on Shift Scheduling and exploring designs based on feedback from Concept Testing.",
 					"if_divider": true
 				},
 				{
@@ -974,7 +974,7 @@
 							"url": "homebuyer-profile",
 							"project_card_image": "../images/homebuyer_profile/Hero_Solution_Shadow.png",
 							"project_card_background": "#579dff",
-							"card_description": "Increased message engagement 14% by centralizing recent conversations agents have had with their clients",
+							"card_description": "Increased message engagement 14% by centralizing recent conversations Agents have had with their clients",
 							"company": "Zillow Group",
 							"tags": [
 								{
@@ -1051,15 +1051,15 @@
 					"tag_name": "Strategy"
 				}
 			],
-			"description": "As Zillow Group aligns it's services across the company and move away from the idea of sub-brands, Premier Agent would greatly benefit from unifying under Zillow's main design system, Constellation.<br><br>I represented Premier Agent Product Design on a tiger team of specialists tasked with developing a strategy to migrate the Premier Agent web product to Constellation.",
+			"description": "As Zillow Group aligns its services company-wide and moves away from the idea of sub-brands, Premier Agent would greatly benefit from unifying under Zillow's main design system, Constellation.<br><br>I represented Premier Agent Product Design on a tiger team of specialists tasked with developing a strategy to migrate the Premier Agent web product to Constellation.",
 			"metadata": [
 				{
 					"data_name": "ROLE",
-					"data_content": "Led design workstreams & strategy for Premier Agent UX"
+					"data_content": "Led Premier Agent design workstreams & collaborated on strategy"
 				},
 				{
 					"data_name": "TEAM",
-					"data_content": "1 UX Designer, Premier Agent (me)<br>1 UX Designer, Design Systems<br>2 UX Engineers<br>1 Design Ops<br>2 Leadership Sponsors"
+					"data_content": "1 UX Designer, PA (me)<br>1 UX Designer, Design Systems<br>2 UX Engineers<br>1 Design Ops<br>2 Leadership Sponsors"
 				},
 				{
 					"data_name": "TOOLS",
@@ -1075,7 +1075,7 @@
 					"section_wide": true,
 					"section_header": true,
 					"title": "BACKGROUND",
-					"content": "In 2019 Zillow began the process of converging all design systems into one. That system is Constellation.<br><br>Since then, Constellation has become the most mature, efficient design system at Zillow.",
+					"content": "In 2019 Zillow began the process of converging all design systems into Constellation.<br><br>Now, Constellation has become the most mature, efficient design system at Zillow.",
 					"if_blocks": true, 
 					"flow_row": true, 
 					"blocks": [
@@ -1181,14 +1181,14 @@
 							"if_data_block_caption": true, 
 							"data": "Maintain one system",
 							"label": "ENGINEERING GOAL",
-							"description": "Sustained, long term infrastructure for front end development as older systems are deprecated.",
+							"description": "Sustained, long term infrastructure for front-end development as older systems are deprecated.",
 							"card": "transparent block_card"
 						},
 						{
 							"if_data_block_caption": true, 
 							"data": "Accessibility",
 							"label": "UX GOAL",
-							"description": "Accessibility foundations are built directly into Constellation and should be leveraged so we're legally compliant.",
+							"description": "Accessibility foundations are built directly into Constellation and should be leveraged so we're compliant with standards.",
 							"card": "transparent block_card"
 						},
 						{
@@ -1213,7 +1213,7 @@
 							"flex_span": "span_row_center",
 							"if_centered_section": true,
 							"title": "Create a visual theme for PAXL",
-							"content": "Themeing Premier Agent to look like Constellation minimizes visual inconsistencies when Engineering teams begin migrating. We updated PAXL styles and tested with HTML prototyping until we achieved the desired effect."
+							"content": "Themeing Premier Agent to look like Constellation minimizes visual inconsistencies when Engineering teams begin migrating. We updated PAXL styles and tested with HTML prototyping until we achieved the desired quality bar."
 						},
 						{
 							"flex_span": "span4",
@@ -1235,7 +1235,7 @@
 							"flex_span": "span_row_center",
 							"if_centered_section": true,
 							"title": "Rebuild key experiences in Constellation",
-							"content": "Pages that need specialized components will require a full rebuild in Constellation. These rebuilds will be a collaborative effort between Premier Agent Product Design and the Constellation Design System team."
+							"content": "Pages that need specialized components will require a full rebuild in Constellation. These rebuilds are a collaborative effort between Premier Agent Product Design and the Constellation Design System team."
 						},
 						{
 							"flex_span": "span4",
@@ -1253,7 +1253,7 @@
 					"section_wide": true,
 					"section_header": true, 
 					"title": "PHASES",
-					"content": "How do we get Premier Agent Product and Engineering teams to commit to prioritizing a migration approach?",
+					"content": "How do we get Premier Agent Product and Engineering teams to commit to a migration plan?",
 					"if_blocks": true, 
 					"flow_row": true,
 					"blocks": [
@@ -1328,7 +1328,7 @@
 							"flex_span": "span_row_right",
 							"if_right_section": true,
 							"title": "4. Execute & keep momentum",
-							"content": ". More teams"
+							"content": "asdf"
 						},
 						{
 							"flex_span": "span4",
@@ -1346,7 +1346,7 @@
 					"section_wide": true,
 					"section_content": true, 
 					"title": "STATUS",
-					"content": "At the start of 2022 we began working closely with Engineering teams who are eager to migrate to Constellation.<br><br> <span class=\"text_positive\">Several new experiences are confirmed to be built in Constellation during 2022</span> and we're expecting more partnerships throughout the upcoming quarters.",
+					"content": "At the start of 2022 we began working closely with teams who are eager to migrate to Constellation.<br><br> <span class=\"text_positive\">Several new experiences are confirmed to be built in Constellation during 2022</span> and we're expecting more partnerships throughout the upcoming quarters.",
 					"if_divider": true
 				},
 				{
@@ -1356,7 +1356,7 @@
 						{
 							"if_section_header": true, 
 							"title": "NEXT",
-							"content": "Feel free to <a href=\"mailto:suasin.ja@gmail.com\">email me</a> if you want to learn more about my projects ツ"
+							"content": "Feel free to <a href=\"mailto:suasin.ja@gmail.com\">email me</a> if you want to learn more about my projects (^_^)"
 						},
 						{
 							"if_project_card": true, 
@@ -1364,7 +1364,7 @@
 							"url": "homebuyer-profile",
 							"project_card_image": "../images/homebuyer_profile/Hero_Solution_Shadow.png",
 							"project_card_background": "#579dff",
-							"card_description": "Increased message engagement 14% by centralizing recent conversations agents have had with their clients",
+							"card_description": "Increased message engagement 14% by centralizing recent conversations Agents have had with their clients",
 							"company": "Zillow Group",
 							"tags": [
 								{
@@ -1428,7 +1428,6 @@
             "url": "connectngive",
             "project_card_image": "../images/homebuyer_profile/Hero_Solution_Shadow.png",
 			"project_card_background": "#ff7370",
-            "next-project": "<a href=\"/pa-newsfeed\">Agent Newsfeed</a>",
             "previous-and-next": false,
 			"card_description": "Scaled the UX team from 2 to 6 designers & actively coached, designed a delivery tracking system, and established web design system",
 			"company": "ConnectNGive",
