@@ -13,14 +13,18 @@
 
 .profile_intro {
     flex: 2;
-    padding: 2rem 2rem 2rem 0;
+    padding: 2rem 2rem 2rem 1.5rem;
+    max-width: 840px;
 
     .intro_header {
         padding: 0 0 1rem 0;
     }
+
 }
 
-
+.intro_body {
+    margin-top: 2rem;
+}
 
 
 @media(max-width: 1600px){

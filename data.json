@@ -863,7 +863,8 @@
 									"image_url": "../images/lead_routing/ConceptTesting_Scheduling3.png",
 									"caption_top": "true",
 									"caption_position": "caption_top_left",
-									"label": "User story: As a Team Lead, I can check my team's ZIP code distribution so that I can identify gaps in coverage."
+									"label": "<span class=\"underline\">User story</span>",
+									"content": "As a Team Lead, I can check my team's ZIP code distribution so that I can identify gaps in coverage."
 								},
 								{
 									"flex_span": "span4",
@@ -871,7 +872,8 @@
 									"image_url": "../images/lead_routing/ConceptTesting_Scheduling4.png",
 									"caption_top": "true",
 									"caption_position": "caption_top_left",
-									"label": "User story: As a Team Lead, I can drill into a singular ZIP code so that I can adjust my assigned Agents."
+									"label": "<span class=\"underline\">User story</span>",
+									"content": "As a Team Lead, I can drill into a singular ZIP code so that I can adjust my assigned Agents."
 								}
 							]
 						}
@@ -896,7 +898,10 @@
 							"flex_span": "span4",
 							"span_width": "span_half",
 							"image": true,
-							"image_url": "../images/lead_routing/Pivot_ZIPGroupConcepts.png"
+							"image_url": "../images/lead_routing/Pivot_ZIPGroupConcepts.png",
+							"caption_bottom": "true",
+							"caption_position": "caption_bottom_left",
+							"label": "ZIP code group wireframes"
 						}
 					],
 					"if_divider": true
@@ -918,7 +923,8 @@
 							"image_url": "../images/lead_routing/Explorations_Layout.png",
 							"caption_top": "true",
 							"caption_position": "caption_top_left",
-							"label": "User story: As a Team Lead, I can assign ZIP code groups and individual ZIP codes to an Agent in 2 programs."
+							"label": "<span class=\"underline\">User story</span>",
+							"content": "As a Team Lead, I can assign ZIP code groups and individual ZIP codes to an Agent in 2 programs."
 						}
 					],
 					"if_divider": true
@@ -1429,7 +1435,7 @@
             "project_card_image": "../images/homebuyer_profile/Hero_Solution_Shadow.png",
 			"project_card_background": "#ff7370",
             "previous-and-next": false,
-			"card_description": "Scaled the UX team from 2 to 6 designers & actively coached, designed a delivery tracking system, and established web design system",
+			"card_description": "Volunteer Design Leader for a nonprofit project that delivered over 60k+ units of PPE supplies during the pandemic",
 			"company": "ConnectNGive",
 			"tags": [
 				{
@@ -1441,6 +1447,266 @@
 				{
 					"tag_name": "UX/UI"
 				}
+			],
+			"description": "I was a volunteer Design Leader for ConnectNGive, a nonprofit project that connected PPE safety supply donors with groups or workers who need them.<br><br>My leadership achievements include scaling the team from 2 to 6 designers, establishing a web design system to support my team's work, and prioritizing a design-led relaunch.",
+			"metadata": [
+				{
+					"data_name": "ROLE",
+					"data_content": "Design Leader and Manager for a team of 6 product designers. Design Ops and Product Strategy."
+				},
+				{
+					"data_name": "TEAM",
+					"data_content": "1 Design Manager (me)<br>1 UX Lead<br>3 UX Designers<br>1 UX Design Intern"
+				},
+				{
+					"data_name": "TOOLS",
+					"data_content": "Figma, Whimsical"
+				},
+				{
+					"data_name": "TIMEFRAME",
+					"data_content": "May 2020 - May 2021"
+				}
+			],
+			"sections": [
+				{
+					"section_wide": true,
+					"section_header": true,
+					"title": "BACKGROUND",
+					"content": "When the pandemic hit in early 2020, PPE (personal protective equipment) shortages were rampant as healthcare workers, businesses, and everyday people attempted to find supplies.",
+					"if_blocks": true, 
+					"flow_row": true, 
+					"blocks": [
+						{
+							"title": "The Product",
+							"text": true, 
+							"content": "ConnectNGive serves smaller community groups who were especially affected by the lack of PPE resources available. Donors with PPE supplies can check a dashboard of real time shortage updates, and connect with donees to allocate supplies.",
+							"card": "transparent block_card"
+						},
+						{
+							"title": "Impact",
+							"text": true, 
+							"content": "Before shutting down, <span class=\"text_positive\">ConnectNGive facilitated tracking for 60k+ units of PPE donations to local communities throughout California.</span> Including 24k homemade face masks, 20k sets of gloves, and 10k KN95 masks.",
+							"card": "transparent block_card"
+						}
+					],
+					"if_divider": true
+				},
+				{
+					"section_wide": true, 
+					"if_blocks": true, 
+					"flow_row": true,
+					"blocks": [
+						{
+							"flex_span": "span4",
+							"flow_column": true, 
+							"blocks": [
+								{
+									"flex_span": "span6",
+									"image": true,
+									"caption_top": "true",
+									"caption_position": "caption_top_left",
+									"image_url": "../images/connectngive/CnG_Problem.png"
+								}
+							]
+						}
+					],
+					"if_divider": true
+				},
+				{
+					"section_wide": true,
+					"section_header": true,
+					"title": "GOALS",
+					"content": "What do we want to achieve?",
+					"if_blocks": true, 
+					"flow_row": true, 
+					"blocks": [
+						{
+							"if_data_block_caption": true, 
+							"data": "Launch a web product",
+							"label": "PRODUCT GOAL",
+							"description": "Enable local groups to request their exact PPE needs easily, and connect them to community members with PPE inventory in real time",
+							"card": "transparent block_card"
+						},
+						{
+							"if_data_block_caption": true, 
+							"data": "Donate as much supplies as we can",
+							"label": "NONPROFIT GOAL",
+							"description": "And expand our reach as far as we can, so we can help the most people.",
+							"card": "transparent block_card"
+						}
+					],
+					"if_divider": true
+				},
+				{
+					"section_wide": true, 
+					"if_blocks": true, 
+					"flow_row": true,
+					"blocks": [
+						{
+							"flex_span": "span4",
+							"flow_column": true, 
+							"blocks": [
+								{
+									"flex_span": "span6",
+									"image": true,
+									"caption_top": "true",
+									"caption_position": "caption_top_left",
+									"image_url": "../images/connectngive/CnG_Solution.png"
+								}
+							]
+						}
+					],
+					"if_divider": true
+				},
+				{
+					"section_wide": true,
+					"section_header": true,
+					"title": "CORE FEATURES",
+					"content": "I led strategy for a relaunch of ConnectNGive's core features. We split the end-to-end experience into workstreams and collaborated often in order to align our experiences.", 
+					"if_blocks": true, 
+					"flow_row": true,
+					"blocks": [
+						{
+							"flex_span": "span_row_center",
+							"if_centered_section": true,
+							"title": "Create a visual theme for PAXL",
+							"content": "Themeing Premier Agent to look like Constellation minimizes visual inconsistencies when Engineering teams begin migrating. We updated PAXL styles and tested with HTML prototyping until we achieved the desired quality bar."
+						},
+						{
+							"flex_span": "span4",
+							"span_width": "span_half",
+							"image": true,
+							"image_url": "../images/constellation_migration/Contacts_Theme.png",
+							"caption_bottom": "true",
+							"caption_position": "caption_bottom_left",
+							"label": "Contacts with PAXL theme that looks like Constellation"
+						}
+					],
+					"if_divider": true
+				},
+				{
+					"section_wide": true,
+					"section_header": true, 
+					"title": "DESIGN SYSTEM",
+					"content": "How do Team Leads optimize workload capacity for Agents?",
+					"if_blocks": true, 
+					"flow_row": true,
+					"blocks": [
+						{
+							"flex_span": "span_row_right",
+							"if_right_section": true,
+							"title": "Journey Map Interviews",
+							"content": "In previous research some Agents mentioned that they wanted to temporarily stop receiving new clients for short periods of time, such as during a tour. To get a deeper understanding of what Agents meant by this, we met with Team Leads for more insight and documented their user stories."
+						},
+						{
+							"flex_span": "span4",
+							"span_width": "span_half",
+							"image": true,
+							"image_url": "../images/lead_routing/SelfPause_JourneyMap.png"
+						}
+
+					],
+					"if_divider": true
+				},	
+				{
+					"section_wide": true,
+					"section_content": true, 
+					"title": "DESIGN OPS",
+					"content": "To better organize our growing team, I implemented project intake and prioritization processes. Project requests are submitted, discussed, and prioritized before any work begins. New projects get an accompanying feature brief, which serves as the source of truth for the working team.",
+					"if_blocks": true, 
+					"flow_row": true,
+					"blocks": [
+						{
+							"flex_span": "span4",
+							"span_width": "span_half",
+							"image": true,
+							"image_url": "../images/connectngive/DesignOps_FeatureBrief.png",
+							"caption_top": "true",
+							"caption_position": "caption_top_left",
+							"label": "Feature briefs include design requirements, engineering user stories, and FAQs"
+						}
+					],
+					"if_divider": true
+				},
+				{
+					"section_wide": true,
+					"section_content": true, 
+					"title": "RESULTS",
+					"content": "Unfortunately, our relaunch didn't reach the live website before ConnectNGive's wind down. Regardless, it was an amazing experience to work with this amazing team. I appreciated everyone's humbleness, willingness to learn, and devotion to our cause.<br><br>Thank you Christina for inviting me to lead with you. Thank you Alex, Jenny, Fiona, Jordan, Carole, and Ellis for being amazing teammates. Thank you Ben for rallying this cause.<span class=\"text_positive\">+27% of eligible teams had created at least one ZIP code group, beating our goal of +25% adoption rate.</span><br><br>We expect more Team Leads to utilize the feature as they figure out the best way to organize their client distribution.<br><br>As next steps, we are continuing work on Shift Scheduling and exploring designs based on feedback from Concept Testing.",
+					"if_divider": true
+				},
+				{
+					"if_project_nav": true, 
+					
+					"projects": [
+						{
+							"if_section_header": true, 
+							"title": "NEXT",
+							"content": "Feel free to <a href=\"mailto:suasin.ja@gmail.com\">email me</a> if you want to learn more about my projects ツ"
+						},
+						{
+							"if_project_card": true, 
+							"name": "Homebuyer Profile",
+							"url": "homebuyer-profile",
+							"project_card_image": "../images/homebuyer_profile/Hero_Solution_Shadow.png",
+							"project_card_background": "#579dff",
+							"card_description": "Increased message engagement 14% by centralizing recent conversations Agents have had with their clients",
+							"company": "Zillow Group",
+							"tags": [
+								{
+									"tag_name": "iOS"
+								},
+								{
+									"tag_name": "Android"
+								},
+								{
+									"tag_name": "UX/UI"
+								}
+							]
+						},
+						{
+							"if_project_card": true, 
+							"name": "Lead Routing",
+							"url": "lead-routing",
+							"project_card_image": "../images/homebuyer_profile/Hero_Solution_Shadow.png",
+							"project_card_background": "#2bc1e1",
+							"card_description": "End-to-end product design for a suite of experiences that enabled real estate teams more granular control of their client distribution",
+							"company": "Zillow Group",
+							"tags": [
+								{
+									"tag_name": "Web"
+								},
+								{
+									"tag_name": "UX/UI"
+								},
+								{
+									"tag_name": "UX Research"
+								}
+							]
+						},
+						{
+							"if_project_card": true, 
+							"name": "Constellation Migration",
+							"url": "constellation-migration",
+							"project_card_image": "../images/homebuyer_profile/Hero_Solution_Shadow.png",
+							"project_card_background": "#b375ff",
+							"card_description": "Scoped and communicated a strategy to transition 35 web pages across 9 Engineering teams to a new design system",
+							"company": "Zillow Group",
+							"tags": [
+								{
+									"tag_name": "Design Systems"
+								},
+								{
+									"tag_name": "Web"
+								},
+								{
+									"tag_name": "Strategy"
+								}
+							]							
+						}
+					]
+				}			
+
 			]
 		}
 	]

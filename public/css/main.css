@@ -180,7 +180,7 @@ body {
 
 .divider_thin {
   border-top: 1px solid #4A5454;
-  margin-bottom: 1.5rem; }
+  margin: 1.5rem 0; }
 
 .divider_section {
   margin-bottom: 4rem !important; }
@@ -249,6 +249,9 @@ body {
 */
 .description, .caption {
   color: #C5CDD0; }
+
+.underline {
+  text-decoration: underline; }
 
 .caption_top_center {
   text-align: center;
@@ -615,9 +618,13 @@ body {
 
 .profile_intro {
   flex: 2;
-  padding: 2rem 2rem 2rem 0; }
+  padding: 2rem 2rem 2rem 1.5rem;
+  max-width: 840px; }
   .profile_intro .intro_header {
     padding: 0 0 1rem 0; }
+
+.intro_body {
+  margin-top: 2rem; }
 
 @media (max-width: 1024px) {
   .profile_image {
@@ -640,11 +647,13 @@ body {
   border-radius: 3px 3px 0 0; }
 
 .project_intro {
-  padding: 0 2rem 2rem 2rem; }
+  padding: 2rem; }
   .project_intro .project_intro_header {
     padding-bottom: 1rem; }
   .project_intro .intro_block {
     padding: 1rem 0; }
+  .project_intro .project_intro_description {
+    padding-top: 1rem; }
 
 .project_hero_image {
   display: flex;

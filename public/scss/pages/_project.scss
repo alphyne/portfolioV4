@@ -13,15 +13,20 @@
 }
 
 .project_intro {
-    padding: 0 2rem 2rem 2rem;
+    padding: 2rem;
 
 
     .project_intro_header {
         padding-bottom: 1rem;
+        //padding-top: 2rem;
     }
 
     .intro_block {
         padding: 1rem 0;
+    }
+
+    .project_intro_description {
+        padding-top: 1rem;
     }
 }
 
@@ -31,10 +36,6 @@
     align-items: center;
     background-color: #E0F2FF;
     border-radius: 3px 3px 0 0;
-
-    image {
-        
-    }
 }
 
 .section_header {

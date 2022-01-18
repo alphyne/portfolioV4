@@ -71,9 +71,9 @@
 
 			<!-- Project header -->
 			<div class="section section_vertical transparent">
-				<div class="project_hero_image" style="background: {{project_card_background}}">
+				<!--<div class="project_hero_image" style="background: {{project_card_background}}">
 					<img class="image_fit" src="{{project_card_image}}">
-				</div>
+				</div>-->
 				<div class="project_intro">
 
 					<!-- Project name & description -->
@@ -88,7 +88,7 @@
 					<hr class="divider_thin">
 				
 
-					<div class="block_large description">
+					<div class="block_large project_intro_description description">
 						<h3>{{{description}}}</h3>
 					</div>
 
@@ -104,6 +104,15 @@
 					</div>
 
 				</div>
+			</div>
+
+				<!--<div class="project_hero_image" style="background: {{project_card_background}}">
+					<img class="image_fit" src="{{project_card_image}}">
+				</div>-->
+			
+
+			<div class="project_hero_image" style="background: {{project_card_background}}">
+				<img class="image_fit" src="{{project_card_image}}">
 			</div>
 
 
@@ -153,16 +162,16 @@
 											<!--<div class="block transparent image" style="background-image:url({{image_url}});"></div>-->
 											{{#if caption_top}}
 												<div class="caption {{caption_position}}">
-													<h6>{{label}}</h6>
-													<p>{{content}}</p>
+													<h6>{{{label}}}</h6>
+													<p>{{{content}}}</p>
 												</div>
 											{{/if}}
 											<img class="image_fit {{gif}}" src="{{image_url}}">
 
 											{{#if caption_bottom}}
 												<div class="caption {{caption_position}}">
-													<h6>{{label}}</h6>
-													<p>{{content}}</p>
+													<h6>{{{label}}}</h6>
+													<p>{{{content}}}</p>
 												</div>
 											{{/if}}
 										{{/if}}	
@@ -260,16 +269,16 @@
 														<!--<div class="block transparent image" style="background-image:url({{image_url}});"></div>-->
 														{{#if caption_top}}
 															<div class="caption {{caption_position}}">
-																<h6>{{label}}</h6>
-																<p>{{content}}</p>
+																<h6>{{{label}}}</h6>
+																<p>{{{content}}}</p>
 															</div>
 														{{/if}}
 														<img class="image_fit" src="{{image_url}}">
 
 														{{#if caption_bottom}}
 															<div class="caption {{caption_position}}">
-																<h6>{{label}}</h6>
-																<p>{{content}}</p>
+																<h6>{{{label}}}</h6>
+																<p>{{{content}}}</p>
 															</div>
 														{{/if}}
 													{{/if}}								

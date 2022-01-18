@@ -258,7 +258,7 @@ body {
  // Divider
  .divider_thin {
     border-top: 1px solid #4A5454;
-    margin-bottom: 1.5rem;
+    margin: 1.5rem 0;
 }
 
 .divider_section {
@@ -352,6 +352,10 @@ body {
 
 .description, .caption {
     color: #C5CDD0;
+}
+
+.underline {
+    text-decoration: underline;
 }
 
 .caption_top_center {
