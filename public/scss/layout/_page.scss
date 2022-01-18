@@ -96,7 +96,7 @@ body {
     flex-flow: row wrap;
     justify-content: space-between;
     align-items: stretch;
-    align-content: space-between;
+    //align-content: space-between;
     gap: 2rem;
 }
 
@@ -159,7 +159,7 @@ body {
 }
 
 .span_half {
-    flex: 1 0 40%;
+    flex: 1 0 38%;
 }
 
 .caption_left {
@@ -215,6 +215,7 @@ body {
  .gif {
     //width: 864px;
     height: 91%;
+    max-height:91%;
  }
 
  // Data block
@@ -545,7 +546,12 @@ body {
         flex: 2 0 90%;
     }
 
-
+    .gif {
+        min-height: 576px;
+        max-height: 776px;
+        height: 90%;
+        //width:90%;
+    }
 }
 
 
@@ -578,6 +584,14 @@ body {
     .data_block_group {
         display: flex;
     }
+
+    .gif {
+        //width: 864px;
+        height: 70%;
+        //width: 80%;
+        min-height: 440px;
+        max-height: 576px;
+    }
 }
 
 @media(max-width: 600px){
@@ -588,6 +602,9 @@ body {
 
 /* Break: Mobile */
 @media(max-width: 480px) {
-
+    .gif {
+        max-height: 417px;
+    }
+    
 }
 

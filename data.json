@@ -1036,7 +1036,7 @@
 		{
             "name": "Constellation Migration",
             "url": "constellation-migration",
-            "project_card_image": "../images/homebuyer_profile/Hero_Solution_Shadow.png",
+            "project_card_image": "../images/constellation_migration/Hero_Inbox.png",
 			"project_card_background": "#b375ff",
 			"card_description": "Scoped and communicated a strategy to migrate 35 web pages across 9 Engineering teams to a new design system",
 			"company": "Zillow Group",
@@ -1075,14 +1075,14 @@
 					"section_wide": true,
 					"section_header": true,
 					"title": "BACKGROUND",
-					"content": "After reviewing the various design systems across Zillow Group in late 2019 - Zillow Experience Design began the process of converging all systems into one. That system is Constellation.",
+					"content": "In 2019 Zillow began the process of converging all design systems into one. That system is Constellation.<br><br>Since then, Constellation has become the most mature, efficient design system at Zillow.",
 					"if_blocks": true, 
 					"flow_row": true, 
 					"blocks": [
 						{
-							"title": "The Product",
+							"title": "Introducing PAXL",
 							"text": true, 
-							"content": "Premier Agent is Zillow’s B2B client acquisition and business builder platform for real estate agents & teams.",
+							"content": "PAXL (Premier Agent Experience Language) is Premier Agent's design library for web, launched in 2016.",
 							"card": "transparent block_card"
 						},
 						{
@@ -1098,17 +1098,10 @@
 					"section_wide": true, 
 					"section_header": true, 
 					"title": "THE OPPORTUNITY",
-					"content": "Migrating Premier Agent to Constellation would accelerate designer and development velocity as we build Partner experiences.",
+					"content": "Migrating Premier Agent to Constellation would accelerate designer and development velocity as we build Partner experiences.<br><br>Constellation's upgraded web technologies, larger component library, and dedicated team support would enable Premier Agent to streamline it's Engineering and Design processes.",
 					"if_blocks": true, 
 					"flow_row": true,
 					"blocks": [
-						{
-							"span_width": "span_half",
-							"title": "Why Constellation?",
-							"text": true,
-							"content": "Constellation has become the most mature, efficient design system at Zillow since it's establishment in 2019. Its benefits include upgraded technologies, more components, and a dedicated Design Systems team.",
-							"card": "transparent block_card"
-						},
 						{
 							"span_width": "span_half",
 							"title": "Core technologies",
@@ -1116,7 +1109,7 @@
 							"data_blocks": [
 								{
 									"data": "HTML/CSS",
-									"label": "PAXL (PREMIER AGENT)"
+									"label": "PAXL"
 								},
 								{
 									"data": "React",
@@ -1132,7 +1125,23 @@
 							"data_blocks": [
 								{
 									"data": "90",
-									"label": "PAXL (PREMIER AGENT)"
+									"label": "PAXL"
+								},
+								{
+									"data": "200",
+									"label": "CONSTELLATION"
+								}
+							],
+							"card": "transparent block_card"
+						},
+						{
+							"span_width": "span_half",
+							"title": "Number of React components",
+							"if_data_block": true, 
+							"data_blocks": [
+								{
+									"data": "12",
+									"label": "PAXL"
 								},
 								{
 									"data": "200",
@@ -1148,7 +1157,7 @@
 							"data_blocks": [
 								{
 									"data": "2",
-									"label": "PAXL (PREMIER AGENT)"
+									"label": "PAXL"
 								},
 								{
 									"data": "19+",
@@ -1196,21 +1205,24 @@
 					"section_wide": true,
 					"section_header": true, 
 					"title": "SOLUTION",
-					"content": "Enable teams to create custom ZIP code groups and assign them to agents, which will allow us to build more robust Shift Scheduling features.",
+					"content": "Migrate in phases: Consult with Product teams to build a plan that fits their roadmap & migration needs",
 					"if_blocks": true, 
 					"flow_row": true,
 					"blocks": [
 						{
 							"flex_span": "span_row_center",
 							"if_centered_section": true,
-							"title": "Create ZIP code groups",
-							"content": "Team leads can cluster multiple ZIP codes under a custom name. We've seen ZIP codes grouped by city, by schedule, or more abstractly like area expertise."
+							"title": "Create a visual theme for PAXL",
+							"content": "Themeing Premier Agent to look like Constellation minimizes visual inconsistencies when Engineering teams begin migrating. We updated PAXL styles and tested with HTML prototyping until we achieved the desired effect."
 						},
 						{
 							"flex_span": "span4",
 							"span_width": "span_half",
-							"if_video": true,
-							"video_src": "../images/lead_routing/ZIPGroups_CreateAGroup.mp4"
+							"image": true,
+							"image_url": "../images/constellation_migration/Contacts_Theme.png",
+							"caption_bottom": "true",
+							"caption_position": "caption_bottom_left",
+							"label": "Contacts with PAXL theme that looks like Constellation"
 						}
 					]
 				},
@@ -1222,14 +1234,17 @@
 						{
 							"flex_span": "span_row_center",
 							"if_centered_section": true,
-							"title": "Assign ZIP group to agents",
-							"content": "Team leads can add multiple ZIP codes to an agent using the custom names they created. They also get a more holistic view of ZIP coverage across their agents, creating more clarity around client distribution."
+							"title": "Rebuild key experiences in Constellation",
+							"content": "Pages that need specialized components will require a full rebuild in Constellation. These rebuilds will be a collaborative effort between Premier Agent Product Design and the Constellation Design System team."
 						},
 						{
 							"flex_span": "span4",
 							"span_width": "span_half",
-							"if_video": true,
-							"video_src": "../images/lead_routing/ZIPGroups_AssignToAgent.mp4"
+							"image": true,
+							"image_url": "../images/constellation_migration/Inbox_Remade.png",
+							"caption_bottom": "true",
+							"caption_position": "caption_bottom_left",
+							"label": "Inbox redesigned with Constellation"
 						}
 					],
 					"if_divider": true
@@ -1237,176 +1252,92 @@
 				{
 					"section_wide": true,
 					"section_header": true, 
-					"title": "RESEARCH",
-					"content": "How do team leads optimize workload capacity for agents?",
+					"title": "PHASES",
+					"content": "How do we get Premier Agent Product and Engineering teams to commit to prioritizing a migration approach?",
 					"if_blocks": true, 
 					"flow_row": true,
 					"blocks": [
 						{
 							"flex_span": "span_row_right",
 							"if_right_section": true,
-							"title": "Journey Map Interviews",
-							"content": "In previous research some agents mentioned that they wanted to temporarily stop receiving new clients for short periods of time, such as during a tour. To get a deeper understanding of what agents meant by this, we met with team leads for more insight and documented their user stories."
+							"title": "1. Understand migration scope",
+							"content": "We audited the Premier Agent web app to get a clearer picture of the task at hand. After our initial investigation, we learned that there were 35 pages in the Premier Agent ecosystem, 9 different teams who own these pages, and 3 design systems that construct them."
 						},
 						{
 							"flex_span": "span4",
 							"span_width": "span_half",
 							"image": true,
-							"image_url": "../images/lead_routing/SelfPause_JourneyMap.png"
+							"image_url": "../images/constellation_migration/Phases_ComponentChangeLog.png",
+							"caption_bottom": "true",
+							"caption_position": "caption_bottom_left",
+							"label": "Theme component survey"
 						}
 
-					],
-					"if_divider": true
+					]
 				},	
 				{
 					"section_wide": true,
-					"section_content": true, 
-					"title": "DESIGN PRINCIPLES",
-					"content": "From our interviews, we learned customization was a top priority, as many real estate teams operate uniquely from each other. Future-proofing the Lead Routing experience was critical since we couldn't anticipate every team structure that could use our product.",
-					"if_blocks": true, 
-					"flow_row": true,
-					"blocks": [
-						{
-							"flex_span": "span6",
-							"text": true,
-							"title": "Give control & flexibility",
-							"content": "Every real estate team operates in their own unique way. Enable customization and granular controls to accommodate the diverse needs of agents & their teams.",
-							"card": "transparent block_card"
-						},
-						{
-							"flex_span": "span6",
-							"text": true,
-							"title": "Scale for large teams",
-							"content": "Optimize workflows and automate when possible to support growing team sizes (20+) and reduce manual overhead for team leads.",
-							"card": "transparent block_card"
-						},
-						{
-							"flex_span": "span6",
-							"text": true,
-							"title": "Be transparent",
-							"content": "Prioritize showing as much relevant data possible. Teams deserve to know how they're performing in order to improve.",
-							"card": "transparent block_card"	
-						}
-					],
-					"if_divider": true
-				},
-				{
-					"section_wide": true,
-					"section_header": true, 
-					"title": "CONCEPT TESTING",
-					"content": "How might we impact team leads' ability to manage capacity & client distribution?",
-					"if_blocks": true, 
-					"flow_row": true,
-					"blocks": [
-						{
-							"flex_span": "span4",
-							
-							"flow_column": true, 
-							"blocks": [
-								{
-									"flex_span": "span3",
-									"text": true,
-									"title": "Framing the conversation",
-									"content": "The goal of these tests were to get early impressions of Scheduling, a tool to set up weekly shifts for when agents should receive new clients. <br><br>We showed low-fidelity concepts to Partners so we can focus their feedback on the high-level functionality. We asked why specific concepts worked for them in order to extract core needs.",
-									"card": "transparent block_card"
-								}
-							]
-						},
-						{
-							"flex_span": "span8",
-							"flow_column": true, 
-							"blocks": [
-								{
-									"flex_span": "span4",
-									"image": true,
-									"image_url": "../images/lead_routing/ConceptTesting_Scheduling3.png",
-									"caption_top": "true",
-									"caption_position": "caption_top_left",
-									"label": "User story: As a team lead, I can check my team's ZIP code distribution so that I can identify gaps in coverage."
-								},
-								{
-									"flex_span": "span4",
-									"image": true,
-									"image_url": "../images/lead_routing/ConceptTesting_Scheduling4.png",
-									"caption_top": "true",
-									"caption_position": "caption_top_left",
-									"label": "User story: As a team lead, I can drill into a singular ZIP code so that I can adjust my assigned agents."
-								}
-							]
-						}
-					],
-					"if_divider": true
-				},
-				{
-					"section_wide": true,
-					"section_header": true, 
-					"title": "ROADMAP PIVOT",
-					"content": "How should we adjust our priorities based on Research & Concept Testing?",
 					"if_blocks": true, 
 					"flow_row": true,
 					"blocks": [
 						{
 							"flex_span": "span_row_right",
 							"if_right_section": true,
-							"title": "Key Learning: ZIP code groups",
-							"content": "When speaking with Partner teams we discovered that we needed to implement ZIP code groups first, in order for Shift Scheduling to function properly and be successful."
+							"title": "2. Develop business case & strategize",
+							"content": "When exploring potential migration strategies, we considered factors such as Engineering cost, needed Design support, and Product roadmap. Our proposal needed to be flexible enough for teams to incorporate the migration into their release schedule."
 						},
 						{
 							"flex_span": "span4",
 							"span_width": "span_half",
 							"image": true,
-							"image_url": "../images/lead_routing/Pivot_ZIPGroupConcepts.png"
+							"image_url": "../images/constellation_migration/Phases_ChooseYourOwnAdventure.png",
+							"caption_bottom": "true",
+							"caption_position": "caption_bottom_left",
+							"label": "'Choose your own adventure' migration launch plan"
 						}
-					],
-					"if_divider": true
+					]
 				},
-
-				
 				{
 					"section_wide": true,
-					"section_content": true, 
-					"title": "EXPLORATIONS",
-					"content": "The existing ZIP code assignments modal needed to support several new requirements. Working closely with Design Systems, we were able to adapt components to achieve the desired experience.",
 					"if_blocks": true, 
 					"flow_row": true,
 					"blocks": [
 						{
-							"flex_span": "span4",
-							"span_width": "span_half",
-							"image": true,
-							"image_url": "../images/lead_routing/Explorations_Layout.png",
-							"caption_top": "true",
-							"caption_position": "caption_top_left",
-							"label": "User story: As a team lead, I can assign ZIP groups and individual ZIP codes to agents in 2 programs."
-						}
-					],
-					"if_divider": true
-				},
-				{
-					"section_wide": true,
-					"section_content": true, 
-					"title": "REFINEMENT",
-					"content": "Content Design was involved early on so they could learn with us and provide clear directions to team leads on how to set up ZIP code groups and resolve errors.",
-					"if_blocks": true, 
-					"flow_row": true,
-					"blocks": [
-						{
-							"flex_span": "span4",
-							"span_width": "span_half",
-							"image": true,
-							"image_url": "../images/lead_routing/Refinement_IntentTextFramework.png",
-							"caption_top": "true",
-							"caption_position": "caption_top_left",
-							"label": "Content collaboration framework"
+							"flex_span": "span_row_right",
+							"if_right_section": true,
+							"title": "3. Get Engineering & Product buy-in",
+							"content": "We chose to communicate our migration plan to Premier Agent Product and Engineering teams first. This allowed us to address immediate concerns during Q&A sessions, and give our Leadership Sponsors room to investigate answers before sharing more broadly."
 						},
 						{
 							"flex_span": "span4",
 							"span_width": "span_half",
 							"image": true,
-							"image_url": "../images/lead_routing/Refinement_ContentOptions.png",
-							"caption_top": "true",
-							"caption_position": "caption_top_left",
-							"label": "Options hashed out with Content Designer"
+							"image_url": "../images/constellation_migration/Deck_OneZillow.png",
+							"caption_bottom": "true",
+							"caption_position": "caption_bottom_left",
+							"label": "Excerpt from migration plan proposal"
+						}
+					]
+				},
+				{
+					"section_wide": true,
+					"if_blocks": true, 
+					"flow_row": true,
+					"blocks": [
+						{
+							"flex_span": "span_row_right",
+							"if_right_section": true,
+							"title": "4. Execute & keep momentum",
+							"content": ". More teams"
+						},
+						{
+							"flex_span": "span4",
+							"span_width": "span_half",
+							"image": true,
+							"image_url": "../images/constellation_migration/Phases_Asana.png",
+							"caption_bottom": "true",
+							"caption_position": "caption_bottom_left",
+							"label": "More tasks are filling up our Asana board"
 						}
 					],
 					"if_divider": true
@@ -1414,8 +1345,8 @@
 				{
 					"section_wide": true,
 					"section_content": true, 
-					"title": "RESULTS",
-					"content": "Early qualitative feedback on the ZIP code groups feature has been positive! One month after release, <span class=\"text_positive\">+27% of eligible teams had created at least one ZIP code group, beating our goal of +25% adoption rate.</span><br><br>We expect more team leads to utilize the feature as they figure out the best way to organize their client distribution.<br><br>As next steps, we are continuing work on Shift Scheduling and exploring designs based on feedback from Concept Testing.",
+					"title": "STATUS",
+					"content": "At the start of 2022 we began working closely with Engineering teams who are eager to migrate to Constellation.<br><br> <span class=\"text_positive\">Several new experiences are confirmed to be built in Constellation during 2022</span> and we're expecting more partnerships throughout the upcoming quarters.",
 					"if_divider": true
 				},
 				{
