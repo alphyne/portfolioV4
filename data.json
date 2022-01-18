@@ -1581,8 +1581,7 @@
 								}
 							]
 						}
-					],
-					"if_divider": true
+					]
 				},
 				{
 					"section_wide": true, 
@@ -1605,6 +1604,47 @@
 					],
 					"if_divider": true
 				},
+				{
+					"section_wide": true,
+					"section_content": true, 
+					"title": "DESIGN OPS",
+					"content": "To better organize our growing team, I introduced project intake and prioritization processes. Project requests are submitted, discussed, and prioritized before any work begins. New projects get an accompanying feature brief, which serves as the source of truth for the working team.",
+					"if_blocks": true, 
+					"flow_row": true,
+					"blocks": [
+						{
+							"flex_span": "span4",
+							"span_width": "span_half",
+							"image": true,
+							"image_url": "../images/connectngive/DesignOps_FeatureBrief.png",
+							"caption_top": "true",
+							"caption_position": "caption_top_left",
+							"label": "Feature briefs include design requirements, engineering user stories, and FAQs"
+						}
+					],
+					"if_divider": true
+				},
+				{
+					"section_wide": true,
+					"section_content": true, 
+					"title": "DESIGN SYSTEM",
+					"content": "I built ConnectNGive's design system to maintain visual and functional consistency across the product. This included a library of reusable components, typography standards, color palettes, and documentation.<br><br>Implementing a design system allowed designers to focus solving problems, and engineers to reduce front-end development time.",
+					"if_blocks": true, 
+					"flow_row": true,
+					"blocks": [
+						{
+							"flex_span": "span4",
+							"span_width": "span_half",
+							"image": true,
+							"image_url": "../images/connectngive/DesignSystem_Forms.png",
+							"caption_top": "true",
+							"caption_position": "caption_top_left",
+							"label": "Form, card, and wizard components compose the Sign Up flow"
+						}
+
+					],
+					"if_divider": true
+				},	
 				{
 					"section_wide": true,
 					"section_header": true,
@@ -1766,49 +1806,8 @@
 				{
 					"section_wide": true,
 					"section_content": true, 
-					"title": "DESIGN SYSTEM",
-					"content": "I built ConnectNGive's design system to maintain visual and functional consistency across the product. This included a library of reusable components, typography standards, color palettes, and documentation.<br><br>Implementing a design system allowed designers to focus solving problems, and engineers to reduced front-end development time.",
-					"if_blocks": true, 
-					"flow_row": true,
-					"blocks": [
-						{
-							"flex_span": "span4",
-							"span_width": "span_half",
-							"image": true,
-							"image_url": "../images/connectngive/DesignSystem_Forms.png",
-							"caption_top": "true",
-							"caption_position": "caption_top_left",
-							"label": "Form, card, and wizard components compose the Sign Up flow"
-						}
-
-					],
-					"if_divider": true
-				},	
-				{
-					"section_wide": true,
-					"section_content": true, 
-					"title": "DESIGN OPS",
-					"content": "To better organize our growing team, I implemented project intake and prioritization processes. Project requests are submitted, discussed, and prioritized before any work begins. New projects get an accompanying feature brief, which serves as the source of truth for the working team.",
-					"if_blocks": true, 
-					"flow_row": true,
-					"blocks": [
-						{
-							"flex_span": "span4",
-							"span_width": "span_half",
-							"image": true,
-							"image_url": "../images/connectngive/DesignOps_FeatureBrief.png",
-							"caption_top": "true",
-							"caption_position": "caption_top_left",
-							"label": "Feature briefs include design requirements, engineering user stories, and FAQs"
-						}
-					],
-					"if_divider": true
-				},
-				{
-					"section_wide": true,
-					"section_content": true, 
 					"title": "REFLECTION",
-					"content": "Unfortunately, our relaunch didn't reach the live website before ConnectNGive's wind down. Regardless, it was an exciting to work with this amazing team. I appreciated everyone's humbleness, support, and drive to make an impact.<br><br>Thank you Ben for rallying this effort. Thank you to my Product Design team, Alex, Jenny, Carole, and Ellis for your dedication and willingness to learn. Thank you Fiona and Jordan for being wonderful, collaborative Brand partners. And last but not least, thank you Christina for inviting me to lead with you.",
+					"content": "Unfortunately, our relaunch didn't reach the live website before ConnectNGive's wind down. Regardless, it was an exciting to work with this amazing team. I appreciated everyone's humbleness, support, and drive to make an impact.<br><br>Thank you Ben for rallying this effort. Thank you to my Product Design team, Alex, Jenny, Carole, and Ellis for your dedication and willingness to learn. Thank you Fiona and Jordan for being wonderful, collaborative Brand partners. And lastly, a huge thank you to Christina for inviting me to lead with you.",
 					"if_divider": true
 				},
 				{
