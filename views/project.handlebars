@@ -71,9 +71,6 @@
 
 			<!-- Project header -->
 			<div class="section section_vertical transparent">
-				<!--<div class="project_hero_image" style="background: {{project_card_background}}">
-					<img class="image_fit" src="{{project_card_image}}">
-				</div>-->
 				<div class="project_intro">
 
 					<!-- Project name & description -->
@@ -106,21 +103,12 @@
 				</div>
 			</div>
 
-				<!--<div class="project_hero_image" style="background: {{project_card_background}}">
-					<img class="image_fit" src="{{project_card_image}}">
-				</div>-->
-			
-
-			<div class="project_hero_image" style="background: {{project_card_background}}">
-				<img class="image_fit" src="{{project_card_image}}">
-			</div>
-
-
 
 			{{#each sections}}
 
 				<!-- WIDE SECTION -->
 				{{#if section_wide}}
+
 					<!-- Section title -->
 					{{#if section_header}}
 						<div class="section section_horizontal section_header">
@@ -156,6 +144,19 @@
 							<div class="blocks_horizontal {{mobile_before_after}}">
 								{{#each blocks}}
 									<div class="block_column {{card}} {{flex_span}} {{span_width}} {{position}}">
+
+										<!-- Image section -->
+										{{#if if_hero_image}}
+											<div class="project_hero_image" style="background: {{hero_background}}">
+												<img class="image_fit" src="{{image_src}}">
+											</div>
+											{{#if caption_bottom}}
+												<div class="caption {{caption_position}}">
+													<h6>{{{label}}}</h6>
+													<p>{{{content}}}</p>
+												</div>
+											{{/if}}
+										{{/if}}
 								
 										<!-- Image -->
 										{{#if image}}

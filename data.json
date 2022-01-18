@@ -40,6 +40,19 @@
 			"sections": [
 				{
 					"section_wide": true,
+					"if_blocks": true, 
+					"flow_row": true, 
+					"blocks": [
+						{
+							"if_hero_image": true, 
+							"image_src": "../images/homebuyer_profile/Hero_Solution_HomebuyerProfile.png",
+							"hero_background": "#579dff"
+						}
+					],
+					"if_divider": true
+				},
+				{
+					"section_wide": true,
 					"section_header": true,
 					"title": "BACKGROUND",
 					"content": "Agents often reference the Premier Agent mobile app to receive new leads, work with homebuyers, and determine their daily priorities.",
@@ -633,6 +646,19 @@
 			"sections": [
 				{
 					"section_wide": true,
+					"if_blocks": true, 
+					"flow_row": true, 
+					"blocks": [
+						{
+							"if_hero_image": true, 
+							"image_src": "../images/lead_routing/Hero_Solution_LeadRouting.png",
+							"hero_background": "#579dff"
+						}
+					],
+					"if_divider": true
+				},
+				{
+					"section_wide": true,
 					"section_header": true,
 					"title": "BACKGROUND",
 					"content": "Within a brokerage, Team Leads manage Agents and ensure they're working the optimal number of clients. This is known to Agents as workload capacity.",
@@ -1039,6 +1065,14 @@
 
 			]
 		},
+
+
+
+
+
+
+
+
 		{
             "name": "Constellation Migration",
             "url": "constellation-migration",
@@ -1077,6 +1111,19 @@
 				}
 			],
 			"sections": [
+				{
+					"section_wide": true,
+					"if_blocks": true, 
+					"flow_row": true, 
+					"blocks": [
+						{
+							"if_hero_image": true, 
+							"image_src": "../images/constellation_migration/Hero_Inbox.png",
+							"hero_background": "#b375ff"
+						}
+					],
+					"if_divider": true
+				},
 				{
 					"section_wide": true,
 					"section_header": true,
@@ -1429,30 +1476,37 @@
 
 			]
 		},
+
+
+
+
+
+
+
+
 		{
             "name": "ConnectNGive",
             "url": "connectngive",
-            "project_card_image": "../images/homebuyer_profile/Hero_Solution_Shadow.png",
+            "project_card_image": "../images/connectngive/Hero_CnGLogo.png",
 			"project_card_background": "#ff7370",
-            "previous-and-next": false,
-			"card_description": "Volunteer Design Leader for a nonprofit project that delivered over 60k+ units of PPE supplies during the pandemic",
+			"card_description": "Volunteer Design Lead for a nonprofit that tracked and delivered 60k+ units of PPE supply donations during the pandemic",
 			"company": "ConnectNGive",
 			"tags": [
 				{
-					"tag_name": "Design Management"
+					"tag_name": "Social Impact"
 				},
 				{
-					"tag_name": "Strategy"
+					"tag_name": "Design Management"
 				},
 				{
 					"tag_name": "UX/UI"
 				}
 			],
-			"description": "I was a volunteer Design Leader for ConnectNGive, a nonprofit project that connected PPE safety supply donors with groups or workers who need them.<br><br>My leadership achievements include scaling the team from 2 to 6 designers, establishing a web design system to support my team's work, and prioritizing a design-led relaunch.",
+			"description": "I was a Volunteer Design Lead and Manager for ConnectNGive, a nonprofit project that connected personal protective equipment (PPE) safety supply donors with groups or workers who need them.<br><br>My leadership achievements include scaling the team from 2 to 6 designers, establishing a web design system to support my team's work, and prioritizing a design-led relaunch.",
 			"metadata": [
 				{
 					"data_name": "ROLE",
-					"data_content": "Design Leader and Manager for a team of 6 product designers. Design Ops and Product Strategy."
+					"data_content": "Manager for a team of 4 product designers & actively coached them. Individual contributor to design systems and feature work."
 				},
 				{
 					"data_name": "TEAM",
@@ -1470,22 +1524,38 @@
 			"sections": [
 				{
 					"section_wide": true,
+					"if_blocks": true, 
+					"flow_row": true, 
+					"blocks": [
+						{
+							"if_hero_image": true, 
+							"image_src": "../images/connectngive/Hero_CnGLogo.png",
+							"hero_background": "#ff7370",
+							"caption_bottom": "true",
+							"caption_position": "caption_bottom_left",
+							"label": "Brand refresh owned by Fiona Tran and Jordan Eng"
+						}
+					],
+					"if_divider": true
+				},
+				{
+					"section_wide": true,
 					"section_header": true,
 					"title": "BACKGROUND",
-					"content": "When the pandemic hit in early 2020, PPE (personal protective equipment) shortages were rampant as healthcare workers, businesses, and everyday people attempted to find supplies.",
+					"content": "When the pandemic hit in early 2020, PPE shortages were rampant as healthcare workers, businesses, and everyday people attempted to find supplies.",
 					"if_blocks": true, 
 					"flow_row": true, 
 					"blocks": [
 						{
 							"title": "The Product",
 							"text": true, 
-							"content": "ConnectNGive serves smaller community groups who were especially affected by the lack of PPE resources available. Donors with PPE supplies can check a dashboard of real time shortage updates, and connect with donees to allocate supplies.",
+							"content": "ConnectNGive serves smaller community groups who were especially affected by the lack of PPE resources available. Donors with PPE supplies can check real time shortage updates, and connect with donees to allocate supplies.",
 							"card": "transparent block_card"
 						},
 						{
 							"title": "Impact",
 							"text": true, 
-							"content": "Before shutting down, <span class=\"text_positive\">ConnectNGive facilitated tracking for 60k+ units of PPE donations to local communities throughout California.</span> Including 24k homemade face masks, 20k sets of gloves, and 10k KN95 masks.",
+							"content": "<span class=\"text_positive\">ConnectNGive facilitated tracking for 60k+ units of PPE donations to local communities throughout California</span> before winding down operations. Including 24k homemade face masks, 20k sets of gloves, and 10k KN95 masks.",
 							"card": "transparent block_card"
 						}
 					],
@@ -1508,31 +1578,6 @@
 									"image_url": "../images/connectngive/CnG_Problem.png"
 								}
 							]
-						}
-					],
-					"if_divider": true
-				},
-				{
-					"section_wide": true,
-					"section_header": true,
-					"title": "GOALS",
-					"content": "What do we want to achieve?",
-					"if_blocks": true, 
-					"flow_row": true, 
-					"blocks": [
-						{
-							"if_data_block_caption": true, 
-							"data": "Launch a web product",
-							"label": "PRODUCT GOAL",
-							"description": "Enable local groups to request their exact PPE needs easily, and connect them to community members with PPE inventory in real time",
-							"card": "transparent block_card"
-						},
-						{
-							"if_data_block_caption": true, 
-							"data": "Donate as much supplies as we can",
-							"label": "NONPROFIT GOAL",
-							"description": "And expand our reach as far as we can, so we can help the most people.",
-							"card": "transparent block_card"
 						}
 					],
 					"if_divider": true
@@ -1561,48 +1606,177 @@
 				{
 					"section_wide": true,
 					"section_header": true,
-					"title": "CORE FEATURES",
-					"content": "I led strategy for a relaunch of ConnectNGive's core features. We split the end-to-end experience into workstreams and collaborated often in order to align our experiences.", 
+					"title": "FEATURES",
+					"content": "I led strategy for a relaunch of ConnectNGive's core features. My team divided the end-to-end experience into workstreams and collaborated often to align our experiences.", 
 					"if_blocks": true, 
 					"flow_row": true,
 					"blocks": [
 						{
 							"flex_span": "span_row_center",
 							"if_centered_section": true,
-							"title": "Create a visual theme for PAXL",
-							"content": "Themeing Premier Agent to look like Constellation minimizes visual inconsistencies when Engineering teams begin migrating. We updated PAXL styles and tested with HTML prototyping until we achieved the desired quality bar."
+							"title": "Sign up",
+							"content": "ConnectNGive users can sign up as a donee to report shortages and request supplies, or as a donor to fill open shortages. Both profiles allow users to affiliate with an organization and set up delivery preferences."
 						},
 						{
 							"flex_span": "span4",
 							"span_width": "span_half",
 							"image": true,
-							"image_url": "../images/constellation_migration/Contacts_Theme.png",
+							"image_url": "../images/connectngive/Features_SignUp.png",
 							"caption_bottom": "true",
 							"caption_position": "caption_bottom_left",
-							"label": "Contacts with PAXL theme that looks like Constellation"
+							"label": "Owned by Jenny Li"
+						}
+					]
+				},
+				{
+					"section_wide": true,
+					"if_blocks": true, 
+					"flow_row": true,
+					"blocks": [
+						{
+							"flex_span": "span_row_center",
+							"if_centered_section": true,
+							"title": "Report supply shortages",
+							"content": "Donees complete a short form to request PPE supplies, including item type and quantity."
+						},
+						{
+							"flex_span": "span4",
+							"span_width": "span_half",
+							"image": true,
+							"image_url": "../images/connectngive/Features_RequestSupplies.png",
+							"caption_bottom": "true",
+							"caption_position": "caption_bottom_left",
+							"label": "Owned by Alex Lee"
+						}
+					]
+				},
+				{
+					"section_wide": true,
+					"if_blocks": true, 
+					"flow_row": true,
+					"blocks": [
+						{
+							"flex_span": "span_row_center",
+							"if_centered_section": true,
+							"title": "View real time PPE shortages",
+							"content": "Shortages are posted publicly for donors in the local area. Filters and badges help donors select groups they want to connect with."
+						},
+						{
+							"flex_span": "span4",
+							"span_width": "span_half",
+							"image": true,
+							"image_url": "../images/connectngive/Features_Shortages.png",
+							"caption_bottom": "true",
+							"caption_position": "caption_bottom_left",
+							"label": "Owned by me, Jared Suasin"
+						}
+					]
+				},
+				{
+					"section_wide": true,
+					"if_blocks": true, 
+					"flow_row": true,
+					"blocks": [
+						{
+							"flex_span": "span_row_center",
+							"if_centered_section": true,
+							"title": "Donate to a shortage",
+							"content": "When donors choose a shortage to fill, they input donation quantities and confirm how they will deliver the items."
+						},
+						{
+							"flex_span": "span4",
+							"span_width": "span_half",
+							"image": true,
+							"image_url": "../images/connectngive/Features_DonateSupplies.png",
+							"caption_bottom": "true",
+							"caption_position": "caption_bottom_left",
+							"label": "Owned by Alex Lee"
+						}
+					]
+				},
+				{
+					"section_wide": true,
+					"if_blocks": true, 
+					"flow_row": true,
+					"blocks": [
+						{
+							"flex_span": "span_row_center",
+							"if_centered_section": true,
+							"title": "Manage donation requests",
+							"content": "Donees can edit active requests and view upcoming deliveries using the Dashboard."
+						},
+						{
+							"flex_span": "span4",
+							"span_width": "span_half",
+							"image": true,
+							"image_url": "../images/connectngive/Features_DonationDashboard.png",
+							"caption_bottom": "true",
+							"caption_position": "caption_bottom_left",
+							"label": "Owned by me, Jared Suasin"
+						}
+					]
+				},
+				{
+					"section_wide": true,
+					"if_blocks": true, 
+					"flow_row": true,
+					"blocks": [
+						{
+							"flex_span": "span_row_center",
+							"if_centered_section": true,
+							"title": "Track your donation",
+							"content": "In order to facilitate and confirm successful deliveries, donors and donees report their status to ConnectNGive."
+						},
+						{
+							"flex_span": "span4",
+							"span_width": "span_half",
+							"image": true,
+							"image_url": "../images/connectngive/Features_DonationDetails.png",
+							"caption_bottom": "true",
+							"caption_position": "caption_bottom_left",
+							"label": "Owned by me, Jared Suasin"
+						}
+					]
+				},
+				{
+					"section_wide": true,
+					"if_blocks": true, 
+					"flow_row": true,
+					"blocks": [
+						{
+							"flex_span": "span_row_center",
+							"if_centered_section": true,
+							"title": "Learn about ConnectNGive's impact",
+							"content": "The Stats Dashboard tracks our progress and helps build trust with new potential donors and donees."
+						},
+						{
+							"flex_span": "span4",
+							"span_width": "span_half",
+							"image": true,
+							"image_url": "../images/connectngive/Features_NonprofitDashboard.png",
+							"caption_bottom": "true",
+							"caption_position": "caption_bottom_left",
+							"label": "Owned by Ellis Lee"
 						}
 					],
 					"if_divider": true
 				},
 				{
 					"section_wide": true,
-					"section_header": true, 
+					"section_content": true, 
 					"title": "DESIGN SYSTEM",
-					"content": "How do Team Leads optimize workload capacity for Agents?",
+					"content": "I built ConnectNGive's design system to maintain visual and functional consistency across the product. This included a library of reusable components, typography standards, color palettes, and documentation.<br><br>Implementing a design system allowed designers to focus solving problems, and engineers to reduced front-end development time.",
 					"if_blocks": true, 
 					"flow_row": true,
 					"blocks": [
 						{
-							"flex_span": "span_row_right",
-							"if_right_section": true,
-							"title": "Journey Map Interviews",
-							"content": "In previous research some Agents mentioned that they wanted to temporarily stop receiving new clients for short periods of time, such as during a tour. To get a deeper understanding of what Agents meant by this, we met with Team Leads for more insight and documented their user stories."
-						},
-						{
 							"flex_span": "span4",
 							"span_width": "span_half",
 							"image": true,
-							"image_url": "../images/lead_routing/SelfPause_JourneyMap.png"
+							"image_url": "../images/connectngive/DesignSystem_Forms.png",
+							"caption_top": "true",
+							"caption_position": "caption_top_left",
+							"label": "Form, card, and wizard components compose the Sign Up flow"
 						}
 
 					],
@@ -1632,7 +1806,7 @@
 					"section_wide": true,
 					"section_content": true, 
 					"title": "RESULTS",
-					"content": "Unfortunately, our relaunch didn't reach the live website before ConnectNGive's wind down. Regardless, it was an amazing experience to work with this amazing team. I appreciated everyone's humbleness, willingness to learn, and devotion to our cause.<br><br>Thank you Christina for inviting me to lead with you. Thank you Alex, Jenny, Fiona, Jordan, Carole, and Ellis for being amazing teammates. Thank you Ben for rallying this cause.<span class=\"text_positive\">+27% of eligible teams had created at least one ZIP code group, beating our goal of +25% adoption rate.</span><br><br>We expect more Team Leads to utilize the feature as they figure out the best way to organize their client distribution.<br><br>As next steps, we are continuing work on Shift Scheduling and exploring designs based on feedback from Concept Testing.",
+					"content": "Unfortunately, our relaunch didn't reach the live website before ConnectNGive's wind down. Regardless, it was an exciting to work with this amazing team. I appreciated everyone's humbleness, support, and drive to make an impact.<br><br>Thank you Ben for rallying this effort. Thank you to my Product Design team, Alex, Jenny, Carole, and Ellis for your dedication and willingness to learn. Thank you Fiona and Jordan for being wonderful, collaborative Brand partners. And last but not least, thank you Christina for inviting me to lead with you.",
 					"if_divider": true
 				},
 				{
