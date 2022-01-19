@@ -580,7 +580,7 @@
 							"url": "connectngive",
 							"project_card_image": "../images/connectngive/Hero_CnGLogo.png",
 							"project_card_background": "#FF8777",
-							"card_description": "Volunteer Design Lead for a nonprofit that tracked and delivered 60k+ units of PPE supply donations during the pandemic",
+							"card_description": "Volunteer Design Lead for a nonprofit that tracked and delivered 60k+ units of PPE supply donations as a response to COVID-19",
 							"company": "ConnectNGive",
 							"tags": [
 								{
@@ -1028,7 +1028,7 @@
 							"url": "connectngive",
 							"project_card_image": "../images/connectngive/Hero_CnGLogo.png",
 							"project_card_background": "#FF8777",
-							"card_description": "Volunteer Design Lead for a nonprofit that tracked and delivered 60k+ units of PPE supply donations during the pandemic",
+							"card_description": "Volunteer Design Lead for a nonprofit that tracked and delivered 60k+ units of PPE supply donations as a response to COVID-19",
 							"company": "ConnectNGive",
 							"tags": [
 								{
@@ -1419,7 +1419,7 @@
 							"url": "connectngive",
 							"project_card_image": "../images/connectngive/Hero_CnGLogo.png",
 							"project_card_background": "#FF8777",
-							"card_description": "Volunteer Design Lead for a nonprofit that tracked and delivered 60k+ units of PPE supply donations during the pandemic",
+							"card_description": "Volunteer Design Lead for a nonprofit that tracked and delivered 60k+ units of PPE supply donations as a response to COVID-19",
 							"company": "ConnectNGive",
 							"tags": [
 								{
@@ -1491,7 +1491,7 @@
             "url": "connectngive",
             "project_card_image": "../images/connectngive/Hero_CnGLogo.png",
 			"project_card_background": "#FF8777",
-			"card_description": "Volunteer Design Lead for a nonprofit that tracked and delivered 60k+ units of PPE supply donations during the pandemic",
+			"card_description": "Volunteer Design Lead for a nonprofit that tracked and delivered 60k+ units of PPE supply donations as a response to COVID-19",
 			"company": "ConnectNGive",
 			"tags": [
 				{
@@ -1544,7 +1544,7 @@
 					"section_wide": true,
 					"section_header": true,
 					"title": "BACKGROUND",
-					"content": "When the pandemic hit in early 2020, PPE shortages were rampant as healthcare workers, businesses, and everyday people attempted to find supplies.",
+					"content": "When the COVID-19 pandemic hit in early 2020, PPE shortages were rampant as healthcare workers, businesses, and everyday people attempted to find supplies.",
 					"if_blocks": true, 
 					"flow_row": true, 
 					"blocks": [
