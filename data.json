@@ -532,7 +532,7 @@
 						{
 							"if_section_header": true, 
 							"title": "NEXT",
-							"content": "Feel free to <a href=\"mailto:suasin.ja@gmail.com\">email me</a> questions or to learn more about my projects (^_^)"
+							"content": "Feel free to <a href=\"mailto:suasin.ja@gmail.com\" title=\"Email\">email me</a> questions or to learn more about my projects<br> (*´▽`*)"
 						},
 						{
 							"if_project_card": true, 
@@ -926,10 +926,7 @@
 							"flex_span": "span4",
 							"span_width": "span_half",
 							"image": true,
-							"image_url": "../images/lead_routing/Pivot_ZIPGroupConcepts.png",
-							"caption_bottom": "true",
-							"caption_position": "caption_bottom_left",
-							"label": "ZIP code group wireframes"
+							"image_url": "../images/lead_routing/Pivot_ZIPGroupConcepts.png"
 						}
 					],
 					"if_divider": true
@@ -1000,7 +997,7 @@
 						{
 							"if_section_header": true, 
 							"title": "NEXT",
-							"content": "Feel free to <a href=\"mailto:suasin.ja@gmail.com\">email me</a> questions or to learn more about my projects (^_^)"
+							"content": "Feel free to <a href=\"mailto:suasin.ja@gmail.com\" title=\"Email\">email me</a> questions or to learn more about my projects<br>(o˘◡˘o)"
 						},
 						{
 							"if_project_card": true, 
@@ -1267,17 +1264,14 @@
 						{
 							"flex_span": "span_row_center",
 							"if_centered_section": true,
-							"title": "Create a visual theme for PAXL",
-							"content": "Themeing Premier Agent to look like Constellation minimizes visual inconsistencies when Engineering teams begin migrating. We updated PAXL styles and tested with HTML prototyping until we achieved the desired quality bar."
+							"title": "Create a visual theme for Premier Agent",
+							"content": "Themeing PAXL to look like Constellation minimizes visual inconsistencies when Engineering teams begin migrating. We updated PAXL styles and tested with HTML prototyping until we achieved the desired quality bar."
 						},
 						{
 							"flex_span": "span4",
 							"span_width": "span_half",
 							"image": true,
-							"image_url": "../images/constellation_migration/Contacts_Theme.png",
-							"caption_bottom": "true",
-							"caption_position": "caption_bottom_left",
-							"label": "Contacts with PAXL theme that looks like Constellation"
+							"image_url": "../images/constellation_migration/Contacts_Theme.png"
 						}
 					]
 				},
@@ -1296,10 +1290,7 @@
 							"flex_span": "span4",
 							"span_width": "span_half",
 							"image": true,
-							"image_url": "../images/constellation_migration/Inbox_Remade.png",
-							"caption_bottom": "true",
-							"caption_position": "caption_bottom_left",
-							"label": "Inbox redesigned with Constellation"
+							"image_url": "../images/constellation_migration/Inbox_Remade.png"
 						}
 					],
 					"if_divider": true
@@ -1323,8 +1314,8 @@
 							"span_width": "span_half",
 							"image": true,
 							"image_url": "../images/constellation_migration/Phases_ComponentChangeLog.png",
-							"caption_bottom": "true",
-							"caption_position": "caption_bottom_left",
+							"caption_top": "true",
+							"caption_position": "caption_top_left",
 							"label": "Theme component survey"
 						}
 
@@ -1346,8 +1337,8 @@
 							"span_width": "span_half",
 							"image": true,
 							"image_url": "../images/constellation_migration/Phases_ChooseYourOwnAdventure.png",
-							"caption_bottom": "true",
-							"caption_position": "caption_bottom_left",
+							"caption_top": "true",
+							"caption_position": "caption_top_left",
 							"label": "'Choose your own adventure' migration launch plan"
 						}
 					]
@@ -1368,9 +1359,9 @@
 							"span_width": "span_half",
 							"image": true,
 							"image_url": "../images/constellation_migration/Deck_OneZillow.png",
-							"caption_bottom": "true",
-							"caption_position": "caption_bottom_left",
-							"label": "Excerpt from migration plan proposal"
+							"caption_top": "true",
+							"caption_position": "caption_top_left",
+							"label": "Excerpt from migration proposal presentation"
 						}
 					]
 				},
@@ -1390,8 +1381,8 @@
 							"span_width": "span_half",
 							"image": true,
 							"image_url": "../images/constellation_migration/Phases_Asana.png",
-							"caption_bottom": "true",
-							"caption_position": "caption_bottom_left",
+							"caption_top": "true",
+							"caption_position": "caption_top_left",
 							"label": "More tasks are filling up our Asana board"
 						}
 					],
@@ -1411,7 +1402,7 @@
 						{
 							"if_section_header": true, 
 							"title": "NEXT",
-							"content": "Feel free to <a href=\"mailto:suasin.ja@gmail.com\">email me</a> questions or to learn more about my projects (^_^)"
+							"content": "Feel free to <a href=\"mailto:suasin.ja@gmail.com\" title=\"Email\">email me</a> questions or to learn more about my projects<br>(๑˃ᴗ˂)ﻭ"
 						},
 						{
 							"if_project_card": true, 
@@ -1817,7 +1808,7 @@
 						{
 							"if_section_header": true, 
 							"title": "NEXT",
-							"content": "Feel free to <a href=\"mailto:suasin.ja@gmail.com\">email me</a> questions or to learn more about my projects (^_^)"
+							"content": "Feel free to <a href=\"mailto:suasin.ja@gmail.com\" title=\"Email\">email me</a> questions or to learn more about my projects<br>(ᵔ◡ᵔ)"
 						},
 						{
 							"if_project_card": true, 
