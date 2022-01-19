@@ -540,7 +540,7 @@
 							"url": "lead-routing",
 							"project_card_image": "../images/lead_routing/Hero_Solution_LeadRouting.png",
 							"project_card_background": "#70C8F6",
-							"card_description": "End-to-end product design for a suite of tools that enabled real estate teams more granular control of their client distribution",
+							"card_description": "End-to-end product design for an ecosystem of tools that enabled real estate teams more granular control of their client distribution",
 							"company": "Zillow Group",
 							"tags": [
 								{
@@ -613,7 +613,7 @@
             "url": "lead-routing",
             "project_card_image": "../images/lead_routing/Hero_Solution_LeadRouting.png",
 			"project_card_background": "#70C8F6",
-			"card_description": "End-to-end product design for a suite of tools that enabled real estate teams more granular control of their client distribution",
+			"card_description": "End-to-end product design for an ecosystem of tools that enabled real estate teams more granular control of their client distribution",
 			"company": "Zillow Group",
 			"tags": [
 				{
@@ -755,7 +755,7 @@
 							"if_data_block_caption": true, 
 							"data": "25% adoption rate",
 							"label": "BUSINESS OUTCOME",
-							"description": "Increase the number of Partners using our suite so Premier Agent builds market reach & revenue.",
+							"description": "Increase the number of Partners using our ecosystem so Premier Agent builds market reach & revenue.",
 							"card": "transparent block_card"
 						}
 					],
@@ -1450,7 +1450,7 @@
 							"url": "lead-routing",
 							"project_card_image": "../images/lead_routing/Hero_Solution_LeadRouting.png",
 							"project_card_background": "#70C8F6",
-							"card_description": "End-to-end product design for a suite of tools that enabled real estate teams more granular control of their client distribution",
+							"card_description": "End-to-end product design for an ecosystem of tools that enabled real estate teams more granular control of their client distribution",
 							"company": "Zillow Group",
 							"tags": [
 								{
@@ -1511,7 +1511,7 @@
 				},
 				{
 					"data_name": "TIMEFRAME",
-					"data_content": "May 2020 - May 2021"
+					"data_content": "May 2020 - Oct 2020"
 				}
 			],
 			"sections": [
@@ -1836,7 +1836,7 @@
 							"url": "lead-routing",
 							"project_card_image": "../images/lead_routing/Hero_Solution_LeadRouting.png",
 							"project_card_background": "#70C8F6",
-							"card_description": "End-to-end product design for a suite of tools that enabled real estate teams more granular control of their client distribution",
+							"card_description": "End-to-end product design for an ecosystem of tools that enabled real estate teams more granular control of their client distribution",
 							"company": "Zillow Group",
 							"tags": [
 								{
