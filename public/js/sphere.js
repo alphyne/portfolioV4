@@ -103,7 +103,9 @@ camera.position.z = 80;
     //Animation - inside sphere
     //cube.rotation.x += 0.001;
 
-    cube.rotation.x -= 0.00075;
+    //cube.rotation.x -= 0.00075;
+    cube.rotation.y -= 0.0003;
+    //cube.rotation.y -= 0.00075;
     //cube.rotation.y += 0.001;
 
     camera.updateProjectionMatrix();
