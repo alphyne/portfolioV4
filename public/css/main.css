@@ -474,7 +474,6 @@ body {
 
 /* Nav group */
 .nav_group {
-  backdrop-filter: blur(0.5rem);
   /* Text to black on hover */
   /* Active page */ }
   .nav_group a {
