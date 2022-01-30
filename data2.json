@@ -1,0 +1,1880 @@
+{
+	"projects": [
+		{
+            "name": "Homebuyer Profile",
+            "url": "homebuyer-profile",
+            "project_card_image": "../images/homebuyer_profile/Hero_Solution_HomebuyerProfile.png",
+			"project_card_background": "#579dff",
+			"card_description": "Increased message engagement 14% by centralizing recent conversations real estate agents have had with their clients",
+			"company": "Zillow Group",
+			"tags": [
+				{
+					"tag_name": "iOS"
+				},
+				{
+					"tag_name": "Android"
+				},
+				{
+					"tag_name": "UX/UI"
+				}
+			],
+			"description": "How might we help real estate agents more easily locate critical client information? <br> <br>I led a mobile refresh of the Homebuyer Profile to help Zillow Premier Agents better communicate with active clients and centralize their information throughout the homebuying journey.",
+			"metadata": [
+				{
+					"data_name": "ROLE",
+					"data_content": "UX/UI design & product strategy. Partnered with Research for Interviews and Usability Testing."
+				},
+				{
+					"data_name": "TEAM",
+					"data_content": "1 Lead Designer (me)<br>1 Supporting Designer<br>2 UX Researchers<br>1 Content Strategist<br>1 Product Manager<br>2 Engineering Managers"
+				},
+				{
+					"data_name": "TOOLS",
+					"data_content": "Figma, ProtoPie, Whimsical, Mural"
+				},
+				{
+					"data_name": "TIMEFRAME",
+					"data_content": "Nov 2020 - Dec 2020"
+				}
+			],
+			"sections": [
+				{
+					"section_wide": true,
+					"if_blocks": true, 
+					"flow_row": true, 
+					"blocks": [
+						{
+							"if_hero_image": true, 
+							"image_src": "../images/homebuyer_profile/Hero_Solution_HomebuyerProfile.png",
+							"hero_background": "#579dff"
+						}
+					],
+					"if_divider": true
+				},
+				{
+					"section_wide": true,
+					"section_header": true,
+					"title": "BACKGROUND",
+					"content": "Agents often reference the Premier Agent mobile app to receive new leads, work with homebuyers, and determine their daily priorities.",
+					"if_blocks": true, 
+					"flow_row": true, 
+					"blocks": [
+						{
+							"title": "The Product",
+							"text": true, 
+							"content": "Premier Agent is Zillow’s B2B client acquisition and business builder platform for real estate agents & teams.",
+							"card": "transparent block_card"
+						},
+						{
+							"title": "Business Impact",
+							"text": true, 
+							"content": "<span class=\"text_positive\">Increased message view rate +14%</span> over 2021, translating to positive growth in monthly Premier Agent client volume and revenue",
+							"card": "transparent block_card"
+						}
+					],
+					"if_divider": true
+				},
+				{
+					"section_wide": true, 
+					"section_header": true, 
+					"title": "PROBLEM",
+					"content": "Agents need a quick overview of where each client is in the homebuying process so they can follow up more efficiently.",
+					"if_blocks": true, 
+					"mobile_before_after": "mobile_before_after",
+					"flow_row": true,
+					"blocks": [
+						{
+							"flex_span": "span3",
+							"image": true,
+							"caption_bottom": "true",
+							"caption_position": "caption_bottom_center",
+							"image_url": "../images/homebuyer_profile/CDP_Pipeline.png",
+							"label": "Contacts Pipeline"
+						},
+						{
+							"flex_span": "span3",
+							"image": true,
+							"image_url": "../images/homebuyer_profile/CDP_ShowingTimeDeclined.png",
+							"caption_bottom": "true",
+							"caption_position": "caption_bottom_center",
+							"label": "Tour Request"
+						},
+						{
+							"flex_span": "span6",
+							"flow_column": true, 
+							"blocks": [
+								{
+									"title": "Difficulty keeping up",
+									"text": true,
+									"content": "Agents search in multiple places across the Premier Agent mobile app for siloed texts, emails, appointments, and more. There's opportunity for us to help Agents identify priority contacts to follow up with, especially as their pipeline grows.",
+									"card": "transparent block_card"
+								},
+								{
+									"title": "In numbers",
+									"if_data_block": true, 
+									"data_blocks": [
+										{
+											"data": "8",
+											"label": "CHANNELS OF CLIENT INFO"
+										},
+										{
+											"data": "+9",
+											"label": "NEW CLIENTS PER MONTH"
+										}
+									],
+									"card": "transparent block_card"
+								}
+							]
+						}
+					],
+					"if_divider": true
+				},
+				{
+					"section_wide": true,
+					"section_header": true,
+					"title": "GOALS",
+					"content": "How are we measuring success for this project?",
+					"if_blocks": true, 
+					"flow_row": true, 
+					"blocks": [
+						{
+							"if_data_block_caption": true, 
+							"data": "+10% message view rate",
+							"label": "BUSINESS OUTCOME",
+							"description": "Increased message engagement signals Agents are communicating with clients more, which drives more home tours and transactions.",
+							"card": "transparent block_card"
+						},
+						{
+							"if_data_block_caption": true, 
+							"data": "Scalability",
+							"label": "PRODUCT GOAL",
+							"description": "Easily integrate existing and future Zillow cross-product services. Avoid future design debt.",
+							"card": "transparent block_card"
+						},
+						{
+							"if_data_block_caption": true, 
+							"data": "Centralize client info",
+							"label": "UX GOAL",
+							"description": "Set expectations of where Agents can find client information throughout the homebuying journey.",
+							"card": "transparent block_card"
+						}
+					],
+					"if_divider": true
+				},
+				{
+					"section_wide": true,
+					"section_header": true, 
+					"title": "SOLUTION",
+					"content": "Aggregate all messages on the Homebuyer Profile and prioritize the most relevant background information",
+					"if_blocks": true, 
+					"flow_row": true,
+					"mobile_before_after": "mobile_before_after",
+					"blocks": [
+						{
+							"flex_span": "span_row_center",
+							"if_centered_section": true,
+							"title": "Client Snapshot",
+							"content": "The improved profile header concisely gives Agents the background and summary they need before engaging with clients."
+						},
+						{
+							"flex_span": "span3",
+							"caption": true,
+							"position": "caption_left",
+							"label": "Before",
+							"content": "Agents didn't find the profile header valuable and often scrolled to find more relevant info."
+						},
+						{
+							"flex_span": "span4",
+							"image": true,
+							"image_url": "../images/homebuyer_profile/CDP_Before.png"
+						},
+						{
+							"flex_span": "span4",
+							"image": true,
+							"image_url": "../images/homebuyer_profile/CDP_Landing.png"
+						},
+						{
+							"flex_span": "span3",
+							"caption": true,
+							"position": "caption_right",
+							"label": "After",
+							"content": "Now we surface key  attributes such as lead source, contact creation date, and notes."
+						}
+					]
+				},
+				{
+					"section_wide": true,
+					"if_blocks": true, 
+					"flow_row": true,
+					"mobile_before_after": "mobile_before_after",
+					"blocks": [
+						{
+							"flex_span": "span_row_center",
+							"if_centered_section": true,
+							"title": "Message History",
+							"content": "The new Messages section centralizes all communication channels for Agents, making it easier to recall details from their last conversation, and follow up appropriately."
+						},
+						{
+							"flex_span": "span3",
+							"caption": true,
+							"position": "caption_left",
+							"label": "Before",
+							"content": "Most Agents search for client messages in their Inbox because the 'View all messages' CTA is easily missed."
+						},
+						{
+							"flex_span": "span4",
+							"image": true,
+							"image_url": "../images/homebuyer_profile/CDP_Before.png"
+						},
+						{
+							"flex_span": "span4",
+							"image": true,
+							"image_url": "../images/homebuyer_profile/CDP_Messages.png"
+						},
+						{
+							"flex_span": "span3",
+							"caption": true,
+							"position": "caption_right",
+							"label": "After",
+							"content": "Agents can easily access recent texts, emails, and tour requests, in one place."
+						}
+					],
+					"if_divider": true
+				},
+				{
+					"section_wide": true,
+					"section_header": true, 
+					"title": "RESEARCH",
+					"content": "How do Agents manage their clients using the Premier Agent mobile app today?",
+					"if_blocks": true, 
+					"flow_row": true,
+					"blocks": [
+						{
+							"flex_span": "span6",
+							"span_width": "span_half",
+							"text": true,
+							"title": "Interviews",
+							"content": "While synthesizing interview findings, our team realized that the attitudes and feedback of participants differed from our traditional Agent persona. We represented this new profile as Ada.",
+							"card": "transparent block_card"
+								
+							
+						},
+						{
+							"flex_span": "span6",
+							"span_width": "span_half",
+							"text": true,
+							"title": "Personas: Introducing Ada",
+							"content": "Ada captures a fresher lens on Agent attitude and behavior in a modern team-oriented context. She will be insightful as Zillow continues to develop more specialized products and programs.",
+							"card": "transparent block_card"
+								
+						},
+						{
+							"flex_span": "span4",
+							"span_width": "span_half",
+							"image": true,
+							"image_url": "../images/homebuyer_profile/Research_Alan.png",
+							"caption_top": "true",
+							"caption_position": "caption_top_left",
+							"label": "Traditional Agent persona"
+						},
+						{
+							"flex_span": "span4",
+							"span_width": "span_half",
+							"image": true,
+							"image_url": "../images/homebuyer_profile/Research_Ada.png",
+							"caption_top": "true",
+							"caption_position": "caption_top_left",
+							"label": "New Agent persona"
+						}
+
+					]
+				},	
+				{
+					"section_wide": true,
+					"if_blocks": true, 
+					"flow_row": true,
+					"blocks": [
+						{
+							"flex_span": "span_row_right",
+							"if_right_section": true,
+							"title": "Affinity diagram: How does Ada work?",
+							"content": "This artifact served as a visual representation of research and ideas that created a foundational understanding of Ada's user journey for future projects."
+						},
+						{
+							"flex_span": "span4",
+							"span_width": "span_half",
+							"image": true,
+							"image_url": "../images/homebuyer_profile/Research_AffinityDiagram.png"
+						}
+					],
+					"if_divider": true
+				},
+				{
+					"section_wide": true,
+					"section_header": true, 
+					"title": "CONCEPT",
+					"content": "What are the immediate opportunities that will have high impact on Agents?",
+					"if_blocks": true, 
+					"flow_row": true,
+					"blocks": [
+						{
+							"flex_span": "span4",
+							
+							"flow_column": true, 
+							"blocks": [
+								{
+									"flex_span": "span3",
+									"text": true,
+									"title": "Brainstorming with Product & Research",
+									"content": "The goal of this brainstorm was to identify solutions that would impact Agents most, their scope, and constraints to work around.",
+									"card": "transparent block_card"
+								}
+							]
+						},
+						{
+							"flex_span": "span8",
+							"flow_column": true, 
+							"blocks": [
+								{
+									"flex_span": "span4",
+									"image": true,
+									"image_url": "../images/homebuyer_profile/Concept_Brainstorm.png",
+									"caption_top": "true",
+									"caption_position": "caption_top_left",
+									"label": "1: Sketch & discuss concepts"
+								},
+								{
+									"flex_span": "span4",
+									"image": true,
+									"image_url": "../images/homebuyer_profile/Concept_Group.png",
+									"caption_top": "true",
+									"caption_position": "caption_top_left",
+									"label": "2: Group by area of focus"
+								},
+								{
+									"flex_span": "span4",
+									"image": true,
+									"image_url": "../images/homebuyer_profile/Concept_Prioritize.png",
+									"caption_top": "true",
+									"caption_position": "caption_top_left",
+									"label": "3: Prioritize solutions"
+								}
+							]
+						}
+					],
+					"if_divider": true
+				},
+				{
+					"section_wide": true,
+					"section_content": true, 
+					"title": "DESIGN PRINCIPLES",
+					"content": "Defining design principles allowed us to articulate our top considerations for the redesigned Homebuyer Profile. They helped guide our decisions and explorations.",
+					"if_blocks": true, 
+					"flow_row": true,
+					"blocks": [
+						{
+							"flex_span": "span6",
+							"span_width": "span_half",
+							"text": true,
+							"title": "Optimize for task completion",
+							"content": "Keep experiences concise and enable Agents to get their jobs done quickly and easily.",
+							"card": "transparent block_card"
+						},
+						{
+							"flex_span": "span6",
+							"span_width": "span_half",
+							"text": true,
+							"title": "Maintain consistency",
+							"content": "Create recognizable patterns, so Agents can focus on executing the task without having to relearn the experience every time they switch context.",
+							"card": "transparent block_card"
+								
+							
+						},
+						{
+							"flex_span": "span6",
+							"span_width": "span_half",
+							"text": true,
+							"title": "Design for touch",
+							"content": "Prioritize gestures that are most natural, so no extra effort is required to discover or remember them.",
+							"card": "transparent block_card"
+								
+						},
+						{
+							"flex_span": "span6",
+							"span_width": "span_half",
+							"text": true,
+							"title": "Make navigation clear and intuitive",
+							"content": "Provide a clear path so that Agents are quickly guided to the content they’re looking for.",
+							"card": "transparent block_card"
+								
+						}
+					],
+					"if_divider": true
+				},
+				{
+					"section_wide": true,
+					"section_content": true, 
+					"title": "EXPLORATIONS",
+					"content": "Before designing any screens, we wanted to nail how Agents would read through a client profile. Exercises like competitive analysis and sitemaps taught us what worked and didn't work for our use cases, and led us to a framework that would help Agents get quick context on their clients.",
+					"if_blocks": true, 
+					"flow_row": true,
+					"blocks": [
+						{
+							"flex_span": "span4",
+							"span_width": "span_half",
+							"image": true,
+							"image_url": "../images/homebuyer_profile/Explorations_Content_Wireframes.png",
+							"caption_top": "true",
+							"caption_position": "caption_top_left",
+							"label": "An information architecture framework for the Homebuyer Profile, which informed our wireframes"
+						}
+					],
+					"if_divider": true
+				},
+				{
+					"section_wide": true,
+					"section_content": true, 
+					"title": "USER TESTING",
+					"content": "We held task-based usability testing in order to validate our proposed information architecture and test interactions. We recruited Agents that matched Ada's persona to get feedback from people who shared her tech-forward, customer-focused approach.",
+					"if_blocks": true, 
+					"flow_row": true,
+					"blocks": [
+						{
+							"flex_span": "span4",
+							"span_width": "span_half",
+							"image": true,
+							"image_url": "../images/homebuyer_profile/UserTesting_Prototype.png",
+							"caption_top": "true",
+							"caption_position": "caption_top_left",
+							"label": "Lots of stuff happening in the Figma prototype"
+						}
+					]
+				},
+				{
+					"section_wide": true,
+					"if_blocks": true, 
+					"flow_row": true,
+					"blocks": [
+						{
+							"flex_span": "span_row_right",
+							"if_right_section": true,
+							"title": "Key Learning: Agent work styles vary",
+							"content": "As a result, one information hierarchy may not best serve all Agents. However, ordering info in a way that addresses four fundamental questions may be most valuable to Agents."
+						},
+						{
+							"flex_span": "span4",
+							"span_width": "span_half",
+							"image": true,
+							"image_url": "../images/homebuyer_profile/UserTesting_Findings.png",
+							"caption_top": "true",
+							"caption_position": "caption_top_left",
+							"label": "Agent mental model: Refreshing memory on a client"
+						}
+					],
+					"if_divider": true
+				},
+				{
+					"section_wide": true,
+					"section_header": true, 
+					"title": "REFINEMENT",
+					"content": "During testing we noticed for some Agents, scrolling horizontally to view other tabs was not immediately discoverable."
+				},
+				{
+					"section_wide": true,
+					"if_blocks": true, 
+					"flow_row": true,
+					"blocks": [
+						{
+							"flex_span": "span_row_center",
+							"if_centered_section": true,
+							"title": "Before: Tabs 'Out of sight'",
+							"content": "It wasn't immediately understood that more tabs existed to the right of Appointments. We needed to decrease the learning curve and use more natural gestures, as stated in our design principle, Design for Touch."
+						},
+						{
+							"flex_span": "span4",
+							"span_width": "span_half",
+							"if_video": true,
+							"video_src": "../images/homebuyer_profile/Refinement_Before_Prototype.mp4"
+						}
+					]
+				},
+				{
+					"section_wide": true,
+					"if_blocks": true, 
+					"flow_row": true,
+					"blocks": [
+						{
+							"flex_span": "span_row_center",
+							"if_centered_section": true,
+							"title": "After: Page Anchoring Tabs",
+							"content": "We introduced a stacking interaction that moves Agents to the next tab as they scroll down the page. This allows Agents to comfortably scroll in one direction as they search for the context they need."
+						},
+						{
+							"flex_span": "span4",
+							"span_width": "span_half",
+							"if_video": true,
+							"video_src": "../images/homebuyer_profile/Refinement_ScrollTabs.mp4"
+						}
+					],
+					"if_divider": true
+				},
+				{
+					"section_wide": true,
+					"section_content": true, 
+					"title": "RESULTS",
+					"content": "The new Homebuyer Profile provides Agents the context they need in order to easily identify who a client is and how to follow-up with them. <br><br>This way <span class=\"text_positive\">Agents spend less time scrolling in the Premier Agent app, and more time working with clients and completing their daily priorities.</span><br><br>Thank you to my thoughtful design partner Anmy for supporting me on this project!",
+					"if_divider": true
+				},
+				{
+					"if_project_nav": true, 
+					
+					"projects": [
+						{
+							"if_section_header": true, 
+							"title": "NEXT",
+							"content": "Feel free to <a href=\"mailto:suasin.ja@gmail.com\" title=\"Email\">email me</a> questions or to learn more about my projects<br> (*´▽`*)"
+						},
+						{
+							"if_project_card": true, 
+							"name": "Lead Routing",
+							"url": "lead-routing",
+							"project_card_image": "../images/lead_routing/Hero_Solution_LeadRouting.png",
+							"project_card_background": "#70C8F6",
+							"card_description": "End-to-end product design for an ecosystem of tools that enabled real estate teams more granular control of their client distribution",
+							"company": "Zillow Group",
+							"tags": [
+								{
+									"tag_name": "Desktop"
+								},
+								{
+									"tag_name": "UX/UI"
+								},
+								{
+									"tag_name": "UX Research"
+								}
+							]
+						},
+						{
+							"if_project_card": true, 
+							"name": "Constellation Migration",
+							"url": "constellation-migration",
+							"project_card_image": "../images/constellation_migration/Hero_Inbox.png",
+							"project_card_background": "#F6F6FF",
+							"card_description": "Scoped and communicated a strategy to migrate 35 web pages across 9 Engineering teams to a new design system",
+							"company": "Zillow Group",
+							"tags": [
+								{
+									"tag_name": "Design Systems"
+								},
+								{
+									"tag_name": "Desktop"
+								},
+								{
+									"tag_name": "Strategy"
+								}
+							]
+						},
+						{
+							"if_project_card": true, 
+							"name": "ConnectNGive",
+							"url": "connectngive",
+							"project_card_image": "../images/connectngive/Hero_CnGLogo.png",
+							"project_card_background": "#FF8777",
+							"card_description": "Volunteer Design Lead for a nonprofit that tracked and delivered 60k+ units of PPE supply donations as a response to COVID-19",
+							"company": "ConnectNGive",
+							"tags": [
+								{
+									"tag_name": "Social Impact"
+								},
+								{
+									"tag_name": "Design Management"
+								},
+								{
+									"tag_name": "UX/UI"
+								}
+							]				
+						}
+					]
+				}			
+
+			]
+		},
+
+
+
+
+
+
+
+
+
+		{
+            "name": "Lead Routing",
+            "url": "lead-routing",
+            "project_card_image": "../images/lead_routing/Hero_Solution_LeadRouting.png",
+			"project_card_background": "#70C8F6",
+			"card_description": "End-to-end product design for an ecosystem of tools that enabled real estate teams more granular control of their client distribution",
+			"company": "Zillow Group",
+			"tags": [
+				{
+					"tag_name": "Desktop"
+				},
+				{
+					"tag_name": "UX/UI"
+				},
+				{
+					"tag_name": "UX Research"
+				}
+			],
+			"description": "How might we help real estate Team Leads better manage their Agents and ensure they're set up for success?<br><br>I owned a series of releases for Lead Routing that gave real estate teams more granular control of their client distribution. This case study focuses on discovery, research, and design for one of those releases, ZIP code groups.",
+			"metadata": [
+				{
+					"data_name": "ROLE",
+					"data_content": "End-to-end product design & product strategy. Led Research: Interviews and Concept Testing."
+				},
+				{
+					"data_name": "TEAM",
+					"data_content": "1 UX designer (me)<br>1 Content Strategist<br>1 Product Manager<br>1 Engineering Manager"
+				},
+				{
+					"data_name": "TOOLS",
+					"data_content": "Figma, Whimsical, Mural"
+				},
+				{
+					"data_name": "TIMEFRAME",
+					"data_content": "Feb 2021 - Dec 2021"
+				}
+			],
+			"sections": [
+				{
+					"section_wide": true,
+					"if_blocks": true, 
+					"flow_row": true, 
+					"blocks": [
+						{
+							"if_hero_image": true, 
+							"image_src": "../images/lead_routing/Hero_Solution_LeadRouting.png",
+							"hero_background": "#70C8F6"
+						}
+					],
+					"if_divider": true
+				},
+				{
+					"section_wide": true,
+					"section_header": true,
+					"title": "BACKGROUND",
+					"content": "Within a brokerage, Team Leads manage Agents and ensure they're working the optimal number of clients. This is known to Agents as workload capacity.",
+					"if_blocks": true, 
+					"flow_row": true, 
+					"blocks": [
+						{
+							"title": "The Product",
+							"text": true, 
+							"content": "Premier Agent is Zillow’s B2B client acquisition and business builder platform for real estate agents & teams.",
+							"card": "transparent block_card"
+						},
+						{
+							"title": "Business Impact",
+							"text": true, 
+							"content": "<span class=\"text_positive\">+27% of teams have adopted ZIP code groups</span> since our launch in late November 2021. We're seeing steady growth rate in teams wanting to partner closely with Zillow Premier Agent.",
+							"card": "transparent block_card"
+						}
+					],
+					"if_divider": true
+				},
+				{
+					"section_wide": true, 
+					"section_header": true, 
+					"title": "PROBLEM",
+					"content": "When an Agent receives more clients than they can handle, overall performance and customer service suffers.",
+					"if_blocks": true, 
+					"flow_row": true,
+					"blocks": [
+
+						{
+							"flex_span": "span4",
+							"flow_column": true, 
+							"blocks": [
+								{
+									"flex_span": "span6",
+									"image": true,
+									"caption_top": "true",
+									"caption_position": "caption_top_left",
+									"image_url": "../images/lead_routing/Routing_Pause.png",
+									"label": "Pause switch on Lead Routing tool"
+								}
+							]
+						},
+						{
+							"flex_span": "span3",
+							"flow_column": true, 
+							"blocks": [
+								{
+									"title": "One method to control client flow",
+									"text": true,
+									"content": "Currently, Team Leads can stop Agents from receiving new clients by 'Pausing' them. Team Leads need a way to scale client management, as pausing Agents individually is unsustainable.",
+									"card": "transparent block_card"
+								},
+								{
+									"title": "Average team size",
+									"if_data_block": true, 
+									"data_blocks": [
+										{
+											"data": "1",
+											"label": "TEAM LEAD"
+										},
+										{
+											"data": "20-30",
+											"label": "AGENTS PER TEAM"
+										}
+									],
+									"card": "transparent block_card"
+								}
+							]
+						}
+						
+					],
+					"if_divider": true
+				},
+				{
+					"section_wide": true,
+					"section_header": true,
+					"title": "GOALS",
+					"content": "What do we want to achieve?",
+					"if_blocks": true, 
+					"flow_row": true, 
+					"blocks": [
+						{
+							"if_data_block_caption": true, 
+							"data": "Reduce manual overhead",
+							"label": "UX GOAL",
+							"description": "Team Leads are spending several hours daily individually managing ZIP code assignments for their Agents. We should provide the necessary in-app tools for Team Leads to manage successfully at scale.",
+							"card": "transparent block_card"
+						},
+						{
+							"if_data_block_caption": true, 
+							"data": "25% adoption rate",
+							"label": "BUSINESS OUTCOME",
+							"description": "Increase the number of Partners using our ecosystem so Premier Agent builds market reach & revenue.",
+							"card": "transparent block_card"
+						}
+					],
+					"if_divider": true
+				},
+				{
+					"section_wide": true,
+					"section_header": true, 
+					"title": "SOLUTION",
+					"content": "Enable teams to create custom ZIP code groups and assign them to Agents, which will allow us to build more robust Shift Scheduling features.",
+					"if_blocks": true, 
+					"flow_row": true,
+					"blocks": [
+						{
+							"flex_span": "span_row_center",
+							"if_centered_section": true,
+							"title": "Create ZIP code groups",
+							"content": "Team Leads can cluster multiple ZIP codes under a custom name. We've seen ZIP codes grouped by city, by schedule, or more abstractly like area expertise."
+						},
+						{
+							"flex_span": "span4",
+							"span_width": "span_half",
+							"if_video": true,
+							"video_src": "../images/lead_routing/ZIPGroups_CreateAGroup.mp4"
+						}
+					]
+				},
+				{
+					"section_wide": true,
+					"if_blocks": true, 
+					"flow_row": true,
+					"blocks": [
+						{
+							"flex_span": "span_row_center",
+							"if_centered_section": true,
+							"title": "Assign ZIP group to Agents",
+							"content": "Team Leads can add multiple ZIP codes to an Agent using the custom names they created. They also get a more holistic view of ZIP coverage across their Agents, creating more clarity around client distribution."
+						},
+						{
+							"flex_span": "span4",
+							"span_width": "span_half",
+							"if_video": true,
+							"video_src": "../images/lead_routing/ZIPGroups_AssignToAgent.mp4"
+						}
+					],
+					"if_divider": true
+				},
+				{
+					"section_wide": true,
+					"section_header": true, 
+					"title": "RESEARCH",
+					"content": "How do Team Leads optimize workload capacity for Agents?",
+					"if_blocks": true, 
+					"flow_row": true,
+					"blocks": [
+						{
+							"flex_span": "span_row_right",
+							"if_right_section": true,
+							"title": "Journey Map Interviews",
+							"content": "In previous research some Agents mentioned that they wanted to temporarily stop receiving new clients for short periods of time, such as during a tour. To get a deeper understanding of what Agents meant by this, we met with Team Leads for more insight and documented their user stories."
+						},
+						{
+							"flex_span": "span4",
+							"span_width": "span_half",
+							"image": true,
+							"image_url": "../images/lead_routing/SelfPause_JourneyMap.png"
+						}
+
+					],
+					"if_divider": true
+				},	
+				{
+					"section_wide": true,
+					"section_content": true, 
+					"title": "DESIGN PRINCIPLES",
+					"content": "From our interviews, we learned customization was a top priority, as many real estate teams operate uniquely from each other. Future-proofing the Lead Routing experience was critical since we couldn't anticipate every team structure that could use our product.",
+					"if_blocks": true, 
+					"flow_row": true,
+					"blocks": [
+						{
+							"flex_span": "span6",
+							"text": true,
+							"title": "Give control & flexibility",
+							"content": "Every real estate team operates in their own unique way. Enable customization and granular controls to accommodate their diverse needs.",
+							"card": "transparent block_card"
+						},
+						{
+							"flex_span": "span6",
+							"text": true,
+							"title": "Scale for large teams",
+							"content": "Optimize workflows and automate when possible to support growing team sizes (20+) and reduce manual overhead for Team Leads.",
+							"card": "transparent block_card"
+						},
+						{
+							"flex_span": "span6",
+							"text": true,
+							"title": "Be transparent",
+							"content": "Prioritize showing as much relevant data possible. Teams deserve to know how they're performing in order to improve.",
+							"card": "transparent block_card"	
+						}
+					],
+					"if_divider": true
+				},
+				{
+					"section_wide": true,
+					"section_header": true, 
+					"title": "CONCEPT TESTING",
+					"content": "How might we impact Team Leads' ability to manage capacity & client distribution?",
+					"if_blocks": true, 
+					"flow_row": true,
+					"blocks": [
+						{
+							"flex_span": "span4",
+							
+							"flow_column": true, 
+							"blocks": [
+								{
+									"flex_span": "span3",
+									"text": true,
+									"title": "Framing the conversation",
+									"content": "The goal of these tests were to get early impressions of Scheduling, a tool to set up weekly shifts for when Agents should receive new clients. <br><br>We showed low-fidelity concepts to Partners so we can focus their feedback on the high-level functionality. We asked why specific concepts worked for them in order to extract core needs.",
+									"card": "transparent block_card"
+								}
+							]
+						},
+						{
+							"flex_span": "span8",
+							"flow_column": true, 
+							"blocks": [
+								{
+									"flex_span": "span4",
+									"image": true,
+									"image_url": "../images/lead_routing/ConceptTesting_Scheduling3.png",
+									"caption_top": "true",
+									"caption_position": "caption_top_left",
+									"label": "<span class=\"underline\">User story</span>",
+									"content": "As a Team Lead, I can check my team's ZIP code distribution so that I can identify gaps in coverage."
+								},
+								{
+									"flex_span": "span4",
+									"image": true,
+									"image_url": "../images/lead_routing/ConceptTesting_Scheduling4.png",
+									"caption_top": "true",
+									"caption_position": "caption_top_left",
+									"label": "<span class=\"underline\">User story</span>",
+									"content": "As a Team Lead, I can drill into a singular ZIP code so that I can adjust my assigned Agents."
+								}
+							]
+						}
+					],
+					"if_divider": true
+				},
+				{
+					"section_wide": true,
+					"section_header": true, 
+					"title": "ROADMAP PIVOT",
+					"content": "How should we adjust our priorities based on Research & Concept Testing?",
+					"if_blocks": true, 
+					"flow_row": true,
+					"blocks": [
+						{
+							"flex_span": "span_row_right",
+							"if_right_section": true,
+							"title": "Key Learning: ZIP code groups",
+							"content": "When speaking with Partner teams we discovered that we needed to implement ZIP code groups first, in order for Shift Scheduling to function properly and be successful."
+						},
+						{
+							"flex_span": "span4",
+							"span_width": "span_half",
+							"image": true,
+							"image_url": "../images/lead_routing/Pivot_ZIPGroupConcepts.png"
+						}
+					],
+					"if_divider": true
+				},
+
+				
+				{
+					"section_wide": true,
+					"section_content": true, 
+					"title": "EXPLORATIONS",
+					"content": "The existing ZIP code assignments modal needed to support several new requirements. Working closely with Design Systems, we were able to adapt components to achieve the desired experience.",
+					"if_blocks": true, 
+					"flow_row": true,
+					"blocks": [
+						{
+							"flex_span": "span4",
+							"span_width": "span_half",
+							"image": true,
+							"image_url": "../images/lead_routing/Explorations_Layout.png",
+							"caption_top": "true",
+							"caption_position": "caption_top_left",
+							"label": "<span class=\"underline\">User story</span>",
+							"content": "As a Team Lead, I can assign ZIP code groups and individual ZIP codes to an Agent in 2 programs."
+						}
+					],
+					"if_divider": true
+				},
+				{
+					"section_wide": true,
+					"section_content": true, 
+					"title": "REFINEMENT",
+					"content": "Content Design was involved early on so they could learn with us and provide clear directions to Team Leads on how to set up ZIP code groups and resolve errors.",
+					"if_blocks": true, 
+					"flow_row": true,
+					"blocks": [
+						{
+							"flex_span": "span4",
+							"span_width": "span_half",
+							"image": true,
+							"image_url": "../images/lead_routing/Refinement_IntentTextFramework.png",
+							"caption_top": "true",
+							"caption_position": "caption_top_left",
+							"label": "Content collaboration framework"
+						},
+						{
+							"flex_span": "span4",
+							"span_width": "span_half",
+							"image": true,
+							"image_url": "../images/lead_routing/Refinement_ContentOptions.png",
+							"caption_top": "true",
+							"caption_position": "caption_top_left",
+							"label": "Options hashed out with Content Designer"
+						}
+					],
+					"if_divider": true
+				},
+				{
+					"section_wide": true,
+					"section_content": true, 
+					"title": "RESULTS",
+					"content": "Early qualitative feedback on the ZIP code groups feature has been positive! One month after release, <span class=\"text_positive\">+27% of eligible teams had created at least one ZIP code group, beating our goal of +25% adoption rate.</span> We expect more Team Leads to utilize the feature as they figure out the best way to organize their client distribution.<br><br>As next steps, we are continuing work on Shift Scheduling and exploring designs based on feedback from Concept Testing.<br><br>Thank you Reece for entrusting me with the Lead Routing initiative, and for your mentorship.",
+					"if_divider": true
+				},
+				{
+					"if_project_nav": true, 
+					
+					"projects": [
+						{
+							"if_section_header": true, 
+							"title": "NEXT",
+							"content": "Feel free to <a href=\"mailto:suasin.ja@gmail.com\" title=\"Email\">email me</a> questions or to learn more about my projects<br>(o˘◡˘o)"
+						},
+						{
+							"if_project_card": true, 
+							"name": "Constellation Migration",
+							"url": "constellation-migration",
+							"project_card_image": "../images/constellation_migration/Hero_Inbox.png",
+							"project_card_background": "#F6F6FF",
+							"card_description": "Scoped and communicated a strategy to migrate 35 web pages across 9 Engineering teams to a new design system",
+							"company": "Zillow Group",
+							"tags": [
+								{
+									"tag_name": "Design Systems"
+								},
+								{
+									"tag_name": "Desktop"
+								},
+								{
+									"tag_name": "Strategy"
+								}
+							]
+						},
+						{
+							"if_project_card": true, 
+							"name": "ConnectNGive",
+							"url": "connectngive",
+							"project_card_image": "../images/connectngive/Hero_CnGLogo.png",
+							"project_card_background": "#FF8777",
+							"card_description": "Volunteer Design Lead for a nonprofit that tracked and delivered 60k+ units of PPE supply donations as a response to COVID-19",
+							"company": "ConnectNGive",
+							"tags": [
+								{
+									"tag_name": "Social Impact"
+								},
+								{
+									"tag_name": "Design Management"
+								},
+								{
+									"tag_name": "UX/UI"
+								}
+							]
+						},
+						{
+							"if_project_card": true, 
+							"name": "Homebuyer Profile",
+							"url": "homebuyer-profile",
+							"project_card_image": "../images/homebuyer_profile/Hero_Solution_HomebuyerProfile.png",
+							"project_card_background": "#579dff",
+							"card_description": "Increased message engagement 14% by centralizing recent conversations real estate agents have had with their clients",
+							"company": "Zillow Group",
+							"tags": [
+								{
+									"tag_name": "iOS"
+								},
+								{
+									"tag_name": "Android"
+								},
+								{
+									"tag_name": "UX/UI"
+								}
+							]						
+						}
+					]
+				}			
+
+			]
+		},
+
+
+
+
+
+
+
+
+		{
+            "name": "Constellation Migration",
+            "url": "constellation-migration",
+            "project_card_image": "../images/constellation_migration/Hero_Inbox.png",
+			"project_card_background": "#F6F6FF",
+			"card_description": "Scoped and communicated a strategy to migrate 35 web pages across 9 Engineering teams to a new design system",
+			"company": "Zillow Group",
+			"tags": [
+				{
+					"tag_name": "Design Systems"
+				},
+				{
+					"tag_name": "Desktop"
+				},
+				{
+					"tag_name": "Strategy"
+				}
+			],
+			"description": "As Zillow Group aligns its services company-wide and moves away from the idea of sub-brands, Premier Agent would greatly benefit from unifying under Zillow's main design system, Constellation.<br><br>I represented Premier Agent Product Design on a tiger team of specialists tasked with developing a strategy to migrate the Premier Agent web product to Constellation.",
+			"metadata": [
+				{
+					"data_name": "ROLE",
+					"data_content": "Led Premier Agent design workstreams & collaborated on strategy"
+				},
+				{
+					"data_name": "TEAM",
+					"data_content": "1 UX Designer, PA (me)<br>1 UX Designer, Design Systems<br>2 UX Engineers<br>1 Design Ops<br>2 Leadership Sponsors"
+				},
+				{
+					"data_name": "TOOLS",
+					"data_content": "Figma, HTML Prototyping"
+				},
+				{
+					"data_name": "TIMEFRAME",
+					"data_content": "Dec 2020 - Now"
+				}
+			],
+			"sections": [
+				{
+					"section_wide": true,
+					"if_blocks": true, 
+					"flow_row": true, 
+					"blocks": [
+						{
+							"if_hero_image": true, 
+							"image_src": "../images/constellation_migration/Hero_Inbox.png",
+							"hero_background": "#F6F6FF"
+						}
+					],
+					"if_divider": true
+				},
+				{
+					"section_wide": true,
+					"section_header": true,
+					"title": "BACKGROUND",
+					"content": "In 2019 Zillow began the process of converging all design systems into Constellation.<br><br>Now Constellation has become the most mature, efficient design system at Zillow.",
+					"if_blocks": true, 
+					"flow_row": true, 
+					"blocks": [
+						{
+							"title": "Introducing PAXL",
+							"text": true, 
+							"content": "PAXL (Premier Agent Experience Language) is Premier Agent's design library for web, launched in 2016.",
+							"card": "transparent block_card"
+						},
+						{
+							"title": "Business Impact",
+							"text": true, 
+							"content": "<span class=\"text_positive\">4 Premier Agent experiences are now built in Constellation.</span> Our tiger team is working with Engineering teams who are actively planning their migrations.",
+							"card": "transparent block_card"
+						}
+					],
+					"if_divider": true
+				},
+				{
+					"section_wide": true, 
+					"section_header": true, 
+					"title": "THE OPPORTUNITY",
+					"content": "Migrating Premier Agent to Constellation would accelerate designer and development velocity as we build Partner experiences.<br><br>Let's take advantage of Constellation's upgraded web technologies, larger component library, and dedicated team support.",
+					"if_blocks": true, 
+					"flow_row": true,
+					"blocks": [
+						{
+							"span_width": "span_half",
+							"title": "Core technologies",
+							"if_data_block": true, 
+							"data_blocks": [
+								{
+									"data": "HTML/CSS",
+									"label": "PAXL"
+								},
+								{
+									"data": "React",
+									"label": "CONSTELLATION"
+								}
+							],
+							"card": "transparent block_card"
+						},
+						{
+							"span_width": "span_half",
+							"title": "Number of components",
+							"if_data_block": true, 
+							"data_blocks": [
+								{
+									"data": "90",
+									"label": "PAXL"
+								},
+								{
+									"data": "200",
+									"label": "CONSTELLATION"
+								}
+							],
+							"card": "transparent block_card"
+						},
+						{
+							"span_width": "span_half",
+							"title": "Number of React components",
+							"if_data_block": true, 
+							"data_blocks": [
+								{
+									"data": "12",
+									"label": "PAXL"
+								},
+								{
+									"data": "200",
+									"label": "CONSTELLATION"
+								}
+							],
+							"card": "transparent block_card"
+						},
+						{
+							"span_width": "span_half",
+							"title": "Team size",
+							"if_data_block": true, 
+							"data_blocks": [
+								{
+									"data": "2",
+									"label": "PAXL"
+								},
+								{
+									"data": "19+",
+									"label": "CONSTELLATION"
+								}
+							],
+							"card": "transparent block_card"
+						}
+					],
+					"if_divider": true
+				},
+				{
+					"section_wide": true,
+					"section_header": true,
+					"title": "GOALS",
+					"content": "How does Premier Agent benefit from migrating to Constellation?",
+					"if_blocks": true, 
+					"flow_row": true, 
+					"blocks": [
+						{
+							"if_data_block_caption": true, 
+							"data": "Maintain one system",
+							"label": "ENGINEERING GOAL",
+							"description": "Sustained, long term infrastructure for front-end development as older systems are deprecated.",
+							"card": "transparent block_card"
+						},
+						{
+							"if_data_block_caption": true, 
+							"data": "Accessibility",
+							"label": "UX GOAL",
+							"description": "Accessibility foundations are built directly into Constellation and should be leveraged so we're compliant with standards.",
+							"card": "transparent block_card"
+						},
+						{
+							"if_data_block_caption": true, 
+							"data": "Unified experience",
+							"label": "PRODUCT GOAL",
+							"description": "We want our customer journey to be consistent with Zillow's tone and visual language.",
+							"card": "transparent block_card"
+						}
+					],
+					"if_divider": true
+				},
+				{
+					"section_wide": true,
+					"section_header": true, 
+					"title": "SOLUTION",
+					"content": "Migrate in phases: Consult with Product to build a plan that fits their roadmap & migration needs",
+					"if_blocks": true, 
+					"flow_row": true,
+					"blocks": [
+						{
+							"flex_span": "span_row_center",
+							"if_centered_section": true,
+							"title": "Create a visual theme for Premier Agent",
+							"content": "Themeing PAXL to look like Constellation minimizes visual inconsistencies when Engineering teams begin migrating. We updated PAXL styles and tested with HTML prototyping until we achieved the desired quality bar."
+						},
+						{
+							"flex_span": "span4",
+							"span_width": "span_half",
+							"image": true,
+							"image_url": "../images/constellation_migration/Contacts_Theme.png"
+						}
+					]
+				},
+				{
+					"section_wide": true,
+					"if_blocks": true, 
+					"flow_row": true,
+					"blocks": [
+						{
+							"flex_span": "span_row_center",
+							"if_centered_section": true,
+							"title": "Rebuild key experiences in Constellation",
+							"content": "Pages that need specialized components will require a full rebuild in Constellation. These rebuilds are a collaborative effort between Premier Agent Product Design and the Constellation Design System team."
+						},
+						{
+							"flex_span": "span4",
+							"span_width": "span_half",
+							"image": true,
+							"image_url": "../images/constellation_migration/Inbox_Remade.png"
+						}
+					],
+					"if_divider": true
+				},
+				{
+					"section_wide": true,
+					"section_header": true, 
+					"title": "PHASES",
+					"content": "How do we get Premier Agent Product and Engineering teams to commit to a migration plan?",
+					"if_blocks": true, 
+					"flow_row": true,
+					"blocks": [
+						{
+							"flex_span": "span_row_right",
+							"if_right_section": true,
+							"title": "1. Understand migration scope",
+							"content": "We audited the Premier Agent web app to get a clearer picture of the task at hand. After our initial investigation, we learned that there were 35 pages in the Premier Agent ecosystem, 9 different teams who own these pages, and 3 design systems that construct them."
+						},
+						{
+							"flex_span": "span4",
+							"span_width": "span_half",
+							"image": true,
+							"image_url": "../images/constellation_migration/Phases_ComponentChangeLog.png",
+							"caption_top": "true",
+							"caption_position": "caption_top_left",
+							"label": "Theme component survey"
+						}
+
+					]
+				},	
+				{
+					"section_wide": true,
+					"if_blocks": true, 
+					"flow_row": true,
+					"blocks": [
+						{
+							"flex_span": "span_row_right",
+							"if_right_section": true,
+							"title": "2. Develop business case & strategize",
+							"content": "When exploring potential migration strategies, we considered factors such as Engineering cost, needed Design support, and Product roadmap. Our proposal needed to be flexible enough for teams to incorporate the migration into their release schedule."
+						},
+						{
+							"flex_span": "span4",
+							"span_width": "span_half",
+							"image": true,
+							"image_url": "../images/constellation_migration/Phases_ChooseYourOwnAdventure.png",
+							"caption_top": "true",
+							"caption_position": "caption_top_left",
+							"label": "'Choose your own adventure' migration launch plan"
+						}
+					]
+				},
+				{
+					"section_wide": true,
+					"if_blocks": true, 
+					"flow_row": true,
+					"blocks": [
+						{
+							"flex_span": "span_row_right",
+							"if_right_section": true,
+							"title": "3. Get Engineering & Product buy-in",
+							"content": "We chose to communicate our migration plan to Premier Agent Product and Engineering teams first. This allowed us to address immediate concerns during Q&A sessions, and give our Leadership Sponsors room to investigate answers before sharing more broadly."
+						},
+						{
+							"flex_span": "span4",
+							"span_width": "span_half",
+							"image": true,
+							"image_url": "../images/constellation_migration/Deck_OneZillow.png",
+							"caption_top": "true",
+							"caption_position": "caption_top_left",
+							"label": "Excerpt from migration proposal presentation"
+						}
+					]
+				},
+				{
+					"section_wide": true,
+					"if_blocks": true, 
+					"flow_row": true,
+					"blocks": [
+						{
+							"flex_span": "span_row_right",
+							"if_right_section": true,
+							"title": "4. Execute & keep momentum",
+							"content": "To keep other teams and ourselves on track, we defined more detailed timelines and milestones to hit over 2022. Design Ops integrated our workstreams into Asana boards so teams are aware of unresolved tasks."
+						},
+						{
+							"flex_span": "span4",
+							"span_width": "span_half",
+							"image": true,
+							"image_url": "../images/constellation_migration/Phases_Asana.png",
+							"caption_top": "true",
+							"caption_position": "caption_top_left",
+							"label": "More tasks are filling up our Asana board"
+						}
+					],
+					"if_divider": true
+				},
+				{
+					"section_wide": true,
+					"section_content": true, 
+					"title": "STATUS",
+					"content": "We're currently working closely with teams who are eager to migrate to Constellation.<br><br> <span class=\"text_positive\">Several new experiences are confirmed to be built in Constellation during 2022</span> and we're expecting more partnerships throughout the upcoming quarters.<br><br>Thank you to my awesome tiger team, Phil, Kalini, Heather, and Kristen for your support on this journey. Thank you Tony for driving this project, I'm glad we could partner closely and dig into details together. And thank you Michelle for thinking of me to lead this initiative for Premier Agent.",
+					"if_divider": true
+				},
+				{
+					"if_project_nav": true, 
+					
+					"projects": [
+						{
+							"if_section_header": true, 
+							"title": "NEXT",
+							"content": "Feel free to <a href=\"mailto:suasin.ja@gmail.com\" title=\"Email\">email me</a> questions or to learn more about my projects<br>(๑˃ᴗ˂)ﻭ"
+						},
+						{
+							"if_project_card": true, 
+							"name": "ConnectNGive",
+							"url": "connectngive",
+							"project_card_image": "../images/connectngive/Hero_CnGLogo.png",
+							"project_card_background": "#FF8777",
+							"card_description": "Volunteer Design Lead for a nonprofit that tracked and delivered 60k+ units of PPE supply donations as a response to COVID-19",
+							"company": "ConnectNGive",
+							"tags": [
+								{
+									"tag_name": "Social Impact"
+								},
+								{
+									"tag_name": "Design Management"
+								},
+								{
+									"tag_name": "UX/UI"
+								}
+							]
+						},
+						{
+							"if_project_card": true, 
+							"name": "Homebuyer Profile",
+							"url": "homebuyer-profile",
+							"project_card_image": "../images/homebuyer_profile/Hero_Solution_HomebuyerProfile.png",
+							"project_card_background": "#579dff",
+							"card_description": "Increased message engagement 14% by centralizing recent conversations real estate agents have had with their clients",
+							"company": "Zillow Group",
+							"tags": [
+								{
+									"tag_name": "iOS"
+								},
+								{
+									"tag_name": "Android"
+								},
+								{
+									"tag_name": "UX/UI"
+								}
+							]
+						},
+						{
+							"if_project_card": true, 
+							"name": "Lead Routing",
+							"url": "lead-routing",
+							"project_card_image": "../images/lead_routing/Hero_Solution_LeadRouting.png",
+							"project_card_background": "#70C8F6",
+							"card_description": "End-to-end product design for an ecosystem of tools that enabled real estate teams more granular control of their client distribution",
+							"company": "Zillow Group",
+							"tags": [
+								{
+									"tag_name": "Desktop"
+								},
+								{
+									"tag_name": "UX/UI"
+								},
+								{
+									"tag_name": "UX Research"
+								}
+							]						
+						}
+					]
+				}			
+
+			]
+		},
+
+
+
+
+
+
+
+
+		{
+            "name": "ConnectNGive",
+            "url": "connectngive",
+            "project_card_image": "../images/connectngive/Hero_CnGLogo.png",
+			"project_card_background": "#FF8777",
+			"card_description": "Volunteer Design Lead for a nonprofit that tracked and delivered 60k+ units of PPE supply donations as a response to COVID-19",
+			"company": "ConnectNGive",
+			"tags": [
+				{
+					"tag_name": "Social Impact"
+				},
+				{
+					"tag_name": "Design Management"
+				},
+				{
+					"tag_name": "UX/UI"
+				}
+			],
+			"description": "I was a Volunteer Design Lead and Manager for ConnectNGive, a nonprofit project that connected personal protective equipment (PPE) safety supply donors with groups or workers who needed them.<br><br>My leadership achievements include scaling the team from 2 to 6 designers, establishing a web design system to support my team's work, and prioritizing a design-led relaunch.",
+			"metadata": [
+				{
+					"data_name": "ROLE",
+					"data_content": "Manager for a team of 4 product designers & actively coached them. Individual contributor to design systems and feature work."
+				},
+				{
+					"data_name": "TEAM",
+					"data_content": "1 Design Manager (me)<br>1 UX Lead<br>3 UX Designers<br>1 UX Design Intern<br>1 Project Manager"
+				},
+				{
+					"data_name": "TOOLS",
+					"data_content": "Figma, Whimsical"
+				},
+				{
+					"data_name": "TIMEFRAME",
+					"data_content": "May 2020 - Oct 2020"
+				}
+			],
+			"sections": [
+				{
+					"section_wide": true,
+					"if_blocks": true, 
+					"flow_row": true, 
+					"blocks": [
+						{
+							"if_hero_image": true, 
+							"image_src": "../images/connectngive/Hero_CnGLogo.png",
+							"hero_background": "#FF8777",
+							"caption_bottom": "true",
+							"caption_position": "caption_bottom_left",
+							"label": "Brand refresh owned by Fiona Tran and Jordan Eng"
+						}
+					],
+					"if_divider": true
+				},
+				{
+					"section_wide": true,
+					"section_header": true,
+					"title": "BACKGROUND",
+					"content": "When the COVID-19 pandemic hit in early 2020, PPE shortages were rampant as healthcare workers, businesses, and everyday people attempted to find supplies.",
+					"if_blocks": true, 
+					"flow_row": true, 
+					"blocks": [
+						{
+							"title": "The Product",
+							"text": true, 
+							"content": "ConnectNGive serves smaller community groups who were especially affected by the lack of PPE resources available. Donors with PPE supplies can check real time shortage updates, and connect with donees to allocate supplies.",
+							"card": "transparent block_card"
+						},
+						{
+							"title": "Impact",
+							"text": true, 
+							"content": "<span class=\"text_positive\">ConnectNGive facilitated tracking for 60k+ units of PPE donations to local communities throughout California</span> before winding down operations. Including 24k homemade face masks, 20k sets of gloves, and 10k KN95 masks.",
+							"card": "transparent block_card"
+						}
+					],
+					"if_divider": true
+				},
+				{
+					"section_wide": true, 
+					"if_blocks": true, 
+					"flow_row": true,
+					"blocks": [
+						{
+							"flex_span": "span4",
+							"flow_column": true, 
+							"blocks": [
+								{
+									"flex_span": "span6",
+									"image": true,
+									"caption_top": "true",
+									"caption_position": "caption_top_left",
+									"image_url": "../images/connectngive/CnG_Problem.png"
+								}
+							]
+						}
+					]
+				},
+				{
+					"section_wide": true, 
+					"if_blocks": true, 
+					"flow_row": true,
+					"blocks": [
+						{
+							"flex_span": "span4",
+							"flow_column": true, 
+							"blocks": [
+								{
+									"flex_span": "span6",
+									"image": true,
+									"caption_top": "true",
+									"caption_position": "caption_top_left",
+									"image_url": "../images/connectngive/CnG_Solution.png"
+								}
+							]
+						}
+					],
+					"if_divider": true
+				},
+				{
+					"section_wide": true,
+					"section_content": true, 
+					"title": "DESIGN OPS",
+					"content": "To better organize our growing team, I introduced project intake and prioritization processes. Project requests are submitted, discussed, and prioritized before any work begins. New projects get an accompanying feature brief, which serves as the source of truth for the working team.",
+					"if_blocks": true, 
+					"flow_row": true,
+					"blocks": [
+						{
+							"flex_span": "span4",
+							"span_width": "span_half",
+							"image": true,
+							"image_url": "../images/connectngive/DesignOps_FeatureBrief.png",
+							"caption_top": "true",
+							"caption_position": "caption_top_left",
+							"label": "Feature briefs include design requirements, engineering user stories, and FAQs"
+						}
+					],
+					"if_divider": true
+				},
+				{
+					"section_wide": true,
+					"section_content": true, 
+					"title": "DESIGN SYSTEM",
+					"content": "I built ConnectNGive's design system to maintain visual and functional consistency across the product. This included a library of reusable components, typography standards, color palettes, and documentation.<br><br>Implementing a design system allowed designers to focus solving problems, and engineers to reduce front-end development time.",
+					"if_blocks": true, 
+					"flow_row": true,
+					"blocks": [
+						{
+							"flex_span": "span4",
+							"span_width": "span_half",
+							"image": true,
+							"image_url": "../images/connectngive/DesignSystem_Forms.png",
+							"caption_top": "true",
+							"caption_position": "caption_top_left",
+							"label": "Form input, card, and wizard components compose the Sign Up flow"
+						}
+
+					],
+					"if_divider": true
+				},	
+				{
+					"section_wide": true,
+					"section_header": true,
+					"title": "FEATURES",
+					"content": "I led strategy for a relaunch of ConnectNGive's core features. As manager, I stayed close to my team's work in order to align our experiences.", 
+					"if_blocks": true, 
+					"flow_row": true,
+					"blocks": [
+						{
+							"flex_span": "span_row_center",
+							"if_centered_section": true,
+							"title": "Sign up",
+							"content": "ConnectNGive users can sign up as a donee to report shortages and request supplies, or as a donor to fill open shortages. Both profiles allow users to affiliate with an organization and set up delivery preferences."
+						},
+						{
+							"flex_span": "span4",
+							"span_width": "span_half",
+							"image": true,
+							"image_url": "../images/connectngive/Features_SignUp.png",
+							"caption_bottom": "true",
+							"caption_position": "caption_bottom_left",
+							"label": "Owned by Jenny Li"
+						}
+					]
+				},
+				{
+					"section_wide": true,
+					"if_blocks": true, 
+					"flow_row": true,
+					"blocks": [
+						{
+							"flex_span": "span_row_center",
+							"if_centered_section": true,
+							"title": "Request supplies & report shortages",
+							"content": "Donees complete a short form to request PPE supplies, including item type and quantity."
+						},
+						{
+							"flex_span": "span4",
+							"span_width": "span_half",
+							"image": true,
+							"image_url": "../images/connectngive/Features_RequestSupplies.png",
+							"caption_bottom": "true",
+							"caption_position": "caption_bottom_left",
+							"label": "Owned by Alex Lee"
+						}
+					]
+				},
+				{
+					"section_wide": true,
+					"if_blocks": true, 
+					"flow_row": true,
+					"blocks": [
+						{
+							"flex_span": "span_row_center",
+							"if_centered_section": true,
+							"title": "View real time PPE shortages",
+							"content": "Shortages are posted publicly for donors in the local area. Filters and badges help donors select groups they want to connect with."
+						},
+						{
+							"flex_span": "span4",
+							"span_width": "span_half",
+							"image": true,
+							"image_url": "../images/connectngive/Features_Shortages.png",
+							"caption_bottom": "true",
+							"caption_position": "caption_bottom_left",
+							"label": "Owned by me, Jared Suasin"
+						}
+					]
+				},
+				{
+					"section_wide": true,
+					"if_blocks": true, 
+					"flow_row": true,
+					"blocks": [
+						{
+							"flex_span": "span_row_center",
+							"if_centered_section": true,
+							"title": "Donate to a supply request",
+							"content": "When donors choose a shortage to fill, they input donation quantities and confirm how they will deliver the items."
+						},
+						{
+							"flex_span": "span4",
+							"span_width": "span_half",
+							"image": true,
+							"image_url": "../images/connectngive/Features_DonateSupplies.png",
+							"caption_bottom": "true",
+							"caption_position": "caption_bottom_left",
+							"label": "Owned by Alex Lee"
+						}
+					]
+				},
+				{
+					"section_wide": true,
+					"if_blocks": true, 
+					"flow_row": true,
+					"blocks": [
+						{
+							"flex_span": "span_row_center",
+							"if_centered_section": true,
+							"title": "Manage donation requests",
+							"content": "Donees can edit active requests and view upcoming deliveries using the Dashboard."
+						},
+						{
+							"flex_span": "span4",
+							"span_width": "span_half",
+							"image": true,
+							"image_url": "../images/connectngive/Features_DonationDashboard.png",
+							"caption_bottom": "true",
+							"caption_position": "caption_bottom_left",
+							"label": "Owned by me, Jared Suasin"
+						}
+					]
+				},
+				{
+					"section_wide": true,
+					"if_blocks": true, 
+					"flow_row": true,
+					"blocks": [
+						{
+							"flex_span": "span_row_center",
+							"if_centered_section": true,
+							"title": "Track your donation",
+							"content": "In order to facilitate and confirm successful deliveries, donors and donees report their status to ConnectNGive."
+						},
+						{
+							"flex_span": "span4",
+							"span_width": "span_half",
+							"image": true,
+							"image_url": "../images/connectngive/Features_DonationDetails.png",
+							"caption_bottom": "true",
+							"caption_position": "caption_bottom_left",
+							"label": "Owned by me, Jared Suasin"
+						}
+					]
+				},
+				{
+					"section_wide": true,
+					"if_blocks": true, 
+					"flow_row": true,
+					"blocks": [
+						{
+							"flex_span": "span_row_center",
+							"if_centered_section": true,
+							"title": "Learn about ConnectNGive's impact",
+							"content": "The Stats Dashboard tracks our progress and helps build trust with new potential donors and donees."
+						},
+						{
+							"flex_span": "span4",
+							"span_width": "span_half",
+							"image": true,
+							"image_url": "../images/connectngive/Features_NonprofitDashboard.png",
+							"caption_bottom": "true",
+							"caption_position": "caption_bottom_left",
+							"label": "Owned by Ellis Lee"
+						}
+					],
+					"if_divider": true
+				},
+				{
+					"section_wide": true,
+					"section_content": true, 
+					"title": "REFLECTION",
+					"content": "Unfortunately, our relaunch didn't reach the live website before ConnectNGive's wind down. Regardless, I enjoyed working with my like-minded, talented teammates who believed in a cause to use tech for social good. I appreciated everyone's humbleness, support for each other, and drive to make an impact.<br><br>Thank you Ben for rallying this effort. Thank you to my Product Design team, Alex, Jenny, Carole, and Ellis for your dedication and willingness to learn. Thank you Fiona and Jordan for being wonderful, collaborative Brand partners. And lastly, a huge thank you to Christina for inviting me to lead with you.",
+					"if_divider": true
+				},
+				{
+					"if_project_nav": true, 
+					
+					"projects": [
+						{
+							"if_section_header": true, 
+							"title": "NEXT",
+							"content": "Feel free to <a href=\"mailto:suasin.ja@gmail.com\" title=\"Email\">email me</a> questions or to learn more about my projects<br>(ᵔ◡ᵔ)"
+						},
+						{
+							"if_project_card": true, 
+							"name": "Homebuyer Profile",
+							"url": "homebuyer-profile",
+							"project_card_image": "../images/homebuyer_profile/Hero_Solution_HomebuyerProfile.png",
+							"project_card_background": "#579dff",
+							"card_description": "Increased message engagement 14% by centralizing recent conversations real estate agents have had with their clients",
+							"company": "Zillow Group",
+							"tags": [
+								{
+									"tag_name": "iOS"
+								},
+								{
+									"tag_name": "Android"
+								},
+								{
+									"tag_name": "UX/UI"
+								}
+							]
+						},
+						{
+							"if_project_card": true, 
+							"name": "Lead Routing",
+							"url": "lead-routing",
+							"project_card_image": "../images/lead_routing/Hero_Solution_LeadRouting.png",
+							"project_card_background": "#70C8F6",
+							"card_description": "End-to-end product design for an ecosystem of tools that enabled real estate teams more granular control of their client distribution",
+							"company": "Zillow Group",
+							"tags": [
+								{
+									"tag_name": "Desktop"
+								},
+								{
+									"tag_name": "UX/UI"
+								},
+								{
+									"tag_name": "UX Research"
+								}
+							]
+						},
+						{
+							"if_project_card": true, 
+							"name": "Constellation Migration",
+							"url": "constellation-migration",
+							"project_card_image": "../images/constellation_migration/Hero_Inbox.png",
+							"project_card_background": "#F6F6FF",
+							"card_description": "Scoped and communicated a strategy to migrate 35 web pages across 9 Engineering teams to a new design system",
+							"company": "Zillow Group",
+							"tags": [
+								{
+									"tag_name": "Design Systems"
+								},
+								{
+									"tag_name": "Desktop"
+								},
+								{
+									"tag_name": "Strategy"
+								}
+							]						
+						}
+					]
+				}			
+
+			]
+		}
+	]
+}
+
