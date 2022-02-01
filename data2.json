@@ -3,7 +3,7 @@
 		{
             "name": "Homebuyer Profile",
             "url": "homebuyer-profile",
-            "project_card_image": "../images/homebuyer_profile/Hero_Solution_HomebuyerProfile.png",
+            "project_card_image": "../images/homebuyer_profile/Hero_Solution_HomebuyerProfile2.png",
 			"project_card_background": "#579dff",
 			"card_description": "Increased message engagement 14% by centralizing recent conversations real estate agents have had with their clients",
 			"company": "Zillow Group",
@@ -18,7 +18,7 @@
 					"tag_name": "UX/UI"
 				}
 			],
-			"description": "How might we help real estate agents more easily locate critical client information? <br> <br>I led a mobile refresh of the Homebuyer Profile to help Zillow Premier Agents better communicate with active clients and centralize their information throughout the homebuying journey.",
+			"description": "How might we help real estate agents more easily locate critical client information? <br> <br>I led a mobile refresh of the Homebuyer Profile to help Zillow real estate agents <span class=\"text_positive\">spend less time determining their priorities</span> in the Premier Agent app, and <span class=\"text_positive\">more time building quality connections with clients</span>. My work resulted in +14% increase in message engagement, translating to steady growth of Zillow's market reach and higher monetization across the business.",
 			"metadata": [
 				{
 					"data_name": "ROLE",
@@ -26,7 +26,7 @@
 				},
 				{
 					"data_name": "TEAM",
-					"data_content": "1 Lead Designer (me)<br>1 Supporting Designer<br>2 UX Researchers<br>1 Content Strategist<br>1 Product Manager<br>2 Engineering Managers"
+					"data_content": "1 Lead Designer (me)<br>1 Supporting Designer<br>2 UX Researchers<br>1 Content Strategist<br>1 Product Manager<br>2 Engineering Managers<br>1 Data Analyst"
 				},
 				{
 					"data_name": "TOOLS",
@@ -45,31 +45,8 @@
 					"blocks": [
 						{
 							"if_hero_image": true, 
-							"image_src": "../images/homebuyer_profile/Hero_Solution_HomebuyerProfile.png",
+							"image_src": "../images/homebuyer_profile/Hero_Solution_HomebuyerProfile2.png",
 							"hero_background": "#579dff"
-						}
-					],
-					"if_divider": true
-				},
-				{
-					"section_wide": true,
-					"section_header": true,
-					"title": "BACKGROUND",
-					"content": "Agents often reference the Premier Agent mobile app to receive new leads, work with homebuyers, and determine their daily priorities.",
-					"if_blocks": true, 
-					"flow_row": true, 
-					"blocks": [
-						{
-							"title": "The Product",
-							"text": true, 
-							"content": "Premier Agent is Zillow’s B2B client acquisition and business builder platform for real estate agents & teams.",
-							"card": "transparent block_card"
-						},
-						{
-							"title": "Business Impact",
-							"text": true, 
-							"content": "<span class=\"text_positive\">Increased message view rate +14%</span> over 2021, translating to positive growth in monthly Premier Agent client volume and revenue",
-							"card": "transparent block_card"
 						}
 					],
 					"if_divider": true
@@ -97,7 +74,7 @@
 							"image_url": "../images/homebuyer_profile/CDP_ShowingTimeDeclined.png",
 							"caption_bottom": "true",
 							"caption_position": "caption_bottom_center",
-							"label": "Tour Request"
+							"label": "Inbox Message"
 						},
 						{
 							"flex_span": "span6",
@@ -106,7 +83,7 @@
 								{
 									"title": "Difficulty keeping up",
 									"text": true,
-									"content": "Agents search in multiple places across the Premier Agent mobile app for siloed texts, emails, appointments, and more. There's opportunity for us to help Agents identify priority contacts to follow up with, especially as their pipeline grows.",
+									"content": "Agents search in multiple places across the Premier Agent mobile app for siloed texts, emails, appointments, and more. Commonly visited pages include their Contacts and Inbox.",
 									"card": "transparent block_card"
 								},
 								{
@@ -141,14 +118,14 @@
 							"if_data_block_caption": true, 
 							"data": "+10% message view rate",
 							"label": "BUSINESS OUTCOME",
-							"description": "Increased message engagement signals Agents are communicating with clients more, which drives more home tours and transactions.",
+							"description": "Increased message engagement signals Agents are communicating with clients more.",
 							"card": "transparent block_card"
 						},
 						{
 							"if_data_block_caption": true, 
 							"data": "Scalability",
 							"label": "PRODUCT GOAL",
-							"description": "Easily integrate existing and future Zillow cross-product services. Avoid future design debt.",
+							"description": "Easily integrate existing and future Zillow cross-product services.",
 							"card": "transparent block_card"
 						},
 						{
@@ -169,6 +146,7 @@
 					"if_blocks": true, 
 					"flow_row": true,
 					"mobile_before_after": "mobile_before_after",
+					"background_dark": "background_dark",
 					"blocks": [
 						{
 							"flex_span": "span_row_center",
@@ -207,6 +185,7 @@
 					"if_blocks": true, 
 					"flow_row": true,
 					"mobile_before_after": "mobile_before_after",
+					"background_dark": "background_dark",
 					"blocks": [
 						{
 							"flex_span": "span_row_center",

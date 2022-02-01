@@ -10,6 +10,11 @@ body {
 .page > :nth-child(n+2) {
   margin-bottom: 7.75rem; }
 
+.background_dark {
+  padding: 4rem;
+  background: #303030;
+  border-radius: 3px; }
+
 /* 
  * Sections ===
  * Large groups of content
