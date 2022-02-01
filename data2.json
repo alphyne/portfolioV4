@@ -3,7 +3,7 @@
 		{
             "name": "Homebuyer Profile",
             "url": "homebuyer-profile",
-            "project_card_image": "../images/homebuyer_profile/Hero_Solution_HomebuyerProfile2.png",
+            "project_card_image": "../images/homebuyer_profile/Hero_Solution_HomebuyerProfile.png",
 			"project_card_background": "#579dff",
 			"card_description": "Increased message engagement 14% by centralizing recent conversations real estate agents have had with their clients",
 			"company": "Zillow Group",
@@ -515,8 +515,8 @@
 						},
 						{
 							"if_project_card": true, 
-							"name": "Lead Routing",
-							"url": "lead-routing",
+							"name": "Client Routing",
+							"url": "client-routing",
 							"project_card_image": "../images/lead_routing/Hero_Solution_LeadRouting.png",
 							"project_card_background": "#70C8F6",
 							"card_description": "End-to-end product design for an ecosystem of tools that enabled real estate teams more granular control of their client distribution",
@@ -588,8 +588,8 @@
 
 
 		{
-            "name": "Lead Routing",
-            "url": "lead-routing",
+            "name": "Client Routing",
+            "url": "client-routing",
             "project_card_image": "../images/lead_routing/Hero_Solution_LeadRouting.png",
 			"project_card_background": "#70C8F6",
 			"card_description": "End-to-end product design for an ecosystem of tools that enabled real estate teams more granular control of their client distribution",
@@ -605,7 +605,7 @@
 					"tag_name": "UX Research"
 				}
 			],
-			"description": "How might we help real estate Team Leads better manage their Agents and ensure they're set up for success?<br><br>I owned a series of releases for Lead Routing that gave real estate teams more granular control of their client distribution. This case study focuses on discovery, research, and design for one of those releases, ZIP code groups.",
+			"description": "How might we help real estate Team Leads better manage their Agents and ensure they're set up for success?<br><br>I owned a series of releases for Client Routing that gave real estate teams more granular control of their client distribution. This case study focuses on discovery, research, and design for one of those releases, ZIP code groups.",
 			"metadata": [
 				{
 					"data_name": "ROLE",
@@ -680,7 +680,7 @@
 									"caption_top": "true",
 									"caption_position": "caption_top_left",
 									"image_url": "../images/lead_routing/Routing_Pause.png",
-									"label": "Pause switch on Lead Routing tool"
+									"label": "Pause switch on Routing tool"
 								}
 							]
 						},
@@ -810,7 +810,7 @@
 					"section_wide": true,
 					"section_content": true, 
 					"title": "DESIGN PRINCIPLES",
-					"content": "From our interviews, we learned customization was a top priority, as many real estate teams operate uniquely from each other. Future-proofing the Lead Routing experience was critical since we couldn't anticipate every team structure that could use our product.",
+					"content": "From our interviews, we learned customization was a top priority, as many real estate teams operate uniquely from each other. Future-proofing the Routing experience was critical since we couldn't anticipate every team structure that could use our product.",
 					"if_blocks": true, 
 					"flow_row": true,
 					"blocks": [
@@ -966,7 +966,7 @@
 					"section_wide": true,
 					"section_content": true, 
 					"title": "RESULTS",
-					"content": "Early qualitative feedback on the ZIP code groups feature has been positive! One month after release, <span class=\"text_positive\">+27% of eligible teams had created at least one ZIP code group, beating our goal of +25% adoption rate.</span> We expect more Team Leads to utilize the feature as they figure out the best way to organize their client distribution.<br><br>As next steps, we are continuing work on Shift Scheduling and exploring designs based on feedback from Concept Testing.<br><br>Thank you Reece for entrusting me with the Lead Routing initiative, and for your mentorship.",
+					"content": "Early qualitative feedback on the ZIP code groups feature has been positive! One month after release, <span class=\"text_positive\">+27% of eligible teams had created at least one ZIP code group, beating our goal of +25% adoption rate.</span> We expect more Team Leads to utilize the feature as they figure out the best way to organize their client distribution.<br><br>As next steps, we are continuing work on Shift Scheduling and exploring designs based on feedback from Concept Testing.<br><br>Thank you Reece for entrusting me with the Routing initiative, and for your mentorship.",
 					"if_divider": true
 				},
 				{
@@ -1056,7 +1056,7 @@
             "url": "constellation-migration",
             "project_card_image": "../images/constellation_migration/Hero_Inbox.png",
 			"project_card_background": "#F6F6FF",
-			"card_description": "Scoped and communicated a strategy to migrate 35 web pages across 9 Engineering teams to a new design system",
+			"card_description": "Strategized and prioritized the opportunity to migrate 35 web pages across 9 Engineering teams to a new design system",
 			"company": "Zillow Group",
 			"tags": [
 				{
@@ -1425,8 +1425,8 @@
 						},
 						{
 							"if_project_card": true, 
-							"name": "Lead Routing",
-							"url": "lead-routing",
+							"name": "Client Routing",
+							"url": "client-routing",
 							"project_card_image": "../images/lead_routing/Hero_Solution_LeadRouting.png",
 							"project_card_background": "#70C8F6",
 							"card_description": "End-to-end product design for an ecosystem of tools that enabled real estate teams more granular control of their client distribution",
@@ -1811,8 +1811,8 @@
 						},
 						{
 							"if_project_card": true, 
-							"name": "Lead Routing",
-							"url": "lead-routing",
+							"name": "Client Routing",
+							"url": "client-routing",
 							"project_card_image": "../images/lead_routing/Hero_Solution_LeadRouting.png",
 							"project_card_background": "#70C8F6",
 							"card_description": "End-to-end product design for an ecosystem of tools that enabled real estate teams more granular control of their client distribution",
