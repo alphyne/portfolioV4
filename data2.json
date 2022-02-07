@@ -233,7 +233,7 @@
 							"span_width": "span_half",
 							"text": true,
 							"title": "Interviews",
-							"content": "While synthesizing interview findings, our team realized that the attitudes and feedback of participants differed from our traditional Agent persona. We represented this new profile as Ada.",
+							"content": "While synthesizing interview findings, our team realized that the attitudes and feedback of participants differed from our traditional Agent persona. We represented this new profile as Alice.",
 							"card": "transparent block_card"
 								
 							
@@ -242,28 +242,20 @@
 							"flex_span": "span6",
 							"span_width": "span_half",
 							"text": true,
-							"title": "Personas: Introducing Ada",
-							"content": "Ada captures a fresher lens on Agent attitude and behavior in a modern team-oriented context. She will be insightful as Zillow continues to develop more specialized products and programs.",
+							"title": "Defining a new Agent persona",
+							"content": "Alice captures a fresher lens on Agent attitude and behavior in a modern team-oriented context. She will be insightful as Zillow continues to develop more specialized products and programs.",
 							"card": "transparent block_card"
 								
 						},
+
 						{
 							"flex_span": "span4",
 							"span_width": "span_half",
 							"image": true,
-							"image_url": "../images/homebuyer_profile/Research_Alan.png",
+							"image_url": "../images/homebuyer_profile/Research_Personas_Abstract.png",
 							"caption_top": "true",
 							"caption_position": "caption_top_left",
-							"label": "Traditional Agent persona"
-						},
-						{
-							"flex_span": "span4",
-							"span_width": "span_half",
-							"image": true,
-							"image_url": "../images/homebuyer_profile/Research_Ada.png",
-							"caption_top": "true",
-							"caption_position": "caption_top_left",
-							"label": "New Agent persona"
+							"label": "Highlighting behavioral strengths between our Agent personas"
 						}
 
 					]
@@ -276,14 +268,14 @@
 						{
 							"flex_span": "span_row_right",
 							"if_right_section": true,
-							"title": "Affinity diagram: How does Ada work?",
-							"content": "This artifact served as a visual representation of research and ideas that created a foundational understanding of Ada's user journey for future projects."
+							"title": "Rethinking Agent workflows",
+							"content": "This affinity diagram served as a visual representation of research and ideas that created a foundational understanding of Ada's user journey for future projects."
 						},
 						{
 							"flex_span": "span4",
 							"span_width": "span_half",
 							"image": true,
-							"image_url": "../images/homebuyer_profile/Research_AffinityDiagram.png"
+							"image_url": "../images/homebuyer_profile/Research_AffinityDiagram3.png"
 						}
 					],
 					"if_divider": true
@@ -438,16 +430,16 @@
 							"flex_span": "span_row_right",
 							"if_right_section": true,
 							"title": "Key Learning: Agent work styles vary",
-							"content": "As a result, one information hierarchy may not best serve all Agents. However, ordering info in a way that addresses four fundamental questions may be most valuable to Agents."
+							"content": "One information hierarchy may not best serve all Agents. However, ordering info in a way that addresses four fundamental steps may be most valuable to Agents."
 						},
 						{
 							"flex_span": "span4",
 							"span_width": "span_half",
 							"image": true,
-							"image_url": "../images/homebuyer_profile/UserTesting_Findings.png",
+							"image_url": "../images/homebuyer_profile/UserTesting_Findings_Abstract.png",
 							"caption_top": "true",
 							"caption_position": "caption_top_left",
-							"label": "Agent mental model: Refreshing memory on a client"
+							"label": "Framework: Agent refreshes memory on a client"
 						}
 					],
 					"if_divider": true
@@ -680,7 +672,7 @@
 									"caption_top": "true",
 									"caption_position": "caption_top_left",
 									"image_url": "../images/lead_routing/Routing_Pause.png",
-									"label": "Pause switch on Routing tool"
+									"label": "Current experience: Pause switch on Routing tool"
 								}
 							]
 						},
@@ -727,7 +719,7 @@
 							"if_data_block_caption": true, 
 							"data": "Reduce manual overhead",
 							"label": "UX GOAL",
-							"description": "Team Leads are spending several hours daily individually managing ZIP code assignments for their Agents. We should provide the necessary in-app tools for Team Leads to manage successfully at scale.",
+							"description": "Team Leads are spending several hours daily individually managing ZIP code assignments for their Agents.",
 							"card": "transparent block_card"
 						},
 						{
@@ -898,7 +890,7 @@
 						{
 							"flex_span": "span_row_right",
 							"if_right_section": true,
-							"title": "Key Learning: ZIP code groups",
+							"title": "Key Learning: Launch ZIP code groups first",
 							"content": "When speaking with Partner teams we discovered that we needed to implement ZIP code groups first, in order for Shift Scheduling to function properly and be successful."
 						},
 						{
@@ -1130,74 +1122,7 @@
 					"section_header": true, 
 					"title": "THE OPPORTUNITY",
 					"content": "Migrating Premier Agent to Constellation would accelerate designer and development velocity as we build Partner experiences.<br><br>Let's take advantage of Constellation's upgraded web technologies, larger component library, and dedicated team support.",
-					"if_blocks": true, 
-					"flow_row": true,
-					"blocks": [
-						{
-							"span_width": "span_half",
-							"title": "Core technologies",
-							"if_data_block": true, 
-							"data_blocks": [
-								{
-									"data": "HTML/CSS",
-									"label": "PAXL"
-								},
-								{
-									"data": "React",
-									"label": "CONSTELLATION"
-								}
-							],
-							"card": "transparent block_card"
-						},
-						{
-							"span_width": "span_half",
-							"title": "Number of components",
-							"if_data_block": true, 
-							"data_blocks": [
-								{
-									"data": "90",
-									"label": "PAXL"
-								},
-								{
-									"data": "200",
-									"label": "CONSTELLATION"
-								}
-							],
-							"card": "transparent block_card"
-						},
-						{
-							"span_width": "span_half",
-							"title": "Number of React components",
-							"if_data_block": true, 
-							"data_blocks": [
-								{
-									"data": "12",
-									"label": "PAXL"
-								},
-								{
-									"data": "200",
-									"label": "CONSTELLATION"
-								}
-							],
-							"card": "transparent block_card"
-						},
-						{
-							"span_width": "span_half",
-							"title": "Team size",
-							"if_data_block": true, 
-							"data_blocks": [
-								{
-									"data": "2",
-									"label": "PAXL"
-								},
-								{
-									"data": "19+",
-									"label": "CONSTELLATION"
-								}
-							],
-							"card": "transparent block_card"
-						}
-					],
+					
 					"if_divider": true
 				},
 				{
@@ -1315,7 +1240,7 @@
 							"flex_span": "span4",
 							"span_width": "span_half",
 							"image": true,
-							"image_url": "../images/constellation_migration/Phases_ChooseYourOwnAdventure.png",
+							"image_url": "../images/constellation_migration/Phases_ChooseYourOwnAdventure_Abstract.png",
 							"caption_top": "true",
 							"caption_position": "caption_top_left",
 							"label": "'Choose your own adventure' migration launch plan"
@@ -1337,10 +1262,10 @@
 							"flex_span": "span4",
 							"span_width": "span_half",
 							"image": true,
-							"image_url": "../images/constellation_migration/Deck_OneZillow.png",
+							"image_url": "../images/constellation_migration/Align_Abstract.png",
 							"caption_top": "true",
 							"caption_position": "caption_top_left",
-							"label": "Excerpt from migration proposal presentation"
+							"label": "Aligning Premier Agent stakeholders to our migration plan"
 						}
 					]
 				},
@@ -1359,7 +1284,7 @@
 							"flex_span": "span4",
 							"span_width": "span_half",
 							"image": true,
-							"image_url": "../images/constellation_migration/Phases_Asana.png",
+							"image_url": "../images/constellation_migration/Phases_Asana_Abstract.png",
 							"caption_top": "true",
 							"caption_position": "caption_top_left",
 							"label": "More tasks are filling up our Asana board"
