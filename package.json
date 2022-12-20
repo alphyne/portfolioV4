@@ -28,5 +28,6 @@
   "license": "ISC",
   "engines": {
     "node": "^8.12.0"
-  }
+  },
+    "stack": "heroku-22"
 }
